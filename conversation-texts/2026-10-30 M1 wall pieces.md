@@ -308,6 +308,126 @@ The claude-logs repository still isn't on GitHub, so it stays committed locally.
 
 Handover updated. Committing it, then saving this conversation's text.
 
+Records for Tessera Records, from this session. Tell me which to drop or change, and I'll enter them.
+
+**Decisions** (30 October, yours)
+1. **Three wall shapes:** a wall, a low wall, and a slope whose top rises from the low wall's top to the wall's, so you walk up from one to the other. Each is a slab as thick as in your drawing, about a fifth of a tile's width, with a grass top and stone edges. Your words: "these are the wall designs. there are three shapes, and should be rotated through the interface"; "the thickness is shows in the image as well".
+2. **Walls run straight across tiles:** a piece lies across its tile's middle and turns in steps of 30°, so straight walls run north–south and east–west and close into rectangles, as in your drawing of a walled square. East–west pieces stand on every other tile and join along the sides of the tiles between them. Why: your drawing, chosen over pieces along the tiles' sides ("let's go with my idea").
+3. **A secret passage opens a doorway:** a doorway about 1.2 m wide and 2 m tall opens low in the wall. The wall above it stays and can be walked along. This replaces the whole wall sinking. Your words: "is it ipossible for a secret passage to open a hole in the walll"; "1 yes".
+4. **Wall grass waits for the green:** the grass on a wall's top grows when the ground under it turns green, as plants do. Your answer: "3 yes".
+
+**Features** (updated)
+- **Find a hidden passage:** the hint becomes "a small crack on its outer side", and opening becomes "a doorway about 1.2 m wide and 2 m tall opens low in the wall; the wall above stays, and its top is walkable". Now it says the wall sinks into the ground.
+- **Move:** add "The player walks along walls' tops, and up and down a slope's top between a low wall and a wall."
+
+**Hours**
+- **30 October:** 8 hours, a full day, game design, with Tessera Records as the second type of work. The text: "The M1 trial, v0.204.0 to v0.214.0: the giant flower after Dani's drawing, with two leaves, ladders and settings for each flower; climbing ladders and hopping off them; the camera that eases, zooms out while walking and tilts to keep the player in view; two hands on a phone; and wall pieces after Dani's drawings, turned in the map editor. In Tessera Records: the decisions and features on floating tiles, flowers, ladders and the camera. A git repository for the conversation texts."
+
+**Not recorded:**
+- the editor's turning and the flower box, because they're trial tools;
+- your second giant flower and the arching flower coming off, because the map is a test;
+- the camera's 0.15 s ease, because it's tuning.
+
+**Q1.** 29 October has no hours logged yet. How many?
+
+The handover is updated and pushed, and this conversation is saved in claude-logs. That's committed only on your computer, as the GitHub repository for it still doesn't exist.
+
+Prompt for the next session:
+
+```
+Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.214.0). Read its CLAUDE.md and run git status. If the records listed on 30 October (the wall decisions, two features updated, and my 8 hours) aren't in Tessera Records yet, list them for me again and enter them once I confirm. Then build the three things I said yes to on 30 October, one version each: (1) the secret passage opens a doorway low in its wall, the wall above staying and walkable; (2) the giant flower settings in the map editor, with the game beside it changing as I drag; (3) a wall's grass grows when its ground turns green. If I've made the empty private repository MilliStudio/claude-logs on GitHub, push claude-logs. Work only on what I ask. Don't bring up the other open questions in the handover, Tessera Records, or my hours unless I do. I'll tell you when I'm done for the day; then ask for that day's hours.
+```
+
 ---
 
-Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.214.0). Read its CLAUDE.md and run git status. If the records listed on 30 October (the wall decisions, two features updated, and my 8 hours) aren't in Tessera Records yet, list them for me again and enter them once I confirm. Then build the three things I said yes to on 30 October, one version each: (1) the secret passage opens a doorway low in its wall, the wall above staying and walkable; (2) the giant flower settings in the map editor, with the game beside it changing as I drag; (3) a wall's grass grows when its ground turns green. If I've made the empty private repository MilliStudio/claude-logs on GitHub, push claude-logs. Work only on what I ask. Don't bring up the other open questions in the handover, Tessera Records, or my hours unless I do. I'll tell you when I'm done for the day; then ask for that day's hours.
+### Dani · 2026-10-30 23:17
+
+Tessera update testing m1 mattias and jousesf
+these two emails are my docs folder in tessera. they are updates. you ocan add decisions for them
+
+the camera's 0.15 s ease, because it's tuning.
+everything about the camera changes should be added. 
+
+q1 ignore
+
+---
+
+### Claude · 2026-10-30 23:18
+
+Reading the two emails in your docs folder and what Tessera Records holds on the camera.
+
+Two emails from 30 October, to Jousef (19:20) and Mattias (19:23). Checking Tessera Records for related decisions and the camera, so I don't duplicate anything.
+
+The camera's design text already lists its moves but no numbers. Checking the topic names for the email decisions.
+
+The meetings were brought in on 29 October, so the file is free. Checking the format an hours record needs in it.
+
+Entering the four wall decisions and the two feature updates now.
+
+Saved. Reading them back to check.
+
+All six read back as written. Now the hours file for your Bring in button.
+
+The hours record passes the app's checks. Checking whether Tessera Records printed changes into the Tessera documents.
+
+Only the two feature changes were printed, as expected. Committing them in the Tessera repository.
+
+Done:
+- **Entered in Tessera Records:** the 4 wall decisions, and the updates to "Find a hidden passage" and "Move". All read back correctly. The two feature changes were printed into the Tessera documents, and that's committed and pushed.
+- **Your 8 hours for 30 October:** waiting for your **Bring in** button.
+- **29 October's hours:** left out, as you said.
+
+New records to check. Tell me which to drop or change.
+
+**From your two "Tessera update" emails (30 October, 19:20 to Jousef, 19:23 to Mattias)**
+
+Decisions:
+1. **Test M1 before further commitments** (Business): "Before further expenses or commitments, Dani playtests and iterates on M1, and builds Tessera's presence on social media." Why: Tomas Ahlström's advice at East Sweden Game on 29 October, in your words: "his advice was to focus on playtesting, iterating, and building social media exposure before committing to further expenses. So for now, I'll concentrate on that." Jousef gave the same advice at the start: "I remember you saying the same thing on the very first day".
+2. **M2 has no timeline yet** (Team, private): "M2 has no timeline until M1's testing and refinement show how long they take. Dani wants to work with Jousef when M2 moves forward." Your words: "I can't give a timeline yet. But when I'm ready to move forward I really hope you'd still want to work with me."
+3. **Paying Jousef for his advice so far** (Team, private): "Dani offers to pay Jousef for the time he has already spent advising on Tessera, at his rate, which she asked him for." Your words: "I'd like to compensate you for the time you've already spent … I don't want to take advantage."
+
+Open question, updated:
+- **"Mattias role/capacity/arrangement."** Add: "Asked of Mattias on 30 October 2026: how involved he plans to be in Tessera, and at what stage an active role would make sense for him, so Dani can plan the next stages." Who answers: Mattias.
+
+Documents:
+- **The two emails** as correspondence, dated 30 October 2026, through Bring in.
+
+Your 20 October decision to offer Jousef a paid technical assessment of M1 isn't mentioned in the email, so I'm leaving it as it is.
+
+**The camera** (Controls and camera)
+4. Decision: **Camera moves ease over 0.15 seconds.** "Every camera move eases in and out over about 0.15 seconds." Why: you set it with its slider on 30 October, after 0.4 seconds.
+5. Update the camera's current baseline (document 22) with today's numbers:
+   - "every camera move eases in and out, over about 0.15 seconds;"
+   - "the camera zooms out 15% once the player has walked 0.8 seconds, and back in when they stop;"
+   - "where something hides the player, the camera tilts, between 20° and 80°, to show them;"
+   - "the player zooms between 4 m and 20 m of ground on screen."
+
+---
+
+### Dani · 2026-10-30 23:24
+
+all approved. if the prompt needs an update print it again
+
+---
+
+### Claude · 2026-10-30 23:24
+
+All approved: entering them now.
+
+Design records all in and correct. Now adding the two emails to the Bring in file, next to your hours.
+
+The app printed into three documents. Checking the open-questions document before committing, since the Mattias question is private.
+
+DOCS/43 already holds that private question; this adds the email note to it. The repository is yours alone, and PDFs leave private items out. Committing.
+
+Recording the emails in the private Tessera handover and the Tessera Records handover.
+
+Before I note it as ready: one email file has no file extension, which the app might refuse. Rehearsing the Bring in on a copy of Tessera Records to be sure.
+
+All three apply on the copy, and the copy is deleted. Updating the two handovers.
+
+Saving the conversation text again with the updated prompt.
+
+---
+
+Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.214.0). Read its CLAUDE.md and run git status. If my 30 October hours and the two Tessera update emails are still waiting in Bring in, remind me to press it. Then build the three things I said yes to on 30 October, one version each: (1) the secret passage opens a doorway low in its wall, the wall above staying and walkable; (2) the giant flower settings in the map editor, with the game beside it changing as I drag; (3) a wall's grass grows when its ground turns green. If I've made the empty private repository MilliStudio/claude-logs on GitHub, push claude-logs. Work only on what I ask. Don't bring up the other open questions in the handover, Tessera Records, or my hours unless I do. I'll tell you when I'm done for the day; then ask for that day's hours.
