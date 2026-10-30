@@ -1190,6 +1190,170 @@ That run started on the ground, my mistake in the test, so it shows nothing. Run
 
 Handover pushed. Saving the conversation text, with the prompt for the next session as its closing note.
 
+The session is saved and the handover is pushed. Nothing in the game changed after v0.209.0.
+
+**Saved:**
+- **Conversation text:** `claude-logs\conversation-texts\2026-10-30 M1 floating tiles, giant flowers and ladders.md`, with the prompt for the next session at the end. That folder isn't in git, so Dropbox backs it up.
+- **Handover:** the trial's CLAUDE.md now records:
+  - what's built: floating tiles, the redesigned flower, ladders with their own height and tilt, and models;
+  - that you need to start the trial again once so ladder saving works;
+  - what's still open: the hop that only looks straight ahead, ladders in the map editor (no ladders on floating tiles), and the questions you haven't answered.
+
+**The leaf hop:** a hop only looks straight ahead for somewhere to land. If you walk off the floating tile 20 to 35° to the side of the leaf, you drop to the ground. Once you've decided how the leaves sit on flowers, I'd let a hop look about 30° either way.
+
+**Prompt for the next session:**
+
+> Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.209.0). Read its CLAUDE.md, run git status, then wait for what I ask. If the trial has run since before v0.208.0, I start it again first, so Save as defaults also saves the ladders. I'm deciding how the leaves sit on giant flowers. A hop only looks straight ahead for somewhere to land (Claude recommends within about 30° either way; not built). Ladders in the map editor were discussed, nothing built: on walls by clicking an edge, on giant flowers built in; no ladders on floating tiles. Work only on what I ask. Don't bring up the other open questions in the handover, Tessera Records, or my hours unless I do. I'll tell you when I'm done for the day; then ask for that day's hours.
+
 ---
 
-Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.209.0). Read its CLAUDE.md, run git status, then wait for what I ask. If the trial has run since before v0.208.0, I start it again first, so Save as defaults also saves the ladders. I'm deciding how the leaves sit on giant flowers. A hop only looks straight ahead for somewhere to land (Claude recommends within about 30° either way; not built). Ladders in the map editor were discussed, nothing built: on walls by clicking an edge, on giant flowers built in; no ladders on floating tiles. Work only on what I ask. Don't bring up the other open questions in the handover, Tessera Records, or my hours unless I do. I'll tell you when I'm done for the day; then ask for that day's hours.
+### Dani · 2026-10-30 18:07
+
+why not on git?
+
+---
+
+### Claude · 2026-10-30 18:07
+
+It has never been a git repository; nobody set it up as one. It doesn't need to be, because Dropbox already backs it up. Dropbox only skips the hidden `.git` folders inside repositories, which is why the projects have to be pushed to GitHub. Every file in claude-logs is synced as it is.
+
+Git wouldn't add much there:
+
+- **No history to keep:** each conversation text is written once and never changed, and git's main gain is keeping old versions of files you edit.
+- **The raw session logs are too big:** they're in `projects`, 1.1 GB in all, which is more than GitHub handles well. They also hold everything said in every session, including anything pasted.
+
+The one real gain would be a second copy outside Dropbox. If you want that, I'd put only the small parts in a private GitHub repository: the conversation texts (1.5 MB), the handover archive, the rules review and the script. I'd leave the raw logs out. Shall I set that up?
+
+---
+
+### Dani · 2026-10-30 18:07
+
+dropbox is less reliable
+
+---
+
+### Claude · 2026-10-30 18:08
+
+You're right, and git gives a second copy anyway. I'll put the small parts of claude-logs into a private GitHub repository. The raw session logs stay out because of their size.
+
+Before anything goes up, I'm checking how the other repositories keep Dropbox away from their git folder, and searching the texts for passwords or keys.
+
+The commit needs the same name and email as your other repositories, which is set for each repository on its own. Copying it from the trial's.
+
+The repository is ready on this side: 70 files, with no raw logs and no CLAUDE.local.md copies. Now updating the session-end rule, so future sessions also commit and push the conversation texts.
+
+Everything is ready on this side, and the Studio CLAUDE.md now says to commit and push the logs at the end of each session. GitHub's command-line tool isn't installed, so one step is yours, about a minute, as with the trial on 19 October:
+
+1. Open https://github.com/new, signed in as MilliStudio.
+2. Repository name: `claude-logs`. Choose **Private**.
+3. Leave "Add a README", .gitignore and license off, so it starts empty.
+4. Click **Create repository**, then tell me.
+
+Then I'll push it and check that GitHub's copy matches yours.
+
+What goes up and what stays only in Dropbox:
+
+- **Goes up (70 files):** the conversation texts, the handover archive, the rules review and the two scripts.
+- **Stays only in Dropbox:** the raw session logs in `projects` (1.1 GB) and the two old copies of the Tessera CLAUDE.local.md, which your rule says never to commit.
+
+---
+
+### Dani · 2026-10-30 18:09
+
+m1 code can't be on git?
+
+---
+
+### Claude · 2026-10-30 18:10
+
+The M1 code is already on git. It has its own private GitHub repository, MilliStudio/tessera-m1, which you made on 19 October. I've just checked it: GitHub's copy matches yours exactly, up to today's handover. All 228 version labels are there too, so you can go back to any version.
+
+The new repository is only for the logs folder, which until now was in Dropbox alone. The only things staying out of git are the raw session logs and the two old copies of the Tessera CLAUDE.local.md.
+
+---
+
+### Dani · 2026-10-30 18:12
+
+forgot to ask, nothing to tr?
+
+---
+
+### Claude · 2026-10-30 18:12
+
+"TR" is Tessera Records. I read your earlier "after this tr and new conversation" as "transcript", so I saved the conversation but never looked at records. There are a few things from this session for Tessera Records. Reading how records are made, then I'll list them for you.
+
+Looking up what Tessera Records already holds, so I don't propose duplicates.
+
+I've checked what's already in Tessera Records. On 22 October you decided to leave room for "places with two floors" and build them later; the floating tiles now build that. The features **Hop** and **Move** exist, but nothing covers ladders or flowers yet. Here's what I'd enter. Decisions are only ever added, never edited, so each change gets a new decision.
+
+**Decisions**
+1. *(29 Oct)* Floating tiles hang in layers over the ground. The player walks on them, and under them where 1.8 m of room is left over their feet. *Why:* it builds the two floors left room for on 22 October.
+2. *(29 Oct)* Giant flowers are climbed, and the player walks on their head and leaves. (Your words: "they are walkable, their leaves are too".)
+3. *(29 Oct)* Arching flowers are decorations. The stem bends over like a 7, and the player walks under the head, on the tile beside it.
+4. *(30 Oct)* A giant flower has two leaves and no buds. Ladders take the player up it: from the ground to the lower leaf, and from the upper leaf to the head. (Your drawing, and "q1 yes".)
+5. *(30 Oct)* The player climbs ladders:
+   - they hop onto one from any side;
+   - they climb up or down;
+   - at either end, they hop off to the nearest place to stand within a hop's reach;
+   - pushing left or right lets go, after the same wait as at a cliff's edge.
+6. *(30 Oct)* Ladders stand against walls and against a giant flower's stem. There are no ladders on floating tiles.
+7. *(30 Oct)* Each ladder has its own height and tilt.
+8. *(29 Oct)* A floating tile or flower head that covers the player turns see-through. This one was my recommendation; you never said yes or no, so include it only if you agree.
+
+**Features**
+- **Climb a ladder** (new): how you get on, climb, get off and let go, as in decision 5, with nothing saved.
+- **Hop** (updated): you also hop onto floating tiles, leaves, flower heads and ladders, and a drop lands on a floating tile or leaf before the ground.
+- **Move** (updated): you walk on floating tiles and under them with 1.8 m of room, and you never swim, wade or fade while on one.
+
+**Open questions**
+- How should the leaves sit on giant flowers? (You're deciding.)
+- Should leaves be one-way, so the player walks up through them and stands on top?
+- Should a hop look about 30° either side for somewhere to land, not only straight ahead?
+
+**Not recorded:**
+- the models folder, the editor's ladder tool and the right-drag direction, because they're trial tools;
+- the flower's look and colours, because looks in the trial are tests.
+
+Shall I enter these? Tell me any to drop or change.
+
+---
+
+### Dani · 2026-10-30 18:30
+
+(29 Oct) Arching flowers are decorations. The stem bends over like a 7, and the player walks under the head, on the tile beside it.
+actually i might want to make them harvestables, but only if they can arch over other tiles and still only occupy one
+
+pushing left or right lets go, after the same wait as at a cliff's edge.
+this one needs tuning, so sliders for testing are necessary. i want the player to be able to hop off a ladder if  no tile or walkable object is present. so if hopping off a ladder while in the middle with nothing to hop on to, then player will fall to ground. but if player is hoping off a ladder and a walkable surface is on either side, hopping in the direction of thee surface will always land on the surface, but hopping off at the opposite direction means they let og and fall. you'll need to edit the feature too
+
+the rest is all ok
+
+---
+
+### Claude · 2026-10-30 18:31
+
+Got it. Two changes, then the records.
+
+**Arching flowers:** they already work the way you describe. The stem stands on its own tile, and the head only hangs over the tile beside it, which stays free for anything low enough to fit under a 2 m head. So they could be harvestable. Since you said "might", I'll record it as an open question, and drop "are decorations" from decision 3.
+
+**Hopping off a ladder sideways:** I'll build your rule first, then write the records to match it:
+
+- **Surface on that side, within reach:** you always land on it.
+- **Nothing there:** you let go and fall to whatever is below.
+- **Sliders:** a new section in the Ladders tab for the wait, how far the hop off reaches, how wide to the side it looks, how far out you fall, and the climbing speed.
+
+Now the sliders and their settings in [src/key.js](src/key.js).
+
+v0.210.0 is pushed. Now Tessera Records: checking how decisions, features and open questions are saved.
+
+All 15 records read back as written. The app also printed them into the Tessera repository's design documents, as it always does, so I'm checking those changes before committing them.
+
+New features stay in the app until a document lists them, the same as "Play a Guardian's emote". Only the Hop and Move changes were printed. Committing those.
+
+Pushed. Updating the handover with v0.210.0, the records entered, and the logs repository waiting on GitHub.
+
+Saving the conversation text again so it includes the records and the ladder change, then committing it in claude-logs.
+
+---
+
+Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.210.0). Read its CLAUDE.md, run git status, then wait for what I ask. If the trial has run since before v0.208.0, I start it again first, so Save as defaults also saves the ladders. If I've made the empty private repository MilliStudio/claude-logs on GitHub, push claude-logs. I'm deciding how the leaves sit on giant flowers; the open questions are in Tessera Records. Work only on what I ask. Don't bring up the other open questions in the handover, Tessera Records, or my hours unless I do. I'll tell you when I'm done for the day; then ask for that day's hours.
