@@ -512,8 +512,45 @@ Picking up where I stopped. The test passed: the game starts, and each slider no
 
 Saved and pushed as v0.225.0. Updating the handover and today's conversation text to include this.
 
+The camera sliders now work and have clearer names (v0.225.0). Reload your tab.
+
+**The sliders, under Tuning → Camera:**
+- **Turning, tilting, zooming: speeds up over** (0.3 s): how slowly a turn starts.
+- **Turning, tilting, zooming: slows to a stop over** (0.5 s): how long the camera keeps turning after you let go.
+- **Farthest you can zoom out**
+- **Walking: zooms out by**, **Walking: zooms out after** and **Walking: zooming out and back in takes**
+- **Tilts to keep you in view**
+
+**What changed:** in the last version, a turn chased a target point, so the ease-in slider barely did anything. Now a turn eases by its speed, so each slider has its own job. I measured it in your running game, holding Q:
+
+| Speeds up over | Slows to a stop over | What happened |
+|---|---|---|
+| 0 | 0 | starts at full speed, stops dead |
+| 1.5 s | 0 | creeps up slowly, then stops dead |
+| 0 | 1.5 s | starts at once, then glides on after letting go and slows to a stop |
+
+The same applies when you drag to turn. Tilting and zooming ease the same way, but toward where they're going.
+
+This time I opened the running game after the change to check it starts. The handover and today's conversation text are updated too.
+
 ---
 
-Closing note (31 October 2026): built and pushed v0.215.0 to v0.225.0. The last were the camera's ease sliders, after Dani found turning instant; one attempt stopped the game from starting until fixed. No hours logged for 31 October (Dani: "no need to add any hours"). claude-logs is committed locally; its GitHub repository still doesn't exist.
+### Dani · 2026-10-31 03:12
 
-Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.225.0). Read its CLAUDE.md and run git status. If I've made the empty private repository MilliStudio/claude-logs on GitHub, push claude-logs. Then more mechanics, as I ask. Work only on what I ask. I'll tell you when I'm done for the day.
+where is the rotation ease in and out.
+
+---
+
+### Claude · 2026-10-31 03:13
+
+Still on it: one text match in key.js failed, so nothing was written yet. I'm doing key.js with a direct edit instead.
+
+Edits are in and the tests pass. Opening the running game to check it starts and the new rotation sliders work.
+
+The game starts, and the rotation sliders change the turn as expected. Saving v0.226.0, including your Walking zoom value.
+
+---
+
+Closing note (31 October 2026): built and pushed v0.215.0 to v0.226.0. The last were the camera's ease sliders, after Dani found turning instant: rotation, and tilt and zoom, each with an ease in and an ease out. One attempt stopped the game from starting until fixed. No hours logged for 31 October (Dani: "no need to add any hours"). claude-logs is committed locally; its GitHub repository still doesn't exist.
+
+Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.226.0). Read its CLAUDE.md and run git status. If I've made the empty private repository MilliStudio/claude-logs on GitHub, push claude-logs. Then more mechanics, as I ask. Work only on what I ask. I'll tell you when I'm done for the day.
