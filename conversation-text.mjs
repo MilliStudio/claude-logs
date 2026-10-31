@@ -14,6 +14,7 @@ const clean = (text) => text
   .replace(/<system-reminder>[\s\S]*?<\/system-reminder>/g, '')
   .replace(/<ide_[a-z_]+>[\s\S]*?<\/ide_[a-z_]+>/g, '')
   .replace(/<\/?pasted_content[^>]*>/g, '')
+  .replace(/<task-notification>[\s\S]*?<\/task-notification>/g, '')
   .trim();
 
 const messages = [];
@@ -26,7 +27,7 @@ const add = (who, at, text) => {
 };
 
 for (const e of entries) {
-  if (e.isMeta || e.isSidechain) continue;
+  if (e.isMeta || e.isSidechain || e.isCompactSummary) continue; // the summary written when a long session is compacted
   // A message Dani typed while Claude was working.
   const a = e.attachment;
   if (e.type === 'attachment' && a?.type === 'queued_command' && a.origin?.kind === 'human') {

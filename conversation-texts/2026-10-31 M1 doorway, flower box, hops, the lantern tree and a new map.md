@@ -152,18 +152,6 @@ Your fresh map has no lantern, so to see the tree, put one down with `D` in the 
 
 ---
 
-### Dani · 2026-10-31 01:53
-
-<task-notification>
-<task-id>bdgmao0mn</task-id>
-<tool-use-id>toolu_01Bcrn6cGHfuJcsuZGdDSwk9</tool-use-id>
-<output-file>C:\Users\someo\AppData\Local\Temp\claude\c--Users-someo-Dropbox-Studio-Tessera-repositories-tessera-m1\a5143250-c478-4c6b-b1fb-e060f37d84c8\tasks\bdgmao0mn.output</output-file>
-<status>failed</status>
-<summary>Background command "Start the test copy's server on port 4891" failed with exit code 255</summary>
-</task-notification>
-
----
-
 ### Claude · 2026-10-31 01:53
 
 That "failed" notice is only the test server on port 4891 shutting down, because I stopped it after testing. Your trial on 4890 is still running, and v0.218.0 is pushed.
