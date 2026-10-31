@@ -24,5 +24,7 @@ if errorlevel 8 (
 echo.
 echo Done. Logs and memory notes are backed up in:
 echo %TARGET%
-echo This window closes in 3 seconds.
-timeout /t 3 /nobreak >nul
+echo This window closes in 1.5 seconds.
+rem timeout counts only whole seconds, so PowerShell waits instead. It takes
+rem about a quarter second to start, so it sleeps 1.25 seconds of the 1.5.
+powershell -NoProfile -Command "Start-Sleep -Milliseconds 1250"
