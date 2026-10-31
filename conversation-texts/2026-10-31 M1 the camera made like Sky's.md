@@ -276,8 +276,112 @@ The GitHub repository for claude-logs still doesn't exist, so the logs stay comm
 
 Saving this session's conversation text to claude-logs.
 
+The handover and today's conversation text are saved. The handover is on GitHub. The conversation text is committed only on this computer, because the claude-logs repository still doesn't exist on GitHub.
+
+**Proposed for Tessera Records.** All of these are design records: new decisions dated 31 October 2026, under Controls and camera, for M1. Sky is named only where ours copies it.
+
+**New decisions**
+1. **The camera is close, low and wide.** The camera stands about 5 m behind the player, with a 55° lens, tilt 28° and zoom 5 m, aimed 1.1 m above their feet. The player is about 28% of the screen's height, with their feet about 70% of the way down, as in Sky: Children of the Light. It replaces the lens (8°), tilt (39°) and zoom (10 m) in "M1's scale and camera follow My Little Universe"; tile width and walking speed stay. It also replaces "stays high and far" in "The camera tilts to keep the player in view": the camera still tilts as little as needed, now between 10° and 80°.
+   *Why:* "on sky it supports the feel of motion, but on ours it feels like dizziness"; measured in your recordings of Sky; "looks nicer already", "let's keep it like this for now".
+2. **Turning and tilting ease as Sky's camera does.** Turning reaches full speed in about 0.2 s and stops about 0.3 s after the player lets go. Tilting and zooming speed up in about 0.25 s and stop in about 0.5 s. It replaces "Every camera move eases in and out over about 0.15 seconds".
+   *Why:* measured frame by frame in your recording of Sky; "what i want is the zooms, timings, ease ins and ease outs".
+3. **The camera follows softly and never passes the player.** It trails a little behind (0.68 m at walking speed) and settles on the player about 0.5 s after they stop, as Sky's does.
+   *Why:* "let's start by implementing your measurements". The same day, a camera that went past the player and came back was tried and dropped, because it kept the picture moving after every stop.
+4. **No zoom-out while walking.** It replaces the walking zoom in "How the camera moves".
+   *Why:* "let's start by implementing your measurements"; Sky doesn't zoom out while walking or running in your recording.
+5. **The camera zooms out to at most 10 m.** It replaces 20 m.
+   *Why:* you set it with its slider on 31 October.
+
+**Edit to the CURRENT BASELINE text (DOCS/22, Controls and camera)**
+- "every camera move eases in and out, over about 0.15 seconds;" → "turning eases in over about 0.2 seconds and out over about 0.3; tilting and zooming over about 0.25 and 0.5;"
+- "the camera zooms out 15% once the player has walked 0.8 seconds, and back in when they stop;" → "the camera trails a little behind the walking player and settles on them about 0.5 seconds after they stop, without passing them;"
+- "tilts, between 20° and 80°" → "between 10° and 80°"
+- "between 4 m and 20 m of ground on screen" → "between 4 m and 10 m"
+
+**Questions**
+- **Q1.** The baseline still says "elevated top-down follow camera", from the team's 11 September decision. Does the close camera replace that for the whole game, or only for M1 for now? I recommend M1 only for now: keep the 11 September decision, and add "M1 tries a close, low camera with a wide lens" to the baseline.
+- **Q2.** Last night's changes are still unrecorded, as you asked then: one 0.2 s wait for every hop, hops looking 30° either way, the lantern tree twice as big and walked through, and the walls' beige. Should I add them too? I recommend yes, at least the hops, because "hops look 30° either way" answers an open question already in Tessera Records.
+
+**Prompt for the next session:**
+> Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.231.0). Read its CLAUDE.md and run git status. If the camera records for Tessera Records are still waiting, show me the list again. If I've made the empty private repository MilliStudio/claude-logs on GitHub, push claude-logs. Then more mechanics, as I ask. Work only on what I ask. I'll tell you when I'm done for the day.
+
 ---
 
-Closing note (31 October 2026, afternoon): Built v0.228.0 to v0.231.0 and pushed them. The camera first went past the player when they stopped (Dani's request), then took Sky's timings, soft follow and no walking zoom, measured frame by frame from Dani's first Sky recording; Dani found it still nothing like Sky, so the camera took Sky's shape from her second recording: close, low and wide (55° lens, tilt 28°, zoom 5 m). Dani: "looks nicer already", "let's keep it like this for now". Tessera Records: the camera records were proposed in chat, mentioning Sky only where ours copies it; waiting for Dani's yes. claude-logs' GitHub repository still doesn't exist.
+### Dani · 2026-10-31 15:18
 
-Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.231.0). Read its CLAUDE.md and run git status. If the camera records for Tessera Records are still waiting, show me the list again. If I've made the empty private repository MilliStudio/claude-logs on GitHub, push claude-logs. Then more mechanics, as I ask. Work only on what I ask. I'll tell you when I'm done for the day.
+No zoom-out while walking. It replaces the walking zoom in "How the camera moves". Why: "let's start by implementing your measurements"; Sky doesn't zoom out while walking or running in your recording.
+incorrect. we changed that. keep my current settings and remove this please
+
+---
+
+### Claude · 2026-10-31 15:19
+
+You saved new settings: Rotation ease in 0.3 s, Walking zoom 6%, Follows you 1.2 s. I'll keep those, save them as a version, and fix the list to match.
+
+Your settings are saved as v0.232.0 on GitHub. Updating the handover to match.
+
+I've removed that record and kept your settings. They're saved as v0.232.0 on GitHub, and the handover is updated:
+- Rotation ease in: 0.3 s.
+- Walking zoom: 6%.
+- Follows you: settles over 1.2 s, which trails 1.63 m behind at walking speed.
+
+**The corrected list for Tessera Records** (new decisions dated 31 October 2026, under Controls and camera, for M1):
+
+1. **The camera is close, low and wide.** The camera stands about 5 m behind the player, with a 55° lens, tilt 28° and zoom 5 m, aimed 1.1 m above their feet. The player is about 28% of the screen's height, with their feet about 70% of the way down, as in Sky: Children of the Light. It replaces the lens (8°), tilt (39°) and zoom (10 m) in "M1's scale and camera follow My Little Universe"; tile width and walking speed stay. It also replaces "stays high and far" in "The camera tilts to keep the player in view": the camera still tilts as little as needed, now between 10° and 80°.
+   *Why:* "on sky it supports the feel of motion, but on ours it feels like dizziness"; "looks nicer already"; "let's keep it like this for now".
+2. **Turning, tilting and zooming ease in and out.** Turning speeds up over about 0.3 s and stops about 0.3 s after the player lets go. Tilting and zooming speed up over about 0.25 s and stop over about 0.5 s. The stopping of a turn, and the tilting and zooming, match Sky's camera, as measured in your recording. It replaces "Every camera move eases in and out over about 0.15 seconds".
+   *Why:* "what i want is the zooms, timings, ease ins and ease outs"; you set the turn's ease-in to 0.3 s.
+3. **The camera follows softly and never passes the player.** It trails behind the walking player, 1.6 m at walking speed, and settles on them about 1.2 s after they stop, without passing them, like Sky's camera.
+   *Why:* "let's start by implementing your measurements"; you set 1.2 s. A camera that went past the player and came back was tried the same day and dropped.
+4. **The camera zooms out to at most 10 m.** It replaces 20 m.
+   *Why:* you set it with its slider on 31 October.
+
+**Edit to the CURRENT BASELINE text (DOCS/22, Controls and camera)**
+- "every camera move eases in and out, over about 0.15 seconds;" → "turning eases in and out over about 0.3 seconds; tilting and zooming in over about 0.25 and out over about 0.5;"
+- "the camera zooms out 15% once the player has walked 0.8 seconds" → "the camera zooms out 6% once the player has walked 0.2 seconds"
+- New line: "the camera trails behind the walking player and settles on them about 1.2 seconds after they stop, without passing them;"
+- "tilts, between 20° and 80°" → "between 10° and 80°"
+- "between 4 m and 20 m of ground on screen" → "between 4 m and 10 m"
+
+**Questions**
+- **Q1.** The baseline still says "elevated top-down follow camera", from the team's 11 September decision. Does the close camera replace that for the whole game, or only for M1 for now? I recommend M1 only for now: keep the 11 September decision, and add "M1 tries a close, low camera with a wide lens" to the baseline.
+- **Q2.** Should I also add last night's unrecorded changes: one 0.2 s wait for every hop, hops looking 30° either way, the lantern tree twice as big and walked through, and the walls' beige? I recommend yes, at least the hops, because "hops look 30° either way" answers an open question already in Tessera Records.
+
+---
+
+### Dani · 2026-10-31 15:25
+
+I think i might have adjusted the sliders again before you finished
+2 these refinements are set in order to know how we want things for m2 and 3. new refinements go to decisions regardless what what's permanent or not, values in the tdd are updated to the latest decision involving the change
+I think  i 
+q2 save them
+
+---
+
+### Claude · 2026-10-31 15:25
+
+Checking for slider changes you saved since v0.232.0.
+
+No new saves since v0.232.0, so the records use those values. Now reading the hop and lantern tree wording from last night's conversation, and how open questions are answered in Tessera Records.
+
+---
+
+### Dani · 2026-10-31 15:26
+
+(sent while Claude was working) can you remoporarity apply the first trial map, the one with the guardian. i just want to see the camera in action
+
+---
+
+### Claude · 2026-10-31 15:26
+
+Putting the old island (the one with the guardian) into the game now. Your current map is saved in git, so I can put it back exactly afterwards.
+
+Every change applies cleanly. Entering them now.
+
+All ten decisions are in, with four features and the camera baseline brought up to date. The hop question is marked answered. Updating the handover and today's conversation text to match.
+
+---
+
+Closing note (31 October 2026, afternoon): Built v0.228.0 to v0.232.0 and pushed them. The camera first went past the player when they stopped (Dani's request), then took Sky's timings and soft follow, measured frame by frame from Dani's first Sky recording; Dani found it still nothing like Sky, so the camera took Sky's shape from her second recording: close, low and wide (55° lens, tilt 28°, zoom 5 m). Dani: "looks nicer already", "let's keep it like this for now", then saved her own settings (v0.232.0: turning eases in 0.3 s, walking zoom 6%, the follow settles in 1.2 s). Tessera Records: ten decisions entered for 31 October, with four features, the camera baseline and the hop question brought up to date. The old island (with the Guardian) is in the game for now, not committed, so Dani can see the camera in action. claude-logs' GitHub repository still doesn't exist.
+
+Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.232.0). Read its CLAUDE.md and run git status. The old island is in the game, not committed: ask me whether to put my map back. If I've made the empty private repository MilliStudio/claude-logs on GitHub, push claude-logs. Then more mechanics, as I ask. Work only on what I ask. I'll tell you when I'm done for the day.
