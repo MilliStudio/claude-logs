@@ -418,6 +418,38 @@ Thanks. Wrapping up: handover status, saving this conversation's text to claude-
 
 An earlier session today (v0.238–v0.249: chests, the Game tab, harvestables per tile) never had its text saved or its handover updated. I'll save it too. Generating it first to see how it ended:
 
+The texts are committed in claude-logs, but the push failed: GitHub still says MilliStudio/claude-logs doesn't exist. Now the handover. Reading its status section:
+
+Handover updated. Now the Tessera Records file's note about what waits for Bring in, since Adobe's month is in and the file now holds your hours:
+
+Committing and pushing the handover:
+
+The Tessera Records file is in git too; committing that one change there:
+
 ---
 
-Closing note (31 October 2026, near midnight): Built v0.250.0 to v0.253.1 and pushed them: mushroom caps walked under, only the stems' foot blocking; each clump of pod stalks its own; the kit and the monument off the map, the game putting the kit on the ruin's wall; Save beside Reset to defaults; Restore all, Start over and the Give buttons beside Close; Give key items raising the gemstone to 2; Putting on the kit under Tuning; the tuning copy, M1 trial 2 tuning, at 127.0.0.1:4892, named M1 testing. The web copy is v0.253.0, with the old island. Tessera Records: three decisions (mushroom caps, camera eases, how harvestables vary), Move and the camera baseline updated; 31 October's 8 hours wait for Bring in. The old island is still in the game, not committed. Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.253.1). Read its CLAUDE.md and run git status. If 31 October's 8 hours are still waiting in Bring in, remind me to press it. The old island is in src/planet-plan.js, not committed: never commit it. I may be tuning in the tuning copy (M1 trial 2 tuning); work only in tessera-m1, and update the copy when I ask. Then more mechanics, as I ask. Work only on what I ask. I'll tell you when I'm done for the day.
+### Dani · 2026-10-31 23:59
+
+(sent while Claude was working) can you save this map and give me a new empty one please
+
+---
+
+### Claude · 2026-10-31 23:59
+
+Yes. I'll save the current map as a backup, then give the game a fresh empty one. First checking which game you've been editing in, the main trial or the tuning copy:
+
+You haven't changed anything in the tuning copy, so "this map" is the main trial's: the old island with your edits, last saved at 22:50. Saving it as a backup with a picture, like the 29 October one:
+
+The backup matches the game's map exactly. Now its picture:
+
+The picture works, but its key is cut off at the right edge: the mushroom-cap and flower descriptions are too long for it. Widening the key and drawing it again:
+
+Saved and committed (v0.254.0), and both games now have the empty map. A quick check that the game starts cleanly on it:
+
+Both games start on the empty map: seven tiles, nothing on them, no errors. Updating the handover, since the old island is no longer in the game:
+
+Last step: saving this conversation's text again, so it includes the new map, with an updated closing note and prompt:
+
+---
+
+Closing note (1 November 2026, just after midnight): Built v0.250.0 to v0.254.0 and pushed them: mushroom caps walked under, only the stems' foot blocking; each clump of pod stalks its own; the kit and the monument off the map, the game putting the kit on the ruin's wall; Save beside Reset to defaults; Restore all, Start over and the Give buttons beside Close; Give key items raising the gemstone to 2; Putting on the kit under Tuning; the tuning copy, M1 trial 2 tuning, at 127.0.0.1:4892, named M1 testing; and, last, the island saved in maps/backups/island-2026-10-31.js and a new empty map in both games. The web copy is v0.253.0, with that island. Tessera Records: three decisions (mushroom caps, camera eases, how harvestables vary), Move and the camera baseline updated; 31 October's 8 hours wait for Bring in. Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.254.0). Read its CLAUDE.md and run git status. If 31 October's 8 hours are still waiting in Bring in, remind me to press it. The map is empty again; the last island is in maps/backups/island-2026-10-31.js. I may be tuning in the tuning copy (M1 trial 2 tuning); work only in tessera-m1, and update the copy when I ask. Then more mechanics, as I ask. Work only on what I ask. I'll tell you when I'm done for the day.
