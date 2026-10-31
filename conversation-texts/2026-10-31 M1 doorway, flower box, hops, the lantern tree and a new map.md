@@ -549,8 +549,72 @@ Edits are in and the tests pass. Opening the running game to check it starts and
 
 The game starts, and the rotation sliders change the turn as expected. Saving v0.226.0, including your Walking zoom value.
 
+Rotation now has its own ease sliders (v0.226.0). Reload your tab, then open **Tuning → Camera**:
+
+- **Rotation ease in** (0.3 s): how gradually a turn starts.
+- **Rotation ease out** (0.5 s): how long the camera keeps turning and slows down after you let go.
+- **Tilt and zoom ease in** and **Tilt and zoom ease out**: the same two, for tilting and zooming.
+
+They were there before, under the name "Turning, tilting, zooming", which is why you couldn't find them.
+
+I checked in your running game that the game starts and that the rotation sliders change the turn:
+- **Ease in at 1.5 s:** the camera creeps up to speed.
+- **Ease out at 1.5 s:** after you let go, the camera keeps turning and slows to a stop.
+- **Both at 0:** the camera starts and stops at once.
+
+Your saved Walking zoom setting (0.6 s instead of 1.2 s) is in this version too. The handover and today's conversation text are updated.
+
 ---
 
-Closing note (31 October 2026): built and pushed v0.215.0 to v0.226.0. The last were the camera's ease sliders, after Dani found turning instant: rotation, and tilt and zoom, each with an ease in and an ease out. One attempt stopped the game from starting until fixed. No hours logged for 31 October (Dani: "no need to add any hours"). claude-logs is committed locally; its GitHub repository still doesn't exist.
+### Dani · 2026-10-31 03:14
 
-Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.226.0). Read its CLAUDE.md and run git status. If I've made the empty private repository MilliStudio/claude-logs on GitHub, push claude-logs. Then more mechanics, as I ask. Work only on what I ask. I'll tell you when I'm done for the day.
+i still don't get it. i change the sliders but the values remain the same. please do some debugging and find oout why this is so messed up. you can remove the tree sliders and the machine wheel sliders they're not needed
+
+---
+
+### Claude · 2026-10-31 03:15
+
+I'll debug this in the real game: open the panel and drag the camera sliders with real mouse events, checking each step that the number, the game's value and the camera behaviour change. I'll also remove the Lantern tree and Apparatus's wheels tabs.
+
+Only code changes in src/ reload your game, so that's not the cause. Next I'm checking turning by right-mouse drag, which you probably use more than Q and E.
+
+Tests pass. Checking the game still starts, and that the lantern tree and apparatus wheels behave as before, on my copy of the old island, which has both.
+
+Reset only touches its own browser, so my tests didn't change anything of yours. Saving v0.227.0.
+
+I removed the Lantern tree and Apparatus's wheels tabs (v0.227.0). Their numbers stay in src/key.js, and the lantern tree still grows the same way.
+
+**Debugging the sliders:** I couldn't reproduce the problem. In a fresh browser on your running game, I dragged the camera sliders with the mouse:
+- The number beside each slider changed, for example Rotation ease in from 0.3 s to 1.75 s.
+- The game's own value changed with it.
+- The camera behaved differently each time, turning with both Q and the right-mouse drag:
+  - **Rotation ease in at 1.5 s:** the turn creeps up to speed.
+  - **Rotation ease out at 1.5 s:** after letting go, the camera keeps turning and slows down.
+  - **Both at 0:** the camera starts and stops at once.
+
+So the sliders work in a fresh browser. Something about your browser or the way you're testing differs, and I need to know what you see to find it:
+
+1. When you drag a slider, does the number beside it change? If it does, does it jump back afterwards, and when?
+2. Try this: set **Rotation ease out** to 2 s, hold **Q** for a second, then let go. Does the camera keep turning for a couple of seconds after you let go?
+
+The other camera sliders only show when you do the matching thing: Tilt and zoom ease only shows while tilting or zooming, and the walking ones only while walking.
+
+---
+
+### Dani · 2026-10-31 03:22
+
+maybe i'm just brain dead. let's call ita  night. no tr or hours i think. fresh start tomorrow. can you make sure the game is backedup and new values are saved
+
+---
+
+### Claude · 2026-10-31 03:22
+
+Checking for anything unsaved, then wrapping up.
+
+Everything is committed and pushed: GitHub matches the game folder exactly, up to v0.227.0. Updating the handover and today's conversation text for the last time.
+
+---
+
+Closing note (31 October 2026): Dani called it a night ("no tr or hours i think. fresh start tomorrow"). Built and pushed v0.215.0 to v0.227.0; GitHub matches the game folder. The camera's ease sliders came last, after Dani found turning instant; one attempt stopped the game from starting until fixed. Left open: Dani said the sliders' values stay the same when she moves them, which Claude couldn't reproduce. claude-logs is committed locally; its GitHub repository still doesn't exist.
+
+Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.227.0), a fresh start. Read its CLAUDE.md and run git status. If I've made the empty private repository MilliStudio/claude-logs on GitHub, push claude-logs. Then more mechanics, as I ask. Work only on what I ask. I'll tell you when I'm done for the day.
