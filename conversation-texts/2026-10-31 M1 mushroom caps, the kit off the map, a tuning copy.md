@@ -450,6 +450,53 @@ Both games start on the empty map: seven tiles, nothing on them, no errors. Upda
 
 Last step: saving this conversation's text again, so it includes the new map, with an updated closing note and prompt:
 
+I saved your map and gave both games a new empty one (v0.254.0, pushed).
+
+- **Your map** is saved as `maps/backups/island-2026-10-31.js`, with a picture beside it (island-2026-10-31.png). It's the old island as you left it: the chest in the ruin, no low wall. I checked that it matches what was in the game exactly. To get it back, ask me.
+- **The new map** is the start tile with ground on its six sides, in both the trial and the tuning copy. I checked that both start cleanly on it.
+- **Side fix:** the island picture's key was cut off at the right edge, so I widened it.
+
+**Wrapping up for the day:**
+- I updated the handovers and pushed them.
+- I saved this conversation's text, and the earlier evening session's, which hadn't been saved. Both are committed in claude-logs, but not pushed, because GitHub still says MilliStudio/claude-logs doesn't exist. Once you create that empty private repository, I can push them.
+- Your 8 hours for 31 October are waiting in Tessera Records for you to press **Bring in**.
+
+**Prompt for next session:** Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.254.0). Read its CLAUDE.md and run git status. If 31 October's 8 hours are still waiting in Bring in, remind me to press it. The map is empty again; the last island is in maps/backups/island-2026-10-31.js. I may be tuning in the tuning copy (M1 trial 2 tuning); work only in tessera-m1, and update the copy when I ask. Then more mechanics, as I ask. Work only on what I ask. I'll tell you when I'm done for the day.
+
 ---
 
-Closing note (1 November 2026, just after midnight): Built v0.250.0 to v0.254.0 and pushed them: mushroom caps walked under, only the stems' foot blocking; each clump of pod stalks its own; the kit and the monument off the map, the game putting the kit on the ruin's wall; Save beside Reset to defaults; Restore all, Start over and the Give buttons beside Close; Give key items raising the gemstone to 2; Putting on the kit under Tuning; the tuning copy, M1 trial 2 tuning, at 127.0.0.1:4892, named M1 testing; and, last, the island saved in maps/backups/island-2026-10-31.js and a new empty map in both games. The web copy is v0.253.0, with that island. Tessera Records: three decisions (mushroom caps, camera eases, how harvestables vary), Move and the camera baseline updated; 31 October's 8 hours wait for Bring in. Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.254.0). Read its CLAUDE.md and run git status. If 31 October's 8 hours are still waiting in Bring in, remind me to press it. The map is empty again; the last island is in maps/backups/island-2026-10-31.js. I may be tuning in the tuning copy (M1 trial 2 tuning); work only in tessera-m1, and update the copy when I ask. Then more mechanics, as I ask. Work only on what I ask. I'll tell you when I'm done for the day.
+### Dani · 2026-11-01 00:09
+
+please untick and make sure all three versions have it unticked. then remove this option alltogether. it's permanent for m123
+
+---
+
+### Claude · 2026-11-01 00:09
+
+I'll make walking with the left hand and turning the camera with the right permanent, remove the option, and update all three versions: the trial, the tuning copy and the web version. Reading the setting's code:
+
+With the checkbox gone, the Settings section in the Game tab would be empty, because its two Give buttons already sit beside Close. Hiding it there; the web version keeps it for its Give buttons:
+
+Tests pass. Now checking in the hidden browser with simulated touches: a finger on the left half should walk, one on the right half should turn the camera.
+
+---
+
+### Dani · 2026-11-01 00:10
+
+(sent while Claude was working) check that tessera features follow these specifications
+
+(sent while Claude was working) in tr
+
+---
+
+### Claude · 2026-11-01 00:11
+
+Touches work as intended: the left half walks and the right half turns the camera. The setting is gone, and Settings is hidden. Saving the version, then updating the tuning copy and the web version:
+
+The web version is v0.255.0 with the island again, and your games keep the empty map.
+
+Now Tessera Records: finding every feature and decision that says which hand walks or turns the camera:
+
+---
+
+Closing note (1 November 2026, after midnight): Built v0.250.0 to v0.255.0 and pushed them: mushroom caps walked under, only the stems' foot blocking; each clump of pod stalks its own; the kit and the monument off the map, the game putting the kit on the ruin's wall; Save beside Reset to defaults; Restore all, Start over and the Give buttons beside Close; Give key items raising the gemstone to 2; Putting on the kit under Tuning; the tuning copy, M1 trial 2 tuning, at 127.0.0.1:4892, named M1 testing; the island saved in maps/backups/island-2026-10-31.js and a new empty map in both games; and, last, the left hand walking and the right turning the camera for good, the setting removed (M1 M2 M3). The web copy is v0.255.0, with the island of 31 October put into it. Tessera Records: four decisions (mushroom caps, camera eases, how harvestables vary, the left hand walks), Move and the camera baseline updated; 31 October's 8 hours wait for Bring in. Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.255.0). Read its CLAUDE.md and run git status. If 31 October's 8 hours are still waiting in Bring in, remind me to press it. The map is empty again; the last island is in maps/backups/island-2026-10-31.js. I may be tuning in the tuning copy (M1 trial 2 tuning); work only in tessera-m1, and update the copy when I ask. Then more mechanics, as I ask. Work only on what I ask. I'll tell you when I'm done for the day.
