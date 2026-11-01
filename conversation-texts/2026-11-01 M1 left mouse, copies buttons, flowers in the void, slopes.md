@@ -454,6 +454,37 @@ those aren't decisions they are additions and fixes. maybe change decisions to s
 
 Understood: those two are an addition and a fix, not decisions. Before saying whether a new/change/fix kind is a small job, I'm checking how decisions are stored in Tessera Records:
 
+Agreed. The flowers in the void and the slopes get no decisions.
+
+A new/change/fix kind isn't a small job. Decisions run through almost all of Tessera Records: its database, saving, search, the Bring in page, the lists and the printed documents. Adding the kind would take about 1.5 to 2 hours, so I've left it out. I've written your rule into the M1 handover: additions and fixes go only into the features' text.
+
+That leaves only the feature text, which describes the game as it now is:
+
+1. **Move**: "…and up and down a slope's top between a low wall and a wall" becomes "…and up and down a slope's top, which meets the wall pieces at its ends, also on higher or lower ground."
+2. **Climb a ladder** gains: "A giant flower standing in the void has no ladder from the ground."
+
+Say yes and I'll enter them. The handover is pushed, and the conversation is saved again with this exchange, committed on this computer only, because the claude-logs repository still doesn't exist on GitHub.
+
 ---
 
-Closing note (1 November 2026): Built and pushed v0.259.0 to v0.263.0. The left mouse button turns and tilts the camera, and the mouse no longer walks (no record: a trial control). Under Copies in the trial's Game tab: Update M1 testing (M1 testing keeps its own tuning values and map), Send tuning values to M1 testing, Import the map from M1 testing (only while M1 testing is up to date; the trial's old map goes to maps/before-import), Put online (code and values together, with the map chosen). The Tuning tab's Import from M1 testing also works only while M1 testing is up to date, and M1 testing has no buttons. Giant flowers can stand in the void, the stem fading from 20% of the flower's height below the tiles over 2 m, with no ladder from the ground. Slopes meet the wall pieces at their ends whatever the ground, and slopes in a row make one ramp. M1 testing has v0.263.0. Import the map was off at the end because the trial still ran its old server: Dani needs to start the trial again, and M1 testing too. Tessera Records: additions and fixes aren't decisions (Dani), so the flowers in the void and the slopes get no decisions; a new/change/fix kind was left out, as it would take 1.5 to 2 hours. Proposed, waiting for Dani's yes: the features Move (a slope meets the wall pieces at its ends) and Climb a ladder (a giant flower in the void has no ladder from the ground). The claude-logs repository still doesn't exist on GitHub, so this text is committed only on this computer. Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.263.0). Read its CLAUDE.md and run git status. I build maps and tune in M1 testing, and move things between the copies with the buttons under Copies in the trial's Game tab. Work only in tessera-m1. If I said yes to the two features' text, check it is in Tessera Records. Next: the character's arms, once I say how they look; then more mechanics, as I ask. Work only on what I ask. I'll tell you when I'm done for the day.
+### Dani · 2026-11-01 17:00
+
+yes thanks
+
+---
+
+### Claude · 2026-11-01 17:00
+
+Entering the two feature texts:
+
+Both are saved (Move v12, Climb a ladder v6), and the app reprinted four DOCS files. Checking they hold only these two changes before committing:
+
+Only Move's line changed in the printed files. Checking where Climb a ladder prints:
+
+Climb a ladder isn't printed in any document, before or after this change, so only Move's text reached DOCS. Committing the reprint in the Tessera repository:
+
+Pushed. Updating the handover's line about the records, and saving the conversation once more so it ends with your yes:
+
+---
+
+Closing note (1 November 2026): Built and pushed v0.259.0 to v0.263.0. The left mouse button turns and tilts the camera, and the mouse no longer walks (no record: a trial control). Under Copies in the trial's Game tab: Update M1 testing (M1 testing keeps its own tuning values and map), Send tuning values to M1 testing, Import the map from M1 testing (only while M1 testing is up to date; the trial's old map goes to maps/before-import), Put online (code and values together, with the map chosen). The Tuning tab's Import from M1 testing also works only while M1 testing is up to date, and M1 testing has no buttons. Giant flowers can stand in the void, the stem fading from 20% of the flower's height below the tiles over 2 m, with no ladder from the ground. Slopes meet the wall pieces at their ends whatever the ground, and slopes in a row make one ramp. M1 testing has v0.263.0. Import the map was off at the end because the trial still ran its old server: Dani needs to start the trial again, and M1 testing too. Tessera Records: additions and fixes aren't decisions (Dani), so no decisions; a new/change/fix kind was left out, as it would take 1.5 to 2 hours. Entered with Dani's yes: the features Move (v12) and Climb a ladder (v6); DOCS committed (Tessera 2567e57). The claude-logs repository still doesn't exist on GitHub, so this text is committed only on this computer. Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.263.0). Read its CLAUDE.md and run git status. I build maps and tune in M1 testing, and move things between the copies with the buttons under Copies in the trial's Game tab. Work only in tessera-m1. Next: the character's arms, once I say how they look; then more mechanics, as I ask. Work only on what I ask. I'll tell you when I'm done for the day.
