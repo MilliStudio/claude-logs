@@ -291,21 +291,62 @@ The handover is down from 4,417 to 2,430 words. Committing it:
 
 Saving the conversation to claude-logs, with the Tessera Records list in its closing note so the next session has it:
 
+The wrap-up is done except for Tessera Records, which waits for your yes.
+
+- **Handover:** updated and pushed. I also cut it from 4,417 to 2,430 words: the older dated sections are condensed, and the README keeps the details.
+- **Conversation:** saved and committed on this computer only. The claude-logs repository still doesn't exist on GitHub. Create an empty private repository named **MilliStudio/claude-logs** at github.com/new, with no README, and I'll push it.
+- **M1 testing** is still on v0.272.0. Press **Update M1 testing to v0.276.0** to get today's work.
+- **Time:** about an hour in all, 19:23 to 20:20.
+
+**Records for Tessera Records.** Nothing is entered yet. This list includes the late-evening list, which was never entered. Say yes, or what to change.
+
+*New decisions (1 November 2026, yours; M1 M2 M3)*
+
+1. **Corner pieces fill the notches at an island's edge** (World and narrative): "A corner piece is ground that fills one corner of an empty tile, in the notch where two tiles meet it. It is a diamond: its inner point on the tile's corner, as sharp as a tile's corner; two sides along the two tiles' edges; and a blunt outer point toward the tile's middle. It looks like the ground beside it. The player walks on it and hops onto it; nothing stands on it. An empty tile can have several."
+2. **The game has no stairs** (Environmental interactions and puzzles): "The game has no stairs. It replaces 'Stairs have one width' (31 October 2026), and the stairs in 'A pentagon is plain ground' (23 October 2026)."
+3. *Optional:* **Key items can lie on objects** (Environmental interactions and puzzles): "A key item can lie on top of something the player can walk on, such as a giant flower's leaf or head, a floating tile or a wall's top, or inside a chest." Remove it if you count placing them as only a map editor tool.
+
+*Feature text*
+
+4. **Move:** "The character walks up and down rises of up to 0.55 m, and stairs (0.5 m a step), without hopping;" becomes "The character walks up and down rises of up to 0.55 m without hopping;". It also gains: "A corner piece is walked on as ground, as high as the tiles beside it, the lower where they differ; off its edges lies the void. The edge of a floating tile, a leaf, a flower's head or a mushroom cap is no rise to walk: the character crosses it only onto something as high, and otherwise hops onto it or off it, however small the difference." The corner piece's height is my recommendation, which you didn't answer.
+5. **Hop:** "a giant flower's leaves" becomes "a giant flower's leaves while they tilt 15° or less". It also gains: "Each leaf can tilt up to 90° up or down, tilt up to 90° sideways, and swing up to 90° to either side, turning on the end of its stalk; tilted more than 15° up, down or sideways, it isn't walkable, and the player passes through it. Onto or off a floating tile, a leaf, a flower's head or a mushroom cap, any height difference is hopped, however small."
+6. **Climb a ladder:** "A leaf that is off has no ladder up to it" becomes "A leaf that is off, or tilted more than 15° up, down or sideways, has no ladder up to it".
+7. **Push or pull an object:** "with no water or stairs" becomes "with no water".
+8. **Open a chest** gains: "Several things in one chest rise side by side and fly to the player together."
+
+*No records* for the place kept across a reload, the M1 testing fixes, the import button or the Key items tools, since those are trial tools. The corner pieces' colour is in decision 1.
+
+---
+
+### Dani · 2026-11-01 20:41
+
+decusions, remove 2 and 3
+rest ok. pls log 8 hours
+
+---
+
+### Claude · 2026-11-01 20:41
+
+Entering decision 1 and the five feature changes through the app, and logging today's 8 hours. First the method the last sessions used, and the hours format:
+
+Today's hours go to the Bring in page as before, and the design records through the app. Checking how DOCS get printed after records change:
+
+The app prints DOCS itself when records change; I'll commit the prints afterwards. Entering decision 1 and the five feature edits, each edit checked against the current text:
+
+All six are in. Now today's 8 hours, as a file for the Bring in page:
+
+That file holds 31 October's hours, which are already in, so I'm replacing it with today's:
+
+The prints are the five feature changes. Committing them in the Tessera repository:
+
+Pushed. Updating the handover: records entered, and today's hours waiting on the Bring in page.
+
+Saving the conversation again, with the closing note brought up to date:
+
 ---
 
 Closing note (1 November 2026, night): Built and pushed v0.273.0 to v0.276.0. Corner pieces take the ground's colours. A floor's edge (floating tile, leaf, flower head, mushroom cap) is hopped, never stepped, unless level within 5 cm, so low leaves no longer cut through the player's legs. A reload in the same tab keeps where the player stood, in the trial and M1 testing. Update M1 testing keeps only the slider values changed there; every other number comes with the update (its corner pieces had stayed six-sided). Import tuning values from M1 testing is under Copies. Stairs are gone; S reads as plain ground. Key items (special gem, large wheel, small wheel, third wheel) are placed in the map editor by typing or clicking a tile: in the chest there, or on the highest walkable place; unplaced ones lie where they did. Leaves have Tilt sideways. The golden fish scale and the kit were left out of the key item tools; Claude offered to add them, unanswered. M1 testing had v0.272.0: Dani should press Update M1 testing to v0.276.0.
 
-Tessera Records, waiting for Dani's yes (it takes in the late evening's list, never entered):
-New decisions (1 November 2026, Dani's; M1 M2 M3):
-1. Corner pieces fill the notches at an island's edge (World and narrative): "A corner piece is ground that fills one corner of an empty tile, in the notch where two tiles meet it. It is a diamond: its inner point on the tile's corner, as sharp as a tile's corner; two sides along the two tiles' edges; and a blunt outer point toward the tile's middle. It looks like the ground beside it. The player walks on it and hops onto it; nothing stands on it. An empty tile can have several." Why: Dani's drawing; "is it easy or even possible to create a new tile ttype that looks like this brown one"; "yes you can walk and hop"; "yes go back to diamonds then"; "the corner tiles should be the same color as ground tiles".
-2. The game has no stairs (Environmental interactions and puzzles): "The game has no stairs. It replaces “Stairs have one width” (31 October 2026), and the stairs in “A pentagon is plain ground” (23 October 2026)." Why: "i can't remove stairs. please remove them from the game entirely".
-3. Optional, Key items can lie on objects (Environmental interactions and puzzles): "A key item can lie on top of something the player can walk on, such as a giant flower’s leaf or head, a floating tile or a wall’s top, or inside a chest." Why: "i need to be able to place key items onto objects". Remove it if placing them counts as a map editor tool.
-Feature text:
-4. Move: "The character walks up and down rises of up to 0.55 m, and stairs (0.5 m a step), without hopping;" becomes "The character walks up and down rises of up to 0.55 m without hopping;". It gains: "A corner piece is walked on as ground, as high as the tiles beside it, the lower where they differ; off its edges lies the void. The edge of a floating tile, a leaf, a flower’s head or a mushroom cap is no rise to walk: the character crosses it only onto something as high, and otherwise hops onto it or off it, however small the difference." The corner piece's height is Claude's recommendation, unanswered.
-5. Hop: "Floating tiles, a giant flower’s leaves, and its head while it tips 15° or less, are walkable too;" becomes "Floating tiles, a giant flower’s leaves while they tilt 15° or less, and its head while it tips 15° or less, are walkable too;". It gains: "Each leaf can tilt up to 90° up or down, tilt up to 90° sideways, and swing up to 90° to either side, turning on the end of its stalk; tilted more than 15° up, down or sideways, it isn’t walkable, and the player passes through it. Onto or off a floating tile, a leaf, a flower’s head or a mushroom cap, any height difference is hopped, however small."
-6. Climb a ladder: "A leaf that is off has no ladder up to it, and none starts from it." becomes "A leaf that is off, or tilted more than 15° up, down or sideways, has no ladder up to it, and none starts from it."
-7. Push or pull an object: "with no water or stairs" becomes "with no water".
-8. Open a chest gains: "Several things in one chest rise side by side and fly to the player together."
-No records: the kept place on reload, the copies' fixes, the import button and the Key items tools (trial tools); the corner pieces' colour is in decision 1.
+Tessera Records, with Dani's yes ("decusions, remove 2 and 3 / rest ok"): the decision Corner pieces fill the notches at an island's edge (World and narrative; M1 M2 M3), and the features Move v13, Hop v9, Climb a ladder v8, Push or pull an object v4 and Open a chest v4; DOCS committed (Tessera 5e9bba7). No decision for removing stairs or for key items lying on objects. 1 November's 8 hours (Dani: "pls log 8 hours") are in C:\Users\someo\TesseraExchange\proposed-records.json, for Dani's Bring in.
 
-Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.276.0). Read its CLAUDE.md and run git status. Show me the Tessera Records list from 1 November, night, again for my yes. I build maps and tune in M1 testing, and move things between the copies with the buttons under Copies in the trial's Game tab. Work only in tessera-m1. Next: the character's arms, once I say how they look; then more mechanics, as I ask. Work only on what I ask. I'll tell you when I'm done for the day.
+Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.276.0). Read its CLAUDE.md and run git status. I build maps and tune in M1 testing, and move things between the copies with the buttons under Copies in the trial's Game tab. Work only in tessera-m1. Next: the character's arms, once I say how they look; then more mechanics, as I ask. Work only on what I ask. I'll tell you when I'm done for the day.
