@@ -289,6 +289,119 @@ No problems, and the game loads all 8 pieces. Committing your save with a note i
 
 Saving the conversation to claude-logs:
 
+The wrap-up is done except for Tessera Records, which waits for your yes.
+
+- **Handover:** updated and pushed, with your save of 19:02 committed. That save added eight corner pieces and has no problems; the game loads all of them.
+- **Conversation:** saved and committed on this computer only. The claude-logs repository still doesn't exist on GitHub. To fix it, create an empty private repository named **MilliStudio/claude-logs** at github.com/new, with no README, and I'll push it.
+- **Time:** I estimated 2 hours for the corner pieces; they took about 40 minutes, the six sides included.
+
+**Records for Tessera Records.** Nothing is entered yet. Say yes, or what to change.
+
+*New decisions (1 November 2026, yours; M1 M2 M3)*
+
+1. **Corner pieces fill the notches at an island's edge** (topic: world and narrative, beside "Every tile in the game is a hexagon"): "A corner piece is ground that fills one corner of an empty tile, in the notch where two tiles meet it. It has six sides: its inner point on the tile's corner, as sharp as a tile's corner; two sides along the two tiles' edges; two short outer sides; and a blunt outer point toward the tile's middle. The player walks on it and hops onto it; nothing stands on it. An empty tile can have several."
+   Why: your drawing, and your words "is it easy or even possible to create a new tile ttype that looks like this brown one", "we don't have to put any objects on them" and "yes you can walk and hop".
+2. **Giant flower leaves are shaped like water drops** (topic: environmental interactions and puzzles): "A giant flower's leaves are shaped like water drops, the fat end toward the stem, on a stalk that arches from the stem into the fat end."
+   Why: "leaves should be shaped like a water drop. the fat end is the one connected to the stem". Remove it if you count the shape as a look.
+
+*Feature text updated to match.* Leaf tilt and rotate are additions, so they go only here.
+
+3. **Move** gains: "A corner piece is walked on as ground, as high as the tiles beside it, the lower where they differ; off its edges lies the void." The height rule is my recommendation, which you didn't answer.
+4. **Hop**: "Floating tiles, a giant flower’s leaves, and its head while it tips 15° or less, are walkable too;" becomes "Floating tiles, a giant flower’s leaves while they tilt 15° or less, and its head while it tips 15° or less, are walkable too;". It also gains: "Each leaf can tilt up to 90° up or down and swing up to 90° to either side, turning on the end of its stalk; tilted more than 15°, it isn’t walkable, and the player passes through it."
+5. **Climb a ladder**: "A leaf that is off has no ladder up to it, and none starts from it." becomes "A leaf that is off, or tilted more than 15°, has no ladder up to it, and none starts from it."
+
+*No records* for the walkable leaf tip, which is a fix, or the Corner piece tool, which is a trial tool. The arching stalk is in decision 2.
+
 ---
 
-Closing note (1 November 2026, late evening): Built and pushed v0.268.0 to v0.271.0. Leaves are water drops, the fat end at the stem, and their stalk arches into the leaf (rising at 50° from the stem). Corner pieces: ground filling the notch where two tiles meet an empty tile, six-sided as in Dani's drawing, walked on and hopped onto, nothing on them; ^ and the corner's turn in the drawing; the map editor's Corner piece tool. Each leaf's Tilt and Rotate (-90° to 90°, on the end of its stalk; Rotate swings it sideways, which Dani may have meant as a twist), stood on only up to 15°. Twice a name clash stopped Dani's open trial for about a minute. Dani saved eight corner pieces on her map at 19:02, committed. Tessera Records, proposed and waiting for Dani's yes: (1) a new decision, Corner pieces fill the notches at an island's edge (World and narrative); (2) a new decision, Giant flower leaves are shaped like water drops; (3) Move gains a corner piece walked on as ground, as high as the tiles beside it, the lower where they differ (Claude's recommendation, unanswered); (4) Hop: leaves walkable while they tilt 15° or less, and each leaf tilts and swings up to 90°; (5) Climb a ladder: a leaf off or tilted more than 15° has no ladder to or from it. No records for the arching stalk (a look), the walkable leaf tip (a fix) or the Corner piece tool (a trial tool). Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.271.0). Read its CLAUDE.md and run git status. If I haven't answered the Tessera Records list from 1 November evening, show it again. I build maps and tune in M1 testing, and move things between the copies with the buttons under Copies in the trial's Game tab. Work only in tessera-m1. Next: the character's arms, once I say how they look; then more mechanics, as I ask. Work only on what I ask. I'll tell you when I'm done for the day.
+### Dani · 2026-11-01 19:09
+
+forget the doc saying all tiles have to have hex. from a coding perspective, would having diamond shaped tile like the first attempt you made, break the game in any way? the planet shape, the water, clouds, the areas where the deformed hexagons are?
+
+Giant flower leaves are shaped like water drops (topic: environmental interactions and puzzles): "A giant flower's leaves are shaped like water drops, the fat end toward the stem, on a stalk that arches from the stem into the fat end." Why: "leaves should be shaped like a water drop. the fat end is the one connected to the stem". Remove it if you count the shape as a look.
+remove
+
+---
+
+### Claude · 2026-11-01 19:09
+
+No, a diamond shape wouldn't break anything. The four-sided first version ran on the same code as the six-sided one.
+
+**Why:** a corner piece isn't a tile of its own. The planet stays hexagons plus the 12 pentagons. The piece is ground drawn on top of an empty hexagon tile, built from that tile's own corners. So:
+
+- **The planet's shape:** unchanged, whatever shape the piece has.
+- **The deformed hexagons near the pentagons:** the piece takes its tile's real corners, so it bends with them. It even fits on a pentagon, with a 108° inner point instead of 120°.
+- **Walking, hopping and drawing:** work for any shape without dents, which a diamond also has.
+- **Water:** a piece can't go on a water tile, only on an empty one. Beside water, it lies at the ground's level.
+- **Clouds:** they leave a tile with pieces alone and form round it.
+
+I haven't tried three cases in the game: a piece beside water, one among clouds, and one on or beside a pentagon. The code says they work, but I'd check them in a copy before you rely on them. It's about 10 minutes.
+
+**Going back to the diamond** needs one number, not new code: set `DEMO_CORNER_PIECE_SIDE` to 0 in src/key.js, and the short sides disappear.
+
+**Tessera Records:** I've taken out the water-drop decision. Nothing is entered yet; the rest of the list waits for your yes:
+
+1. New decision, **Corner pieces fill the notches at an island's edge**. Its text says "six sides"; I'll change that to "four sides" if you go back to the diamond.
+3. **Move:** corner pieces are walked on as ground, as high as the tiles beside them.
+4. **Hop:** leaves can be stood on only while they tilt 15° or less; each leaf tilts and swings up to 90°.
+5. **Climb a ladder:** a leaf that is off, or tilted more than 15°, has no ladder up to it or from it.
+
+---
+
+### Dani · 2026-11-01 19:10
+
+but the clouds aren't extending below the corner tiles
+
+---
+
+### Claude · 2026-11-01 19:10
+
+You're right: I kept clouds away from tiles with corner pieces, and that goes against your rule that clouds blanket the island's edge. Letting them form under the pieces as under any edge tile. First, how the puffs sit, so they don't poke through a piece:
+
+Puffs sit 0.75 m or more below the ground, under the pieces' bottoms (0.7 m), as under any edge tile. Making the change:
+
+Testing on a copy with your current map, where a test hook wakes the lantern so the tiles turn green and the clouds come:
+
+---
+
+### Dani · 2026-11-01 19:11
+
+(sent while Claude was working) yes go back to diamonds then
+
+---
+
+### Claude · 2026-11-01 19:11
+
+Adding the diamond to the shape test, then checking diamonds and clouds on the copy:
+
+All 157 pass. Now on the copy: the diamonds, and clouds after the lantern wakes:
+
+---
+
+### Dani · 2026-11-01 19:12
+
+(sent while Claude was working) after this new window
+
+---
+
+### Claude · 2026-11-01 19:13
+
+Your map's pieces didn't load in the copy; checking why before anything else:
+
+The copy's server is an old one still serving my earlier test map. Restarting it cleanly:
+
+The copy took your map file as it is now, and it has no corner pieces: you changed your map again. Checking what changed in the trial:
+
+Diamonds (four corners each), standing on them works, and the rest of their tiles is now cloud. Picture:
+
+Clouds now reach under the pieces, and the pieces turn green with the tiles beside them. Stopping the copy's server (only mine; checking which processes belong to the copy first):
+
+Both copy servers are stopped; your trial and M1 testing weren't touched. Checking your trial still starts, then saving v0.272.0 with your import and save of 19:04 and 19:11:
+
+Updating the handover for the diamonds, the clouds and your import:
+
+Saving the conversation again, with the updated closing note:
+
+---
+
+Closing note (1 November 2026, late evening): Built and pushed v0.268.0 to v0.272.0. Leaves are water drops, the fat end at the stem, and their stalk arches into the leaf. Each leaf's Tilt and Rotate (-90° to 90°, on the end of its stalk; Rotate swings it sideways, which Dani may have meant as a twist), stood on only up to 15°. Corner pieces: ground filling the notch where two tiles meet an empty tile, diamonds again (Dani: "yes go back to diamonds then"; v0.271.0 had her drawing's six sides), walked on and hopped onto, nothing on them, clouds under their tiles (Dani: "but the clouds aren't extending below the corner tiles"); ^ and the corner's turn in the drawing; the map editor's Corner piece tool. Not yet tried: a piece beside water, and on or beside a pentagon. Twice a name clash stopped Dani's open trial for about a minute. At 19:04 Dani imported M1 testing's map (no corner pieces); her map with eight pieces is in maps/before-import/2026-11-01 19.04.06.js. Tessera Records, waiting for Dani's yes (the full texts are in the M1 handover): (1) a new decision, Corner pieces fill the notches at an island's edge, a diamond; (2) Move: a corner piece walked on as ground, as high as the tiles beside it, the lower where they differ (Claude's recommendation, unanswered); (3) Hop: leaves walkable while they tilt 15° or less, and each leaf tilts and swings up to 90°; (4) Climb a ladder: a leaf off or tilted more than 15° has no ladder to or from it. The water-drop decision was removed (Dani: "remove"). Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.272.0). Read its CLAUDE.md and run git status. Show me the Tessera Records list from 1 November evening again for my yes. I build maps and tune in M1 testing, and move things between the copies with the buttons under Copies in the trial's Game tab. Work only in tessera-m1. Next: the character's arms, once I say how they look; then more mechanics, as I ask. Work only on what I ask. I'll tell you when I'm done for the day.
