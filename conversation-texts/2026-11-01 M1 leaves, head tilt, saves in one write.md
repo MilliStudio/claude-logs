@@ -209,6 +209,44 @@ Committing the handover, with your save:
 
 Saving the conversation to claude-logs:
 
+The wrap-up is done except for Tessera Records, which is waiting for your yes.
+
+- **Handover:** updated and pushed.
+- **Conversation:** saved, but committed on this computer only. The claude-logs repository still doesn't exist on GitHub. To fix it, create an empty private repository named **MilliStudio/claude-logs** at github.com/new, with no README, and I'll push it.
+- **M1 testing:** it still has the two flowers with the default settings. Press **Send the map to M1 testing** to give it the trial's map, with the restored settings and your save of the flower on 3,4.
+
+**Records for Tessera Records.** Nothing is entered yet; say yes, or what to change.
+
+*New decision (1 November 2026, yours; topic: environmental interactions and puzzles; M1 M2 M3)*
+
+1. **Which leaves a giant flower has is set for each flower:** "Which leaves a giant flower has is set for each flower: each leaf is on or off. A leaf that is off has no ladder up to it, and no ladder starts from it. It replaces 'A giant flower has two leaves' in 'Giant flowers have two leaves and ladders', and 'two leaves' in 'Each flower is set up on its own' (30 October 2026)."
+   Why: your words, "i should have the ability to choose how many leafs a flower can have. perhaps add tick boxes to each leave like ladders?"
+
+*Feature text updated to match.* The head tilt is an addition, so it goes only here, not into a decision.
+
+2. **Hop**: "Floating tiles, and a giant flower's leaves and head, are walkable too;" becomes "Floating tiles, a giant flower's leaves, and its head while it tips 15° or less, are walkable too;". It also gains: "A giant flower's head can tip up to 90° toward its front, its stem staying upright; tipped more than 15°, it isn't walkable, and the player passes through it."
+3. **Climb a ladder** gains: "A leaf that is off has no ladder up to it, and none starts from it. A head tipped more than 15° has no ladder up to it."
+
+*No records* for Send the map, saving in one write, or the servers starting again by themselves: they're trial tools. Putting the flowers' settings back is map data, so it gets none either.
+
 ---
 
-Closing note (1 November 2026, evening): Built and pushed v0.264.0 to v0.267.1. Each giant flower leaf has an On tick box, up to four leaves. A head tilt from 0° to 90°, stood on only up to 15° (Dani: fine). Send the map to M1 testing, under Copies. The map editor's Save now writes the drawing, diamonds and flowers in one write, after a half save lost two moved flowers' settings. Servers start again by themselves when server.js changes; both windows run it since 17:52. The two flowers' settings were put back from v0.264.0 in the trial; M1 testing keeps the default ones until Dani presses Send the map. Tessera Records: a new decision (which leaves a flower has is chosen for each flower) and the features Hop and Climb a ladder proposed, waiting for Dani's yes. Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.267.1). Read its CLAUDE.md and run git status. I build maps and tune in M1 testing, and move things between the copies with the buttons under Copies in the trial's Game tab. Work only in tessera-m1. Next: the character's arms, once I say how they look; then more mechanics, as I ask. Work only on what I ask. I'll tell you when I'm done for the day.
+### Dani · 2026-11-01 18:03
+
+1 is a give, remove
+2 ok
+3 ok
+
+---
+
+### Claude · 2026-11-01 18:03
+
+Entering 2 and 3, with no record for 1:
+
+Both saved (Hop v8, Climb a ladder v7). Checking what the app reprinted in DOCS:
+
+Pushed (Tessera ec96bc0). Updating the handover's records line and saving the conversation once more:
+
+---
+
+Closing note (1 November 2026, evening): Built and pushed v0.264.0 to v0.267.1. Each giant flower leaf has an On tick box, up to four leaves. A head tilt from 0° to 90°, stood on only up to 15° (Dani: fine). Send the map to M1 testing, under Copies. The map editor's Save now writes the drawing, diamonds and flowers in one write, after a half save lost two moved flowers' settings. Servers start again by themselves when server.js changes; both windows run it since 17:52. The two flowers' settings were put back from v0.264.0 in the trial; M1 testing keeps the default ones until Dani presses Send the map. Tessera Records: the features Hop (v8) and Climb a ladder (v7) entered with Dani's yes, DOCS committed (Tessera ec96bc0); choosing a flower's leaves is a given, with no record. The claude-logs repository still doesn't exist on GitHub, so this text is committed only on this computer. Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.267.1). Read its CLAUDE.md and run git status. I build maps and tune in M1 testing, and move things between the copies with the buttons under Copies in the trial's Game tab. Work only in tessera-m1. Next: the character's arms, once I say how they look; then more mechanics, as I ask. Work only on what I ask. I'll tell you when I'm done for the day.
