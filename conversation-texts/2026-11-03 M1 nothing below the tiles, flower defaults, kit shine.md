@@ -1,4 +1,4 @@
-# M1 trial: nothing below the tiles, flower defaults, the kit's shine (2 and 3 November 2026)
+# M1 trial: nothing below the tiles, flower defaults, the kit's shine, records entered (2 and 3 November 2026)
 
 The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Private: never commit or share.
 
@@ -228,6 +228,69 @@ Updating the handover for the end of the session.
 
 Now the session text, then trying the claude-logs push (its GitHub repository was missing yesterday).
 
+claude-logs still has no GitHub repository, so the session text is committed locally only. Noting that in the handover, then committing and pushing it.
+
+Another map import from M1 testing came in at 00:36 while I was wrapping up. Checking what it changed so I can save it as a version too.
+
+Your 00:36 import set what the diamonds need: porous rock fragments, 10, 15, 20, 30 and 50 from 14,3 to 17,1, and 60 fragments with 100 water drops on 18,0. Saving it as v0.308.0 with its notes.
+
+Wrapped up. Everything is committed and pushed, now at v0.308.0.
+
+- **Hours:** Tessera Records still shows 8 hours for 2 November. The change to 12 is waiting on the Bring in page, so press your button there to bring it in. I tested it on a copy of the database first, and the page will show "Change the record".
+- **Tessera Records:** two new items for your go, added to last night's waiting list:
+  1. The feature "A key item shines" gets one more sentence: "The Gatherer's Kit shines the same way, until the player takes it."
+  2. The ladder vine features take the numbers you imported tonight:
+     - the vine grows 1.5 m a second, and each leaf unfurls in 1 second;
+     - its flowers open as soon as it reaches the top, over 3 seconds;
+     - it is 0.75 m wide, with its foot 0.4 m up;
+     - it is climbed at 2.6 m a second, and you hop off within 40°.
+
+  Nothing else from tonight needs a record: the rest were fixes, editor defaults and looks. Last night's list still waits for your go too.
+- **Your 00:36 import** (what the diamonds need) came in while I was wrapping up, so it's saved as v0.308.0.
+- **Session text:** saved, but only on this computer. The claude-logs repository still doesn't exist on GitHub. When you can, create an empty private repository called MilliStudio/claude-logs, and the next session will push it.
+
 ---
 
-Closing note (3 November 2026): Built and pushed v0.306.0 (nothing below the tiles: the void's floor over a pond not yet risen, see-through things hidden below the floor and beyond the curve, stems in the void still fading; a new default giant flower, the one on 3,4 with its two leaves; the flower box's Reset to saved; 17,-3's corner piece linked to the pond's diamond) and v0.307.0 (the kit shines as the key items do; the worn satchel and strap 21% bigger; Dani's map and tuning imports of 00:20 to 00:24). Tessera Records: 2 November's hours 8 → 12 wait on the Bring in page; two more items joined the list waiting for Dani's go. Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.307.0). Read its CLAUDE.md and run git status. Next: my go on the Tessera Records list, then the next version with the ladder vine names; my view of v0.307.0.
+### Dani · 2026-11-03 00:48
+
+ok to all
+
+---
+
+### Claude · 2026-11-03 00:48
+
+Going ahead with all of it: last night's Tessera Records list, the two new items, then the next version with the ladder vine names. This is roughly 1–1.5 hours. First rereading the exact texts you approved last night.
+
+Still reading how the design records store milestones and topics, so I can enter them correctly.
+
+Milestones are saved as codes (M1, M2, M3) and topics by their id. Dumping the current design records to a file in my scratchpad to work from.
+
+The hop onto a vine now peaks about 0.85 m up (0.4 m foot plus the 0.45 m arc), and the waits are both 0.45 s. Now finding the decisions and open questions involved.
+
+Corner piece decisions are filed under World and narrative, so the new one goes there. Checking the exact wording of your quotes for the new decisions' "Why" lines.
+
+The review matches the approved texts: 15 edits, 6 new records, 1 deletion. Entering them now.
+
+Entered. Verifying by reading the records back, and checking which DOCS files Tessera Records printed.
+
+The DOCS changes are small and only touch the edited features. Committing and pushing them in the Tessera repository.
+
+DOCS pushed. Now the two to-do tasks, added to the Bring in file next to the hours change.
+
+The Bring in file previews cleanly: one record changed, two tasks added. Now the game's names, as v0.309.0. Finding every visible "climbing plant" and "ladder sprout".
+
+Tests only mention it in comments. Writing the renames as exact replacements.
+
+Your quotes kept their original words. Adding a line to the README saying when the names changed, then testing and checking the game.
+
+Tests pass. Checking in the game that the pouch and the Tuning tab show the new names, and that the tab's Try button still works.
+
+The pouch shows "ladder vine sprouts", the editor's tab is "Ladder vines", no "climbing plant" is left on either page, and the Try button runs without errors. Committing v0.309.0.
+
+Another map import of yours (00:49) went into that commit. Checking what it changed, to note it.
+
+Now the handover: the records are entered, so the waiting list goes.
+
+---
+
+Closing note (3 November 2026): Built and pushed v0.306.0 to v0.309.0: nothing below the tiles, a new default giant flower, the flower box's Reset to saved, 17,-3's corner piece linked; the kit's shine and a 21% bigger worn satchel and strap; Dani's map and tuning imports from 00:20 to 00:49; the names ladder vine and ladder vine sprout. Tessera Records: Dani's approved list entered with her "ok to all" (DOCS committed, Tessera dfe2718); the Bring in file holds 2 November's hours (8 to 12) and two M1 tasks, waiting for her button. Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.309.0). Read its CLAUDE.md and run git status. Next: my view of v0.309.0; the two records out of step with the game (Hop's waits, Take a key item's spin).
