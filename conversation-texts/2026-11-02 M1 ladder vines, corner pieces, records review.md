@@ -713,6 +713,26 @@ Updating the handover: the version, what happened in Tessera Records tonight, wh
 
 Handover pushed. Saving this session's text, and also the climbing plant session's text (v0.296.0–v0.297.0), which was never saved.
 
+The session is wrapped up.
+
+**Done tonight**
+- **Tessera Records:** your chest decision is deleted; the design part keeps it in its history. Nothing else was added or changed there.
+- **DOCS:** your Lantern v13 edit is committed in the Tessera repository.
+- **v0.305.0:** your imports from M1 testing at 20:40 and 21:54 are committed. They include the void fade (starts at once, lasts 4.5 s) and leaves sprouting in 0.7 s. I also fixed the test that expected the fade to last exactly 11 s.
+- **Handover:** CLAUDE.md now lists everything waiting for your go: the topics, the awakening and giant flower features, the ladder vine rename, the fade, 12 hours for today, and the two to-do tasks.
+- **Session texts:** this conversation is saved. So is the climbing plant conversation (v0.296.0–v0.297.0), which had never been saved. Both are committed in claude-logs, but not pushed, because MilliStudio/claude-logs still doesn't exist on GitHub. Once you create it (empty and private), the next session can push.
+
+**For next time**
+- **Flower settings:** your 21:54 import overwrote flower settings that had been saved in the trial after 20:40. Examples: 6,2's petals rising 29°, and leaves on several flowers. They're in `maps/before-import/2026-11-02 21.54.38.js`. If they were yours, I can bring them back.
+- **Bring in:** the items you unticked aren't the hours, which are already in. I still need their names or a screenshot.
+- **The other conversation:** I found no "hold on until I bring in" in any of today's conversations.
+
 ---
 
-Closing note (2 November 2026): Built and pushed v0.298.0 to v0.301.0 (climbing plants planted from the inventory, lit or faded, anywhere on a tile with a wall or stem or on a leaf, one per tile or leaf, 0.6 m wide, wrapping round stems, a 0.5 m gap at the foot; corner pieces raised by diamonds, white until woken; void fade sliders; the mouse's fifth button for running; a chest's items ending in the spin and hop) and v0.305.0 (Dani's imports at 20:40 and 21:54). A second session worked in the same folder at the same time (v0.302.0 to v0.304.0). In Tessera Records: Dani's chest decision deleted with her yes; DOCS committed (Tessera 5995ed3). Everything else proposed tonight waits for Dani's go (see the handover). Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.305.0). Read its CLAUDE.md and run git status. Next: my go on the Tessera Records list from 2 November (topics, the awakening and giant flower features, ladder vine rename, fade, hours to 12, two tasks), then v0.306.0 with the ladder vine names; the flower settings my 21:54 import replaced; the unticked Bring in items.
+### Dani · 2026-11-02 22:06
+
+it's in this conversation that i told you to hold on or stand by. the one i closed before this one might have sent the bringins.
+
+---
+
+Closing noteClosing note (2 November 2026): Built and pushed v0.298.0 to v0.301.0 (climbing plants planted from the inventory, lit or faded, anywhere on a tile with a wall or stem or on a leaf, one per tile or leaf, 0.6 m wide, wrapping round stems, a 0.5 m gap at the foot; corner pieces raised by diamonds, white until woken; void fade sliders; the mouse's fifth button for running; a chest's items ending in the spin and hop) and v0.305.0 (Dani's imports at 20:40 and 21:54). A second session worked in the same folder at the same time (v0.302.0 to v0.304.0). In Tessera Records: Dani's chest decision deleted with her yes; DOCS committed (Tessera 5995ed3). Everything else proposed tonight waits for Dani's go (see the handover). Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.305.0). Read its CLAUDE.md and run git status. Next: my go on the Tessera Records list from 2 November (topics, the awakening and giant flower features, ladder vine rename, fade, hours to 12, two tasks), then v0.306.0 with the ladder vine names; the flower settings my 21:54 import replaced; the unticked Bring in items.
