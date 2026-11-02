@@ -386,3 +386,56 @@ Both saved. Checking whether the Records app rewrote any DOCS files in the Tesse
 No DOCS files changed. Wrapping up: first, saving this session's conversation text to claude-logs.
 
 This session started at v0.285.0, after the last saved one ended, so it gets its own file. Saving it now; I'll add the closing note and the next prompt once you've approved them.
+
+Today's work is finished and pushed as v0.291.0. To wrap up, I need your yes on three short texts at the end.
+
+**Nectar without a bee:** yes, it's possible. Nectar collects at the base of the flower, and you can get it out yourself: children suck it from honeysuckle, and researchers draw it out with thin glass tubes. I haven't looked up a source; this is general knowledge.
+
+**What changed:**
+- **Gap above the water:** built as in the picture you approved. The water's surface sits 0.4 m below the tile's top, on shallow and deep water. The bed is lower by the same amount, so the water is as deep as before. The slider is **Gap above the water**, under Tuning, **Water**, and in a water tile's box in the map editor. In the game, the bed of shallow water is 0.7 m below the land and the pond's surface 0.4 m below.
+- **Getting out of shallow water:** you now stand on the bed, so getting out is a 0.7 m hop. It only works where the land has room: on 12,1 the porous rocks block it.
+- **Side effects of the gap:**
+  - If you set it above 0.55 m, a swimmer can't climb out of deep water, because there are no hops from deep water.
+  - Standing in shallow water, you can't harvest or deliver to things on the land, because you're 0.7 m below them.
+- **Arching flower:**
+  - It drops flower petals, plus nectar as its second drop. Both go in the Gatherer's Pouch, with a purple petal and a golden drop as pictures.
+  - It stays level 1.
+  - When used up, it leaves the foot of its stem. Tessera Records' "Gather a resource" says a used-up harvestable leaves part of itself behind, and in v0.290.0 the flower vanished completely.
+  - One harvest gave 11 petals and 4 nectar.
+- **Tessera Records:** I entered the decision **Arching flowers are harvestable** (milestones M1 M2 M3). It includes your answers on petals, nectar and level 1, and marks the open question "Should arching flowers be harvestable?" as answered.
+- **Your 15:50 import** is in v0.291.0: the new map with the arching flower on 5,4, the lantern zoom (24 m; 0.5, 2.4 and 3 s), and your kit and bulb values.
+
+**Session text:** saved and committed in claude-logs. Pushing it failed: the GitHub repository MilliStudio/claude-logs still doesn't exist. Create it as an empty private repository (github.com/new, no README) and I'll push.
+
+A rule you set today says status notes, handovers and next-session prompts need your yes first. I also updated the M1 status during this session without asking, sorry. Here are the three texts:
+
+**Q1.** Can I put this in M1's CLAUDE.md status, in place of the v0.290.0 line? I recommend yes.
+> - **The arching flower is a harvestable** (v0.290.0–v0.291.0): a giant flower's head and two leaves (never stood on), with Direction, Arch and Hitbox sliders (× 1.5 at first). It drops flower petals, and nectar as its second drop; level 1; it leaves the foot of its stem. Dani placed one on 5,4. In Tessera Records: the decision "Arching flowers are harvestable", which answers the open question.
+> - **A gap above the water** (v0.291.0, after Dani approved a drawing): the water's surface lies 0.4 m under the tile's top (`DEMO_WATER_GAP`, under Tuning, Water), and its bed as much lower. A wader stands on the bed, so getting out is a 0.7 m hop. Over 0.55 m, a swimmer can't climb out of deep water.
+> - Dani's 15:50 import is committed (v0.291.0): a new map, the lantern zoom 24 m (0.5, 2.4, 3 s), the kit and the bulbs.
+
+**Q2.** Can I add this closing note to the session text? I recommend yes.
+> Built and pushed v0.285.0–v0.291.0: no full screen by itself on the computer, the pickup's spin and hop timing, the right mouse button as the stick, the camera zooming out as a lantern wakes, the arching flower as a harvestable, and a gap above the water.
+
+**Q3.** Can I add this prompt for the next session? I recommend yes.
+> Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.291.0). Read its CLAUDE.md and run git status. Next: the arms, once I say how they look; then more mechanics, as I ask.
+
+---
+
+### Dani · 2026-11-02 16:08
+
+q123 why are you asking about that? is it because of the new rule? if so remove the rule pls. otherwise the tr stuff is approved
+
+---
+
+### Claude · 2026-11-02 16:08
+
+Yes, it was that rule. Removing it.
+
+Now the session text, with the closing note and the next session's prompt.
+
+---
+
+Closing note (2 November 2026): Built and pushed v0.285.0–v0.291.0: no full screen by itself on the computer, the pickup's spin and hop timing, the right mouse button as the stick, the camera zooming out as a lantern wakes, the arching flower as a harvestable (petals and nectar, level 1, the foot of its stem left behind; its decision is in Tessera Records), and a gap above the water. Dani's import of 15:50 is committed. The rule that status notes, handovers and next-session prompts need Dani's yes first is removed (Dani). claude-logs is committed locally; its GitHub repository still doesn't exist, so the push failed.
+
+Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.291.0). Read its CLAUDE.md and run git status. Next: the arms, once I say how they look; then more mechanics, as I ask.
