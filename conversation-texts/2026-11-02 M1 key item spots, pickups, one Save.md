@@ -263,10 +263,61 @@ claude-logs' GitHub repository still doesn't exist, so the conversation text get
 
 Handover pushed. Saving this conversation's text to claude-logs:
 
+I finished everything you asked, tried it in a copy of the trial on port 4891, and wrapped up the session. It's in four versions, v0.280.0 to v0.283.0, all pushed to GitHub, and all 161 tests pass. Press **Update M1 testing** to get them.
+
+**What changed:**
+- **Key items in the map editor:** right-click a key item's tile to turn it. The mouse's back button (its 4th) moves it from the tile's middle to each edge in turn, then back to the middle. Shift goes the other way. An orange dot with a line shows where it lies and which way it faces.
+- **Chests** move the same way with the back button. On the map, a chest by an edge shows as a small square there.
+- **Picking things up:** the Take button is gone. Coming close takes a key item, the kit or the golden fish scale. The item flies to you, then you spin round and hop, and you stand still until the spin ends. The new slider **"in"**, under Putting on the kit, sets how long the spin takes.
+- **Hop sliders** have clearer names under four headings: When a hop starts, How far a hop reaches, Speed and arc, and How a hop looks. Each has a short note under it.
+- **One Save:** every Save button now saves both the map and every moved slider. That includes a new Save beside Restore all. Reset to defaults still resets only sliders, and Undo still undoes only map changes.
+- **Get all items** replaces the two Give buttons.
+- **Menu button:** it's now at the top right, and Run is at the top left.
+- **Editor size:** drag the editor's left edge (it turns orange) to make it wider or narrower. After a save, it keeps that width and the map stays scrolled where it was.
+
+**Your hop values:** as I said earlier, nothing newer than your 21:25 import last night exists anywhere I can reach. Hop reach stays at 3.2 m. If you saved again after 21:25, check Dropbox's version history of src\key.js, then send me that version or its time; don't press Restore.
+
+**Proposed Tessera Records** (I'll enter them when you say yes):
+1. **New decision: "Key items are taken by coming close"** (M1 M2 M3). Text: "The player takes a key item lying in the world, such as the special gem or the golden fish scale, and the Gatherer's Kit, by coming close to it, with no button. It flies to them, and they spin round and hop, as when they put on the kit. It replaces 'Key items are never picked up automatically' (27 October 2026) and the take button for the special gem in the decision on the tool refinery (27 October 2026)."
+2. **Find the Gatherer's Kit v4:** add "The player takes the kit by coming close to it, with no button." Also add its numbers: the satchel flies onto your hip in 0.7 s on a 0.6 m arc, the strap wraps in 1.3 s, and you spin round once in 1.3 s and hop 0.25 m.
+3. **Feed a mechanical creature v6:** the scale "flies to them, and they spin round and hop", added to the sentence about swimming to it.
+
+No records for the editor tools, the hop slider names, Save or the buttons, since those are trial tools.
+
+Q1. Should the **Claim** buttons (the bottle and the upgraded gemstone) also become automatic? I left them as they are, and I recommend keeping them, since you choose when to collect those.
+
+**Wrap-up:** the handover is updated and pushed. This conversation is saved to claude-logs, but only on this computer: claude-logs still has no GitHub repository. Create the empty private repository MilliStudio/claude-logs on GitHub and I'll push it. Today's hours aren't logged; I'll ask when you say you're done for the day.
+
+---
+
+### Dani · 2026-11-02 13:01
+
+Find the Gatherer's Kit v4: add "The player takes the kit by coming close to it, with no button." Also add its numbers: the satchel flies onto your hip in 0.7 s on a 0.6 m arc, the strap wraps in 1.3 s, and you spin round once in 1.3 s and hop 0.25 m.
+Feed a mechanical creature v6: the scale "flies to them, and they spin round and hop", added to the sentence about swimming to it.
+
+these seem like a repetitions sice all key items are obtained the same way. so you can instead say it's obtained l ike any other key item, and add the specifications to obtaining key items design doc
+no machines and apparatuses retain their claim windows
+
+---
+
+### Claude · 2026-11-02 13:02
+
+Understood: the kit and the creature's scale will each say they're obtained like any other key item, the numbers go in one place, and the Claim buttons stay. Finding the record on obtaining key items:
+
+No feature is about obtaining key items. Checking the other design tables and the printed DOCS:
+
+Entering the four records:
+
+Creating the new feature first, so a refusal leaves nothing half-entered:
+
+All four are in. Checking the new feature as saved, and the reprinted DOCS:
+
+Recorded and pushed. Updating the handover and the saved conversation text to match:
+
 ---
 
 Closing note (2 November 2026): Built and pushed v0.280.0 to v0.283.0. In the map editor, a key item's tile turns it with a right-click, and the mouse's back button (its 4th) moves it from the middle to each edge and back; chests move the same way (C3>4). Key items, the kit and the golden fish scale are taken by coming close, with no Take button: a key item or the scale flies to the player, who spins round and hops, and the spin has its own slider (DEMO_SPIN_TIME). The hop sliders have clearer names under four headings. Every Save saves the map and every moved slider; a Save sits beside Restore all, Get all items replaces the two Give buttons, the menu button is at the top right, the editor's left edge drags to widen it, and the editor keeps its width and the map's scroll across saves. Dani's lost hop values: nothing newer than her import of 21:25 on 1 November exists in git, either copy or Chrome's storage; hop reach stays 3.2 m in M1 testing (Dani: "the gap value don't change it back"); Dropbox's version history of src/key.js is the last place to look. Dani should press Update M1 testing to get v0.283.0.
 
-Tessera Records, proposed, waiting for Dani's yes: a new decision, Key items are taken by coming close (M1 M2 M3), replacing "Key items are never picked up automatically" (27 October 2026); Find the Gatherer's Kit v4 and Feed a mechanical creature v6. 1 November's 8 hours still wait in C:\Users\someo\TesseraExchange\proposed-records.json for Dani's Bring in. claude-logs' GitHub repository still doesn't exist.
+Tessera Records, with Dani's yes: the decision Key items are taken by coming close (M1 M2 M3), replacing "Key items are never picked up automatically" (27 October 2026); a new feature, Take a key item, with the numbers for every key item; Find the Gatherer’s Kit v4 and Feed a mechanical creature v6 point to it; DOCS committed (Tessera b99e697). The Claim buttons stay (Dani: "no machines and apparatuses retain their claim windows"). 1 November's 8 hours still wait in C:\Users\someo\TesseraExchange\proposed-records.json for Dani's Bring in. claude-logs' GitHub repository still doesn't exist.
 
-Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.283.0). Read its CLAUDE.md and run git status. I build maps and tune in M1 testing, and move things between the copies with the buttons under Copies in the trial's Game tab. Work only in tessera-m1. First, my answer on the proposed Tessera Records. Next: the character's arms, once I say how they look; then more mechanics, as I ask. Work only on what I ask. I'll tell you when I'm done for the day.
+Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.283.0). Read its CLAUDE.md and run git status. I build maps and tune in M1 testing, and move things between the copies with the buttons under Copies in the trial's Game tab. Work only in tessera-m1. Next: the character's arms, once I say how they look; then more mechanics, as I ask. Work only on what I ask. I'll tell you when I'm done for the day.
