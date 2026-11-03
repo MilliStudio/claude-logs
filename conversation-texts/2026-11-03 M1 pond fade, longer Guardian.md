@@ -222,10 +222,107 @@ CLAUDE.md updated. Committing the handover.
 
 Now the session text. Checking how the log script works.
 
+The longer Guardian is pushed as **v0.329.0**. You'll see it in M1 testing after **Update M1 testing**. All 180 tests pass.
+
+**Your image didn't come through.** Your message mentions fixes in an image, but I only received the pond photo from earlier. Please send it again, and I'll do the fixes next session.
+
+**Guardian:**
+- It now has seven rings: the four it had, then three more behind them. Each new ring is shorter and narrower than the one before.
+- The gaps between all the rings are 15% wider.
+- The two inner stems run through the new rings to the last one.
+- The front four rings and the tail are as long as before, so at your Guardian size (2.35 m) the whole fish is now about 3.2 m.
+- I moved its nose forward so its middle stays where it was.
+- The tail fin kept its old size, so it now looks big next to the narrow last ring. If you want it smaller, say so.
+
+**Your saved values** are in this version, with notes in key.js and the README: the pond values and colours, deep water 1.6 m and the gap 0.55 m. The new gap equals the highest step, so I tested whether a swimmer can still climb out of the pond. They can.
+
+**Wrap-up, as you asked:**
+- **Handover:** I put the pond fade details into the v0.327.0 bullet in CLAUDE.md, added a v0.329.0 bullet, and filled in the Tessera Records note the other session left for me. I didn't remove or rewrite any of its lines; I only updated the version number at the top. Next session's first step is to ask you for the missing image.
+- **Session text:** saved as "2026-11-03 M1 pond fade, longer Guardian.md", and only that file is committed. The push failed, as you expected, until the claude-logs repository exists.
+- **Tessera Records:** nothing entered for either version. The fade, the blues, the goldfish level and the Guardian's rings are looks, which count as tests, and the colour boxes are a trial tool.
+
 ---
 
-Closing note (3 November 2026, about 23:35): Built and pushed v0.327.0, the pond's fade (what lies under deep water fades into blue by its depth, so the bed doesn't show; the goldfish swim at one level; the Guardian, its scale and wet key items fade only as just under the top, so the dormant Guardian can be found; sliders and two colour boxes under Pond), after a before/after snapshot Dani approved, and v0.329.0, the Guardian longer (three narrowing rings, gaps 15% wider), with Dani's pond and fish values. Another session worked in the same folder and saved v0.326.0 and v0.328.0–v0.328.1 meanwhile; the pond's fade commit names itself v0.326.0 and the next commit renumbers it v0.327.0. Neither version is in Tessera Records: looks and a trial tool. M1 testing gets them with Update M1 testing. The image Dani meant to send with "there a few fixes (the image)" didn't arrive.
+### Dani · 2026-11-03 23:18
+
+can you add undo button to tuning values
+
+---
+
+### Claude · 2026-11-03 23:18
+
+Your rule from 2 November keeps the map's Undo separate from tuning, so this will be its own Undo for slider changes. Reading the editor's layout to place it.
+
+Adding the Undo buttons to the Tuning tab and the thing's box.
+
+Undo is wired in. Testing it in the editor on the scratch copy.
+
+Undo works: one drag is one step, a Reset to defaults can be undone, and colours too. Re-running with page errors captured, to be sure nothing fails silently.
+
+The buttons are further down the panel. Taking one more picture scrolled to them.
+
+Both Undo buttons show and work. Adding Undo to the README.
+
+Saving it as v0.330.0.
+
+Pushed. Updating the handover, since it still said v0.329.0.
+
+I've added an **Undo** button for tuning values, saved as **v0.330.0**. You'll get it in M1 testing after **Update M1 testing**. All 180 tests pass, and I tried it in the editor on a copy of the trial.
+
+- **Where:** in every thing's box, next to Reset to defaults, and in the Tuning tab, next to Save.
+- **What it does:** each press puts back your last slider change, in the editor and in the open game. It says what it put back, for example "Undone: Goldfish swim at is back to 0.5 m."
+- **One change** is:
+  - a slider you let go of, however far you dragged it
+  - a number you typed
+  - a colour you picked
+  - a box you ticked
+  - a whole Reset to defaults, so an accidental reset can be undone too
+- It goes back one change per press, wherever you made the change, and turns grey when there's nothing left to undo.
+- It forgets its list when the page reloads, so after a Save you can't undo what came before it.
+- It's separate from the map's Undo, as you set on 2 November. **Ctrl+Z** still undoes map changes only.
+
+There's no Redo for sliders yet. Tell me if you want one.
+
+The handover in CLAUDE.md now says v0.330.0. I haven't added this exchange to the session text.
+
+---
+
+### Dani · 2026-11-03 23:25
+
+the guadian is too long now. it looks stiff
+
+(sent while Claude was working) after this wrap up and tr
+
+---
+
+### Claude · 2026-11-03 23:27
+
+Noted: after this I'll wrap up and draft the Tessera Records list. Continuing with the Guardian.
+
+No leftover names. Running the tests, then photographing the new Guardian on the scratch copy.
+
+The tail end looks like it's swaying, but the Play label hides most of the fish. Adding the joints' bends to the test hook so I can read the wave as numbers.
+
+The wave works. Lying on the bed, each back ring curves 4.8° to one side. Swimming, the bends move along the body, for example 5°, 8°, 5° and then −3°, −8°, −7°. Updating the README.
+
+v0.331.0 is pushed. Now the wrap-up. First the Tessera Records list: reading how records are made and what they say now about the pond, goldfish and Guardian.
+
+Searching Tessera Records' features and decisions for anything this session changed (the pond, goldfish, the Guardian's body).
+
+No record yet describes the goldfish, the water's tint or the Guardian's segments, so those changes need no edits. Checking how a decision record looks, so I can draft the one candidate.
+
+Nothing in Tessera Records describes what changed, so there's one candidate decision to propose. Updating the handover and session text before I list it.
+
+The clock says 23:34, so the times I wrote in the handover were guesses and too late. Checking the real commit times.
+
+Corrected times: v0.329.0 at 23:11, v0.330.0 at 23:21, v0.331.0 at 23:33. Fixing them in the handover.
+
+---
+
+Closing note (3 November 2026, about 23:40): Built and pushed v0.327.0 (22:48), the pond's fade: what lies under deep water fades into blue by its depth, so the bed doesn't show; the goldfish swim at one level; the Guardian, its scale and wet key items fade only as just under the top, so the dormant Guardian can be found; sliders and two colour boxes under Pond. Dani approved it after a before/after snapshot. Then v0.329.0 (23:11), the Guardian longer, with Dani's pond and fish values; v0.330.0 (23:21), Undo for the sliders; and v0.331.0 (23:33), the Guardian shorter and bending, after Dani found it "too long now. it looks stiff". Another session worked in the same folder and saved v0.326.0 and v0.328.0–v0.328.1 meanwhile; the pond's fade commit names itself v0.326.0 and the next commit renumbers it v0.327.0. M1 testing gets all of it with Update M1 testing. The image Dani meant to send with "there a few fixes (the image)" didn't arrive.
+
+Tessera Records (Dani: "after this wrap up and tr"): no record describes the goldfish, the water's tint or the Guardian's body, so nothing needs changing; the looks and the trial tools need no record. One decision was proposed at about 23:40 and waits for Dani's yes: "Things to find stay visible under water".
 
 claude-logs has no GitHub repository yet: this text is committed locally only.
 
-Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1). Read its CLAUDE.md and run git status; uncommitted changes in src/key.js or src/planet-plan.js are Dani's saves, to be committed with the next version. First ask Dani for the image of fixes that didn't arrive on 3 November. Next: as in the handover's Next.
+Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1). Read its CLAUDE.md and run git status; uncommitted changes in src/key.js or src/planet-plan.js are Dani's saves, to be committed with the next version. First ask Dani for the image of fixes that didn't arrive on 3 November, and whether to enter the proposed decision if she hasn't answered. Next: as in the handover's Next.
