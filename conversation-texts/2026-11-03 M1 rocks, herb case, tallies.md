@@ -421,6 +421,30 @@ That other session's commit is v0.315.0, and it already took in your 13:16 impor
 
 Handover pushed. Now the session text, regenerated over the whole session so it includes this afternoon.
 
+Done. Everything you approved is in Tessera Records, and the session is wrapped up.
+
+**Entered in Tessera Records** (about 16:40):
+- **99 decisions** now give a reason as their "why". Your 7 edits went in word for word. Each save carries a note saying it was your one-off exception, and the old whys stay in each decision's history. You didn't click "A secret passage opens a doorway", so its "why" is unchanged.
+- **3 new decisions:** porous rocks, hitboxes, and the herb as a key item.
+- **2 new features:** "Show a tally" and "Find the straw case of herbs".
+- **The four tally features** now point to "Show a tally" instead of describing the tally each time, and "Gather a resource" has its new sentence.
+- The DOCS files Tessera Records rewrote are committed and pushed, and Tessera Records is backed up.
+
+**Something to know:** another Claude session is working in the M1 trial's folder at the same time. At 16:23 it made v0.315.0 ("big deliveries fly as fewer things"), and that version already includes your 13:16 import. It still has unsaved changes to the editor and the game. I left them alone and noted this in the handover.
+
+**Saved:**
+- **Handover:** the M1 trial's CLAUDE.md is updated, committed and pushed.
+- **Session text:** saved and committed on this computer, with the prompt for the next session. The push to GitHub failed again because MilliStudio/claude-logs doesn't exist there yet. Create it as an empty private repository at github.com/new, with no README, and I'll push.
+
+**Q1.** So future decisions get this right without you having to repeat it, may I add this rule under "Recording things" in the Tessera file? I recommend yes.
+> A decision's why gives the reason it was made, not Dani's request. Where Dani gave no reason, Claude proposes one for her to check (Dani, 2026-11-03). In the design text, something several features share gets its own section, which they point to, and examples clarify rather than list everything (Dani, 2026-11-03).
+
 ---
 
-Closing note (3 November 2026, about 16:50): Built and pushed v0.312.0 (porous rocks), v0.313.0 (the straw case of herbs) and v0.314.0 (tallies within 3 tiles). Then, in Tessera Records, entered with Dani's approval of each item on a local review page: the decisions A tile keeps all its porous rocks, Harvestables keep their hitboxes on their tile, and The herb of awakening is a key item placed on the map; the features Show a tally and Find the straw case of herbs; the four tally features pointing to Show a tally; the rocks and hitboxes sentence in Gather a resource; and 99 decisions' whys rewritten to give the reason instead of Dani's request, as her one-off exception to never editing decisions (7 with her own edits; A secret passage opens a doorway left as it was). Tessera DOCS f5df8f8. Another Claude session made v0.315.0 in the same folder at 16:23 (big deliveries fly as fewer things, with Dani's 13:16 import) and still had uncommitted work at 16:45. Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1). Read its CLAUDE.md and run git status; uncommitted changes belong to the other session unless it has finished and committed them. Next: as in the handover's Next.
+### Dani · 2026-11-03 16:42
+
+approved
+
+---
+
+Closing note (3 November 2026, about 16:55): Built and pushed v0.312.0 (porous rocks), v0.313.0 (the straw case of herbs) and v0.314.0 (tallies within 3 tiles). Then, in Tessera Records, entered with Dani's approval of each item on a local review page: the decisions A tile keeps all its porous rocks, Harvestables keep their hitboxes on their tile, and The herb of awakening is a key item placed on the map; the features Show a tally and Find the straw case of herbs; the four tally features pointing to Show a tally; the rocks and hitboxes sentence in Gather a resource; and 99 decisions' whys rewritten to give the reason instead of Dani's request, as her one-off exception to never editing decisions (7 with her own edits; A secret passage opens a doorway left as it was). Tessera DOCS f5df8f8. Dani approved a new rule in the Tessera file's Recording things: a decision's why gives the reason; shared things get their own section; examples clarify. Another Claude session made v0.315.0 in the same folder at 16:23 (big deliveries fly as fewer things, with Dani's 13:16 import) and still had uncommitted work at 16:45. Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1). Read its CLAUDE.md and run git status; uncommitted changes belong to the other session unless it has finished and committed them. Next: as in the handover's Next.
