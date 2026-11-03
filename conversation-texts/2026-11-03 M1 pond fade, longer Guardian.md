@@ -317,12 +317,78 @@ The clock says 23:34, so the times I wrote in the handover were guesses and too 
 
 Corrected times: v0.329.0 at 23:11, v0.330.0 at 23:21, v0.331.0 at 23:33. Fixing them in the handover.
 
+The Guardian is shorter and now bends, saved as **v0.331.0**. You'll see it after **Update M1 testing**. All 180 tests pass.
+
+**Guardian:**
+- **Shorter:** its three back rings, and the gaps between them, are half their earlier length. At your Guardian size (2.35 m) the whole fish is about 2.85 m instead of 3.2 m. The rings still narrow toward the tail.
+- **Less stiff:** each back ring sits on a joint.
+  - While it swims, the rings bend side to side in a wave that runs down its back to the tail.
+  - While it lies dormant on the bed, they curve slightly to one side.
+  - Before, the body was one rigid piece and only the tail fin moved.
+- **Two new sliders under Pond:** **Guardian's back rings** sets their length (now × 0.5), and **Guardian bends** sets how far each ring bends (now 8°).
+- **Tested on a copy with your map:** lying, each joint bends 4.8°. After I fed and revived it, the bends moved down its back as it swam.
+
+**Wrap-up:** the handover in CLAUDE.md is updated. I also fixed its times: v0.329.0 was 23:11, v0.330.0 23:21 and v0.331.0 23:33; my earlier guesses were too late. The session text is updated and committed on its own. The push to GitHub fails until the claude-logs repository exists, as you said.
+
+Your image of "a few fixes" still hasn't arrived. The next session will ask you for it.
+
+**Tessera Records:** nothing in it describes the goldfish, the water's colour or the Guardian's body, so no record needs changing. This session's looks and trial tools need no record:
+- the pond's fade and its blues
+- the goldfish's level
+- the Guardian's rings and bending
+- the colour boxes and the sliders' Undo
+
+One decision is worth recording, because it sets a rule for M2's water:
+
+**New decision: "Things to find stay visible under water"** (Environmental interactions and puzzles; M1 M2 M3; 3 November 2026, by you)
+- **Decision:** "Whatever the water looks like, a Guardian and key items under water stay clearly visible, so the player can find them."
+- **Why:** "A dormant Guardian lies on its pond's bed, and key items can lie under water. A water look that fades out the bottom would otherwise hide them."
+
+**Q1.** Shall I enter this decision? I recommend yes: without it, M2's water art could hide the dormant Guardian. The wording of the "why" is mine; change it if your reason is different.
+
 ---
 
-Closing note (3 November 2026, about 23:40): Built and pushed v0.327.0 (22:48), the pond's fade: what lies under deep water fades into blue by its depth, so the bed doesn't show; the goldfish swim at one level; the Guardian, its scale and wet key items fade only as just under the top, so the dormant Guardian can be found; sliders and two colour boxes under Pond. Dani approved it after a before/after snapshot. Then v0.329.0 (23:11), the Guardian longer, with Dani's pond and fish values; v0.330.0 (23:21), Undo for the sliders; and v0.331.0 (23:33), the Guardian shorter and bending, after Dani found it "too long now. it looks stiff". Another session worked in the same folder and saved v0.326.0 and v0.328.0–v0.328.1 meanwhile; the pond's fade commit names itself v0.326.0 and the next commit renumbers it v0.327.0. M1 testing gets all of it with Update M1 testing. The image Dani meant to send with "there a few fixes (the image)" didn't arrive.
+### Dani · 2026-11-03 23:40
 
-Tessera Records (Dani: "after this wrap up and tr"): no record describes the goldfish, the water's tint or the Guardian's body, so nothing needs changing; the looks and the trial tools need no record. One decision was proposed at about 23:40 and waits for Dani's yes: "Things to find stay visible under water".
+when he turns his body should ben, not turn like a stick though
+
+
+New decision: "Things to find stay visible under water" (Environmental interactions and puzzles; M1 M2 M3; 3 November 2026, by you)
+
+Decision: "Whatever the water looks like, a Guardian and key items under water stay clearly visible, so the player can find them."
+Why: "A dormant Guardian lies on its pond's bed, and key items can lie under water. A water look that fades out the bottom would otherwise hide them."
+
+
+not necssary. it's a given
+
+so nothing to enter i guess. can you just make the guadian turn flexibly and not lke a log, then can end this conversation
+
+---
+
+### Claude · 2026-11-03 23:40
+
+Got it: no record to enter. Now making the Guardian's body bend through its turns: the back rings will curve against the turn so the tail follows, instead of the whole fish swinging round like a stick.
+
+A thing's `facing` is already used for other things, so I'm renaming mine to `wasFacing` to avoid a clash.
+
+Now the number in key.js, its slider and the README.
+
+All 180 tests pass. Testing the turn bend on the scratch copy, with the swim wave off so only the turn shows in the numbers.
+
+Turning works. Swimming upright while turning steadily, each back ring bent about 4° away from the turn. On its back, the curve flipped over with it, as it should. Saving v0.332.0.
+
+A v0.332.0 label already exists again. Checking what happened before anything else.
+
+Pushed as v0.333.0. Now the final handover: reading CLAUDE.md as it is now, since the other session changed it.
+
+Handover pushed. Last step: the session text.
+
+---
+
+Closing note (3 November 2026, about 23:45): Built and pushed v0.327.0 (22:48), the pond's fade: what lies under deep water fades into blue by its depth, so the bed doesn't show; the goldfish swim at one level; the Guardian, its scale and wet key items fade only as just under the top, so the dormant Guardian can be found; sliders and two colour boxes under Pond. Dani approved it after a before/after snapshot. Then v0.329.0 (23:11), the Guardian longer, with Dani's pond and fish values; v0.330.0 (23:21), Undo for the sliders; v0.331.0 (23:33), the Guardian shorter and bending, after Dani found it "too long now. it looks stiff"; and v0.333.0 (23:43), the Guardian bending through its turns. Another session worked in the same folder and saved v0.326.0, v0.328.0–v0.328.1 and v0.332.0 meanwhile; two of this session's commits name themselves v0.326.0 and v0.332.0, and the commits after them renumber them v0.327.0 and v0.333.0. M1 testing gets all of it with Update M1 testing. The image Dani meant to send with "there a few fixes (the image)" didn't arrive.
+
+Tessera Records: nothing entered. No record describes the goldfish, the water's tint or the Guardian's body; the looks and trial tools need none; Dani declined the one proposed decision, "Things to find stay visible under water" ("not necssary. it's a given").
 
 claude-logs has no GitHub repository yet: this text is committed locally only.
 
-Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1). Read its CLAUDE.md and run git status; uncommitted changes in src/key.js or src/planet-plan.js are Dani's saves, to be committed with the next version. First ask Dani for the image of fixes that didn't arrive on 3 November, and whether to enter the proposed decision if she hasn't answered. Next: as in the handover's Next.
+Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1). Read its CLAUDE.md and run git status; uncommitted changes in src/key.js or src/planet-plan.js are Dani's saves, to be committed with the next version. First ask Dani for the image of fixes that didn't arrive on 3 November. Next: as in the handover's Next.
