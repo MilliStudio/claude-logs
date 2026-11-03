@@ -267,15 +267,93 @@ Updating the handover with v0.319.0, v0.320.0 and the waiting Tessera Records li
 
 Handover pushed. Telling the other session, then saving the session text.
 
+I've wrapped up the session. The handover is updated and pushed, and the session text is saved in claude-logs.
+
+The session text didn't reach GitHub: MilliStudio/claude-logs still doesn't exist there, so it's only committed on this computer. Create it as an empty private repository at github.com/new, without a README, and I'll push it.
+
+Here is the Tessera Records list. Say go, with your answer to Q1, and I'll enter it.
+
+**New decision 1: "Each drop has an average per hit"**
+Topic: Gathering, resources and refining. Milestones: M1 M2 M3. Date: 3 November 2026.
+
+> Each harvestable's drop and second drop each have an average number per hit. Each hit drops a whole number at random round it, from half the average less, rounded down, to as much more: an average of 2 drops 1 to 3, 4 drops 2 to 6, and 1 always drops 1. It replaces the 1 to 3 of the main drop and 1 of the second that every harvestable dropped.
+
+Why (my wording; you didn't give a reason, so please check it):
+
+> Each resource's yield can be tuned on its own, and each hit still varies a little.
+
+**New decision 2: "As many items burst out as a hit drops, up to 10"**
+Same topic and milestones.
+
+> At every hit, the last one too, as many items burst out of a harvestable as the hit dropped, up to 10 all together, shared between its drops as they dropped: +2 shows 2, and 20 shows 10. Every hit's burst is the same size. It replaces the bursts in "Harvest bursts are the dropped items" (3 November 2026): a few at each hit, and a bigger burst when the harvestable is used up.
+
+If Q1 is yes, it also says:
+
+> Porous rocks do the same, beside their chips. It replaces that a rock's drops burst out only when it is used up, in "Harvesting rocks and plants look different" (29 October 2026).
+
+Why (my wording, please check):
+
+> The burst shows the player how much each hit gave. The limit keeps big hits from filling the screen.
+
+**Feature "Gather a resource"**
+
+- After "Quantities depend on the levels of the harvestable and the tool.", add:
+  > Each drop has an average per hit, and each hit drops a whole number at random round it.
+- Replace:
+  > At each hit, small models of what a plant drops burst out of it and fly to the player; when any harvestable is used up, a bigger burst of its drops does the same. One that drops nothing yet bursts into cubes in its colours.
+
+  with:
+  > At each hit, as many models of its drops burst out of a harvestable as the hit dropped, up to 10, and fly to the player. One that drops nothing yet bursts into a few cubes in its colours.
+- If Q1 is yes, replace:
+  > and throws only a few small round chips, which fly toward the player and fall back; its drops burst out only when it is used up.
+
+  with:
+  > and also throws a few small round chips, which fly toward the player and fall back.
+- A new table:
+
+  | Part | Value |
+  |---|---|
+  | Items that burst out at a hit, at most | 10 |
+  | Main drops per hit, on average (pine cones, fruit, seeds, porous rock fragments, lantern pods, petals) | 2 |
+  | Second drops per hit, on average (tree bark, water drops, nectar) | 1 |
+
+The gemstone fix gets no record, because Get all items is a trial tool.
+
+**Q1.** In v0.320.0, porous rocks burst their drops at every hit, beside their chips. Your 29 October decision says a rock's drops burst out only when it's used up. Keep the new way? I recommend yes. Your 31 October decision says harvesting and its shatter work the same for every harvestable, and rocks still feel different through their knock, chips and paling.
+
+---
+
+### Dani · 2026-11-03 19:45
+
+yes and go
+
+---
+
+### Claude · 2026-11-03 19:45
+
+Entering them now. Reading how the last list was entered, so I use the same calls.
+
+The text reads right. Saving.
+
+The app returned an error on the feature save, and nothing after it ran, so the decisions weren't created. Checking whether anything was saved and what went wrong.
+
+Nothing was saved: the app saves all or nothing. Looking for the cause.
+
+Found it: my script sent the feature without its id (the app calls it record_id). Fixing and saving again.
+
+Saved: Gather a resource is now version 14, and both decisions exist. Checking that the printed documents updated, then committing them.
+
+DOCS pushed. Updating the handover's Tessera Records line, which the other session's notes now sit beside.
+
 ---
 
 Closing note (3 November 2026, about 19:45): Built and pushed v0.319.0 (Get all items' gemstone level 2 now survives a reload: the save keeps the level on its own, as the map has no refinery) and v0.320.0 (Dani's option 2: each drop of each harvestable has an average per hit, a hit drops from half the average less to as much more, and as many models burst out as the hit drops, up to 10, at every hit, the last one too; the Hit cubes, Final cubes, Final size and Final reach sliders are gone). Tested on a copy of the trial and in the editor; tests pass. Another session built path bends (v0.321.0) and path banks (v0.322.0) in the same folder at the same time; each committed only its own lines. Handover updated (commit 6e42887).
 
-Tessera Records list, waiting for Dani's go (Dani: "wrap up and tr"):
+Tessera Records list (Dani: "wrap up and tr"), entered at about 19:50 after Dani's "yes and go" (Q1 yes; Tessera DOCS 6087ed6):
 - New decision "Each drop has an average per hit" (Gathering, resources and refining; M1 M2 M3; 3 November 2026): Each harvestable's drop and second drop each have an average number per hit. Each hit drops a whole number at random round it, from half the average less, rounded down, to as much more: an average of 2 drops 1 to 3, 4 drops 2 to 6, and 1 always drops 1. It replaces the 1 to 3 of the main drop and 1 of the second that every harvestable dropped. Why (Claude's reading, for Dani to check): Each resource's yield can be tuned on its own, and each hit still varies a little.
 - New decision "As many items burst out as a hit drops, up to 10" (same topic and milestones): At every hit, the last one too, as many items burst out of a harvestable as the hit dropped, up to 10 all together, shared between its drops as they dropped: +2 shows 2, and 20 shows 10. Every hit's burst is the same size. It replaces the bursts in "Harvest bursts are the dropped items" (3 November 2026): a few at each hit, and a bigger burst when the harvestable is used up. If Q1 is yes, add: Porous rocks do the same, beside their chips. It replaces that a rock's drops burst out only when it is used up, in "Harvesting rocks and plants look different" (29 October 2026). Why (Claude's reading): The burst shows the player how much each hit gave. The limit keeps big hits from filling the screen.
 - Gather a resource: after "Quantities depend on the levels of the harvestable and the tool." add "Each drop has an average per hit, and each hit drops a whole number at random round it." Replace "At each hit, small models of what a plant drops burst out of it and fly to the player; when any harvestable is used up, a bigger burst of its drops does the same. One that drops nothing yet bursts into cubes in its colours." with "At each hit, as many models of its drops burst out of a harvestable as the hit dropped, up to 10, and fly to the player. One that drops nothing yet bursts into a few cubes in its colours." If Q1 is yes, replace "and throws only a few small round chips, which fly toward the player and fall back; its drops burst out only when it is used up." with "and also throws a few small round chips, which fly toward the player and fall back." New table: items that burst out at a hit, at most, 10; main drops per hit, on average (pine cones, fruit, seeds, porous rock fragments, lantern pods, petals), 2; second drops per hit, on average (tree bark, water drops, nectar), 1.
 - Q1: porous rocks now burst their drops at every hit, beside their chips, against "Harvesting rocks and plants look different" (29 October 2026). Claude recommends keeping it, after "Harvesting and its shatter work the same for every harvestable" (31 October 2026); rocks still differ by their knock, chips and paling.
 - Get all items is a trial tool: no record.
 
-Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1). Read its CLAUDE.md and run git status; uncommitted changes may belong to another session. If Dani has said go, enter the Tessera Records list above, with her answer to Q1. Next: as in the handover's Next.
+Prompt for the next session: Task: continue the M1 trial (DropboxStudioTesseraepositories	essera-m1). Read its CLAUDE.md and run git status; uncommitted changes may belong to another session, and Dani's map import of 19:46 waits to be committed with the next version. Next: as in the handover's Next.
