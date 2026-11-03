@@ -345,6 +345,8 @@ Saved: Gather a resource is now version 14, and both decisions exist. Checking t
 
 DOCS pushed. Updating the handover's Tessera Records line, which the other session's notes now sit beside.
 
+The folder path in the next-session prompt got mangled by the shell. Rewriting the note and saving the session text again.
+
 ---
 
 Closing note (3 November 2026, about 19:45): Built and pushed v0.319.0 (Get all items' gemstone level 2 now survives a reload: the save keeps the level on its own, as the map has no refinery) and v0.320.0 (Dani's option 2: each drop of each harvestable has an average per hit, a hit drops from half the average less to as much more, and as many models burst out as the hit drops, up to 10, at every hit, the last one too; the Hit cubes, Final cubes, Final size and Final reach sliders are gone). Tested on a copy of the trial and in the editor; tests pass. Another session built path bends (v0.321.0) and path banks (v0.322.0) in the same folder at the same time; each committed only its own lines. Handover updated (commit 6e42887).
@@ -356,4 +358,4 @@ Tessera Records list (Dani: "wrap up and tr"), entered at about 19:50 after Dani
 - Q1: porous rocks now burst their drops at every hit, beside their chips, against "Harvesting rocks and plants look different" (29 October 2026). Claude recommends keeping it, after "Harvesting and its shatter work the same for every harvestable" (31 October 2026); rocks still differ by their knock, chips and paling.
 - Get all items is a trial tool: no record.
 
-Prompt for the next session: Task: continue the M1 trial (DropboxStudioTesseraepositories	essera-m1). Read its CLAUDE.md and run git status; uncommitted changes may belong to another session, and Dani's map import of 19:46 waits to be committed with the next version. Next: as in the handover's Next.
+Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1). Read its CLAUDE.md and run git status; uncommitted changes may belong to another session, and Dani's map import of 19:46 waits to be committed with the next version. Next: as in the handover's Next.
