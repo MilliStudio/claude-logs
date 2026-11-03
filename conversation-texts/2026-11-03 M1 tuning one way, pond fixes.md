@@ -179,11 +179,47 @@ Tests pass with your map import. Saving it as v0.334.1 with the handover.
 
 Now the session text for claude-logs.
 
+Nothing needs to go into Tessera Records from tonight. Here's why:
+
+- **v0.332.0 (tuning values only go from testing to the trial):** the copies are a trial tool, and trial tools get no records.
+- **v0.334.0 (pond fixes):** the clouds only poked into the water because of the water gap, and the gap isn't in Tessera Records. The shallow edge is a look.
+- **The Guardian's work from the other session:** you already declined its proposal.
+
+If you want one anyway, I can add a line to the feature Walk on clouds: under shallow water, the clouds lie below the water's floor. Say yes and I'll enter it.
+
+Wrap-up is done:
+- **Your map import** is saved as v0.334.1 and synced, along with your pond plants swaying 6° again. The handover and README record the move as undone.
+- **Side effects of the import:**
+  - The corner pieces by the pond sit next to a pentagon again, as before the move.
+  - Your saved game in the trial was made on the moved island, so press Start over there if anything looks wrong.
+- **The session text** is saved and committed in claude-logs. It can't be pushed until you create the MilliStudio/claude-logs repository on GitHub.
+- **M1 testing** gets v0.332.0–v0.334.1 when you press Update M1 testing.
+
+---
+
+### Dani · 2026-11-04 00:27
+
+no need. good work thanks for today. pls add 8+4 hours
+
+---
+
+### Claude · 2026-11-04 00:27
+
+Adding 12 hours for 3 November (8 + 4) to the Bring in file. First checking how an hours record is written there.
+
+Checking in the records database (read-only) whether the waiting Bring in file was already brought in, so the new hours don't go in twice.
+
+2 November already shows 12 hours, so the waiting file was brought in. Confirming the two tasks came in too, then I'll write a new file holding only 3 November's hours.
+
+All of the earlier file came in. Finding an earlier hours record in that file's format to copy its fields.
+
+Everything from the earlier file is in. Writing a new Bring in file with 12 hours for 3 November.
+
 ---
 
 Closing note (4 November 2026, about 00:45): Built and pushed v0.332.0 (23:55), tuning values go only from M1 testing to the trial: Update M1 testing keeps every tuning value M1 testing has, and Send tuning values to M1 testing is gone (Claude copies them the other way only when Dani asks). Dani's 23:26 update had given M1 testing the pond and fish values saved in the trial, as the old rule passed on every value not changed there. Then v0.334.0 (00:20), the pond's fixes from Dani's picture: the white shards were cloud puffs poking up through shallow water's bed, now kept below it; the pale strips were shallow water's sand at its edge with deep water, seen through deep water's thinner top, and now shallow water's top bends down to its bed there, in its own look. A light-blue water side was tried first, and Dani rejected it ("the shallow water can't have tile sides"). Then v0.334.1 (00:40): Dani's map import of 00:15, which put the island back where it lay before v0.326.0's move ("i needed the move to get more space to build, but found out the map is extendable"). Another session worked in the same folder until about 23:50 (v0.333.0, the Guardian bending through its turns).
 
-Tessera Records: nothing entered. Claude recommended none: v0.332.0 is a trial tool, the clouds' fix matters only with the water gap, which Tessera Records doesn't have, and the shallow edge is a look. Offered: a line in Walk on clouds saying the clouds lie below shallow water's bed.
+Tessera Records: nothing entered but hours. 3 November's 12 hours (Dani: "pls add 8+4 hours") wait in the Bring in file. Claude recommended none: v0.332.0 is a trial tool, the clouds' fix matters only with the water gap, which Tessera Records doesn't have, and the shallow edge is a look. Offered: a line in Walk on clouds saying the clouds lie below shallow water's bed.
 
 claude-logs has no GitHub repository yet: this text is committed locally only.
 
