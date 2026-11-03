@@ -1,4 +1,4 @@
-# 3 November 2026, midday, M1 trial: porous rocks round the average size, the straw case of herbs, tallies within 3 tiles
+# 3 November 2026, midday and afternoon, M1 trial and Tessera Records: porous rocks round the average size, the straw case of herbs, tallies within 3 tiles; decisions' whys rewritten to give their reasons
 
 The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Private: never commit or share.
 
@@ -245,6 +245,182 @@ Why: "the object tallies shouldn't be showing from that far away. three tiles aw
 
 Saving the session text now.
 
+The records list is above, and nothing is entered yet. Say "ok" (or change any line) and I'll enter it all.
+
+Wrap-up:
+- **Handover:** the M1 trial's CLAUDE.md now covers v0.312.0 to v0.314.0, the records list waiting for your go, and your 13:16 import. It's committed and pushed.
+- **Your 13:16 import** is not committed yet. It has the straw case on 4,0, the kit on 11,2 and rocks at 2.7, 4 a tile. It goes in with the next version.
+- **Session text:** saved as `claude-logs\conversation-texts\2026-11-03 M1 rocks, herb case, tallies.md`. It has the records list and the prompt for the next session. It's committed on this computer, but the push to GitHub failed again because MilliStudio/claude-logs doesn't exist there yet. To fix it, create an empty private repository with that name at github.com/new, with no README. Then I can push.
+
 ---
 
-Closing note (3 November 2026): Built and pushed v0.312.0 (a tile keeps all its porous rocks, each round the Average size, no two alike, none hidden in another; Dani's import at 12:27), v0.313.0 (the herb of awakening in a straw case, a key item placed on the map, instead of coming with the kit) and v0.314.0 (tallies only within 3 tiles, with a Tally shows within slider; Dani's import at 13:04). Dani's import at 13:16 (rocks 2.7, 4 a tile; the kit on 11,2; the straw case on 4,0) waits uncommitted for the next version. Tessera Records: the list above waits for Dani's go. Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.314.0). Read its CLAUDE.md and run git status. Next: Dani's go on the Tessera Records list in this session text, then enter it; commit her 13:16 import with the next version.
+### Dani · 2026-11-03 15:43
+
+the "why" to wach decision are not correnctly used. they should state the reason the decision was made, not state my instructions alone. for example, why talliess show only near the player: because the screen would otherwise be cluttered
+Unfortunately when i looked at all the decision in tr, this was mostly the case. why stated my request, not why i requested it. any way you can fix them?
+
+4. "Tallies show only near the player" (UI/UX)
+THis was in the game before. if not then add it. but i'm sure it worked this way before. no need to look that up. if the current design doc doesn't you can add it.
+
+Take a key item: in the input's examples, after "a golden fish scale", add "the straw case of herbs of awakening".
+not all examples need to be added. examples are there to clarify not to list everything. the herb case sohuld be mentioned in it's own section as a key object
+
+Supply a dormant object, Restore a machine in pieces, Unlock with a floating object and Feed a mechanical creature (a Guardian): after each tally sentence, add:
+It shows only while the player is within 3 tiles.
+same issue. this is repetition. tally should have it's own sectioin in the design doc. otherwise you're repeating
+
+---
+
+### Claude · 2026-11-03 15:44
+
+I'm checking whether Tessera Records lets a saved decision's "why" change, then reading all decisions.
+
+Now I'm pulling every decision with its "why" to see how many need fixing.
+
+I'm finding where key items and the UI are described in the design documents, to place the herb case and the tally sections.
+
+Tessera Records' own screen says a saved decision can't be edited, only its title, so fixing the whys needs your yes. Now I'm listing exactly which decisions need a new why.
+
+100 decisions need a new why. Before drafting them, I'm checking how the apparatus and the kit describe the herb, so the herb case section matches.
+
+---
+
+### Dani · 2026-11-03 15:49
+
+(sent while Claude was working) i said they can't be changed, but this is an exception, because as they are now they are not complete and don't serve their purpose. so you can change them for this
+
+---
+
+### Claude · 2026-11-03 15:51
+
+Drafting the 100 reasons now. First, a quick check in the game of when a tally disappears, so the new tally section describes it correctly.
+
+The tally shows until its object wakes (or, for a floating object, until it vanishes). Writing the reasons file now.
+
+Written for: you, to check before anything goes into Tessera Records.
+
+This is a big batch: 100 decisions get a new "why". I've drafted all of them, and nothing is entered yet. Your exception is noted: the 25 October rule stays as it is, and each save will carry the note "Dani, 3 November 2026: exception, the whys were incomplete".
+
+## The whys (open in VS Code's compare view)
+
+The current "why" is on the left and my proposal is on the right.
+- **23** take the reason from your own words. Example: "Key items are small and were hard to see. The shine makes them stand out wherever they lie."
+- **77** are marked **(my reading)**. You never gave a reason for these, so I worked one out, and they need your check most. Example, for "No jump button": "Movement is the player's main input, and a phone leaves no thumb free for a jump button. Hopping by walking into a ledge keeps the controls to walking and suits a relaxing game."
+- Your quotes leave the current text but stay in each decision's history.
+- **Left alone:** 76 decisions have no "why" at all, and most of them are your own early ones with no reason on record. Whys that already give a reason also stay, such as "A result of the research on cozy games…".
+- **One fix along the way:** "Plant/machine symbiosis… concentrated in… apparatuses" had a "why" copied from the refinery decision by mistake. It gets its own reason.
+
+## The revised list
+
+**Decisions 1–3:** the texts stay as before. Only their whys change:
+1. "A tile keeps all its porous rocks": *One big boulder, or rocks that all look alike, doesn't look like a cluster. A cluster must show several rocks round the size set for them.*
+2. "Harvestables keep their hitboxes on their tile": *(my reading) A hitbox reaching into the next tile blocks a way the map didn't plan. Maps are built tile by tile, so what blocks the way must stay on its own tile.*
+3. "The herb of awakening is a key item placed on the map": *(my reading) Finding the herb becomes part of exploring the map, as with the other key items, and the map decides where the player gets it.*
+
+**Decision 4 is dropped.** The 3-tile rule goes into the tally's own section instead.
+
+**New feature "Show a tally"** (UI/UX, M1)
+- Input: The player is within 3 tiles of something that still needs deliveries: a dormant object, such as a machine in pieces, a Lantern Sprout or a Guardian, or a floating object.
+- Behaviour: A tally shows over it, with no window and no background: a tally line for each kind it needs. Each line has a count, such as 0/20 (what has come in of what is needed), and a token beside it. The token is a cube in the kind's colour for a resource, or a small model of the object for a key item. Each count goes up as each delivered item lands. The tally shows until the object wakes, or until a floating object vanishes. Farther than 3 tiles away, counting tile by tile, it doesn't show.
+- Values: Shows within: 3 tiles.
+- Saved: Nothing. Each object saves what it has been given.
+
+**The four features with tallies then point to that section instead of describing the tally again:**
+- Supply a dormant object: "Its tally shows on top of it (see Show a tally)."
+- Restore a machine in pieces: "Its tally shows over the pieces, with a line for each key item (see Show a tally)."
+- Unlock with a floating object: "…its tally shows over it (see Show a tally), and it takes what it needs from what the player carries."
+- Feed a mechanical creature (a Guardian): "Its tally shows over it (see Show a tally)."
+
+**New feature "Find the straw case of herbs"** (Environmental interactions and puzzles, M1)
+- Input: The player comes close to the straw case of herbs and takes it like any other key item (see Take a key item).
+- Behaviour: The straw case of herbs is a key item: a straw container like a pencil case, with herbs of awakening sticking out of one end. It lies on the map and shines like any other key item until the player takes it. It gives the player one herb of awakening, which the apparatus needs to make a bottle of awakening. The Gatherer's Kit doesn't come with the herb.
+- Saved: Whether the case has been taken.
+
+**Unchanged from before:** the sentence added to "Gather a resource". "Take a key item" is left as it is.
+
+Change any line you like, or say "ok" and I'll enter everything at once.
+
+---
+
+### Dani · 2026-11-03 15:55
+
+would you please place approve button under each green highlightd text in the doc file so that i can approve faster
+
+---
+
+### Claude · 2026-11-03 15:55
+
+A Markdown file in VS Code can't hold buttons, so I'll make a small review page that runs on your computer. Each proposed reason gets an Approve button, and your clicks are saved to a file I can read. It stays local because a few of these decisions are private ones about Jousef.
+
+---
+
+### Dani · 2026-11-03 15:56
+
+(sent while Claude was working) you can add text field in case i want to edit
+
+---
+
+### Claude · 2026-11-03 15:56
+
+Each proposed reason already sits in a text field you can edit, and Approve saves your edited text. Starting the page now.
+
+It loads all 103 reasons (100 old decisions and the 3 new ones), and a test click saved and undid itself. Taking a quick picture to check how it looks.
+
+The page looks right. Opening it in your browser.
+
+---
+
+### Dani · 2026-11-03 15:56
+
+(sent while Claude was working) so make the proposed text in a taxt box + an approvve button
+
+---
+
+### Claude · 2026-11-03 15:57
+
+I've opened the review page in your browser at http://127.0.0.1:4895/. Each decision shows its proposed reason in a green text box with an **Approve** button under it, as you asked.
+
+- **Editing:** click into the green box and change the text. Approve then saves your version.
+- **Keep as now** leaves a decision's current "why" unchanged.
+- **Undo** reverses a click.
+- **"my reading"** marks the 77 reasons I worked out. The 23 without it come from your own words.
+- **"The decision"** opens the full decision text, in case you need it to judge the reason.
+- **The 3 new decisions** (rocks, hitboxes, herb case) are at the bottom.
+
+Each click is saved straight away to a file on your computer, so you can stop and come back. Tell me when you're done, and I'll enter what you approved together with the rest of the list: the two new features and the tally changes.
+
+---
+
+### Dani · 2026-11-03 16:37
+
+good job, thanks. yu can wrap up
+
+---
+
+### Claude · 2026-11-03 16:37
+
+Checking what you approved on the page before I wrap up.
+
+You approved 102 of the 103. Checking which one is left and which texts you edited.
+
+Entering now. The script first checks that every change finds its exact text, then saves the whys and the feature edits in one go: all of them or none.
+
+The check passed: 99 whys, 5 feature edits, 3 new decisions and 2 new features. The crash line at the end is Node closing on Windows after the check, not an error in the data. Saving now.
+
+Saved. Verifying in Tessera Records that every why reads as you approved it.
+
+All 99 match, and the new records are in place. Committing the DOCS files Tessera Records rewrote.
+
+DOCS pushed. Backing up Tessera Records and closing the review page's server.
+
+Now the handover in the M1 trial's CLAUDE.md.
+
+Your 13:16 import isn't the only change in the folder any more. Several code files are modified too, so I'm checking what's going on before touching anything else.
+
+That other session's commit is v0.315.0, and it already took in your 13:16 import. I'll correct those two lines in the handover so it doesn't say the import is still waiting.
+
+Handover pushed. Now the session text, regenerated over the whole session so it includes this afternoon.
+
+---
+
+Closing note (3 November 2026, about 16:50): Built and pushed v0.312.0 (porous rocks), v0.313.0 (the straw case of herbs) and v0.314.0 (tallies within 3 tiles). Then, in Tessera Records, entered with Dani's approval of each item on a local review page: the decisions A tile keeps all its porous rocks, Harvestables keep their hitboxes on their tile, and The herb of awakening is a key item placed on the map; the features Show a tally and Find the straw case of herbs; the four tally features pointing to Show a tally; the rocks and hitboxes sentence in Gather a resource; and 99 decisions' whys rewritten to give the reason instead of Dani's request, as her one-off exception to never editing decisions (7 with her own edits; A secret passage opens a doorway left as it was). Tessera DOCS f5df8f8. Another Claude session made v0.315.0 in the same folder at 16:23 (big deliveries fly as fewer things, with Dani's 13:16 import) and still had uncommitted work at 16:45. Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1). Read its CLAUDE.md and run git status; uncommitted changes belong to the other session unless it has finished and committed them. Next: as in the handover's Next.
