@@ -291,6 +291,48 @@ Another map import of yours (00:49) went into that commit. Checking what it chan
 
 Now the handover: the records are entered, so the waiting list goes.
 
+Everything is entered, committed and pushed. It took about 15 minutes, not the hour or more I estimated.
+
+**Tessera Records** (the DOCS reprints are committed in the Tessera repository):
+- **Decisions you added:** "obtaining non harvestable objects animation" is filed under Gatherer's Kit and tools. Your Guardian decision is filed under Guardians, titled "A map can have several Guardians", for M1 M2 M3.
+- **New features:** "Awakening animation when a dormant object awakens" now holds the zoom's numbers, and "The camera zooms out and back" is deleted. "Giant flower" is new, for M1 M2 M3.
+- **Ladder vines:** both features are renamed and rewritten with your imported numbers. Four new decisions:
+  - Climbing plants are called ladder vines.
+  - Ladder vines are planted from the inventory.
+  - The body starts fading as soon as it is over the void.
+  - Floating objects can raise corner pieces.
+- **Other edits:**
+  - the harvestable flower sentence in "Gather a resource";
+  - the Guardian feature without the zoom and the shatter;
+  - Hop at 20° for leaves;
+  - the void fade at 0 s and 4.5 s;
+  - the chest sentences;
+  - corner pieces in "Unlock with a floating object";
+  - the kit in "A key item shines";
+  - the three open questions renamed.
+
+**Bring in:** press your button there. It holds 2 November's hours (8 → 12) and the two M1 tasks. I tested the file on a copy of the database first, and it shows one change and two additions.
+
+**The game (v0.309.0):** the pouch, the Tuning tab and the editor now say ladder vine and ladder vine sprout. Your 00:49 map import came in while I worked, so it's in this version too: corner pieces on 16,-3 and 18,-2 that rise with the pond's diamond, and a shorter diamond chain. Press **Update M1 testing** to get it.
+
+**Q1.** Two records give older numbers than the game uses:
+- Hop's table says hops wait 0.2 s. The game has waited 0.45 s since 1 November.
+- "Take a key item" says the spin goes once round in 1.3 s with a 0.25 m hop. The game spins twice round in 0.7 s, with a 0.87 m hop in 0.35 s.
+
+I recommend updating both tables to the game's numbers, marked as being tuned. Should I?
+
 ---
 
-Closing note (3 November 2026): Built and pushed v0.306.0 to v0.309.0: nothing below the tiles, a new default giant flower, the flower box's Reset to saved, 17,-3's corner piece linked; the kit's shine and a 21% bigger worn satchel and strap; Dani's map and tuning imports from 00:20 to 00:49; the names ladder vine and ladder vine sprout. Tessera Records: Dani's approved list entered with her "ok to all" (DOCS committed, Tessera dfe2718); the Bring in file holds 2 November's hours (8 to 12) and two M1 tasks, waiting for her button. Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.309.0). Read its CLAUDE.md and run git status. Next: my view of v0.309.0; the two records out of step with the game (Hop's waits, Take a key item's spin).
+### Dani · 2026-11-03 01:02
+
+they change so often. ill tell you when to update them. if it's a rule to reming me, remove it
+
+---
+
+### Claude · 2026-11-03 01:02
+
+Checking the rules files for anything that makes me flag or remind you about record numbers.
+
+---
+
+Closing note (3 November 2026): Built and pushed v0.306.0 to v0.309.0: nothing below the tiles, a new default giant flower, the flower box's Reset to saved, 17,-3's corner piece linked; the kit's shine and a 21% bigger worn satchel and strap; Dani's map and tuning imports from 00:20 to 00:49; the names ladder vine and ladder vine sprout. Tessera Records: Dani's approved list entered with her "ok to all" (DOCS committed, Tessera dfe2718); the Bring in file holds 2 November's hours (8 to 12) and two M1 tasks, waiting for her button. Record numbers are updated only when Dani says. Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.309.0). Read its CLAUDE.md and run git status. Next: my view of v0.309.0.
