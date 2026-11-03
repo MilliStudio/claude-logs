@@ -304,6 +304,41 @@ Why (proposed): drawn as a line, a path shows where it leads, as walls show wher
 
 Saving the session text now.
 
+The session text is committed locally, but the push didn't go through: the branch has no upstream yet. Trying the first push to GitHub.
+
+Wrap-up is done, and the Tessera Records list is above, waiting for your go. Nothing is entered yet.
+
+- **Handover:** updated with v0.315.0 to v0.317.0, the waiting records list and the next steps, and trimmed a little (3,409 to 3,267 words). Committed and pushed.
+- **Session text:** saved as "2026-11-03 M1 deliveries, paths, item models", with the prompt for the next session, and committed on this computer. It didn't reach GitHub, because the empty private repository MilliStudio/claude-logs still doesn't exist there. Create it at github.com/new with no README, and I'll push.
+- **The other session:** another Claude session is working in this same folder right now, adding Size variance sliders for the harvestables. Its changes to key.js, planet.js, sizes.js and the tests aren't saved as a version yet. I left them alone and noted it in the handover.
+- **Last session's list:** that other session already entered it at about 16:40, so nothing from it is still waiting.
+
+Say "ok" to enter the list, or tell me which items to drop or change, for example decision 4 on paths if you count them as a map test.
+
 ---
 
-Closing note (3 November 2026, about 17:25): Built and pushed v0.315.0 (big deliveries fly as fewer things, the Big deliveries slider; Dani's 13:16 import and saves), v0.316.0 (paths as sunk strips across their tiles, forked paths, Width and Sink sliders) and v0.317.0 (items as 3D models everywhere icons showed, deliveries and harvest bursts as models, pop-up numbers keep the flat icons). Another Claude session was working in the same folder (Size variance sliders, uncommitted); its files were left alone. Tessera Records: the list above waits for Dani's go. Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.317.0). Read its CLAUDE.md and run git status. Next: Dani's go on the Tessera Records list in the session text "M1 deliveries, paths, item models", then enter it.
+### Dani · 2026-11-03 18:42
+
+just enter them
+
+---
+
+### Claude · 2026-11-03 18:42
+
+Entering the list now: finding how the design API takes new decisions and feature edits.
+
+Reading the topics, the decisions my new ones replace, and the seven features' current text.
+
+Every edit matched exactly once. Saving now.
+
+Saved. Now committing the DOCS files Tessera Records rewrote, and backing up.
+
+Only the approved changes are in the DOCS diff. Committing and pushing them.
+
+Pushed and backed up. Now the handover: the waiting list becomes "entered".
+
+Confirmed: the other session entered nothing for v0.318.0. Committing the handover, then adding this exchange to the session text.
+
+---
+
+Closing note (3 November 2026, about 18:50): Built and pushed v0.315.0 (big deliveries fly as fewer things, the Big deliveries slider; Dani's 13:16 import and saves), v0.316.0 (paths as sunk strips across their tiles, forked paths, Width and Sink sliders) and v0.317.0 (items as 3D models everywhere icons showed, deliveries and harvest bursts as models, pop-up numbers keep the flat icons). Another Claude session committed v0.318.0 (Size variance sliders) in the same folder. Tessera Records: Dani said "just enter them"; four decisions and seven feature edits entered at about 18:45 (Tessera DOCS 2018bfc), databases backed up. claude-logs still can't be pushed: MilliStudio/claude-logs doesn't exist on GitHub. Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.318.0). Read its CLAUDE.md and run git status. Next: Dani's view of v0.315.0–v0.318.0 after Update M1 testing, then what she asks.
