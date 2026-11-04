@@ -550,6 +550,29 @@ Every earlier conversation's images are already saved, not just this one's: 1,34
 
 Every conversation now has a text: 112 in all, back to 20 September 2026. I'll add that to today's closing note, write today's text again so it includes these last messages, then commit:
 
+Nothing is gone, as far as I can see. Every earlier conversation now has its images saved and a text, as far back as the logs go.
+
+- **Images:** these were already saved for all of them in the previous step, not just today's: 1,347 images from all 135 logs.
+- **Texts:** 33 earlier conversations had no text. Each now has one, written from its log, with its images shown or linked where they came. You now have 112 texts in `claude-logs\conversation-texts`. One more conversation (28 October) already sits inside another text, so it got no text of its own; its images have their own folder.
+- **How far back:** the oldest log is from 20 September 2026. Its first message asks Claude to write the first CLAUDE.md, so that's very likely where you started with Claude Code here. Nothing older is on this computer. Chats on the claude.ai website aren't part of these logs.
+
+All of it is committed but can't be pushed: the GitHub repository `MilliStudio/claude-logs` still doesn't exist. Until you create it (empty, private, at github.com/new), it's kept on this computer and in Dropbox. Today's text is updated with these last messages. The prompt for the next conversation is the same as in my previous message.
+
+---
+
+### Dani · 2026-11-04 16:37
+
+The player shows through what hides them. When a tile stands between the camera and the player, the player's outline shows through it. Why: the camera is close and low and never turns by itself.
+Question, if the camera can tilt it would do that first yes?
+
+---
+
+### Claude · 2026-11-04 16:37
+
+I'll check whether the camera ever tilts by itself today before answering:
+
+The camera does tilt by itself in one case, which I missed. Reading that part:
+
 ---
 
 **Closing note.** Nothing in the game changed in this conversation. With Dani, Claude worked out the water and tiles rework from her drawing, and made pictures of it. All the images of every past conversation were saved: 1,347 from 135 logs, in `claude-logs\images\`. `conversation-text.mjs` now saves each session's images and shows them in its text. Every earlier conversation now has a text too (Dani: "all the previous conversatioins, as far back as you can go"): 33 that had none were written from the backed-up logs, back to 20 September 2026, the oldest log, whose first message asks for the first CLAUDE.md. Nothing older is on this computer. The GitHub repository MilliStudio/claude-logs still doesn't exist, so all this is committed locally and kept in Dropbox until Dani creates it.
@@ -561,7 +584,7 @@ Every conversation now has a text: 112 in all, back to 20 September 2026. I'll a
 1. Decision: **Shallow water is removed; objects in deep water take its place.** Ponds have only deep water. Where the player should stand in a pond, an object stands on a deep water tile, its top level with the water's top. Why: shallow and deep water side by side made ponds' edges glitchy and hard to build with; objects give places to stand wherever the map needs them, with one kind of water.
 2. Decision: **Water is one object, shaped like its pond.** A pond's water is one object in the shape of all its connected deep water tiles, with no seams between them. Where a tile stands beside it, that tile is its side. Where none does, as beside tiles still waiting in the void, the water shows its own side, and a swimmer can swim out through it into the void. Why: one shape for the whole pond works for a pond of any shape, and for ponds whose tiles rise in stages, without missing or patchy sides.
 3. Decision: **No clouds beside water.** No cloud stands on a tile beside the water, inside the island or at its edge. Where a pond reaches the island's edge, the ring of clouds has a gap. Why: clouds beside the water showed through it and stood in front of its sides.
-4. Decision: **The player shows through what hides them.** When a tile stands between the camera and the player, the player's outline shows through it. Why: the camera is close and low and never turns by itself, so a tall tile just behind the player can hide them.
+4. Decision: **The player shows through what hides them.** The camera first tilts, as little as clears its view of the player, as it already does. Where no tilt does, the player's outline shows through what is in the way. Why: otherwise a tile can hide the player where tilting can't help. (Claude first wrote that a 2 m tile behind the player hides them today; it doesn't, as the camera tilts over it.)
 5. Feature text: Wade and swim loses its shallow water row; wading happens only in clouds. Walk on clouds states its own numbers instead of "as through shallow water" (0.75 × walking speed, sunk 0.3 m), and says no cloud stands beside the water. The camera property gets the outline rule. The text that describes ponds gets the water as one object and the objects to stand on; their sizes come when they are built.
 
 No record: the thicker grass and its dent (a look), tile lengths (as today), the camera rising over a tile it would end up inside (a fix), saving the images (a studio tool).
