@@ -522,6 +522,104 @@ Committing only the handover, then the session text:
 
 ---
 
+### Dani · 2026-11-04 20:22
+
+(sent while Claude was working) i can't believe this HOW WHY omg
+
+![Dani's image 057](<../images/2026-11-04 M1 water faces and flat tiles/057 Dani.png>)
+
+---
+
+### Claude · 2026-11-04 20:23
+
+Claude looked at [image 058](<../images/2026-11-04 M1 water faces and flat tiles/058 Claude.png>)
+
+That picture used my test colours, saved in that copy's browser. Same thing on a clean copy with your colours:
+
+---
+
+### Dani · 2026-11-04 20:23
+
+(sent while Claude was working) so it's not broken?
+
+---
+
+### Claude · 2026-11-04 20:24
+
+Claude looked at [image 059](<../images/2026-11-04 M1 water faces and flat tiles/059 Claude.png>)
+
+Pushing the saved session text first, so it's backed up:
+
+No, it isn't broken. In my clean copy the player looks exactly like your picture.
+
+**What you're seeing:** the player is swimming. Standing still, they tread water upright, with head and shoulders above the surface and the rest of the body underneath. The water's top is 40% see-through, so the body below shows in its own colours, tinted by the blue. That makes it look like they stand on the water.
+
+**Why it's new:** until v0.338.0 that underwater part was drawn white, which was the outline you asked me to remove. It looked wrong in another way, but it hid this.
+
+**Proposed fix:** fade the player's underwater body into the pond's blue by depth, as the fish, plants and pond floor already do. Then only the head and shoulders read clearly, and the body sinks into the blue below them. Turning up "Surface over deep water" would hide the body too, but it would also hide the pond's floor and fish. Should I make the fade?
+
+The wrap-up is done:
+- **Tessera Records:** the 4 decisions and 2 features are entered (DOCS 3aedad7).
+- **Hours:** your 8 hours for today are in the Bring in file with 3 November's 12. They wait for your button.
+- **Handover and session text:** both are saved, committed and pushed.
+
+If you say yes to the fade, I'll update them after.
+
+---
+
+### Dani · 2026-11-04 20:46
+
+no fade. the player isn't the problem. IT'S THE MISSING TOP WATER SURFACE. let me see if it was fixed too. what are the recordss for tr?
+
+---
+
+### Claude · 2026-11-04 20:46
+
+Understood: no fade. The top surface is drawn, but at 40% see-through it barely shows. In your picture and mine, the cloak under it turns magenta instead of red, and that tint is the only sign of the top. So it doesn't read as a surface over the player. "Surface over deep water" sets how solid the top is. It's now under **Water**, beside "Top colour". At around 70% it reads as a surface, but it also hides more of the pond's floor and fish. Tell me what you see when you check.
+
+**The records entered in Tessera Records** (4 November 2026, by Dani, M1 M2 M3):
+
+1. **Shallow water is removed; stepping stones take its place.** "Shallow water is removed: ponds have only deep water. Where the player should stand in a pond, a stepping stone stands on a deep water tile: a hexagonal block, its sides square to its tile's sides, its top level with the water's top."
+   *Why:* "Shallow and deep water side by side made ponds' edges uneven and hard to build with. Stepping stones give places to stand wherever the map needs them, with one kind of water."
+2. **Water is one object, shaped like its pond.** "A pond's water is one object in the shape of all its joined deep water tiles, with no seams between them. Where a tile stands beside it, that tile is its side. Where none does, the water shows its own side: see-through light blue from outside, and from inside solid in the pond's blues by depth, so its top shows over it. A swimmer can swim out through that side into the void."
+   *Why:* "One shape for the whole pond works for a pond of any shape, and for ponds whose tiles rise in stages, without missing or patchy sides."
+3. **No clouds in or beside water.** "No cloud lies in water or on a tile beside it. Where a pond reaches the island's edge, the ring of clouds has a gap."
+   *Why:* "Clouds beside the water showed through it and stood in front of its sides."
+4. **Nothing marks the player where something hides them** (under Controls and camera). "No outline shows the player through what is in the way. The camera's tilt, and the things that turn see-through over them, keep them in view."
+   *Why:* "A pale figure showing through ground and water looked out of place, and the camera already keeps the player in view."
+
+**Features:**
+
+5. **Wade and swim** is now **Swim**.
+   - Input: "The player walks into a pond."
+   - It starts "In deep water the character swims."
+   - The shallow water row is gone from its table.
+   - Two paragraphs are added at the end: swimming out through the water's own side into the void, and stepping stones (hexagonal blocks, 1.4 m across from side to side, level with the water's top, swum onto, walked on, hopped from).
+6. **Walk on clouds:**
+   - "The character wades through them: at 0.75 × walking speed (3.06 m/s), sunk 0.3 m, to the shins, and doesn't fade."
+   - Added: "No cloud lies in water or on a tile beside it, so where a pond reaches the island's edge, the ring of clouds has a gap."
+
+---
+
+### Dani · 2026-11-04 20:57
+
+Wade and swim is now Swim.
+i approved those a long time ago. put them please
+
+---
+
+### Claude · 2026-11-04 20:57
+
+They should already be in. Checking Tessera Records directly:
+
+---
+
+### Dani · 2026-11-04 20:57
+
+(sent while Claude was working) done with this window?
+
+---
+
 **Closing note.** After the water and tiles rework, Dani played it, and v0.337.0 to v0.342.0 followed: the tiles flat and solid again, with the grass colour and the darker line kept (the set-back soil had opened slots everywhere); no outline round the hidden player; hexagonal stepping stones; a face on every exposed side of the water; corner pieces a diamond raises shown in the map editor; and colour boxes and sliders for the water's faces. The water took Claude several rounds. The void floor's stencil mark hid the water's sides, then its top, wherever the floor lay behind them, and the top didn't show over the sides' inside, which was the same light blue. Claude tested on a green copy with the whole pond risen, not on Dani's grey island with the pond partly risen, so it missed each fault until Dani circled it ("top missing"). The handover now says to test on her state. Tessera Records: four decisions (shallow water removed and stepping stones; water as one object; no clouds by water; nothing marks the hidden player) and two features (Swim, Walk on clouds), Tessera DOCS 3aedad7. 4 November's 8 hours are in the Bring in file with 3 November's 12. A second session worked in the trial's folder this evening. M1 testing is on v0.340.0.
 
 **Prompt for the next session** (M1 trial, tessera-m1):
