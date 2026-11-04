@@ -342,3 +342,7 @@ Confirmed: the other session entered nothing for v0.318.0. Committing the handov
 ---
 
 Closing note (3 November 2026, about 18:50): Built and pushed v0.315.0 (big deliveries fly as fewer things, the Big deliveries slider; Dani's 13:16 import and saves), v0.316.0 (paths as sunk strips across their tiles, forked paths, Width and Sink sliders) and v0.317.0 (items as 3D models everywhere icons showed, deliveries and harvest bursts as models, pop-up numbers keep the flat icons). Another Claude session committed v0.318.0 (Size variance sliders) in the same folder. Tessera Records: Dani said "just enter them"; four decisions and seven feature edits entered at about 18:45 (Tessera DOCS 2018bfc), databases backed up. claude-logs still can't be pushed: MilliStudio/claude-logs doesn't exist on GitHub. Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.318.0). Read its CLAUDE.md and run git status. Next: Dani's view of v0.315.0–v0.318.0 after Update M1 testing, then what she asks.
+
+---
+
+This conversation's 14 images are in images\2026-11-03 M1 deliveries, paths, item models\. [The list of them](<../images/2026-11-03 M1 deliveries, paths, item models/index.md>) gives each one's time.

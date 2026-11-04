@@ -459,3 +459,6 @@ Waiting for Dani:
 >
 > Testing: the hidden-browser scripts are in `C:\Users\someo\AppData\Local\Temp\claude\c--Users-someo-Dropbox-Studio-Tessera-repositories-tessera-m1\de2f345b-5c80-4e89-a791-631e7259b626\scratchpad\drive`; copy only the .js and .mjs files to your own scratchpad. `GPU=1 node run.mjs <test files | js:code | shot.png>` runs `harness.js` in a fresh page; `node web.mjs <address> <password>` opens a web copy with a password, checks what it hides, walks and takes web.png. Run npm test and check it passed before every commit.
 
+---
+
+This conversation's 4 images are in images\2026-10-28 M1 on the web for Mattias and Jousef\. [The list of them](<../images/2026-10-28 M1 on the web for Mattias and Jousef/index.md>) gives each one's time.

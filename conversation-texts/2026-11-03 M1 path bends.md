@@ -104,3 +104,7 @@ Now the session text.
 ---
 
 Closing note (3 November 2026, about 19:50): Built and pushed v0.321.0, path bends: a bend (b, 60°) and a sharp bend (u, 120°), so with the straight path any two sides of a tile can be joined. Each is a curve, an arc on an even hexagon, turned 60° at a time in the editor, and the Paths box's sliders set it. Then v0.322.0: path banks in the grass's colour instead of the soil's. Tested on a copy of the trial: the bends make one unbroken sunk path across five tiles, the banks show green, no errors; 177 tests pass. Neither is in Tessera Records. Another Claude session worked in the same folder (v0.319.0, v0.320.0) and updated the handover; this session's lines sit on top of it. claude-logs still has no GitHub repository, so this text is committed locally. Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1). Read its CLAUDE.md and run git status; uncommitted changes may belong to another session. Next: as in the handover's Next.
+
+---
+
+This conversation's 6 images are in images\2026-11-03 M1 path bends\. [The list of them](<../images/2026-11-03 M1 path bends/index.md>) gives each one's time.

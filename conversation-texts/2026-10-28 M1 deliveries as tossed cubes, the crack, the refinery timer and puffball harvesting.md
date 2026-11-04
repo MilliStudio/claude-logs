@@ -340,3 +340,7 @@ Waiting for Dani:
 > Waiting in Tessera Records: 26 October's hours (8) and 27 October's (12) on the Bring in page, for Dani's button. Ask about each day's hours only at the end of that day, before midnight.
 >
 > Testing: the hidden-browser scripts are in `C:\Users\someo\AppData\Local\Temp\claude\c--Users-someo-Dropbox-Studio-Tessera-repositories-tessera-m1\1008c7f4-3106-4b17-b735-54d9a9730bc5\scratchpad\drive`; copy only the .js and .mjs files to your own scratchpad. `GPU=1 node run.mjs <test files | js:code | shot.png>` runs `harness.js` in a fresh page; shot paths are relative to that folder. `toss1.js` to `toss6.js` test deliveries (Try, the Guardian, key items, Process, a diamond, the heights and distance), `toss3.js` pictures Try's lines from the side, `crack.js` the crack, `refshot.js` with `wake.js` and `puff2.js` the refinery's timer and harvesting a puffball tree at level 2 (it waits a real minute for refining). Machines only take items from about their own height, so stand on their tile. The Tessera Records scripts (`tr-read.mjs`, `tr-find.mjs`, `tr-send.mjs` and others) are one folder up. Run npm test and check it passed before every commit.
+
+---
+
+This conversation's 9 images are in images\2026-10-28 M1 deliveries as tossed cubes, the crack, the refinery timer and puffball harvesting\. [The list of them](<../images/2026-10-28 M1 deliveries as tossed cubes, the crack, the refinery timer and puffball harvesting/index.md>) gives each one's time.

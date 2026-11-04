@@ -373,3 +373,7 @@ Saving the wrap-up: correcting the handover's records line, then saving the sess
 ---
 
 Closing note (2 November 2026, night): Built and pushed v0.302.0 to v0.304.0: Dani's M1 testing map imported at 19:42 (the import was greyed because each commit puts M1 testing behind until Update M1 testing); dried giant flowers look burnt (darker, crumpled both ways, ragged charred edges and tips); they shatter where they stand, with Shatter after replacing Dried flowers drop after and Dropping takes; Tips rise works on dried flowers; leaves are stood on up to 20° of tilt (the 4,3 leaf at 18° caused Dani's fall). In Tessera Records, one phrase each in Lantern → lantern tree v12 and Feed a mechanical creature (a Guardian) v9 (DOCS, Tessera 3ba17f2). Claude's further proposals for giant flower and awakening records were rejected and nothing from them was entered; Dani decides how to record them, for all milestones. Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.304.0). Read its CLAUDE.md and run git status. Next: how I want the giant flower changes recorded in Tessera Records (enter nothing without my yes); my view of v0.304.0 after Update M1 testing.
+
+---
+
+This conversation's 11 images are in images\2026-11-02 M1 burnt flowers, shatter in place, leaves to 20°\. [The list of them](<../images/2026-11-02 M1 burnt flowers, shatter in place, leaves to 20°/index.md>) gives each one's time.

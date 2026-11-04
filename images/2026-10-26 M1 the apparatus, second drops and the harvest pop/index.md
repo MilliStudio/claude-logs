@@ -1,0 +1,27 @@
+# Images: 2026-10-26 M1 the apparatus, second drops and the harvest pop
+
+From the Claude Code session f421204f-3226-4a2c-90f6-7261e23603c0 (Tessera-repositories-tessera-m1), in the order they came. Dani's images and the ones Claude made for her are shown; the ones Claude looked at are linked.
+
+- 2026-10-26 03:33 · ![Dani's image 001](<001 Dani.png>)
+- 2026-10-26 03:51 · Claude looked at [image 002](<002 Claude.png>)
+- 2026-10-26 03:53 · Claude looked at [image 003](<003 Claude.png>)
+- 2026-10-26 03:53 · Claude looked at [image 004](<004 Claude.png>)
+- 2026-10-26 03:54 · Claude looked at [image 005](<005 Claude.png>)
+- 2026-10-26 03:55 · Claude looked at [image 006](<006 Claude.png>)
+- 2026-10-26 03:55 · Claude looked at [image 007](<007 Claude.png>)
+- 2026-10-26 03:56 · Claude looked at [image 008](<008 Claude.png>)
+- 2026-10-26 03:56 · Claude looked at [image 009](<009 Claude.png>)
+- 2026-10-26 03:57 · Claude looked at [image 010](<010 Claude.png>)
+- 2026-10-26 03:57 · Claude looked at [image 011](<011 Claude.jpg>)
+- 2026-10-26 05:31 · Claude looked at [image 012](<012 Claude.png>)
+- 2026-10-26 05:42 · Claude looked at [image 013](<013 Claude.png>)
+- 2026-10-26 05:44 · Claude looked at [image 014](<014 Claude.png>)
+- 2026-10-26 05:44 · Claude looked at [image 015](<015 Claude.png>)
+- 2026-10-26 05:46 · Claude looked at [image 016](<016 Claude.png>)
+- 2026-10-26 05:51 · Claude looked at [image 017](<017 Claude.png>)
+- 2026-10-26 05:52 · Claude looked at [image 018](<018 Claude.png>)
+- 2026-10-26 05:59 · Claude looked at [image 019](<019 Claude.png>)
+- 2026-10-26 05:59 · Claude looked at [image 020](<020 Claude.png>)
+- 2026-10-26 05:59 · Claude looked at [image 021](<021 Claude.png>)
+- 2026-10-26 05:59 · Claude looked at [image 022](<022 Claude.png>)
+- 2026-10-26 06:07 · Claude looked at [image 023](<023 Claude.png>)

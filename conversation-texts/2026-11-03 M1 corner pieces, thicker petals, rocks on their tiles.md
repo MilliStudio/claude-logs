@@ -179,3 +179,7 @@ No record for the corner piece fixes (an editor mismatch and a drawing gap) or t
 ---
 
 Closing note (3 November 2026): Built and pushed v0.310.0 (corner pieces on the corner the editor draws, and down to the bed of deep water beside them) and v0.311.0 (Thickness sliders for petals and leaves, 0.2 m on giant flowers; petal Length up to 8 m; every harvestable keeps its hitbox on its tile, fewer where they don't fit, but porous rocks sink into each other so the cluster stays; an Overlap slider for rocks; Dani's import at 01:32). Tessera Records: two decisions and a feature sentence wait for Dani's go (above). Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.311.0). Read its CLAUDE.md and run git status. Next: Dani's go on the Tessera Records list, then her view of v0.311.0.
+
+---
+
+This conversation's 21 images are in images\2026-11-03 M1 corner pieces, thicker petals, rocks on their tiles\. [The list of them](<../images/2026-11-03 M1 corner pieces, thicker petals, rocks on their tiles/index.md>) gives each one's time.

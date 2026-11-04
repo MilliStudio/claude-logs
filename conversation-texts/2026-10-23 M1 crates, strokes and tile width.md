@@ -221,3 +221,7 @@ Dani ended the session here (23 October 2026, about 15:15), to start a new conve
 > Testing: the hidden-browser scripts are in `C:\Users\someo\AppData\Local\Temp\claude\c--Users-someo-Dropbox-Studio-Tessera-repositories-tessera\bb1948a4-9262-41fe-8bea-5fad91a53c96\scratchpad`: `run.mjs <tests…>` runs `harness.js` (helpers in `window.T`), then each test file, in a fresh page; `steplib.js` adds `T.take` and `T.step` for crates. Copy them to your own scratchpad. Crate moves run on real time, walking on capped frame time: measure crates with `performance.now()`.
 >
 > Size: medium, one session. Dani's input: play it, and one yes for the records.
+
+---
+
+This conversation's 5 images are in images\2026-10-23 M1 crates, strokes and tile width\. [The list of them](<../images/2026-10-23 M1 crates, strokes and tile width/index.md>) gives each one's time.

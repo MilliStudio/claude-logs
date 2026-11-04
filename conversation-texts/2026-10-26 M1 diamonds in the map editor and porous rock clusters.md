@@ -422,3 +422,7 @@ Dani ended the session here (26 October 2026, about 19:45). Done in this session
 > Waiting in Tessera Records: 26 October's hours (8) on the Bring in page, for Dani's button. Ask about each day's hours only at the end of that day, before midnight.
 >
 > Testing: the hidden-browser scripts are in `C:\Users\someo\AppData\Local\Temp\claude\c--Users-someo-Dropbox-Studio-Tessera-repositories-tessera-m1\1cea1abb-93ad-492a-ae5f-b39ec592a3ff\scratchpad\drive`; copy them to your own scratchpad. `GPU=1 node run.mjs <test files | js:code | shot.png>` runs `harness.js` in a fresh page; `run-reload.mjs` reloads between two sets of steps, keeping the save; `run4891.mjs` drives a copy of the trial on port 4891; `drive.mjs <url> '<steps>'` takes `{node}` steps with real mouse clicks, as `editor-diamond.mjs` does in the map editor. `floating.js` and `all5.js` play the diamonds, `cluster2.js` and `bump.js` a porous rock cluster, `kitpop.js` the kit's pop-up. Test a server change on a copy of the trial, started with `PORT=4891 NO_BROWSER=1 node server.js`. Run npm test and check it passed before every commit.
+
+---
+
+This conversation's 15 images are in images\2026-10-26 M1 diamonds in the map editor and porous rock clusters\. [The list of them](<../images/2026-10-26 M1 diamonds in the map editor and porous rock clusters/index.md>) gives each one's time.

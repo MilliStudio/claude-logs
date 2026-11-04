@@ -408,3 +408,7 @@ Dani ended the session here (26 October 2026, late evening). Done in this sessio
 > Waiting in Tessera Records: 26 October's hours (8) on the Bring in page, for Dani's button. Ask about each day's hours only at the end of that day, before midnight.
 >
 > Testing: the hidden-browser scripts are in `C:\Users\someo\AppData\Local\Temp\claude\c--Users-someo-Dropbox-Studio-Tessera-repositories-tessera-m1\19657624-f426-4625-8d6c-c7b2457a5b65\scratchpad\drive`; copy only the .js and .mjs files to your own scratchpad (the browser profile folders are large). `GPU=1 node run.mjs <test files | js:code | shot.png>` runs `harness.js` in a fresh page; `run-reload.mjs` reloads between two sets of steps, keeping the save. `guard1.js`–`guard2.js` play the dormant fish and its window, `play-revive.js` plays through the diamonds to the fish's revival and counts green tiles, `fishland.js` sets copies of the fish on land to look at, `pieces1.js` with `grow0.js`/`growAt.js` and `rgrow.js` picture the machines being put together, `win1.js` and `win4.js`/`win5.js`/`claim-ref.js` the windows and the refinery's Claim, `strap.js` the strap, `under2.js` the clouds after diamond 5. Run npm test and check it passed before every commit.
+
+---
+
+This conversation's 50 images are in images\2026-10-26 M1 the fish as Guardian, wordless windows and machines built round their plants\. [The list of them](<../images/2026-10-26 M1 the fish as Guardian, wordless windows and machines built round their plants/index.md>) gives each one's time.

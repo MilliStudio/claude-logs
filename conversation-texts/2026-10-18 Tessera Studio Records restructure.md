@@ -834,3 +834,7 @@ I'll do it as last time: save this conversation's messages (yours and mine, with
 There's no saved script, so I'll write a small one. First, how this session's log stores messages, including the ones you sent while I was working:
 
 Your mid-turn messages are stored separately from the normal ones, so the script needs to pick up both. Writing it:
+
+---
+
+This conversation's 21 images are in images\2026-10-18 Tessera Studio Records restructure\. [The list of them](<../images/2026-10-18 Tessera Studio Records restructure/index.md>) gives each one's time.

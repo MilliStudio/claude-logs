@@ -224,3 +224,7 @@ Tessera Records: nothing entered but hours. 3 November's 12 hours (Dani: "pls ad
 claude-logs has no GitHub repository yet: this text is committed locally only.
 
 Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1). Read its CLAUDE.md and run git status; uncommitted changes in src/key.js or src/planet-plan.js are Dani's saves, to be committed with the next version. Next: as in the handover's Next.
+
+---
+
+This conversation's 24 images are in images\2026-11-03 M1 tuning one way, pond fixes\. [The list of them](<../images/2026-11-03 M1 tuning one way, pond fixes/index.md>) gives each one's time.

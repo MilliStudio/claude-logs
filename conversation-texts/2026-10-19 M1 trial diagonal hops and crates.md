@@ -361,3 +361,7 @@ The handover, memory note and trial handover are saved, and the trial is synced.
 ---
 
 Dani approved the texts. Claude saved the handover, the memory note and the trial's CLAUDE.md, committed and synced the trial, and wrote this file. Dani ended the session here. Next: playing the trial in a new window, with the prompt above.
+
+---
+
+This conversation's 8 images are in images\2026-10-19 M1 trial diagonal hops and crates\. [The list of them](<../images/2026-10-19 M1 trial diagonal hops and crates/index.md>) gives each one's time.

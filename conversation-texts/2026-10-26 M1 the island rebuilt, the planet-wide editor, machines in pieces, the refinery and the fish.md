@@ -707,3 +707,7 @@ Dani ended the session here (26 October 2026, about 22:00). Done in this session
 > If Dani's editor edits are ever lost, rebuild them from Dani's screenshots at once; don't ask Dani to redo or save them.
 >
 > Testing: the hidden-browser scripts are in `C:\Users\someo\AppData\Local\Temp\claude\c--Users-someo-Dropbox-Studio-Tessera-repositories-tessera-m1\c931958c-f381-4367-825e-fdcc23863bbb\scratchpad\drive`; copy them to your own scratchpad. `GPU=1 node run.mjs <test files | js:code | shot.png>` runs `harness.js` in a fresh page; `run-reload.mjs` reloads between two sets of steps, keeping the save; `run4891.mjs` drives a copy of the trial on port 4891. `pieces1.js`–`pieces3.js` play the apparatus being pulled together, `refinery.js`–`refinery3.js` and `win4.js`–`win6.js` the refinery and its window, `win1.js`–`win3.js` the apparatus's window, `fish.js`–`fish3.js` the fish, `slab.js` the porous rocks' stone layer, `under2.js` the clouds after diamond 5. Test a server change on a copy of the trial, started with `PORT=4891 NO_BROWSER=1 node server.js`. Run npm test and check it passed before every commit.
+
+---
+
+This conversation's 40 images are in images\2026-10-26 M1 the island rebuilt, the planet-wide editor, machines in pieces, the refinery and the fish\. [The list of them](<../images/2026-10-26 M1 the island rebuilt, the planet-wide editor, machines in pieces, the refinery and the fish/index.md>) gives each one's time.

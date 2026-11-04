@@ -575,3 +575,7 @@ Dani ended the session here (23 October 2026, about 14:15). Done in this session
 > Testing: the hidden-browser script is `C:\Users\someo\AppData\Local\Temp\claude\c--Users-someo-Dropbox-Studio-Tessera-repositories-tessera\6a4dc136-b31d-4e31-8cc9-71bf96b0896d\scratchpad\drive.mjs`; copy it to your own scratchpad. It uses its own debugging port; keep it that way. At low frame rates the game runs slower (each frame counts at most 0.05 s), so hold keys until a condition is met rather than for a fixed time, as `steps4.json` in the same folder does.
 >
 > Size: medium, one session. Dani's input: play it and say yes.
+
+---
+
+This conversation's 11 images are in images\2026-10-23 M1 scale, lens and movement records\. [The list of them](<../images/2026-10-23 M1 scale, lens and movement records/index.md>) gives each one's time.

@@ -2,3 +2,6 @@
 projects/
 # The private Tessera handover, never committed (Dani's rule in Dropbox\Studio\CLAUDE.md); Dropbox keeps these copies.
 *CLAUDE.local.md
+# Images Claude opened to look at, mostly screenshots of the game: 214 MB on 4 November 2026, too big for GitHub;
+# Dropbox keeps them, and the raw logs hold them too. Dani's images and the ones Claude made for her are committed.
+images/**/* Claude.*

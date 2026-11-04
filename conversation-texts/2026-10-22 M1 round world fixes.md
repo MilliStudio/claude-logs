@@ -364,3 +364,7 @@ Dani ended the session here (22 October 2026, about 20:15). Done in this session
 > Testing: the hidden-browser script is `C:\Users\someo\AppData\Local\Temp\claude\c--Users-someo-Dropbox-Studio-Tessera-repositories-tessera\8ba21336-d5a7-41b6-b842-cde6502d2a49\scratchpad\drive.mjs` (if it's gone, write a new one). It must use its own debugging port (port 0 plus DevToolsActivePort), never a fixed port such as 9333: other sessions run their own checks.
 >
 > Size: medium, one session. Dani's input: play it and say yes.
+
+---
+
+This conversation's 17 images are in images\2026-10-22 M1 round world fixes\. [The list of them](<../images/2026-10-22 M1 round world fixes/index.md>) gives each one's time.

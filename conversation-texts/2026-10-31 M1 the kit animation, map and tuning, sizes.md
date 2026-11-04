@@ -476,3 +476,7 @@ The handover is pushed. Now saving this conversation's text to claude-logs:
 Closing note (31 October 2026, evening): Built v0.233.0 to v0.237.0 and pushed them: the kit's putting-on animation; Space-panning, no scroll bars and a How to use tab in the map editor; sizes per kind (harvestables' average size and hitbox, wall pieces' height and thickness, stairs' width); walls the pale beige of a used-up porous rock; and the Tuning sliders in the map editor's sidebar, a thing's own in its box when clicked, the rest under a Tuning tab. Tessera Records: the kit's animation (a decision, and the feature Find the Gatherer's Kit); Dani called the other proposed records needless. The old island is still in the game, not committed. claude-logs' GitHub repository still doesn't exist.
 
 Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.237.0). Read its CLAUDE.md and run git status. The old island is in src/planet-plan.js, not committed: never commit it, and ask me whether to put my map back. If I've made the empty private repository MilliStudio/claude-logs on GitHub, push claude-logs. Then more mechanics, as I ask. Work only on what I ask. I'll tell you when I'm done for the day.
+
+---
+
+This conversation's 17 images are in images\2026-10-31 M1 the kit animation, map and tuning, sizes\. [The list of them](<../images/2026-10-31 M1 the kit animation, map and tuning, sizes/index.md>) gives each one's time.

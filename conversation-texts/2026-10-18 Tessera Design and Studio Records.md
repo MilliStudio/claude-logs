@@ -551,3 +551,7 @@ I'll save this conversation's messages (yours and mine, without the code and too
 That folder is private and not in git, so the file goes there. Writing the extraction script:
 
 Two background-task notices slipped in as if you'd written them. Filtering them out:
+
+---
+
+This conversation's 2 images are in images\2026-10-18 Tessera Design and Studio Records\. [The list of them](<../images/2026-10-18 Tessera Design and Studio Records/index.md>) gives each one's time.

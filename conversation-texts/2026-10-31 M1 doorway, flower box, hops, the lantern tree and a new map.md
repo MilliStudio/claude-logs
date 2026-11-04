@@ -618,3 +618,7 @@ Everything is committed and pushed: GitHub matches the game folder exactly, up t
 Closing note (31 October 2026): Dani called it a night ("no tr or hours i think. fresh start tomorrow"). Built and pushed v0.215.0 to v0.227.0; GitHub matches the game folder. The camera's ease sliders came last, after Dani found turning instant; one attempt stopped the game from starting until fixed. Left open: Dani said the sliders' values stay the same when she moves them, which Claude couldn't reproduce. claude-logs is committed locally; its GitHub repository still doesn't exist.
 
 Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.227.0), a fresh start. Read its CLAUDE.md and run git status. If I've made the empty private repository MilliStudio/claude-logs on GitHub, push claude-logs. Then more mechanics, as I ask. Work only on what I ask. I'll tell you when I'm done for the day.
+
+---
+
+This conversation's 16 images are in images\2026-10-31 M1 doorway, flower box, hops, the lantern tree and a new map\. [The list of them](<../images/2026-10-31 M1 doorway, flower box, hops, the lantern tree and a new map/index.md>) gives each one's time.

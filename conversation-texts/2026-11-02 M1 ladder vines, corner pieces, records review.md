@@ -736,3 +736,7 @@ it's in this conversation that i told you to hold on or stand by. the one i clos
 ---
 
 Closing note (2 November 2026): Built and pushed v0.298.0 to v0.301.0 (climbing plants planted from the inventory, lit or faded, anywhere on a tile with a wall or stem or on a leaf, one per tile or leaf, 0.6 m wide, wrapping round stems, a 0.5 m gap at the foot; corner pieces raised by diamonds, white until woken; void fade sliders; the mouse's fifth button for running; a chest's items ending in the spin and hop) and v0.305.0 (Dani's imports at 20:40 and 21:54). A second session worked in the same folder at the same time (v0.302.0 to v0.304.0). In Tessera Records: Dani's chest decision deleted with her yes; DOCS committed (Tessera 5995ed3). Everything else proposed tonight waits for Dani's go (see the handover). Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.305.0). Read its CLAUDE.md and run git status. Next: my go on the Tessera Records list from 2 November (topics, the awakening and giant flower features, ladder vine rename, fade, hours to 12, two tasks), then v0.306.0 with the ladder vine names; the flower settings my 21:54 import replaced; then bring in what waits on the Bring in page (my own design changes of 2 November; reload it first).
+
+---
+
+This conversation's 10 images are in images\2026-11-02 M1 ladder vines, corner pieces, records review\. [The list of them](<../images/2026-11-02 M1 ladder vines, corner pieces, records review/index.md>) gives each one's time.

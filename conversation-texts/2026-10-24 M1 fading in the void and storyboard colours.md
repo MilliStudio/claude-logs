@@ -1,6 +1,6 @@
 # M1: fading in the void and the storyboard's colours (24 October 2026)
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-10-24 M1 fading in the void and storyboard colours\, shown or linked where they came. Private: never commit or share.
 
 ---
 
@@ -78,7 +78,19 @@ The timeline works: the steps start at 5, 6.5, 8 and 9.5 seconds, and the player
 
 Leaving the void works: the missing parts come back together, and the 5-second wait starts over. Here are the pictures:
 
+Claude looked at [image 001](<../images/2026-10-24 M1 fading in the void and storyboard colours/001 Claude.png>)
+
+Claude looked at [image 002](<../images/2026-10-24 M1 fading in the void and storyboard colours/002 Claude.png>)
+
+Claude looked at [image 003](<../images/2026-10-24 M1 fading in the void and storyboard colours/003 Claude.png>)
+
 All four steps look right: the cut lines are clean, with no seams between the quarters. Now the colours. Finding your storyboard:
+
+Claude looked at [image 004](<../images/2026-10-24 M1 fading in the void and storyboard colours/004 Claude.jpg>)
+
+Claude looked at [image 005](<../images/2026-10-24 M1 fading in the void and storyboard colours/005 Claude.jpg>)
+
+Claude looked at [image 006](<../images/2026-10-24 M1 fading in the void and storyboard colours/006 Claude.jpg>)
 
 The fading is built and checked. Now I'm taking the exact colours from your storyboard (Tessera/images/Screenshot 2026-09-22 213633.png) by reading pixels from the image.
 
@@ -90,9 +102,17 @@ The storyboard's dark blue is #252d48 and its orange is #d68a1b. Making the chan
 
 Now pictures of the new colours: the portal, the dormant object with a rock nearby, and the void:
 
+Claude looked at [image 007](<../images/2026-10-24 M1 fading in the void and storyboard colours/007 Claude.png>)
+
+Claude looked at [image 008](<../images/2026-10-24 M1 fading in the void and storyboard colours/008 Claude.png>)
+
 The dark blue matches. The ground reads lavender-blue instead of white, though, because the night light is blue. The beige and orange look dull for the same reason. Measuring the rendered colours:
 
 The night light needs to be more neutral, so white reads white. Adjusting it:
+
+Claude looked at [image 009](<../images/2026-10-24 M1 fading in the void and storyboard colours/009 Claude.png>)
+
+Claude looked at [image 010](<../images/2026-10-24 M1 fading in the void and storyboard colours/010 Claude.png>)
 
 The scene now matches the storyboard: a dark blue void, white ground, beige rocks and an orange dormant object. Next, the README. Reading the round-world part:
 
@@ -157,6 +177,10 @@ Turning off the "sun" that follows the camera, and putting a light inside the or
 
 Pictures of the new lighting, at the portal and at the orange object:
 
+Claude looked at [image 011](<../images/2026-10-24 M1 fading in the void and storyboard colours/011 Claude.png>)
+
+Claude looked at [image 012](<../images/2026-10-24 M1 fading in the void and storyboard colours/012 Claude.png>)
+
 ---
 
 ### Dani · 2026-10-24 03:37
@@ -169,7 +193,13 @@ Pictures of the new lighting, at the portal and at the orange object:
 
 Bringing the sun back at lower strength. It will light everything softly, and the orange object's glow adds to it.
 
+Claude looked at [image 013](<../images/2026-10-24 M1 fading in the void and storyboard colours/013 Claude.png>)
+
+Claude looked at [image 014](<../images/2026-10-24 M1 fading in the void and storyboard colours/014 Claude.png>)
+
 The storyboard's red cloak is #b02451 in every panel I checked. Before saving, a check that a restored object's light turns blue, using a save with the object fed:
+
+Claude looked at [image 015](<../images/2026-10-24 M1 fading in the void and storyboard colours/015 Claude.png>)
 
 A restored object turns blue and gives a cool blue light. Updating the README and saving v0.40.0:
 
@@ -193,6 +223,8 @@ I've made the orange object the main light source, set the void to exactly #0c14
 
 these are the exact color references. except for the unhappy tiles (before area dormant object is restored)
 
+![Dani's image 016](<../images/2026-10-24 M1 fading in the void and storyboard colours/016 Dani.png>)
+
 ---
 
 ### Claude · 2026-10-24 03:42
@@ -212,6 +244,8 @@ Your picture gives clean colour swatches. Now the tiles and tree in the drawing 
 ### Claude · 2026-10-24 03:44
 
 Understood. "Unhappy tiles" is your name for the bleak, white tiles of the dormant state. Applying the clear colours first:
+
+Claude looked at [image 017](<../images/2026-10-24 M1 fading in the void and storyboard colours/017 Claude.png>)
 
 Rocks, trees, water and the light now use your colour key. Saving that as v0.41.0, and then the questions:
 
@@ -263,6 +297,10 @@ Making the edits: the red character, a sun that casts no shadows, and tiles that
 ### Claude · 2026-10-24 03:53
 
 All 85 island tiles turned green in a wave spreading out from the object, finishing in about 2.4 seconds. The tiles that rose stayed white. Here's the picture:
+
+Claude looked at [image 018](<../images/2026-10-24 M1 fading in the void and storyboard colours/018 Claude.png>)
+
+Claude looked at [image 019](<../images/2026-10-24 M1 fading in the void and storyboard colours/019 Claude.png>)
 
 ---
 

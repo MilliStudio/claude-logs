@@ -1,0 +1,25 @@
+# Images: 2026-11-03 M1 corner pieces, thicker petals, rocks on their tiles
+
+From the Claude Code session 40479ae2-515d-4522-8129-23b6e3a7a18f (Tessera-repositories-tessera-m1), in the order they came. Dani's images and the ones Claude made for her are shown; the ones Claude looked at are linked.
+
+- 2026-11-03 01:02 · ![Dani's image 001](<001 Dani.png>)
+- 2026-11-03 01:02 · ![Dani's image 002](<002 Dani.png>)
+- 2026-11-03 01:06 · Claude looked at [image 003](<003 Claude.png>)
+- 2026-11-03 01:06 · Claude looked at [image 004](<004 Claude.png>)
+- 2026-11-03 01:06 · Claude looked at [image 005](<005 Claude.png>)
+- 2026-11-03 01:08 · Claude looked at [image 006](<006 Claude.png>)
+- 2026-11-03 01:08 · Claude looked at [image 007](<007 Claude.png>)
+- 2026-11-03 01:08 · ![Dani's image 008](<008 Dani.png>)
+- 2026-11-03 01:10 · Claude looked at [image 009](<009 Claude.png>)
+- 2026-11-03 01:10 · Claude looked at [image 010](<010 Claude.png>)
+- 2026-11-03 01:11 · Claude looked at [image 011](<011 Claude.png>)
+- 2026-11-03 01:11 · Claude looked at [image 012](<012 Claude.png>)
+- 2026-11-03 01:13 · Claude looked at [image 013](<013 Claude.png>)
+- 2026-11-03 01:13 · Claude looked at [image 014](<014 Claude.png>)
+- 2026-11-03 01:18 · Claude looked at [image 015](<015 Claude.png>)
+- 2026-11-03 01:19 · Claude looked at [image 016](<016 Claude.png>)
+- 2026-11-03 01:19 · Claude looked at [image 017](<017 Claude.png>)
+- 2026-11-03 01:20 · Claude looked at [image 018](<018 Claude.png>)
+- 2026-11-03 01:37 · Claude looked at [image 019](<019 Claude.png>)
+- 2026-11-03 01:37 · Claude looked at [image 020](<020 Claude.png>)
+- 2026-11-03 01:37 · Claude looked at [image 021](<021 Claude.png>)

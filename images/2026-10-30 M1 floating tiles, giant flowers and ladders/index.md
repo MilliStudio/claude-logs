@@ -1,0 +1,26 @@
+# Images: 2026-10-30 M1 floating tiles, giant flowers and ladders
+
+From the Claude Code session a6609396-373a-46a4-9c67-382b1c000700 (Tessera-repositories-tessera-m1), in the order they came. Dani's images and the ones Claude made for her are shown; the ones Claude looked at are linked.
+
+- 2026-10-29 22:08 · ![Dani's image 001](<001 Dani.png>)
+- 2026-10-29 23:13 · Claude looked at [image 002](<002 Claude.png>)
+- 2026-10-29 23:18 · Claude looked at [image 003](<003 Claude.png>)
+- 2026-10-29 23:18 · Claude looked at [image 004](<004 Claude.png>)
+- 2026-10-29 23:19 · Claude looked at [image 005](<005 Claude.png>)
+- 2026-10-29 23:20 · Claude looked at [image 006](<006 Claude.png>)
+- 2026-10-29 23:48 · Claude looked at [image 007](<007 Claude.png>)
+- 2026-10-30 00:00 · Claude looked at [image 008](<008 Claude.png>)
+- 2026-10-30 14:26 · ![Dani's image 009](<009 Dani.jpg>)
+- 2026-10-30 14:27 · Claude looked at [image 010](<010 Claude.png>)
+- 2026-10-30 14:30 · Claude looked at [image 011](<011 Claude.png>)
+- 2026-10-30 14:31 · Claude looked at [image 012](<012 Claude.png>)
+- 2026-10-30 14:31 · Claude looked at [image 013](<013 Claude.png>)
+- 2026-10-30 14:31 · ![Claude's image 014](<014 Claude to Dani.png>)
+- 2026-10-30 15:48 · Claude looked at [image 015](<015 Claude.png>)
+- 2026-10-30 16:15 · Claude looked at [image 016](<016 Claude.png>)
+- 2026-10-30 16:51 · ![Dani's image 017](<017 Dani.png>)
+- 2026-10-30 16:59 · ![Dani's image 018](<018 Dani.jpg>)
+- 2026-10-30 17:28 · Claude looked at [image 019](<019 Claude.png>)
+- 2026-10-30 17:28 · Claude looked at [image 020](<020 Claude.png>)
+- 2026-10-30 17:28 · Claude looked at [image 021](<021 Claude.png>)
+- 2026-10-30 17:31 · Claude looked at [image 022](<022 Claude.png>)

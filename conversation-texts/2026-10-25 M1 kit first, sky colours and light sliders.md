@@ -419,3 +419,7 @@ Dani ended the session here (25 October 2026, about 17:20). Done in this session
 > Waiting in Tessera Records: 25 October's hours (ask Dani whether it was a half or full day, and whether a record already exists), and the open task "Try the M1 trial on a phone".
 >
 > Testing: copy the hidden-browser scripts from `C:\Users\someo\AppData\Local\Temp\claude\c--Users-someo-Dropbox-Studio-Tessera-repositories-tessera-m1\9e03ce24-b66e-40c9-81be-82df5e534352\scratchpad\drive` to your own scratchpad. `node run.mjs <test files | js:code | shot.png>` runs `harness.js` (helpers in `window.T`) in a fresh page; `phone.mjs` does the same on a phone-sized screen; `restore.js` takes the kit and restores the island. To test a server change without touching Dani's running trial, start a second one with `PORT=4891 NO_BROWSER=1 node server.js`, from a copy in the scratchpad if it writes files.
+
+---
+
+This conversation's 18 images are in images\2026-10-25 M1 kit first, sky colours and light sliders\. [The list of them](<../images/2026-10-25 M1 kit first, sky colours and light sliders/index.md>) gives each one's time.

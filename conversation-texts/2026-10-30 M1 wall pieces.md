@@ -431,3 +431,7 @@ Saving the conversation text again with the updated prompt.
 ---
 
 Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.214.0). Read its CLAUDE.md and run git status. If my 30 October hours and the two Tessera update emails are still waiting in Bring in, remind me to press it. Then build the three things I said yes to on 30 October, one version each: (1) the secret passage opens a doorway low in its wall, the wall above staying and walkable; (2) the giant flower settings in the map editor, with the game beside it changing as I drag; (3) a wall's grass grows when its ground turns green. If I've made the empty private repository MilliStudio/claude-logs on GitHub, push claude-logs. Work only on what I ask. Don't bring up the other open questions in the handover, Tessera Records, or my hours unless I do. I'll tell you when I'm done for the day; then ask for that day's hours.
+
+---
+
+This conversation's 13 images are in images\2026-10-30 M1 wall pieces\. [The list of them](<../images/2026-10-30 M1 wall pieces/index.md>) gives each one's time.

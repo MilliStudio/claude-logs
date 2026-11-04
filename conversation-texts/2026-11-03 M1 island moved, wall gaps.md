@@ -217,3 +217,7 @@ Pictures for Dani: open them in VS Code (code -r, or code -r --diff for before a
 claude-logs still has no GitHub repository unless Dani has made it: this text is committed locally only if the push fails.
 
 Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1). Read its CLAUDE.md and run git status; uncommitted changes in src/key.js or src/planet.js are Dani's saves or the other session's, to be committed with the next version once that session has wrapped up. Next: as in the handover's Next.
+
+---
+
+This conversation's 10 images are in images\2026-11-03 M1 island moved, wall gaps\. [The list of them](<../images/2026-11-03 M1 island moved, wall gaps/index.md>) gives each one's time.

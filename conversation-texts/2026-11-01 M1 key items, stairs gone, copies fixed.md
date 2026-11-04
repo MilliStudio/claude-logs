@@ -350,3 +350,7 @@ Closing note (1 November 2026, night): Built and pushed v0.273.0 to v0.276.0. Co
 Tessera Records, with Dani's yes ("decusions, remove 2 and 3 / rest ok"): the decision Corner pieces fill the notches at an island's edge (World and narrative; M1 M2 M3), and the features Move v13, Hop v9, Climb a ladder v8, Push or pull an object v4 and Open a chest v4; DOCS committed (Tessera 5e9bba7). No decision for removing stairs or for key items lying on objects. 1 November's 8 hours (Dani: "pls log 8 hours") are in C:\Users\someo\TesseraExchange\proposed-records.json, for Dani's Bring in.
 
 Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.276.0). Read its CLAUDE.md and run git status. I build maps and tune in M1 testing, and move things between the copies with the buttons under Copies in the trial's Game tab. Work only in tessera-m1. Next: the character's arms, once I say how they look; then more mechanics, as I ask. Work only on what I ask. I'll tell you when I'm done for the day.
+
+---
+
+This conversation's 20 images are in images\2026-11-01 M1 key items, stairs gone, copies fixed\. [The list of them](<../images/2026-11-01 M1 key items, stairs gone, copies fixed/index.md>) gives each one's time.

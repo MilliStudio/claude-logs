@@ -566,3 +566,7 @@ Dani ended the session here (24 October 2026, about 23:05). Done in this session
 > Waiting in Tessera Records: the Bring in file holds one task, "Try the M1 trial on a phone".
 >
 > Testing: the hidden-browser scripts are in `C:\Users\someo\AppData\Local\Temp\claude\c--Users-someo-Dropbox-Studio-Tessera-repositories-tessera-m1\11ed4fae-e048-47fc-8055-5262fac7a0f7\scratchpad\drive`: `node run.mjs <test files | js:code | shot.png>` runs `harness.js` (helpers in `window.T`; `window.SCENE` is the three.js scene) in a fresh page. Copy them to your own scratchpad. Walking runs on capped frame time, so measure it with `T.until`, not real time.
+
+---
+
+This conversation's 69 images are in images\2026-10-24 M1 clouds and the void floor\. [The list of them](<../images/2026-10-24 M1 clouds and the void floor/index.md>) gives each one's time.

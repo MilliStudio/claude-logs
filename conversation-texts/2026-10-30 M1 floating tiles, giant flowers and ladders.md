@@ -1357,3 +1357,7 @@ Saving the conversation text again so it includes the records and the ladder cha
 ---
 
 Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.210.0). Read its CLAUDE.md, run git status, then wait for what I ask. If the trial has run since before v0.208.0, I start it again first, so Save as defaults also saves the ladders. If I've made the empty private repository MilliStudio/claude-logs on GitHub, push claude-logs. I'm deciding how the leaves sit on giant flowers; the open questions are in Tessera Records. Work only on what I ask. Don't bring up the other open questions in the handover, Tessera Records, or my hours unless I do. I'll tell you when I'm done for the day; then ask for that day's hours.
+
+---
+
+This conversation's 22 images are in images\2026-10-30 M1 floating tiles, giant flowers and ladders\. [The list of them](<../images/2026-10-30 M1 floating tiles, giant flowers and ladders/index.md>) gives each one's time.

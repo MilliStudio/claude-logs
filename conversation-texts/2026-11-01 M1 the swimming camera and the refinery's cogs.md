@@ -134,3 +134,7 @@ there is nothing to bring in
 ---
 
 Closing note (1 November 2026): Built v0.256.0 and pushed it: swimming, the camera holds its tilt (its keep-in-view line starts at least 0.3 m above the ground or water, without the bob; on land and wading it is as before, with Dani's settings), and the refinery's three front cogs turn one tooth at each knock, the biggest one way and the two smaller the other, its big wheel 15°. All three copies are v0.256.0: the trial and the tuning copy with the empty map, the web copy with the island of 31 October. The cogs get no record in Tessera Records (Dani). 31 October's 8 hours are in: the Bring in page has nothing left. The claude-logs repository still isn't on GitHub (Repository not found), so this log is committed locally only. Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.256.0). Read its CLAUDE.md and run git status. The map is empty; the last island is in maps/backups/island-2026-10-31.js. I may be tuning in the tuning copy (M1 trial 2 tuning); work only in tessera-m1, and update the copy when I ask. Then more mechanics, as I ask. Work only on what I ask. I'll tell you when I'm done for the day.
+
+---
+
+This conversation's 6 images are in images\2026-11-01 M1 the swimming camera and the refinery's cogs\. [The list of them](<../images/2026-11-01 M1 the swimming camera and the refinery's cogs/index.md>) gives each one's time.

@@ -351,3 +351,7 @@ Dani ended the session here (22 October 2026, about 21:15). Done in this session
 > 3. **Then step 3 of the plan, the join** (1 session), once Dani has tried the trial copy. Read `ONE-APP-PLAN.md` sections 4–5 and both handovers first (TD's is now `design/CLAUDE.md`). Tell Dani the size and start when she says go.
 >
 > Rules learned on 22 October 2026: start headless Edge only with `--remote-debugging-port=0` and read the port from `DevToolsActivePort`, because another window uses headless Edge too. Don't touch Dani's running apps (ports 4870 and 4880); trial copies use 4871, screen checks 4872. A preview shows in a sandboxed frame without the login cookie, so its image addresses carry a signature (`src/server.js`).
+
+---
+
+This conversation's 7 images are in images\2026-10-22 One app build\. [The list of them](<../images/2026-10-22 One app build/index.md>) gives each one's time.

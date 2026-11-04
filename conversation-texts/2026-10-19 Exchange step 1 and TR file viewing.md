@@ -954,3 +954,7 @@ Adding the line to your private handover:
 ---
 
 Dani ended the session here (19 October 2026, evening). All built, committed and synced: TR v0.8.0, v0.9.0 and v0.10.0; the private handover's 19 October entry is updated. Waiting for Dani in TR: restart; add the two repositories from the Bring in page's Repositories panel; bring in; choose the milestone's code. Next session: find the same kinds of problems in Tessera Design's forms (two questions for one fact, two boxes for one choice, a text box where a list exists, a value the app could work out, fields Dani doesn't need), and propose fixes before changing anything. After that, item 2 of TR's import plan. Dani asked for slower, plainer explanations: one idea at a time, with an example.
+
+---
+
+This conversation's 17 images are in images\2026-10-19 Exchange step 1 and TR file viewing\. [The list of them](<../images/2026-10-19 Exchange step 1 and TR file viewing/index.md>) gives each one's time.

@@ -336,3 +336,7 @@ Checking the rules files for anything that makes me flag or remind you about rec
 ---
 
 Closing note (3 November 2026): Built and pushed v0.306.0 to v0.309.0: nothing below the tiles, a new default giant flower, the flower box's Reset to saved, 17,-3's corner piece linked; the kit's shine and a 21% bigger worn satchel and strap; Dani's map and tuning imports from 00:20 to 00:49; the names ladder vine and ladder vine sprout. Tessera Records: Dani's approved list entered with her "ok to all" (DOCS committed, Tessera dfe2718); the Bring in file holds 2 November's hours (8 to 12) and two M1 tasks, waiting for her button. Record numbers are updated only when Dani says. Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.309.0). Read its CLAUDE.md and run git status. Next: my view of v0.309.0.
+
+---
+
+This conversation's 38 images are in images\2026-11-03 M1 nothing below the tiles, flower defaults, kit shine\. [The list of them](<../images/2026-11-03 M1 nothing below the tiles, flower defaults, kit shine/index.md>) gives each one's time.

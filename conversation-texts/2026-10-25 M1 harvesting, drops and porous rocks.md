@@ -763,3 +763,7 @@ Dani ended the session here (26 October 2026, about 03:20). Done in this session
 > Waiting: 25 October's hours description on the Bring in page, for Dani's button. Adding the trial's harvestables (cone trees, flower bulbs, pod stalks) and their drop items to the asset list waits until Dani turns to it ("don't be too focused on this yet"). The task "Try the M1 trial on a phone" is open.
 >
 > Testing: copy the hidden-browser scripts from `C:\Users\someo\AppData\Local\Temp\claude\c--Users-someo-Dropbox-Studio-Tessera-repositories-tessera-m1\8be42646-c7de-4448-8e7a-407127af6e00\scratchpad\drive` to your own scratchpad. `GPU=1 node run.mjs <test files | js:code | shot.png>` runs `harness.js` (helpers in `window.T`) in a fresh page on the graphics card. `restore.js` finds and takes the kit and restores the island; `drops.js` and `leftovers.js` test harvesting, but still assume the old island (a porous rock on 9,3, the kit on 11,4), so update them first. `harvest2.mjs` loads a save without the kit; `editor-remove.mjs` clicks in the map editor on port 4891. Test a server change on a copy of the trial in the scratchpad, started with `PORT=4891 NO_BROWSER=1 node server.js`.
+
+---
+
+This conversation's 33 images are in images\2026-10-25 M1 harvesting, drops and porous rocks\. [The list of them](<../images/2026-10-25 M1 harvesting, drops and porous rocks/index.md>) gives each one's time.

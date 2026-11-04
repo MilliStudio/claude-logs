@@ -321,3 +321,7 @@ Closing note (2 November 2026): Built and pushed v0.280.0 to v0.283.0. In the ma
 Tessera Records, with Dani's yes: the decision Key items are taken by coming close (M1 M2 M3), replacing "Key items are never picked up automatically" (27 October 2026); a new feature, Take a key item, with the numbers for every key item; Find the Gatherer’s Kit v4 and Feed a mechanical creature v6 point to it; DOCS committed (Tessera b99e697). The Claim buttons stay (Dani: "no machines and apparatuses retain their claim windows"). 1 November's 8 hours still wait in C:\Users\someo\TesseraExchange\proposed-records.json for Dani's Bring in. claude-logs' GitHub repository still doesn't exist.
 
 Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.283.0). Read its CLAUDE.md and run git status. I build maps and tune in M1 testing, and move things between the copies with the buttons under Copies in the trial's Game tab. Work only in tessera-m1. Next: the character's arms, once I say how they look; then more mechanics, as I ask. Work only on what I ask. I'll tell you when I'm done for the day.
+
+---
+
+This conversation's 6 images are in images\2026-11-02 M1 key item spots, pickups, one Save\. [The list of them](<../images/2026-11-02 M1 key item spots, pickups, one Save/index.md>) gives each one's time.

@@ -439,3 +439,7 @@ Now the session text, with the closing note and the next session's prompt.
 Closing note (2 November 2026): Built and pushed v0.285.0–v0.291.0: no full screen by itself on the computer, the pickup's spin and hop timing, the right mouse button as the stick, the camera zooming out as a lantern wakes, the arching flower as a harvestable (petals and nectar, level 1, the foot of its stem left behind; its decision is in Tessera Records), and a gap above the water. Dani's import of 15:50 is committed. The rule that status notes, handovers and next-session prompts need Dani's yes first is removed (Dani). claude-logs is committed locally; its GitHub repository still doesn't exist, so the push failed.
 
 Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.291.0). Read its CLAUDE.md and run git status. Next: the arms, once I say how they look; then more mechanics, as I ask.
+
+---
+
+This conversation's 12 images are in images\2026-11-02 M1 right-button stick, lantern zoom, arching flower, water gap\. [The list of them](<../images/2026-11-02 M1 right-button stick, lantern zoom, arching flower, water gap/index.md>) gives each one's time.

@@ -67,3 +67,7 @@ Handover pushed. Now the session text.
 ---
 
 Closing note (3 November 2026, about 18:50): Built and pushed v0.318.0: a Size variance slider under Average size in each harvestable's box (puffball trees, cone trees, flower bulbs, pod stalks, porous rocks), 0 to 80%, starting at 10% for the plants and 30% for porous rocks, so nothing looks different until Dani moves one. Mushroom-cap trees have none: they aren't harvestables, and their caps must stay a hop apart. Tested in the trial and the editor; 172 tests pass. Not in Tessera Records. Another Claude session worked in the same folder and entered its Tessera Records list at 18:45. M1 testing gets the slider when Dani presses Update M1 testing. Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1). Read its CLAUDE.md and run git status; uncommitted changes may belong to another session. Next: as in the handover's Next.
+
+---
+
+This conversation's 1 images are in images\2026-11-03 M1 size variance sliders\. [The list of them](<../images/2026-11-03 M1 size variance sliders/index.md>) gives each one's time.

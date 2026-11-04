@@ -305,3 +305,7 @@ Tessera Records list (Dani: "tr and wap up pls"), entered at about 22:10 after D
 claude-logs still has no GitHub repository ("Repository not found" at 22:20): this text is committed locally only.
 
 Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1). Read its CLAUDE.md and run git status; uncommitted changes in src/key.js or src/planet-plan.js are Dani's saves, to be committed with the next version. Next: as in the handover's Next.
+
+---
+
+This conversation's 19 images are in images\2026-11-03 M1 puffball drops, pond plants\. [The list of them](<../images/2026-11-03 M1 puffball drops, pond plants/index.md>) gives each one's time.

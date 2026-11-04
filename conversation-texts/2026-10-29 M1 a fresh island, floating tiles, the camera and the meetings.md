@@ -699,3 +699,7 @@ Closing note (29 October 2026, 21:18): the M1 trial went from v0.199.0 to v0.201
 > 2. **The camera.** The conclusion so far: it keeps its heading on purpose (since v0.21.0), and Q/E, T/G and the right-drag all work. It sits about 72 m away and 45 m up with an 8° lens, so a floating layer can hide the player but never holds the camera. Claude's recommendation: floating tiles turn see-through while they cover the player, and the camera stays as it is. Later I want a camera that follows the player and settles when they stop. At the first team meeting (11 September 2026) we settled on a steady follow camera with optional turning; Jousef advised against a camera that picks its own angle, and Mattias suggested two hands: one to walk, one for the camera (transcript, part 1, 26:02, in `Tessera\docs\meetings`).
 >
 > Don't build either until I ask. Work only on what I ask. Don't bring up the other open questions in the handover, Tessera Records, or my hours unless I do. I'll tell you when I'm done for the day; then ask for that day's hours.
+
+---
+
+This conversation's 2 images are in images\2026-10-29 M1 a fresh island, floating tiles, the camera and the meetings\. [The list of them](<../images/2026-10-29 M1 a fresh island, floating tiles, the camera and the meetings/index.md>) gives each one's time.

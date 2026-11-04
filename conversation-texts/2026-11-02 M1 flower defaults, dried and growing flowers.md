@@ -199,3 +199,7 @@ Almost: saving the session text now.
 ---
 
 Closing note (2 November 2026): Built and pushed v0.292.0–v0.294.0: the arching flower's defaults are Dani's, without Head turn; thin stems no longer get inside the player; flowers go lower (giant from 0.55 m, arching stem from 0.25 m); giant flowers are dried until a lantern wakes them, then drop, shatter and grow anew from a bud; arching flowers wait for the green and grow, and grow back, the same way; the Guardian zooms the camera out and back. In Tessera Records: Lantern → lantern tree v10, and Feed a mechanical creature (a Guardian) v7. Arching giant flowers' stems estimated at 1.5–2 hours, not started. Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.294.0). Read its CLAUDE.md and run git status. Next: my view of the dried and growing flowers; arching giant flowers' stems if I want them; the arms, once I say how they look.
+
+---
+
+This conversation's 9 images are in images\2026-11-02 M1 flower defaults, dried and growing flowers\. [The list of them](<../images/2026-11-02 M1 flower defaults, dried and growing flowers/index.md>) gives each one's time.

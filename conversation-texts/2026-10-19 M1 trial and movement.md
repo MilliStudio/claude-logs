@@ -998,3 +998,7 @@ My check was wrong: I picked the other window's short first session, which only 
 ---
 
 Claude then fixed conversation-text.mjs so it keeps messages sent while Claude is working, and Dani ended the session here. Next: playing the trial in a new window, with the prompt above.
+
+---
+
+This conversation's 14 images are in images\2026-10-19 M1 trial and movement\. [The list of them](<../images/2026-10-19 M1 trial and movement/index.md>) gives each one's time.

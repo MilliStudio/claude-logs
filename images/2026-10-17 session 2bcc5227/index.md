@@ -1,0 +1,26 @@
+# Images: 2026-10-17 session 2bcc5227
+
+From the Claude Code session 2bcc5227-31f5-4d45-bef4-a0da4c661b9c (Tessera-repositories-tessera), in the order they came. Dani's images and the ones Claude made for her are shown; the ones Claude looked at are linked.
+
+- 2026-10-18 15:13 · Claude looked at [image 001](<001 Claude.png>)
+- 2026-10-18 15:13 · Claude looked at [image 002](<002 Claude.png>)
+- 2026-10-18 15:13 · Claude looked at [image 003](<003 Claude.png>)
+- 2026-10-18 15:14 · Claude looked at [image 004](<004 Claude.png>)
+- 2026-10-18 15:14 · Claude looked at [image 005](<005 Claude.png>)
+- 2026-10-18 15:14 · Claude looked at [image 006](<006 Claude.png>)
+- 2026-10-18 15:14 · Claude looked at [image 007](<007 Claude.png>)
+- 2026-10-18 15:14 · Claude looked at [image 008](<008 Claude.png>)
+- 2026-10-18 15:15 · Claude looked at [image 009](<009 Claude.png>)
+- 2026-10-18 15:15 · Claude looked at [image 010](<010 Claude.png>)
+- 2026-10-18 15:16 · Claude looked at [image 011](<011 Claude.png>)
+- 2026-10-18 15:16 · Claude looked at [image 012](<012 Claude.png>)
+- 2026-10-18 15:16 · Claude looked at [image 013](<013 Claude.png>)
+- 2026-10-18 15:24 · Claude looked at [image 014](<014 Claude.png>)
+- 2026-10-18 15:24 · Claude looked at [image 015](<015 Claude.png>)
+- 2026-10-18 15:45 · Claude looked at [image 016](<016 Claude.png>)
+- 2026-10-18 15:45 · Claude looked at [image 017](<017 Claude.png>)
+- 2026-10-18 15:45 · Claude looked at [image 018](<018 Claude.png>)
+- 2026-10-18 15:45 · Claude looked at [image 019](<019 Claude.png>)
+- 2026-10-18 15:46 · Claude looked at [image 020](<020 Claude.png>)
+- 2026-10-18 15:49 · Claude looked at [image 021](<021 Claude.png>)
+- 2026-10-18 15:50 · Claude looked at [image 022](<022 Claude.png>)

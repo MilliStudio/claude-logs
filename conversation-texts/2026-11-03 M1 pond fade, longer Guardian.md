@@ -392,3 +392,7 @@ Tessera Records: nothing entered. No record describes the goldfish, the water's 
 claude-logs has no GitHub repository yet: this text is committed locally only.
 
 Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1). Read its CLAUDE.md and run git status; uncommitted changes in src/key.js or src/planet-plan.js are Dani's saves, to be committed with the next version. First ask Dani for the image of fixes that didn't arrive on 3 November. Next: as in the handover's Next.
+
+---
+
+This conversation's 31 images are in images\2026-11-03 M1 pond fade, longer Guardian\. [The list of them](<../images/2026-11-03 M1 pond fade, longer Guardian/index.md>) gives each one's time.

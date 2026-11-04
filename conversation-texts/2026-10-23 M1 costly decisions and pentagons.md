@@ -503,3 +503,7 @@ Dani ended the session here (23 October 2026, about 21:55). Done in this session
 > Ask Dani what to work on next. Remaining M1 work: saving progress (decided, not built: number tiles the same way every time, so saves stay valid), the kit, the apparatus, and a phone test.
 >
 > Testing: the hidden-browser scripts are in `C:\Users\someo\AppData\Local\Temp\claude\c--Users-someo-Dropbox-Studio-Tessera-repositories-tessera-m1\d59e1d45-259a-46ca-8077-71be0ba34570\scratchpad\drive`: `node run.mjs <tests…> [shot.png]` runs `harness.js` (helpers in `window.T`), then each test file, in a fresh page. Copy them to your own scratchpad. Walking runs on capped frame time, so measure it with `T.until`, not real time.
+
+---
+
+This conversation's 2 images are in images\2026-10-23 M1 costly decisions and pentagons\. [The list of them](<../images/2026-10-23 M1 costly decisions and pentagons/index.md>) gives each one's time.

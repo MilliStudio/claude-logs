@@ -274,3 +274,7 @@ Closing note (2 November 2026): Built and pushed v0.277.0 to v0.279.0 on 1 Novem
 Tessera Records, with Dani's yes: the decision Key items fly into a machine in pieces, Hop v10 and Supply a dormant object v8; DOCS committed (Tessera cb4b939). The decision A giant flower's turn turns only its head was deleted on 2 November (Dani: "i didn't want the giant flower decision either, you can archive that one"); its history keeps it. No records for the kit tool or the portal's turn and size (Dani: "no leave them out"). 1 November's 8 hours still wait in C:\Users\someo\TesseraExchange\proposed-records.json for Dani's Bring in.
 
 Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1, v0.279.0). Read its CLAUDE.md and run git status. I build maps and tune in M1 testing, and move things between the copies with the buttons under Copies in the trial's Game tab. Work only in tessera-m1. Next: the character's arms, once I say how they look; then more mechanics, as I ask. Work only on what I ask. I'll tell you when I'm done for the day.
+
+---
+
+This conversation's 10 images are in images\2026-11-01 M1 leaves stood on, kit placed, head turn\. [The list of them](<../images/2026-11-01 M1 leaves stood on, kit placed, head turn/index.md>) gives each one's time.

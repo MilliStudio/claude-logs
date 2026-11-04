@@ -960,3 +960,7 @@ The check passes at all three widths. Looking at the screenshot to confirm by ey
 ---
 
 Closing note (28 October 2026): Tessera Records v0.19.3 is live (commit 83a3eb7, pushed; app restarted). Lists go one month, main topic or main category at a time, with grid tabs and two heading rows; long-text lists have more room and the same space under every record. Dani approved the three correspondence additions for a later session (CLAUDE.md section 7); show her the People involved schema first. Dani has her own prompt for the next session. The eight M1 Trial records are untouched, for an M1 session.
+
+---
+
+This conversation's 32 images are in images\2026-10-28 Tessera Records readable lists, Bring in on the Overview and lists by month\. [The list of them](<../images/2026-10-28 Tessera Records readable lists, Bring in on the Overview and lists by month/index.md>) gives each one's time.

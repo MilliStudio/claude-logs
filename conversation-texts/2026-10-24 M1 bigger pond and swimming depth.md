@@ -1,6 +1,6 @@
 # M1: a bigger pond and the swimming depth (24 October 2026)
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-10-24 M1 bigger pond and swimming depth\, shown or linked where they came. Private: never commit or share.
 
 ---
 
@@ -39,6 +39,8 @@ Game server is running. Copying the hidden-browser test scripts so I can check t
 ### Claude · 2026-10-24 00:41
 
 Got it: 5% deeper than 0.9 m comes to about 0.95 m. I'll use that. First a look at the screenshot:
+
+Claude looked at [image 001](<../images/2026-10-24 M1 bigger pond and swimming depth/001 Claude.png>)
 
 The pond looks right: a deep middle of seven tiles inside a shallow rim, and you can walk in, swim across and wade out the other side. Now setting the depth to 0.95 m:
 

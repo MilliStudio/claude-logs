@@ -216,3 +216,7 @@ Closing note (28 October 2026, late evening): the M1 trial went from v0.180.0 to
 > Task: continue the M1 trial (`Dropbox\Studio\Tessera\repositories\tessera-m1`, v0.185.0). Read its CLAUDE.md, run `git status`, then wait for what I ask.
 >
 > Work only on what I ask. Don't bring up the open questions in the handover, Tessera Records, or my hours unless I do. I'll tell you when I'm done for the day; then ask for that day's hours.
+
+---
+
+This conversation's 3 images are in images\2026-10-28 M1 tally alignment, sliders and the online copy\. [The list of them](<../images/2026-10-28 M1 tally alignment, sliders and the online copy/index.md>) gives each one's time.
