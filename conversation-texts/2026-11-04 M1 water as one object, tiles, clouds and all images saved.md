@@ -494,9 +494,65 @@ Now the M1 handover: today's agreed plan, so the next conversation starts from i
 
 Next, the two session texts with their images: the closed one and this one. The closing note of this one holds the prompt for the next conversation and the proposed Tessera Records entries.
 
+Both texts are written. In this one your drawing is image 003, and my two pages are 012 and 015. Committing the logs repository and trying the push:
+
+20 MB goes into git: your 128 images, the ones made for you, and the image lists. Committing and pushing:
+
+The push failed: the GitHub repository for claude-logs still doesn't exist, so the commit is local and in Dropbox. Checking whether I could create the repository myself:
+
+The GitHub command-line tool isn't installed, so creating the repository has to be done by you on github.com. Updating that line in the handover, then committing the handover:
+
+Wrapped up. Nothing in the game changed this session.
+
+**Images: all saved.** Every image that appeared in a conversation is now a file in `Dropbox\Studio\claude-logs\images\`: 1,347 from 135 logs, one folder per conversation.
+- **The script** now does this every time I save a session text. Your images and the ones I make for you show in the text where they came; the ones I only looked at are linked.
+- **Old texts:** 11 still matched their logs exactly, so they now show their images in place. 58 others got a list of their images with times, and a line pointing to it. 21 conversations that never got a text have their own folder with a list.
+- **Git:** your images and the ones made for you are committed (20 MB). The 214 MB of game screenshots I only looked at stay in Dropbox only; the logs hold copies too.
+- **Not included:** images I made but never opened or showed you, such as unused test screenshots.
+- **The push failed:** the GitHub repository `MilliStudio/claude-logs` still doesn't exist, so everything since 2 November is committed only on this computer and in Dropbox. Please create it as an empty private repository (github.com/new, no README), and I'll push it.
+- I estimated 1.5 hours; it took about 35 minutes.
+
+**Also done:**
+- The M1 handover holds the agreed plan, with your words. It's committed and pushed.
+- The session rule in `Studio\CLAUDE.md` now says the script saves the images.
+- Both of today's texts are saved, including the conversation you closed by accident.
+- Your Q2 answer is in the plan: swimmers can swim out of the water's own side into the void. I don't expect it to cause problems.
+
+**Tessera Records (tr).** I propose these for M1 M2 M3. Each "why" is my proposal for you to check:
+1. **Shallow water is removed; objects in deep water take its place.** Ponds have only deep water. Where the player should stand in a pond, an object stands on a deep water tile, its top level with the water's top. *Why:* shallow and deep water side by side made ponds' edges glitchy and hard to build with.
+2. **Water is one object, shaped like its pond.** It has no seams between its tiles. Where a tile stands beside it, that tile is its side. Where none does, the water shows its own side, and a swimmer can swim out through it into the void. *Why:* it works for ponds of any shape, and for ponds whose tiles rise in stages.
+3. **No clouds beside water,** inside the island or at its edge. Where a pond reaches the edge, the cloud ring has a gap. *Why:* clouds beside the water showed through it and stood in front of its sides.
+4. **The player shows through what hides them.** When a tile stands between the camera and the player, the player's outline shows through it. *Why:* the camera is close and low and never turns by itself.
+5. **Feature text:**
+   - "Wade and swim" loses its shallow water row.
+   - "Walk on clouds" states its own numbers (0.75 × walking speed, sunk 0.3 m) instead of "as through shallow water", and says no cloud stands beside the water.
+   - The camera property gets the outline rule.
+   - The text about ponds gets the water as one object and the objects to stand on.
+
+No record for the thicker grass (a look), the tile lengths (unchanged), or the camera rising over a tile (a fix). Say yes and I'll enter them.
+
+**Prompt for the next conversation:**
+> Start the water and tiles rework in the M1 trial, as agreed on 4 November 2026. The plan is in `tessera-m1\CLAUDE.md` under Status, "Next: the water and tiles rework". The pictures are in `claude-logs\images\2026-11-04 M1 water as one object, tiles, clouds and all images saved\`. First find my map without shallow water (import it from M1 testing if it's there) and commit my map saves with the first version. Build all six parts, test each, then show me before-and-after pictures.
+
 ---
 
-**Closing note.** Nothing in the game changed in this conversation. With Dani, Claude worked out the water and tiles rework from her drawing, and made pictures of it. All the images of every past conversation were saved: 1,347 from 135 logs, in `claude-logs\images\`. `conversation-text.mjs` now saves each session's images and shows them in its text.
+### Dani · 2026-11-04 16:34
+
+not just this one. all the previous conversatioins, as far back as you can go. or are they gone?
+
+---
+
+### Claude · 2026-11-04 16:34
+
+Every earlier conversation's images are already saved, not just this one's: 1,347 images from all 135 logs, back to the oldest log. What some older conversations lack is a text. I'll check which conversations have no text, and how far back the logs go:
+
+33 texts to write. One conversation is skipped because its messages are already in another text; its images keep their own folder. Writing them:
+
+Every conversation now has a text: 112 in all, back to 20 September 2026. I'll add that to today's closing note, write today's text again so it includes these last messages, then commit:
+
+---
+
+**Closing note.** Nothing in the game changed in this conversation. With Dani, Claude worked out the water and tiles rework from her drawing, and made pictures of it. All the images of every past conversation were saved: 1,347 from 135 logs, in `claude-logs\images\`. `conversation-text.mjs` now saves each session's images and shows them in its text. Every earlier conversation now has a text too (Dani: "all the previous conversatioins, as far back as you can go"): 33 that had none were written from the backed-up logs, back to 20 September 2026, the oldest log, whose first message asks for the first CLAUDE.md. Nothing older is on this computer. The GitHub repository MilliStudio/claude-logs still doesn't exist, so all this is committed locally and kept in Dropbox until Dani creates it.
 
 **Prompt for the next session** (M1 trial, tessera-m1): Start the water and tiles rework, as agreed with Dani on 4 November 2026. The plan, its six parts and Dani's words are in `tessera-m1\CLAUDE.md` under Status, "Next: the water and tiles rework". The pictures of what was agreed are in `claude-logs\images\2026-11-04 M1 water as one object, tiles, clouds and all images saved\`: Dani's drawing, and Claude's two pages, water-reading and water-edges. First, find Dani's map without shallow water (she replaced it; if it is in M1 testing, import it), and commit her map saves with the first version. Build all six parts as versions, testing each in the hidden browser. Then show Dani before-and-after pictures. Tessera Records: the entries below wait for Dani's yes.
 
