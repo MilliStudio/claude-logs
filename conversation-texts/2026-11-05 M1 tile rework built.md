@@ -547,11 +547,11 @@ Tessera Records is done, and its printed docs are pushed (Tessera 22283ed). Now 
 
 Continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1), at v0.360.0. Read tessera-m1\CLAUDE.md's status first.
 
-- Waiting for Dani: Update M1 testing (M1 testing is on v0.350.0), her play of the tile rework, where she wants the clouds (the Clouds' tops slider under Tiles), and her Bring in button for the records in the Bring in file (Known issues in M1, and the pages and sessions' pictures as PDFs).
+- Waiting for Dani: Update M1 testing (M1 testing is on v0.350.0), her play of the tile rework, and where she wants the clouds (the Clouds' tops slider under Tiles). She is going through the PDFs of 4 and 5 November in Tessera Records.
 - Not done in the rework: giant and arching flowers on floating tiles; pushing stone blocks on floating tiles.
 - Dani asked that water tiles appear after the ground tiles, then said "ignore it". Don't build it unless she asks again.
-- At the end of each session, run claude-logs\picture-book.mjs for it (the rule in Dropbox\Studio\CLAUDE.md).
+- At the end of each session, run claude-logs\picture-book.mjs for it, and once Dani has brought its PDFs in, `picture-book.mjs --tidy` for it (the rule in Dropbox\Studio\CLAUDE.md).
 
 ## Closing note
 
-Session closed on 5 November 2026 at about 20:50. Built v0.353.0 to v0.360.0 (17:20 to 18:19) and the picture page Tile Rework Built; made the pages and pictures into PDFs for Tessera Records (20:18 to 20:32); entered seven decisions and four feature texts in Tessera Records (Tessera DOCS 22283ed).
+Session closed on 5 November 2026 at about 21:10. Built v0.353.0 to v0.360.0 (17:20 to 18:19) and the picture page Tile Rework Built; made the pages and pictures into PDFs for Tessera Records (20:18 to 20:32), which Dani brought in; entered seven decisions and four feature texts in Tessera Records (Tessera DOCS 22283ed); deleted the image folders in claude-logs, as Tessera Records and its backup hold every picture.
