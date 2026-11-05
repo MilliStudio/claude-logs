@@ -1,0 +1,788 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Tessera Merge Review</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,650&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: one reading column of merge cards. Each card: Today (whole paragraphs per document, repeated parts highlighted), then Proposed (each document's text after the merge). */
+:root {
+  --bg: #f4f6f2;
+  --panel: #ffffff;
+  --fg: #1d2520;
+  --muted: #5b6a61;
+  --line: #d6ddd5;
+  --accent: #2f6a4c;
+  --mark: #f7e3a3;
+  --after-bg: #eef6f0;
+  --after-edge: #6fa585;
+  --display: "Literata", Georgia, "Times New Roman", serif;
+  --body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #141a17; --panel: #1b231f; --fg: #e3ebe5; --muted: #9aaba1; --line: #2e3a33;
+    --accent: #7cc59d; --mark: #5c4a14; --after-bg: #19291f; --after-edge: #5d9a76; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #141a17; --panel: #1b231f; --fg: #e3ebe5; --muted: #9aaba1; --line: #2e3a33;
+  --accent: #7cc59d; --mark: #5c4a14; --after-bg: #19291f; --after-edge: #5d9a76; color-scheme: dark;
+}
+body {
+  background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 16px; line-height: 1.55;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 32px 64px;
+}
+.wrap { max-width: 860px; margin: 0 auto; display: grid; gap: 26px; }
+h1, h2, h3 { font-family: var(--display); font-weight: 650; text-wrap: balance; line-height: 1.2; margin: 0; }
+h1 { font-size: 2.1rem; }
+h2 { font-size: 1.45rem; padding-top: 14px; border-top: 1px solid var(--line); }
+h3 { font-size: 1.15rem; font-weight: 500; display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+p { margin: 0; }
+.lead { color: var(--muted); font-size: 1.05rem; max-width: 65ch; }
+.eyebrow { font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); font-weight: 700; }
+.how { background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 8px; padding: 14px 16px; display: grid; gap: 6px; }
+.num { font-size: 0.85rem; font-weight: 700; color: var(--accent); letter-spacing: 0.04em; }
+.card { display: grid; gap: 10px; min-width: 0; padding-bottom: 8px; }
+.label { font-size: 0.74rem; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 700; color: var(--muted); margin-top: 4px; }
+.stack { display: grid; gap: 10px; }
+.src { display: grid; gap: 4px; min-width: 0; }
+.doc { font-size: 0.86rem; font-weight: 700; color: var(--accent); }
+.today, .after { border-radius: 8px; padding: 10px 14px; white-space: pre-wrap; overflow-wrap: anywhere; min-width: 0; }
+.today { background: var(--panel); border: 1px solid var(--line); }
+.today.decision { border-style: dashed; }
+.after { background: var(--after-bg); border: 1px solid var(--after-edge); border-left-width: 4px; }
+mark { background: var(--mark); color: var(--fg); border-radius: 3px; padding: 0 2px; }
+.note { color: var(--muted); font-size: 0.93rem; }
+.q { background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 8px; padding: 14px 16px; display: grid; gap: 12px; }
+.q .title { font-family: var(--display); font-size: 1.08rem; }
+.fitem { display: grid; gap: 8px; padding-top: 10px; border-top: 1px solid var(--line); }
+.legend { display: flex; flex-wrap: wrap; gap: 16px; font-size: 0.9rem; color: var(--muted); }
+.sw { display: inline-block; width: 14px; height: 14px; border-radius: 3px; vertical-align: -2px; margin-right: 6px; }
+table.where { width: 100%; border-collapse: collapse; font-size: 0.84rem; margin-top: 2px; }
+table.where th { text-align: left; font-size: 0.7rem; letter-spacing: 0.07em; text-transform: uppercase; color: var(--muted); padding: 4px 8px; border-bottom: 1px solid var(--line); }
+table.where td { padding: 4px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+table.where td.f { font-family: "JetBrains Mono", Consolas, "Courier New", monospace; font-size: 0.8rem; white-space: nowrap; color: var(--accent); }
+table.where td.p { min-width: 16em; }
+.fields { margin: 0; padding-left: 1.2em; color: var(--muted); font-size: 0.93rem; display: grid; gap: 3px; }
+.src { overflow-x: auto; }
+/* Phones: each table row becomes a small stack, each cell labelled. */
+@media (max-width: 640px) {
+  table.where thead { display: none; }
+  table.where, table.where tbody, table.where tr, table.where td { display: block; }
+  table.where tr { border-bottom: 1px solid var(--line); padding: 6px 0; }
+  table.where td { border: 0; padding: 2px 8px; min-width: 0; }
+  table.where td.f, table.where td.p { white-space: normal; min-width: 0; }
+  table.where td::before { display: block; font-family: var(--body); font-size: 0.68rem; letter-spacing: 0.07em; text-transform: uppercase; color: var(--muted); }
+  table.where td:nth-child(1)::before { content: "Field"; }
+  table.where td:nth-child(2)::before { content: "What it’s for"; }
+  table.where td:nth-child(3)::before { content: "Record"; }
+  table.where td:nth-child(4)::before { content: "Change"; }
+}
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+</style>
+
+<div class="wrap">
+
+<header style="display:grid;gap:10px">
+  <div class="eyebrow">Tessera Design · merges · 17 October 2026</div>
+  <h1>Merge review</h1>
+  <p class="lead">Each card shows the whole paragraphs that say the same thing today, under the name of their document, with the repeated parts highlighted. Below them is how each document would read after the merge, and under each one the field that will hold each part, what that field is for, the record and what changes. The highlighted text is then stored once, and every document prints it.</p>
+</header>
+
+<div class="how">
+  <p><strong>How to answer:</strong> reply in the chat with the numbers, for example "all yes, Q2 b, Q3 later". You can also change a wording.</p>
+  <div class="legend">
+    <span><span class="sw" style="background:var(--mark)"></span>repeated text (Today) · text stored once (Proposed)</span>
+    <span><span class="sw" style="background:var(--after-bg);border:1px solid var(--after-edge)"></span>after the merge</span>
+    <span>Dashed box: your decision in the app</span>
+  </div>
+  <p class="note"><strong>The fields</strong> (written <em>table.field</em>) and what each one is for:</p>
+  <ul class="fields">
+    <li><code>blocks.body</code>: a piece of design text in a doc. Several docs can print the same block; it is then written once.</li>
+    <li><code>features.input</code>, <code>features.behaviour</code>: a feature’s “Input” and “Expected behaviour/output”. They tell the programmer what the game must do, and the M1 TDD prints them.</li>
+    <li><code>decisions.decision</code>: one of your decisions, word for word. Docs print only its text; the date and why stay in the app.</li>
+    <li><code>open_questions.question</code>: one undecided question. Every doc that lists it prints the same record, so answering it once answers it everywhere.</li>
+    <li><code>milestones.purpose</code>: a milestone’s “What it’s for”.</li>
+  </ul>
+  <p class="note">Under each proposed text, the “What it’s for” column says what that record does in its doc. Where a decision or question now prints in the middle of a block, the block is split in two at that point; the text of both parts stays the same.</p>
+</div>
+<h2>Merges</h2>
+<section class="card" id="m2a">
+<h3><span class="num">M2a</span> Hits and looks</h3>
+<div class="label">Today</div>
+<div class="stack"><div class="src"><div class="doc">9. Gathering, resources and refining</div><div class="today">== 9. Gathering, resources and refining
+
+Harvestables can provide one or two resources.
+
+Resource sources should use configurable drop information so the same gathering logic can support different visual assets.
+
+Resource variety stays controlled enough to keep the inventory and economy simple.
+
+Harvestables and tools have levels. <mark>A harvestable has at most 4 looks. The number of hits needed to move it from one look to the next depends on both levels: sometimes 3 hits, sometimes 1.</mark></div></div>
+<div class="src"><div class="doc">9. Gathering, resources and refining · feature “Gather a resource”</div><div class="today">Every hit gives drops. The second drop also comes every time, in a smaller quantity than the main drop. Quantities depend on the levels of the harvestable and the tool. <mark>A harvestable has at most 4 looks. The number of hits needed to move it from one look to the next depends on both levels: sometimes 3 hits, sometimes 1.</mark>
++
+A depleted harvestable grows back after 25 seconds, maybe 20. 30 seconds seems too long, but that could be wrong.
++
+If the matching container is full, its icon appears on top of the character with its count (for example 100/100) for as long as the player is close to the harvestable, and the character stands still. To test: whether this is annoying.
+What needs to be saved:: What the player gathered. Harvestables aren't saved: they reset when the game restarts.</div></div></div>
+<div class="label">Proposed</div>
+<div class="stack"><div class="src"><div class="doc">9. Gathering, resources and refining</div><div class="after">== 9. Gathering, resources and refining
+
+Harvestables can provide one or two resources.
+
+Resource sources should use configurable drop information so the same gathering logic can support different visual assets.
+
+Resource variety stays controlled enough to keep the inventory and economy simple.
+
+Harvestables and tools have levels.</div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">blocks.body</td><td class="p">The opening of Gathering, resources and refining: the general rules for harvestables and resources. The M1 TDD doesn’t print it.</td><td>block “9. Gathering, resources and refining” (the whole opening, as shown)</td><td>two sentences taken out</td></tr></tbody></table></div>
+<div class="src"><div class="doc">9. Gathering, resources and refining · feature “Gather a resource” · unchanged</div><div class="after">Every hit gives drops. The second drop also comes every time, in a smaller quantity than the main drop. Quantities depend on the levels of the harvestable and the tool. <mark>A harvestable has at most 4 looks. The number of hits needed to move it from one look to the next depends on both levels: sometimes 3 hits, sometimes 1.</mark>
++
+A depleted harvestable grows back after 25 seconds, maybe 20. 30 seconds seems too long, but that could be wrong.
++
+If the matching container is full, its icon appears on top of the character with its count (for example 100/100) for as long as the player is close to the harvestable, and the character stands still. To test: whether this is annoying.
+What needs to be saved:: What the player gathered. Harvestables aren't saved: they reset when the game restarts.</div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">features.behaviour</td><td class="p">The feature’s “Expected behaviour/output”: what the game must do when the player gathers. Written for the programmer; the M1 TDD prints it.</td><td>feature “Gather a resource”</td><td>none</td></tr></tbody></table></div></div>
+<p class="note">The feature keeps it, because the M1 TDD lists the features but not the text around them.</p>
+</section>
+<section class="card" id="m2b">
+<h3><span class="num">M2b</span> Tool refineries</h3>
+<div class="label">Today</div>
+<div class="stack"><div class="src"><div class="doc">10. Gatherer’s Kit and tools</div><div class="today">=== Tool refineries — NEW WORKING IDEA
+
+There are three tool refineries, one for each tool: Pick Refinery, Pruning Refinery and Siphon Refinery. Each one upgrades its tool. Tools have levels.
+
+<mark>A tool refinery's window lists the items it needs, with numbers next to them (for example 0/100). The player taps a button to start refining. Refining takes time, depending on the level. Flow Points can also speed it up (not in M1).</mark></div></div>
+<div class="src"><div class="doc">10. Gatherer’s Kit and tools · feature “Upgrade a tool”</div><div class="today">=== Feature: Upgrade a tool
+
+Input:: The player moves close to a tool refinery (Pick, Pruning or Siphon Refinery). <mark>Its window lists the needed items with numbers next to them (for example 0/100). The player taps a button to start refining.</mark>
+Expected behaviour/output:: <mark>Refining takes time, depending on the level.</mark> It upgrades the tool. Refining continues while the game is closed. <mark>Flow Points can also speed it up (not in M1).</mark>
+What needs to be saved:: The tool's level and the refining timer.</div></div></div>
+<div class="label">Proposed</div>
+<div class="stack"><div class="src"><div class="doc">10. Gatherer’s Kit and tools</div><div class="after">=== Tool refineries — NEW WORKING IDEA
+
+There are three tool refineries, one for each tool: Pick Refinery, Pruning Refinery and Siphon Refinery. Each one upgrades its tool. Tools have levels.</div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">blocks.body</td><td class="p">Describes the three tool refineries and which tool each one upgrades.</td><td>block “Tool refineries — NEW WORKING IDEA”</td><td>second paragraph taken out</td></tr></tbody></table></div>
+<div class="src"><div class="doc">10. Gatherer’s Kit and tools · feature “Upgrade a tool” · unchanged</div><div class="after">=== Feature: Upgrade a tool
+
+Input:: The player moves close to a tool refinery (Pick, Pruning or Siphon Refinery). <mark>Its window lists the needed items with numbers next to them (for example 0/100). The player taps a button to start refining.</mark>
+Expected behaviour/output:: <mark>Refining takes time, depending on the level.</mark> It upgrades the tool. Refining continues while the game is closed. <mark>Flow Points can also speed it up (not in M1).</mark>
+What needs to be saved:: The tool's level and the refining timer.</div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">features.input, features.behaviour</td><td class="p">The feature’s “Input” and “Expected behaviour/output”: what the player does at a tool refinery, and what the game must do then. Written for the programmer; the M1 TDD prints it.</td><td>feature “Upgrade a tool”</td><td>none</td></tr></tbody></table></div></div>
+<p class="note">Only the feature says it, since it says more.</p>
+</section>
+<section class="card" id="m2c">
+<h3><span class="num">M2c</span> Full containers</h3>
+<div class="label">Today</div>
+<div class="stack"><div class="src"><div class="doc">10. Gatherer’s Kit and tools</div><div class="today">Exact capacity numbers, accepted categories and stacking rules remain TBD.
+
+<mark>When a container is full and the player is next to a harvestable, the container's icon appears on top of the character with its count (for example 100/100), for as long as the player is close. At an apparatus, the interactive window shows the container as full.</mark></div></div>
+<div class="src"><div class="doc">9. Gathering, resources and refining · feature “Gather a resource”</div><div class="today"><mark>If the matching container is full, its icon appears on top of the character with its count (for example 100/100) for as long as the player is close to the harvestable</mark>, and the character stands still. To test: whether this is annoying.
+What needs to be saved:: What the player gathered. Harvestables aren't saved: they reset when the game restarts.</div></div>
+<div class="src"><div class="doc">9. Gathering, resources and refining · feature “Process in the apparatus”</div><div class="today">Expected behaviour/output:: Processing takes time, based on a formula. A timer shows. The player can walk away meanwhile. Processing continues while the game is closed; the timer must not stay the same. When processing is done, a "claim" button appears on top of the apparatus. The player taps it to get the result. <mark>If the related containers are full, the claim window shows each full container's icon with a "replace" button next to it.</mark></div></div></div>
+<div class="label">Proposed</div>
+<div class="stack"><div class="src"><div class="doc">10. Gatherer’s Kit and tools</div><div class="after">Exact capacity numbers, accepted categories and stacking rules remain TBD.</div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">blocks.body</td><td class="p">Describes the Gatherer’s Kit containers: what each one carries and how much.</td><td>block “Container capacity &amp; categories — NEW WORKING IDEA”</td><td>last paragraph taken out</td></tr></tbody></table></div>
+<div class="src"><div class="doc">9. Gathering, resources and refining · both features · unchanged</div><div class="after">The two features keep their sentences as they are.</div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">features.behaviour</td><td class="p">The two features’ “Expected behaviour/output”: what the game must do when the player gathers, and when the apparatus finishes. Written for the programmer; the M1 TDD prints them.</td><td>features “Gather a resource” and “Process in the apparatus”</td><td>none</td></tr></tbody></table></div></div>
+<p class="note">Only the two features say it, since they say more (the character stands still; the “replace” button).</p>
+</section>
+<section class="card" id="m3a">
+<h3><span class="num">M3a</span> Orientation</h3>
+<div class="label">Today</div>
+<div class="stack"><div class="src"><div class="doc">22. Controls and camera</div><div class="today"><mark>Orientation decided for M1/M2: landscape.</mark> This matches Sky: Children of the Light — the closest existing comparable in both mechanics (no combat, restoration-driven exploration) and design goal (calm, low-pressure) — and wider field of view has a measurably significant effect on presence/immersion (Cummings &amp; Bailenson, 2016), relevant to Tessera's atmosphere/scenery-as-reward direction.
+
+<mark>Portrait is not ruled out — it's deferred and re-explored at M3, whether specifically for the real-world layer or more broadly.</mark> Meditation/wellness/habit apps generally favor portrait for quick one-handed check-ins, a different interaction pattern from the core game's — worth checking specifically against Kinder World once its orientation is confirmed, since it's the closest existing comparable that combines a game with a real-world wellbeing layer. <mark>Supporting both orientations at once still isn't assumed at any stage — it adds UI/camera/testing scope regardless of when it's introduced.</mark></div></div>
+<div class="src"><div class="doc">Your decisions, 29 September</div><div class="today decision"><mark>Orientation decided for M1/M2: landscape.
+
+Portrait is not ruled out — it's deferred and re-explored at M3, whether specifically for the real-world layer or more broadly.
+
+Supporting both orientations at once still isn't assumed at any stage — it adds UI/camera/testing scope regardless of when it's introduced.</mark></div></div></div>
+<div class="label">Proposed</div>
+<div class="stack"><div class="src"><div class="doc">22. Controls and camera</div><div class="after"><mark>Orientation decided for M1/M2: landscape.</mark>
+
+This matches Sky: Children of the Light — the closest existing comparable in both mechanics (no combat, restoration-driven exploration) and design goal (calm, low-pressure) — and wider field of view has a measurably significant effect on presence/immersion (Cummings &amp; Bailenson, 2016), relevant to Tessera's atmosphere/scenery-as-reward direction.
+
+<mark>Portrait is not ruled out — it's deferred and re-explored at M3, whether specifically for the real-world layer or more broadly.</mark>
+
+Meditation/wellness/habit apps generally favor portrait for quick one-handed check-ins, a different interaction pattern from the core game's — worth checking specifically against Kinder World once its orientation is confirmed, since it's the closest existing comparable that combines a game with a real-world wellbeing layer.
+
+<mark>Supporting both orientations at once still isn't assumed at any stage — it adds UI/camera/testing scope regardless of when it's introduced.</mark></div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">decisions.decision</td><td class="p">Your decision, word for word. The doc prints only its text; the date and why stay in the app.</td><td>decision “Orientation decided for M1/M2: landscape.” (29 Sep)</td><td>prints as text only</td></tr><tr><td class="f">blocks.body</td><td class="p">Why landscape: the comparison with Sky and the field-of-view research.</td><td>block “22. Controls and camera: Orientation decided…”</td><td>keeps only “This matches Sky…”</td></tr><tr><td class="f">decisions.decision</td><td class="p">Your decision, word for word. The doc prints only its text; the date and why stay in the app.</td><td>decision “Portrait is not ruled out…” (29 Sep)</td><td>prints as text only</td></tr><tr><td class="f">blocks.body</td><td class="p">Why portrait may suit the real-world layer, and what to check in Kinder World.</td><td>new block “22. Controls and camera: Meditation/wellness/habit apps…”</td><td>new</td></tr><tr><td class="f">decisions.decision</td><td class="p">Your decision, word for word. The doc prints only its text; the date and why stay in the app.</td><td>decision “Supporting both orientations…” (29 Sep)</td><td>prints as text only</td></tr></tbody></table></div></div>
+<p class="note">Same words. The doc prints them from your decisions, so each becomes its own paragraph.</p>
+</section>
+<section class="card" id="m3b">
+<h3><span class="num">M3b</span> The real-world layer in M1</h3>
+<div class="label">Today</div>
+<div class="stack"><div class="src"><div class="doc">New M1 — mechanics prototype</div><div class="today">==== Real-world layer: handled separately
+
+<mark>The real-world layer (steps/focus time as in-game currency) is not developed during M1. M1 must still be built so the layer can be added in a later milestone without rework.</mark> Its platform risk — whether background step/focus tracking works reliably on iOS and Android — is tested after M1, as its own small, throwaway technical spike, separate from the game. M1 contains no real-world layer work, tracking tests included. The same tracking is tested again inside the real game during &lt;&lt;m2_polished_slice,M2&gt;&gt;. See &lt;&lt;platform_integration_spike,platform integration&gt;&gt; for the full risk reasoning and recommended approach. The tracking risk is a distinct technical question, not a mechanics or desirability one.</div></div>
+<div class="src"><div class="doc">Your decision, 14 October</div><div class="today decision"><mark>The real-world layer (steps/focus time as in-game currency) is not developed during M1. M1 must still be built so the layer can be added in a later milestone without rework.</mark></div></div></div>
+<div class="label">Proposed</div>
+<div class="stack"><div class="src"><div class="doc">New M1 — mechanics prototype</div><div class="after">==== Real-world layer: handled separately
+
+<mark>The real-world layer (steps/focus time as in-game currency) is not developed during M1. M1 must still be built so the layer can be added in a later milestone without rework.</mark>
+
+Its platform risk — whether background step/focus tracking works reliably on iOS and Android — is tested after M1, as its own small, throwaway technical spike, separate from the game. M1 contains no real-world layer work, tracking tests included. The same tracking is tested again inside the real game during &lt;&lt;m2_polished_slice,M2&gt;&gt;. See &lt;&lt;platform_integration_spike,platform integration&gt;&gt; for the full risk reasoning and recommended approach. The tracking risk is a distinct technical question, not a mechanics or desirability one.</div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">blocks.body</td><td class="p">The section heading in New M1 — mechanics prototype. Only the heading stays in it.</td><td>block “Real-world layer: handled separately”</td><td>keeps only its heading</td></tr><tr><td class="f">decisions.decision</td><td class="p">Your decision, word for word. The doc prints only its text; the date and why stay in the app.</td><td>decision of 14 October</td><td>prints as text only</td></tr><tr><td class="f">blocks.body</td><td class="p">How and when the tracking risk is tested, since M1 leaves the real-world layer out.</td><td>new block “New M1: Its platform risk…”</td><td>new</td></tr></tbody></table></div></div>
+
+</section>
+<section class="card" id="m3c">
+<h3><span class="num">M3c</span> M2's public release</h3>
+<div class="label">Today</div>
+<div class="stack"><div class="src"><div class="doc">M2 — polished slice (the original M1, renumbered) · What it’s for</div><div class="today">One small, polished area demonstrating gathering, a complete restoration sequence, and representative painterly art, sound, and animation. No combat and no unfinished systems — everything included has to be finished and representative, not a rough placeholder. <mark>M2 is released publicly on the App Store and Google Play.</mark> Full technical goals: see &lt;&lt;m2_technical_goals,M2 technical goals&gt;&gt;. Remaining scope decisions: see &lt;&lt;m2_decisions_still_needed,M2 decisions still needed&gt;&gt;.</div></div>
+<div class="src"><div class="doc">Your decision, 9 October</div><div class="today decision"><mark>M2 is released publicly on the App Store and Google Play.</mark></div></div></div>
+<div class="label">Proposed</div>
+<div class="stack"><div class="src"><div class="doc">M2 — polished slice (the original M1, renumbered) · What it’s for</div><div class="after">One small, polished area demonstrating gathering, a complete restoration sequence, and representative painterly art, sound, and animation. No combat and no unfinished systems — everything included has to be finished and representative, not a rough placeholder.
+
+<mark>M2 is released publicly on the App Store and Google Play.</mark>
+
+Full technical goals: see &lt;&lt;m2_technical_goals,M2 technical goals&gt;&gt;. Remaining scope decisions: see &lt;&lt;m2_decisions_still_needed,M2 decisions still needed&gt;&gt;.</div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">milestones.purpose</td><td class="p">M2’s “What it’s for”: what the polished slice must show. Every milestone has this field.</td><td>milestone M2 (“What it’s for”)</td><td>keeps only the first paragraph</td></tr><tr><td class="f">decisions.decision</td><td class="p">Your decision, word for word. The doc prints only its text; the date and why stay in the app.</td><td>decision of 9 October</td><td>prints as text only</td></tr><tr><td class="f">blocks.body</td><td class="p">Links from M2’s “What it’s for” to M2 technical goals and M2 decisions still needed.</td><td>new block “M2: Full technical goals…”</td><td>new</td></tr></tbody></table></div></div>
+
+</section>
+<section class="card" id="m3d">
+<h3><span class="num">M3d</span> M2's tracking test</h3>
+<div class="label">Today</div>
+<div class="stack"><div class="src"><div class="doc">M2 — polished slice (the original M1, renumbered)</div><div class="today">==== Real-world layer in M2: tracking test only
+
+<mark>M2 tracks steps and focus time to test whether tracking works inside the real game, on real phones. The tracking isn't connected to gameplay: it earns no Flow Points, gives no rewards and changes nothing in the world.</mark> Its only job is to produce the platform-feasibility evidence M2 needs to exit. Whether the public release includes this tracking, or only M2's test builds do, is still open (see &lt;&lt;current_open_questions,open questions&gt;&gt;).</div></div>
+<div class="src"><div class="doc">Your decision, 9 October</div><div class="today decision"><mark>M2 tracks steps and focus time to test whether tracking works inside the real game, on real phones. The tracking isn't connected to gameplay: it earns no Flow Points, gives no rewards and changes nothing in the world.</mark></div></div></div>
+<div class="label">Proposed</div>
+<div class="stack"><div class="src"><div class="doc">M2 — polished slice (the original M1, renumbered)</div><div class="after">==== Real-world layer in M2: tracking test only
+
+<mark>M2 tracks steps and focus time to test whether tracking works inside the real game, on real phones. The tracking isn't connected to gameplay: it earns no Flow Points, gives no rewards and changes nothing in the world.</mark>
+
+Its only job is to produce the platform-feasibility evidence M2 needs to exit. Whether the public release includes this tracking, or only M2's test builds do, is still open (see &lt;&lt;current_open_questions,open questions&gt;&gt;).</div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">blocks.body</td><td class="p">The section heading in M2 — polished slice. Only the heading stays in it.</td><td>block “Real-world layer in M2: tracking test only”</td><td>keeps only its heading</td></tr><tr><td class="f">decisions.decision</td><td class="p">Your decision, word for word. The doc prints only its text; the date and why stay in the app.</td><td>decision of 9 October</td><td>prints as text only</td></tr><tr><td class="f">blocks.body</td><td class="p">What the tracking test is for, and the open question about whether the public release includes it.</td><td>new block “M2: Its only job…”</td><td>new</td></tr></tbody></table></div></div>
+
+</section>
+<section class="card" id="m3e">
+<h3><span class="num">M3e</span> Flow Points and the Productivity Point</h3>
+<div class="label">Today</div>
+<div class="stack"><div class="src"><div class="doc">13. Movement + focus system</div><div class="today"><mark>*Flow Points* is the official shared currency earned through walking and focus sessions.</mark></div></div>
+<div class="src"><div class="doc">13. Movement + focus system</div><div class="today"><mark>The previously discussed *1 Productivity Point = 50 minutes* should *not* be treated as locked under the new economy.</mark></div></div>
+<div class="src"><div class="doc">Your decisions, 17 and 21 September</div><div class="today decision"><mark>*Flow Points* is the official shared currency earned through walking and focus sessions.
+
+The previously discussed *1 Productivity Point = 50 minutes* should *not* be treated as locked under the new economy.</mark></div></div></div>
+<div class="label">Proposed</div>
+<div class="stack"><div class="src"><div class="doc">13. Movement + focus system</div><div class="after">Reads exactly as today.</div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">decisions.decision</td><td class="p">Your decision, word for word. The doc prints only its text; the date and why stay in the app.</td><td>decision “The previously discussed 1 Productivity Point…” (17 Sep)</td><td>prints as text only</td></tr><tr><td class="f">decisions.decision</td><td class="p">Your decision, word for word. The doc prints only its text; the date and why stay in the app.</td><td>decision “Flow Points is the official shared currency…” (21 Sep)</td><td>prints as text only</td></tr><tr><td class="f">blocks.body</td><td class="p">The design text of Movement + focus system: how walking and focus time earn Flow Points, and how Flow Points turn into coins.</td><td>blocks “13. Movement + focus system” and “Flow Points — LOCKED CURRENCY NAME…”</td><td>the sentences move out of them</td></tr></tbody></table></div></div>
+
+</section>
+<section class="card" id="m3f">
+<h3><span class="num">M3f</span> The focus-session rule</h3>
+<div class="label">Today</div>
+<div class="stack"><div class="src"><div class="doc">13. Movement + focus system</div><div class="today"><mark>The strict rule where one unapproved app makes a focus session award zero is also still subject to product and technical validation.</mark></div></div>
+<div class="src"><div class="doc">Your decision, 17 September</div><div class="today decision"><mark>The strict rule where one unapproved app makes a focus session award zero is still subject to product and technical validation.</mark></div></div></div>
+<div class="label">Proposed</div>
+<div class="stack"><div class="src"><div class="doc">13. Movement + focus system</div><div class="after"><mark>The strict rule where one unapproved app makes a focus session award zero is still subject to product and technical validation.</mark></div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">decisions.decision</td><td class="p">Your decision, word for word. The doc prints only its text; the date and why stay in the app.</td><td>decision of 17 September</td><td>prints as text only</td></tr><tr><td class="f">blocks.body</td><td class="p">The opening of Movement + focus system: how walking and focus time earn Flow Points.</td><td>block “13. Movement + focus system”</td><td>the sentence moves out of it</td></tr></tbody></table></div></div>
+<p class="note">The word “also” goes.</p>
+</section>
+<section class="card" id="m3g">
+<h3><span class="num">M3g</span> The special-currency sink</h3>
+<div class="label">Today</div>
+<div class="stack"><div class="src"><div class="doc">14. NEW — recurring special-currency spending problem</div><div class="today">=== New requirement
+
+<mark>The game needs a *repeatable special-currency sink* that gives continued value to movement/focus sessions.</mark></div></div>
+<div class="src"><div class="doc">Your decision, 19 September</div><div class="today decision"><mark>The game needs a repeatable special-currency sink that gives continued value to movement/focus sessions.</mark></div></div></div>
+<div class="label">Proposed</div>
+<div class="stack"><div class="src"><div class="doc">14. NEW — recurring special-currency spending problem</div><div class="after">=== New requirement
+
+<mark>The game needs a repeatable special-currency sink that gives continued value to movement/focus sessions.</mark></div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">blocks.body</td><td class="p">The section heading in the special-currency spending doc. Only the heading stays in it.</td><td>block “New requirement”</td><td>keeps only its heading</td></tr><tr><td class="f">decisions.decision</td><td class="p">Your decision, word for word. The doc prints only its text; the date and why stay in the app.</td><td>decision of 19 September</td><td>prints as text only</td></tr></tbody></table></div></div>
+<p class="note">The bold on “repeatable special-currency sink” goes, since the decision has none.</p>
+</section>
+<section class="card" id="m4a">
+<h3><span class="num">M4a</span> The Flow Points → coins chain</h3>
+<div class="label">Today</div>
+<div class="stack"><div class="src"><div class="doc">13. Movement + focus system</div><div class="today">Current economy chain:
+
+*Movement OR focused time → Flow Points*
+
+<mark>*Flow Points → optional conversion to coins → repeatable in-game purchases.*</mark>
+
+<mark>The player can therefore choose to convert Flow Points into coins when they want more ordinary spending currency.</mark></div></div>
+<div class="src"><div class="doc">14. NEW — recurring special-currency spending problem</div><div class="today">The newer economy idea begins to provide a repeatable chain:
+
+<mark>*Movement/focus → Flow Points → exchange for coins → spend coins on useful consumables or other ordinary game purchases*</mark></div></div>
+<div class="src"><div class="doc">Your decision, 21 September</div><div class="today decision"><mark>*Flow Points → optional conversion to coins → repeatable in-game purchases.* The player can therefore choose to convert Flow Points into coins when they want more ordinary spending currency.</mark></div></div></div>
+<div class="label">Proposed</div>
+<div class="stack"><div class="src"><div class="doc">13. Movement + focus system</div><div class="after">Current economy chain:
+
+*Movement OR focused time → Flow Points*
+
+<mark>*Flow Points → optional conversion to coins → repeatable in-game purchases.* The player can therefore choose to convert Flow Points into coins when they want more ordinary spending currency.</mark></div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">blocks.body</td><td class="p">The Flow Points section of Movement + focus system: the currency’s name, the economy chain and what’s still open.</td><td>block “Flow Points — LOCKED CURRENCY NAME…”</td><td>the two lines move out of it</td></tr><tr><td class="f">decisions.decision</td><td class="p">Your decision, word for word. The doc prints only its text; the date and why stay in the app.</td><td>decision of 21 September</td><td>prints as text only</td></tr></tbody></table></div>
+<div class="src"><div class="doc">14. NEW — recurring special-currency spending problem</div><div class="after">The newer economy idea begins to provide a repeatable chain:
+
+<mark>*Flow Points → optional conversion to coins → repeatable in-game purchases.* The player can therefore choose to convert Flow Points into coins when they want more ordinary spending currency.</mark></div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">blocks.body</td><td class="p">The spending doc’s answer to the spending problem: how Flow Points can feed the ordinary game economy.</td><td>block “Current response to the problem”</td><td>its chain line taken out</td></tr><tr><td class="f">decisions.decision</td><td class="p">Your decision, word for word. The doc prints only its text; the date and why stay in the app.</td><td>the same decision of 21 September</td><td>prints as text only</td></tr></tbody></table></div></div>
+<p class="note">Your decision is the wording in Movement + focus system. The two lines there become one paragraph.</p>
+</section>
+<section class="card" id="m4b">
+<h3><span class="num">M4b</span> Portable portals as a coin sink</h3>
+<div class="label">Today</div>
+<div class="stack"><div class="src"><div class="doc">13. Movement + focus system</div><div class="today"><mark>Portable portals are one current example of something bought with coins.</mark></div></div>
+<div class="src"><div class="doc">14. NEW — recurring special-currency spending problem</div><div class="today"><mark>Portable portals are the first concrete repeatable coin sink proposed.</mark></div></div></div>
+<div class="label">Proposed</div>
+<div class="stack"><div class="src"><div class="doc">13. Movement + focus system</div><div class="after"><mark>Portable portals are the first concrete repeatable coin sink proposed.</mark></div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">blocks.body</td><td class="p">What portable portals are in the economy. Both docs print this one block, so the sentence is written once.</td><td>new block “Portable portals as a coin sink”, listed by both documents</td><td>new</td></tr><tr><td class="f">blocks.body</td><td class="p">The Flow Points section of Movement + focus system: the currency’s name, the economy chain and what’s still open.</td><td>block “Flow Points — LOCKED CURRENCY NAME…”</td><td>its sentence taken out</td></tr></tbody></table></div>
+<div class="src"><div class="doc">14. NEW — recurring special-currency spending problem</div><div class="after"><mark>Portable portals are the first concrete repeatable coin sink proposed.</mark></div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">blocks.body</td><td class="p">What portable portals are in the economy. Both docs print this one block, so the sentence is written once.</td><td>the same new block</td><td>new</td></tr><tr><td class="f">blocks.body</td><td class="p">The spending doc’s answer to the spending problem: how Flow Points can feed the ordinary game economy.</td><td>block “Current response to the problem”</td><td>its sentence taken out</td></tr></tbody></table></div></div>
+<p class="note">I recommend the second wording: it says what kind of purchase it is.</p>
+</section>
+<section class="card" id="m4c">
+<h3><span class="num">M4c</span> The chain is decided, not an idea</h3>
+<div class="label">Today</div>
+<div class="stack"><div class="src"><div class="doc">36. Monetization</div><div class="today"><mark>The newer Flow Points → coins idea may give</mark> the special currency an ongoing in-game use, but exact rates and repeatable coin sinks still need to be designed.</div></div>
+<div class="src"><div class="doc">Your decision, 21 September</div><div class="today decision"><mark>*Flow Points → optional conversion to coins → repeatable in-game purchases.* …</mark></div></div></div>
+<div class="label">Proposed</div>
+<div class="stack"><div class="src"><div class="doc">36. Monetization</div><div class="after">The <mark>Flow Points → coins conversion gives</mark> the special currency an ongoing in-game use, but exact rates and repeatable coin sinks still need to be designed.</div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">blocks.body</td><td class="p">The rules in Monetization: what Tessera avoids when it makes money, and how Flow Points relate to that.</td><td>block “Monetization guardrails — CURRENT DIRECTION”</td><td>reworded</td></tr></tbody></table></div></div>
+<p class="note">Not a repeat: the sentence still calls the chain an idea that “may” work, after you decided it.</p>
+</section>
+<section class="card" id="m5">
+<h3><span class="num">M5</span> Tracking is tested in two stages</h3>
+<div class="label">Today</div>
+<div class="stack"><div class="src"><div class="doc">25. M2 technical goals</div><div class="today">The movement/focus platform integration is the single biggest named technical risk in the project, <mark>tested through its own isolated technical spike, separate from M2's engineering and design budget</mark> — see &lt;&lt;platform_integration_spike,platform integration&gt;&gt; for the full risk reasoning and recommended approach.</div></div>
+<div class="src"><div class="doc">34. M2 decisions still needed</div><div class="today">The movement/focus earning rule and focus-session rule do not need to be finalized before M2 estimation — the polished-slice vertical slice does not depend on them, and <mark>platform integration is validated separately through an isolated technical spike</mark> (see &lt;&lt;platform_integration_spike,platform integration&gt;&gt;).</div></div>
+<div class="src"><div class="doc">28. Platform integration — current intended routes</div><div class="today">Recommended approach, in two stages:
+
+. <mark>*After M1:* a small, isolated technical spike</mark> — a throwaway test app that only requests permissions and logs steps/focus time in the background — run separately from the game. M1 itself contains no real-world layer work. This surfaces platform failures early, before engineering budget goes into a system that isn't yet confirmed to work.
+. <mark>*During M2:* the same tracking is built into M2 and tested inside the real game.</mark> It's a test only: the tracking isn't connected to gameplay and gives the player nothing. It checks whether tracking still works reliably with the full game running, including battery use, and produces the platform-feasibility evidence M2 needs to exit (see &lt;&lt;m2_polished_slice,M2&gt;&gt;). <mark>M2's estimate must include time for it</mark>; Jousef's earlier estimate left out time for third-party integrations.</div></div></div>
+<div class="label">Proposed</div>
+<div class="stack"><div class="src"><div class="doc">25. M2 technical goals</div><div class="after">The movement/focus platform integration is the single biggest named technical risk in the project.
+
+<mark>Platform integration is tested in two stages: first through an isolated technical spike after M1, then inside M2 as a tracking test that isn't connected to gameplay (see &lt;&lt;platform_integration_spike,platform integration&gt;&gt;). M2's estimate must include time for that test.</mark></div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">blocks.body</td><td class="p">Why M2 puts the game first, and why the real-world layer is the biggest technical risk.</td><td>block “Which features to include”</td><td>sentence shortened</td></tr><tr><td class="f">blocks.body</td><td class="p">When and how step and focus tracking is tested: after M1, then inside M2. Both docs print this one block, so it’s written once.</td><td>new block “Platform integration in two stages”, listed by both documents</td><td>new</td></tr></tbody></table></div>
+<div class="src"><div class="doc">34. M2 decisions still needed</div><div class="after">The movement/focus earning rule and focus-session rule do not need to be finalized before M2 estimation — the polished-slice vertical slice does not depend on them.
+
+<mark>Platform integration is tested in two stages: first through an isolated technical spike after M1, then inside M2 as a tracking test that isn't connected to gameplay (see &lt;&lt;platform_integration_spike,platform integration&gt;&gt;). M2's estimate must include time for that test.</mark></div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">blocks.body</td><td class="p">The opening of M2 decisions still needed: what must be decided before M2 can be estimated.</td><td>block “34. M2 decisions still needed”</td><td>sentence shortened</td></tr><tr><td class="f">blocks.body</td><td class="p">When and how step and focus tracking is tested: after M1, then inside M2. Both docs print this one block, so it’s written once.</td><td>the same new block</td><td>new</td></tr></tbody></table></div>
+<div class="src"><div class="doc">28. Platform integration — current intended routes · unchanged</div><div class="after">Keeps its detailed two-stage list.</div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">blocks.body</td><td class="p">Platform integration’s section on tracking focus time on iPhones: the route, the open problems and the two-stage test plan.</td><td>block “iOS focus/app usage” (it holds the two-stage list)</td><td>none</td></tr></tbody></table></div></div>
+<p class="note">M2 technical goals and M2 decisions still needed contradict Platform integration, which has the current plan. On 9 October you said M2 technical goals was fine as it is, but it still says the test sits outside M2’s budget.</p>
+</section>
+<section class="card" id="m6">
+<h3><span class="num">M6</span> Open questions: Guardian</h3>
+<div class="label">Today</div>
+<div class="stack"><div class="src"><div class="doc">12. Guardians</div><div class="today">Still undefined:
+
+* <mark>what the Guardian actually does after revival;</mark>
+* <mark>whether it changes/unlocks the map;</mark>
+* <mark>whether it has upgrades;</mark>
+* <mark>upgrade costs/functions;</mark>
+* <mark>whether it consumes the special currency repeatedly or only at major milestones.</mark></div></div>
+<div class="src"><div class="doc">43. Current major open questions — cleaned list</div><div class="today">=== Game
+
+* Final long-term progression structure.
+* Exact recurring use for movement/focus currency.
+* Final container capacities for vials/potions, Canteen, Gatherer’s Pouch and Miner’s Box.
+* Exact resource categories accepted by the pouch and Miner’s Box.
+* Portable portal destination/use rules, carry limit and coin cost.
+* <mark>Guardian function after revival.</mark>
+* <mark>Guardian upgrades.</mark>
+* Portal network.
+* Tile/Tessera unlocking.
+* Resource list.
+* Apparatus recipes.
+* Final inventory/container details.
+* First world/theme.
+* World shape/presentation.
+* Exact exploration/gathering/puzzle rhythm.
+* How much authored scenery/content is needed for sustained interest.
+* Whether the gathering/puzzle/refining rhythm reads as restorative ("soft fascination") or effortful ("hard fascination"), and where the balance point is.</div></div></div>
+<div class="label">Proposed</div>
+<div class="stack"><div class="src"><div class="doc">12. Guardians</div><div class="after">Still undefined:
+
+<mark>* Guardian function after revival.
+* Whether the Guardian changes or unlocks the map.
+* Guardian upgrades.
+* Guardian upgrade costs and functions.
+* Whether the Guardian consumes the special currency repeatedly or only at major milestones.</mark></div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">blocks.body</td><td class="p">The current design in Guardians: the Guardian starts dormant and the player revives it. Its list of open points moves out.</td><td>block “CURRENT WORKING DIRECTION” (Guardians)</td><td>its list moves out</td></tr><tr><td class="f">open_questions.question</td><td class="p">One undecided question per record. Every doc that lists it prints the same record, so answering it once answers it everywhere.</td><td>“Guardian function after revival.”, “Guardian upgrades.”</td><td>existing records</td></tr><tr><td class="f">open_questions.question</td><td class="p">One undecided question per record. Every doc that lists it prints the same record, so answering it once answers it everywhere.</td><td>the other three</td><td>new records</td></tr></tbody></table></div>
+<div class="src"><div class="doc">43. Current major open questions — cleaned list · with M7 and M8</div><div class="after">=== Game
+
+* Final long-term progression structure.
+* Final container capacities for vials/potions, Canteen, Gatherer’s Pouch and Miner’s Box.
+* Exact resource categories accepted by the pouch and Miner’s Box.
+<mark>* Where a portable portal sends the player.
+* Whether a portable portal's destination is chosen or fixed.
+* Whether a portable portal can be used anywhere.
+* How many portable portals can be carried.
+* A portable portal's purchase price.
+* Whether portable portals need restrictions in particular areas.
+* Guardian function after revival.
+* Whether the Guardian changes or unlocks the map.
+* Guardian upgrades.
+* Guardian upgrade costs and functions.
+* Whether the Guardian consumes the special currency repeatedly or only at major milestones.
+* Where portals lead.
+* When portal travel enters progression.
+* Portal network.</mark>
+* Tile/Tessera unlocking.
+* Resource list.
+* Apparatus recipes.
+* Final inventory/container details.
+* First world/theme.
+* World shape/presentation.
+* Exact exploration/gathering/puzzle rhythm.
+* How much authored scenery/content is needed for sustained interest.
+* Whether the gathering/puzzle/refining rhythm reads as restorative ("soft fascination") or effortful ("hard fascination"), and where the balance point is.</div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">open_questions.question</td><td class="p">One undecided question per record. Every doc that lists it prints the same record, so answering it once answers it everywhere.</td><td>one record per line; the document lists them in this order</td><td>the highlighted ones are listed by both documents</td></tr><tr><td class="f">open_questions.question</td><td class="p">One undecided question per record. Every doc that lists it prints the same record, so answering it once answers it everywhere.</td><td>“Portable portal destination/use rules, carry limit and coin cost.”</td><td>deleted (replaced by the six portable-portal questions)</td></tr><tr><td class="f">open_questions.question</td><td class="p">One undecided question per record. Every doc that lists it prints the same record, so answering it once answers it everywhere.</td><td>“Exact recurring use for movement/focus currency.”</td><td>deleted (same as “Recurring spending loop.”)</td></tr></tbody></table></div></div>
+<p class="note">Each question is then one record: answered in one place, answered in both. The list in Guardians takes the style of the open-questions list (capital letter, full stop).</p>
+</section>
+<section class="card" id="m7">
+<h3><span class="num">M7</span> Open questions: portals and portable portals</h3>
+<div class="label">Today</div>
+<div class="stack"><div class="src"><div class="doc">11. Lanterns and portals</div><div class="today">Still open:
+
+* <mark>where they lead;</mark>
+* <mark>when portal travel enters progression;</mark>
+* <mark>overall portal network rules.</mark></div></div>
+<div class="src"><div class="doc">11. Lanterns and portals · Portable portals</div><div class="today">Exact rules remain TBD:
+
+* <mark>where a portable portal sends the player;</mark>
+* <mark>whether the destination is chosen or fixed;</mark>
+* <mark>whether it can be used anywhere;</mark>
+* <mark>how many can be carried;</mark>
+* <mark>purchase price;</mark>
+* <mark>whether any restrictions are needed for particular areas.</mark></div></div>
+<div class="src"><div class="doc">43. Current major open questions — cleaned list</div><div class="today">=== Game
+
+* Final long-term progression structure.
+* Exact recurring use for movement/focus currency.
+* Final container capacities for vials/potions, Canteen, Gatherer’s Pouch and Miner’s Box.
+* Exact resource categories accepted by the pouch and Miner’s Box.
+* <mark>Portable portal destination/use rules, carry limit and coin cost.</mark>
+* Guardian function after revival.
+* Guardian upgrades.
+* <mark>Portal network.</mark>
+* Tile/Tessera unlocking.
+* Resource list.
+* Apparatus recipes.
+* Final inventory/container details.
+* First world/theme.
+* World shape/presentation.
+* Exact exploration/gathering/puzzle rhythm.
+* How much authored scenery/content is needed for sustained interest.
+* Whether the gathering/puzzle/refining rhythm reads as restorative ("soft fascination") or effortful ("hard fascination"), and where the balance point is.</div></div></div>
+<div class="label">Proposed</div>
+<div class="stack"><div class="src"><div class="doc">11. Lanterns and portals</div><div class="after">Still open:
+
+<mark>* Where portals lead.
+* When portal travel enters progression.
+* Portal network.</mark></div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">blocks.body</td><td class="p">The current design in Lanterns and portals: a lantern plant turns into a portal. Its list of open points moves out.</td><td>block “CURRENT WORKING DIRECTION” (Lanterns and portals)</td><td>its list moves out</td></tr><tr><td class="f">open_questions.question</td><td class="p">One undecided question per record. Every doc that lists it prints the same record, so answering it once answers it everywhere.</td><td>“Portal network.”</td><td>existing record</td></tr><tr><td class="f">open_questions.question</td><td class="p">One undecided question per record. Every doc that lists it prints the same record, so answering it once answers it everywhere.</td><td>the other two</td><td>new records</td></tr></tbody></table></div>
+<div class="src"><div class="doc">11. Lanterns and portals · Portable portals</div><div class="after">Exact rules remain TBD:
+
+<mark>* Where a portable portal sends the player.
+* Whether a portable portal's destination is chosen or fixed.
+* Whether a portable portal can be used anywhere.
+* How many portable portals can be carried.
+* A portable portal's purchase price.
+* Whether portable portals need restrictions in particular areas.</mark></div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">blocks.body</td><td class="p">Describes portable portals: single-use items bought from travelling traders with coins. Its list of open points moves out.</td><td>block “Portable portals — NEW WORKING IDEA”</td><td>its list moves out</td></tr><tr><td class="f">open_questions.question</td><td class="p">One undecided question per record. Every doc that lists it prints the same record, so answering it once answers it everywhere.</td><td>all six</td><td>new records</td></tr></tbody></table></div>
+<div class="src"><div class="doc">43. Current major open questions — cleaned list</div><div class="after">The game list shown under M6.</div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">open_questions.question</td><td class="p">One undecided question per record. Every doc that lists it prints the same record, so answering it once answers it everywhere.</td><td>one record per line; the document lists them in this order</td><td>the highlighted ones are listed by both documents</td></tr><tr><td class="f">open_questions.question</td><td class="p">One undecided question per record. Every doc that lists it prints the same record, so answering it once answers it everywhere.</td><td>“Portable portal destination/use rules, carry limit and coin cost.”</td><td>deleted (replaced by the six portable-portal questions)</td></tr></tbody></table></div></div>
+
+</section>
+<section class="card" id="m8">
+<h3><span class="num">M8</span> Open questions: Flow Points</h3>
+<div class="label">Today</div>
+<div class="stack"><div class="src"><div class="doc">13. Movement + focus system</div><div class="today">Exact:
+
+<mark>* earning curves;
+* caps;
+* conversion rates;
+* costs;</mark>
+
+remain open.</div></div>
+<div class="src"><div class="doc">13. Movement + focus system</div><div class="today">Still open:
+
+<mark>* Flow Points earning rates;
+* Flow Points → coin exchange rate;
+* limits/caps, if any;
+* how ordinary coins are otherwise earned;
+* what other repeatable coin purchases exist.</mark></div></div>
+<div class="src"><div class="doc">43. Current major open questions — cleaned list</div><div class="today">=== Real-world layer
+
+<mark>* Walking conversion.
+* Focus conversion.
+* Caps.</mark>
+* Focus-session failure rule.
+<mark>* Flow Points → coin exchange rate and any limits.
+* Recurring spending loop.
+* Full set of repeatable coin sinks.
+* Guardian/other currency costs.</mark>
+* Exact platform feasibility.
+* Whether any candidate recurring-spend/coupling design creates a structural dependency that conflicts with the game-first principle (real-world effort required to "fund" the reward).
+* Portrait orientation possibilities — for the real-world layer specifically, or more broadly.</div></div>
+<div class="src"><div class="doc">43. Current major open questions — cleaned list</div><div class="today">=== Game
+
+* Final long-term progression structure.
+* <mark>Exact recurring use for movement/focus currency.</mark></div></div></div>
+<div class="label">Proposed</div>
+<div class="stack"><div class="src"><div class="doc">13. Movement + focus system · replaces both lists</div><div class="after">Still open:
+
+<mark>* Walking conversion.
+* Focus conversion.
+* Caps.
+* Flow Points → coin exchange rate and any limits.
+* How ordinary coins are otherwise earned.
+* Full set of repeatable coin sinks.
+* Guardian/other currency costs.</mark></div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">blocks.body</td><td class="p">The design text of Movement + focus system on earning and spending Flow Points. Both its lists of open points move out.</td><td>blocks “13. Movement + focus system” and “Flow Points — LOCKED CURRENCY NAME…”</td><td>both lists taken out</td></tr><tr><td class="f">open_questions.question</td><td class="p">One undecided question per record. Every doc that lists it prints the same record, so answering it once answers it everywhere.</td><td>six of them</td><td>existing records</td></tr><tr><td class="f">open_questions.question</td><td class="p">One undecided question per record. Every doc that lists it prints the same record, so answering it once answers it everywhere.</td><td>“How ordinary coins are otherwise earned.”</td><td>new record</td></tr></tbody></table></div>
+<div class="src"><div class="doc">43. Current major open questions — cleaned list</div><div class="after">=== Real-world layer
+
+<mark>* Walking conversion.
+* Focus conversion.
+* Caps.</mark>
+* Focus-session failure rule.
+<mark>* Flow Points → coin exchange rate and any limits.
+* How ordinary coins are otherwise earned.
+* Recurring spending loop.
+* Full set of repeatable coin sinks.
+* Guardian/other currency costs.</mark>
+* Exact platform feasibility.
+* Whether any candidate recurring-spend/coupling design creates a structural dependency that conflicts with the game-first principle (real-world effort required to "fund" the reward).
+* Portrait orientation possibilities — for the real-world layer specifically, or more broadly.</div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">open_questions.question</td><td class="p">One undecided question per record. Every doc that lists it prints the same record, so answering it once answers it everywhere.</td><td>one record per line</td><td>one new record (“How ordinary coins…”)</td></tr><tr><td class="f">open_questions.question</td><td class="p">One undecided question per record. Every doc that lists it prints the same record, so answering it once answers it everywhere.</td><td>“Exact recurring use for movement/focus currency.” (game list)</td><td>deleted</td></tr></tbody></table></div></div>
+<p class="note">“Exact recurring use for movement/focus currency.” goes from the game list, since it asks the same as “Recurring spending loop.”</p>
+</section>
+<section class="card" id="m9">
+<h3><span class="num">M9</span> Open questions: what M2 still needs decided</h3>
+<div class="label">Today</div>
+<div class="stack"><div class="src"><div class="doc">34. M2 decisions still needed</div><div class="today">Before reliable estimation, important remaining decisions include:
+
+<mark>* exact representative M2 content;
+* success/exit criteria;
+* engine;
+* Android first / iOS first / both;
+* camera rotation;
+* world curvature/presentation;
+* representative resource/economy slice;
+* whether Guardian is required in M2;
+* whether portal is required in M2;
+* recurring special-currency spending design;
+* who owns world assembly/prefab configuration;
+* representative device range;
+* final M2 screens;
+* final minimal M2 audio scope.</mark></div></div>
+<div class="src"><div class="doc">43. Current major open questions — cleaned list</div><div class="today">=== M2
+
+Full list: see &lt;&lt;m2_decisions_still_needed,M2 decisions still needed&gt;&gt;. <mark>Headline items: exact content, exit/success criteria, engine, build platform(s), portal/Guardian inclusion, resource/economy slice, device range, world-assembly owner, screen list, minimal audio list, effort/cost after validation.</mark></div></div></div>
+<div class="label">Proposed</div>
+<div class="stack"><div class="src"><div class="doc">34. M2 decisions still needed</div><div class="after">Before reliable estimation, important remaining decisions include:
+
+<mark>* Exact representative M2 content.
+* Success/exit criteria.
+* Engine.
+* Android first, iOS first or both.
+* Camera rotation.
+* World curvature/presentation.
+* Representative resource/economy slice.
+* Whether the Guardian is required in M2.
+* Whether a portal is required in M2.
+* Recurring spending loop.
+* Who owns world assembly/prefab configuration.
+* Representative device range.
+* Final M2 screens.
+* Final minimal M2 audio scope.</mark></div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">blocks.body</td><td class="p">The opening of M2 decisions still needed: what must be decided before M2 can be estimated. Its list moves out.</td><td>block “34. M2 decisions still needed”</td><td>its list moves out</td></tr><tr><td class="f">open_questions.question</td><td class="p">One undecided question per record. Every doc that lists it prints the same record, so answering it once answers it everywhere.</td><td>“Recurring spending loop.”</td><td>existing record</td></tr><tr><td class="f">open_questions.question</td><td class="p">One undecided question each, linked to M2. M2 decisions still needed and Current major open questions print the same records.</td><td>the other 13, linked to milestone M2</td><td>new records</td></tr></tbody></table></div>
+<div class="src"><div class="doc">43. Current major open questions — cleaned list</div><div class="after">=== M2
+
+<mark>* Exact representative M2 content.
+* Success/exit criteria.
+* Engine.
+* Android first, iOS first or both.
+* Camera rotation.
+* World curvature/presentation.
+* Representative resource/economy slice.
+* Whether the Guardian is required in M2.
+* Whether a portal is required in M2.
+* Recurring spending loop.
+* Who owns world assembly/prefab configuration.
+* Representative device range.
+* Final M2 screens.
+* Final minimal M2 audio scope.</mark>
+
+Public release and tracking test:
+… (unchanged)</div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">blocks.body</td><td class="p">The M2 section of Current major open questions: its heading and the lead-in to the public-release questions.</td><td>block “M2” (open questions)</td><td>the summary sentence taken out</td></tr><tr><td class="f">open_questions.question</td><td class="p">One undecided question each, linked to M2. M2 decisions still needed and Current major open questions print the same records.</td><td>the same 14 records</td><td>listed by both documents</td></tr></tbody></table></div></div>
+<p class="note">“Recurring special-currency spending design” becomes the existing question “Recurring spending loop.” The summary’s “effort/cost after validation” isn’t in the list of 14; say if you want it added.</p>
+</section>
+<section class="card" id="m10a">
+<h3><span class="num">M10a</span> Research questions</h3>
+<div class="label">Today</div>
+<div class="stack"><div class="src"><div class="doc">15. Research findings that still matter</div><div class="today">=== Research questions
+
+* How many people actually want this kind of relaxing exploration game, and what makes them want it?
+* Does adding an optional real-life habit feature make people more or less interested?
+* What's the right way to describe that habit feature so it feels motivating instead of annoying or fake?
+* Do people who already use fitness/focus apps show any natural interest in a beautiful game world reacting to their real-life habits?
+* What would people expect to pay, or how would they expect this to make money?
+* Does combining the game and the real-world layer in one app add anything beyond what a player could already get from two separate existing apps (a cozy game plus a habit app) used side by side?
+* Does the coupling mechanism matter — does a version where the real-world layer directly and visibly changes the world (not just currency) change how necessary the combination feels?
+* Does having an optional, unused real-world layer undermine the game's own low-threat, easy-disengagement feel?
+* Does the gathering/puzzle/refining rhythm read as restorative or as effortful, and does that change with repetition?
+* How much does it matter to the target group that the game is artistic, compared with calm play, the mechanics and the real-world layer?
+* Do players read the story told through restoration as a story, or only as scenery?</div></div>
+<div class="src"><div class="doc">17. Research Methods</div><div class="today">=== Current priority questions:
+
+* <mark>Is Tessera's exploration/restoration/art loop compelling enough on its own that players would stay for it with no real-world layer at all?</mark>
+* Does adding the optional real-world habit layer increase or decrease interest in the game itself?
+* What framing of the habit layer reads as motivating rather than coercive or gimmicky?
+* Do people who already use fitness/focus apps show any natural interest in a game world that reflects their real-world activity?
+* What would this audience expect to pay, and how would they expect the game to make money?
+* Do people who already run a separate cozy/exploration game and a separate habit/fitness app feel any unmet need — or is that combination already good enough?
+* Does describing the real-world layer as generating currency vs. directly and visibly restoring the world change interest in the combination?
+* <mark>Would this audience prefer one integrated app, two apps that sync, or two fully separate apps?</mark>
+* How much does it matter to this audience that the game is artistic?
+* Do players notice and value the story told through restoration, or see only scenery?</div></div></div>
+<div class="label">Proposed</div>
+<div class="stack"><div class="src"><div class="doc">15. Research findings that still matter</div><div class="after">=== Research questions
+
+<mark>* Is Tessera's exploration/restoration/art loop compelling enough on its own that players would stay for it with no real-world layer at all?
+* How many people actually want this kind of relaxing exploration game, and what makes them want it?
+* Does adding an optional real-life habit feature make people more or less interested?
+* What's the right way to describe that habit feature so it feels motivating instead of annoying or fake?
+* Do people who already use fitness/focus apps show any natural interest in a beautiful game world reacting to their real-life habits?
+* What would people expect to pay, or how would they expect this to make money?
+* Does combining the game and the real-world layer in one app add anything beyond what a player could already get from two separate existing apps (a cozy game plus a habit app) used side by side?
+* Would this audience prefer one integrated app, two apps that sync, or two fully separate apps?
+* Does the coupling mechanism matter — does a version where the real-world layer directly and visibly changes the world (not just currency) change how necessary the combination feels?
+* Does having an optional, unused real-world layer undermine the game's own low-threat, easy-disengagement feel?
+* Does the gathering/puzzle/refining rhythm read as restorative or as effortful, and does that change with repetition?
+* How much does it matter to the target group that the game is artistic, compared with calm play, the mechanics and the real-world layer?
+* Do players read the story told through restoration as a story, or only as scenery?</mark></div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">blocks.body</td><td class="p">The section heading in Research findings. Only the heading stays in it.</td><td>block “Research questions”</td><td>keeps only its heading</td></tr><tr><td class="f">blocks.body</td><td class="p">The questions the audience research must answer. Both docs print this one block, so the list is written once.</td><td>new block “Research questions (shared list)”, listed by both documents</td><td>new</td></tr></tbody></table></div>
+<div class="src"><div class="doc">17. Research Methods</div><div class="after">=== Current priority questions:
+
+<mark>* Is Tessera's exploration/restoration/art loop compelling enough on its own that players would stay for it with no real-world layer at all?
+* How many people actually want this kind of relaxing exploration game, and what makes them want it?
+* Does adding an optional real-life habit feature make people more or less interested?
+* What's the right way to describe that habit feature so it feels motivating instead of annoying or fake?
+* Do people who already use fitness/focus apps show any natural interest in a beautiful game world reacting to their real-life habits?
+* What would people expect to pay, or how would they expect this to make money?
+* Does combining the game and the real-world layer in one app add anything beyond what a player could already get from two separate existing apps (a cozy game plus a habit app) used side by side?
+* Would this audience prefer one integrated app, two apps that sync, or two fully separate apps?
+* Does the coupling mechanism matter — does a version where the real-world layer directly and visibly changes the world (not just currency) change how necessary the combination feels?
+* Does having an optional, unused real-world layer undermine the game's own low-threat, easy-disengagement feel?
+* Does the gathering/puzzle/refining rhythm read as restorative or as effortful, and does that change with repetition?
+* How much does it matter to the target group that the game is artistic, compared with calm play, the mechanics and the real-world layer?
+* Do players read the story told through restoration as a story, or only as scenery?</mark></div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">blocks.body</td><td class="p">The section heading in Research Methods. Only the heading stays in it.</td><td>block “Current priority questions:”</td><td>keeps only its heading</td></tr><tr><td class="f">blocks.body</td><td class="p">The questions the audience research must answer. Both docs print this one block, so the list is written once.</td><td>the same new block</td><td>new</td></tr></tbody></table></div></div>
+<p class="note">The same questions in different words. Proposed: the wording of Research findings, plus the two questions only Research Methods has (highlighted under Today).</p>
+</section>
+<section class="card" id="m10b">
+<h3><span class="num">M10b</span> Research findings</h3>
+<div class="label">Today</div>
+<div class="stack"><div class="src"><div class="doc">17. Research Methods</div><div class="today">=== Supporting research already gathered:
+
+* recovery/detachment psychology shows relaxing play helps people mentally recover from demanding work, without needing to be mindless;
+* low-pressure, manageable challenge fits recovery better than constant difficulty or punishment;
+* real-world habits stick better when they fit naturally into daily routine rather than being forced;
+* a large meta-analysis found gamifying health apps produces only a small activity increase (about 489 extra steps/day) — the habit layer alone should not be expected to be a major motivator;
+* people sustain habits better when the habit feels self-chosen rather than imposed;
+* a 2026 review of Pokémon GO found a game can genuinely increase real-world activity while players are motivated mainly by fun — proof that entertainment and health benefits can coexist, though it does not prove demand for this specific combination;
+* comparable products already examined: Sky, Genshin Impact, Kinder World, Habitica, Finch, and the collapse of StepN — each shows a different success or failure pattern;
+* cozy-game players name moral self-reflection, agency, escapism, meaningful affect and narrative as their strongest reasons to play, and social interaction as their weakest. Art was not measured;
+* aesthetics correlate strongly with whether players accept a game, at least among action-RPG players, and in-game scenery can produce awe that feeds a sense of meaning;
+* no study measures how much being artistic matters to Tessera's target group.</div></div>
+<div class="src"><div class="doc">15. Research findings that still matter</div><div class="today">=== Existing research backing this up
+
+* recovery from work: relaxing games help people mentally recover from work, and that recovery doesn't require the game to be mindless or empty;
+* challenge level: games feel best when they're not overly easy but also not overly demanding or punishing;
+* habit-building: real-world habits stick better when they fit naturally into someone's day, not when they're forced;
+* gamification effect size: a large review found that adding game-like rewards to health apps only increases activity by a small amount — about 489 extra steps a day — so the habit layer alone shouldn't be expected to be a huge motivator;
+* motivation: people stick with habits more when they choose to do them, not when they feel pressured into it;
+* entertainment and health can coexist: a large 2026 review of Pokémon GO found a game can genuinely get people more active while they're playing mainly for fun — though it doesn't prove people want Tessera's specific setup;
+* real-world examples already reviewed: Sky, Genshin Impact, Kinder World, Habitica, Finch, and the failure of StepN — each teaches something different about what works and what doesn't;
+* B2B/institutional licensing: going from a consumer product to a paid business-to-business tier has real precedent (Strava and Headspace both did this successfully), but no comparable game has been found doing B2B/institutional licensing specifically — corporate wellness licensing borrows a proven pattern from an adjacent category, while educational licensing for a game has essentially no direct precedent to point to.
+* self-determination theory / overjustification: external rewards for an already-enjoyable activity can reduce intrinsic motivation to keep doing it (Deci, Koestner &amp; Ryan, 1999) — relevant to how the real-world layer's reward is structured, not just whether it exists;
+* meaningful gamification: reward-only mechanics (points, currency) are the weakest, least durable form of gamification; personal and narrative connection to the activity matters more for long-term engagement (Nicholson, 2012);
+* motivation crowding is not settled: some recent fitness-app research finds well-designed extrinsic rewards reinforce rather than undermine intrinsic motivation (Huang, Chen &amp; Zhou, 2024) — contradicts a blanket "any reward is bad" reading of the overjustification finding;
+* gamification's effect on physical activity is inconsistent across meta-analyses: one 2024 review found a "trivial" ~489 steps/day increase (Nishi et al., 2024), another 2022 review found a small-to-medium effect (Mazeas et al., 2022) — the honest read is "modest and inconsistent," not a settled number;
+* too much gamification backfires: exercise-app research found an S-shaped relationship between gamification richness and adherence intention — moderate is better than either too little or too much (Sun, Dong &amp; Jiang, 2025);
+* attention restoration theory: natural, low-demand stimuli ("soft fascination") restore depleted attention; mainstream ART literature classifies video games generally as high-demand ("hard fascination"), which complicates any claim that gameplay is automatically restorative (Basu, Duvall &amp; Kaplan, 2019; Kaplan &amp; Kaplan, 1989);
+* action mechanics specifically undermine relaxation: a 2024 study found combat/action mechanics improve mastery but reduce the relaxation and arousal-reduction pathways of recovery (Heinze, Mandryk &amp; Klarkowski, 2024) — relevant to how demanding gathering/puzzle mechanics should be;
+* app unbundling has a real failure case: Foursquare's split into two apps (Foursquare/Swarm) is treated as a cautionary example of forcing users into two apps for one coherent behavior (Evans, 2014);
+* switching costs between apps are measurable and real, not just a feeling (Rubinstein, Meyer &amp; Evans, 2001);
+* Pokémon GO update (2026 scoping review): novelty-driven activity gains faded within about 3 months; sustained engagement depended on the game satisfying autonomy, competence, and relatedness on its own, not on fitness motivation — and players were found to pause exercise for gameplay, a direct example of the two goals competing for the same moment of attention (Koh et al., 2026);
+* cozy-game motives: a 2025 survey of 277 cozy-game players found the strongest motives were moral self-reflection (play feels like a sensible use of time), agency, escapism, meaningful affect (feeling moved, awe) and narrative. Social interaction was the weakest motive and the only one below the scale midpoint. The survey did not measure art. 78% of the sample was female, and 46% named Stardew Valley as their favorite game (Daneels &amp; Maes, 2025);
+* meaningfulness is a distinct reason to play, separate from fun, social interaction and absorption (Possler, Daneels &amp; Bowman, 2024);
+* visible, specific, meaningful feedback drives stronger engagement than abstract points (Froehlich, Findlater &amp; Landay, 2010);
+* aesthetics and acceptance: in a survey of 462 action-RPG players, sensory aesthetics (visual, audio, tactile) ranked as the most important aesthetic dimension and story second. Players' view of a game's aesthetics correlated strongly with accepting it, and acceptance related to purchase and recommendation intent. These were action-RPG players, not cozy players (Mai et al., 2025);
+* in-game scenery can produce awe, and awe of human achievement led to appreciation, a sense that something is meaningful (Sherrick, Hoewe &amp; Rogers, 2025; abstract only);
+* one of eight player experience types, "Immersive Exploring," centers on exploring and discovering and is tied to awe, beauty and curiosity (Vahlo &amp; Tuuri, 2025; abstract only);
+* a counterexample on narrative: Animal Crossing: New Horizons succeeds with almost no narrative, and its emotional pull comes from world-building (Boudreau, 2024);
+* no study measures how much being artistic matters to Tessera's target group.</div></div></div>
+<div class="label">Proposed</div>
+<div class="stack"><div class="src"><div class="doc">17. Research Methods</div><div class="after">=== Supporting research already gathered:
+
+<mark>(the whole list from Research findings, exactly as it is there)</mark></div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">blocks.body</td><td class="p">The section heading in Research Methods. Only the heading stays in it.</td><td>block “Supporting research already gathered:”</td><td>keeps only its heading</td></tr><tr><td class="f">blocks.body</td><td class="p">What the research has found so far, with its sources. Both docs print this one block, so the list is written once.</td><td>new block “Research findings (shared list)”, listed by both documents</td><td>new</td></tr></tbody></table></div>
+<div class="src"><div class="doc">15. Research findings that still matter · reads as today</div><div class="after">Keeps its list; the list is printed in both docs.</div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">blocks.body</td><td class="p">The section heading in Research findings. Only the heading stays in it.</td><td>block “Existing research backing this up”</td><td>keeps only its heading; its list becomes the shared block</td></tr></tbody></table></div></div>
+<p class="note">Research Methods has a shorter summary of the same findings. Proposed: both print the full list. If you’d rather keep the short summary, skip M10b.</p>
+</section>
+<section class="card" id="m11a">
+<h3><span class="num">M11a</span> Target customers</h3>
+<div class="label">Today</div>
+<div class="stack"><div class="src"><div class="doc">Business: 2. Business Idea and USP</div><div class="today">=== Target customer
+
+<mark>Players who already enjoy relaxing exploration games with a strong artistic identity, such as Sky: Children of the Light or Alto's Odyssey. Also people who use habit or fitness apps but find them a chore rather than fun. Not people who only want a fitness app and have no interest in games.</mark></div></div>
+<div class="src"><div class="doc">Business: 4. Market and Customers</div><div class="today">Who they are and where to find them.
+
+<mark>Players who already enjoy relaxing exploration games with a strong artistic identity, such as Sky: Children of the Light or Alto's Odyssey. Also people who use habit or fitness apps but find them a chore rather than fun. Not people who only want a fitness app and have no interest in games.</mark></div></div></div>
+<div class="label">Proposed</div>
+<div class="stack"><div class="src"><div class="doc">Business: 2. Business Idea and USP and Business: 4. Market and Customers</div><div class="after">Both read exactly as today.</div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">blocks.body</td><td class="p">Who Tessera is for, in the business plan. Both business docs print this one block. Private: left out of shared documents.</td><td>new block “Target customers (shared)”, listed by both documents, Private</td><td>new</td></tr><tr><td class="f">blocks.body</td><td class="p">Their sections of the business plan. Target customer keeps its heading; Typical customer keeps its heading, its first line and the three player groups.</td><td>blocks “Target customer” (2) and “Typical customer” (4)</td><td>the paragraph moves out of them</td></tr></tbody></table></div></div>
+
+</section>
+<section class="card" id="m11b">
+<h3><span class="num">M11b</span> The partnership with Skyfox (Private)</h3>
+<div class="label">Today</div>
+<div class="stack"><div class="src"><div class="doc">38. Team status</div><div class="today">Production/lead involvement has been discussed. <mark>Planned partnership between the intended Milli Studio AB and Skyfox Interactive AB.</mark></div></div>
+<div class="src"><div class="doc">Business: 1. Company Overview</div><div class="today"><mark>Planned partnership between the intended Milli Studio AB and Skyfox Interactive AB. Its form isn't decided yet.</mark></div></div></div>
+<div class="label">Proposed</div>
+<div class="stack"><div class="src"><div class="doc">38. Team status</div><div class="after">Production/lead involvement has been discussed.
+
+<mark>Planned partnership between the intended Milli Studio AB and Skyfox Interactive AB. Its form isn't decided yet.</mark></div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">blocks.body</td><td class="p">Team status on the talks with Mattias and Skyfox, and what’s unresolved. Private.</td><td>block “Mattias / Skyfox”</td><td>the sentence moves out of it</td></tr><tr><td class="f">blocks.body</td><td class="p">The planned partnership between Milli Studio AB and Skyfox, and that its form is open. Both docs print this one block. Private.</td><td>new block “Planned partnership with Skyfox”, listed by both documents, Private</td><td>new</td></tr></tbody></table></div>
+<div class="src"><div class="doc">Business: 1. Company Overview · reads as today</div><div class="after"><mark>Planned partnership between the intended Milli Studio AB and Skyfox Interactive AB. Its form isn't decided yet.</mark></div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">blocks.body</td><td class="p">The company plan in Company Overview: Milli Studio AB, when to form it and what it costs. Private.</td><td>block “Planned structure”</td><td>the paragraph moves out of it</td></tr><tr><td class="f">blocks.body</td><td class="p">The planned partnership between Milli Studio AB and Skyfox, and that its form is open. Both docs print this one block. Private.</td><td>the same new block</td><td>new</td></tr></tbody></table></div></div>
+<p class="note">Team status gains “Its form isn’t decided yet.”</p>
+</section>
+<section class="card" id="m12">
+<h3><span class="num">M12</span> Animations aren’t saved</h3>
+<div class="label">Today</div>
+<div class="stack"><div class="src"><div class="doc">7. Persistent world-state system</div><div class="today"><mark>Animations do not need separate permanent save states unless gameplay actually depends on them.</mark></div></div>
+<div class="src"><div class="doc">29. Save behaviour</div><div class="today"><mark>Temporary animations do not need to be saved.</mark></div></div></div>
+<div class="label">Proposed</div>
+<div class="stack"><div class="src"><div class="doc">29. Save behaviour</div><div class="after"><mark>Animations do not need separate permanent save states unless gameplay actually depends on them.</mark></div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">blocks.body</td><td class="p">The list in Save behaviour of what M2 saves on the phone.</td><td>block “29. Save behaviour”</td><td>its last line taken out</td></tr><tr><td class="f">blocks.body</td><td class="p">The rule that animations aren’t saved unless gameplay depends on them. Both docs print this one block, so it’s written once.</td><td>new block “Animations aren’t saved”, listed by both documents</td><td>new</td></tr></tbody></table></div>
+<div class="src"><div class="doc">7. Persistent world-state system · reads as today</div><div class="after">Prints the same sentence from the new block.</div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">blocks.body</td><td class="p">The rule in Persistent world-state system that separates what must stay true after reopening the game from the animation that shows a change.</td><td>block “CURRENT TECHNICAL/DESIGN PRINCIPLE”</td><td>the sentence moves out of it</td></tr></tbody></table></div></div>
+
+</section>
+<h2>Questions</h2>
+<section class="q"><strong class="title">Q1. The merges</strong><p>Approve all, or name the ones to change or skip.</p></section>
+<section class="q" id="q2">
+<strong class="title">Q2. Containers: what's decided?</strong>
+<div class="stack">
+<div class="src"><div class="doc">10. Gatherer’s Kit and tools</div><div class="today">=== Container capacity &amp; categories — <mark>NEW WORKING IDEA</mark>
+
+The Gatherer’s Kit may also use <mark>*limited, category-specific carrying capacity* rather than one effectively unlimited general inventory</mark>.
+
+Current idea:</div></div>
+<div class="src"><div class="doc">Your decision, 21 September</div><div class="today decision"><mark>Inventory is limited. The exact limits are still to be designed.</mark></div></div>
+</div>
+<div class="label">a. Only the limit is decided</div>
+<div class="src"><div class="doc">10. Gatherer’s Kit and tools</div><div class="after">=== Container capacity &amp; categories — WORKING IDEA
+
+<mark>Inventory is limited. The exact limits are still to be designed.</mark>
+
+The Gatherer’s Kit may also use *category-specific carrying capacity*.
+
+Current idea:
+… (the four containers, unchanged)</div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">blocks.body</td><td class="p">The heading of the containers section in Gatherer’s Kit and tools.</td><td>block “Container capacity &amp; categories — NEW WORKING IDEA”</td><td>heading and first sentence reworded; split around the decision</td></tr><tr><td class="f">decisions.decision</td><td class="p">Your decision, word for word. The doc prints only its text; the date and why stay in the app.</td><td>decision of 21 September</td><td>prints as text only</td></tr><tr><td class="f">blocks.body</td><td class="p">Describes the Gatherer’s Kit containers: what each one carries and how much. In option a, they stay a working idea.</td><td>new block “10. Gatherer’s Kit and tools: The Gatherer’s Kit may also use…”</td><td>new</td></tr></tbody></table></div>
+<div class="label">b. The limit and the containers are decided</div>
+<div class="src"><div class="doc">10. Gatherer’s Kit and tools</div><div class="after">=== Container capacity &amp; categories
+
+<mark>Inventory is limited. The exact limits are still to be designed.</mark>
+
+The Gatherer’s Kit uses *category-specific carrying capacity*.
+
+Containers:
+… (the four containers, unchanged)</div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">blocks.body</td><td class="p">The heading of the containers section in Gatherer’s Kit and tools.</td><td>block “Container capacity &amp; categories — NEW WORKING IDEA”</td><td>heading reworded; split around the decision</td></tr><tr><td class="f">decisions.decision</td><td class="p">Your decision, word for word. The doc prints only its text; the date and why stay in the app.</td><td>decision of 21 September</td><td>prints as text only</td></tr><tr><td class="f">blocks.body</td><td class="p">Describes the Gatherer’s Kit containers: what each one carries and how much. In option b, they’re decided.</td><td>new block “10. Gatherer’s Kit and tools: The Gatherer’s Kit uses…”</td><td>new</td></tr></tbody></table></div>
+</section>
+<section class="q" id="q3">
+<strong class="title">Q3. Out-of-date lines found while reading</strong>
+<p>Not repeats, but out of date or against a doc rule. Fix them now as proposed, or later?</p>
+<div class="fitem"><div class="num">F1</div><div class="src"><div class="doc">17. Research Methods</div><div class="today">=== Research plan, in order:
+
+. Literature review — complete (above).
+. Qualitative interviews: two separate blind groups, each reacting to only half of the concept — one group to the game loop alone, one to the real-world layer alone — so no single participant ever sees the full idea. Each interview opens with questions about the person's own relaxation and habit routines before the concept comes up at all, so answers aren't primed. Around 12 interviews per group (24 total) is enough for the main themes to stop changing and start repeating.
+. Quantitative survey: an unbranded, disguised version of the concept, split so each respondent sees only one version — the game alone, the game with the optional real-world layer, or a real, already-successful comparable game disguised the same way. Showing only one version each, rather than several back-to-back, stops an attentive respondent from noticing that two of the versions are secretly related. Around 200 completed responses per version. Ask appeal, purchase interest, and a forced ranking against other games, rather than relying on "would you buy this" alone, which is an unreliable single question for concepts nobody has seen before. Add a standard four-question pricing exercise and a forced best/worst exercise on five or six ways of describing the real-world layer, to find which framing reads as motivating rather than gimmicky — a simple "which do you prefer" question tends to make everything look equally liked.
+. Empirical smoke test: small, short-lived disguised ad campaigns using only existing concept art and a placeholder project name — never the real title or studio name — linking to two simple pages: one describing the game alone, one describing the game with the optional layer. The tracked action is signing up for updates, not a purchase, so this measures real behaviour instead of survey answers. At least 1,000 ad views per version before the click-through numbers mean anything; a rate around 2% or higher on either page is a good sign, and anything under 1% is a warning sign regardless of what the interviews or survey said.
+. Direct comparison against real similar products already on the market, to keep every result grounded in reality rather than wishful thinking.
+. Prototype behaviour testing — only once the steps above justify building something playable.
+. <mark>**Conditional alternative, once M2 exists:** if M2 ships as a live public release rather than a disguised playtest</mark> (see &lt;&lt;m1_m2_m3_milestones,milestones&gt;&gt;), a real M2 player base could answer several of the questions above more directly and cheaply than the paid smoke test — this would be a scope decision made at that time, not a replacement for the plan above unless M2's release strategy changes.</div></div><div class="src"><div class="doc">Proposed</div><div class="after">Under the heading, your decision of 24 September: <mark>A larger survey or a paid recruiting panel is deferred until there's a real prototype or slice to test it against.</mark>
+
+The last item becomes: **Once M2 exists:** M2 is released publicly, so a real M2 player base could answer several of the questions above more directly and cheaply than the paid smoke test.</div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">blocks.body</td><td class="p">The audience research plan in Research Methods, step by step.</td><td>block “Research plan, in order:”</td><td>last item reworded; split under the heading</td></tr><tr><td class="f">decisions.decision</td><td class="p">Your decision, word for word. The doc prints only its text; the date and why stay in the app.</td><td>decision of 24 September (“A larger survey or a paid recruiting panel…”)</td><td>prints as text only</td></tr></tbody></table></div></div>
+<div class="fitem"><div class="num">F2</div><div class="src"><div class="doc">21. Audio</div><div class="today"><mark>The Library GDD/TDD still leave this conditional/open, so this newer decision should replace that wording when documents are updated.</mark></div></div><div class="src"><div class="doc">Proposed</div><div class="after">Take it out. The Library documents aren’t used any more.</div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">blocks.body</td><td class="p">Audio’s decision on how much audio M2 needs.</td><td>block “LATEST DECISION — post-Library clarification”</td><td>last line taken out</td></tr></tbody></table></div></div>
+<div class="fitem"><div class="num">F3</div><div class="src"><div class="doc">44. The most important new gap</div><div class="today"><mark>This master extraction should be used as the starting point rather than trying to reconcile the scattered older documents individually.</mark></div></div><div class="src"><div class="doc">Proposed</div><div class="after">Take it out. The master extraction of 20 September is no longer the starting point.</div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">blocks.body</td><td class="p">The biggest open gap: whether the game holds players without the real-world layer.</td><td>block “44. The most important new gap”</td><td>last line taken out</td></tr></tbody></table></div></div>
+<div class="fitem"><div class="num">F4</div><div class="src"><div class="doc">34. M2 decisions still needed</div><div class="today"><mark>Many of the same unresolved technical decisions are also explicitly listed in the 18 September Milestone-1 TDD.</mark></div></div><div class="src"><div class="doc">Proposed</div><div class="after">Take it out. That TDD described what is now M2, and Which documents matter now already explains it.</div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">blocks.body</td><td class="p">The opening of M2 decisions still needed: what must be decided before M2 can be estimated.</td><td>block “34. M2 decisions still needed”</td><td>last line taken out</td></tr></tbody></table></div></div>
+<div class="fitem"><div class="num">F5</div><div class="src"><div class="doc">1. Which documents matter now</div><div class="today">&lt;&lt;m2_technical_goals,M2 technical goals&gt;&gt; (25), &lt;&lt;platform_integration_spike,platform integration&gt;&gt; (28), world assembly (30), &lt;&lt;m1_m2_m3_milestones,milestones&gt;&gt; (33), &lt;&lt;m2_decisions_still_needed,M2 decisions still needed&gt;&gt; (34), <mark>and the compiled `tessera-tdd-22-9-26.adoc`</mark>.</div></div><div class="src"><div class="doc">Proposed</div><div class="after">Take out “and the compiled `tessera-tdd-22-9-26.adoc`”. That file no longer exists.</div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">blocks.body</td><td class="p">Which technical docs matter for M2.</td><td>block “Technical (M2)”</td><td>reworded</td></tr></tbody></table></div></div>
+<div class="fitem"><div class="num">F6</div><div class="src"><div class="doc">22. Controls and camera</div><div class="today">Orientation decided for M1/M2: landscape. This matches Sky: Children of the Light — the closest existing comparable in both mechanics (no combat, restoration-driven exploration) and design goal (calm, low-pressure) — and wider field of view has a measurably significant effect on presence/immersion <mark>(Cummings &amp; Bailenson, 2016)</mark>, relevant to Tessera's atmosphere/scenery-as-reward direction.</div></div><div class="src"><div class="doc">Proposed</div><div class="after">Sources belong only in the research docs, and Research findings doesn’t list this one. Add the finding and its full reference there (I’ll check the reference first), and take the bracket out here.</div><table class="where"><thead><tr><th>Field</th><th>What it’s for</th><th>Record</th><th>Change</th></tr></thead><tbody><tr><td class="f">blocks.body</td><td class="p">Why landscape: the comparison with Sky and the field-of-view research.</td><td>block “22. Controls and camera: Orientation decided…”</td><td>bracket taken out</td></tr><tr><td class="f">blocks.body</td><td class="p">The research findings in Research findings, and their full references. Sources belong only in the research docs.</td><td>blocks “Existing research backing this up” and “References” (Research findings)</td><td>one finding and one reference added</td></tr></tbody></table></div></div>
+</section>
+</div>
+
+</body></html>
