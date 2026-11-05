@@ -1,0 +1,531 @@
+<title>Building Floating Tiles</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400&display=swap">
+<style>
+  /* One column: what you build (3D), the three steps as editor frames, then a mock editor to click. The editor
+     pictures keep the editor's own light look in both themes; the game pictures are night panels. */
+  :root {
+    --bg: #f3f5f8;
+    --fg: #1e2230;
+    --muted: #5b6275;
+    --rule: rgba(30, 34, 48, 0.12);
+    --mark: #2f6fd0;
+    --ed-bg: #f4f3ef;
+    --ed-side: #faf9f5;
+    --ed-ink: #1d2230;
+    --ed-soft: #5d6b6d;
+    --ed-line: rgba(47, 58, 60, 0.18);
+    --ed-pick: #2f6fd0;
+    --sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #1b1f27; --fg: #e6e8ef; --muted: #a2a8b8; --rule: rgba(230, 232, 239, 0.14); --mark: #7fa8ee; color-scheme: dark; }
+  }
+  :root[data-theme="dark"] { --bg: #1b1f27; --fg: #e6e8ef; --muted: #a2a8b8; --rule: rgba(230, 232, 239, 0.14); --mark: #7fa8ee; color-scheme: dark; }
+  body { background: var(--bg); color: var(--fg); font-family: var(--sans); font-size: 15px; line-height: 1.55; }
+  main {
+    max-width: 1000px; margin: 0 auto; padding-block: 28px 56px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+    display: grid; gap: 34px;
+  }
+  header { display: grid; gap: 8px; }
+  h1 { font-size: 1.6rem; margin: 0; font-weight: 600; text-wrap: balance; }
+  h2 { font-size: 1.15rem; margin: 0; font-weight: 600; text-wrap: balance; }
+  section { display: grid; gap: 14px; border-top: 1px solid var(--rule); padding-top: 22px; }
+  p { margin: 0; max-width: 68ch; }
+  .lead { color: var(--muted); }
+  .cap { font-size: 0.92rem; color: var(--muted); }
+  .num { font-family: var(--mono); font-size: 0.92em; }
+
+  canvas.world { width: 100%; max-width: 520px; aspect-ratio: 520 / 360; border-radius: 6px; display: block; }
+
+  /* The editor pictures */
+  .frames { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 16px; }
+  .frame { display: grid; gap: 8px; align-content: start; min-width: 0; }
+  .step { display: flex; gap: 8px; align-items: baseline; }
+  .step b { font-family: var(--mono); color: var(--mark); }
+  .ed { background: var(--ed-bg); color: var(--ed-ink); border: 1px solid var(--ed-line); border-radius: 8px; overflow: hidden; font: 13px/1.35 system-ui, "Segoe UI", sans-serif; }
+  .ed-side { background: var(--ed-side); border-bottom: 1px solid var(--ed-line); padding: 10px; display: grid; gap: 8px; }
+  .tools { display: grid; grid-template-columns: repeat(3, 1fr); gap: 5px; }
+  .tool { display: flex; align-items: center; gap: 6px; padding: 6px 7px; background: #fff; color: var(--ed-ink); border: 1px solid var(--ed-line); border-radius: 7px; font: inherit; text-align: left; cursor: default; }
+  .tool i { width: 14px; height: 14px; border-radius: 3px; flex: none; }
+  .tool.on { border-color: var(--ed-pick); box-shadow: 0 0 0 2px var(--ed-pick) inset; }
+  .box { border: 1px solid var(--ed-line); background: #fff; border-radius: 8px; padding: 8px 10px; display: grid; gap: 7px; }
+  .box .title { font-weight: 600; }
+  .row { display: grid; grid-template-columns: 72px 1fr; align-items: center; gap: 6px; color: var(--ed-soft); }
+  .chips { display: flex; flex-wrap: wrap; gap: 4px; }
+  .chip { font: 600 12px/1 system-ui, "Segoe UI", sans-serif; padding: 5px 9px; border-radius: 999px; border: 1px solid var(--ed-line); background: #fff; color: var(--ed-ink); cursor: default; }
+  .chip.on { background: var(--ed-ink); border-color: var(--ed-ink); color: #fff; }
+  .chip.add { color: var(--ed-pick); }
+  .height { display: flex; align-items: center; gap: 4px; color: var(--ed-ink); }
+  .height .val { font-family: var(--mono); border: 1px solid var(--ed-line); border-radius: 5px; padding: 2px 8px; background: #fff; min-width: 3.2em; text-align: center; }
+  .height button { width: 24px; height: 24px; border-radius: 5px; border: 1px solid var(--ed-line); background: #fff; color: var(--ed-ink); font: 600 14px/1 system-ui, sans-serif; cursor: pointer; }
+  .thick { display: flex; align-items: center; gap: 6px; color: var(--ed-ink); }
+  .thick input { width: 100%; min-width: 0; accent-color: var(--ed-pick); }
+  .thick span { font-family: var(--mono); white-space: nowrap; }
+  .ed svg { display: block; width: 100%; height: auto; }
+  .say { color: var(--ed-soft); font-size: 12px; padding: 0 10px 8px; }
+
+  /* The mock editor to click */
+  .try { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; align-items: start; }
+  @media (max-width: 760px) { .try { grid-template-columns: 1fr; } }
+  .try .tool, .try .chip { cursor: pointer; }
+  .try .ed svg polygon.cell { cursor: pointer; }
+  .tool:focus-visible, .chip:focus-visible, .height button:focus-visible { outline: 2px solid var(--ed-pick); outline-offset: 2px; }
+</style>
+
+<main>
+  <header>
+    <h1>Building floating tiles</h1>
+    <p class="lead">My idea for the map editor, in pictures. Nothing here changes the game.</p>
+  </header>
+
+  <section>
+    <h2>The whole picture</h2>
+    <canvas class="world" id="world-all" width="520" height="360" role="img" aria-label="Everything together: grass and unhappy base tiles at different heights, a pond of water tiles, a floating layer at 4 m with raised tiles, a tree and the player on it, and tiles still waiting in the void."></canvas>
+    <ol>
+      <li><strong>Every tile has a height,</strong> in <span class="num">0.5 m</span> steps. There are no hill tiles. Click a tile and its box has a Height slider; the <strong>Height</strong> tool changes many tiles quickly, a click for each step.</li>
+      <li><strong>Base tiles</strong> are columns up from the core, from a pond's bed at <span class="num">−2 m</span> to <span class="num">20 m</span>. Their bottoms fade into the void. There is no lid.</li>
+      <li><strong>A hidden base tile</strong> waits low in the void. When it's unlocked, it grows up to its height and carries the player up with it.</li>
+      <li><strong>Unhappy, then grass:</strong> a tile is grey with no grass until the green reaches it.</li>
+      <li><strong>Water tiles</strong> sit on base tiles. The base tile's top is the pond's bed. Touching water shares one level, with no faces between. You walk into water: shallow, you walk; deep, you swim. Stepping stones stay.</li>
+      <li><strong>Floating tiles</strong> sit in layers. A floating tile's bottom is at its layer, and its height is how tall it is, from <span class="num">0.5 m</span> up. No shared thickness. They go unhappy, then grass, with the tile under them.</li>
+      <li><strong>On floating tiles</strong> you can put plants, harvestables, rocks, chests, stone blocks, walls, key items, machines, lanterns and diamonds.</li>
+      <li><strong>Clouds</strong> lie round the outer edges of grass tiles. Their height is a slider you set afterwards.</li>
+      <li><strong>The editor:</strong> a layer row above the map (Ground, 4 m, 8 m, + Add). Every tool works on the picked layer. The Floating tiles tool adds and removes floating tiles.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>What you build: layers, like the floors of a building</h2>
+    <canvas class="world" id="world" width="520" height="360" role="img" aria-label="The island seen in the game: three floating tiles at 4 m, one with the player on it, and two at 8 m."></canvas>
+    <p class="cap">A <strong>layer</strong> is one height. Every floating tile at that height belongs to it. Here the island has two layers: three tiles at <span class="num">4 m</span> (the player stands on one) and two at <span class="num">8 m</span>.</p>
+  </section>
+
+  <section>
+    <h2>Unhappy, then grass</h2>
+    <p>A floating tile is a real tile, like the ones on the ground. It is unhappy until the green reaches it, then it turns to grass, at the same moment as the tile under it. Today a floating tile's top is white instead.</p>
+    <div class="try">
+      <div class="frame"><canvas class="world" id="world-unhappy" width="520" height="360" role="img" aria-label="Before the green: the ground and the floating tiles are grey, with no grass."></canvas><p class="cap"><strong>Before the green reaches it:</strong> grey, no grass.</p></div>
+      <div class="frame"><canvas class="world" id="world-grass" width="520" height="360" role="img" aria-label="After the green: the ground and the floating tiles are grass, with grass down their sides."></canvas><p class="cap"><strong>After:</strong> grass on top and down its sides, soil under it.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>How you build it in the editor</h2>
+    <div class="frames">
+      <div class="frame">
+        <div class="step"><b>1</b><span>Pick <strong>Floating tiles</strong>, then the <strong>4 m</strong> layer. Click tiles to add them. Click one again to remove it.</span></div>
+        <div class="ed" id="f1"></div>
+      </div>
+      <div class="frame">
+        <div class="step"><b>2</b><span>Pick <strong>8 m</strong>. Now clicks build the 8 m layer. The 4 m tiles go faint, so you still see where they are.</span></div>
+        <div class="ed" id="f2"></div>
+      </div>
+      <div class="frame">
+        <div class="step"><b>3</b><span>Pick <strong>any other tool</strong>, like Grass. Floating tiles show as dashed outlines with their height inside.</span></div>
+        <div class="ed" id="f3"></div>
+      </div>
+    </div>
+    <p class="cap">While you build, the ground goes pale, so the floating tiles stand out. <strong>Layer at</strong> moves the picked layer, all its tiles together. <strong>+ Add</strong> makes a new layer.</p>
+  </section>
+
+  <section>
+    <h2>Putting things on them</h2>
+    <p><strong>Key items already work.</strong> The game puts a key item on the highest place on its tile that you can walk on. Place one on a tile with a floating tile over it, and it lies on the floating tile.</p>
+    <p><strong>For everything else,</strong> the layer row moves above the map, with <strong>Ground</strong> first, and every tool works on the layer you pick. Pick <strong>4 m</strong> and <strong>Puffball tree</strong>, click a floating tile, and the tree stands on it. Pick Ground, and tools work on the ground as they do now.</p>
+    <div class="try">
+      <div class="ed" id="f4"></div>
+      <canvas class="world" id="world-things" width="520" height="360" role="img" aria-label="The game view: a puffball tree on the ground and one on a floating tile at 4 m."></canvas>
+    </div>
+  </section>
+
+  <section>
+    <h2>Height: one tool for every tile</h2>
+    <p>No hill tiles. Every tile, on the ground or floating, has a height, and the <strong>Height</strong> tool changes it. Each click raises a tile <span class="num">0.5 m</span>; a right-click lowers it. With Ground picked, it changes base tiles, from a pond's bed at <span class="num">−2 m</span> up to <span class="num">20 m</span>.</p>
+    <div class="try">
+      <div class="ed" id="f5"></div>
+      <canvas class="world" id="world-hills" width="520" height="360" role="img" aria-label="The game view: a hill of base tiles raised 0.5 to 3 m, beside the pond."></canvas>
+    </div>
+    <p class="cap"><strong>Why one height and not hill tiles:</strong> your ponds already need base tiles to go down (a bed at <span class="num">−2 m</span>), so base tiles get a height anyway. A hill is the same number going up. With hill tiles, each raised tile would be two things, the base and the hill on it, which must always move together, for example when the tile grows out of the void.</p>
+    <p><strong>On floating tiles too.</strong> A floating tile's bottom is at its layer, and its height is how tall it is, from <span class="num">0.5 m</span> up. Pick a layer, then the Height tool, and each click makes one floating tile <span class="num">0.5 m</span> taller. Its bottom stays put, so the room to walk under it doesn't change. The map shows how tall each one is.</p>
+    <div class="try">
+      <div class="ed" id="f6"></div>
+      <canvas class="world" id="world-float-hills" width="520" height="360" role="img" aria-label="The game view: a floating island at 4 m whose tiles are 0.5 to 2 m tall, their bottoms level."></canvas>
+    </div>
+  </section>
+
+  <section>
+    <h2>Try it</h2>
+    <p class="cap">A mock editor of the whole idea. Pick a layer and a tool, then click tiles. With Height, a click raises a tile and a right-click lowers it: base tiles on Ground, floating tiles on a layer. The game view on the right follows.</p>
+    <div class="try">
+      <div class="ed" id="mock"></div>
+      <canvas class="world" id="mock-world" width="520" height="360" role="img" aria-label="The game view of the mock editor's island and its floating tiles."></canvas>
+    </div>
+  </section>
+</main>
+
+<script>
+  // The island: ' ' empty, '.' grass, 'O' deep water. Rows as the editor draws them, odd rows shifted half a tile east.
+  const ISLAND = [
+    ' ..... ',
+    '.......',
+    '...OO..',
+    '.......',
+    ' ..... ',
+  ];
+  const COLOURS = { '.': '#72a064', O: '#4f8fc8' };
+  const EMPTY = '#e7e4dc';
+  const HILLS = ['#86b278', '#97c08a', '#a9cd9b']; // the editor's greens for 0.5 m, 1 m and higher
+  const startLayers = () => new Map([[4, new Set(['2,1', '3,1', '3,2'])], [8, new Set(['5,2', '5,3'])]]);
+
+  // ---- The editor's map, from above ----
+  const R = 22, W3 = Math.sqrt(3) * R;
+  const mapAt = (c, r) => [16 + W3 / 2 + W3 * (c + (r % 2) / 2), 8 + R + 1.5 * R * r];
+  const hexPts = (x, y, s) => Array.from({ length: 6 }, (_, k) => {
+    const a = Math.PI / 180 * (30 + 60 * k);
+    return `${(x + s * Math.cos(a)).toFixed(1)},${(y - s * Math.sin(a)).toFixed(1)}`;
+  }).join(' ');
+  const heightsOn = (layers, key) => [...layers].filter(([, set]) => set.has(key)).map(([h]) => h).sort((a, b) => a - b);
+  const label = (h) => (Number.isInteger(h) ? `${h}` : h.toFixed(1));
+
+  const treeMark = (x, y, faint) => `<g opacity="${faint ? 0.4 : 1}" pointer-events="none"><circle cx="${x}" cy="${y}" r="7.5" fill="#b1cfa1" stroke="#50324e" stroke-width="1.6"/><circle cx="${x}" cy="${y}" r="2" fill="#50324e"/></g>`;
+  const treeOn = (s, key, h) => (s.trees ?? []).some((t) => t.key === key && t.on === h);
+
+  function mapSvg(s) {
+    // Building: the Floating tiles tool, or any tool while a layer above the ground is picked.
+    const build = s.floor === undefined ? s.tool === 'float' : s.floor > 0;
+    if (s.floor) s = { ...s, layer: s.floor };
+    const out = [];
+    const width = Math.ceil(16 * 2 + W3 * 7.5), height = Math.ceil(8 * 2 + R * 2 + 1.5 * R * (ISLAND.length - 1));
+    out.push(`<svg viewBox="0 0 ${width} ${height}" role="img" aria-label="The editor's map${build ? `, building the ${label(s.layer)} m layer` : ''}">`);
+    s.island.forEach((line, r) => [...line].forEach((ch, c) => {
+      const [x, y] = mapAt(c, r);
+      const up = ch === '.' ? s.heights?.[`${c},${r}`] ?? 0 : 0;
+      const fill = up > 0 ? HILLS[Math.min(2, Math.round(up * 2) - 1)] : up < 0 ? '#5d8a52' : COLOURS[ch] ?? EMPTY;
+      out.push(`<polygon class="cell" data-key="${c},${r}" points="${hexPts(x, y, R - 0.6)}" fill="${fill}" fill-opacity="${build && ch !== ' ' ? 0.38 : 1}" stroke="#fff" stroke-width="1.2"/>`);
+      if (up !== 0) out.push(`<text x="${x}" y="${y + 4}" text-anchor="middle" font-size="11" font-weight="700" fill="#1d2230" font-family="system-ui, sans-serif" pointer-events="none">${label(up)}</text>`);
+      if (treeOn(s, `${c},${r}`, 0) && !heightsOn(s.layers, `${c},${r}`).length) out.push(treeMark(x, y, build));
+    }));
+    s.island.forEach((line, r) => [...line].forEach((ch, c) => {
+      const key = `${c},${r}`;
+      const hs = heightsOn(s.layers, key);
+      if (!hs.length) return;
+      const [x, y] = mapAt(c, r);
+      const mine = build && hs.includes(s.layer);
+      const text = hs.map(label).join(' · ');
+      if (mine && treeOn(s, key, s.layer)) {
+        out.push(`<polygon points="${hexPts(x, y, R * 0.72)}" fill="#fff" stroke="#1d2230" stroke-width="1.6" pointer-events="none"/>`);
+        out.push(treeMark(x, y - 3, false));
+        out.push(`<text x="${x}" y="${y + 13}" text-anchor="middle" font-size="8" font-weight="700" fill="#1d2230" font-family="system-ui, sans-serif" pointer-events="none">${text}</text>`);
+      } else if (mine) {
+        // With the Height tool, each floating tile shows how tall it is; otherwise its layer.
+        const tall = s.tool === 'hill' ? s.tall?.[key] ?? 0.5 : null;
+        out.push(`<polygon points="${hexPts(x, y, R * 0.72)}" fill="#fff" stroke="#1d2230" stroke-width="1.6" pointer-events="none"/>`);
+        out.push(`<text x="${x}" y="${y + 4}" text-anchor="middle" font-size="12" font-weight="700" fill="#1d2230" font-family="system-ui, sans-serif" pointer-events="none">${tall !== null ? label(tall) : text}</text>`);
+      } else if (build) {
+        out.push(`<polygon points="${hexPts(x, y, R * 0.72)}" fill="none" stroke="#1d2230" stroke-opacity="0.4" stroke-width="1.2" stroke-dasharray="3 3" pointer-events="none"/>`);
+        out.push(`<text x="${x}" y="${y + 4}" text-anchor="middle" font-size="11" fill="#1d2230" fill-opacity="0.45" font-family="system-ui, sans-serif" pointer-events="none">${text}</text>`);
+      } else {
+        out.push(`<polygon points="${hexPts(x, y, R * 0.72)}" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="4 3" pointer-events="none"/>`);
+        out.push(`<rect x="${x - 4 - 3.5 * text.length}" y="${y - 8}" width="${8 + 7 * text.length}" height="15" rx="4" fill="#fff" pointer-events="none"/>`);
+        out.push(`<text x="${x}" y="${y + 3.5}" text-anchor="middle" font-size="11" font-weight="700" fill="#1d2230" font-family="system-ui, sans-serif" pointer-events="none">${text}</text>`);
+      }
+    }));
+    out.push('</svg>');
+    return out.join('');
+  }
+
+  function sideHtml(s, live) {
+    const tool = (id, name, colour) => `<button type="button" class="tool${s.tool === id ? ' on' : ''}" data-tool="${id}" ${live ? '' : 'tabindex="-1"'}><i style="background:${colour}"></i>${name}</button>`;
+    const parts = [`<div class="tools">${tool('.', 'Grass', COLOURS['.'])}${tool('O', 'Deep water', COLOURS.O)}${tool('float', 'Floating tiles', '#ffffff;border:1.5px solid #1d2230')}</div>`];
+    if (s.tool === 'float') {
+      const chips = [...s.layers.keys()].sort((a, b) => a - b).map((h) => `<button type="button" class="chip${h === s.layer ? ' on' : ''}" data-layer="${h}" ${live ? '' : 'tabindex="-1"'}>${label(h)} m</button>`).join('');
+      parts.push(`<div class="box"><div class="title">Floating tiles</div>
+        <div class="row"><span>Layer</span><span class="chips">${chips}<button type="button" class="chip add" data-add ${live ? '' : 'tabindex="-1"'}>+ Add</button></span></div>
+        <div class="row"><span>Layer at</span><span class="height"><button type="button" data-step="-0.5" aria-label="Lower the layer" ${live ? '' : 'tabindex="-1"'}>−</button><span class="val">${s.layer.toFixed(1)}</span><button type="button" data-step="0.5" aria-label="Raise the layer" ${live ? '' : 'tabindex="-1"'}>+</button> m</span></div>
+      </div>`);
+    }
+    return `<div class="ed-side">${parts.join('')}</div>`;
+  }
+
+  function editorHtml(s, live, say) {
+    return `${sideHtml(s, live)}${mapSvg(s)}${say ? `<div class="say">${say}</div>` : ''}`;
+  }
+
+  // ---- The game, seen from the south and above ----
+  const VOID = [12, 20, 50];
+  const rgb = (h) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16));
+  const css = (c) => `rgb(${c.map((v) => Math.round(v)).join(',')})`;
+  const mix = (a, b, t) => a.map((v, i) => v + (b[i] - v) * t);
+  const shade = (c, f) => c.map((v) => v * f);
+  const FADE_TOP = -0.3, FADE_BOTTOM = -1.7, FOOT = -1.9;
+  const GRASS = { top: rgb('#86bd73'), band: rgb('#6fa86a'), side: rgb('#9a5a4c') };
+  const WATER = rgb('#3f7fbd');
+  const UNHAPPY = { top: rgb('#d3d5dd'), side: rgb('#8e8794') }; // not revived yet: grey, no grass
+  const LIGHT = { 3: 0.82, 4: 0.64 };
+  // Tile middles in tile radii, x east and y north, from the same rows the editor draws.
+  const worldAt = (c, r) => ({ x: Math.sqrt(3) * (c + (r % 2) / 2 - 3.25), y: -1.5 * (r - 2) });
+  const cornerOf = (t, k) => { const a = Math.PI / 180 * (30 + 60 * k); return [t.x + Math.cos(a), t.y + Math.sin(a)]; };
+
+  function drawWorld(id, s) {
+    const cv = document.getElementById(id);
+    const Wd = 520, Hd = 360, dpr = window.devicePixelRatio || 1;
+    cv.width = Wd * dpr; cv.height = Hd * dpr;
+    const ctx = cv.getContext('2d');
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.fillStyle = css(VOID);
+    ctx.fillRect(0, 0, Wd, Hd);
+    const K = 0.58, ZS = 1 / 1.4, S = 34, ox = Wd / 2, oy = 262;
+    const P = (x, y, z) => [ox + x * S, oy - (y * K + z * ZS) * S];
+    const poly = (pts, fill, stroke, width = 1) => {
+      ctx.beginPath();
+      pts.forEach(([x, y], i) => (i ? ctx.lineTo(x, y) : ctx.moveTo(x, y)));
+      ctx.closePath();
+      if (fill) { ctx.fillStyle = fill; ctx.fill(); }
+      if (stroke) { ctx.strokeStyle = stroke; ctx.lineWidth = width; ctx.stroke(); }
+    };
+    const fadeFill = (mx, my, z1, z2, base) => {
+      const [ax, ay] = P(mx, my, z1), [bx, by] = P(mx, my, z2);
+      const g = ctx.createLinearGradient(ax, ay, bx, by);
+      const at = (z) => mix(base, VOID, Math.min(1, Math.max(0, (FADE_TOP - z) / (FADE_TOP - FADE_BOTTOM))));
+      for (const z of [z1, FADE_TOP, FADE_BOTTOM, z2]) if (z <= z1 && z >= z2) g.addColorStop((z1 - z) / (z1 - z2), css(at(z)));
+      return g;
+    };
+    // A tile: its top, and its sides down to foot, with grass down them once it is revived. Ground fades into the void.
+    const lookOf = (key) => (s.unhappy || s.unhappyAt?.has(key) ? UNHAPPY : GRASS);
+    const column = (t, z, foot, fade, look = lookOf(t.key)) => {
+      const band = look.band ? 0.2 : 0;
+      for (const k of [3, 4]) {
+        const [x1, y1] = cornerOf(t, k), [x2, y2] = cornerOf(t, k + 1);
+        if (band) poly([P(x1, y1, z), P(x2, y2, z), P(x2, y2, z - band), P(x1, y1, z - band)], css(shade(look.band, LIGHT[k])));
+        const side = shade(look.side, LIGHT[k]);
+        poly([P(x1, y1, z - band), P(x2, y2, z - band), P(x2, y2, foot), P(x1, y1, foot)], fade ? fadeFill((x1 + x2) / 2, (y1 + y2) / 2, z - band, foot, side) : css(side), fade ? null : 'rgba(0,0,0,0.25)');
+      }
+      const sunk = Math.min(1, Math.max(0, (FADE_TOP - z) / (FADE_TOP - FADE_BOTTOM)));
+      poly([0, 1, 2, 3, 4, 5].map((k) => P(...cornerOf(t, k), z)), css(mix(look.top, VOID, sunk)), sunk > 0.5 ? null : 'rgba(0,0,0,0.22)');
+    };
+    // What to draw, farthest from the camera first.
+    const items = [];
+    s.island.forEach((line, r) => [...line].forEach((ch, c) => {
+      if (ch === ' ') return;
+      const t = { ...worldAt(c, r), key: `${c},${r}` };
+      const waiting = s.hidden?.has(t.key);
+      items.push({ kind: ch === 'O' ? 'water' : 'ground', t, z: waiting ? -1.65 : ch === 'O' ? -0.4 : s.heights?.[t.key] ?? 0, key: t.key });
+      for (const h of heightsOn(s.layers, `${c},${r}`)) items.push({ kind: 'slab', t, z: h + (s.tall?.[t.key] ?? 0.5), key: t.key, h });
+    }));
+    // Columns stand on the ground, so a nearer row always hides a farther one: back rows first, whatever their height.
+    // Floating tiles, in the air, come after every column, farthest first.
+    const depth = (it) => it.t.y * ZS - it.z * K;
+    const slab = (it) => (it.kind === 'slab' ? 1 : 0);
+    items.sort((a, b) => slab(a) - slab(b) || (slab(a) ? depth(b) - depth(a) : b.t.y - a.t.y || a.z - b.z));
+    const tops = [];
+    for (const it of items) {
+      const { t, z } = it;
+      if (it.kind === 'slab') {
+        // A faint line down to the tile it floats over.
+        ctx.beginPath();
+        ctx.moveTo(...P(t.x, t.y, it.h));
+        ctx.lineTo(...P(t.x, t.y, 0));
+        ctx.setLineDash([3, 4]);
+        ctx.strokeStyle = 'rgba(232,243,253,0.55)';
+        ctx.lineWidth = 1.2;
+        ctx.stroke();
+        ctx.setLineDash([]);
+        column(t, z, it.h, false);
+        tops.push(it);
+        if (treeOn(s, it.key, it.h)) drawTree(ctx, P, t, z);
+        if (s.player === it.key && it.h === s.playerOn) drawPlayer(ctx, P, t, z);
+        continue;
+      }
+      if (it.kind === 'water') {
+        poly([0, 1, 2, 3, 4, 5].map((k) => P(...cornerOf(t, k), z)), css(WATER), 'rgba(210,240,255,0.5)');
+        continue;
+      }
+      column(t, z, FOOT, true);
+      if (treeOn(s, it.key, 0)) drawTree(ctx, P, t, z);
+    }
+    // Each layer's name beside its westmost tile.
+    ctx.font = '600 12px "IBM Plex Sans", system-ui, sans-serif';
+    ctx.textAlign = 'right';
+    for (const [h] of s.layers) {
+      const mine = tops.filter((it) => it.h === h);
+      if (!mine.length) continue;
+      const west = mine.reduce((a, b) => (b.t.x < a.t.x ? b : a));
+      const [x, y] = P(west.t.x - 1.1, west.t.y, h);
+      const text = `${label(h)} m layer`;
+      const w = ctx.measureText(text).width + 10;
+      ctx.fillStyle = 'rgba(12,20,50,0.8)';
+      ctx.fillRect(x - w, y - 10, w, 18);
+      ctx.fillStyle = '#e8f3fd';
+      ctx.fillText(text, x - 5, y + 3);
+    }
+    // Other names, each over a tile at a height.
+    ctx.textAlign = 'center';
+    for (const [c, r, z, text] of s.labels ?? []) {
+      const t = worldAt(c, r);
+      const [x, y] = P(t.x, t.y, z);
+      const w = ctx.measureText(text).width + 10;
+      ctx.fillStyle = 'rgba(12,20,50,0.8)';
+      ctx.fillRect(x - w / 2, y - 10, w, 18);
+      ctx.fillStyle = '#e8f3fd';
+      ctx.fillText(text, x, y + 3);
+    }
+  }
+  // A puffball tree: a trunk and a round crown, about 3 m tall.
+  function drawTree(ctx, P, t, z) {
+    const [fx, fy] = P(t.x, t.y, z);
+    const [, ty] = P(t.x, t.y, z + 2.2);
+    const [, cy] = P(t.x, t.y, z + 2.6);
+    ctx.fillStyle = '#50324e';
+    ctx.fillRect(fx - 3, ty, 6, fy - ty);
+    ctx.fillStyle = '#b1cfa1';
+    ctx.strokeStyle = '#50324e';
+    ctx.lineWidth = 1.5;
+    ctx.beginPath();
+    ctx.arc(fx, cy, 17, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.stroke();
+  }
+  function drawPlayer(ctx, P, t, z) {
+    const [fx, fy] = P(t.x, t.y, z);
+    const [, hy] = P(t.x, t.y, z + 1.7);
+    const bodyH = (fy - hy) * 0.7;
+    ctx.fillStyle = '#c8283c';
+    ctx.beginPath();
+    ctx.roundRect(fx - 5, fy - bodyH, 10, bodyH, 5);
+    ctx.fill();
+    ctx.fillStyle = '#26304f';
+    ctx.beginPath();
+    ctx.arc(fx, fy - bodyH - 5, 5.5, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  // ---- The three frames ----
+  const base = () => ({ island: ISLAND.slice(), layers: startLayers(), thick: 0.6, player: '3,1', playerOn: 4 });
+  const s1 = { ...base(), tool: 'float', layer: 4 };
+  s1.layers.set(8, new Set());
+  s1.layers.get(4).delete('3,2');
+  document.getElementById('f1').innerHTML = editorHtml(s1, false, 'Two tiles added to the 4 m layer. The 8 m layer is still empty.');
+  document.getElementById('f2').innerHTML = editorHtml({ ...base(), tool: 'float', layer: 8 }, false, 'The 4 m layer is done. Two tiles added at 8 m.');
+  document.getElementById('f3').innerHTML = editorHtml({ ...base(), tool: '.', layer: 4 }, false, 'Grass picked: the ground looks normal again.');
+  drawWorld('world', base());
+
+  // ---- The whole picture ----
+  const allIsland = ISLAND.map((line) => line.replace(/ /g, '.'));
+  const hiddenAt = new Set();
+  ISLAND.forEach((line, r) => [...line].forEach((ch, c) => { if (ch === ' ') hiddenAt.add(`${c},${r}`); }));
+  drawWorld('world-all', {
+    ...base(), island: allIsland, hidden: hiddenAt, player: '3,1', playerOn: 4,
+    layers: new Map([[4, new Set(['3,1', '4,1', '4,0'])]]), tall: { '4,0': 1.5 },
+    heights: { '0,2': 1.5, '1,1': 1, '1,2': 2, '1,3': 1, '0,3': 0.5, '0,1': 0.5 },
+    unhappyAt: new Set(['5,1', '6,1', '5,2', '6,2', '5,3', '6,3', '5,0', '5,4', '6,0', '6,4']),
+    trees: [{ key: '4,1', on: 4 }, { key: '2,3', on: 0 }],
+    labels: [[1, 2, 3.1, 'hill 2 m'], [3.5, 2, 0.5, 'pond'], [5.5, 3, 0.7, 'unhappy'], [6, 4, -0.5, 'waiting'], [0, 4, -0.5, 'waiting']],
+  });
+  drawWorld('world-unhappy', { ...base(), player: null, unhappy: true });
+  drawWorld('world-grass', { ...base(), player: null });
+
+  // ---- Things on floating tiles: the layer row above the map, Ground first ----
+  const s4 = { ...base(), tool: 'tree', floor: 4, trees: [{ key: '2,1', on: 4 }, { key: '1,3', on: 0 }, { key: '4,4', on: 0 }] };
+  const floorBar = (s) => `<div class="row"><span>Layer</span><span class="chips"><span class="chip${s.floor ? '' : ' on'}">Ground</span>${[...s.layers.keys()].sort((a, b) => a - b).map((h) => `<span class="chip${h === s.floor ? ' on' : ''}">${label(h)} m</span>`).join('')}<span class="chip add">+ Add</span></span></div>`;
+  const tool4 = (name, colour, on) => `<span class="tool${on ? ' on' : ''}"><i style="background:${colour}"></i>${name}</span>`;
+  document.getElementById('f4').innerHTML = `<div class="ed-side">${floorBar(s4)}<div class="tools">${tool4('Grass', COLOURS['.'])}${tool4('Floating tiles', '#ffffff;border:1.5px solid #1d2230')}${tool4('Puffball tree', '#b1cfa1;border:1.5px solid #50324e', true)}</div></div>${mapSvg(s4)}<div class="say">4 m and Puffball tree picked: a click on a 4 m floating tile puts the tree on it. The trees on the ground show faint.</div>`;
+  drawWorld('world-things', s4);
+
+  // ---- Hills: one height per base tile, raised with the Hill tool ----
+  const s5 = { ...base(), layers: new Map(), player: null, tool: 'hill', heights: { '0,2': 2, '1,1': 2, '1,2': 3, '2,1': 1, '1,3': 1, '2,2': 1.5, '0,3': 1, '0,1': 1, '2,3': 0.5, '3,1': 0.5 } };
+  document.getElementById('f5').innerHTML = `<div class="ed-side">${floorBar({ ...s5, layers: new Map([[4, null], [8, null]]) })}<div class="tools">${tool4('Grass', COLOURS['.'])}${tool4('Height',HILLS[1] + ';border:1.5px solid #4d7a45', true)}${tool4('Floating tiles', '#ffffff;border:1.5px solid #1d2230')}</div></div>${mapSvg(s5)}<div class="say">Ground and Height picked: each click raises a tile 0.5 m, a right-click lowers it. The number is its height.</div>`;
+  drawWorld('world-hills', s5);
+
+  // Hills on a floating layer: tops raised, bottoms level.
+  const s6 = { ...base(), player: null, tool: 'hill', floor: 4, layers: new Map([[4, new Set(['2,1', '3,1', '4,1', '2,2', '3,2', '4,2'])]]), tall: { '3,1': 2, '2,1': 1.5, '3,2': 1, '4,1': 1 } };
+  document.getElementById('f6').innerHTML = `<div class="ed-side">${floorBar(s6)}<div class="tools">${tool4('Grass', COLOURS['.'])}${tool4('Height',HILLS[1] + ';border:1.5px solid #4d7a45', true)}${tool4('Floating tiles', '#ffffff;border:1.5px solid #1d2230')}</div></div>${mapSvg(s6)}<div class="say">4 m and Height picked: each click makes a floating tile 0.5 m taller. The number is how tall it is.</div>`;
+  drawWorld('world-float-hills', s6);
+
+  // ---- The mock editor: the layer row above the map, and every tool working on the picked layer ----
+  const mock = { ...base(), floor: 4, tool: 'float', heights: {}, tall: {}, trees: [{ key: '2,1', on: 4 }, { key: '1,3', on: 0 }] };
+  const mockEl = document.getElementById('mock');
+  const MOCK_TOOLS = [['.', 'Grass', COLOURS['.']], ['O', 'Deep water', COLOURS.O], ['hill', 'Height', HILLS[1] + ';border:1.5px solid #4d7a45'], ['float', 'Floating tiles', '#ffffff;border:1.5px solid #1d2230'], ['tree', 'Puffball tree', '#b1cfa1;border:1.5px solid #50324e']];
+  let note = '';
+  const mockSide = () => {
+    const chip = (h, name) => `<button type="button" class="chip${mock.floor === h ? ' on' : ''}" data-floor="${h}">${name}</button>`;
+    const floors = [chip(0, 'Ground'), ...[...mock.layers.keys()].sort((a, b) => a - b).map((h) => chip(h, `${label(h)} m`))].join('');
+    const rows = [`<div class="row"><span>Layer</span><span class="chips">${floors}<button type="button" class="chip add" data-add>+ Add</button></span></div>`];
+    if (mock.floor > 0) rows.push(`<div class="row"><span>Layer at</span><span class="height"><button type="button" data-step="-0.5" aria-label="Lower the layer">−</button><span class="val">${mock.floor.toFixed(1)}</span><button type="button" data-step="0.5" aria-label="Raise the layer">+</button> m</span></div>`);
+    rows.push(`<div class="tools">${MOCK_TOOLS.map(([id, name, colour]) => `<button type="button" class="tool${mock.tool === id ? ' on' : ''}" data-tool="${id}"><i style="background:${colour}"></i>${name}</button>`).join('')}</div>`);
+    return `<div class="ed-side">${rows.join('')}</div>`;
+  };
+  const hint = () => {
+    const on = mock.floor > 0 ? `the ${label(mock.floor)} m layer` : 'the ground';
+    return {
+      '.': 'Grass works on the ground: click tiles to paint or clear them.',
+      O: 'Deep water works on the ground: click tiles to paint or clear them.',
+      hill: `Height on ${on}: click a tile to raise it 0.5 m, right-click to lower it.`,
+      float: mock.floor > 0 ? `Floating tiles on ${on}: click tiles to add or remove them.` : 'Pick a layer above the ground first, like 4 m.',
+      tree: `Puffball tree on ${on}: click a ${mock.floor > 0 ? 'floating ' : ''}tile to add or remove a tree.`,
+    }[mock.tool];
+  };
+  const shown = () => {
+    mockEl.innerHTML = `${mockSide()}${mapSvg(mock)}<div class="say">${note || hint()}</div>`;
+    note = '';
+    drawWorld('mock-world', mock);
+  };
+  function act(el, lower) {
+    if (el.dataset.tool) mock.tool = el.dataset.tool;
+    else if (el.dataset.floor !== undefined) mock.floor = Number(el.dataset.floor);
+    else if (el.hasAttribute('data-add')) {
+      let h = Math.min(20, Math.max(...mock.layers.keys(), 0) + 4);
+      while (mock.layers.has(h) && h > 0.5) h -= 0.5;
+      if (!mock.layers.has(h)) { mock.layers.set(h, new Set()); mock.floor = h; }
+    } else if (el.dataset.step) {
+      const to = Math.round((mock.floor + Number(el.dataset.step)) * 2) / 2;
+      if (to >= 0.5 && to <= 20 && !mock.layers.has(to)) {
+        mock.layers.set(to, mock.layers.get(mock.floor));
+        mock.layers.delete(mock.floor);
+        for (const t of mock.trees) if (t.on === mock.floor) t.on = to;
+        if (mock.playerOn === mock.floor) mock.playerOn = to;
+        mock.floor = to;
+      }
+    } else {
+      const key = el.dataset.key;
+      const [c, r] = key.split(',').map(Number);
+      const ground = mock.island[r][c];
+      const floating = mock.floor > 0 && mock.layers.get(mock.floor).has(key);
+      const step = lower ? -0.5 : 0.5;
+      if (mock.tool === 'hill') {
+        if (mock.floor > 0) {
+          if (floating) mock.tall[key] = Math.min(20, Math.max(0.5, (mock.tall[key] ?? 0.5) + step));
+          else note = 'No floating tile there on this layer.';
+        } else if (ground === '.') mock.heights[key] = Math.min(20, Math.max(-2, (mock.heights[key] ?? 0) + step));
+        else note = 'In this mock, Height works on grass tiles.';
+      } else if (mock.tool === 'float') {
+        if (mock.floor > 0) {
+          const set = mock.layers.get(mock.floor);
+          if (set.has(key)) set.delete(key); else set.add(key);
+        }
+      } else if (mock.tool === 'tree') {
+        if (mock.floor > 0 && !floating) note = 'No floating tile there on this layer.';
+        else if (mock.floor === 0 && ground !== '.') note = 'Trees stand on grass.';
+        else {
+          const i = mock.trees.findIndex((t) => t.key === key && t.on === mock.floor);
+          if (i >= 0) mock.trees.splice(i, 1); else mock.trees.push({ key, on: mock.floor });
+        }
+      } else if (mock.floor > 0) note = 'Grass and Deep water work on the ground. Pick Ground first.';
+      else {
+        const line = [...mock.island[r]];
+        line[c] = line[c] === mock.tool ? ' ' : mock.tool;
+        mock.island[r] = line.join('');
+      }
+    }
+    shown();
+  }
+  const target = (e) => e.target.closest('[data-tool],[data-floor],[data-add],[data-step],polygon.cell');
+  mockEl.addEventListener('click', (e) => { const el = target(e); if (el) act(el, false); });
+  mockEl.addEventListener('contextmenu', (e) => {
+    const el = target(e);
+    if (el?.matches('polygon.cell')) { e.preventDefault(); act(el, true); }
+  });
+  shown();
+</script>

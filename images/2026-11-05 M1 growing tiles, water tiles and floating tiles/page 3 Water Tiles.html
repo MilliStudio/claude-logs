@@ -1,0 +1,214 @@
+<title>Water Tiles</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400&display=swap">
+<style>
+  /* A single reading column: the answer first, then the pictures, then what's left to decide. Scenes are night panels in both themes. */
+  :root {
+    --bg: #f3f5f8;
+    --fg: #1e2230;
+    --muted: #5b6275;
+    --rule: rgba(30, 34, 48, 0.12);
+    --mark: #d6337f;
+    --sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #1b1f27; --fg: #e6e8ef; --muted: #a2a8b8; --rule: rgba(230, 232, 239, 0.14); --mark: #f06aa6; color-scheme: dark; }
+  }
+  :root[data-theme="dark"] { --bg: #1b1f27; --fg: #e6e8ef; --muted: #a2a8b8; --rule: rgba(230, 232, 239, 0.14); --mark: #f06aa6; color-scheme: dark; }
+  body { background: var(--bg); color: var(--fg); font-family: var(--sans); font-size: 15px; line-height: 1.55; }
+  main {
+    max-width: 900px; margin: 0 auto; padding-block: 28px 56px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+    display: grid; gap: 34px;
+  }
+  header { display: grid; gap: 8px; }
+  h1 { font-size: 1.6rem; margin: 0; font-weight: 600; text-wrap: balance; }
+  h2 { font-size: 1.15rem; margin: 0; font-weight: 600; text-wrap: balance; }
+  section { display: grid; gap: 12px; border-top: 1px solid var(--rule); padding-top: 22px; }
+  p { margin: 0; max-width: 68ch; }
+  .lead { color: var(--muted); }
+  ul { margin: 0; padding-left: 1.3em; display: grid; gap: 6px; max-width: 70ch; }
+  .num { font-family: var(--mono); font-size: 0.92em; }
+  .scenes { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+  .scene { display: grid; gap: 6px; min-width: 0; align-content: start; }
+  canvas { width: 100%; max-width: 340px; aspect-ratio: 340 / 380; border-radius: 6px; display: block; }
+  .scene p { font-size: 0.9rem; color: var(--muted); }
+  .wide { overflow-x: auto; }
+  .wide svg { display: block; width: 100%; min-width: 560px; height: auto; border-radius: 6px; font-family: var(--sans); }
+  .q { border-left: 3px solid var(--mark); padding-left: 12px; display: grid; gap: 4px; }
+  .tag { font-family: var(--mono); font-size: 0.8rem; color: var(--mark); letter-spacing: 0.04em; }
+</style>
+
+<main>
+  <header>
+    <h1>Water tiles</h1>
+    <p class="lead">Your idea: water is a tile placed on top of another tile's column. Where two water tiles touch, there's no face between them.</p>
+  </header>
+
+  <section>
+    <h2>Yes, it's better</h2>
+    <ul>
+      <li><strong>One rule for every tile.</strong> A column of a height, and optionally water on top of it. No separate water object with rules of its own.</li>
+      <li><strong>Ponds at any height.</strong> Water on a 2 m column is a pond on a hill.</li>
+      <li><strong>Depth per tile.</strong> The column under the water is the bed, so one pond can be deep in the middle and shallow at its edge.</li>
+      <li><strong>The look stays the same.</strong> The game already builds the water like this inside: one top over all its tiles, with faces only where the tile beside isn't water. What changes is where its levels come from.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Seen from the side</h2>
+    <div class="wide">
+      <svg viewBox="0 96 640 154" role="img" aria-label="Side view: three water tiles sit on columns of different heights and share one top with no faces between them; the deep one is swum, the shallow one walked.">
+        <defs>
+          <linearGradient id="fSoil" gradientUnits="userSpaceOnUse" x1="0" y1="184" x2="0" y2="220"><stop offset="0" stop-color="#9a5a4c"/><stop offset="1" stop-color="#0c1432"/></linearGradient>
+        </defs>
+        <rect width="640" height="250" fill="#0c1432"/>
+        <!-- y = 124 - 24 × metres -->
+        <rect x="30" y="124" width="100" height="126" fill="url(#fSoil)"/><rect x="30" y="124" width="100" height="5" fill="#6fa86a"/>
+        <rect x="130" y="172" width="100" height="78" fill="url(#fSoil)"/>
+        <rect x="230" y="160" width="100" height="90" fill="url(#fSoil)"/>
+        <rect x="330" y="148" width="100" height="102" fill="url(#fSoil)"/>
+        <rect x="430" y="124" width="100" height="126" fill="url(#fSoil)"/><rect x="430" y="124" width="100" height="5" fill="#6fa86a"/>
+        <!-- The water: three tiles, one top, no faces between them -->
+        <path d="M130 136 H430 V148 H330 V160 H230 V172 H130 Z" fill="rgba(90,165,230,0.5)"/>
+        <line x1="130" y1="136" x2="430" y2="136" stroke="rgba(210,240,255,0.95)" stroke-width="2"/>
+        <g stroke="#cfd6ea" stroke-opacity="0.35" stroke-dasharray="3 4"><line x1="230" y1="136" x2="230" y2="160"/><line x1="330" y1="136" x2="330" y2="148"/></g>
+        <g font-size="12" fill="#e3e8f5" text-anchor="middle">
+          <text x="180" y="200">1.5 m deep</text><text x="180" y="215" fill="#9fd0f5">swim</text>
+          <text x="280" y="200">1 m deep</text><text x="280" y="215" fill="#9fd0f5">swim</text>
+          <text x="380" y="200">0.5 m deep</text><text x="380" y="215" fill="#9fd0f5">walk</text>
+          <text x="80" y="116">land, 0 m</text><text x="480" y="116">land, 0 m</text>
+          <text x="280" y="126">water level −0.5 m, one top</text>
+        </g>
+        <text x="545" y="155" font-size="11.5" fill="#cfd6ea">dashed: where</text>
+        <text x="545" y="170" font-size="11.5" fill="#cfd6ea">two water tiles</text>
+        <text x="545" y="185" font-size="11.5" fill="#cfd6ea">meet: no face</text>
+      </svg>
+    </div>
+    <p>Each water tile is a column (its bed, at the tile's height) with water on top up to the water's level. Both are set in 0.5 m steps.</p>
+  </section>
+
+  <section>
+    <h2>Seen from above</h2>
+    <div class="scenes">
+      <div class="scene"><canvas id="same" width="340" height="380" role="img" aria-label="Three water tiles side by side, the front tiles missing: one top, faces only on the outside, none between the water tiles."></canvas><p><strong>Three water tiles at one level,</strong> the tiles in front of them missing. One top, faces only on the outside, none where water tiles meet. Their beds are at different depths.</p></div>
+      <div class="scene"><canvas id="step" width="340" height="380" role="img" aria-label="Two water tiles at different levels: the higher one shows a face above the lower one's top, a step."></canvas><p><strong>Two water tiles at different levels:</strong> the back one at <span class="num">−0.5 m</span>, the front one at <span class="num">−1 m</span>. The back one shows a face above the front one's top, a step in the water.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Two things to decide</h2>
+    <div class="q"><span class="tag">Q7 · walkable</span><p>I read "walkable" as: where the water is up to 0.5 m deep, you walk on the tile under it, and where it's deeper, you swim. That brings shallow water back in a new form (you removed shallow water on 4 November). I recommend this, with the depth as a slider.</p></div>
+    <div class="q"><span class="tag">Q8 · levels</span><p>Water tiles that touch share one level, set together in the editor, so there are never steps like the right-hand picture. I recommend this. Steps can come later if you want waterfalls.</p></div>
+    <p>This replaces Q5: a water tile gets its own height (its bed) and its water's level, so ponds can sit anywhere.</p>
+  </section>
+</main>
+
+<script>
+  // Hexagonal columns seen from the south and above: x east, y north in tile radii; heights in metres (a radius is about 1.4 m).
+  const VOID = [12, 20, 50];
+  const hex = (h) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16));
+  const css = (c) => `rgb(${c.map((v) => Math.round(v)).join(',')})`;
+  const mix = (a, b, t) => a.map((v, i) => v + (b[i] - v) * t);
+  const shade = (c, f) => c.map((v) => v * f);
+  const FADE_TOP = -2.5, FADE_BOTTOM = -4, FOOT = -4.3;
+  const faded = (c, z) => mix(c, VOID, Math.min(1, Math.max(0, (FADE_TOP - z) / (FADE_TOP - FADE_BOTTOM))));
+  const GREEN = { top: hex('#86bd73'), band: hex('#6fa86a'), side: hex('#9a5a4c') };
+  const BED = { top: hex('#8a6d4f'), side: hex('#9a5a4c') };
+  const LIGHT = { 3: 0.95, 4: 0.8, 5: 0.62 };
+  const STEPS = [[1, 0], [0, 1], [-1, 1], [-1, 0], [0, -1], [1, -1]]; // the tile past side k
+  const at = (q, r) => ({ x: 1.5 * q, y: Math.sqrt(3) * (r + q / 2) });
+  const corner = (c, k) => [c.x + Math.cos(k * Math.PI / 3), c.y + Math.sin(k * Math.PI / 3)];
+
+  // tiles: [q, r, top, water level or null]; land tiles have grass, water tiles show their bed.
+  function draw(id, list, labels) {
+    const cv = document.getElementById(id);
+    const W = 340, H = 380, dpr = window.devicePixelRatio || 1;
+    cv.width = W * dpr; cv.height = H * dpr;
+    const ctx = cv.getContext('2d');
+    ctx.scale(dpr, dpr);
+    ctx.fillStyle = css(VOID);
+    ctx.fillRect(0, 0, W, H);
+    const K = 0.85, ZS = 1 / 1.4, S = 33, ox = W / 2, oy = 16 + 3.68 * S;
+    const P = (x, y, z) => [ox + x * S, oy - (y * K + z * ZS) * S];
+    const poly = (pts, fill, stroke, width = 1) => {
+      ctx.beginPath();
+      pts.forEach(([x, y], i) => (i ? ctx.lineTo(x, y) : ctx.moveTo(x, y)));
+      ctx.closePath();
+      if (fill) { ctx.fillStyle = fill; ctx.fill(); }
+      if (stroke) { ctx.strokeStyle = stroke; ctx.lineWidth = width; ctx.stroke(); }
+    };
+    const fadeFill = (mx, my, z1, z2, base) => {
+      const [ax, ay] = P(mx, my, z1), [bx, by] = P(mx, my, z2);
+      const g = ctx.createLinearGradient(ax, ay, bx, by);
+      for (const z of [z1, FADE_TOP, FADE_BOTTOM, z2]) if (z <= z1 && z >= z2) g.addColorStop((z1 - z) / (z1 - z2), css(faded(base, z)));
+      return g;
+    };
+    const tiles = new Map(list.map(([q, r, top, level]) => [`${q},${r}`, { q, r, top, level, ...at(q, r), look: level === null ? GREEN : BED }]));
+    const beside = (t, k) => tiles.get(`${t.q + STEPS[k][0]},${t.r + STEPS[k][1]}`);
+    const LINE = 'rgba(210,240,255,0.95)';
+    for (const t of [...tiles.values()].sort((a, b) => b.y - a.y)) {
+      for (const k of [3, 4, 5]) {
+        const [x1, y1] = corner(t, k), [x2, y2] = corner(t, k + 1);
+        const f = LIGHT[k];
+        let z = t.top;
+        if (t.look.band) {
+          poly([P(x1, y1, z), P(x2, y2, z), P(x2, y2, z - 0.2), P(x1, y1, z - 0.2)], css(shade(t.look.band, f)));
+          z -= 0.2;
+        }
+        poly([P(x1, y1, z), P(x2, y2, z), P(x2, y2, FOOT), P(x1, y1, FOOT)], fadeFill((x1 + x2) / 2, (y1 + y2) / 2, z, FOOT, shade(t.look.side, f)));
+      }
+      poly([0, 1, 2, 3, 4, 5].map((k) => P(...corner(t, k), t.top)), css(faded(t.look.top, t.top)), 'rgba(0,0,0,0.25)');
+      if (t.level === null) continue;
+      // Water: a face where the tile beside isn't water at the same level and lies lower than this water's top.
+      for (const k of [3, 4, 5]) {
+        const n = beside(t, k);
+        if (n && n.level === t.level) continue;
+        const low = Math.max(t.top, n ? (n.level ?? n.top) : t.top);
+        if (low >= t.level) continue;
+        const [x1, y1] = corner(t, k), [x2, y2] = corner(t, k + 1);
+        poly([P(x1, y1, t.level), P(x2, y2, t.level), P(x2, y2, low), P(x1, y1, low)], 'rgba(120,195,240,0.32)', LINE, 1.5);
+      }
+      poly([0, 1, 2, 3, 4, 5].map((k) => P(...corner(t, k), t.level)), 'rgba(80,165,230,0.5)');
+      // Its top's outline only along sides where no water at its level lies.
+      for (let k = 0; k < 6; k++) {
+        const n = beside(t, k);
+        if (n && n.level === t.level) continue;
+        const [x1, y1] = corner(t, k), [x2, y2] = corner(t, k + 1);
+        ctx.beginPath();
+        ctx.moveTo(...P(x1, y1, t.level));
+        ctx.lineTo(...P(x2, y2, t.level));
+        ctx.strokeStyle = LINE;
+        ctx.lineWidth = 1.5;
+        ctx.stroke();
+      }
+    }
+    ctx.font = '600 11.5px "IBM Plex Sans", system-ui, sans-serif';
+    ctx.textAlign = 'center';
+    for (const [q, r, z, text] of labels) {
+      const c = at(q, r);
+      const [x, y] = P(c.x, c.y, z);
+      ctx.fillStyle = 'rgba(12,20,50,0.75)';
+      const w = ctx.measureText(text).width + 8;
+      ctx.fillRect(x - w / 2, y - 9, w, 16);
+      ctx.fillStyle = '#e8f3fd';
+      ctx.fillText(text, x, y + 3);
+    }
+  }
+
+  // A patch two tiles round the middle, at 0 m; some tiles are water, the front row left out.
+  function patch(water, leaveOut) {
+    const list = [];
+    for (let q = -2; q <= 2; q++) for (let r = -2; r <= 2; r++) {
+      if (Math.abs(q) + Math.abs(r) + Math.abs(q + r) > 4) continue;
+      if (leaveOut(q, r)) continue;
+      const w = water[`${q},${r}`];
+      list.push(w ? [q, r, w[0], w[1]] : [q, r, 0, null]);
+    }
+    return list;
+  }
+  draw('same', patch({ '0,0': [-2, -0.5], '1,-1': [-1.5, -0.5], '-1,0': [-1, -0.5] }, (q, r) => at(q, r).y < -1.2),
+    [[0, 0, -0.5, 'swim'], [1, -1, -0.5, 'swim'], [-1, 0, -0.5, 'walk']]);
+  draw('step', patch({ '0,0': [-2, -0.5], '0,-1': [-2, -1] }, () => false), [[0, -1, -1, '−1 m'], [0, 0, -0.5, '−0.5 m']]);
+</script>
