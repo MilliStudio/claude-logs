@@ -182,4 +182,4 @@ Closing note (3 November 2026): Built and pushed v0.310.0 (corner pieces on the 
 
 ---
 
-This conversation's 21 images are in images\2026-11-03 M1 corner pieces, thicker petals, rocks on their tiles\. [The list of them](<../images/2026-11-03 M1 corner pieces, thicker petals, rocks on their tiles/index.md>) gives each one's time.
+This conversation's 21 pictures are in Tessera Records, in the original file "Pictures: 2026-11-03 M1 corner pieces, thicker petals, rocks on their tiles", in the order they came.

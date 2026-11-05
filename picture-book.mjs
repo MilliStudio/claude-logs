@@ -1,4 +1,5 @@
 // Usage: node picture-book.mjs <session name>... | --all [--pages-only]
+//        node picture-book.mjs --tidy <session name>... | --tidy --all
 // Prints a Claude Code session's pages and pictures as PDFs for Tessera Records, and adds them to the Bring in file as
 // original files (Dani, 5 November 2026: "would be nice to have them as docs to look at"; the rule is in
 // Dropbox\Studio\CLAUDE.md). A session is its folder in images\, as conversation-text.mjs saves it:
@@ -8,7 +9,11 @@
 //   where the text is older than its pictures.
 // The PDFs go to %USERPROFILE%\TesseraExchange\files\, and their records into proposed-records.json beside what waits
 // there, for Dani's Bring in button. --all does every session that has a text; --pages-only leaves out the pictures.
+// --tidy, once Dani has brought them in: where Tessera Records and its backup hold every PDF of a session, its folder in
+// images\ goes, and its text names the PDF instead of linking the pictures (Dani, 5 November 2026: "i just don't like
+// clutter and stuff i don't need").
 import fs from 'node:fs';
+import { DatabaseSync } from 'node:sqlite';
 import os from 'node:os';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
@@ -98,10 +103,11 @@ function print(htmlFile, pdfFile) {
   if (!fs.existsSync(pdfFile)) throw new Error(`No PDF came from ${htmlFile}: ${run.stderr}`);
 }
 
+const titleOf = (html, file) => html.match(/<title>([^<]*)<\/title>/i)?.[1].trim() || file.replace(/^page \d* ?|\.html$/g, '');
 // A page as printed: on A4, its colours kept, and the artifact runtime's diagram script taken from the web instead.
 function printPage(name, file) {
   const html = fs.readFileSync(path.join(IMAGES, name, file), 'utf8');
-  const title = html.match(/<title>([^<]*)<\/title>/i)?.[1].trim() || file.replace(/^page \d* ?|\.html$/g, '');
+  const title = titleOf(html, file);
   const style = '<style>@page { size: A4; margin: 12mm; } html, body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }</style>';
   const page = (/^\s*<!doctype/i.test(html) ? html : `<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">${html}`)
     .replace(/<\/head>|<title>/i, (m) => `${style}${m}`)
@@ -176,7 +182,52 @@ function propose(records) {
   fs.writeFileSync(PROPOSALS, `${JSON.stringify(data, null, 2)}\n`);
 }
 
+// The session's PDFs that Tessera Records doesn't hold yet, both in its own store and in every backup, by their records'
+// names; none means its folder can go.
+const RECORDS = path.join(os.homedir(), 'StudioRecords');
+function notHeld(names) {
+  const db = new DatabaseSync(path.join(RECORDS, 'studio-records.sqlite'), { readOnly: true });
+  const backups = JSON.parse(fs.readFileSync(path.join(RECORDS, 'settings.json'), 'utf8')).backupDestinations ?? [];
+  try {
+    return names.filter((name) => {
+      const doc = db.prepare(`SELECT sha256, status FROM documents d WHERE name = ?
+        AND version = (SELECT MAX(version) FROM documents WHERE record_id = d.record_id)`).get(name);
+      return !doc?.sha256 || doc.status === 'withdrawn' || !backups.length
+        || !fs.existsSync(path.join(RECORDS, 'files', doc.sha256.slice(0, 2), doc.sha256))
+        || backups.some((b) => !fs.existsSync(path.join(b, 'StudioRecordsBackup', 'files', `${doc.sha256}.srf`)));
+    });
+  } finally { db.close(); }
+}
+function tidy(name) {
+  const folder = path.join(IMAGES, name);
+  const files = fs.readdirSync(folder);
+  const pictures = files.filter((f) => PICTURE.test(f) && /^\d{3} /.test(f));
+  const pages = files.filter((f) => /^page .*\.html$/i.test(f)).map((f) => `Page: ${titleOf(fs.readFileSync(path.join(folder, f), 'utf8'), f)}`);
+  const missing = notHeld([...pages, ...(pictures.length ? [`Pictures: ${name}`] : [])]);
+  if (missing.length) return console.log(`${name}: kept, as Tessera Records doesn't hold ${missing.join(', ')} yet`);
+  const text = path.join(TEXTS, `${name}.md`);
+  if (fs.existsSync(text) && pictures.length) {
+    const where = ` Its pictures are in Tessera Records, in the original file "Pictures: ${name}", numbered as here.`;
+    let body = fs.readFileSync(text, 'utf8');
+    // The texts whose pictures were saved after them name the folder in a line of their own, with a list of the pictures.
+    const listed = /This conversation's (\d+) images are in images\\[^\n]*?\\\. \[The list of them\]\(<[^>]*>\) gives each one's time\./;
+    body = listed.test(body) ? body.replace(listed, `This conversation's $1 pictures are in Tessera Records, in the original file "Pictures: ${name}", in the order they came.`)
+      : / Its images are in images\\/.test(body) ? body.replace(/ Its images are in images\\[^\n]*?, shown or linked where they came\./, where)
+        : body.replace(/( Private: never commit or share\.)/, `${where}$1`);
+    body = body.replace(/!\[(Dani's|Claude's) image (\d{3})\]\(<[^>]*>\)/g, '$1 picture $2')
+      .replace(/(Claude looked at|Again:) \[image (\d{3})\]\(<[^>]*>\)/g, '$1 picture $2');
+    fs.writeFileSync(text, body);
+  }
+  fs.rmSync(folder, { recursive: true });
+  console.log(`${name}: its folder is gone; its ${pictures.length} pictures and ${pages.length} pages are in Tessera Records`);
+}
+
 const args = process.argv.slice(2);
+if (args.includes('--tidy')) {
+  const all = args.includes('--all');
+  for (const name of (all ? fs.readdirSync(IMAGES) : args.filter((a) => !a.startsWith('--'))).sort()) tidy(name);
+  process.exit(0);
+}
 const pagesOnly = args.includes('--pages-only');
 const names = args.includes('--all') ? fs.readdirSync(IMAGES).filter((n) => fs.existsSync(path.join(TEXTS, `${n}.md`)))
   : args.filter((a) => !a.startsWith('--'));

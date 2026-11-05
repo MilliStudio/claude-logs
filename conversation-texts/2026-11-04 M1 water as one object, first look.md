@@ -1,6 +1,6 @@
 # M1 water as one object, first look (4 November 2026)
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-04 M1 water as one object, first look\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-04 M1 water as one object, first look", numbered as here. Private: never commit or share.
 
 ---
 
@@ -22,57 +22,57 @@ Writing a test save with the whole island raised and green, and a second one wit
 
 Both test saves are ready (whole island green; and the same with 7 deep tiles of the north pond left in the void). Now photographing the pond from above to get my bearings.
 
-Claude looked at [image 001](<../images/2026-11-04 M1 water as one object, first look/001 Claude.jpg>)
+Claude looked at picture 001
 
-Claude looked at [image 002](<../images/2026-11-04 M1 water as one object, first look/002 Claude.jpg>)
+Claude looked at picture 002
 
 The unraised tiles inside the island fill with clouds, so in the half case the pond's open edge meets clouds. Taking angled views of that edge now.
 
-Claude looked at [image 003](<../images/2026-11-04 M1 water as one object, first look/003 Claude.png>)
+Claude looked at picture 003
 
-Claude looked at [image 004](<../images/2026-11-04 M1 water as one object, first look/004 Claude.png>)
+Claude looked at picture 004
 
-Claude looked at [image 005](<../images/2026-11-04 M1 water as one object, first look/005 Claude.png>)
+Claude looked at picture 005
 
 Reading how the water is drawn and photographing your pond as it is now. Next I'll try the "water as one object" version on the copy and photograph it from the same spots.
 
-Claude looked at [image 006](<../images/2026-11-04 M1 water as one object, first look/006 Claude.png>)
+Claude looked at picture 006
 
-Claude looked at [image 007](<../images/2026-11-04 M1 water as one object, first look/007 Claude.png>)
+Claude looked at picture 007
 
-Claude looked at [image 008](<../images/2026-11-04 M1 water as one object, first look/008 Claude.png>)
+Claude looked at picture 008
 
-Claude looked at [image 009](<../images/2026-11-04 M1 water as one object, first look/009 Claude.png>)
+Claude looked at picture 009
 
-Claude looked at [image 010](<../images/2026-11-04 M1 water as one object, first look/010 Claude.png>)
+Claude looked at picture 010
 
-Claude looked at [image 011](<../images/2026-11-04 M1 water as one object, first look/011 Claude.png>)
+Claude looked at picture 011
 
-Claude looked at [image 012](<../images/2026-11-04 M1 water as one object, first look/012 Claude.png>)
+Claude looked at picture 012
 
-Claude looked at [image 013](<../images/2026-11-04 M1 water as one object, first look/013 Claude.png>)
+Claude looked at picture 013
 
-Claude looked at [image 014](<../images/2026-11-04 M1 water as one object, first look/014 Claude.png>)
+Claude looked at picture 014
 
 The water's open side is drawn now, but the clouds stand in front of most of it. Adding a debug switch on the copy to look at the side without clouds, to check it's right.
 
-Claude looked at [image 015](<../images/2026-11-04 M1 water as one object, first look/015 Claude.png>)
+Claude looked at picture 015
 
-Claude looked at [image 016](<../images/2026-11-04 M1 water as one object, first look/016 Claude.png>)
+Claude looked at picture 016
 
-Claude looked at [image 017](<../images/2026-11-04 M1 water as one object, first look/017 Claude.png>)
+Claude looked at picture 017
 
-Claude looked at [image 018](<../images/2026-11-04 M1 water as one object, first look/018 Claude.png>)
+Claude looked at picture 018
 
-Claude looked at [image 019](<../images/2026-11-04 M1 water as one object, first look/019 Claude.png>)
+Claude looked at picture 019
 
-Claude looked at [image 020](<../images/2026-11-04 M1 water as one object, first look/020 Claude.png>)
+Claude looked at picture 020
 
-Claude looked at [image 021](<../images/2026-11-04 M1 water as one object, first look/021 Claude.png>)
+Claude looked at picture 021
 
-Claude looked at [image 022](<../images/2026-11-04 M1 water as one object, first look/022 Claude.png>)
+Claude looked at picture 022
 
-Claude looked at [image 023](<../images/2026-11-04 M1 water as one object, first look/023 Claude.png>)
+Claude looked at picture 023
 
 ---
 
@@ -86,19 +86,19 @@ Claude looked at [image 023](<../images/2026-11-04 M1 water as one object, first
 
 You're right, sorry. I went past what you asked for. I'm stopping the trying-out now. Your game and M1 testing are untouched; all of it was on a copy. Putting the pictures together for you now.
 
-Claude looked at [image 024](<../images/2026-11-04 M1 water as one object, first look/024 Claude.png>)
+Claude looked at picture 024
 
-Claude looked at [image 025](<../images/2026-11-04 M1 water as one object, first look/025 Claude.png>)
+Claude looked at picture 025
 
 Almost there: the picture script opened the game instead of my drawing page. Fixing that and rendering again.
 
-Claude looked at [image 026](<../images/2026-11-04 M1 water as one object, first look/026 Claude.png>)
+Claude looked at picture 026
 
 The layout needs fixes: some labels sit on the dark soil and can't be read, and in drawing 2 the clouds sit too high and the right-hand text overlaps a tile. Fixing those.
 
-![Claude's image 027](<../images/2026-11-04 M1 water as one object, first look/027 Claude to Dani.png>)
+Claude's picture 027
 
-Again: [image 027](<../images/2026-11-04 M1 water as one object, first look/027 Claude to Dani.png>)
+Again: picture 027
 
 The pictures of what I understood are open in VS Code:
 C:\Users\someo\AppData\Local\Temp\claude\c--Users-someo-Dropbox-Studio-Tessera-repositories-tessera-m1\94246099-9160-404e-984f-e056e9c411e3\scratchpad\snapshot-water-object.png
@@ -120,7 +120,7 @@ Your game, its map and M1 testing haven't changed. All the trying was on a copy.
 
 **Q1.** Did I understand it right, including the wall of water at an open edge? I recommend the wall: it follows from your idea and looks clean. If yes, building it properly will take about 2 hours. That includes the wall going away as the tiles rise.
 
-Again: [image 027](<../images/2026-11-04 M1 water as one object, first look/027 Claude to Dani.png>)
+Again: picture 027
 
 ---
 
@@ -156,7 +156,7 @@ This lowers the clouds of every void tile next to deep water by about 1.35 m. So
 
 how close is today[s code to this?
 
-![Dani's image 028](<../images/2026-11-04 M1 water as one object, first look/028 Dani.png>)
+Dani's picture 028
 
 ---
 

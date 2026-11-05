@@ -1,6 +1,6 @@
 # M1 trial: water faces and flat tiles, 4 November 2026
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-04 M1 water faces and flat tiles\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-04 M1 water faces and flat tiles", numbered as here. Private: never commit or share.
 
 ---
 
@@ -50,15 +50,15 @@ q2 I don't like when the character is white behind an object
 
 q3 please make stepping stones hexagons.
 
-![Dani's image 001](<../images/2026-11-04 M1 water faces and flat tiles/001 Dani.png>)
+Dani's picture 001
 
-![Dani's image 002](<../images/2026-11-04 M1 water faces and flat tiles/002 Dani.png>)
+Dani's picture 002
 
-![Dani's image 003](<../images/2026-11-04 M1 water faces and flat tiles/003 Dani.jpg>)
+Dani's picture 003
 
-![Dani's image 004](<../images/2026-11-04 M1 water faces and flat tiles/004 Dani.png>)
+Dani's picture 004
 
-![Dani's image 005](<../images/2026-11-04 M1 water faces and flat tiles/005 Dani.png>)
+Dani's picture 005
 
 (sent while Claude was working) why is it so hard to bloody give faces to bloody water that is exposed. this whole fix today i wanted just to get rid of that ridiculous bug
 
@@ -82,7 +82,7 @@ Port 4895 was still held by last session's copy, so my pictures came from the ol
 
 (sent while Claude was working) look at these gaps. you said the tiles weren't going to be messed up
 
-![Dani's image 006](<../images/2026-11-04 M1 water faces and flat tiles/006 Dani.png>)
+Dani's picture 006
 
 (sent while Claude was working) just mak the tiles solid again.keey the new colors but make them completelyl flat
 
@@ -98,39 +98,39 @@ Now the side count, the removed set-back helpers, the water's bank, and the wate
 
 Tests pass (180). Now taking pictures of the pond's sides from above and outside, a bank, the island's edge and the corner pieces:
 
-Claude looked at [image 007](<../images/2026-11-04 M1 water faces and flat tiles/007 Claude.png>)
+Claude looked at picture 007
 
-Claude looked at [image 008](<../images/2026-11-04 M1 water faces and flat tiles/008 Claude.png>)
+Claude looked at picture 008
 
 The fresh game starts with the pond not yet risen, so these show nothing useful. Checking how last session raised the island for pictures:
 
-Claude looked at [image 009](<../images/2026-11-04 M1 water faces and flat tiles/009 Claude.jpg>)
+Claude looked at picture 009
 
-Claude looked at [image 010](<../images/2026-11-04 M1 water faces and flat tiles/010 Claude.png>)
+Claude looked at picture 010
 
-Claude looked at [image 011](<../images/2026-11-04 M1 water faces and flat tiles/011 Claude.png>)
+Claude looked at picture 011
 
-Claude looked at [image 012](<../images/2026-11-04 M1 water faces and flat tiles/012 Claude.png>)
+Claude looked at picture 012
 
-Claude looked at [image 013](<../images/2026-11-04 M1 water faces and flat tiles/013 Claude.png>)
+Claude looked at picture 013
 
-Claude looked at [image 014](<../images/2026-11-04 M1 water faces and flat tiles/014 Claude.png>)
+Claude looked at picture 014
 
-Claude looked at [image 015](<../images/2026-11-04 M1 water faces and flat tiles/015 Claude.png>)
+Claude looked at picture 015
 
 Bank, corner pieces, outside and below all show solid sides with no slots, and the water box is whole from every angle. Looking closer at the striped spot:
 
-Claude looked at [image 016](<../images/2026-11-04 M1 water faces and flat tiles/016 Claude.png>)
+Claude looked at picture 016
 
 The stripes are where the water's side and a corner piece's side lie in exactly the same plane. I'll set the water's side half a centimetre outward, so the piece covers it there and nowhere else:
 
-Claude looked at [image 017](<../images/2026-11-04 M1 water faces and flat tiles/017 Claude.png>)
+Claude looked at picture 017
 
 The stripes are gone, and the corner pieces now read as solid walls under the water. Next I'm checking a step between tiles of different heights, like your last picture by the apparatus:
 
-Claude looked at [image 018](<../images/2026-11-04 M1 water faces and flat tiles/018 Claude.png>)
+Claude looked at picture 018
 
-Claude looked at [image 019](<../images/2026-11-04 M1 water faces and flat tiles/019 Claude.png>)
+Claude looked at picture 019
 
 Removing the outline. Finding every place the player's outline is used:
 
@@ -140,11 +140,11 @@ Making the stones hexagons: six flat sides, set square to the tile's own sides, 
 
 Testing the hexagon stone, and that the player no longer turns white. I'm putting a stone on 13,0 in the copy only:
 
-Claude looked at [image 020](<../images/2026-11-04 M1 water faces and flat tiles/020 Claude.png>)
+Claude looked at picture 020
 
-Claude looked at [image 021](<../images/2026-11-04 M1 water faces and flat tiles/021 Claude.png>)
+Claude looked at picture 021
 
-Claude looked at [image 022](<../images/2026-11-04 M1 water faces and flat tiles/022 Claude.png>)
+Claude looked at picture 022
 
 The stone is a hexagon with flat sides, and the player no longer shows white through the soil or under the water. Last check: the kit's strap animation, since removing the outline moved its parts:
 
@@ -179,7 +179,7 @@ I've noted your "not yet" on Q1, so nothing goes into Tessera Records for now.
 
 why:?????
 
-![Dani's image 023](<../images/2026-11-04 M1 water faces and flat tiles/023 Dani.png>)
+Dani's picture 023
 
 ---
 
@@ -201,33 +201,33 @@ The faces are missing again in your picture, so I'm checking which copy and vers
 
 Before I trust it, I'm reproducing your fault in the copy, on the old code: looking down past the water's side into the hole I left in the pond.
 
-Claude looked at [image 024](<../images/2026-11-04 M1 water faces and flat tiles/024 Claude.png>)
+Claude looked at picture 024
 
-Claude looked at [image 025](<../images/2026-11-04 M1 water faces and flat tiles/025 Claude.png>)
+Claude looked at picture 025
 
-Claude looked at [image 026](<../images/2026-11-04 M1 water faces and flat tiles/026 Claude.png>)
+Claude looked at picture 026
 
-Claude looked at [image 027](<../images/2026-11-04 M1 water faces and flat tiles/027 Claude.png>)
+Claude looked at picture 027
 
-![Claude's image 028](<../images/2026-11-04 M1 water faces and flat tiles/028 Claude to Dani.png>)
+Claude's picture 028
 
-Claude looked at [image 029](<../images/2026-11-04 M1 water faces and flat tiles/029 Claude.png>)
+Claude looked at picture 029
 
 Reproduced: on the grey island the water's sides are cut off wherever the void's floor lies behind them, with only the outlines left, as in your picture. Now the same views with the fix:
 
-![Claude's image 030](<../images/2026-11-04 M1 water faces and flat tiles/030 Claude to Dani.png>)
+Claude's picture 030
 
-Claude looked at [image 031](<../images/2026-11-04 M1 water faces and flat tiles/031 Claude.png>)
+Claude looked at picture 031
 
 Every side has its face now, from the same angles. Checking from outside and below that nothing shows through the floor where it shouldn't:
 
-Claude looked at [image 032](<../images/2026-11-04 M1 water faces and flat tiles/032 Claude.png>)
+Claude looked at picture 032
 
-Claude looked at [image 033](<../images/2026-11-04 M1 water faces and flat tiles/033 Claude.png>)
+Claude looked at picture 033
 
 Fixed in both views. Checking the green island once with the fix, since the floor's change also touches the clouds:
 
-Claude looked at [image 034](<../images/2026-11-04 M1 water faces and flat tiles/034 Claude.png>)
+Claude looked at picture 034
 
 The green island is unchanged and the clouds still show. Updating the README and saving v0.339.0:
 
@@ -245,9 +245,9 @@ Before and after, from the same angle:
 
 M1 testing is still on v0.334.1. Press **Update M1 testing** to get v0.339.0 there.
 
-Again: [image 028](<../images/2026-11-04 M1 water faces and flat tiles/028 Claude to Dani.png>)
+Again: picture 028
 
-Again: [image 030](<../images/2026-11-04 M1 water faces and flat tiles/030 Claude to Dani.png>)
+Again: picture 030
 
 ---
 
@@ -269,9 +269,9 @@ Tests pass. Checking whether your map already has corner pieces linked to a diam
 
 Your map has 11 linked corner-piece tiles (from the diamonds on 23,5, 21,10, 14,10, 11,9 and 10,8). Taking a picture of the editor at the ones on 23,5:
 
-Claude looked at [image 035](<../images/2026-11-04 M1 water faces and flat tiles/035 Claude.jpg>)
+Claude looked at picture 035
 
-![Claude's image 036](<../images/2026-11-04 M1 water faces and flat tiles/036 Claude to Dani.png>)
+Claude's picture 036
 
 Linked corner pieces now show pale with a dashed edge and "◆23,5", like the linked tiles beside them (24,6 above). Updating the README and saving v0.340.0:
 
@@ -281,7 +281,7 @@ Your map has 11 linked corner-piece tiles. In the editor, the one on 24,6 (raise
 
 M1 testing still needs **Update M1 testing** to get v0.340.0.
 
-Again: [image 036](<../images/2026-11-04 M1 water faces and flat tiles/036 Claude to Dani.png>)
+Again: picture 036
 
 ---
 
@@ -338,7 +338,7 @@ The older decisions that mention shallow water stay as they are: decisions are n
 
 oh for heaven's sake something is super wrong with you. water object doesn't have faces on areas not attached to walls. something is supoer wrong with you. why can't you understand
 
-![Dani's image 037](<../images/2026-11-04 M1 water faces and flat tiles/037 Dani.png>)
+Dani's picture 037
 
 ---
 
@@ -363,9 +363,9 @@ Then I'll set up that exact spot in my copy, look from your angle, and fix it th
 
 one is a snapshot of the missing top faces in tessera. the second is from my little universe. the object highlited by a dotted line is the water with faces on every side.
 
-![Dani's image 038](<../images/2026-11-04 M1 water faces and flat tiles/038 Dani.png>)
+Dani's picture 038
 
-![Dani's image 039](<../images/2026-11-04 M1 water faces and flat tiles/039 Dani.png>)
+Dani's picture 039
 
 ---
 
@@ -385,25 +385,25 @@ My first pictures this session, on a fresh game, showed the same dark empty pond
 
 ### Claude · 2026-11-04 19:53
 
-Claude looked at [image 040](<../images/2026-11-04 M1 water faces and flat tiles/040 Claude.png>)
+Claude looked at picture 040
 
-![Claude's image 041](<../images/2026-11-04 M1 water faces and flat tiles/041 Claude to Dani.png>)
+Claude's picture 041
 
-Claude looked at [image 042](<../images/2026-11-04 M1 water faces and flat tiles/042 Claude.png>)
+Claude looked at picture 042
 
-Claude looked at [image 043](<../images/2026-11-04 M1 water faces and flat tiles/043 Claude.png>)
+Claude looked at picture 043
 
-Claude looked at [image 044](<../images/2026-11-04 M1 water faces and flat tiles/044 Claude.png>)
+Claude looked at picture 044
 
-Claude looked at [image 045](<../images/2026-11-04 M1 water faces and flat tiles/045 Claude.png>)
+Claude looked at picture 045
 
-Claude looked at [image 046](<../images/2026-11-04 M1 water faces and flat tiles/046 Claude.png>)
+Claude looked at picture 046
 
 Still the same over the sides, so the mask wasn't the whole story. To see exactly where the top is drawn, I'm painting it solid red in the copy:
 
-Claude looked at [image 047](<../images/2026-11-04 M1 water faces and flat tiles/047 Claude.png>)
+Claude looked at picture 047
 
-Claude looked at [image 048](<../images/2026-11-04 M1 water faces and flat tiles/048 Claude.png>)
+Claude looked at picture 048
 
 I'll use the same fade the pond floor and walls use: the "Blue near the top" just under the top, turning to the "Blue at the bottom" lower down. Checking how those two colour boxes reach the game:
 
@@ -411,17 +411,17 @@ The inside of the water's walls gets its own solid look, faded by depth in the p
 
 Now placeWater: the outside and the inside of each own side become two meshes.
 
-![Claude's image 049](<../images/2026-11-04 M1 water faces and flat tiles/049 Claude to Dani.png>)
+Claude's picture 049
 
-Claude looked at [image 050](<../images/2026-11-04 M1 water faces and flat tiles/050 Claude.png>)
+Claude looked at picture 050
 
 From the bank the water now reads as a filled blue box with its top over it. Checking the other angles, on the grey island and the green one:
 
-Claude looked at [image 051](<../images/2026-11-04 M1 water faces and flat tiles/051 Claude.png>)
+Claude looked at picture 051
 
-Claude looked at [image 052](<../images/2026-11-04 M1 water faces and flat tiles/052 Claude.png>)
+Claude looked at picture 052
 
-Claude looked at [image 053](<../images/2026-11-04 M1 water faces and flat tiles/053 Claude.png>)
+Claude looked at picture 053
 
 You've saved and sent the map while I worked. Checking what your saves changed, so they go in with this version:
 
@@ -446,9 +446,9 @@ Your "Fading takes" save (6 s) and your two map sends are committed with it. M1 
 
 Say yes and I'll enter the records, then wrap up.
 
-Again: [image 041](<../images/2026-11-04 M1 water faces and flat tiles/041 Claude to Dani.png>)
+Again: picture 041
 
-Again: [image 049](<../images/2026-11-04 M1 water faces and flat tiles/049 Claude to Dani.png>)
+Again: picture 049
 
 ---
 
@@ -476,11 +476,11 @@ Noted: once the sliders are done, I'll enter the Tessera Records entries (decisi
 
 Testing the five controls in the copy: first unchanged, then each one moved, through the same channel the editor uses:
 
-Claude looked at [image 054](<../images/2026-11-04 M1 water faces and flat tiles/054 Claude.png>)
+Claude looked at picture 054
 
-Claude looked at [image 055](<../images/2026-11-04 M1 water faces and flat tiles/055 Claude.png>)
+Claude looked at picture 055
 
-Claude looked at [image 056](<../images/2026-11-04 M1 water faces and flat tiles/056 Claude.png>)
+Claude looked at picture 056
 
 All five work: top yellow, outside red, inside see-through, applied live. With nothing moved, the water looks exactly as in v0.341.0. Updating the README:
 
@@ -526,13 +526,13 @@ Committing only the handover, then the session text:
 
 (sent while Claude was working) i can't believe this HOW WHY omg
 
-![Dani's image 057](<../images/2026-11-04 M1 water faces and flat tiles/057 Dani.png>)
+Dani's picture 057
 
 ---
 
 ### Claude · 2026-11-04 20:23
 
-Claude looked at [image 058](<../images/2026-11-04 M1 water faces and flat tiles/058 Claude.png>)
+Claude looked at picture 058
 
 That picture used my test colours, saved in that copy's browser. Same thing on a clean copy with your colours:
 
@@ -546,7 +546,7 @@ That picture used my test colours, saved in that copy's browser. Same thing on a
 
 ### Claude · 2026-11-04 20:24
 
-Claude looked at [image 059](<../images/2026-11-04 M1 water faces and flat tiles/059 Claude.png>)
+Claude looked at picture 059
 
 Pushing the saved session text first, so it's backed up:
 

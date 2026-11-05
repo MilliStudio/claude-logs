@@ -1,6 +1,6 @@
 # Tessera Records work hours (2026-10-24)
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-10-24 Tessera Records work hours\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-10-24 Tessera Records work hours", numbered as here. Private: never commit or share.
 
 ---
 
@@ -78,17 +78,17 @@ All 247 tests pass, including the new one. Next I'll look at the hours form on s
 
 Field help in this app only pops up on focus, so the timer's times need their own always-visible note. Adjusting that.
 
-Claude looked at [image 001](<../images/2026-10-24 Tessera Records work hours/001 Claude.png>)
+Claude looked at picture 001
 
-Claude looked at [image 002](<../images/2026-10-24 Tessera Records work hours/002 Claude.png>)
+Claude looked at picture 002
 
 At 1500 px the two buttons stack in one narrow cell. I'll shorten them to "Half day" and "Full day" so they sit side by side; the hours field shows 4 or 8 when pressed.
 
-Claude looked at [image 003](<../images/2026-10-24 Tessera Records work hours/003 Claude.png>)
+Claude looked at picture 003
 
-Claude looked at [image 004](<../images/2026-10-24 Tessera Records work hours/004 Claude.png>)
+Claude looked at picture 004
 
-Claude looked at [image 005](<../images/2026-10-24 Tessera Records work hours/005 Claude.png>)
+Claude looked at picture 005
 
 The form works at all three widths, and an old timed record shows its times as a note under Hours. Next: the spec, system docs and README.
 
@@ -212,15 +212,15 @@ Now removing the remaining timer wording, and the "Log hours" buttons that would
 
 Running the tests, then checking the new box on screen with made-up records.
 
-Claude looked at [image 006](<../images/2026-10-24 Tessera Records work hours/006 Claude.png>)
+Claude looked at picture 006
 
-Claude looked at [image 007](<../images/2026-10-24 Tessera Records work hours/007 Claude.png>)
+Claude looked at picture 007
 
 The box works, but at 1500 px the two type menus stack and leave a gap. I'll put each menu in its own grid cell, so date, types, hours and the day buttons share one row.
 
-Claude looked at [image 008](<../images/2026-10-24 Tessera Records work hours/008 Claude.png>)
+Claude looked at picture 008
 
-Claude looked at [image 009](<../images/2026-10-24 Tessera Records work hours/009 Claude.png>)
+Claude looked at picture 009
 
 API Error: 529 Overloaded. This is a server-side issue, usually temporary — try again in a moment. If it persists, check https://status.claude.com.
 
@@ -238,11 +238,11 @@ what happened. can you resume?
 
 About 15 minutes. Left to do: a look at these screenshots, one test save in the new box with made-up records, the docs, then commit, sync and restart your app.
 
-Claude looked at [image 010](<../images/2026-10-24 Tessera Records work hours/010 Claude.png>)
+Claude looked at picture 010
 
-Claude looked at [image 011](<../images/2026-10-24 Tessera Records work hours/011 Claude.png>)
+Claude looked at picture 011
 
-Claude looked at [image 012](<../images/2026-10-24 Tessera Records work hours/012 Claude.png>)
+Claude looked at picture 012
 
 All three widths look right now. Next, one real save through the new box on a made-up copy, to be sure Save works end to end.
 

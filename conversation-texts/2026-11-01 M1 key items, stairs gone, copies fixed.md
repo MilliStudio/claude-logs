@@ -353,4 +353,4 @@ Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera
 
 ---
 
-This conversation's 20 images are in images\2026-11-01 M1 key items, stairs gone, copies fixed\. [The list of them](<../images/2026-11-01 M1 key items, stairs gone, copies fixed/index.md>) gives each one's time.
+This conversation's 20 pictures are in Tessera Records, in the original file "Pictures: 2026-11-01 M1 key items, stairs gone, copies fixed", in the order they came.

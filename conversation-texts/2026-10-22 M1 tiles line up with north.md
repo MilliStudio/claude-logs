@@ -1,6 +1,6 @@
 # M1 trial: tiles line up with north (22 October 2026)
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-10-22 M1 tiles line up with north\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-10-22 M1 tiles line up with north", numbered as here. Private: never commit or share.
 
 ---
 
@@ -42,13 +42,13 @@ The game server is running, and drive.mjs is still there. Reading it before I us
 
 It uses its own debugging port, as the handover requires. I'll copy it to this session's scratchpad so its browser profile lives there, then take a screenshot from the portal.
 
-Claude looked at [image 001](<../images/2026-10-22 M1 tiles line up with north/001 Claude.png>)
+Claude looked at picture 001
 
-Claude looked at [image 002](<../images/2026-10-22 M1 tiles line up with north/002 Claude.png>)
+Claude looked at picture 002
 
 This overview is turned about 60°, because the test command that moves the player also turns the camera toward an arbitrary neighbour. I'll point the camera due north before the screenshot.
 
-Claude looked at [image 003](<../images/2026-10-22 M1 tiles line up with north/003 Claude.png>)
+Claude looked at picture 003
 
 It opens, but took longer than 3 seconds. The frame rate is fine (22 per second), so something else delays it. I'll record the player's position every 0.2 seconds while walking into the wall.
 
@@ -58,7 +58,7 @@ The player has to be within about 2 metres of the crate to take hold; my test st
 
 Still no hold. Checking whether the page shows its Push button at that spot, which tells me if it sees the crate as near:
 
-Claude looked at [image 004](<../images/2026-10-22 M1 tiles line up with north/004 Claude.png>)
+Claude looked at picture 004
 
 The player walked round the crate instead of taking hold. Checking the crate's size and hold distance:
 
@@ -68,9 +68,9 @@ I'll turn the map: the canvas stands tall, each tile point is drawn a quarter tu
 
 Map turned. Now screenshots at computer size and at a phone held sideways. I'm adding a step to my copy of the test script so it can change the window size:
 
-Claude looked at [image 005](<../images/2026-10-22 M1 tiles line up with north/005 Claude.png>)
+Claude looked at picture 005
 
-Claude looked at [image 006](<../images/2026-10-22 M1 tiles line up with north/006 Claude.png>)
+Claude looked at picture 006
 
 The map now stands tall in the corner with north up, and its hexagons have flat tops, like the world's. It covers the same area as before. Now the README. Reading the round-world section:
 
@@ -125,17 +125,17 @@ I'll first measure how far the tiles are from regular hexagons, and how much eac
 
 ### Claude · 2026-10-22 21:09
 
-Claude looked at [image 007](<../images/2026-10-22 M1 tiles line up with north/007 Claude.png>)
+Claude looked at picture 007
 
-Claude looked at [image 008](<../images/2026-10-22 M1 tiles line up with north/008 Claude.png>)
+Claude looked at picture 008
 
 The fit is unchanged: everything fits from size 7 up, and the tests pass. Now the drawing: smooth tile tops, and edge lines that don't hide each other.
 
-Claude looked at [image 009](<../images/2026-10-22 M1 tiles line up with north/009 Claude.png>)
+Claude looked at picture 009
 
-Claude looked at [image 010](<../images/2026-10-22 M1 tiles line up with north/010 Claude.png>)
+Claude looked at picture 010
 
-Claude looked at [image 011](<../images/2026-10-22 M1 tiles line up with north/011 Claude.png>)
+Claude looked at picture 011
 
 I've fixed most of the badly fitted look, saved as v0.26.0; reload the planet page to see it. The rest comes from the planet's size, and that's your call.
 
@@ -168,9 +168,9 @@ All 91 tests pass, the island still fits from size 7 to 20, and nothing is synce
 
 rotating the camera to a certain angle makes the lines parallel. you're really wasting my tokens on nothing today
 
-![Dani's image 012](<../images/2026-10-22 M1 tiles line up with north/012 Dani.png>)
+Dani's picture 012
 
-![Dani's image 013](<../images/2026-10-22 M1 tiles line up with north/013 Dani.png>)
+Dani's picture 013
 
 ---
 
@@ -192,7 +192,7 @@ no matter what the engle is they should be parrallel
 
 Understood: every tile's opposite edges should look parallel, whatever the camera angle. Let me look at your first picture closely.
 
-Again: [image 012](<../images/2026-10-22 M1 tiles line up with north/012 Dani.png>)
+Again: picture 012
 
 You're right, and this is the real cause: tiles near a pentagon are lopsided, so their opposite edges aren't parallel. At size 7, the portal sits right next to a pentagon, hidden under the void.
 
@@ -222,9 +222,9 @@ if it stop looking like a 5 year old's drawing
 
 I take that as yes, if it looks clean. I'll switch to size 12 and check a screenshot before saving.
 
-Claude looked at [image 014](<../images/2026-10-22 M1 tiles line up with north/014 Claude.png>)
+Claude looked at picture 014
 
-Claude looked at [image 015](<../images/2026-10-22 M1 tiles line up with north/015 Claude.png>)
+Claude looked at picture 015
 
 At size 12 the honeycomb looks clean from both camera angles: even hexagons, with opposite edges parallel. Saving it:
 
@@ -240,19 +240,19 @@ Sorry for the detours today. I should have checked the tiles from your camera an
 
 it does look better, but the tiles are too small. you can base their size off the ratio between a tile and the character
 
-![Dani's image 016](<../images/2026-10-22 M1 tiles line up with north/016 Dani.jpg>)
+Dani's picture 016
 
 ---
 
 ### Claude · 2026-10-22 21:22
 
-Again: [image 016](<../images/2026-10-22 M1 tiles line up with north/016 Dani.jpg>)
+Again: picture 016
 
 The way up works again: rock (1 m), then low wall (2 m), then the wall (3 m). The crate didn't take hold in my test, though. Checking that step by step:
 
 The crate push works: it moved one tile north-east. Now the view from the portal:
 
-Claude looked at [image 017](<../images/2026-10-22 M1 tiles line up with north/017 Claude.png>)
+Claude looked at picture 017
 
 The tiles are now about as big next to the character as in your picture. Saving as v0.28.0, with the README updated and the tile-width slider's top raised from 6 m to 8 m so you can try bigger:
 

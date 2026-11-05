@@ -1,6 +1,6 @@
 # M1 water as one object, tiles, clouds and all images saved (4 November 2026)
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-04 M1 water as one object, tiles, clouds and all images saved\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-04 M1 water as one object, tiles, clouds and all images saved", numbered as here. Private: never commit or share.
 
 ---
 
@@ -83,9 +83,9 @@ great. let's resume the conversation here. can you read its text
 
 Now looking at your drawing and the snapshot the closed conversation made:
 
-Claude looked at [image 001](<../images/2026-11-04 M1 water as one object, tiles, clouds and all images saved/001 Claude.png>)
+Claude looked at picture 001
 
-Claude looked at [image 002](<../images/2026-11-04 M1 water as one object, tiles, clouds and all images saved/002 Claude.png>)
+Claude looked at picture 002
 
 I've read the whole closed conversation (12:30 to 13:48), your drawing of the water box, and the snapshot it made for you. I'm only asking questions here, no code, as you asked at 13:02.
 
@@ -121,7 +121,7 @@ tiles also need a facelift. as you can see in the image.
 
 So look at this for me and let me know
 
-![Dani's image 003](<../images/2026-11-04 M1 water as one object, tiles, clouds and all images saved/003 Dani.png>)
+Dani's picture 003
 
 ---
 
@@ -242,27 +242,27 @@ Noted on the camera: I'll look at how it works and cover it too. First, the page
 
 I'll add the camera to the pictures too: it's set close and low, so it affects how tall tiles can get. Writing the page that holds the drawings:
 
-Claude looked at [image 004](<../images/2026-11-04 M1 water as one object, tiles, clouds and all images saved/004 Claude.jpg>)
+Claude looked at picture 004
 
 I'll look at it in parts at full size to check the details:
 
-Claude looked at [image 005](<../images/2026-11-04 M1 water as one object, tiles, clouds and all images saved/005 Claude.png>)
+Claude looked at picture 005
 
-Claude looked at [image 006](<../images/2026-11-04 M1 water as one object, tiles, clouds and all images saved/006 Claude.png>)
+Claude looked at picture 006
 
-Claude looked at [image 007](<../images/2026-11-04 M1 water as one object, tiles, clouds and all images saved/007 Claude.png>)
+Claude looked at picture 007
 
-Claude looked at [image 008](<../images/2026-11-04 M1 water as one object, tiles, clouds and all images saved/008 Claude.png>)
+Claude looked at picture 008
 
-Claude looked at [image 009](<../images/2026-11-04 M1 water as one object, tiles, clouds and all images saved/009 Claude.png>)
+Claude looked at picture 009
 
-Claude looked at [image 010](<../images/2026-11-04 M1 water as one object, tiles, clouds and all images saved/010 Claude.png>)
+Claude looked at picture 010
 
-Claude looked at [image 011](<../images/2026-11-04 M1 water as one object, tiles, clouds and all images saved/011 Claude.png>)
+Claude looked at picture 011
 
 The pictures are ready. Opening them in VS Code:
 
-![Claude's image 012](<../images/2026-11-04 M1 water as one object, tiles, clouds and all images saved/012 Claude to Dani.png>)
+Claude's picture 012
 
 I've made the pictures and opened them in VS Code. Nothing in the game has changed. The image is at:
 C:\Users\someo\AppData\Local\Temp\claude\c--Users-someo-Dropbox-Studio-Tessera-repositories-tessera-m1\1a57cc3a-fda8-43b1-a329-e8e34c2ce7a1\scratchpad\pics\water-reading.png
@@ -297,7 +297,7 @@ C:\Users\someo\AppData\Local\Temp\claude\c--Users-someo-Dropbox-Studio-Tessera-r
 
 **Q3.** When a tile hides the player, should their outline show through it? I recommend yes. It's cheap, and floating tiles and flower heads already turn see-through for the same reason.
 
-Again: [image 012](<../images/2026-11-04 M1 water as one object, tiles, clouds and all images saved/012 Claude to Dani.png>)
+Again: picture 012
 
 ---
 
@@ -329,15 +329,15 @@ pic 4 3, no, the couulds wouldn't be there at all. because water sides are only 
 
 I'll draw both cases. One thing first, because it affects the pictures: today, tiles still waiting in the void do fill with clouds when they lie within 1.5 tiles of green ground. That's what made the edge glitchy in the closed conversation's pictures. So "no clouds there" would be a new rule, and I'll draw it as one. Updating the drawing script:
 
-Claude looked at [image 013](<../images/2026-11-04 M1 water as one object, tiles, clouds and all images saved/013 Claude.png>)
+Claude looked at picture 013
 
-Claude looked at [image 014](<../images/2026-11-04 M1 water as one object, tiles, clouds and all images saved/014 Claude.png>)
+Claude looked at picture 014
 
 Two fixes are needed. The clouds at the edges of the top views are cut off, and scrollbars show in the image. Fixing both:
 
-![Claude's image 015](<../images/2026-11-04 M1 water as one object, tiles, clouds and all images saved/015 Claude to Dani.png>)
+Claude's picture 015
 
-Again: [image 015](<../images/2026-11-04 M1 water as one object, tiles, clouds and all images saved/015 Claude to Dani.png>)
+Again: picture 015
 
 The new pictures are open in VS Code. The game hasn't changed. The image is at:
 C:\Users\someo\AppData\Local\Temp\claude\c--Users-someo-Dropbox-Studio-Tessera-repositories-tessera-m1\1a57cc3a-fda8-43b1-a329-e8e34c2ce7a1\scratchpad\pics\water-edges.png
@@ -355,7 +355,7 @@ C:\Users\someo\AppData\Local\Temp\claude\c--Users-someo-Dropbox-Studio-Tessera-r
 
 **Q2.** With no clouds there, a swimmer who goes out through the water's own side would fall into the void and fade back to the portal. Should the side hold them in like glass instead? I recommend glass.
 
-Again: [image 015](<../images/2026-11-04 M1 water as one object, tiles, clouds and all images saved/015 Claude to Dani.png>)
+Again: picture 015
 
 ---
 

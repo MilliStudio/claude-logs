@@ -437,4 +437,4 @@ Closing note (1 November 2026): Built and pushed v0.257.0 to v0.258.1: poses for
 
 ---
 
-This conversation's 13 images are in images\2026-11-01 M1 poses, controls tutorial, mushroom caps, Import\. [The list of them](<../images/2026-11-01 M1 poses, controls tutorial, mushroom caps, Import/index.md>) gives each one's time.
+This conversation's 13 pictures are in Tessera Records, in the original file "Pictures: 2026-11-01 M1 poses, controls tutorial, mushroom caps, Import", in the order they came.

@@ -277,4 +277,4 @@ Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera
 
 ---
 
-This conversation's 10 images are in images\2026-11-01 M1 leaves stood on, kit placed, head turn\. [The list of them](<../images/2026-11-01 M1 leaves stood on, kit placed, head turn/index.md>) gives each one's time.
+This conversation's 10 pictures are in Tessera Records, in the original file "Pictures: 2026-11-01 M1 leaves stood on, kit placed, head turn", in the order they came.

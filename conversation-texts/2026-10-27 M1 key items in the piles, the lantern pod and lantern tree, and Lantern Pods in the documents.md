@@ -460,4 +460,4 @@ Dani ended the session here (28 October 2026, just after midnight). Done in this
 
 ---
 
-This conversation's 40 images are in images\2026-10-27 M1 key items in the piles, the lantern pod and lantern tree, and Lantern Pods in the documents\. [The list of them](<../images/2026-10-27 M1 key items in the piles, the lantern pod and lantern tree, and Lantern Pods in the documents/index.md>) gives each one's time.
+This conversation's 40 pictures are in Tessera Records, in the original file "Pictures: 2026-10-27 M1 key items in the piles, the lantern pod and lantern tree, and Lantern Pods in the documents", in the order they came.

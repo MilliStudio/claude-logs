@@ -1,6 +1,6 @@
 # M1 trial, 5 November 2026, evening: the tile rework built, and pages and pictures in Tessera Records
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-05 M1 tile rework built\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-05 M1 tile rework built", numbered as here. Private: never commit or share.
 
 ---
 
@@ -86,13 +86,13 @@ Starting at 17:20. Reading the agreement first.
 
 Now the picture pages and the code layout.
 
-Claude looked at [image 001](<../images/2026-11-05 M1 tile rework built/001 Claude.png>)
+Claude looked at picture 001
 
-Claude looked at [image 002](<../images/2026-11-05 M1 tile rework built/002 Claude.png>)
+Claude looked at picture 002
 
-Claude looked at [image 003](<../images/2026-11-05 M1 tile rework built/003 Claude.png>)
+Claude looked at picture 003
 
-Claude looked at [image 004](<../images/2026-11-05 M1 tile rework built/004 Claude.png>)
+Claude looked at picture 004
 
 I have the design. Now the code: planet.js is large, so I'll map its key areas first.
 
@@ -126,7 +126,7 @@ I'll add a small test hook to raise named tiles, then check the riding in the hi
 
 The player now rides the top up (level −0.42 → −0.01 → 0). Quick look at the screenshot.
 
-Claude looked at [image 005](<../images/2026-11-05 M1 tile rework built/005 Claude.png>)
+Claude looked at picture 005
 
 Step 1 works: the tile grows and the player rides it; the lid still hides everything below until step 3. Now the README, which I update with each version.
 
@@ -156,21 +156,21 @@ Now the remaining lid comments, the flower fade's floor test, and the player's m
 
 The lid is out of the code and tests pass. Now looking at it in the hidden browser on the grey island, at the dark-strip spot.
 
-Claude looked at [image 006](<../images/2026-11-05 M1 tile rework built/006 Claude.png>)
+Claude looked at picture 006
 
-Claude looked at [image 007](<../images/2026-11-05 M1 tile rework built/007 Claude.png>)
+Claude looked at picture 007
 
 Adding a rebuild of the water and clouds on start-over, and leaving water of tiles still waiting in the void out of the water's shape.
 
-Claude looked at [image 008](<../images/2026-11-05 M1 tile rework built/008 Claude.png>)
+Claude looked at picture 008
 
 I'll add a test hook that wakes the lantern, so I can test the green island too.
 
-Claude looked at [image 009](<../images/2026-11-05 M1 tile rework built/009 Claude.png>)
+Claude looked at picture 009
 
-Claude looked at [image 010](<../images/2026-11-05 M1 tile rework built/010 Claude.png>)
+Claude looked at picture 010
 
-Claude looked at [image 011](<../images/2026-11-05 M1 tile rework built/011 Claude.png>)
+Claude looked at picture 011
 
 The shell ate the backticks in that text. Checking the damage and fixing it with a file instead.
 
@@ -208,7 +208,7 @@ Name clash: the editor's own `heightsOf` and the imported one. Renaming the impo
 
 The Height tool, the box and the old map's heights all read right. A look at the map picture.
 
-Claude looked at [image 012](<../images/2026-11-05 M1 tile rework built/012 Claude.jpg>)
+Claude looked at picture 012
 
 The map shows each height. Now testing Save on a scratch copy of the trial on a free port, not on Dani's files.
 
@@ -232,11 +232,11 @@ Game side done. Now the editor for water tiles: bed height, the pond's shared le
 
 Only the guard test fails (expected until commit). Testing the water in the game: grey island, pond partly grown, seen from the bank, low.
 
-Claude looked at [image 013](<../images/2026-11-05 M1 tile rework built/013 Claude.png>)
+Claude looked at picture 013
 
-Claude looked at [image 014](<../images/2026-11-05 M1 tile rework built/014 Claude.png>)
+Claude looked at picture 014
 
-Claude looked at [image 015](<../images/2026-11-05 M1 tile rework built/015 Claude.png>)
+Claude looked at picture 015
 
 Water tiles work: one top per pond, faces only where the water is exposed, swimming at −0.5 m over a −2 m bed, the Guardian on its bed. Now the README for step 5.
 
@@ -250,15 +250,15 @@ v0.357.0 is pushed (17:59). Step 6: corner pieces become wedge columns that grow
 
 Now the corner piece's height beside water: a water tile's ground is now its bed, so pieces should follow the land beside them, or the water's level if only water is there.
 
-Claude looked at [image 016](<../images/2026-11-05 M1 tile rework built/016 Claude.png>)
+Claude looked at picture 016
 
-Claude looked at [image 017](<../images/2026-11-05 M1 tile rework built/017 Claude.png>)
+Claude looked at picture 017
 
 Hard to see the pieces in those angles. Taking a closer look at the pieces next to the start (6,5 and 10,5), after waking the lantern.
 
-Claude looked at [image 018](<../images/2026-11-05 M1 tile rework built/018 Claude.png>)
+Claude looked at picture 018
 
-Claude looked at [image 019](<../images/2026-11-05 M1 tile rework built/019 Claude.png>)
+Claude looked at picture 019
 
 Corner pieces now stand as wedge columns fading into the void (right side of the first picture). README for step 6.
 
@@ -266,9 +266,9 @@ v0.358.0 pushed (18:02). Step 7: clouds only round the outer edges of grass tile
 
 Testing the clouds on Dani's state: green start island, then grey tiles raised at its edge.
 
-Claude looked at [image 020](<../images/2026-11-05 M1 tile rework built/020 Claude.png>)
+Claude looked at picture 020
 
-Claude looked at [image 021](<../images/2026-11-05 M1 tile rework built/021 Claude.png>)
+Claude looked at picture 021
 
 Clouds hug the green edge, and raising grey tiles removed the puffs beside them (309 → 291). README for step 7.
 
@@ -290,9 +290,9 @@ Game side for floating tiles is in. Testing on the scratch copy with a test laye
 
 A floating tile has no middle point of its own (`f.dir`); the key items' search assumed one. Fixing.
 
-Claude looked at [image 022](<../images/2026-11-05 M1 tile rework built/022 Claude.png>)
+Claude looked at picture 022
 
-Claude looked at [image 023](<../images/2026-11-05 M1 tile rework built/023 Claude.png>)
+Claude looked at picture 023
 
 I'll generalise the diamond box to a diamond on a floating tile, then write the layer row, the Floating tiles tool, and drawing of layers. This is one large set of edits.
 
@@ -306,15 +306,15 @@ Server writes LAYERS. Testing the whole editor flow on the scratch copy: add a l
 
 Layers, things, the diamond link and Save all work. Two small fixes: the test hook didn't redraw, and the box should say "1.5 m tall" on a floating tile. Pictures first.
 
-Claude looked at [image 024](<../images/2026-11-05 M1 tile rework built/024 Claude.png>)
+Claude looked at picture 024
 
-Claude looked at [image 025](<../images/2026-11-05 M1 tile rework built/025 Claude.png>)
+Claude looked at picture 025
 
 Three fixes from the pictures: the hidden rows still showed (the page's style overrode `hidden`), and the "1.5 m tall" label overlapped the tree. Fixing, then checking the game reads the saved layer.
 
 The game reads the saved layer: three floating tiles at 4 m, the diamond on one, and 9,4 waiting for it. Quick look.
 
-Claude looked at [image 026](<../images/2026-11-05 M1 tile rework built/026 Claude.png>)
+Claude looked at picture 026
 
 Floating tiles work end to end: built in the editor, saved, and stood on in the game (here on the wall standing on a floating tile). Adding a test, then README and v0.360.0.
 
@@ -467,17 +467,17 @@ Five PDFs in 4 seconds. Checking how they look.
 
 I can't open PDFs directly here, so I'll look at them in the hidden browser instead.
 
-Claude looked at [image 027](<../images/2026-11-05 M1 tile rework built/027 Claude.png>)
+Claude looked at picture 027
 
 The picture PDF reads well. Checking one of the page PDFs.
 
-Claude looked at [image 028](<../images/2026-11-05 M1 tile rework built/028 Claude.png>)
+Claude looked at picture 028
 
 Pages print with their fonts and pictures. Now trying an older session, whose text was written before its pictures were placed, to test reading the raw logs.
 
 All 69 old pictures found their chat lines. Checking the schema page, which has a diagram drawn by a script.
 
-Claude looked at [image 029](<../images/2026-11-05 M1 tile rework built/029 Claude.png>)
+Claude looked at picture 029
 
 The diagram prints too. Checking that every saved picture has the usual numbered name before the full run.
 

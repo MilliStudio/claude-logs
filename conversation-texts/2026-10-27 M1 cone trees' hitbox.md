@@ -1,6 +1,6 @@
 # M1 cone trees' hitbox (2026-10-27)
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-10-27 M1 cone trees' hitbox\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-10-27 M1 cone trees' hitbox", numbered as here. Private: never commit or share.
 
 ---
 
@@ -22,7 +22,7 @@ i can't find a slider the duration of  the swim while flipped. it's way too long
 trhere should be a swim while flipped speed
 add a slider for the ccircle diameter, and drops scale after. no need to make the swims away part of the animation
 
-![Dani's image 001](<../images/2026-10-27 M1 cone trees' hitbox/001 Dani.png>)
+Dani's picture 001
 
 ---
 
@@ -36,7 +36,7 @@ Reading the collision and key-item code before changing it.
 
 Still reading: the tests that guard the rock clusters' spacing.
 
-Again: [image 001](<../images/2026-10-27 M1 cone trees' hitbox/001 Dani.png>)
+Again: picture 001
 
 Now the kit's look, to match the icon to it.
 
@@ -78,21 +78,21 @@ Writing a play-through test: feed the Guardian, time its play, then check the sc
 
 The play works as planned: circle until 5.0 s (0.7 + 1.3 + 3), roll back, done; the scale waits for its Take button, and taking it pops "+1". Looking at the picture.
 
-Claude looked at [image 002](<../images/2026-10-27 M1 cone trees' hitbox/002 Claude.png>)
+Claude looked at picture 002
 
 The Take button and the black kit show. The Guardian looks pale at this distance, so I'm taking a close-up of it and the scale.
 
-Claude looked at [image 003](<../images/2026-10-27 M1 cone trees' hitbox/003 Claude.png>)
+Claude looked at picture 003
 
 ACES tone mapping is washing the tinted gold to near white; the goldfish skip tone mapping, so the gold should too. Fixing and looking again.
 
-Claude looked at [image 004](<../images/2026-10-27 M1 cone trees' hitbox/004 Claude.png>)
+Claude looked at picture 004
 
-Claude looked at [image 005](<../images/2026-10-27 M1 cone trees' hitbox/005 Claude.png>)
+Claude looked at picture 005
 
 The kit reads well. The gemstone's gold band sits outside the stone, unlike your picture, where it lies over the stone's right edge. Enlarging the stone and moving the band onto it.
 
-Claude looked at [image 006](<../images/2026-10-27 M1 cone trees' hitbox/006 Claude.png>)
+Claude looked at picture 006
 
 The icon now follows your picture: the band runs over the stone's right edge and along its bottom. Next, the README. Finding the lines to update.
 
@@ -141,11 +141,11 @@ All seven changes are done, tested in a hidden browser and pushed as v0.143.0. A
 
 Now the README: the kit's look and your new Guardian values.
 
-Claude looked at [image 007](<../images/2026-10-27 M1 cone trees' hitbox/007 Claude.png>)
+Claude looked at picture 007
 
 The icon reads as a dark plum satchel now. The kit in the ruin is hard to see in that shot, so I'm taking a clearer view of it.
 
-Claude looked at [image 008](<../images/2026-10-27 M1 cone trees' hitbox/008 Claude.png>)
+Claude looked at picture 008
 
 The kit in the ruin is now a dark plum satchel with its brass buckle, matching the icon. Saving as v0.144.0.
 
@@ -171,7 +171,7 @@ Give no longer hands out key items. Updating the README, then the refinery's nam
 
 Now the kit icon: lighter fills.
 
-Claude looked at [image 009](<../images/2026-10-27 M1 cone trees' hitbox/009 Claude.png>)
+Claude looked at picture 009
 
 The icon now has light plum-grey fills with a darker flap and reads clearly. Updating its descriptions, then checking the refinery's window with the longer title.
 
@@ -183,7 +183,7 @@ Testing the Give button and the refinery's window with its longer title.
 
 (sent while Claude was working) pruning gemstone missing from inventory. bottom  row is gemsttone and water. key items should also be in the key icon. botanicals sohuld be in the pouch icon, rock and metal items in box
 
-![Dani's image 010](<../images/2026-10-27 M1 cone trees' hitbox/010 Dani.png>)
+Dani's picture 010
 
 ---
 
@@ -213,15 +213,15 @@ Now the inventory code in src/planet.js.
 
 Testing the new inventory in the browser: opening each group and picturing it.
 
-Claude looked at [image 011](<../images/2026-10-27 M1 cone trees' hitbox/011 Claude.png>)
+Claude looked at picture 011
 
-Claude looked at [image 012](<../images/2026-10-27 M1 cone trees' hitbox/012 Claude.png>)
+Claude looked at picture 012
 
-Claude looked at [image 013](<../images/2026-10-27 M1 cone trees' hitbox/013 Claude.png>)
+Claude looked at picture 013
 
 The player stood below the refinery's 2 m plateau. Rerunning with the player on the refinery's own tile.
 
-Claude looked at [image 014](<../images/2026-10-27 M1 cone trees' hitbox/014 Claude.png>)
+Claude looked at picture 014
 
 The title fits, and the special gem shows 0/1 in red now that Give leaves key items out. Rewriting the README's inventory entry.
 
@@ -251,9 +251,9 @@ the other smaller wheel is under the chest.
 
 the chest currently looks like a box. it can't have a lid
 
-![Dani's image 015](<../images/2026-10-27 M1 cone trees' hitbox/015 Dani.png>)
+Dani's picture 015
 
-Again: [image 015](<../images/2026-10-27 M1 cone trees' hitbox/015 Dani.png>)
+Again: picture 015
 
 ---
 
@@ -327,9 +327,9 @@ Now a full browser test: windows, chest, wheels, Restore and Awaken.
 
 The chest opens after 1.05 s and shows its wheel with a Take button. The apparatus's window came back empty, so I'm checking why.
 
-Claude looked at [image 016](<../images/2026-10-27 M1 cone trees' hitbox/016 Claude.png>)
+Claude looked at picture 016
 
-Claude looked at [image 017](<../images/2026-10-27 M1 cone trees' hitbox/017 Claude.png>)
+Claude looked at picture 017
 
 The player stood just off the plateau. The label shows all four needs, and the pile has no wheels now. Retrying from on the plateau, and testing Restore, the refinery and the lantern.
 
@@ -339,13 +339,13 @@ The player stood just off the plateau. The label shows all four needs, and the p
 
 (sent while Claude was working) you got the chest wrong
 
-![Dani's image 018](<../images/2026-10-27 M1 cone trees' hitbox/018 Dani.png>)
+Dani's picture 018
 
 ---
 
 ### Claude · 2026-10-27 19:11
 
-Claude looked at [image 019](<../images/2026-10-27 M1 cone trees' hitbox/019 Claude.png>)
+Claude looked at picture 019
 
 The chest is a plain box again: its front sank into the ground and the wheel shows inside, with its Take button. The test also confirms Give no longer hands out wheels. Updating the README.
 
@@ -381,19 +381,19 @@ Tests pass. Checking in the browser: the latch facing the start view, and a whee
 
 (sent while Claude was working) i gave you a picsure of the chestl,. fix it
 
-Again: [image 018](<../images/2026-10-27 M1 cone trees' hitbox/018 Dani.png>)
+Again: picture 018
 
 ---
 
 ### Claude · 2026-10-27 19:15
 
-Claude looked at [image 020](<../images/2026-10-27 M1 cone trees' hitbox/020 Claude.png>)
+Claude looked at picture 020
 
-Claude looked at [image 021](<../images/2026-10-27 M1 cone trees' hitbox/021 Claude.png>)
+Claude looked at picture 021
 
 The player hides the chest's front. Taking the picture from one side.
 
-Claude looked at [image 022](<../images/2026-10-27 M1 cone trees' hitbox/022 Claude.png>)
+Claude looked at picture 022
 
 Last check before saving: the lantern's Awaken, and a full Restore with both wheels.
 
@@ -492,7 +492,7 @@ Changes noted. Before entering the records, three game fixes follow from them:
 
 Refinery done; the two remaining "special items" are your own words, quoted. Now the chest's lid.
 
-Claude looked at [image 023](<../images/2026-10-27 M1 cone trees' hitbox/023 Claude.png>)
+Claude looked at picture 023
 
 ---
 

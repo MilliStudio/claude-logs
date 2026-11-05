@@ -702,4 +702,4 @@ Closing note (29 October 2026, 21:18): the M1 trial went from v0.199.0 to v0.201
 
 ---
 
-This conversation's 2 images are in images\2026-10-29 M1 a fresh island, floating tiles, the camera and the meetings\. [The list of them](<../images/2026-10-29 M1 a fresh island, floating tiles, the camera and the meetings/index.md>) gives each one's time.
+This conversation's 2 pictures are in Tessera Records, in the original file "Pictures: 2026-10-29 M1 a fresh island, floating tiles, the camera and the meetings", in the order they came.

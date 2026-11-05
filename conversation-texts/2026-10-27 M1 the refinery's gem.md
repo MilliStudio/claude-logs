@@ -1,6 +1,6 @@
 # M1 the refinery's gem (2026-10-27)
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-10-27 M1 the refinery's gem\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-10-27 M1 the refinery's gem", numbered as here. Private: never commit or share.
 
 ---
 
@@ -8,7 +8,7 @@ The messages of this conversation, Dani's and Claude's, without the code, tool c
 
 the refinery, when the animation is done, the special gem should be in the design. add it as a decoration in the side wheel, and instead of the those decorative shapes on the weel, make them them hollow openings in the wheel itself
 
-![Dani's image 001](<../images/2026-10-27 M1 the refinery's gem/001 Dani.png>)
+Dani's picture 001
 
 [Request interrupted by user]
 
@@ -32,7 +32,7 @@ use the fish scale material on the chest's lock, and split the lock into two pie
 
 the refinery, when the animation is done, the special gem should be in the design. add it as a decoration in the side wheel, and instead of the decorative shapes on the weel, make them hollow holes in the wheel itself
 
-Again: [image 001](<../images/2026-10-27 M1 the refinery's gem/001 Dani.png>)
+Again: picture 001
 
 ---
 
@@ -63,25 +63,25 @@ So I can't tell which decision you mean yet. I'll ask about it at the end. Meanw
 
 Copying the previous session's browser-test scripts, then taking a picture of the refinery and the chest as they are now.
 
-Claude looked at [image 002](<../images/2026-10-27 M1 the refinery's gem/002 Claude.png>)
+Claude looked at picture 002
 
-Claude looked at [image 003](<../images/2026-10-27 M1 the refinery's gem/003 Claude.png>)
+Claude looked at picture 003
 
 Taking pictures of the refinery from each side, so I can see the wheel as you do.
 
-Claude looked at [image 004](<../images/2026-10-27 M1 the refinery's gem/004 Claude.png>)
+Claude looked at picture 004
 
-Claude looked at [image 005](<../images/2026-10-27 M1 the refinery's gem/005 Claude.png>)
+Claude looked at picture 005
 
-Claude looked at [image 006](<../images/2026-10-27 M1 the refinery's gem/006 Claude.png>)
+Claude looked at picture 006
 
-Claude looked at [image 007](<../images/2026-10-27 M1 the refinery's gem/007 Claude.png>)
+Claude looked at picture 007
 
-Claude looked at [image 008](<../images/2026-10-27 M1 the refinery's gem/008 Claude.png>)
+Claude looked at picture 008
 
-Claude looked at [image 009](<../images/2026-10-27 M1 the refinery's gem/009 Claude.png>)
+Claude looked at picture 009
 
-Claude looked at [image 010](<../images/2026-10-27 M1 the refinery's gem/010 Claude.png>)
+Claude looked at picture 010
 
 The view I need is side 2. Your picture is a mock-up: the holes show the stone and floor through them, and a blue gem sits in the hub. Now reading the shape helpers to cut real holes.
 
@@ -91,27 +91,27 @@ Now the refinery's wheel: real holes, a ring for its rim, and the gem in the hub
 
 Testing in the browser: the refinery whole, seen from the wheel's side.
 
-Claude looked at [image 011](<../images/2026-10-27 M1 the refinery's gem/011 Claude.png>)
+Claude looked at picture 011
 
-Claude looked at [image 012](<../images/2026-10-27 M1 the refinery's gem/012 Claude.png>)
+Claude looked at picture 012
 
 The holes are open through to the stone, and the gem sits in the hub. Now the chest's lock, shut and open.
 
-Claude looked at [image 013](<../images/2026-10-27 M1 the refinery's gem/013 Claude.png>)
+Claude looked at picture 013
 
-Claude looked at [image 014](<../images/2026-10-27 M1 the refinery's gem/014 Claude.png>)
+Claude looked at picture 014
 
-Claude looked at [image 015](<../images/2026-10-27 M1 the refinery's gem/015 Claude.png>)
+Claude looked at picture 015
 
 Three's rounded box isn't mapped for the browser, so I'll make a small rounded block myself, as the lid is made:
 
-Claude looked at [image 016](<../images/2026-10-27 M1 the refinery's gem/016 Claude.png>)
+Claude looked at picture 016
 
-Claude looked at [image 017](<../images/2026-10-27 M1 the refinery's gem/017 Claude.png>)
+Claude looked at picture 017
 
 The lock is now rounded, glossy gold, in two pieces. One last check of the refinery mid-animation, to confirm the gem appears only once it's whole:
 
-Claude looked at [image 018](<../images/2026-10-27 M1 the refinery's gem/018 Claude.png>)
+Claude looked at picture 018
 
 Mid-animation the wheel has its holes and no gem yet. Now the README, then saving as v0.149.0.
 
@@ -175,17 +175,17 @@ The scale drops as soon as the fish starts rolling back; I'll add a slider for t
 
 Noted: I'm leaving Q1 aside. Next, a picture of the whole apparatus, to see what's wrong with its wheels:
 
-Claude looked at [image 019](<../images/2026-10-27 M1 the refinery's gem/019 Claude.png>)
+Claude looked at picture 019
 
-Claude looked at [image 020](<../images/2026-10-27 M1 the refinery's gem/020 Claude.png>)
+Claude looked at picture 020
 
 Photographing the whole apparatus from its sides, to see what's wrong with its wheels.
 
-Claude looked at [image 021](<../images/2026-10-27 M1 the refinery's gem/021 Claude.png>)
+Claude looked at picture 021
 
-Claude looked at [image 022](<../images/2026-10-27 M1 the refinery's gem/022 Claude.png>)
+Claude looked at picture 022
 
-Claude looked at [image 023](<../images/2026-10-27 M1 the refinery's gem/023 Claude.png>)
+Claude looked at picture 023
 
 Still reading the code. The chest's wheel code is clear. Now the scale's look, the Take button and the Tuning panel:
 
@@ -215,39 +215,39 @@ Now the ginkgo stems: one long, one medium, one left short, their look unchanged
 
 All 131 tests pass. Testing in the browser, starting with the whole apparatus and its three wheels:
 
-Claude looked at [image 024](<../images/2026-10-27 M1 the refinery's gem/024 Claude.png>)
+Claude looked at picture 024
 
-Claude looked at [image 025](<../images/2026-10-27 M1 the refinery's gem/025 Claude.png>)
+Claude looked at picture 025
 
 The wheels now stand in a row, small, large, small, their faces to the side, S marks out. Adding a test hook for the ruin's wheel, then checking it on the wall:
 
 All the changes are mine; the warning came from my own earlier bulk edit. Looking at the wheel on the wall from the ground:
 
-Claude looked at [image 026](<../images/2026-10-27 M1 the refinery's gem/026 Claude.png>)
+Claude looked at picture 026
 
-Claude looked at [image 027](<../images/2026-10-27 M1 the refinery's gem/027 Claude.png>)
+Claude looked at picture 027
 
 The wheel lies on top of the ruin wall. Its Take button shows when you stand on that wall. Now the Guardian's drop delay, measured in the browser. Checking what the test hook reports about the fish:
 
-Claude looked at [image 028](<../images/2026-10-27 M1 the refinery's gem/028 Claude.png>)
+Claude looked at picture 028
 
-Claude looked at [image 029](<../images/2026-10-27 M1 the refinery's gem/029 Claude.png>)
+Claude looked at picture 029
 
 The delay works: with the slider at 2.5 s, the scale dropped 2.5 s after the fish began rolling back. The player hides the scale in these pictures, so I'm taking them again with the player hidden:
 
-Claude looked at [image 030](<../images/2026-10-27 M1 the refinery's gem/030 Claude.png>)
+Claude looked at picture 030
 
-Claude looked at [image 031](<../images/2026-10-27 M1 the refinery's gem/031 Claude.png>)
+Claude looked at picture 031
 
-Claude looked at [image 032](<../images/2026-10-27 M1 the refinery's gem/032 Claude.png>)
+Claude looked at picture 032
 
 The scale is larger and flashes bright on the gem's beat; the gem is larger too. Next, pictures of the Tuning tabs, the refinery's stems and a porous rock cluster:
 
-Claude looked at [image 033](<../images/2026-10-27 M1 the refinery's gem/033 Claude.png>)
+Claude looked at picture 033
 
-Claude looked at [image 034](<../images/2026-10-27 M1 the refinery's gem/034 Claude.png>)
+Claude looked at picture 034
 
-Claude looked at [image 035](<../images/2026-10-27 M1 the refinery's gem/035 Claude.png>)
+Claude looked at picture 035
 
 The tabs work, and the refinery's stems now reach three different heights. Last check: the wheel sliders move the wheels and their parts, and saves still load:
 
@@ -304,17 +304,17 @@ Now the wheels' shine in the per-frame shine code:
 
 All 132 tests pass. Testing the new delivery in the browser:
 
-Claude looked at [image 036](<../images/2026-10-27 M1 the refinery's gem/036 Claude.png>)
+Claude looked at picture 036
 
-Claude looked at [image 037](<../images/2026-10-27 M1 the refinery's gem/037 Claude.png>)
+Claude looked at picture 037
 
-Claude looked at [image 038](<../images/2026-10-27 M1 the refinery's gem/038 Claude.png>)
+Claude looked at picture 038
 
-Claude looked at [image 039](<../images/2026-10-27 M1 the refinery's gem/039 Claude.png>)
+Claude looked at picture 039
 
 The wheel's flash is too faint. Raising it and checking once more:
 
-Claude looked at [image 040](<../images/2026-10-27 M1 the refinery's gem/040 Claude.png>)
+Claude looked at picture 040
 
 The wheel now flashes clearly. Updating the README for delivery, windows, the gem in the pile and the shining wheels:
 
@@ -348,15 +348,15 @@ make the wheels a lot more visible in the pile
 
 Taking a picture of the apparatus's pile with its wheels delivered, to see why they're hard to spot:
 
-Claude looked at [image 041](<../images/2026-10-27 M1 the refinery's gem/041 Claude.png>)
+Claude looked at picture 041
 
-Claude looked at [image 042](<../images/2026-10-27 M1 the refinery's gem/042 Claude.png>)
+Claude looked at picture 042
 
-Claude looked at [image 043](<../images/2026-10-27 M1 the refinery's gem/043 Claude.png>)
+Claude looked at picture 043
 
-Claude looked at [image 044](<../images/2026-10-27 M1 the refinery's gem/044 Claude.png>)
+Claude looked at picture 044
 
-Claude looked at [image 045](<../images/2026-10-27 M1 the refinery's gem/045 Claude.png>)
+Claude looked at picture 045
 
 Now each wheel leans against the outside of the step, face out, clear of the other parts, and flashes on the gem's beat. Updating the README and saving as v0.152.0:
 
@@ -378,7 +378,7 @@ when key items shine, please don't change their size as if they are beeting. jus
 
 after this we can do tr
 
-![Dani's image 046](<../images/2026-10-27 M1 the refinery's gem/046 Dani.png>)
+Dani's picture 046
 
 ---
 
@@ -390,17 +390,17 @@ Rewriting the shine code: no swelling, with a glint on each item:
 
 Adding glints to the gem, the scale, the wheels, the lock and the pile items. Then I'll check them in the browser.
 
-Claude looked at [image 047](<../images/2026-10-27 M1 the refinery's gem/047 Claude.png>)
+Claude looked at picture 047
 
-Claude looked at [image 048](<../images/2026-10-27 M1 the refinery's gem/048 Claude.png>)
+Claude looked at picture 048
 
-Claude looked at [image 049](<../images/2026-10-27 M1 the refinery's gem/049 Claude.png>)
+Claude looked at picture 049
 
 The glint on the wall wheel looks like your picture: a white star with thin rays, and the wheel keeps its size. Checking the gem and the chest's lock:
 
-Claude looked at [image 050](<../images/2026-10-27 M1 the refinery's gem/050 Claude.png>)
+Claude looked at picture 050
 
-Claude looked at [image 051](<../images/2026-10-27 M1 the refinery's gem/051 Claude.png>)
+Claude looked at picture 051
 
 The gem and the lock glint as well; at its peak, the glint covers the gem for a moment, then fades. Updating the README and saving:
 
@@ -485,9 +485,9 @@ Rewriting the shine code to keep only the glint:
 
 The README now matches. Quick browser check that the glints still flare and nothing brightens:
 
-Claude looked at [image 052](<../images/2026-10-27 M1 the refinery's gem/052 Claude.png>)
+Claude looked at picture 052
 
-Claude looked at [image 053](<../images/2026-10-27 M1 the refinery's gem/053 Claude.png>)
+Claude looked at picture 053
 
 The glints still flare on the pile's wheels and the lock, with no brightening. Saving as v0.154.0:
 

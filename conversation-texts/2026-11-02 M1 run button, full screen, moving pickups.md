@@ -135,4 +135,4 @@ Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera
 
 ---
 
-This conversation's 2 images are in images\2026-11-02 M1 run button, full screen, moving pickups\. [The list of them](<../images/2026-11-02 M1 run button, full screen, moving pickups/index.md>) gives each one's time.
+This conversation's 2 pictures are in Tessera Records, in the original file "Pictures: 2026-11-02 M1 run button, full screen, moving pickups", in the order they came.

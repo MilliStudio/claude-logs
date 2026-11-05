@@ -1,6 +1,6 @@
 # M1 daylight, the kit and floating objects
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-10-25 M1 daylight, the kit and floating objects\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-10-25 M1 daylight, the kit and floating objects", numbered as here. Private: never commit or share.
 
 ---
 
@@ -31,13 +31,13 @@ Writing the daylight now: the settings in key.js first, then the drawing code.
 
 Code is in. Testing it on your graphics card (the same hidden browser setup that caught the spotlight bug), dormant and restored.
 
-Claude looked at [image 001](<../images/2026-10-25 M1 daylight, the kit and floating objects/001 Claude.png>)
+Claude looked at picture 001
 
-Claude looked at [image 002](<../images/2026-10-25 M1 daylight, the kit and floating objects/002 Claude.png>)
+Claude looked at picture 002
 
-Claude looked at [image 003](<../images/2026-10-25 M1 daylight, the kit and floating objects/003 Claude.png>)
+Claude looked at picture 003
 
-Claude looked at [image 004](<../images/2026-10-25 M1 daylight, the kit and floating objects/004 Claude.png>)
+Claude looked at picture 004
 
 Yes, it's possible, and it's built: **v0.67.0**, synced. Your open game should reload by itself; if it doesn't, press F5.
 
@@ -97,13 +97,13 @@ Adding the inventory slot to the page, then testing.
 
 Tests pass (104). Now testing in the game on your graphics card: the kit's tile rising, taking the kit, the icon, regrowth after 25 seconds, and reloading.
 
-Claude looked at [image 005](<../images/2026-10-25 M1 daylight, the kit and floating objects/005 Claude.png>)
+Claude looked at picture 005
 
-Claude looked at [image 006](<../images/2026-10-25 M1 daylight, the kit and floating objects/006 Claude.png>)
+Claude looked at picture 006
 
-Claude looked at [image 007](<../images/2026-10-25 M1 daylight, the kit and floating objects/007 Claude.png>)
+Claude looked at picture 007
 
-Claude looked at [image 008](<../images/2026-10-25 M1 daylight, the kit and floating objects/008 Claude.png>)
+Claude looked at picture 008
 
 Behind the rock as seen from the island, and an older save now raises the kit's tile too. Updating the README, then saving the version.
 
@@ -148,9 +148,9 @@ Understood: the kit gets the recorded behaviour (an icon above it, tap to take),
 
 Still wiring it up: saving the floating objects' counts, their counters on screen, and the tap icon over the kit.
 
-Claude looked at [image 009](<../images/2026-10-25 M1 daylight, the kit and floating objects/009 Claude.png>)
+Claude looked at picture 009
 
-Claude looked at [image 010](<../images/2026-10-25 M1 daylight, the kit and floating objects/010 Claude.png>)
+Claude looked at picture 010
 
 ---
 
@@ -162,7 +162,7 @@ Claude looked at [image 010](<../images/2026-10-25 M1 daylight, the kit and floa
 
 ### Claude · 2026-10-25 02:21
 
-Claude looked at [image 011](<../images/2026-10-25 M1 daylight, the kit and floating objects/011 Claude.png>)
+Claude looked at picture 011
 
 The chain works up to there: the new unhappy tile has risen where the first object was, and the second object floats beyond it. Adding the new harvestables now.
 
@@ -184,9 +184,9 @@ Now the object's position, blocking and feeding in planet.js.
 
 The path is 1108 (the unhappy edge tile) → 1120 → 1119 → 1131, each tile beside the one before. Updating the counter's height and the tests.
 
-Claude looked at [image 012](<../images/2026-10-25 M1 daylight, the kit and floating objects/012 Claude.png>)
+Claude looked at picture 012
 
-Claude looked at [image 013](<../images/2026-10-25 M1 daylight, the kit and floating objects/013 Claude.png>)
+Claude looked at picture 013
 
 Both work. The crystal floats over the unhappy edge tile, and feeding all three raised the path of three new unhappy tiles eastward into the void. Updating the README and saving the version.
 
@@ -227,7 +227,7 @@ Yes. Adding a **Carrying** slider under Speed in Settings, from 0 to 30. It sets
 
 Testing the slider in the game: setting it, feeding a crystal with it, and that it follows gathering.
 
-Claude looked at [image 014](<../images/2026-10-25 M1 daylight, the kit and floating objects/014 Claude.png>)
+Claude looked at picture 014
 
 It works. The slider sets the count, and the count drops as you give things away (12 → 3 after the crystal took 9). Saving as v0.70.0.
 
@@ -300,7 +300,7 @@ Each planet size now has 17 tiles along the path's sides, and the last crystal i
 
 ### Claude · 2026-10-25 13:44
 
-Claude looked at [image 015](<../images/2026-10-25 M1 daylight, the kit and floating objects/015 Claude.png>)
+Claude looked at picture 015
 
 Both start values are right: 100 carried and 1.5× speed. Saving as v0.71.0.
 
@@ -354,7 +354,7 @@ Now testing: restore, walk onto the pedestal, press R, and reload with the save.
 
 Walking onto the pedestal and pressing R work. But after a reload you started at the old portal: the game picks the start point before it reads the save. Fixing that.
 
-Claude looked at [image 016](<../images/2026-10-25 M1 daylight, the kit and floating objects/016 Claude.png>)
+Claude looked at picture 016
 
 After a reload you now start on the new portal: the stone step with the portal's pink disc, where the dormant object stood. Updating the README.
 
@@ -384,9 +384,9 @@ Tests pass. Updating the README's mentions of the first portal.
 
 ### Claude · 2026-10-25 13:52
 
-Claude looked at [image 017](<../images/2026-10-25 M1 daylight, the kit and floating objects/017 Claude.png>)
+Claude looked at picture 017
 
-Claude looked at [image 018](<../images/2026-10-25 M1 daylight, the kit and floating objects/018 Claude.png>)
+Claude looked at picture 018
 
 The dormant object now turns into a portal when restored: **v0.73.0**, synced. Your open game should reload by itself.
 
@@ -432,7 +432,7 @@ Rebuilding the end: 4 single tiles, each raised by the crystal before it, then a
 
 Answering your question at the end. First, putting the patch's rise timing where you can change it, and updating the README.
 
-Claude looked at [image 019](<../images/2026-10-25 M1 daylight, the kit and floating objects/019 Claude.png>)
+Claude looked at picture 019
 
 The patch is round, and all 19 tiles rose in the same frame. Saving as v0.74.0.
 
@@ -491,7 +491,7 @@ Only my own edits are in it. Now the three ways for a batch to rise: together, w
 
 Random rising is in. I'm adding a small test helper that finds where a tile shows on screen, so I can label the tiles in a picture for you.
 
-Claude looked at [image 020](<../images/2026-10-25 M1 daylight, the kit and floating objects/020 Claude.png>)
+Claude looked at picture 020
 
 Random rising is done: **v0.75.0**, synced. Your open game should reload by itself.
 
@@ -557,7 +557,7 @@ Every size works: the path rises in your order, 1 → 2 → 3 (north of 2) → 4
 
 Each crystal raised exactly one tile, in your order, and the last one raised the patch. The picture labels still point at the old spots, so I'm fixing them and retaking the picture.
 
-Claude looked at [image 021](<../images/2026-10-25 M1 daylight, the kit and floating objects/021 Claude.png>)
+Claude looked at picture 021
 
 The path now matches your description: 3 sits north of 2, 4 south-east of 3, and the round patch hangs below 4. Updating the README and saving.
 
@@ -609,7 +609,7 @@ The heredoc swallowed a backslash. Fixing that line with the editor.
 
 Tests pass. Simplifying that last check so it reads plainly.
 
-Claude looked at [image 022](<../images/2026-10-25 M1 daylight, the kit and floating objects/022 Claude.png>)
+Claude looked at picture 022
 
 Tiles 1–4 now sit in the middle of a round area. With the unhappy strip on the west, it reads as one round island piece. Updating the README and saving.
 

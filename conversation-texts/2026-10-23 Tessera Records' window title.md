@@ -1,6 +1,6 @@
 # Tessera Records' window title (2026-10-23)
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-10-23 Tessera Records' window title\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-10-23 Tessera Records' window title", numbered as here. Private: never commit or share.
 
 ---
 
@@ -94,7 +94,7 @@ All 242 tests pass. Now the screen check with made-up records.
 
 186 page views, no problems. Looking at one screenshot to see the new name in the top bar.
 
-Claude looked at [image 001](<../images/2026-10-23 Tessera Records' window title/001 Claude.png>)
+Claude looked at picture 001
 
 The top bar says Tessera Records. Saving the approved decision in the design part.
 
@@ -296,7 +296,7 @@ Handover written. Running all tests and the screen check.
 
 Every page passes. Looking at the milestone page and the Bring in page with made-up records.
 
-Claude looked at [image 002](<../images/2026-10-23 Tessera Records' window title/002 Claude.png>)
+Claude looked at picture 002
 
 The new version started on the copy with no errors and no files needing attention. Checking what it brought in, and that no document changed.
 

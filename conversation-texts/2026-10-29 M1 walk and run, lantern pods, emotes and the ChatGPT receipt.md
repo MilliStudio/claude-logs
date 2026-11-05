@@ -710,4 +710,4 @@ Closing note (29 October 2026, 17:55): the M1 trial went from v0.188.0 to v0.195
 
 ---
 
-This conversation's 13 images are in images\2026-10-29 M1 walk and run, lantern pods, emotes and the ChatGPT receipt\. [The list of them](<../images/2026-10-29 M1 walk and run, lantern pods, emotes and the ChatGPT receipt/index.md>) gives each one's time.
+This conversation's 13 pictures are in Tessera Records, in the original file "Pictures: 2026-10-29 M1 walk and run, lantern pods, emotes and the ChatGPT receipt", in the order they came.

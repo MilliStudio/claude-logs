@@ -367,4 +367,4 @@ Dani ended the session here (22 October 2026, about 20:15). Done in this session
 
 ---
 
-This conversation's 17 images are in images\2026-10-22 M1 round world fixes\. [The list of them](<../images/2026-10-22 M1 round world fixes/index.md>) gives each one's time.
+This conversation's 17 pictures are in Tessera Records, in the original file "Pictures: 2026-10-22 M1 round world fixes", in the order they came.

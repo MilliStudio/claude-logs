@@ -1,6 +1,6 @@
 # M1 water and tiles built (4 November 2026)
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-04 M1 water and tiles built\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-04 M1 water and tiles built", numbered as here. Private: never commit or share.
 
 ---
 
@@ -14,11 +14,11 @@ Start the water and tiles rework in the M1 trial, as agreed on 4 November 2026. 
 
 This is a large task: about 10–12 hours of work, by my earlier estimate. I'll start by reading the last session's closing note and your pictures, then find your map.
 
-Claude looked at [image 001](<../images/2026-11-04 M1 water and tiles built/001 Claude.png>)
+Claude looked at picture 001
 
-Claude looked at [image 002](<../images/2026-11-04 M1 water and tiles built/002 Claude.jpg>)
+Claude looked at picture 002
 
-Claude looked at [image 003](<../images/2026-11-04 M1 water and tiles built/003 Claude.png>)
+Claude looked at picture 003
 
 Now the code. Let me see how big the main files are and where water lives.
 
@@ -122,19 +122,19 @@ Both copies are set up with no errors. Now a view script for the pictures:
 
 Pictures taken (the edge view's camera place doesn't exist; I'll fix it). Looking at the hole first, before and after:
 
-Claude looked at [image 004](<../images/2026-11-04 M1 water and tiles built/004 Claude.png>)
+Claude looked at picture 004
 
-Claude looked at [image 005](<../images/2026-11-04 M1 water and tiles built/005 Claude.png>)
+Claude looked at picture 005
 
 After: the pond's west half now shows its own sides toward the hole, outlined in blue (the clouds in front go in part 3). Checking the view from above, the bank and the stone:
 
-Claude looked at [image 006](<../images/2026-11-04 M1 water and tiles built/006 Claude.png>)
+Claude looked at picture 006
 
-Claude looked at [image 007](<../images/2026-11-04 M1 water and tiles built/007 Claude.png>)
+Claude looked at picture 007
 
 All as intended: the own sides face the hole, the two edge tiles left in the void, and two corner-piece tiles (13,-3 and 11,-2), whose pieces cover part of each such side. Comparing the bank:
 
-Claude looked at [image 008](<../images/2026-11-04 M1 water and tiles built/008 Claude.png>)
+Claude looked at picture 008
 
 The bank shows its thin blue line, and the own sides work. Now part 3, no clouds beside the water. Editing the clouds:
 
@@ -154,13 +154,13 @@ Those places beyond the map have no names near the pentagon. I'll place the came
 
 Noted: the bright blue top edges stay, at the banks and on the water's own sides. Checking the pictures with part 3 in:
 
-Claude looked at [image 009](<../images/2026-11-04 M1 water and tiles built/009 Claude.png>)
+Claude looked at picture 009
 
-Claude looked at [image 010](<../images/2026-11-04 M1 water and tiles built/010 Claude.png>)
+Claude looked at picture 010
 
-Claude looked at [image 011](<../images/2026-11-04 M1 water and tiles built/011 Claude.png>)
+Claude looked at picture 011
 
-Claude looked at [image 012](<../images/2026-11-04 M1 water and tiles built/012 Claude.png>)
+Claude looked at picture 012
 
 Now the corner pieces' sides that face the void show soil, not water. Next a play test: swimming out through the water's own side into the void, and swimming onto the stepping stone:
 
@@ -196,15 +196,15 @@ Now the two sliders. Finding the tiles' numbers in key.js:
 
 Syncing the after copy and taking pictures of the island's edges, plus a close look at a tile's side from the hole:
 
-Claude looked at [image 013](<../images/2026-11-04 M1 water and tiles built/013 Claude.png>)
+Claude looked at picture 013
 
-Claude looked at [image 014](<../images/2026-11-04 M1 water and tiles built/014 Claude.png>)
+Claude looked at picture 014
 
 Now the corner pieces' sides, the same way:
 
-Claude looked at [image 015](<../images/2026-11-04 M1 water and tiles built/015 Claude.png>)
+Claude looked at picture 015
 
-Claude looked at [image 016](<../images/2026-11-04 M1 water and tiles built/016 Claude.png>)
+Claude looked at picture 016
 
 The gaps between tiles are closed, and the corner pieces have the grass and line too. Now checking a climbing plant lies against the set-back soil. Reading the test handle for planting:
 
@@ -220,23 +220,23 @@ All 180 pass. Checking key.js holds only my change (your saves would land there 
 
 There is already a pale silhouette of the player drawn wherever something hides them. That contradicts the plan's note that "ground hides the player". Checking its history and whether it still works:
 
-Claude looked at [image 017](<../images/2026-11-04 M1 water and tiles built/017 Claude.png>)
+Claude looked at picture 017
 
 The player landed on top of the wall, since walls reach into the next tile. Placing them 1.2 m further from the wall:
 
 Still on a wall. I'll use a plainer spot: the player swimming by the pond's west bank (12,0), the camera low on the land side, so the bank hides the swimmer:
 
-Claude looked at [image 018](<../images/2026-11-04 M1 water and tiles built/018 Claude.png>)
+Claude looked at picture 018
 
-Claude looked at [image 019](<../images/2026-11-04 M1 water and tiles built/019 Claude.png>)
+Claude looked at picture 019
 
 Composing the pictures into one page of before-and-after pairs, then rendering it to a single image:
 
-Claude looked at [image 020](<../images/2026-11-04 M1 water and tiles built/020 Claude.jpg>)
+Claude looked at picture 020
 
 The west-edge pair shows mostly clouds and adds nothing, so I'm dropping it, then opening the page for you in VS Code:
 
-![Claude's image 021](<../images/2026-11-04 M1 water and tiles built/021 Claude to Dani.png>)
+Claude's picture 021
 
 All six parts are done; parts 4 and 6 needed no new code. Your map is in, and everything is pushed. I estimated 10–12 hours; it took about an hour (16:35 to 17:33).
 
@@ -263,7 +263,7 @@ Side effects you'll see in v0.335.0:
 
 The Tessera Records proposals from last session are still waiting for your yes. Decision 4, "The player shows through what hides them", would record something that already exists, which is fine.
 
-Again: [image 021](<../images/2026-11-04 M1 water and tiles built/021 Claude to Dani.png>)
+Again: picture 021
 
 ---
 

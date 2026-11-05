@@ -621,4 +621,4 @@ Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera
 
 ---
 
-This conversation's 16 images are in images\2026-10-31 M1 doorway, flower box, hops, the lantern tree and a new map\. [The list of them](<../images/2026-10-31 M1 doorway, flower box, hops, the lantern tree and a new map/index.md>) gives each one's time.
+This conversation's 16 pictures are in Tessera Records, in the original file "Pictures: 2026-10-31 M1 doorway, flower box, hops, the lantern tree and a new map", in the order they came.

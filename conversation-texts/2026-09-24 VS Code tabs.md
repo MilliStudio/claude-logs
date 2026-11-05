@@ -1,6 +1,6 @@
 # VS Code tabs (2026-09-24)
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-09-24 VS Code tabs\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-09-24 VS Code tabs", numbered as here. Private: never commit or share.
 
 ---
 
@@ -87,7 +87,7 @@ Sounds good — go ahead and attach the image, and I'll take it from there.
 
 ### Dani · 2026-09-24 18:11
 
-![Dani's image 001](<../images/2026-09-24 VS Code tabs/001 Dani.png>)
+Dani's picture 001
 
 ---
 

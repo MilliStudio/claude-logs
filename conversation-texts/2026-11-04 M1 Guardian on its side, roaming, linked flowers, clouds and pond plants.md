@@ -1,6 +1,6 @@
 # M1 trial: the Guardian on its side, roaming, linked flowers, clouds and pond plants (4 November 2026, late evening)
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-04 M1 Guardian on its side, roaming, linked flowers, clouds and pond plants\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-04 M1 Guardian on its side, roaming, linked flowers, clouds and pond plants", numbered as here. Private: never commit or share.
 
 ---
 
@@ -8,7 +8,7 @@ The messages of this conversation, Dani's and Claude's, without the code, tool c
 
 for the guardian, would you please put him the same pose as when he's runing (to contain him in the tile he's in
 
-![Dani's image 001](<../images/2026-11-04 M1 Guardian on its side, roaming, linked flowers, clouds and pond plants/001 Dani.png>)
+Dani's picture 001
 
 ---
 
@@ -20,7 +20,7 @@ I'm setting up a hidden-browser view of the dormant Guardian to measure how far 
 
 Taking a first look at the dormant Guardian at your values in the hidden browser.
 
-Claude looked at [image 002](<../images/2026-11-04 M1 Guardian on its side, roaming, linked flowers, clouds and pond plants/002 Claude.png>)
+Claude looked at picture 002
 
 The whole pond rises with Restore all, so I'll measure instead: how far the lying Guardian reaches past its own tile's sides.
 
@@ -32,15 +32,15 @@ Adding a check to `window.planet.fish` that measures the drawn Guardian against 
 
 The fit and the drawn Guardian now agree: it stays 4 cm inside its tile's sides at your values. Looking at it:
 
-Claude looked at [image 003](<../images/2026-11-04 M1 Guardian on its side, roaming, linked flowers, clouds and pond plants/003 Claude.png>)
+Claude looked at picture 003
 
 The player hides most of it. Taking a clearer view from farther back:
 
-Claude looked at [image 004](<../images/2026-11-04 M1 Guardian on its side, roaming, linked flowers, clouds and pond plants/004 Claude.png>)
+Claude looked at picture 004
 
-Claude looked at [image 005](<../images/2026-11-04 M1 Guardian on its side, roaming, linked flowers, clouds and pond plants/005 Claude.png>)
+Claude looked at picture 005
 
-![Claude's image 006](<../images/2026-11-04 M1 Guardian on its side, roaming, linked flowers, clouds and pond plants/006 Claude to Dani.png>)
+Claude's picture 006
 
 That's the lying Guardian from above: curled like it swims through a turn, inside its one tile. Now checking that waking it doesn't make it jump:
 
@@ -65,7 +65,7 @@ Here it is from above, in the hidden browser: `C:\Users\someo\AppData\Local\Temp
 
 This version also includes your map import of 20:56 and the Guardian size and back rings from M1 testing. All tests pass, and it's on GitHub. The pose counts as a look, so it doesn't need a Tessera Records entry.
 
-Again: [image 006](<../images/2026-11-04 M1 Guardian on its side, roaming, linked flowers, clouds and pond plants/006 Claude to Dani.png>)
+Again: picture 006
 
 ---
 
@@ -81,9 +81,9 @@ Now the pose in src/planet.js:
 
 On its side it sticks out 11 cm. Lying flat, its back fin and fanned tail spread across the bed and make it wider from above. Looking at the pictures:
 
-Claude looked at [image 007](<../images/2026-11-04 M1 Guardian on its side, roaming, linked flowers, clouds and pond plants/007 Claude.png>)
+Claude looked at picture 007
 
-Claude looked at [image 008](<../images/2026-11-04 M1 Guardian on its side, roaming, linked flowers, clouds and pond plants/008 Claude.png>)
+Claude looked at picture 008
 
 It looks right: on its side, its eye up, its back fin and tail fanned flat along the bed. It sticks out 11 cm, though. Checking how much more curve it would need on its side:
 
@@ -101,9 +101,9 @@ Adding a temporary timer to see where the time goes:
 3 guardian looks good, but can you make him look just a little broken. maybe rings misaligned
 4 giant flowers aren't being raised by linked diamonds
 
-![Dani's image 009](<../images/2026-11-04 M1 Guardian on its side, roaming, linked flowers, clouds and pond plants/009 Dani.png>)
+Dani's picture 009
 
-![Dani's image 010](<../images/2026-11-04 M1 Guardian on its side, roaming, linked flowers, clouds and pond plants/010 Dani.png>)
+Dani's picture 010
 
 ---
 
@@ -141,9 +141,9 @@ Writing the broken rings and the side cogs:
 
 Now the cogs turning, and the lie refitting when the askew changes:
 
-Claude looked at [image 011](<../images/2026-11-04 M1 Guardian on its side, roaming, linked flowers, clouds and pond plants/011 Claude.png>)
+Claude looked at picture 011
 
-Claude looked at [image 012](<../images/2026-11-04 M1 Guardian on its side, roaming, linked flowers, clouds and pond plants/012 Claude.jpg>)
+Claude looked at picture 012
 
 The cogs turn once it wakes, and stand still while it's dormant. Tidying the test readout, then the README:
 
@@ -175,19 +175,19 @@ v0.347.0 is saved: linked flowers in the void rise with their diamond. Last, fix
 
 I'll reproduce your second picture in the hidden browser: wake the Guardian so the island turns green and the clouds come, then stand at an edge facing them.
 
-Claude looked at [image 013](<../images/2026-11-04 M1 Guardian on its side, roaming, linked flowers, clouds and pond plants/013 Claude.png>)
+Claude looked at picture 013
 
-Claude looked at [image 014](<../images/2026-11-04 M1 Guardian on its side, roaming, linked flowers, clouds and pond plants/014 Claude.png>)
+Claude looked at picture 014
 
 The floor is drawn after the tiles and covers whatever lies behind it, so sides reaching deeper stay hidden wherever there's no cloud. Making the change:
 
-Claude looked at [image 015](<../images/2026-11-04 M1 Guardian on its side, roaming, linked flowers, clouds and pond plants/015 Claude.png>)
+Claude looked at picture 015
 
-Claude looked at [image 016](<../images/2026-11-04 M1 Guardian on its side, roaming, linked flowers, clouds and pond plants/016 Claude.png>)
+Claude looked at picture 016
 
-Claude looked at [image 017](<../images/2026-11-04 M1 Guardian on its side, roaming, linked flowers, clouds and pond plants/017 Claude.png>)
+Claude looked at picture 017
 
-Claude looked at [image 018](<../images/2026-11-04 M1 Guardian on its side, roaming, linked flowers, clouds and pond plants/018 Claude.png>)
+Claude looked at picture 018
 
 Without clouds the sides look as before, 0.7 m, because the void's floor covers the rest. Updating the README and saving v0.348.0:
 
@@ -258,15 +258,15 @@ can you invrease cog diameters
 
 I'll look at the Guardian awake up close to find what's off. Meanwhile, about the cogs: I'll add a size slider so you can set them yourself, starting 50% bigger.
 
-Claude looked at [image 019](<../images/2026-11-04 M1 Guardian on its side, roaming, linked flowers, clouds and pond plants/019 Claude.jpg>)
+Claude looked at picture 019
 
-Claude looked at [image 020](<../images/2026-11-04 M1 Guardian on its side, roaming, linked flowers, clouds and pond plants/020 Claude.png>)
+Claude looked at picture 020
 
 Dormant, it looks as intended: on its side, rings a little askew, the cog on its upper side. Getting a clear look at it awake, with the askew rings and without:
 
-Claude looked at [image 021](<../images/2026-11-04 M1 Guardian on its side, roaming, linked flowers, clouds and pond plants/021 Claude.jpg>)
+Claude looked at picture 021
 
-Claude looked at [image 022](<../images/2026-11-04 M1 Guardian on its side, roaming, linked flowers, clouds and pond plants/022 Claude.png>)
+Claude looked at picture 022
 
 Writing the restructure as one set of exact replacements:
 
@@ -274,9 +274,9 @@ The shell choked on the quotes in that script, so I'm writing it as a file inste
 
 Now the cog-size slider and the notes in src/key.js:
 
-Claude looked at [image 023](<../images/2026-11-04 M1 Guardian on its side, roaming, linked flowers, clouds and pond plants/023 Claude.jpg>)
+Claude looked at picture 023
 
-Claude looked at [image 024](<../images/2026-11-04 M1 Guardian on its side, roaming, linked flowers, clouds and pond plants/024 Claude.png>)
+Claude looked at picture 024
 
 Dormant, it's askew with the bigger cog and still inside its tile, 3 cm in. Awake, its rings sit in line and the cog turns. Updating the README and saving v0.350.0:
 
@@ -295,7 +295,7 @@ At your values the dormant Guardian still lies 3 cm inside its tile. This versio
 
 can you shorten the paper-thin plant's leaves? just so they're not above water. the other two can stau the same
 
-![Dani's image 025](<../images/2026-11-04 M1 Guardian on its side, roaming, linked flowers, clouds and pond plants/025 Dani.png>)
+Dani's picture 025
 
 ---
 
@@ -336,9 +336,9 @@ Your import is in this version too. The trial now has the same values as M1 test
 a bit shorter thanks
 for the other two, can you make them never poke out of the water, but more like floating on the surface? like the image
 
-![Dani's image 026](<../images/2026-11-04 M1 Guardian on its side, roaming, linked flowers, clouds and pond plants/026 Dani.jpg>)
+Dani's picture 026
 
-![Dani's image 027](<../images/2026-11-04 M1 Guardian on its side, roaming, linked flowers, clouds and pond plants/027 Dani.jpg>)
+Dani's picture 027
 
 ---
 
@@ -350,13 +350,13 @@ Reading your two requests:
 
 Checking the heights and how the floating leaves look:
 
-Claude looked at [image 028](<../images/2026-11-04 M1 Guardian on its side, roaming, linked flowers, clouds and pond plants/028 Claude.png>)
+Claude looked at picture 028
 
-Claude looked at [image 029](<../images/2026-11-04 M1 Guardian on its side, roaming, linked flowers, clouds and pond plants/029 Claude.png>)
+Claude looked at picture 029
 
 From afar the floating leaves show as small green and plum flecks on the water. A closer look:
 
-Claude looked at [image 030](<../images/2026-11-04 M1 Guardian on its side, roaming, linked flowers, clouds and pond plants/030 Claude.png>)
+Claude looked at picture 030
 
 The floating leaves sit on the surface in bright green and plum clusters, the waterweed's stalks run down below them, and the eelgrass stays well under. Updating the README and saving v0.352.0:
 

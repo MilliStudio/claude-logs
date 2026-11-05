@@ -189,4 +189,4 @@ Closing note (2 November 2026): Built and pushed v0.295.0: saving with arching f
 
 ---
 
-This conversation's 3 images are in images\2026-11-02 M1 saving fix, leaves from the top, darker dried flowers\. [The list of them](<../images/2026-11-02 M1 saving fix, leaves from the top, darker dried flowers/index.md>) gives each one's time.
+This conversation's 3 pictures are in Tessera Records, in the original file "Pictures: 2026-11-02 M1 saving fix, leaves from the top, darker dried flowers", in the order they came.

@@ -137,4 +137,4 @@ Closing note (1 November 2026): Built v0.256.0 and pushed it: swimming, the came
 
 ---
 
-This conversation's 6 images are in images\2026-11-01 M1 the swimming camera and the refinery's cogs\. [The list of them](<../images/2026-11-01 M1 the swimming camera and the refinery's cogs/index.md>) gives each one's time.
+This conversation's 6 pictures are in Tessera Records, in the original file "Pictures: 2026-11-01 M1 the swimming camera and the refinery's cogs", in the order they came.

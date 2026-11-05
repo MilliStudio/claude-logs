@@ -219,4 +219,4 @@ Closing note (28 October 2026, late evening): the M1 trial went from v0.180.0 to
 
 ---
 
-This conversation's 3 images are in images\2026-10-28 M1 tally alignment, sliders and the online copy\. [The list of them](<../images/2026-10-28 M1 tally alignment, sliders and the online copy/index.md>) gives each one's time.
+This conversation's 3 pictures are in Tessera Records, in the original file "Pictures: 2026-10-28 M1 tally alignment, sliders and the online copy", in the order they came.

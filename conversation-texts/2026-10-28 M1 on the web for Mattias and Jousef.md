@@ -461,4 +461,4 @@ Waiting for Dani:
 
 ---
 
-This conversation's 4 images are in images\2026-10-28 M1 on the web for Mattias and Jousef\. [The list of them](<../images/2026-10-28 M1 on the web for Mattias and Jousef/index.md>) gives each one's time.
+This conversation's 4 pictures are in Tessera Records, in the original file "Pictures: 2026-10-28 M1 on the web for Mattias and Jousef", in the order they came.

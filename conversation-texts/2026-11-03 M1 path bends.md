@@ -107,4 +107,4 @@ Closing note (3 November 2026, about 19:50): Built and pushed v0.321.0, path ben
 
 ---
 
-This conversation's 6 images are in images\2026-11-03 M1 path bends\. [The list of them](<../images/2026-11-03 M1 path bends/index.md>) gives each one's time.
+This conversation's 6 pictures are in Tessera Records, in the original file "Pictures: 2026-11-03 M1 path bends", in the order they came.

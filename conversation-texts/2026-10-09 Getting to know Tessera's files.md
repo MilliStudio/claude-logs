@@ -1,6 +1,6 @@
 # Getting to know Tessera's files (2026-10-09 to 2026-10-14)
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-10-09 Getting to know Tessera's files\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-10-09 Getting to know Tessera's files", numbered as here. Private: never commit or share.
 
 ---
 
@@ -20,13 +20,13 @@ Now the reports.
 
 I've read all the text. Let me look at the art too, since art is a core pillar.
 
-Claude looked at [image 001](<../images/2026-10-09 Getting to know Tessera's files/001 Claude.png>)
+Claude looked at picture 001
 
-Claude looked at [image 002](<../images/2026-10-09 Getting to know Tessera's files/002 Claude.jpg>)
+Claude looked at picture 002
 
-Claude looked at [image 003](<../images/2026-10-09 Getting to know Tessera's files/003 Claude.jpg>)
+Claude looked at picture 003
 
-Claude looked at [image 004](<../images/2026-10-09 Getting to know Tessera's files/004 Claude.jpg>)
+Claude looked at picture 004
 
 I've read everything in DOCS/, business/ and reports/, plus the four images. The one thing I skipped is the legal-structure PDF, since it looks like a rendered copy of the .md next to it. Here's what I took away.
 

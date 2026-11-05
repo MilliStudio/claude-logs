@@ -224,4 +224,4 @@ Dani ended the session here (23 October 2026, about 15:15), to start a new conve
 
 ---
 
-This conversation's 5 images are in images\2026-10-23 M1 crates, strokes and tile width\. [The list of them](<../images/2026-10-23 M1 crates, strokes and tile width/index.md>) gives each one's time.
+This conversation's 5 pictures are in Tessera Records, in the original file "Pictures: 2026-10-23 M1 crates, strokes and tile width", in the order they came.

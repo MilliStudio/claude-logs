@@ -253,4 +253,4 @@ Closing note (1 November 2026, evening): Built and pushed v0.264.0 to v0.267.1. 
 
 ---
 
-This conversation's 2 images are in images\2026-11-01 M1 leaves, head tilt, saves in one write\. [The list of them](<../images/2026-11-01 M1 leaves, head tilt, saves in one write/index.md>) gives each one's time.
+This conversation's 2 pictures are in Tessera Records, in the original file "Pictures: 2026-11-01 M1 leaves, head tilt, saves in one write", in the order they came.

@@ -1,6 +1,6 @@
 # M1 trial: ladders replaced by climbing plants, the map editor's Duplicate tool (2 November 2026, afternoon)
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-02 M1 climbing plants, Duplicate tool\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-02 M1 climbing plants, Duplicate tool", numbered as here. Private: never commit or share.
 
 ---
 
@@ -20,9 +20,9 @@ it grows from the walkable surface the player is standing on (with the condition
 
 the climbing plant shuld have universal sliders for the animation, growth speed and bloom time (when  and speed).
 
-![Dani's image 001](<../images/2026-11-02 M1 climbing plants, Duplicate tool/001 Dani.png>)
+Dani's picture 001
 
-![Dani's image 002](<../images/2026-11-02 M1 climbing plants, Duplicate tool/002 Dani.png>)
+Dani's picture 002
 
 ---
 
@@ -142,7 +142,7 @@ A raw Chrome DevTools script from an earlier session works as a template. Checki
 
 The wall plant was found, planted, grew and survived a reload. Hopping onto it failed, though. Looking at the pictures.
 
-Claude looked at [image 003](<../images/2026-11-02 M1 climbing plants, Duplicate tool/003 Claude.png>)
+Claude looked at picture 003
 
 Up the wall works: hopped on, climbed, and hopped over the top onto the 2 m low wall. Now the stem test.
 
@@ -160,19 +160,19 @@ One real problem found: a second plant can't start where the first one ends (the
 
 ### Claude · 2026-11-02 18:19
 
-Claude looked at [image 004](<../images/2026-11-02 M1 climbing plants, Duplicate tool/004 Claude.png>)
+Claude looked at picture 004
 
-Claude looked at [image 005](<../images/2026-11-02 M1 climbing plants, Duplicate tool/005 Claude.png>)
+Claude looked at picture 005
 
 Both plants sit on the stem as in your picture: one below the leaf, one from the leaf to the head. Taking a close-up to check the leaves and flowers, and frames mid-growth.
 
-Claude looked at [image 006](<../images/2026-11-02 M1 climbing plants, Duplicate tool/006 Claude.png>)
+Claude looked at picture 006
 
-Claude looked at [image 007](<../images/2026-11-02 M1 climbing plants, Duplicate tool/007 Claude.png>)
+Claude looked at picture 007
 
 Now checking the map editor loads cleanly and shows the Climbing plants sliders.
 
-Claude looked at [image 008](<../images/2026-11-02 M1 climbing plants, Duplicate tool/008 Claude.png>)
+Claude looked at picture 008
 
 The editor loads with no errors; the Tuning tab's rows only render once it's opened. Opening it.
 
@@ -210,7 +210,7 @@ Now writing the Duplicate tool beside Move.
 
 The mouse drag copies the low wall from 6,3 onto 7,4, with its turn. Checking the new button in the tool list.
 
-Claude looked at [image 009](<../images/2026-11-02 M1 climbing plants, Duplicate tool/009 Claude.png>)
+Claude looked at picture 009
 
 The **Duplicate** button sits beside Move. Adding it to the README's map editor section.
 

@@ -1,6 +1,6 @@
 # Tessera Design, step 5, the merges (2026-10-17 to 2026-10-18)
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-10-17 Tessera Design, step 5, the merges\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-10-17 Tessera Design, step 5, the merges", numbered as here. Private: never commit or share.
 
 ---
 
@@ -931,39 +931,39 @@ Now the styles: the wider page, the two columns, the list pane, the document lay
 
 Code and styles are in place. Now I'm checking the screens myself in a hidden browser on the copy, at a full-screen width and at narrower widths.
 
-Claude looked at [image 001](<../images/2026-10-17 Tessera Design, step 5, the merges/001 Claude.png>)
+Claude looked at picture 001
 
-Claude looked at [image 002](<../images/2026-10-17 Tessera Design, step 5, the merges/002 Claude.png>)
+Claude looked at picture 002
 
 The decisions and documents screens look right at full width. Checking the feature and block screens, and the narrow sizes:
 
-Claude looked at [image 003](<../images/2026-10-17 Tessera Design, step 5, the merges/003 Claude.png>)
+Claude looked at picture 003
 
-Claude looked at [image 004](<../images/2026-10-17 Tessera Design, step 5, the merges/004 Claude.png>)
+Claude looked at picture 004
 
-Claude looked at [image 005](<../images/2026-10-17 Tessera Design, step 5, the merges/005 Claude.png>)
+Claude looked at picture 005
 
-Claude looked at [image 006](<../images/2026-10-17 Tessera Design, step 5, the merges/006 Claude.png>)
+Claude looked at picture 006
 
-Claude looked at [image 007](<../images/2026-10-17 Tessera Design, step 5, the merges/007 Claude.png>)
+Claude looked at picture 007
 
-Claude looked at [image 008](<../images/2026-10-17 Tessera Design, step 5, the merges/008 Claude.png>)
+Claude looked at picture 008
 
 Two fixes:
 - The list beside a record doesn't scroll on its own yet, so the selected decision sits at the bottom edge.
 - On the topic screen, the list of contents is squeezed into a narrow column.
 
-Claude looked at [image 008](<../images/2026-10-17 Tessera Design, step 5, the merges/008 Claude.png>)
+Claude looked at picture 008
 
-Claude looked at [image 009](<../images/2026-10-17 Tessera Design, step 5, the merges/009 Claude.png>)
+Claude looked at picture 009
 
-Claude looked at [image 010](<../images/2026-10-17 Tessera Design, step 5, the merges/010 Claude.png>)
+Claude looked at picture 010
 
-Claude looked at [image 011](<../images/2026-10-17 Tessera Design, step 5, the merges/011 Claude.png>)
+Claude looked at picture 011
 
-Claude looked at [image 012](<../images/2026-10-17 Tessera Design, step 5, the merges/012 Claude.png>)
+Claude looked at picture 012
 
-Claude looked at [image 013](<../images/2026-10-17 Tessera Design, step 5, the merges/013 Claude.png>)
+Claude looked at picture 013
 
 The new layout is ready to try on the copy: **http://localhost:4881**
 
@@ -1022,13 +1022,13 @@ I'll do both:
 
 The editor needs to read the file first, since I copied it in rather than editing it. Reading it, then making the changes.
 
-Claude looked at [image 014](<../images/2026-10-17 Tessera Design, step 5, the merges/014 Claude.png>)
+Claude looked at picture 014
 
-Claude looked at [image 011](<../images/2026-10-17 Tessera Design, step 5, the merges/011 Claude.png>)
+Claude looked at picture 011
 
 Checking the result on the decisions and features list pages:
 
-Claude looked at [image 015](<../images/2026-10-17 Tessera Design, step 5, the merges/015 Claude.png>)
+Claude looked at picture 015
 
 I've also added these changes to the app's notes. None of today's screen changes are committed yet. Should I commit them and sync to GitHub?
 
@@ -1193,17 +1193,17 @@ All 133 tests pass, and the version is now 0.10.0. Next I'm setting up the copy 
 
 All six are on the copy. Taking screenshots to check: the research list, a record with an AsciiDoc report, one with a Markdown report, and a decision showing its research.
 
-Claude looked at [image 016](<../images/2026-10-17 Tessera Design, step 5, the merges/016 Claude.png>)
+Claude looked at picture 016
 
-Claude looked at [image 017](<../images/2026-10-17 Tessera Design, step 5, the merges/017 Claude.png>)
+Claude looked at picture 017
 
-Claude looked at [image 018](<../images/2026-10-17 Tessera Design, step 5, the merges/018 Claude.png>)
+Claude looked at picture 018
 
-Claude looked at [image 019](<../images/2026-10-17 Tessera Design, step 5, the merges/019 Claude.png>)
+Claude looked at picture 019
 
 The Markdown report reads well, and the decision now shows "Research behind it". Fixing the two layout points:
 
-Claude looked at [image 020](<../images/2026-10-17 Tessera Design, step 5, the merges/020 Claude.png>)
+Claude looked at picture 020
 
 Research is ready to try on the copy: **http://localhost:4881**. Click **Research** in the nav bar. Your real app (localhost:4880) hasn't changed.
 
@@ -1253,13 +1253,13 @@ One change: the "Names" text said none are set up yet. That would go stale as so
 
 Checking how the box looks. A headless browser can't point at things, so I'm making a test page that uses the real styles with one box forced open:
 
-Claude looked at [image 021](<../images/2026-10-17 Tessera Design, step 5, the merges/021 Claude.png>)
+Claude looked at picture 021
 
 Tessera Design's explanations work: the box appears under each menu item. Now Studio Records. I'm working on a separate copy of its code, so your running app isn't affected until you say so.
 
 Testing it the same way: a test page with Studio Records' real styles, one menu open and one explanation forced visible.
 
-Claude looked at [image 022](<../images/2026-10-17 Tessera Design, step 5, the merges/022 Claude.png>)
+Claude looked at picture 022
 
 All 57 Studio Records tests pass. This change is only explanation text, which is what you asked for, so I'm putting it straight into your Studio Records. Press F5 there to see it.
 

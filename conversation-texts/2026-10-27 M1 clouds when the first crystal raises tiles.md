@@ -1,6 +1,6 @@
 # M1 clouds when the first crystal raises tiles (2026-10-27)
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-10-27 M1 clouds when the first crystal raises tiles\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-10-27 M1 clouds when the first crystal raises tiles", numbered as here. Private: never commit or share.
 
 ---
 
@@ -15,7 +15,7 @@ inventory:
 decrease the cose of each crystal to 10 for object types that are main and 5 for the secondaries 
 when player taps inventory icon, it expands upwards the sideways for submenu (design attached. give slightly rounded edges so it's not too stiff)
 
-![Dani's image 001](<../images/2026-10-27 M1 clouds when the first crystal raises tiles/001 Dani.png>)
+Dani's picture 001
 
 ---
 
@@ -57,33 +57,33 @@ Now the inventory's code in the game:
 
 Tests pass. Now checking it in a hidden browser against the running game; copying last session's browser scripts first.
 
-Claude looked at [image 002](<../images/2026-10-27 M1 clouds when the first crystal raises tiles/002 Claude.png>)
+Claude looked at picture 002
 
 The inventory opens and works. Next, the windows and the refinery's stems; looking at last session's window scripts to reuse them.
 
 The refinery now stands on 17,6 (the map was edited since the README's 16,6). Adjusting the script:
 
-Claude looked at [image 003](<../images/2026-10-27 M1 clouds when the first crystal raises tiles/003 Claude.png>)
+Claude looked at picture 003
 
-Claude looked at [image 004](<../images/2026-10-27 M1 clouds when the first crystal raises tiles/004 Claude.png>)
+Claude looked at picture 004
 
 The window shows the title and one row per thing. Now a closer look at the refinery with its plants kept, from its front:
 
-Claude looked at [image 005](<../images/2026-10-27 M1 clouds when the first crystal raises tiles/005 Claude.png>)
+Claude looked at picture 005
 
-Claude looked at [image 006](<../images/2026-10-27 M1 clouds when the first crystal raises tiles/006 Claude.png>)
+Claude looked at picture 006
 
 The refinery keeps the plants that grew, their leaves out of its open top. Now the apparatus's window:
 
-Claude looked at [image 007](<../images/2026-10-27 M1 clouds when the first crystal raises tiles/007 Claude.png>)
+Claude looked at picture 007
 
 The taller window runs off the top of the screen when the machine stands high on it. Keeping it on screen:
 
-Claude looked at [image 008](<../images/2026-10-27 M1 clouds when the first crystal raises tiles/008 Claude.png>)
+Claude looked at picture 008
 
 Aligning the bottle with the other pictures by hanging the arrow to its left:
 
-Claude looked at [image 009](<../images/2026-10-27 M1 clouds when the first crystal raises tiles/009 Claude.png>)
+Claude looked at picture 009
 
 Windows look right. Checking the 404 the browser logged:
 
@@ -95,7 +95,7 @@ Tests pass. Checking the map editor still loads and shows a diamond's needs as 1
 
 The editor gives 10 for main drops and 5 for second drops. Now the inventory on a phone-sized screen:
 
-Claude looked at [image 010](<../images/2026-10-27 M1 clouds when the first crystal raises tiles/010 Claude.png>)
+Claude looked at picture 010
 
 Fits on a phone held sideways too. Now the README. Finding every passage these changes touch:
 
@@ -182,35 +182,35 @@ Tests pass. Checking in the browser: wake the lantern, then complete the first c
 
 The puff count stays at 539 the whole time the crystal's 17 tiles rise. Under v0.137.0 they vanished at once. Looking at the picture:
 
-Claude looked at [image 011](<../images/2026-10-27 M1 clouds when the first crystal raises tiles/011 Claude.png>)
+Claude looked at picture 011
 
 Puffs inside deep water look wrong, but making them vanish would bring the pop back. When a crystal raises deep water, the puffs there will instead sink away as the water rises:
 
 Tests pass. Rerunning the crystal test to see the pond and count the puffs:
 
-Claude looked at [image 012](<../images/2026-10-27 M1 clouds when the first crystal raises tiles/012 Claude.png>)
+Claude looked at picture 012
 
-Claude looked at [image 013](<../images/2026-10-27 M1 clouds when the first crystal raises tiles/013 Claude.png>)
+Claude looked at picture 013
 
 The arcs are still in the pond. Checking whether they're cloud puffs at all, by hiding the clouds for one picture:
 
-Claude looked at [image 014](<../images/2026-10-27 M1 clouds when the first crystal raises tiles/014 Claude.png>)
+Claude looked at picture 014
 
 They are cloud puffs, seen through the pond: the deep water's bed lets the view through here. Finding where those puffs end up after sinking:
 
 Sunk puffs wait 4 m down in the dark core, and clouds are drawn so they show through the void's floor. That's why they show through the pond. Making a puff disappear once it has sunk:
 
-Claude looked at [image 015](<../images/2026-10-27 M1 clouds when the first crystal raises tiles/015 Claude.png>)
+Claude looked at picture 015
 
 Still there. Finding exactly which puffs those are by reading the cloud mesh directly:
 
 Found it: a puff waiting to sink later didn't keep the clouds' animation running, so it never sank. Fixing:
 
-Claude looked at [image 016](<../images/2026-10-27 M1 clouds when the first crystal raises tiles/016 Claude.png>)
+Claude looked at picture 016
 
 The pond is clear now, and the clouds round the raised land stay. Checking the Guardian's revival next, so the clouds there don't jump either:
 
-Claude looked at [image 017](<../images/2026-10-27 M1 clouds when the first crystal raises tiles/017 Claude.png>)
+Claude looked at picture 017
 
 The clouds look the same after the revival; the puffs it drops were hidden ones under the pond and under land. Updating the README:
 
@@ -235,7 +235,7 @@ My earlier attempt to compare the old version briefly reloaded your game with th
 
 3 can you make the guardian swim away with it's belly turned up (like how orca in the sea play with humans), then drop the scale when it's done and starts swimming normally. the scale needs to float under the water insead, like being swept very slowly (image attached). also make it's body round like an orca not flat
 
-![Dani's image 018](<../images/2026-10-27 M1 clouds when the first crystal raises tiles/018 Dani.png>)
+Dani's picture 018
 
 ---
 
@@ -257,15 +257,15 @@ Tests pass. Now the depth look: the bed darkens toward the pond's middle, and th
 
 Tests pass. Checking it all in the browser: the first pond's new depth look, then the Guardian's play and the drifting scale.
 
-Claude looked at [image 019](<../images/2026-10-27 M1 clouds when the first crystal raises tiles/019 Claude.png>)
+Claude looked at picture 019
 
-Claude looked at [image 020](<../images/2026-10-27 M1 clouds when the first crystal raises tiles/020 Claude.png>)
+Claude looked at picture 020
 
-Claude looked at [image 021](<../images/2026-10-27 M1 clouds when the first crystal raises tiles/021 Claude.png>)
+Claude looked at picture 021
 
-Claude looked at [image 022](<../images/2026-10-27 M1 clouds when the first crystal raises tiles/022 Claude.png>)
+Claude looked at picture 022
 
-Claude looked at [image 023](<../images/2026-10-27 M1 clouds when the first crystal raises tiles/023 Claude.png>)
+Claude looked at picture 023
 
 The bands run along the edge of the clouds' area under the pond, so they're the void's walls. Starting those walls below the bed of any deep water beside them:
 
@@ -281,7 +281,7 @@ The bands run along the edge of the clouds' area under the pond, so they're the 
 
 Noted: the scale gets a glossy finish, and its Take button goes. Swimming up to it will pick it up, with "+1" and its picture popping up as harvesting does. First, checking the wall fix:
 
-Claude looked at [image 024](<../images/2026-10-27 M1 clouds when the first crystal raises tiles/024 Claude.png>)
+Claude looked at picture 024
 
 The dark bands are gone. Now the scale:
 
@@ -319,7 +319,7 @@ The half circle works: it kept 1.8 m from the player for 7 seconds, then swam of
 
 The lookup is right. Looking at the picture taken while it swims off:
 
-Claude looked at [image 025](<../images/2026-10-27 M1 clouds when the first crystal raises tiles/025 Claude.png>)
+Claude looked at picture 025
 
 The test browser reads deep water at 1.65 m, Rises in at 1.6 s and Swims at 0.55. Those aren't my numbers, so key.js has changed on disk. Checking:
 
@@ -327,13 +327,13 @@ Only the Guardian's numbers and the deep water changed, all from your Save. I'll
 
 ↻ works on both machines: the parts lie apart, come back together, and the window returns. Looking at the refinery's window with the button:
 
-Claude looked at [image 026](<../images/2026-10-27 M1 clouds when the first crystal raises tiles/026 Claude.png>)
+Claude looked at picture 026
 
 The ↻ sits beside Refine. Now the glossy scale close up, and picking it up by swimming to it:
 
-Claude looked at [image 027](<../images/2026-10-27 M1 clouds when the first crystal raises tiles/027 Claude.png>)
+Claude looked at picture 027
 
-Claude looked at [image 028](<../images/2026-10-27 M1 clouds when the first crystal raises tiles/028 Claude.png>)
+Claude looked at picture 028
 
 ---
 
@@ -347,7 +347,7 @@ Claude looked at [image 028](<../images/2026-10-27 M1 clouds when the first crys
 
 Noted: the apparatus will keep the plants that grew while it was put together, as the refinery now does. First, the scale picture:
 
-Claude looked at [image 029](<../images/2026-10-27 M1 clouds when the first crystal raises tiles/029 Claude.png>)
+Claude looked at picture 029
 
 The scale now shows gold with a shine under the water, and the ↻ window is compact. Now keeping the apparatus's plants:
 
@@ -363,7 +363,7 @@ The scale now shows gold with a shine under the water, and the ↻ window is com
 
 Noted: the Guardian will play belly up at its usual swimming depth, not at the top of the water. First, the apparatus picture:
 
-Claude looked at [image 030](<../images/2026-10-27 M1 clouds when the first crystal raises tiles/030 Claude.png>)
+Claude looked at picture 030
 
 The apparatus keeps its plants, with its leaves out as before. Now the Guardian's depth while playing:
 
@@ -379,7 +379,7 @@ Updating key.js's comments to match: the Guardian plays under the water, and you
 
 ### Claude · 2026-10-27 16:18
 
-Claude looked at [image 031](<../images/2026-10-27 M1 clouds when the first crystal raises tiles/031 Claude.png>)
+Claude looked at picture 031
 
 The Guardian now circles under the water. Widening the flip slider:
 
@@ -445,7 +445,7 @@ Two fixes: the refinery and the Guardian's motion. For the refinery, I need to f
 
 ### Claude · 2026-10-27 17:13
 
-Claude looked at [image 032](<../images/2026-10-27 M1 clouds when the first crystal raises tiles/032 Claude.png>)
+Claude looked at picture 032
 
 Neither of those two points shows a clear fault, so I'll ask about them at the end. The Guardian's motion is clear, so fixing that now. Reading its current code:
 
@@ -491,21 +491,21 @@ Now I understand both, thank you. For the refinery: its window will list the gol
 
 Enlarging the icons directly in the game page instead:
 
-Claude looked at [image 033](<../images/2026-10-27 M1 clouds when the first crystal raises tiles/033 Claude.png>)
+Claude looked at picture 033
 
 On their own, the empty vial draws empty, so the liquid must come from how the game picks which icon to show. Checking the inventory as it looks after Give 10,000, enlarged:
 
-Claude looked at [image 034](<../images/2026-10-27 M1 clouds when the first crystal raises tiles/034 Claude.png>)
+Claude looked at picture 034
 
 Tests pass. Now the icons: the glass goes clear in both the empty vial and the full bottle, and in the Claim button's copy of the bottle.
 
 Testing the refinery as you'd play it: assembled, then near it carrying a scale, it must stay dormant until Refine:
 
-Claude looked at [image 035](<../images/2026-10-27 M1 clouds when the first crystal raises tiles/035 Claude.png>)
+Claude looked at picture 035
 
 The refinery's window now lists the scale with the seeds and bark. Carrying a scale near it no longer wakes it; Refine takes all three and wakes it. Now the vials with 1 bottle, enlarged:
 
-Claude looked at [image 036](<../images/2026-10-27 M1 clouds when the first crystal raises tiles/036 Claude.png>)
+Claude looked at picture 036
 
 Empty vials are now clear glass, and a full one has its potion only in the bottom. Updating the README:
 
@@ -551,7 +551,7 @@ pinecones
 no that won't work. grinding isn't part of gameplal. make it 100 and 100  + a special gem 
 it sohuld shine every4 seconds
 
-![Dani's image 037](<../images/2026-10-27 M1 clouds when the first crystal raises tiles/037 Dani.png>)
+Dani's picture 037
 
 (sent while Claude was working) and a pick a take button like the fin
 
@@ -573,11 +573,11 @@ Tests pass. Checking in the browser: the gem on 12,6, its shine every 4 seconds,
 
 It shines once every 4 seconds, its Take button shows when you're close, and Space takes it with "+1". The picture:
 
-Claude looked at [image 038](<../images/2026-10-27 M1 clouds when the first crystal raises tiles/038 Claude.png>)
+Claude looked at picture 038
 
 The gem lies on the bottom of the shallow water, with its Take button above it. Now the refinery's two steps:
 
-Claude looked at [image 039](<../images/2026-10-27 M1 clouds when the first crystal raises tiles/039 Claude.png>)
+Claude looked at picture 039
 
 Both steps work: Activate takes the gem, bark and pine cones and wakes the refinery, then Refine takes the scale, seeds and bark. Checking the map editor shows the gem with no problems:
 

@@ -1,6 +1,6 @@
 # The M1 technical design document rebuilt (2026-10-14 to 2026-10-15)
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-10-14 The M1 technical design document rebuilt\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-10-14 The M1 technical design document rebuilt", numbered as here. Private: never commit or share.
 
 ---
 
@@ -2443,13 +2443,13 @@ Handover updated. Now building the PDF: I'll turn the TDD into a web page, then 
 
 Let me look at the PDF to check it reads well.
 
-Claude looked at [image 001](<../images/2026-10-14 The M1 technical design document rebuilt/001 Claude.png>)
+Claude looked at picture 001
 
-Claude looked at [image 002](<../images/2026-10-14 The M1 technical design document rebuilt/002 Claude.jpg>)
+Claude looked at picture 002
 
 The first page of the PDF looks good now. I'm checking how the feature descriptions look before I make the final PDF.
 
-Claude looked at [image 003](<../images/2026-10-14 The M1 technical design document rebuilt/003 Claude.png>)
+Claude looked at picture 003
 
 The features look clean. Printing the final PDF now.
 

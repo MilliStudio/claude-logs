@@ -1,6 +1,6 @@
 # Tessera Design, step 1 (2026-10-15)
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-10-15 Tessera Design, step 1\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-10-15 Tessera Design, step 1", numbered as here. Private: never commit or share.
 
 ---
 
@@ -26,19 +26,19 @@ All 39 tests pass. Now I'll start a test copy of the app (separate data folder a
 
 API works, including search and a backup copy. Now screenshots of each screen.
 
-Claude looked at [image 001](<../images/2026-10-15 Tessera Design, step 1/001 Claude.png>)
+Claude looked at picture 001
 
-Claude looked at [image 002](<../images/2026-10-15 Tessera Design, step 1/002 Claude.png>)
+Claude looked at picture 002
 
-Claude looked at [image 003](<../images/2026-10-15 Tessera Design, step 1/003 Claude.png>)
+Claude looked at picture 003
 
-Claude looked at [image 004](<../images/2026-10-15 Tessera Design, step 1/004 Claude.png>)
+Claude looked at picture 004
 
 Two small problems: a stray "null" in the backup panel, and the history comparison splits `{apparatus}` into pieces. Fixing both.
 
-Claude looked at [image 005](<../images/2026-10-15 Tessera Design, step 1/005 Claude.png>)
+Claude looked at picture 005
 
-Claude looked at [image 006](<../images/2026-10-15 Tessera Design, step 1/006 Claude.png>)
+Claude looked at picture 006
 
 Search, names and history screens render correctly. Checking highlighting, the name editor, and a few interactions next.
 
@@ -46,11 +46,11 @@ That failure notice is just the test server I stopped myself. Restarting it, the
 
 22 of 23 checks pass. The one "fail" was my own expectation: the earlier test block is marked "All milestones", so it correctly shows up under M1 too. Checking two more screenshots.
 
-Claude looked at [image 007](<../images/2026-10-15 Tessera Design, step 1/007 Claude.png>)
+Claude looked at picture 007
 
-Claude looked at [image 008](<../images/2026-10-15 Tessera Design, step 1/008 Claude.png>)
+Claude looked at picture 008
 
-Claude looked at [image 009](<../images/2026-10-15 Tessera Design, step 1/009 Claude.png>)
+Claude looked at picture 009
 
 The interaction check passed everything else, with no page errors. Stopping the test server and writing the plain-language guide and the handover notes for future sessions.
 
@@ -216,11 +216,11 @@ That test expected the old behaviour. Asciidoctor formats bold inside monospace,
 
 All 15 browser checks pass. The only error logged is the browser asking for a tab icon the app doesn't have, which is harmless. Now I'm looking at the screenshots.
 
-Claude looked at [image 010](<../images/2026-10-15 Tessera Design, step 1/010 Claude.png>)
+Claude looked at picture 010
 
-Claude looked at [image 011](<../images/2026-10-15 Tessera Design, step 1/011 Claude.png>)
+Claude looked at picture 011
 
-Claude looked at [image 012](<../images/2026-10-15 Tessera Design, step 1/012 Claude.jpg>)
+Claude looked at picture 012
 
 The preview renders well, including your images and the description lists. The blank preview in the earlier screenshot was most likely taken before the frame had loaded. Checking that page directly:
 

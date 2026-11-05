@@ -1001,4 +1001,4 @@ Claude then fixed conversation-text.mjs so it keeps messages sent while Claude i
 
 ---
 
-This conversation's 14 images are in images\2026-10-19 M1 trial and movement\. [The list of them](<../images/2026-10-19 M1 trial and movement/index.md>) gives each one's time.
+This conversation's 14 pictures are in Tessera Records, in the original file "Pictures: 2026-10-19 M1 trial and movement", in the order they came.

@@ -376,4 +376,4 @@ Closing note (2 November 2026, night): Built and pushed v0.302.0 to v0.304.0: Da
 
 ---
 
-This conversation's 11 images are in images\2026-11-02 M1 burnt flowers, shatter in place, leaves to 20°\. [The list of them](<../images/2026-11-02 M1 burnt flowers, shatter in place, leaves to 20°/index.md>) gives each one's time.
+This conversation's 11 pictures are in Tessera Records, in the original file "Pictures: 2026-11-02 M1 burnt flowers, shatter in place, leaves to 20°", in the order they came.

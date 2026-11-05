@@ -1,6 +1,6 @@
 # M1 gentler apparatus animation (2026-10-26)
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-10-26 M1 gentler apparatus animation\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-10-26 M1 gentler apparatus animation", numbered as here. Private: never commit or share.
 
 ---
 
@@ -65,11 +65,11 @@ Harvesting checks out: nothing with its back turned, harvesting starts once it t
 
 The picture path must be relative; rerunning.
 
-Claude looked at [image 001](<../images/2026-10-26 M1 gentler apparatus animation/001 Claude.png>)
+Claude looked at picture 001
 
 The pedestal looks right, with the feet on its top. One picture of the cubes mid-pop:
 
-Claude looked at [image 002](<../images/2026-10-26 M1 gentler apparatus animation/002 Claude.png>)
+Claude looked at picture 002
 
 Cubes look right. Now updating the README and the in-game help.
 
@@ -182,7 +182,7 @@ v0.110.0 is synced. Now the map editor inside the game: checking how the editor 
 
 Wiring the in-game editor panel now.
 
-Claude looked at [image 003](<../images/2026-10-26 M1 gentler apparatus animation/003 Claude.png>)
+Claude looked at picture 003
 
 The editor opens inside the game, and the game shows beside it. Updating the README and saving.
 

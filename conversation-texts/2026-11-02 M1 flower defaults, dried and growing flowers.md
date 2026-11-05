@@ -202,4 +202,4 @@ Closing note (2 November 2026): Built and pushed v0.292.0–v0.294.0: the archin
 
 ---
 
-This conversation's 9 images are in images\2026-11-02 M1 flower defaults, dried and growing flowers\. [The list of them](<../images/2026-11-02 M1 flower defaults, dried and growing flowers/index.md>) gives each one's time.
+This conversation's 9 pictures are in Tessera Records, in the original file "Pictures: 2026-11-02 M1 flower defaults, dried and growing flowers", in the order they came.

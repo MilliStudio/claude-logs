@@ -422,4 +422,4 @@ Dani ended the session here (25 October 2026, about 17:20). Done in this session
 
 ---
 
-This conversation's 18 images are in images\2026-10-25 M1 kit first, sky colours and light sliders\. [The list of them](<../images/2026-10-25 M1 kit first, sky colours and light sliders/index.md>) gives each one's time.
+This conversation's 18 pictures are in Tessera Records, in the original file "Pictures: 2026-10-25 M1 kit first, sky colours and light sliders", in the order they came.

@@ -251,4 +251,4 @@ Closing note (28 October 2026, 23:45): the M1 trial went from v0.185.0 to v0.188
 
 ---
 
-This conversation's 1 images are in images\2026-10-28 M1 on the phone, full screen and the hours\. [The list of them](<../images/2026-10-28 M1 on the phone, full screen and the hours/index.md>) gives each one's time.
+This conversation's 1 pictures are in Tessera Records, in the original file "Pictures: 2026-10-28 M1 on the phone, full screen and the hours", in the order they came.

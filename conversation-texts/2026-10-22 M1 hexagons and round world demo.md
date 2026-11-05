@@ -1,6 +1,6 @@
 # M1 trial: hexagons and the round world demo (20–22 October 2026)
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-10-22 M1 hexagons and round world demo\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-10-22 M1 hexagons and round world demo", numbered as here. Private: never commit or share.
 
 ---
 
@@ -210,19 +210,19 @@ A minus-zero slip (−0 instead of 0). It does no harm in the game, but I'll tid
 
 All 74 tests pass. Now the browser check. I'll run a second copy of the game on another port, so I don't disturb yours.
 
-Claude looked at [image 001](<../images/2026-10-22 M1 hexagons and round world demo/001 Claude.png>)
+Claude looked at picture 001
 
-Claude looked at [image 002](<../images/2026-10-22 M1 hexagons and round world demo/002 Claude.png>)
+Claude looked at picture 002
 
-Claude looked at [image 003](<../images/2026-10-22 M1 hexagons and round world demo/003 Claude.png>)
+Claude looked at picture 003
 
 It works. Hexagons on the left, squares on the right, and the hidden tiles with the landmark have risen. Two more checks: the rise halfway through, and walking onto the new tiles.
 
 The player was blocked by the object itself, which is correct. I'll walk around it instead:
 
-Claude looked at [image 004](<../images/2026-10-22 M1 hexagons and round world demo/004 Claude.png>)
+Claude looked at picture 004
 
-Claude looked at [image 005](<../images/2026-10-22 M1 hexagons and round world demo/005 Claude.png>)
+Claude looked at picture 005
 
 Walking onto the new hill works in both shapes. Last check: the main trial still loads after the small changes to the shared files.
 
@@ -418,9 +418,9 @@ Writing the planet's tile maths. It's a ball of hexagons with 12 pentagons, pain
 
 Now the page, the setting, the route, and the start file for phone testing:
 
-Claude looked at [image 006](<../images/2026-10-22 M1 hexagons and round world demo/006 Claude.png>)
+Claude looked at picture 006
 
-Claude looked at [image 007](<../images/2026-10-22 M1 hexagons and round world demo/007 Claude.png>)
+Claude looked at picture 007
 
 The planet works: hexagons with the orange pentagons, and walking takes you round with "down" always toward the centre. Quick check that it's light to draw, then I'll save it.
 
@@ -497,7 +497,7 @@ even if they're not on landmard you can give them the property to always be disa
 
 3 i want it the same as my little universe. attached image
 
-![Dani's image 008](<../images/2026-10-22 M1 hexagons and round world demo/008 Dani.jpg>)
+Dani's picture 008
 
 ---
 
@@ -541,11 +541,11 @@ Now the page, with the sliders, the button, and phone-sized panels:
 
 The logic checks out: 7 tiles at the start, all 626 ground tiles after the wave, and the sliders rebuild the planet. Let me look at the pictures:
 
-Claude looked at [image 009](<../images/2026-10-22 M1 hexagons and round world demo/009 Claude.png>)
+Claude looked at picture 009
 
-Claude looked at [image 010](<../images/2026-10-22 M1 hexagons and round world demo/010 Claude.png>)
+Claude looked at picture 010
 
-Claude looked at [image 011](<../images/2026-10-22 M1 hexagons and round world demo/011 Claude.png>)
+Claude looked at picture 011
 
 The start looks right: seven tiles on the dark core, waiting. Last check at a phone's landscape size:
 
@@ -563,11 +563,11 @@ why was this interrupted please resume
 
 The phone-size check was stopped at a permission prompt, probably by an accidental click. Nothing broke: the demo is built and works, and only that last check didn't run. Running it again:
 
-Claude looked at [image 012](<../images/2026-10-22 M1 hexagons and round world demo/012 Claude.png>)
+Claude looked at picture 012
 
 At phone size, the panels cover too much of the screen. On small screens I'll start with Settings folded away (tap "Settings" to open it) and make the map picture smaller:
 
-Claude looked at [image 013](<../images/2026-10-22 M1 hexagons and round world demo/013 Claude.png>)
+Claude looked at picture 013
 
 Much better: the planet is visible, and Settings opens with one tap. Updating the README and saving as v0.15.0:
 
@@ -626,9 +626,9 @@ So the best way to match it is a **Lens** slider: wide at one end, narrow toward
 
 Quoting slip in my test command. Fixing it:
 
-Claude looked at [image 014](<../images/2026-10-22 M1 hexagons and round world demo/014 Claude.png>)
+Claude looked at picture 014
 
-Claude looked at [image 015](<../images/2026-10-22 M1 hexagons and round world demo/015 Claude.png>)
+Claude looked at picture 015
 
 Both work. At 15° the far side shrinks only a little, and orthographic keeps everything the same size. One tidy-up: "13 m of ground" wraps onto two lines, so I'll shorten it to "13 m". Then saving:
 
@@ -656,9 +656,9 @@ please add tiles in the distance
 
 ### Claude · 2026-10-22 17:38
 
-Claude looked at [image 016](<../images/2026-10-22 M1 hexagons and round world demo/016 Claude.png>)
+Claude looked at picture 016
 
-Claude looked at [image 017](<../images/2026-10-22 M1 hexagons and round world demo/017 Claude.png>)
+Claude looked at picture 017
 
 ---
 
@@ -672,7 +672,7 @@ Claude looked at [image 017](<../images/2026-10-22 M1 hexagons and round world d
 
 Checking the island fix first. Then I'll add your new rule: the player can leave the tiles and float over the void at swimming speed.
 
-Claude looked at [image 018](<../images/2026-10-22 M1 hexagons and round world demo/018 Claude.png>)
+Claude looked at picture 018
 
 The islands now stay in the background, and the big shape in front is gone. Now floating over the void:
 
@@ -688,9 +688,9 @@ The islands now stay in the background, and the big shape in front is gone. Now 
 
 Now the fragments:
 
-Claude looked at [image 019](<../images/2026-10-22 M1 hexagons and round world demo/019 Claude.png>)
+Claude looked at picture 019
 
-Claude looked at [image 020](<../images/2026-10-22 M1 hexagons and round world demo/020 Claude.png>)
+Claude looked at picture 020
 
 Done, saved as v0.17.0, and all 82 tests pass. Reload the planet page to see it.
 
@@ -715,13 +715,13 @@ also make the character sink down a bit as they do when swimming
 
 Sorry, my mistake: two separate islands in the distance, and sinking while floating. Fixing both:
 
-Claude looked at [image 021](<../images/2026-10-22 M1 hexagons and round world demo/021 Claude.png>)
+Claude looked at picture 021
 
-Claude looked at [image 022](<../images/2026-10-22 M1 hexagons and round world demo/022 Claude.png>)
+Claude looked at picture 022
 
 My own safety check miscounted, so nothing was changed. Fixing the count and applying:
 
-Claude looked at [image 023](<../images/2026-10-22 M1 hexagons and round world demo/023 Claude.png>)
+Claude looked at picture 023
 
 Now only the head and shoulders show while floating, as when swimming. Saving:
 
@@ -789,9 +789,9 @@ I'll look at the first map as it is now, to see how its wall, rocks and the rest
 
 The shell tripped over the quotes in my script. I'll save the script to a file and run it from there:
 
-Claude looked at [image 024](<../images/2026-10-22 M1 hexagons and round world demo/024 Claude.png>)
+Claude looked at picture 024
 
-Claude looked at [image 025](<../images/2026-10-22 M1 hexagons and round world demo/025 Claude.png>)
+Claude looked at picture 025
 
 ---
 

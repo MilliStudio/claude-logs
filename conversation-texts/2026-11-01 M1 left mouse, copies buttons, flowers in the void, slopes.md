@@ -491,4 +491,4 @@ Closing note (1 November 2026): Built and pushed v0.259.0 to v0.263.0. The left 
 
 ---
 
-This conversation's 7 images are in images\2026-11-01 M1 left mouse, copies buttons, flowers in the void, slopes\. [The list of them](<../images/2026-11-01 M1 left mouse, copies buttons, flowers in the void, slopes/index.md>) gives each one's time.
+This conversation's 7 pictures are in Tessera Records, in the original file "Pictures: 2026-11-01 M1 left mouse, copies buttons, flowers in the void, slopes", in the order they came.

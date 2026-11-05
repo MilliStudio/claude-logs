@@ -506,4 +506,4 @@ Dani ended the session here (23 October 2026, about 21:55). Done in this session
 
 ---
 
-This conversation's 2 images are in images\2026-10-23 M1 costly decisions and pentagons\. [The list of them](<../images/2026-10-23 M1 costly decisions and pentagons/index.md>) gives each one's time.
+This conversation's 2 pictures are in Tessera Records, in the original file "Pictures: 2026-10-23 M1 costly decisions and pentagons", in the order they came.

@@ -1360,4 +1360,4 @@ Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera
 
 ---
 
-This conversation's 22 images are in images\2026-10-30 M1 floating tiles, giant flowers and ladders\. [The list of them](<../images/2026-10-30 M1 floating tiles, giant flowers and ladders/index.md>) gives each one's time.
+This conversation's 22 pictures are in Tessera Records, in the original file "Pictures: 2026-10-30 M1 floating tiles, giant flowers and ladders", in the order they came.

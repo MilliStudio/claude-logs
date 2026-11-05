@@ -354,4 +354,4 @@ Dani ended the session here (22 October 2026, about 21:15). Done in this session
 
 ---
 
-This conversation's 7 images are in images\2026-10-22 One app build\. [The list of them](<../images/2026-10-22 One app build/index.md>) gives each one's time.
+This conversation's 7 pictures are in Tessera Records, in the original file "Pictures: 2026-10-22 One app build", in the order they came.

@@ -1,6 +1,6 @@
 # Target group research (2026-09-23 to 2026-10-09)
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-09-23 Target group research\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-09-23 Target group research", numbered as here. Private: never commit or share.
 
 ---
 
@@ -114,7 +114,7 @@ Added a **Definitions** section at the end of [reports/Tessera target group rese
 
 ### Dani · 2026-09-23 16:38
 
-![Dani's image 001](<../images/2026-09-23 Target group research/001 Dani.png>)
+Dani's picture 001
 
 ---
 
@@ -188,7 +188,7 @@ Let me know if you're still not seeing it after a refresh, and I'll double-check
 
 ### Dani · 2026-09-23 16:49
 
-![Dani's image 002](<../images/2026-09-23 Target group research/002 Dani.png>)
+Dani's picture 002
 
 ---
 
@@ -489,7 +489,7 @@ Does this version click, or is a piece of it still tangled? If so, tell me which
 great explanation. that did it for me. question, seeing the prices lyssna costs less than all of them
 do you recommend it over Community + AidaForm
 
-![Dani's image 003](<../images/2026-09-23 Target group research/003 Dani.png>)
+Dani's picture 003
 
 ---
 
@@ -2127,7 +2127,7 @@ Leaving the other 10 as-is. The `=== CURRENT` removal across the 14 files is com
 
 why can't i do my own edits|
 
-![Dani's image 004](<../images/2026-09-23 Target group research/004 Dani.png>)
+Dani's picture 004
 
 ---
 
@@ -2197,9 +2197,9 @@ Git doesn't track empty folders, so nothing exists at that path yet — drop you
 
 these two but they are already in the image folder
 
-![Dani's image 005](<../images/2026-09-23 Target group research/005 Dani.png>)
+Dani's picture 005
 
-![Dani's image 006](<../images/2026-09-23 Target group research/006 Dani.png>)
+Dani's picture 006
 
 ---
 

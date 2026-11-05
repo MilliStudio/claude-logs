@@ -578,4 +578,4 @@ Dani ended the session here (23 October 2026, about 14:15). Done in this session
 
 ---
 
-This conversation's 11 images are in images\2026-10-23 M1 scale, lens and movement records\. [The list of them](<../images/2026-10-23 M1 scale, lens and movement records/index.md>) gives each one's time.
+This conversation's 11 pictures are in Tessera Records, in the original file "Pictures: 2026-10-23 M1 scale, lens and movement records", in the order they came.

@@ -220,4 +220,4 @@ Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera
 
 ---
 
-This conversation's 10 images are in images\2026-11-03 M1 island moved, wall gaps\. [The list of them](<../images/2026-11-03 M1 island moved, wall gaps/index.md>) gives each one's time.
+This conversation's 10 pictures are in Tessera Records, in the original file "Pictures: 2026-11-03 M1 island moved, wall gaps", in the order they came.

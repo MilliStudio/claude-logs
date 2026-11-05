@@ -963,4 +963,4 @@ Closing note (28 October 2026): Tessera Records v0.19.3 is live (commit 83a3eb7,
 
 ---
 
-This conversation's 32 images are in images\2026-10-28 Tessera Records readable lists, Bring in on the Overview and lists by month\. [The list of them](<../images/2026-10-28 Tessera Records readable lists, Bring in on the Overview and lists by month/index.md>) gives each one's time.
+This conversation's 32 pictures are in Tessera Records, in the original file "Pictures: 2026-10-28 Tessera Records readable lists, Bring in on the Overview and lists by month", in the order they came.

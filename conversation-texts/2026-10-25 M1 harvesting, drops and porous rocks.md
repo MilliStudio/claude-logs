@@ -766,4 +766,4 @@ Dani ended the session here (26 October 2026, about 03:20). Done in this session
 
 ---
 
-This conversation's 33 images are in images\2026-10-25 M1 harvesting, drops and porous rocks\. [The list of them](<../images/2026-10-25 M1 harvesting, drops and porous rocks/index.md>) gives each one's time.
+This conversation's 33 pictures are in Tessera Records, in the original file "Pictures: 2026-10-25 M1 harvesting, drops and porous rocks", in the order they came.

@@ -1,6 +1,6 @@
 # M1 customising flowers, petals and ladders (2026-10-30)
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-10-30 M1 customising flowers, petals and ladders\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-10-30 M1 customising flowers, petals and ladders", numbered as here. Private: never commit or share.
 
 ---
 
@@ -204,11 +204,11 @@ All 141 tests pass. Now checking it in the hidden browser.
 
 The flower tab shows all 32 settings, and the flower's ladders come out the same as before (ground to 3.5 m, and 5 m to 7 m). Now testing that the sliders change the flower.
 
-Claude looked at [image 001](<../images/2026-10-30 M1 customising flowers, petals and ladders/001 Claude.png>)
+Claude looked at picture 001
 
 Zoomed out to 20, the whole 7 m flower shows, looking as before. Now with changed settings.
 
-Claude looked at [image 002](<../images/2026-10-30 M1 customising flowers, petals and ladders/002 Claude.png>)
+Claude looked at picture 002
 
 The changes show: six petals with orange tips, a bigger middle, a taller flower, and everything turned 60°. Resetting and re-running the climb tests.
 
@@ -513,7 +513,7 @@ You saved more flower values meanwhile: petals 1.45 m long and 0.85 m wide, and 
 
 All 141 tests pass. Now checking the camera in the hidden browser: the walking zoom, the easing, tilting under the floating tile, and the two halves of the phone screen.
 
-Claude looked at [image 003](<../images/2026-10-30 M1 customising flowers, petals and ladders/003 Claude.png>)
+Claude looked at picture 003
 
 The walking zoom works: it fills in after you've walked, and drains away after you stop. The tilt didn't react behind the wall, though the player was hidden. Tracing why.
 

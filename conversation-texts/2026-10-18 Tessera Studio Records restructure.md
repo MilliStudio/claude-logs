@@ -837,4 +837,4 @@ Your mid-turn messages are stored separately from the normal ones, so the script
 
 ---
 
-This conversation's 21 images are in images\2026-10-18 Tessera Studio Records restructure\. [The list of them](<../images/2026-10-18 Tessera Studio Records restructure/index.md>) gives each one's time.
+This conversation's 21 pictures are in Tessera Records, in the original file "Pictures: 2026-10-18 Tessera Studio Records restructure", in the order they came.

@@ -451,4 +451,4 @@ Closing note (3 November 2026, about 16:55): Built and pushed v0.312.0 (porous r
 
 ---
 
-This conversation's 12 images are in images\2026-11-03 M1 rocks, herb case, tallies\. [The list of them](<../images/2026-11-03 M1 rocks, herb case, tallies/index.md>) gives each one's time.
+This conversation's 12 pictures are in Tessera Records, in the original file "Pictures: 2026-11-03 M1 rocks, herb case, tallies", in the order they came.

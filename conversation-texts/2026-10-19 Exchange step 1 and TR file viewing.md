@@ -957,4 +957,4 @@ Dani ended the session here (19 October 2026, evening). All built, committed and
 
 ---
 
-This conversation's 17 images are in images\2026-10-19 Exchange step 1 and TR file viewing\. [The list of them](<../images/2026-10-19 Exchange step 1 and TR file viewing/index.md>) gives each one's time.
+This conversation's 17 pictures are in Tessera Records, in the original file "Pictures: 2026-10-19 Exchange step 1 and TR file viewing", in the order they came.

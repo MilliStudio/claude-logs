@@ -1,6 +1,6 @@
 # M1 trial, a short start (2026-10-23)
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-10-23 M1 trial, a short start\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-10-23 M1 trial, a short start", numbered as here. Private: never commit or share.
 
 ---
 
@@ -84,9 +84,9 @@ I'll write a test that makes progress, reloads the page, and checks that everyth
 
 Progress survives closing the browser. Now the size slider and a damaged save:
 
-Claude looked at [image 001](<../images/2026-10-23 M1 trial, a short start/001 Claude.png>)
+Claude looked at picture 001
 
-Claude looked at [image 002](<../images/2026-10-23 M1 trial, a short start/002 Claude.png>)
+Claude looked at picture 002
 
 Both buttons fit, on a computer screen and a phone held sideways. Now the previous session's checks, to make sure nothing else broke:
 

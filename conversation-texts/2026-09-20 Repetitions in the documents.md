@@ -1,6 +1,6 @@
 # Repetitions in the documents (2026-09-20 to 2026-09-23)
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-09-20 Repetitions in the documents\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-09-20 Repetitions in the documents", numbered as here. Private: never commit or share.
 
 ---
 
@@ -4535,15 +4535,15 @@ done. one last thing, please add copyrights to dani milli studio
 
 Found the five images. Let me look at them so I place each one correctly in the document.
 
-Claude looked at [image 001](<../images/2026-09-20 Repetitions in the documents/001 Claude.png>)
+Claude looked at picture 001
 
-Claude looked at [image 002](<../images/2026-09-20 Repetitions in the documents/002 Claude.png>)
+Claude looked at picture 002
 
-Claude looked at [image 003](<../images/2026-09-20 Repetitions in the documents/003 Claude.jpg>)
+Claude looked at picture 003
 
-Claude looked at [image 004](<../images/2026-09-20 Repetitions in the documents/004 Claude.jpg>)
+Claude looked at picture 004
 
-Claude looked at [image 005](<../images/2026-09-20 Repetitions in the documents/005 Claude.jpg>)
+Claude looked at picture 005
 
 Quick check before I build anything — this affects scope quite a bit:
 

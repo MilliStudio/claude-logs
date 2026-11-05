@@ -659,4 +659,4 @@ Closing note (28 October 2026, evening): the M1 trial went from v0.168.0 to v0.1
 
 ---
 
-This conversation's 24 images are in images\2026-10-28 M1 tallies, Awaken and the names in Tessera Records\. [The list of them](<../images/2026-10-28 M1 tallies, Awaken and the names in Tessera Records/index.md>) gives each one's time.
+This conversation's 24 pictures are in Tessera Records, in the original file "Pictures: 2026-10-28 M1 tallies, Awaken and the names in Tessera Records", in the order they came.

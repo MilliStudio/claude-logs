@@ -1,6 +1,6 @@
 # M1 stems spread out, the fish and the Guardian's size (2026-10-26 to 2026-10-27)
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-10-26 M1 stems spread out, the fish and the Guardian's size\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-10-26 M1 stems spread out, the fish and the Guardian's size", numbered as here. Private: never commit or share.
 
 ---
 
@@ -37,15 +37,15 @@ The goldfish work: hidden before the revival, shown after, always in the pond, 1
 
 Dani is saving map changes in the editor right now (src/planet-plan.js), which reloads the test page; I'll keep those changes and commit them with this version. Rerunning the picture:
 
-Claude looked at [image 001](<../images/2026-10-26 M1 stems spread out, the fish and the Guardian's size/001 Claude.png>)
+Claude looked at picture 001
 
-Claude looked at [image 002](<../images/2026-10-26 M1 stems spread out, the fish and the Guardian's size/002 Claude.png>)
+Claude looked at picture 002
 
 The goldfish swim, but under the water's blue they come out grey, and they're hard to see. I'm checking how the water is drawn so they show orange through it.
 
-Claude looked at [image 003](<../images/2026-10-26 M1 stems spread out, the fish and the Guardian's size/003 Claude.png>)
+Claude looked at picture 003
 
-Claude looked at [image 004](<../images/2026-10-26 M1 stems spread out, the fish and the Guardian's size/004 Claude.png>)
+Claude looked at picture 004
 
 Now they show orange and read as goldfish. One closer look at their shape:
 
@@ -53,25 +53,25 @@ Dani saved the map again mid-run, so I'll retake that picture later. Meanwhile, 
 
 Picturing the apparatus while its stems grow:
 
-Claude looked at [image 005](<../images/2026-10-26 M1 stems spread out, the fish and the Guardian's size/005 Claude.png>)
+Claude looked at picture 005
 
-Claude looked at [image 006](<../images/2026-10-26 M1 stems spread out, the fish and the Guardian's size/006 Claude.png>)
+Claude looked at picture 006
 
 The player hides the stems in these pictures. Looking for a better camera angle:
 
-Claude looked at [image 007](<../images/2026-10-26 M1 stems spread out, the fish and the Guardian's size/007 Claude.png>)
+Claude looked at picture 007
 
-Claude looked at [image 007](<../images/2026-10-26 M1 stems spread out, the fish and the Guardian's size/007 Claude.png>)
+Claude looked at picture 007
 
 Still checking the stems' new places in pictures before saving both changes.
 
-Claude looked at [image 008](<../images/2026-10-26 M1 stems spread out, the fish and the Guardian's size/008 Claude.png>)
+Claude looked at picture 008
 
-Claude looked at [image 009](<../images/2026-10-26 M1 stems spread out, the fish and the Guardian's size/009 Claude.png>)
+Claude looked at picture 009
 
-Claude looked at [image 010](<../images/2026-10-26 M1 stems spread out, the fish and the Guardian's size/010 Claude.png>)
+Claude looked at picture 010
 
-Claude looked at [image 011](<../images/2026-10-26 M1 stems spread out, the fish and the Guardian's size/011 Claude.png>)
+Claude looked at picture 011
 
 The apparatus's stems now rise apart: each from its own spot on the step, with the legs coming in around them. Now the refinery:
 
@@ -85,15 +85,15 @@ The apparatus's stems now rise apart: each from its own spot on the step, with t
 
 ### Claude · 2026-10-26 23:24
 
-Claude looked at [image 012](<../images/2026-10-26 M1 stems spread out, the fish and the Guardian's size/012 Claude.png>)
+Claude looked at picture 012
 
-Claude looked at [image 013](<../images/2026-10-26 M1 stems spread out, the fish and the Guardian's size/013 Claude.png>)
+Claude looked at picture 013
 
 The refinery didn't get its water in that run (the test stood too far away). I'll retake it after the goldfish fix. Making the goldfish bigger and tinted by the water:
 
-Claude looked at [image 014](<../images/2026-10-26 M1 stems spread out, the fish and the Guardian's size/014 Claude.png>)
+Claude looked at picture 014
 
-Claude looked at [image 015](<../images/2026-10-26 M1 stems spread out, the fish and the Guardian's size/015 Claude.png>)
+Claude looked at picture 015
 
 The tint went too far: the goldfish now look salmon pink. Easing it back so they stay orange but muted by the water:
 
@@ -107,7 +107,7 @@ The tint went too far: the goldfish now look salmon pink. Easing it back so they
 
 ### Claude · 2026-10-26 23:25
 
-Claude looked at [image 016](<../images/2026-10-26 M1 stems spread out, the fish and the Guardian's size/016 Claude.png>)
+Claude looked at picture 016
 
 Dani's newest picture matches mine: still coral orange, too small. Going further: 0.65 m long, half-tinted by the water, and half the speed (0.25 m/s), turning more slowly too.
 
@@ -121,7 +121,7 @@ Dani's newest picture matches mine: still coral orange, too small. Going further
 
 ### Claude · 2026-10-26 23:27
 
-Claude looked at [image 017](<../images/2026-10-26 M1 stems spread out, the fish and the Guardian's size/017 Claude.png>)
+Claude looked at picture 017
 
 ---
 
@@ -165,19 +165,19 @@ Sliders are in. Checking the code parses and the tests pass:
 
 The sliders work in play: 10 goldfish appear at once, and with 1.6 m deep water they spread from 0.28 m to 1.32 m down. Pictures:
 
-Claude looked at [image 018](<../images/2026-10-26 M1 stems spread out, the fish and the Guardian's size/018 Claude.png>)
+Claude looked at picture 018
 
-Claude looked at [image 019](<../images/2026-10-26 M1 stems spread out, the fish and the Guardian's size/019 Claude.png>)
+Claude looked at picture 019
 
 Deep water works: the pond's walls now reach down to the deeper bed, and the goldfish and Guardian follow. Now the refinery's stems, standing closer this time:
 
-Claude looked at [image 020](<../images/2026-10-26 M1 stems spread out, the fish and the Guardian's size/020 Claude.png>)
+Claude looked at picture 020
 
-Claude looked at [image 021](<../images/2026-10-26 M1 stems spread out, the fish and the Guardian's size/021 Claude.png>)
+Claude looked at picture 021
 
-Claude looked at [image 022](<../images/2026-10-26 M1 stems spread out, the fish and the Guardian's size/022 Claude.png>)
+Claude looked at picture 022
 
-Claude looked at [image 023](<../images/2026-10-26 M1 stems spread out, the fish and the Guardian's size/023 Claude.png>)
+Claude looked at picture 023
 
 The refinery's stems show as two separate tips among the lying parts, apart from each other. Updating the README:
 
@@ -211,9 +211,9 @@ v0.127.0 is saved and pushed. Now the vase: reading the refinery's roof and leav
 
 Picturing the whole refinery with its vase:
 
-Claude looked at [image 024](<../images/2026-10-26 M1 stems spread out, the fish and the Guardian's size/024 Claude.png>)
+Claude looked at picture 024
 
-Claude looked at [image 025](<../images/2026-10-26 M1 stems spread out, the fish and the Guardian's size/025 Claude.png>)
+Claude looked at picture 025
 
 The vase sits on the roof and both stems come out of its mouth. Updating the README and saving:
 
@@ -268,9 +268,9 @@ I'm sorry. I read "plant" as the plant on top, and should have asked. Now I'll r
 
 No problem, Dani. I'm checking pictures of the refinery without its roof now.
 
-Claude looked at [image 026](<../images/2026-10-26 M1 stems spread out, the fish and the Guardian's size/026 Claude.png>)
+Claude looked at picture 026
 
-Claude looked at [image 027](<../images/2026-10-26 M1 stems spread out, the fish and the Guardian's size/027 Claude.png>)
+Claude looked at picture 027
 
 That reads as a stone vase with all three stems coming out of its open top. Updating the README:
 
@@ -286,7 +286,7 @@ It's saved and pushed as v0.129.0, all 124 tests pass, and I checked it in pictu
 
 very good. can you remove the wooden drawer box thing on the side and replace it with the chimney like part in the image. the new sside part is joined not separate
 
-![Dani's image 028](<../images/2026-10-26 M1 stems spread out, the fish and the Guardian's size/028 Dani.png>)
+Dani's picture 028
 
 ---
 
@@ -294,9 +294,9 @@ very good. can you remove the wooden drawer box thing on the side and replace it
 
 A stone bulb with a narrowing neck, built into the body's right side so it comes in with the body. Finding everything that mentions the cabinet:
 
-Claude looked at [image 029](<../images/2026-10-26 M1 stems spread out, the fish and the Guardian's size/029 Claude.png>)
+Claude looked at picture 029
 
-Claude looked at [image 030](<../images/2026-10-26 M1 stems spread out, the fish and the Guardian's size/030 Claude.png>)
+Claude looked at picture 030
 
 The chimney stands joined to the body's right side, as in your picture. Updating the README and saving:
 
@@ -315,7 +315,7 @@ It's saved and pushed as v0.130.0, all 124 tests pass, and I checked it in pictu
 both water tiles should be able to contain diiamonds
 i want the animation of the plants growing after the parts are assembles gradual, slower and each stem with it's own speed
 
-Again: [image 028](<../images/2026-10-26 M1 stems spread out, the fish and the Guardian's size/028 Dani.png>)
+Again: picture 028
 
 ---
 
@@ -378,11 +378,11 @@ All 125 tests pass. Now playing it in the browser on a copy of the trial (port 4
 
 Starting the copy of the trial on port 4891 to play it through.
 
-Claude looked at [image 031](<../images/2026-10-26 M1 stems spread out, the fish and the Guardian's size/031 Claude.png>)
+Claude looked at picture 031
 
 The editor works too: cone trees go under the diamond, the tile shows their picture, and Remove thing takes the diamond off and leaves the trees. A look at how that tile shows in the editor:
 
-Claude looked at [image 032](<../images/2026-10-26 M1 stems spread out, the fish and the Guardian's size/032 Claude.png>)
+Claude looked at picture 032
 
 The tile shows the cone trees' picture with its diamond name ("diamond 2" at 8,9). One more check, on the tile I changed in the drawing file itself (11,8):
 
@@ -445,9 +445,9 @@ A fresh game behaves as designed: waking the lantern turns its own 90 tiles gree
 
 ### Dani · 2026-10-27 01:34
 
-![Dani's image 033](<../images/2026-10-26 M1 stems spread out, the fish and the Guardian's size/033 Dani.jpg>)
+Dani's picture 033
 
-![Dani's image 034](<../images/2026-10-26 M1 stems spread out, the fish and the Guardian's size/034 Dani.jpg>)
+Dani's picture 034
 
 (sent while Claude was working) not just that. some tiles unlocked after the lantern is active are not white because they are paths not rising. so rising tiles have no function
 
@@ -469,7 +469,7 @@ Tests pass (126). Now a browser check of the game: lantern, all diamonds, then t
 
 The editor behaves right. One more run to see how a rising path looks:
 
-Claude looked at [image 035](<../images/2026-10-26 M1 stems spread out, the fish and the Guardian's size/035 Claude.png>)
+Claude looked at picture 035
 
 Rising paths now show as paths with a dashed edge and "rises" under their place. Committing as v0.133.0, with your current map:
 
@@ -731,7 +731,7 @@ Tests pass and your map has no errors. Now the browser checks, on a copy on port
 
 One lantern behaves as before. Now a second lantern on 12,2, a tile the crystal on 14,4 raises, placed in the copy's editor:
 
-Claude looked at [image 036](<../images/2026-10-26 M1 stems spread out, the fish and the Guardian's size/036 Claude.png>)
+Claude looked at picture 036
 
 The editor works: the second lantern starts with the 4 tiles that rise with it, Link tiles takes one off, and Save writes it. Now the game with both lanterns:
 

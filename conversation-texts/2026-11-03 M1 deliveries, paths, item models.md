@@ -345,4 +345,4 @@ Closing note (3 November 2026, about 18:50): Built and pushed v0.315.0 (big deli
 
 ---
 
-This conversation's 14 images are in images\2026-11-03 M1 deliveries, paths, item models\. [The list of them](<../images/2026-11-03 M1 deliveries, paths, item models/index.md>) gives each one's time.
+This conversation's 14 pictures are in Tessera Records, in the original file "Pictures: 2026-11-03 M1 deliveries, paths, item models", in the order they came.

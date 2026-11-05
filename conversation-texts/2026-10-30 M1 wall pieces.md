@@ -434,4 +434,4 @@ Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera
 
 ---
 
-This conversation's 13 images are in images\2026-10-30 M1 wall pieces\. [The list of them](<../images/2026-10-30 M1 wall pieces/index.md>) gives each one's time.
+This conversation's 13 pictures are in Tessera Records, in the original file "Pictures: 2026-10-30 M1 wall pieces", in the order they came.

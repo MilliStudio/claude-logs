@@ -710,4 +710,4 @@ Dani ended the session here (26 October 2026, about 22:00). Done in this session
 
 ---
 
-This conversation's 40 images are in images\2026-10-26 M1 the island rebuilt, the planet-wide editor, machines in pieces, the refinery and the fish\. [The list of them](<../images/2026-10-26 M1 the island rebuilt, the planet-wide editor, machines in pieces, the refinery and the fish/index.md>) gives each one's time.
+This conversation's 40 pictures are in Tessera Records, in the original file "Pictures: 2026-10-26 M1 the island rebuilt, the planet-wide editor, machines in pieces, the refinery and the fish", in the order they came.

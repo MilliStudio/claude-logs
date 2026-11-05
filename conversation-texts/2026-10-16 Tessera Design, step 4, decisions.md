@@ -1,6 +1,6 @@
 # Tessera Design, step 4, decisions (2026-10-16 to 2026-10-17)
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-10-16 Tessera Design, step 4, decisions\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-10-16 Tessera Design, step 4, decisions", numbered as here. Private: never commit or share.
 
 ---
 
@@ -231,25 +231,25 @@ No open question mentions "camera"; I'll use the first M1 question for the rehea
 
 Answering a question doesn't change any file, as expected. Now screenshots of the new screens with headless Edge:
 
-Claude looked at [image 001](<../images/2026-10-16 Tessera Design, step 4, decisions/001 Claude.png>)
+Claude looked at picture 001
 
-Claude looked at [image 002](<../images/2026-10-16 Tessera Design, step 4, decisions/002 Claude.png>)
+Claude looked at picture 002
 
 Two problems on the decision screen: the "Prints under the decision as" line shows "[object HTMLElement]", and the date box is too narrow. Fixing both:
 
-Claude looked at [image 003](<../images/2026-10-16 Tessera Design, step 4, decisions/003 Claude.png>)
+Claude looked at picture 003
 
-Claude looked at [image 004](<../images/2026-10-16 Tessera Design, step 4, decisions/004 Claude.png>)
+Claude looked at picture 004
 
 Both screens work. One small thing: the search snippet tacks "Dani" on the end, because it includes "Decided by". I'll keep searching that field but leave it out of the snippet:
 
 Restarting the test server (only the one on port 4881) to pick up the change, then checking the fixed screen and the remaining ones:
 
-Claude looked at [image 005](<../images/2026-10-16 Tessera Design, step 4, decisions/005 Claude.png>)
+Claude looked at picture 005
 
-Claude looked at [image 006](<../images/2026-10-16 Tessera Design, step 4, decisions/006 Claude.png>)
+Claude looked at picture 006
 
-Claude looked at [image 007](<../images/2026-10-16 Tessera Design, step 4, decisions/007 Claude.png>)
+Claude looked at picture 007
 
 The preview prints exactly the approved layout. Let me also confirm the official AsciiDoc renderer (Asciidoctor, which GitHub uses) reads it the same way:
 
@@ -257,13 +257,13 @@ The repository's copy is incomplete, so I'll install Asciidoctor into a scratch 
 
 Asciidoctor renders it the same: the date line in italics, "Why:" in bold. Running all tests once more after the last changes:
 
-Claude looked at [image 008](<../images/2026-10-16 Tessera Design, step 4, decisions/008 Claude.png>)
+Claude looked at picture 008
 
 The document editor shows a sideways scrollbar. The new "Add a decision" list may be too wide. Checking the layout rules:
 
 The open-question and decision lists hold long text, and a list box won't shrink below its longest line. One CSS line lets them shrink:
 
-Claude looked at [image 009](<../images/2026-10-16 Tessera Design, step 4, decisions/009 Claude.png>)
+Claude looked at picture 009
 
 Fixed: the sideways scrollbar is gone, and "Add a decision…" sits with the other lists. Stopping the test server, then updating the version number and the guides.
 
@@ -998,21 +998,21 @@ Only DOCS/46 changes, as expected. Next I'm checking that Asciidoctor renders th
 
 Both the old and new file render the same way: the lists keep their numbering, and Asciidoctor gives the same numbering warnings it already gave before. Now screenshots of the new screens.
 
-Claude looked at [image 010](<../images/2026-10-16 Tessera Design, step 4, decisions/010 Claude.png>)
+Claude looked at picture 010
 
-Claude looked at [image 011](<../images/2026-10-16 Tessera Design, step 4, decisions/011 Claude.png>)
+Claude looked at picture 011
 
-Claude looked at [image 012](<../images/2026-10-16 Tessera Design, step 4, decisions/012 Claude.png>)
+Claude looked at picture 012
 
-Claude looked at [image 013](<../images/2026-10-16 Tessera Design, step 4, decisions/013 Claude.png>)
+Claude looked at picture 013
 
 The screens work. Next I'm checking that the app's own preview renders the new DOCS/46 the same way Asciidoctor does.
 
-Claude looked at [image 014](<../images/2026-10-16 Tessera Design, step 4, decisions/014 Claude.png>)
+Claude looked at picture 014
 
-Claude looked at [image 015](<../images/2026-10-16 Tessera Design, step 4, decisions/015 Claude.png>)
+Claude looked at picture 015
 
-Claude looked at [image 016](<../images/2026-10-16 Tessera Design, step 4, decisions/016 Claude.png>)
+Claude looked at picture 016
 
 Updating the app's handover notes, then I'll show you the result.
 

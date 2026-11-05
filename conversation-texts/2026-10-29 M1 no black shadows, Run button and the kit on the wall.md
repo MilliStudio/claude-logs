@@ -242,4 +242,4 @@ Closing note (29 October 2026, 18:22): the M1 trial went from v0.195.0 to v0.199
 
 ---
 
-This conversation's 10 images are in images\2026-10-29 M1 no black shadows, Run button and the kit on the wall\. [The list of them](<../images/2026-10-29 M1 no black shadows, Run button and the kit on the wall/index.md>) gives each one's time.
+This conversation's 10 pictures are in Tessera Records, in the original file "Pictures: 2026-10-29 M1 no black shadows, Run button and the kit on the wall", in the order they came.

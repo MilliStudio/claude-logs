@@ -1,6 +1,6 @@
 # Conversation, 20 October 2026: Tessera Design's screens, your requests for both apps, and the business plan
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-10-20 TD screens and business plan\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-10-20 TD screens and business plan", numbered as here. Private: never commit or share.
 
 ---
 
@@ -421,23 +421,23 @@ Upgrade on the copy works: the database moved to version 10 with the two new emp
 
 The way back works: "← Restoration" from a question, kept when moving to the next question, and it returns to the topic. The Features step stalled; looking at why:
 
-Claude looked at [image 001](<../images/2026-10-20 TD screens and business plan/001 Claude.png>)
+Claude looked at picture 001
 
-Claude looked at [image 002](<../images/2026-10-20 TD screens and business plan/002 Claude.png>)
+Claude looked at picture 002
 
-Claude looked at [image 003](<../images/2026-10-20 TD screens and business plan/003 Claude.png>)
+Claude looked at picture 003
 
-Claude looked at [image 004](<../images/2026-10-20 TD screens and business plan/004 Claude.png>)
+Claude looked at picture 004
 
 The add box works, but its rows read badly: the buttons come first and the name wraps. Putting the name first and the buttons at the end of each row:
 
-Claude looked at [image 005](<../images/2026-10-20 TD screens and business plan/005 Claude.png>)
+Claude looked at picture 005
 
-Claude looked at [image 006](<../images/2026-10-20 TD screens and business plan/006 Claude.png>)
+Claude looked at picture 006
 
 The asset screens and pillar list look right. Now the buttons that change data, on the copy only: moving pillars, saving a new decision, adding a document part and saving a topic definition.
 
-Claude looked at [image 007](<../images/2026-10-20 TD screens and business plan/007 Claude.png>)
+Claude looked at picture 007
 
 A small bug: "nullnull" shows under the results, from empty notes written out as text. Fixing:
 

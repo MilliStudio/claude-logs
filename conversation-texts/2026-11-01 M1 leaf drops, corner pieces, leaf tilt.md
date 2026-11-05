@@ -408,4 +408,4 @@ Closing note (1 November 2026, late evening): Built and pushed v0.268.0 to v0.27
 
 ---
 
-This conversation's 19 images are in images\2026-11-01 M1 leaf drops, corner pieces, leaf tilt\. [The list of them](<../images/2026-11-01 M1 leaf drops, corner pieces, leaf tilt/index.md>) gives each one's time.
+This conversation's 19 pictures are in Tessera Records, in the original file "Pictures: 2026-11-01 M1 leaf drops, corner pieces, leaf tilt", in the order they came.

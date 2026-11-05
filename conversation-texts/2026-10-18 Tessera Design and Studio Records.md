@@ -554,4 +554,4 @@ Two background-task notices slipped in as if you'd written them. Filtering them 
 
 ---
 
-This conversation's 2 images are in images\2026-10-18 Tessera Design and Studio Records\. [The list of them](<../images/2026-10-18 Tessera Design and Studio Records/index.md>) gives each one's time.
+This conversation's 2 pictures are in Tessera Records, in the original file "Pictures: 2026-10-18 Tessera Design and Studio Records", in the order they came.

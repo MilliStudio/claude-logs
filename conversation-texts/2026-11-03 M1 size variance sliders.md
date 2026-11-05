@@ -70,4 +70,4 @@ Closing note (3 November 2026, about 18:50): Built and pushed v0.318.0: a Size v
 
 ---
 
-This conversation's 1 images are in images\2026-11-03 M1 size variance sliders\. [The list of them](<../images/2026-11-03 M1 size variance sliders/index.md>) gives each one's time.
+This conversation's 1 pictures are in Tessera Records, in the original file "Pictures: 2026-11-03 M1 size variance sliders", in the order they came.

@@ -1,6 +1,6 @@
 # M1 trial, 5 November 2026: growing tiles, water tiles and floating tiles
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-05 M1 growing tiles, water tiles and floating tiles\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-05 M1 growing tiles, water tiles and floating tiles", numbered as here. Private: never commit or share.
 
 ---
 
@@ -14,7 +14,7 @@ can you tell me the logic beghind raising the tiles and how clouds are positione
 
 ### Claude · 2026-11-05 13:19
 
-![Dani's image 001](<../images/2026-11-05 M1 growing tiles, water tiles and floating tiles/001 Dani.png>)
+Dani's picture 001
 
 I'm reading the picture from the closed session and the code for raising tiles and placing clouds; no code changes.
 
@@ -24,7 +24,7 @@ I'm reading the picture from the closed session and the code for raising tiles a
 
 (sent while Claude was working) my brain is out of it todoay
 
-Again: [image 001](<../images/2026-11-05 M1 growing tiles, water tiles and floating tiles/001 Dani.png>)
+Again: picture 001
 
 ---
 
@@ -36,15 +36,15 @@ Still checking: I'm looking at the map to find where that spot is, so I can tell
 
 Comparing your picture with the cloud screenshots from last night's fix, then I'll answer.
 
-Claude looked at [image 002](<../images/2026-11-05 M1 growing tiles, water tiles and floating tiles/002 Claude.png>)
+Claude looked at picture 002
 
-Claude looked at [image 003](<../images/2026-11-05 M1 growing tiles, water tiles and floating tiles/003 Claude.png>)
+Claude looked at picture 003
 
 Reproducing the scene in a hidden browser (wake the lantern, then raise grey tiles with a diamond next to the clouds) to confirm what the dark strip is.
 
-Claude looked at [image 004](<../images/2026-11-05 M1 growing tiles, water tiles and floating tiles/004 Claude.png>)
+Claude looked at picture 004
 
-Claude looked at [image 005](<../images/2026-11-05 M1 growing tiles, water tiles and floating tiles/005 Claude.png>)
+Claude looked at picture 005
 
 Last check: my first test (a grey tile right beside the clouds) looks fine, so I'm testing grey tiles farther from the green land.
 
@@ -226,7 +226,7 @@ instea of repositioning by raising up, they extend to the hight i set it to. the
 
 please confirm what you understand and let me know what issues and sideeffects might be cause from this solution.
 
-![Dani's image 006](<../images/2026-11-05 M1 growing tiles, water tiles and floating tiles/006 Dani.png>)
+Dani's picture 006
 
 ---
 
@@ -303,7 +303,7 @@ please images to elaborate any further issues or points i've missed. as well as 
 
 Making the picture page now: your water explained in 3D, the fade, the sky colour, and the new points I found.
 
-Claude looked at [image 007](<../images/2026-11-05 M1 growing tiles, water tiles and floating tiles/007 Claude.png>)
+Claude looked at picture 007
 
 Here are the pictures: https://claude.ai/artifact/Gu9WZaMjtkka5zYgcfBag6
 
@@ -341,7 +341,7 @@ if there are two water tiles beside eathother, the faces where they connect is n
 
 Making the picture of water as tiles.
 
-Claude looked at [image 008](<../images/2026-11-05 M1 growing tiles, water tiles and floating tiles/008 Claude.png>)
+Claude looked at picture 008
 
 Here's the picture: https://claude.ai/artifact/UdznWmU6ruiWHDT3hW3AXB
 
@@ -486,7 +486,7 @@ sorry dumb it down for me, i don't understand. we're very good at communicating 
 
 Drawing the editor idea as pictures now: what you build, the three steps in the editor, and a mock editor you can click.
 
-Claude looked at [image 009](<../images/2026-11-05 M1 growing tiles, water tiles and floating tiles/009 Claude.jpg>)
+Claude looked at picture 009
 
 The page works. Adding a faint line from each floating tile down to its tile, then publishing.
 
@@ -516,7 +516,7 @@ how do i put objects on them
 
 Key items already go on floating tiles. Other objects don't yet, so I'm adding a picture of my idea for them to the page.
 
-Claude looked at [image 010](<../images/2026-11-05 M1 growing tiles, water tiles and floating tiles/010 Claude.png>)
+Claude looked at picture 010
 
 I added a section called "Putting things on them" to the same page: https://claude.ai/artifact/EJeQtKw5GJ4p82Urx7yAqw
 
@@ -545,7 +545,7 @@ also they need to have the ability to be unhappy or grass
 
 Floating tiles today are white and turn green with the ground under them. I'm drawing them as real tiles instead: unhappy first, grass once the green reaches them.
 
-Claude looked at [image 011](<../images/2026-11-05 M1 growing tiles, water tiles and floating tiles/011 Claude.png>)
+Claude looked at picture 011
 
 I added a section called "Unhappy, then grass" to the same page: https://claude.ai/artifact/EJeQtKw5GJ4p82Urx7yAqw
 
@@ -572,7 +572,7 @@ which bring the questions, instead of making ground (let's call them base tiles)
 
 ### Claude · 2026-11-05 16:53
 
-Claude looked at [image 012](<../images/2026-11-05 M1 growing tiles, water tiles and floating tiles/012 Claude.png>)
+Claude looked at picture 012
 
 **Base tiles with one height each are simpler, less buggy and lighter on devices.** Hill tiles lose on all three:
 
@@ -610,7 +610,7 @@ Each floating tile already has its own top and bottom in the game, so this is a 
 
 ### Claude · 2026-11-05 16:57
 
-Claude looked at [image 013](<../images/2026-11-05 M1 growing tiles, water tiles and floating tiles/013 Claude.png>)
+Claude looked at picture 013
 
 **Yes, and the risk is low.** The game already gives every floating tile its own top and bottom, so raising one tile's top doesn't add a new kind of thing. Only the editor and the save need one more number for each floating tile.
 
@@ -679,11 +679,11 @@ why hill tool? we said hills are buggy and risky. so we only change height of an
 
 You're right, "Hill tool" was a bad name. It isn't hill tiles: it's only the editor's tool for changing a tile's height. I'm renaming it **Height** on the page and adding the whole picture at the top.
 
-Claude looked at [image 014](<../images/2026-11-05 M1 growing tiles, water tiles and floating tiles/014 Claude.png>)
+Claude looked at picture 014
 
 The picture is too crowded and the waiting tiles don't fade. Fixing both.
 
-Claude looked at [image 015](<../images/2026-11-05 M1 growing tiles, water tiles and floating tiles/015 Claude.png>)
+Claude looked at picture 015
 
 You're right, and that's what I meant; I gave the tool a confusing name. There are no hill tiles. Every tile, on the ground or floating, has a height, and one editor tool changes it. I've renamed that tool **Height** on the page.
 
@@ -752,7 +752,7 @@ You're right: the "Try it" demo still has the old design, with no Height tool. I
 
 I'll finish the demo first, then write the prompt and save the session.
 
-Claude looked at [image 016](<../images/2026-11-05 M1 growing tiles, water tiles and floating tiles/016 Claude.png>)
+Claude looked at picture 016
 
 The demo works: Height raises a floating tile on a layer, and a base tile on Ground. Publishing it, then on to the prompt.
 
@@ -768,7 +768,7 @@ Now updating the trial's handover.
 
 (sent while Claude was working) just making sure, the color transition won't be visible above ground yes? because this column's color transfer seems to be so
 
-![Dani's image 017](<../images/2026-11-05 M1 growing tiles, water tiles and floating tiles/017 Dani.png>)
+Dani's picture 017
 
 ---
 
@@ -776,11 +776,11 @@ Now updating the trial's handover.
 
 The picture was wrong, not the plan. I'll explain once I've fixed it. The hill column was drawn after the tiles in front of it, so its fading lower part painted over them.
 
-Claude looked at [image 018](<../images/2026-11-05 M1 growing tiles, water tiles and floating tiles/018 Claude.png>)
+Claude looked at picture 018
 
-Claude looked at [image 019](<../images/2026-11-05 M1 growing tiles, water tiles and floating tiles/019 Claude.png>)
+Claude looked at picture 019
 
-Claude looked at [image 020](<../images/2026-11-05 M1 growing tiles, water tiles and floating tiles/020 Claude.png>)
+Claude looked at picture 020
 
 Fixed: the tiles in front now hide the hill's lower sides, and no fade shows above the ground. Publishing, then saving the session.
 

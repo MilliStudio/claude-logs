@@ -339,4 +339,4 @@ Closing note (3 November 2026): Built and pushed v0.306.0 to v0.309.0: nothing b
 
 ---
 
-This conversation's 38 images are in images\2026-11-03 M1 nothing below the tiles, flower defaults, kit shine\. [The list of them](<../images/2026-11-03 M1 nothing below the tiles, flower defaults, kit shine/index.md>) gives each one's time.
+This conversation's 38 pictures are in Tessera Records, in the original file "Pictures: 2026-11-03 M1 nothing below the tiles, flower defaults, kit shine", in the order they came.

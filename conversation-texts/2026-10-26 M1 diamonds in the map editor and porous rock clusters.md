@@ -425,4 +425,4 @@ Dani ended the session here (26 October 2026, about 19:45). Done in this session
 
 ---
 
-This conversation's 15 images are in images\2026-10-26 M1 diamonds in the map editor and porous rock clusters\. [The list of them](<../images/2026-10-26 M1 diamonds in the map editor and porous rock clusters/index.md>) gives each one's time.
+This conversation's 15 pictures are in Tessera Records, in the original file "Pictures: 2026-10-26 M1 diamonds in the map editor and porous rock clusters", in the order they came.

@@ -343,4 +343,4 @@ Waiting for Dani:
 
 ---
 
-This conversation's 9 images are in images\2026-10-28 M1 deliveries as tossed cubes, the crack, the refinery timer and puffball harvesting\. [The list of them](<../images/2026-10-28 M1 deliveries as tossed cubes, the crack, the refinery timer and puffball harvesting/index.md>) gives each one's time.
+This conversation's 9 pictures are in Tessera Records, in the original file "Pictures: 2026-10-28 M1 deliveries as tossed cubes, the crack, the refinery timer and puffball harvesting", in the order they came.

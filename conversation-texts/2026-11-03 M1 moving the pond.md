@@ -1,6 +1,6 @@
 # M1 moving the pond (2026-11-03)
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-03 M1 moving the pond\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-03 M1 moving the pond", numbered as here. Private: never commit or share.
 
 ---
 
@@ -20,7 +20,7 @@ The editor's unsaved changes can't undo a newer map, so sending the moved map to
 
 The move works on a copy: 52 tiles move, and 18 tiles are left behind. Next I'm drawing the before and after pictures.
 
-Claude looked at [image 001](<../images/2026-11-03 M1 moving the pond/001 Claude.jpg>)
+Claude looked at picture 001
 
 Yes, I can move it. The tiles two steps north-east are free, and the move stays clear of the pentagon at 10,−2. A picture of the result is open in VS Code beside today's map (left: now, right: after).
 

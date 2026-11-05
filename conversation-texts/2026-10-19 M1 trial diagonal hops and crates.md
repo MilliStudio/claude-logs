@@ -364,4 +364,4 @@ Dani approved the texts. Claude saved the handover, the memory note and the tria
 
 ---
 
-This conversation's 8 images are in images\2026-10-19 M1 trial diagonal hops and crates\. [The list of them](<../images/2026-10-19 M1 trial diagonal hops and crates/index.md>) gives each one's time.
+This conversation's 8 pictures are in Tessera Records, in the original file "Pictures: 2026-10-19 M1 trial diagonal hops and crates", in the order they came.

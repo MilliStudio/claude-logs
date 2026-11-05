@@ -503,4 +503,4 @@ Closing note (1 November 2026, after midnight): Built v0.250.0 to v0.255.0 and p
 
 ---
 
-This conversation's 12 images are in images\2026-10-31 M1 mushroom caps, the kit off the map, a tuning copy\. [The list of them](<../images/2026-10-31 M1 mushroom caps, the kit off the map, a tuning copy/index.md>) gives each one's time.
+This conversation's 12 pictures are in Tessera Records, in the original file "Pictures: 2026-10-31 M1 mushroom caps, the kit off the map, a tuning copy", in the order they came.

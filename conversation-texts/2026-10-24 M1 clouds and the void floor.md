@@ -569,4 +569,4 @@ Dani ended the session here (24 October 2026, about 23:05). Done in this session
 
 ---
 
-This conversation's 69 images are in images\2026-10-24 M1 clouds and the void floor\. [The list of them](<../images/2026-10-24 M1 clouds and the void floor/index.md>) gives each one's time.
+This conversation's 69 pictures are in Tessera Records, in the original file "Pictures: 2026-10-24 M1 clouds and the void floor", in the order they came.

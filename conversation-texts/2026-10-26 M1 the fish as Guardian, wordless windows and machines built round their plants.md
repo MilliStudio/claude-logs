@@ -411,4 +411,4 @@ Dani ended the session here (26 October 2026, late evening). Done in this sessio
 
 ---
 
-This conversation's 50 images are in images\2026-10-26 M1 the fish as Guardian, wordless windows and machines built round their plants\. [The list of them](<../images/2026-10-26 M1 the fish as Guardian, wordless windows and machines built round their plants/index.md>) gives each one's time.
+This conversation's 50 pictures are in Tessera Records, in the original file "Pictures: 2026-10-26 M1 the fish as Guardian, wordless windows and machines built round their plants", in the order they came.

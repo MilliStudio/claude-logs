@@ -395,4 +395,4 @@ Prompt for the next session: Task: continue the M1 trial (Dropbox\Studio\Tessera
 
 ---
 
-This conversation's 31 images are in images\2026-11-03 M1 pond fade, longer Guardian\. [The list of them](<../images/2026-11-03 M1 pond fade, longer Guardian/index.md>) gives each one's time.
+This conversation's 31 pictures are in Tessera Records, in the original file "Pictures: 2026-11-03 M1 pond fade, longer Guardian", in the order they came.

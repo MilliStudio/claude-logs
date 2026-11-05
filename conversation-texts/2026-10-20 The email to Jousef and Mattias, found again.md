@@ -1,6 +1,6 @@
 # The email to Jousef and Mattias, found again (2026-10-20 to 2026-10-22)
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-10-20 The email to Jousef and Mattias, found again\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-10-20 The email to Jousef and Mattias, found again", numbered as here. Private: never commit or share.
 
 ---
 
@@ -457,11 +457,11 @@ The checks so far pass. The one failure is my test script reusing a name, not th
 
 Every new TR screen works on the made-up data, with no page errors. I'll look at three screenshots to check the layout:
 
-Claude looked at [image 001](<../images/2026-10-20 The email to Jousef and Mattias, found again/001 Claude.png>)
+Claude looked at picture 001
 
-Claude looked at [image 002](<../images/2026-10-20 The email to Jousef and Mattias, found again/002 Claude.png>)
+Claude looked at picture 002
 
-Claude looked at [image 003](<../images/2026-10-20 The email to Jousef and Mattias, found again/003 Claude.png>)
+Claude looked at picture 003
 
 The 18 October 22:18–22:50 review is clear from the saved text. For the report work that night (from 23:13) and the next morning (from 11:48), I need the end times from the raw session log:
 
@@ -473,7 +473,7 @@ Now every file comes out byte for byte identical, business/01's name and identit
 
 Every TD check passes, with no page errors. A saved rating prints in business/08, the history shows the change, and search finds business fields. One look at the Business page's layout:
 
-Claude looked at [image 004](<../images/2026-10-20 The email to Jousef and Mattias, found again/004 Claude.png>)
+Claude looked at picture 004
 
 The Business page looks right. Last for TD: the version number, its README and its handover. Checking the README's layout:
 
