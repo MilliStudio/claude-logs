@@ -307,20 +307,78 @@ The leftover empty folder is still held open, so that note stays. Writing the ha
 
 Handover written. Committing it, then saving the conversation text.
 
+The session started at 15:01, not 15:10; correcting that in the note and handover. Then the picture PDFs.
+
+The pictures are in one PDF in the Bring in file. Committing and pushing claude-logs.
+
+Everything is entered, saved and pushed, and the session is wrapped up. Press **Update M1 testing** to get v0.376.0.
+
+**Your three changes (v0.376.0):**
+- **Pop-up numbers:** each drop's number and icon now sit on their own line, so +2 leaves and +1 sap stand one over the other.
+- **Liquid icons:** water shows the canteen; tree sap and nectar show a small corked phial filled with their colour. In the inventory, sap and nectar are still kept in the Gatherer's Pouch. Say if they should move to phials there too.
+- **Tally:** when you're close enough to deliver, and while things are still flying in, the tally grows to 1.4 times its size and glows gold, pulsing gently. It eases back when you walk away. Three new sliders under Tuning, Deliveries: **Tally grows near**, **Tally glows near** and **Tally's glow colour**. I checked a lantern's tally in the game, from far away and up close.
+
+Your map import from 15:54 went in with this version. It includes the Guardian needs you set in the new box (70 sap, 70 seeds, 20 lantern pods) and your Rolls back in 1.3 s.
+
+**Tessera Records:** all 5 decisions and the feature text for 4 features are entered. Only "Gather a resource" appears in the printed documents; the other three features aren't placed in any document, so they live in the app only.
+
+**Wrap-up:**
+- The handover in the M1 file is updated.
+- The conversation text and its 25 images are saved and pushed to claude-logs.
+- The session's pictures are one PDF in the Bring in file, waiting for your button.
+- The empty leftover folder `.claude\worktrees\harvest-animation` still can't be deleted while VS Code holds it. It's noted for next time.
+
+The session ran from 15:00 to 16:35.
+
+---
+
+### Dani · 2026-11-06 16:37
+
+can you make the tally glow static, not animatied please. fade in when large fade out when not enlarged
+
+---
+
+### Claude · 2026-11-06 16:37
+
+Making the glow steady: it fades in as the tally grows and out as it shrinks, with no pulse.
+
+All 198 tests pass. Checking in the hidden browser that the glow stays the same while you stand close.
+
+The glow stays the same the whole time you stand close, and is gone once you walk away. Saving v0.376.1 and updating the handover.
+
+---
+
+### Dani · 2026-11-06 16:38
+
+(sent while Claude was working) you can also make the ffect  it less.. spread out if you know what i mean. like the same thickiness but sharper eedges
+
+---
+
+### Claude · 2026-11-06 16:39
+
+Got it: a band the same thickness, but with sharp edges instead of a soft spread. Rebuilding the glow as a solid outline round the counts and tokens.
+
+Claude looked at [image 026](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/026 Claude.png>)
+
+The glow is now a solid gold band with sharp edges, about as thick as the soft glow's bright part was. Updating the notes and saving v0.376.2.
+
+Pushed. Re-saving the conversation text so it includes these last two changes.
+
 ---
 
 ## Prompt for the next session
 
-Continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1), at v0.376.0. Read tessera-m1\CLAUDE.md's status first.
+Continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1), at v0.376.2. Read tessera-m1\CLAUDE.md's status first.
 
-- Waiting for Dani: Update M1 testing to v0.376.0; her Bring in button (the PDFs of 5–6 November's night and of 6 November's day and afternoon, the arms session's reference video, and 5 November's 8 hours); 6 November's hours, which she gives herself; where she wants the clouds (deeper than 1.4 m, the player can't leave them: no step or hop reaches).
+- Waiting for Dani: Update M1 testing to v0.376.2; her Bring in button (the PDFs of 5–6 November's night and of 6 November's day and afternoon, the arms session's reference video, and 5 November's 8 hours); 6 November's hours, which she gives herself; where she wants the clouds (deeper than 1.4 m, the player can't leave them: no step or hop reaches).
 - Each Guardian has its own needs (`GUARDIANS`, the editor's Guardian needs box); the game still runs one Guardian a map. Dani's map: the Guardian on 15,0 needs 70 tree sap, 70 seeds and 20 lantern pods.
 - Floating key items keep their sizes beside the large wheel (0.9 m); the straw case stays at the 0.9 m cap, as it is longer than the wheel. Dani may say how much smaller it should be.
 - Sap's and nectar's flat icons are phials, but the inventory still keeps them in the Gatherer's Pouch (not asked).
+- Tessera Records still says the tally's glow pulses (decision "Close enough to deliver, a tally grows and glows", Show a tally); since v0.376.1 it is steady and since v0.376.2 a sharp-edged band. Claude offered to fix it; enter only with Dani's yes.
 - Dani's screenshots and recordings are in Dropbox\Screenshots.
 - Delete the empty folder .claude\worktrees\harvest-animation once VS Code has restarted (still held open on 6 November at 16:30).
 - At the end of each session, run claude-logs\picture-book.mjs for it.
 
 ## Closing note
 
-Session closed on 6 November 2026 at about 16:35; it started at about 15:00. It built v0.374.0 (the Guardian swims forward into its circle; each Guardian's own needs; floating key items in proportion to the large wheel), v0.375.0 (the liquids as wobbling, see-through blobs, after Dani's recording of water in space) and v0.376.0 (the pop-up numbers one kind a line; canteen and phial icons for the liquids; the tally grows and glows within the delivery distance; Dani's map import of 15:54). It answered why the character was stuck on the clouds, without changing anything. It entered five decisions and four feature changes in Tessera Records (Tessera DOCS d128a75).
+Session closed on 6 November 2026 at about 16:50; it started at about 15:00. It built v0.374.0 (the Guardian swims forward into its circle; each Guardian's own needs; floating key items in proportion to the large wheel), v0.375.0 (the liquids as wobbling, see-through blobs, after Dani's recording of water in space) and v0.376.0 (the pop-up numbers one kind a line; canteen and phial icons for the liquids; the tally grows and glows within the delivery distance; Dani's map import of 15:54), v0.376.1 (the tally's glow steady, fading with its size) and v0.376.2 (the glow a band with sharp edges). It answered why the character was stuck on the clouds, without changing anything. It entered five decisions and four feature changes in Tessera Records (Tessera DOCS d128a75).
