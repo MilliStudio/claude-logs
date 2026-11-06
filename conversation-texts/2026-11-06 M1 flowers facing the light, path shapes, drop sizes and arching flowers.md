@@ -307,57 +307,132 @@ The session ran from 18:57. Updating the M1 handover.
 
 Handover updated. Now saving the session text and its pictures.
 
----
+Five versions are pushed (v0.381.0–v0.385.0), and the wrap-up is done. Press **Update M1 testing** to get them there.
 
-## Asked at the wrap-up
+Start over is now between the menu and Get all items, with a redo arrow. The **Tutorial** box sits in the map editor's Save row (it wraps under Save at narrow widths). Untick it and the tutorial card goes, and stays gone after Start over; tick it and the card comes back.
 
-**Q1.** May I enter these in Tessera Records? Claude recommends yes.
+**Q1.** May I enter these in Tessera Records? I recommend yes.
 
 1. **New decision** (M1 M2 M3), "Flower heads face the light":
-   - **Decision:** "Every giant and arching flower’s head turns and tilts to face one light high over the island; the stem and leaves stay as they are. Each head leans as if the ground were flat between it and the light: under the light it faces straight up, and the farther away it stands, the more it leans toward the light. No flower has a head turn or tilt of its own. It replaces each giant flower’s own turn in “Each flower is set up on its own” (30 October 2026)."
-   - **Why** (Claude’s proposal): "Turning each head by hand was hard to get right. Heads that all face one light look like flowers following the sun, so the island reads as one living place."
-2. **New decision** (M1 M2 M3), "An arching flower has up to three flowers on its stem":
+   - **Decision:** "Every giant and arching flower's head turns and tilts to face one light high over the island; the stem and leaves stay as they are. Each head leans as if the ground were flat between it and the light: under the light it faces straight up, and the farther away it stands, the more it leans toward the light. No flower has a head turn or tilt of its own. It replaces each giant flower's own turn in "Each flower is set up on its own" (30 October 2026)."
+   - **Why** (my proposal): "Turning each head by hand was hard to get right. Heads that all face one light look like flowers following the sun, so the island reads as one living place."
+2. **New decision**, "An arching flower has up to three flowers on its stem":
    - **Decision:** "An arching flower has one to three flowers on its stem: one on its tip, and the others on short stalks to either side of the stem, a little smaller, facing the light as the first does."
-   - **Why** (Claude’s proposal): "A cluster on one stem reads as a living plant rather than a single bloom, and sets the arching flower apart from the giant flower’s single head."
-3. **New decision** (M1 M2 M3), "An arching flower’s leaves are set by how many":
-   - **Decision:** "An arching flower has none to six leaves, all alike, placed along its stem by themselves on alternating sides; each flower sets only how many. It replaces “up to two leaves” in “Arching flowers are harvestable” (2 November 2026)."
-   - **Why** (Claude’s proposal): "Arching flowers are small and never stood on, so their leaves need no shaping of their own, and a count is enough to vary them."
-4. **New decision** (M1 M2 M3), "Each resource has its own size":
-   - **Decision:** "Each resource has its own size where it bursts out of a hit and where it flies in a delivery, so a pine cone can be bigger than a seed. It replaces “Everything a hit bursts out is one size” (3 November 2026)."
-   - **Why** (Claude’s proposal): "Resources differ in real size, and showing that makes each easier to tell apart as it flies."
-5. **New decision** (M1 M2 M3), "Paths can branch to any three sides":
-   - **Decision:** "Besides the forked path’s Y, a path can run straight with a branch to either side, or fan out to three sides next to each other. With the forked path, three paths can meet at any three sides of a tile."
-   - **Why:** "A Y joins only every other side, so some places where three paths meet couldn’t be joined."
+   - **Why** (my proposal): "A cluster on one stem reads as a living plant rather than a single bloom, and sets it apart from the giant flower's single head."
+3. **New decision**, "An arching flower's leaves are set by how many":
+   - **Decision:** "An arching flower has none to six leaves, all alike, placed along its stem by themselves on alternating sides; each flower sets only how many. It replaces "up to two leaves" in "Arching flowers are harvestable" (2 November 2026)."
+   - **Why** (my proposal): "Arching flowers are small and never stood on, so their leaves need no shaping of their own, and a count is enough to vary them."
+4. **New decision**, "Each resource has its own size":
+   - **Decision:** "Each resource has its own size where it bursts out of a hit and where it flies in a delivery, so a pine cone can be bigger than a seed. It replaces "Everything a hit bursts out is one size" (3 November 2026)."
+   - **Why** (my proposal): "Resources differ in real size, and showing that makes each easier to tell apart as it flies."
+5. **New decision**, "Paths can branch to any three sides":
+   - **Decision:** "Besides the forked path's Y, a path can run straight with a branch to either side, or fan out to three sides next to each other. With the forked path, three paths can meet at any three sides of a tile."
+   - **Why** (your reason): "A Y joins only every other side, so some places where three paths meet couldn't be joined."
 6. **Feature text:**
-   - Giant flower, added: "Its head, and only its head, faces the flowers’ light, high over the island: under the light it faces straight up, and farther away it leans toward it."
-   - Gather a resource: "up to 10, all one size, and fly to the player" becomes "up to 10, each the size of its resource, and fly to the player".
+   - **Giant flower**, a sentence added: "Its head, and only its head, faces the flowers' light, high over the island: under the light it faces straight up, and farther away it leans toward it."
+   - **Gather a resource:** "up to 10, all one size, and fly to the player" becomes "up to 10, each the size of its resource, and fly to the player".
 
-No record: the light’s sliders and the drop size sliders (tuning values), the Start over button and the Tutorial box (trial tools).
+No records for the light's sliders and the drop sizes (tuning values), or for the Start over button and the Tutorial box (trial tools).
 
-**Controls that could be removed** (Dani: "what else don't we need that we can remove? can you complite a list?"). The values stay in src/key.js, so the game doesn’t change, and any slider can come back. Claude recommends removing 1–8 and 10, and keeping 9 until the island’s look is settled.
+**Controls we could remove.** Their values stay in src/key.js, so the game looks the same, and any slider can come back. I recommend removing 1–8 and 10, and keeping 9 until the island's look is settled.
+1. **Walking and Running** (9 each): the walk and run animation.
+2. **Swimming** (8): the swim animation.
+3. **Hops:** the 9 that shape the jump's look and timing. The 6 that decide where you can hop stay.
+4. **Floating in the void:** the 7 pose sliders. Fading starts after and Fading takes stay.
+5. **Putting on the kit** (9): the pickup animation.
+6. **The Guardian's look**, under Pond (6): back rings, bends, bends into turns, rings askew, cogs, lies tipped.
+7. **Water:** the 5 face colour and solidity sliders.
+8. **Camera:** the 4 ease sliders.
+9. **Lighting:** Restored land, Dormant land and Night light (11).
+10. **Giant flowers:** Thickness, Rotate and Tilt sideways in each of the 4 leaf sections (12 rows in every flower's box), plus petal Thickness. Each flower keeps the values it has now.
 
-1. Walking (9) and Running (9): the walk and run animation.
-2. Swimming (8): the swim animation.
-3. Hops: the 9 that shape the jump’s look and timing (Shortest hop takes, Long hops add, Arc height, Body stretches, Feet tuck up, Legs swing apart, Arms rise, Body squashes, Landing squash lasts). The 6 that set where you can hop stay.
-4. Floating in the void: the 7 pose sliders. Fading starts after and Fading takes stay.
-5. Putting on the kit (9): the pickup animation.
-6. The Guardian’s look, under Pond (6): back rings, bends, bends into turns, rings askew, cogs, lies tipped.
-7. Water: the 5 face colours and solidity sliders. Walk in water up to and the bank lines stay.
-8. Camera: the 4 ease sliders (rotation and tilt-and-zoom, in and out).
-9. Lighting: Restored land, Dormant land and Night light (11).
-10. Giant flowers: Thickness, Rotate and Tilt sideways in each of the 4 Leaf sections (12 rows in every flower’s box), and Petals’ Thickness. Each flower keeps the values it has.
+**Wrap-up:**
+- **Handover:** the M1 file is updated and pushed.
+- **Session text:** saved with its 22 images and pushed to claude-logs. It includes Q1 and this list, in case you answer next time.
+- **Bring in:** this session's pictures wait there as one PDF.
+
+The session ran from 18:57 to 20:13.
+
+---
+
+### Dani · 2026-11-06 20:18
+
+not sure if i'm blind but i can't find the tutorial box
+
+---
+
+### Claude · 2026-11-06 20:19
+
+It's not you — I put it in the editor's left column, under the Ground tools next to that column's Save. You were most likely looking at the Save in the top row by Close. I'll move it there. Checking that row's markup.
+
+Claude looked at [image 023](<../images/2026-11-06 M1 flowers facing the light, path shapes, drop sizes and arching flowers/023 Claude.png>)
+
+It now sits in the top row: Restore all, Saved, ☑ Tutorial, Close. Ticking and unticking it works. Saving the fix.
+
+The Tutorial box was there, just not where you'd look: I'd put it in the editor's left column, under the Ground tools, next to that column's own Save. I've moved it to the top row over the map, between Saved and Close, in the same pill style as the other buttons. Ticking and unticking it still works.
+
+It's v0.385.1, pushed and showing in the trial now. For M1 testing, press **Update M1 testing** first.
+
+Q1 (Tessera Records) and the list of controls to remove are still waiting for your answer.
+
+---
+
+### Dani · 2026-11-06 20:24
+
+q1 no need for 2 3 
+the swim animation i haven't gotten to yet. it needs work. will get to it later
+the hops have to stay since we might add hoppable stuff later and will need to tune
+the kit animation stays also
+water stays
+giant flowers also will get back to so okeep
+rest is approved. and please add 8 hours for today
+
+---
+
+### Claude · 2026-11-06 20:24
+
+Got it. Doing these now:
+- **Tessera Records:** entering decisions 1, 4 and 5 and the two feature edits; skipping 2 and 3.
+- **Removing:** Walking and Running, the void-floating pose sliders, the Guardian's look and the camera eases.
+- **Keeping:** swimming, hops, the kit animation, water and the giant flowers' leaf controls. I'm also keeping the lighting (item 9), as I'd recommended; say if you want it gone too.
+- **Hours:** adding your 8 hours for today.
+
+Checking how the game reads the sliders that go.
+
+Every value is the same in both copies, so nothing is lost. Removing the sliders.
+
+The copies count any quoted DEMO_ name in tuning.js as a slider's number. Writing FIXED without quotes, so these numbers travel with Update M1 testing.
+
+Tests pass. Checking the game in the hidden browser for errors, and that walking and the Guardian still work.
+
+The game runs without errors, walking works, and the Walking tab is gone. Updating the README.
+
+v0.386.0 is pushed. Now Tessera Records: checking how the last session entered decisions through the app.
+
+Adding your 8 hours for today to the Bring in file, then entering the three decisions and two feature edits.
+
+Entered. Checking whether the app printed DOCS changes into the Tessera repository.
+
+Only Gather a resource is printed in DOCS; the Giant flower feature isn't in a printed document. Committing the DOCS change.
+
+Records are in (Tessera DOCS 32adf7d). Updating the handover with the answers.
+
+Saving the session text again, now with your answers.
+
+---
 
 ## Prompt for the next session
 
-Continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1), at v0.385.0. Read tessera-m1\CLAUDE.md’s status first.
+Continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1), at v0.386.0. Read tessera-m1\CLAUDE.md’s status first.
 
-- Waiting for Dani: Q1 above (five decisions and two feature edits in Tessera Records); which controls to remove from the list above; Update M1 testing to v0.385.0; her Bring in button (this session’s pictures wait there too); 6 November’s hours, which she gives herself.
+- Waiting for Dani: Update M1 testing to v0.386.0; whether the lighting sliders (Restored land, Dormant land, Night light) go too, as the rest of the list did; her Bring in button (this session’s pictures and 6 November’s 8 hours wait there with the others).
 - Every flower head faces the light (Light source: over 5,5, 50 m up, width 0). The planet is small, so heads lean as if the ground were flat to under the light. The heads on 10,0 and 13,4 tilt past the 15° to stand on.
-- Arching flowers: Flowers on the stem (1–3, 3 on all) and Leaves on the stem (0–6). Their old per-leaf settings are in git at v0.383.0.
+- Arching flowers: Flowers on the stem (1–3, 3 on all) and Leaves on the stem (0–6). Their old per-leaf settings are in git at v0.383.0. Dani declined Tessera Records decisions for these two.
 - Paths: r, l and m join the threes of sides the Y can’t; Dani’s map still has Y forks on 9,5, 10,5 and 11,5.
+- 34 sliders are gone (v0.386.0): their numbers are FIXED in src/tuning.js, read from src/key.js. Swimming needs work later (Dani: "the swim animation i haven't gotten to yet").
 - Delete the empty folder .claude\worktrees\harvest-animation once VS Code has restarted.
 - At the end of each session, run claude-logs\picture-book.mjs for it.
 
 ## Closing note
 
-Session started on 6 November 2026 at 18:57 and wrapped up at about 20:20. It built v0.381.0 (flower heads face a light, after a first try aimed at one real point tilted the far arching flowers 52–84° on the small planet), v0.382.0 (three more path shapes, with Dani’s import of 19:36), v0.383.0 (a size slider for every drop), v0.384.0 (no per-flower head controls; arching flowers with up to three flowers and a leaf count) and v0.385.0 (Start over under the menu button, and the editor’s Tutorial box). At the wrap-up, Claude proposed five decisions and two feature edits for Tessera Records (Q1) and listed the controls that could be removed; both wait for Dani.
+Session started on 6 November 2026 at 18:57 and closed at about 20:35. It built v0.381.0 (flower heads face a light, after a first try aimed at one real point tilted the far arching flowers 52–84° on the small planet), v0.382.0 (three more path shapes, with Dani’s import of 19:36), v0.383.0 (a size slider for every drop), v0.384.0 (no per-flower head controls; arching flowers with up to three flowers and a leaf count), v0.385.0 and v0.385.1 (Start over under the menu button; the Tutorial box, moved beside the Save over the map when Dani couldn’t find it) and v0.386.0 (34 sliders removed from Claude’s list, with Dani’s answers). Entered in Tessera Records with Dani’s yes ("q1 no need for 2 3"; Tessera DOCS 32adf7d): three decisions, "Flower heads face the light", "Each resource has its own size" and "Paths can branch to any three sides", and two feature edits. Dani’s 8 hours for 6 November wait in the Bring in file.
