@@ -301,6 +301,49 @@ Updating the M1 handover with this session.
 
 Handover pushed. Now the session text with its pictures.
 
+Now the prompt for the next session and the closing note, at the end of the text.
+
+It's 22:43, not 22:50 as I wrote in the notes. Correcting the times.
+
+The session is wrapped up. Press **Update M1 testing** to get v0.393.0.
+
+**Built after your answers (v0.393.0):**
+- **Harvestables on waypoints** now grow only after the wayfinder has taken off, and then wait the seconds set by a new slider, **Grows after the wayfinder leaves**, under Wayfinders. It starts at 1.5 s. I checked it on a copy of the game: the waypoint was fed at 0.5 s, the wayfinder took off at 1.5 s, and the flower bulbs grew from 3 s.
+- **Path bends** still turn at a corner, but the corner is rounded off a little. The path runs straight in from each side and curves only near the middle. You can change how round with **Bends round off** in the Paths box; it starts at 40%, and 0 gives the sharp corner back.
+
+**Tessera Records:** I entered the decision "Arching flowers' heads follow their stems, and stand round the stem", with your yes to Q3.
+
+**Wrap-up:**
+- The handover file is updated and pushed.
+- This session's messages and its 24 pictures are saved in claude-logs, pushed, and include the prompt for the next session.
+- The pictures are printed to PDF and wait in the Bring in file for your button.
+
+One question for next time: the harvestables waiting for the wayfinder to take off is a design refinement, so I'd propose a decision for it at your next "tr". It doesn't need an answer tonight.
+
+---
+
+### Dani · 2026-11-06 22:53
+
+yes decision and feature if any
+
+---
+
+### Claude · 2026-11-06 22:53
+
+Finding the existing decision and feature text about harvestables on waypoints first.
+
+No decision or feature describes harvestables on a waypoint yet. Reading "Unlock with a floating object" in full, where the new sentence belongs.
+
+Adding a sentence and a table row to that feature, plus a new decision in the same topic. Checking how earlier sessions saved feature edits through the API.
+
+Writing both: a new decision in the wayfinders' topic, and a sentence plus a table row in "Unlock with a floating object".
+
+Both are entered. Checking whether Tessera Records wrote a DOCS change that needs committing, as earlier feature edits did.
+
+Only this edit, printed into three DOCS files. Committing and pushing them.
+
+Updating the handover and the session text to match.
+
 ## Prompt for the next session
 
 Continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1), at v0.393.0. Read tessera-m1\CLAUDE.md’s status first.
@@ -310,10 +353,9 @@ Continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1), at v0.39
 - Path bends turn in a corner rounded off over 40% of each arm (Bends round off, in the Paths box).
 - Pond plants grow only once the Guardian is restored, with its wave.
 - A harvestable on a waypoint’s tile (gv in the drawing) grows once the wayfinder has taken off and Grows after the wayfinder leaves (1.5 s, under Wayfinders) has passed. Arching flowers can’t go under a waypoint (Dani: “not necessary”). Key items lie on waypoints as on any tile.
-- Tessera Records: at Dani’s next “tr”, propose a decision for harvestables on a waypoint growing once its wayfinder takes off.
 - Delete the empty folder .claude\worktrees\harvest-animation once VS Code has restarted.
 - At the end of each session, run claude-logs\picture-book.mjs for it.
 
 ## Closing note
 
-Session started on 6 November 2026 at about 21:55 and closed at about 22:45. It built v0.390.0 (arching flowers’ three flowers round the stem like a triangle, from Dani’s drawing seen from above; the top head along its stem; the Side flowers slider; Dani’s map imports of 21:43 and 21:54), v0.391.0 (path bends in a sharp corner), v0.392.0 (pond plants wait for the Guardian) and v0.393.0 (what grows on a waypoint waits for its wayfinder to take off, and a slider’s 1.5 s; path bends rounded off a little). It answered that harvestables and key items on waypoints already work, tested on a scratch copy. Entered in Tessera Records with Dani’s yes (“q3yes go ahead”): the decision “Arching flowers’ heads follow their stems, and stand round the stem”.
+Session started on 6 November 2026 at about 21:55 and closed at about 22:45. It built v0.390.0 (arching flowers’ three flowers round the stem like a triangle, from Dani’s drawing seen from above; the top head along its stem; the Side flowers slider; Dani’s map imports of 21:43 and 21:54), v0.391.0 (path bends in a sharp corner), v0.392.0 (pond plants wait for the Guardian) and v0.393.0 (what grows on a waypoint waits for its wayfinder to take off, and a slider’s 1.5 s; path bends rounded off a little). It answered that harvestables and key items on waypoints already work, tested on a scratch copy. Entered in Tessera Records with Dani’s yes (“q3yes go ahead”): the decision “Arching flowers’ heads follow their stems, and stand round the stem”; and after the wrap-up, with her yes (“yes decision and feature if any”), the decision “Harvestables on a waypoint grow once its wayfinder takes off” and a sentence and the 1.5 s in Unlock with a floating object (Tessera DOCS b4ae202).
