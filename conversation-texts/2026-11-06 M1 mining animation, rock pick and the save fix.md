@@ -340,13 +340,53 @@ Both compare views are open in VS Code. Now the session's pictures as a PDF for 
 
 Updating the closing note and the handover with the Siphon proposal, then saving and pushing.
 
+Everything else is wrapped up and pushed. Only the Tessera Records entries wait for your yes. The Siphon was never in the trial, so the game needs no change.
+
+**Q1.** May I enter these in Tessera Records? I recommend yes. Two compare views are open in VS Code, one for each printed document that changes: DOCS/09 and DOCS/10.
+
+1. **New decision** (M1 M2 M3), "The Siphon Gemstone is removed; two harvesting tools remain":
+   - **Decision:** "The Siphon Gemstone, its tool and its refinery are removed from the game. Two harvesting tools remain: the rock pick (Pick Gemstone) for rocks and the pruning knife (Pruning Gemstone) for plants. Liquids come as drops of plants and rocks, gathered with these two."
+   - **Why** (my proposal, since you gave no reason): "Every liquid already comes as a drop of a plant or a rock (water drops from porous rocks, tree sap from puffball trees, nectar from arching flowers), so a third tool for liquids would add a tool without adding anything new to do."
+2. **Gather a resource:**
+   - "Pick Gemstone for rocks, Pruning Gemstone for plants, Siphon Gemstone for liquids" becomes "Pick Gemstone for rocks, Pruning Gemstone for plants".
+   - "Rocks are still knocked." becomes: "While mining a rock, the character holds a rock pick in one hand: a pick hammer with a square hammer face and a long point. Each hit is a short overhand chop from the wrist and forearm, and lands as the point meets the rock. The first hit on a plant or a rock waits for the first slash or chop."
+3. **Upgrade a tool:** "(the Pick Gemstone, Pruning Gemstone or Siphon Gemstone Refinery)" becomes "(the Pick Gemstone or Pruning Gemstone Refinery)".
+4. **Design text in DOCS/10:**
+   - "There are three tool refineries, one for each tool: Pick Refinery, Pruning Refinery and Siphon Refinery." becomes "There are two tool refineries, one for each tool: Pick Refinery and Pruning Refinery."
+   - The line "Siphon Gemstone — gathers liquids." is removed from the gemstone list.
+5. **Asset list:** delete "Siphon Gemstone" and "Siphon Gemstone Refinery". Tessera Records keeps their history, so they can be brought back.
+
+**Wrap-up:**
+- **Handover:** the M1 file's status is updated and pushed.
+- **Session text:** saved with its 16 images, and pushed to claude-logs.
+- **Bring in file:** this session's pictures (one PDF) and the rock pick video wait there, 10 records in all.
+- **Leftover folder:** `.claude\worktrees\harvest-animation` is still held open by VS Code. It's noted for next time.
+
+The session ran from 17:05 to about 18:05.
+
+---
+
+### Dani · 2026-11-06 18:05
+
+ok too thanks
+
+---
+
+### Claude · 2026-11-06 18:05
+
+Entering them now. First, checking how the API takes a delete, so the two assets go cleanly.
+
+Delete is a POST to the record's `/delete` address. Fixing that in the script, then entering everything.
+
+Pushed (Tessera DOCS d6608ee). Updating the handover and the session text to say it's entered.
+
 ---
 
 ## Prompt for the next session
 
 Continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1), at v0.380.0. Read tessera-m1\CLAUDE.md's status first.
 
-- Waiting for Dani: Update M1 testing to v0.380.0; her yes or no to the Tessera Records proposal of 6 November's evening, if not entered by then: the rock pick in Gather a resource, and the Siphon removed (Dani: "so no more siphon tool or gemstone"): a new decision, Gather a resource, Upgrade a tool, two design sections in DOCS/10, and the two Siphon assets deleted (the script is in that session's scratchpad, tr-proposal.mjs; its checks must pass again); her Bring in button (the PDFs of 5–6 November's sessions, the two reference videos, the pruning sickle and the rock pick, and 5 November's 8 hours); 6 November's hours, which she gives herself; where she wants the clouds (deeper than 1.4 m, the player can't leave them).
+- Waiting for Dani: Update M1 testing to v0.380.0; her Bring in button (the PDFs of 5–6 November's sessions, the two reference videos, the pruning sickle and the rock pick, and 5 November's 8 hours); 6 November's hours, which she gives herself; where she wants the clouds (deeper than 1.4 m, the player can't leave them).
 - The mining animation (v0.378.0; Dani: "love the animation"): the rock pick and its overhand chop, after Dani's reference video `Dropbox\Screenshots\Screen Recording 2026-11-06 170138.mp4`. Hit every sets its speed; Jump and Tilt under Player harvesting the knock at each strike.
 - Save writes only plain numbers into src/key.js: a colour written as `0x…` stopped every Save in M1 testing until v0.377.1. A test now checks every slider's number.
 - Get all items is the pouch button under the menu button (v0.379.0). The kit's inventory picture is the bag nearly square (v0.380.0); the satchel on the island keeps its shape.
@@ -355,4 +395,6 @@ Continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1), at v0.38
 
 ## Closing note
 
-Session closed on 6 November 2026 at about 18:05; it started at about 17:05. It pulled stills from Dani's reference video of a geologist's pick hammer (17:01) and built v0.378.0, the mining animation: the rock pick and its overhand chop, timed from the video. On Dani's messages along the way, it built v0.377.1 (Save in M1 testing failed once the tally's glow colour was moved, as key.js wrote it `0xffd66b`), v0.379.0 (Get all items as a pouch button under the menu button) and v0.380.0 (the kit's inventory picture nearly square again; Dani's map import of 17:53 and her tally values). The rock pick's reference video waits in the Bring in file. At the wrap-up, Dani said the Siphon tool and gemstone are removed from the game. Proposed for Tessera Records: the rock pick in Gather a resource (an addition, so no decision), and the Siphon's removal as a decision (M1 M2 M3, its why Claude's proposal), with Gather a resource, Upgrade a tool, the two design sections in DOCS/10 and the two Siphon assets to match.
+- The Siphon tool and gemstone are removed from the game (Dani, 6 November 2026); only the rock pick and the pruning knife remain. Tessera Records and DOCS match (Tessera DOCS d6608ee).
+
+Session closed on 6 November 2026 at about 18:15; it started at about 17:05. It pulled stills from Dani's reference video of a geologist's pick hammer (17:01) and built v0.378.0, the mining animation: the rock pick and its overhand chop, timed from the video. On Dani's messages along the way, it built v0.377.1 (Save in M1 testing failed once the tally's glow colour was moved, as key.js wrote it `0xffd66b`), v0.379.0 (Get all items as a pouch button under the menu button) and v0.380.0 (the kit's inventory picture nearly square again; Dani's map import of 17:53 and her tally values). The rock pick's reference video waits in the Bring in file. At the wrap-up, Dani said the Siphon tool and gemstone are removed from the game. Entered in Tessera Records with Dani's yes ("ok too thanks"; Tessera DOCS d6608ee): the rock pick in Gather a resource (an addition, so no decision), and the Siphon's removal as a decision (M1 M2 M3, its why Claude's proposal), with Gather a resource, Upgrade a tool, the two design sections in DOCS/10 and the two Siphon assets deleted to match.
