@@ -389,20 +389,70 @@ Entering the decision and the feature change.
 
 Entered: the decision and "Show a tally" v7. No printed document changed, so the Tessera repository has nothing to commit. Updating the handover and the session text.
 
+Tessera Records now matches the game.
+
+- **New decision** (M1 M2 M3): "A tally's glow is a steady band with sharp edges". It replaces "pulsing gently" in the earlier tally decision. Its reason is my proposal, since you didn't give one: a steady, sharp band reads as a clear outline without pulling the eye away from play.
+- **Show a tally:** the text now says it "glows with a steady gold band, which fades in as it grows and out as it shrinks", and the table row reads "Gold band, 5 px, steady".
+
+Neither of these appears in a printed document, so there was nothing to commit in the Tessera repository. The handover and the session text are updated and pushed.
+
+---
+
+### Dani · 2026-11-06 16:54
+
+it needs refinement. it doesn't look very good. can you put sliders for the amount of glow, the amount of spread and the amount of sharpness
+
+![Dani's image 027](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/027 Dani.png>)
+
+---
+
+### Claude · 2026-11-06 16:55
+
+Your picture shows the band white instead of gold. Checking M1 testing's value before I rebuild the glow with the three sliders.
+
+Same gold in both copies, so the white probably comes from your browser's remembered colour box. Now rebuilding the glow as a filter with three settings: amount, spread and sharpness.
+
+That draft has a bug in how it adds the filter holder to the page. Rewriting that part cleanly.
+
+All 198 tests pass. Taking pictures of three settings side by side: the new default, fully sharp and fully soft.
+
+Claude looked at [image 028](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/028 Claude.png>)
+
+Claude looked at [image 029](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/029 Claude.png>)
+
+Claude looked at [image 030](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/030 Claude.png>)
+
+The soft setting looks good, but at sharp and default settings the bark behind shows through inside the band, so the band isn't as solid as it should be. Testing the filter on its own to find why.
+
+Claude looked at [image 031](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/031 Claude.png>)
+
+On its own the filter gives a solid band. Looking closer at the game version, with the glow set to red so it's easy to see.
+
+Claude looked at [image 032](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/032 Claude.png>)
+
+Claude looked at [image 033](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/033 Claude.png>)
+
+Claude looked at [image 034](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/034 Claude.png>)
+
+Claude looked at [image 035](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/035 Claude.png>)
+
+Pushed. Refreshing the session text and pictures once more.
+
 ---
 
 ## Prompt for the next session
 
-Continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1), at v0.376.2. Read tessera-m1\CLAUDE.md's status first.
+Continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1), at v0.377.0. Read tessera-m1\CLAUDE.md's status first.
 
-- Waiting for Dani: Update M1 testing to v0.376.2; her Bring in button (the PDFs of 5–6 November's night and of 6 November's day and afternoon, the arms session's reference video, and 5 November's 8 hours); 6 November's hours, which she gives herself; where she wants the clouds (deeper than 1.4 m, the player can't leave them: no step or hop reaches).
+- Waiting for Dani: Update M1 testing to v0.377.0; her Bring in button (the PDFs of 5–6 November's night and of 6 November's day and afternoon, the arms session's reference video, and 5 November's 8 hours); 6 November's hours, which she gives herself; where she wants the clouds (deeper than 1.4 m, the player can't leave them: no step or hop reaches).
 - Each Guardian has its own needs (`GUARDIANS`, the editor's Guardian needs box); the game still runs one Guardian a map. Dani's map: the Guardian on 15,0 needs 70 tree sap, 70 seeds and 20 lantern pods.
 - Floating key items keep their sizes beside the large wheel (0.9 m); the straw case stays at the 0.9 m cap, as it is longer than the wheel. Dani may say how much smaller it should be.
 - Sap's and nectar's flat icons are phials, but the inventory still keeps them in the Gatherer's Pouch (not asked).
+- The tally glow's look is Dani's to tune with its sliders (amount 85%, spread 6 px, sharpness 50%). In her picture of 16:55 it was white; both copies' key.js have gold, so probably her colour box.
 - Dani's screenshots and recordings are in Dropbox\Screenshots.
 - Delete the empty folder .claude\worktrees\harvest-animation once VS Code has restarted (still held open on 6 November at 16:30).
 - At the end of each session, run claude-logs\picture-book.mjs for it.
 
 ## Closing note
 
-Session closed on 6 November 2026 at about 16:50; it started at about 15:00. It built v0.374.0 (the Guardian swims forward into its circle; each Guardian's own needs; floating key items in proportion to the large wheel), v0.375.0 (the liquids as wobbling, see-through blobs, after Dani's recording of water in space) and v0.376.0 (the pop-up numbers one kind a line; canteen and phial icons for the liquids; the tally grows and glows within the delivery distance; Dani's map import of 15:54), v0.376.1 (the tally's glow steady, fading with its size) and v0.376.2 (the glow a band with sharp edges). It answered why the character was stuck on the clouds, without changing anything. It entered five decisions and four feature changes in Tessera Records (Tessera DOCS d128a75), then, with Dani's yes, "A tally’s glow is a steady band with sharp edges" and Show a tally to match.
+Session closed on 6 November 2026 at about 17:10; it started at about 15:00. It built v0.374.0 (the Guardian swims forward into its circle; each Guardian's own needs; floating key items in proportion to the large wheel), v0.375.0 (the liquids as wobbling, see-through blobs, after Dani's recording of water in space) and v0.376.0 (the pop-up numbers one kind a line; canteen and phial icons for the liquids; the tally grows and glows within the delivery distance; Dani's map import of 15:54), v0.376.1 (the tally's glow steady, fading with its size) v0.376.2 (the glow a band with sharp edges) and v0.377.0 (sliders for the glow's amount, spread and sharpness, its corners round). It answered why the character was stuck on the clouds, without changing anything. It entered five decisions and four feature changes in Tessera Records (Tessera DOCS d128a75), then, with Dani's yes, "A tally’s glow is a steady band with sharp edges" and Show a tally to match.
