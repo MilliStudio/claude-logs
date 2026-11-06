@@ -364,6 +364,31 @@ The glow is now a solid gold band with sharp edges, about as thick as the soft g
 
 Pushed. Re-saving the conversation text so it includes these last two changes.
 
+The picture script added a second PDF record for this session. Checking the Bring in file for a duplicate.
+
+Both changes are pushed (v0.376.1 and v0.376.2). Press **Update M1 testing** to get them.
+
+- **Steady glow:** the glow no longer pulses. It fades in as the tally grows when you come close, and fades out as it shrinks when you leave.
+- **Sharp edges:** the soft glow is now a solid gold band about 5 px thick, with a clean edge round the counts and the token. **Tally glows near** now sets how thick it is (5 px at × 1).
+
+The conversation text and its pictures are updated and pushed again. The Bring in file still holds one PDF for this session.
+
+**Q1.** Tessera Records still says the tally's glow is "pulsing gently". Should I fix it? I recommend yes. A decision can't be edited, so this would be a new decision: "A tally's glow is a steady band with sharp edges, which fades in and out with the tally's size." In "Show a tally", "glows, pulsing gently" would become "glows with a steady gold band", and the table row "Gold, pulsing once a second" would become "Gold band, 5 px, steady".
+
+---
+
+### Dani · 2026-11-06 16:51
+
+y
+
+---
+
+### Claude · 2026-11-06 16:51
+
+Entering the decision and the feature change.
+
+Entered: the decision and "Show a tally" v7. No printed document changed, so the Tessera repository has nothing to commit. Updating the handover and the session text.
+
 ---
 
 ## Prompt for the next session
@@ -374,11 +399,10 @@ Continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1), at v0.37
 - Each Guardian has its own needs (`GUARDIANS`, the editor's Guardian needs box); the game still runs one Guardian a map. Dani's map: the Guardian on 15,0 needs 70 tree sap, 70 seeds and 20 lantern pods.
 - Floating key items keep their sizes beside the large wheel (0.9 m); the straw case stays at the 0.9 m cap, as it is longer than the wheel. Dani may say how much smaller it should be.
 - Sap's and nectar's flat icons are phials, but the inventory still keeps them in the Gatherer's Pouch (not asked).
-- Tessera Records still says the tally's glow pulses (decision "Close enough to deliver, a tally grows and glows", Show a tally); since v0.376.1 it is steady and since v0.376.2 a sharp-edged band. Claude offered to fix it; enter only with Dani's yes.
 - Dani's screenshots and recordings are in Dropbox\Screenshots.
 - Delete the empty folder .claude\worktrees\harvest-animation once VS Code has restarted (still held open on 6 November at 16:30).
 - At the end of each session, run claude-logs\picture-book.mjs for it.
 
 ## Closing note
 
-Session closed on 6 November 2026 at about 16:50; it started at about 15:00. It built v0.374.0 (the Guardian swims forward into its circle; each Guardian's own needs; floating key items in proportion to the large wheel), v0.375.0 (the liquids as wobbling, see-through blobs, after Dani's recording of water in space) and v0.376.0 (the pop-up numbers one kind a line; canteen and phial icons for the liquids; the tally grows and glows within the delivery distance; Dani's map import of 15:54), v0.376.1 (the tally's glow steady, fading with its size) and v0.376.2 (the glow a band with sharp edges). It answered why the character was stuck on the clouds, without changing anything. It entered five decisions and four feature changes in Tessera Records (Tessera DOCS d128a75).
+Session closed on 6 November 2026 at about 16:50; it started at about 15:00. It built v0.374.0 (the Guardian swims forward into its circle; each Guardian's own needs; floating key items in proportion to the large wheel), v0.375.0 (the liquids as wobbling, see-through blobs, after Dani's recording of water in space) and v0.376.0 (the pop-up numbers one kind a line; canteen and phial icons for the liquids; the tally grows and glows within the delivery distance; Dani's map import of 15:54), v0.376.1 (the tally's glow steady, fading with its size) and v0.376.2 (the glow a band with sharp edges). It answered why the character was stuck on the clouds, without changing anything. It entered five decisions and four feature changes in Tessera Records (Tessera DOCS d128a75), then, with Dani's yes, "A tally’s glow is a steady band with sharp edges" and Show a tally to match.
