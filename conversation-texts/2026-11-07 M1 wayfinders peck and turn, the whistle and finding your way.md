@@ -342,18 +342,143 @@ This session's raw log is there. Updating the handover in CLAUDE.md first:
 
 Handover pushed. Now the session text and its pictures:
 
+Only 14 messages, which seems low. Checking the text before adding the closing sections:
+
+The text groups each turn under one heading, with the messages you sent mid-turn inside it, so 14 is right. Adding the prompt for the next session and the closing note:
+
+The real time is 19:38, so my closing times (19:45 and 19:50) are a little late. Correcting them to about 19:40:
+
+The bird that hopped across the gap now flies, and the session is wrapped up.
+
+**The fix (v0.413.0):** before a short hop, a wayfinder now checks the ground all the way to where it's going. If the way crosses void, water, a cloud, something in its way, or a step of more than 0.6 m, it flies instead. On your map with every tile raised, it flew over both gaps that fit my check, and still hopped between all 37 pairs of neighbouring bare tiles. All 214 tests pass.
+
+**Wrap-up:**
+- **Handover:** the status in CLAUDE.md is updated, on top of the deliveries session's.
+- **Session text:** saved and pushed to claude-logs, with its 14 pictures and the prompt for the next session.
+- **Bring in:** the pictures are printed to a PDF and waiting in the Bring in file.
+
+**Tessera Records:** nothing from this session is entered, since you said wrap up, not tr. The whistle is a new mechanic, so a decision and some feature text would fit. Say "tr" next time if you want me to propose them.
+
+The session ran from 18:29 to about 19:40.
+
+Press **Update M1 testing** to get v0.413.0 there.
+
+---
+
+### Dani · 2026-11-07 19:40
+
+yrah we need to enter this into tr. perhaps a new topic, wayfinders, their features functions etc
+
+---
+
+### Claude · 2026-11-07 19:40
+
+I'll read how records are entered and what a "topic" is in Tessera Records before proposing anything:
+
+Now the Tessera Records app's own file, for what its design records are and whether "topics" exist:
+
+---
+
+### Dani · 2026-11-07 19:40
+
+(sent while Claude was working) and should go in decisions
+
+---
+
+### Claude · 2026-11-07 19:40
+
+Noted: decisions too. Reading how the app's design records work and how the API takes them:
+
+Topics are records in an existing table (name, parent, definition), so a new "Wayfinders" topic needs no new table. Reading the fields of decisions, features and topics:
+
+Now reading the current topics, and the features and decisions that already mention wayfinders (read only):
+
+Reading the tutorial's feature, and how documents pick up topics, since a new topic must print somewhere:
+
+I have what I need. Here's what I propose to enter. Nothing is entered yet.
+
+**New topic, under Game, after Guardians**
+
+**Wayfinders**: "The mechanical birds that lead the player from waypoint to waypoint: the waypoints they sit on, how they move, how they answer the player's whistle, and what they do when they have no waypoint."
+
+**New decisions** (all M1 M2 M3, topic Wayfinders, decided by Dani on 7 November 2026)
+
+1. **Holding the character whistles for the wayfinders.**
+   - Decision: "Pressing and holding the character for a moment makes them blow a whistle, and every wayfinder answers."
+   - Why: "So the player can find the way without walking around to look for it. Holding the character leaves dragging free for walking and turning the camera." The first sentence is your reason; the second is my proposal.
+2. **A wayfinder with a waypoint answers like a machine that can't start.**
+   - Decision: "It crackles and shakes in jerks, sparks fly from its cogs and their lights flicker, and then it slumps."
+   - Why (my proposal): "It shows where the next waypoint is, and that its wayfinder can't leave until the player brings what the waypoint needs."
+3. **Out of sight, a sign at the screen's edge points the way to a waypoint.**
+   - Decision: "While a waypoint is off the screen or behind the camera, a sign at the screen's edge points toward it. The sign shows its wayfinder's head and a sparking cog. There is one sign for each waypoint with a wayfinder, two at most. In view, the wayfinder's own shaking shows it."
+   - Why (my proposal): "So the answer gives the direction from anywhere on the map."
+4. **A wayfinder with no waypoint comes to the player and follows them for a while.**
+   - Decision: "It flies to the player and lands near them. It follows them when they walk, and lands near them again when they stop. Then it goes back to the trees."
+   - Why (my proposal): "So the whistle is always answered, and a free wayfinder keeps the player company."
+5. **A wayfinder can be set to face any way on its waypoint.**
+   - Decision: "A level designer can turn a wayfinder to face any way on its waypoint. If it isn't turned, it faces its next waypoint."
+   - Why (my proposal): "So it can look toward the path the player should take, where facing the next waypoint would point at a wall or away from the player."
+
+**Features**
+
+6. **New feature, Call the wayfinders** (M1, topic Wayfinders):
+   - It describes the whistle, the crackling answer, the sign and the following.
+   - It stores the numbers: hold 0.45 s, whistle 1 s, answer after 1.1 s, shaking 1.3 s up to 10°, sign 2.5 s, arriving in 2 s, landing 1.2 m away and following 10 s.
+   - I'll also add it to the "All features" list, so it prints.
+7. **Unlock with a floating object** moves to Wayfinders, with three additions:
+   - It hops only where the ground carries it the whole way, and otherwise flies.
+   - On the grass, it pecks a few times, then lifts its head and looks round.
+   - It faces its next waypoint, or the way it was turned.
+8. **Learn the controls** gets six steps:
+   - The fifth step says "Press and hold your character to find your way", and a whistle ticks it off.
+   - The Run button and a ring round the character glow as a tally does, with the tally's settings. This replaces "the Run button pulses".
+9. **The open question** "Does a mechanical bird just sit on the ground, or in a setting of its own in the environment?" moves to Wayfinders.
+
+**Question**
+
+**Q1.** The seven decisions already about wayfinders, such as "Two wayfinders lead the player from stop to stop", are filed under Restoration and Guardians. Moving them to the new topic means editing each one's topic, and your rule says decisions are never edited. I recommend leaving them where they are, so the new topic starts with the five new decisions. Do you agree?
+
+Say which to enter, or "all", with your answer to Q1.
+
+---
+
+### Dani · 2026-11-07 19:44
+
+ok approved. thanks. can you add 4 hours for today too
+
+---
+
+### Claude · 2026-11-07 19:44
+
+Approved: I'll enter all nine, and leave the old decisions where they are (Q1). First, how the API edits records, and how hours go into the Bring in file:
+
+Hours go in the Bring in file as a work session for 7 November. Design records go through the API. Checking how a save merges fields, how sort order works, and how the printed DOCS get committed:
+
+Checking which HTTP method the API uses for saving, then a dry run:
+
+Dry run passes: every text replacement fits, and the topic goes in as tenth under Game, after Guardians. Entering it all:
+
+Everything is entered. Checking the saved records, and what the app wrote into the Tessera repository's DOCS:
+
+The topic sits tenth under Game, holding 2 features, 5 decisions and 1 question. The app reprinted three DOCS files. A quick look at what changed in print before committing:
+
+The Tessera Records line is updated; the Bring in line didn't match (escaping), so I'll use the Edit tool. planet-plan.js changed too, likely a Save of yours. Checking it:
+
+Saved and pushed. The session went on after the wrap-up, so I'll write its text again with these last messages, and correct the closing note (records now entered, hours added):
+
 ---
 
 ## Prompt for the next session
 
-Continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1), at v0.413.0. Read tessera-m1\CLAUDE.md's status first.
+Continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1), at v0.413.1. Read tessera-m1\CLAUDE.md's status first.
 
-- Waiting for Dani: Update M1 testing to v0.413.0 (until then its imports and Send the map stay greyed); her Bring in button; whether the whistle gets Tessera Records entries (a decision and feature text; nothing from this session is entered).
+- Waiting for Dani: Update M1 testing to v0.413.1 (until then its imports and Send the map stay greyed); her Bring in button (this session's pictures and 7 November's 4 hours wait there).
 - The whistle (src/planet.js, The whistle): holding the character still 0.45 s whistles; a wayfinder with a waypoint crackles and sparks, with a sign at the screen's edge while its waypoint is out of sight; one without flies to the player and follows. Sliders under Answering the whistle in the Every waypoint box. No sound yet.
 - A wayfinder hops only where the ground carries it the whole way (`hopsAcross()`), else flies; a waypoint's wayfinder can be turned in the map editor (`turn` in DIAMONDS).
 - The tutorial's hints (the Run button, the ring round the character) glow with the tally's sliders (`easeGlow()`, `showGlow()`).
+- In Tessera Records, wayfinders have their own topic, Wayfinders, under Game; new wayfinder records go there.
 - At the end of each session, run claude-logs\picture-book.mjs for it.
 
 ## Closing note
 
-Session started on 7 November 2026 at about 18:29 (Dani's first message at 17:51, interrupted and sent again) and closed at about 19:40, beside the deliveries session (v0.409.0) until 19:20, both in the same folder: each committed only its own lines, agreed by message. It built v0.408.0 (pecking in bouts; turning a wayfinder in the map editor), v0.410.0 (the whistle: crackling and sparks, the edge sign, the free wayfinder following), v0.411.0 (the tutorial's find-your-way step), v0.412.0 (its hints glow as tallies do) and v0.413.0 (hops only over ground). Nothing for Tessera Records: Dani ended with "wrap up".
+Session started on 7 November 2026 at about 18:29 (Dani's first message at 17:51, interrupted and sent again) and closed at about 19:50, beside the deliveries session (v0.409.0) until 19:20, both in the same folder: each committed only its own lines, agreed by message. It built v0.408.0 (pecking in bouts; turning a wayfinder in the map editor), v0.410.0 (the whistle: crackling and sparks, the edge sign, the free wayfinder following), v0.411.0 (the tutorial's find-your-way step), v0.412.0 (its hints glow as tallies do), v0.413.0 (hops only over ground) and v0.413.1 (Dani's map import of 19:41). In Tessera Records, with Dani's yes ("ok approved. thanks"; Tessera DOCS bfa0285): the new topic Wayfinders, five decisions, the feature Call the wayfinders, Unlock with a floating object and the open question on where a mechanical bird sits moved there, and Learn the controls with its six steps. 7 November's 4 hours wait in the Bring in file.
