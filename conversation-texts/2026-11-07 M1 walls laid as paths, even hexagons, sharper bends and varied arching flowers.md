@@ -441,14 +441,74 @@ The other conversation's unsaved changes are in this same folder (src/editor.js,
 
 Handover pushed. Now saving this session's messages and pictures to claude-logs.
 
+Session text saved (28 images). Now printing the pictures to PDF for the Bring in file.
+
+The edges are a little sharper (v0.405.0) and the session is wrapped up. The records still need your yes before I enter them.
+
+**The edges:** path and wall bends now round off over 30% of each arm instead of 40%, still in two straight pieces, so the creases sit closer to the corner. I renamed the setting behind the Bends round off slider. That way Update M1 testing brings the new 0.3, instead of keeping the 0.4 M1 testing has. All 210 tests pass, and the game opens with no errors.
+
+**The other conversation** isn't in a separate tree. It works in this same folder, and its unsaved changes to the map editor (src/editor.js and src/island-map.js) are here. I didn't touch them and committed only my own files. The handover tells the next session to do the same.
+
+**Wrap-up:** the handover, the session text with its 28 pictures and the prompt for the next session are pushed. The pictures PDF is in the Bring in file. You haven't given today's hours, so none are logged.
+
+**Records:** these are my proposals. I wrote all the "why" lines myself, so check them.
+
+Q1. Add this decision (M1 M2 M3) to replace "Walls run straight across tiles" (30 October)? I recommend yes.
+> **Wall pieces are laid as paths are.** A wall piece is a strip across its tile, from the middle of one side to the middle of another: straight, a bend (60°) or a sharp bend (120°), turned 60° at a time. Its ends lie straight across its tile's sides, so the next tile's piece goes on with no gap or overlap. A bend's corner is rounded off in a few straight pieces. Six bends make a ring round a tile, and a wall running east–west zigzags from tile to tile. Walls no longer close into rectangles.
+> *Why:* Slabs across a tile's middle, turned 30° at a time, left gaps and overlaps where they met, more so far from the island's middle. Laid as paths are, pieces meet at the tiles' sides on every tile.
+
+Q2. Add this decision (M1 M2 M3) to replace the 23 October one ("Walls, stairs and crates can't stand on a pentagon")? I recommend yes.
+> **Only stone blocks can't stand on a pentagon.** A pentagon is plain ground that the player can walk on. Anything can stand on it except stone blocks, wall pieces included.
+> *Why:* Wall pieces are cut to their tile's shape, as paths are, so they fit a five-sided tile. Stone blocks move along rows of tiles, which a pentagon breaks.
+
+The open question for Jousef would then read: "must stone blocks also stay off each pentagon's first two rings? There, tiles bend round the pentagon, so a block pushed in a straight line would stop off the tiles' middles." Today it also names walls and stairs, and ends with "and a straight wall would come out crooked."
+
+Q3. Add this decision (M1 M2 M3)? I recommend yes.
+> **The planet's hexagons are all nearly one size.** Every hexagon on the planet is within 9% of the largest one's size. The 12 pentagons are about 78% of it.
+> *Why:* Even tiles make paths, walls and corner pieces fit the same way on every tile, and one tile's art fits them all.
+
+The other question for Jousef would then read: "how does M2's tile art handle the 12 pentagons?" It drops "and the smaller, bent tiles around them".
+
+Q4. Add this decision (M1 M2 M3)? You may find it a given.
+> **No two arching flowers are alike.** Each arching flower's stems are up to a quarter longer or shorter than its settings say. Each of its flowers is more open or more closed, its petals' tips rising up to 20° more or less. A flower keeps its own shape every time.
+> *Why:* Flowers with the same settings looked copied side by side; varied, a group looks grown.
+
+No record for the sharper bends (a look), paths and walls turning by each tile's own north (a fix) or the editor's bend button (a trial tool). v0.404.0 belongs to the other conversation.
+
+Glad the camera was only the mouse. Update M1 testing to get v0.405.0.
+
+---
+
+### Dani · 2026-11-07 17:41
+
+q1 is a design decision no? correct if i'm wrong. and programmers of m2 might solve it diferently
+q2 no need.i think ignore because again it's a garage solution of the unesperienced
+q3 nope solution, or fix not a decision
+q4 this one ok i think
+thanks. i can close this now?
+
+---
+
+### Claude · 2026-11-07 17:41
+
+Q1: yes, it's a design decision, and you're right about M2. So I'll record only what the player sees: the wall shapes, the 60° turns, the ends meeting at the tiles' sides and no rectangles. How the trial builds them stays out. Entering Q1 in that wording and Q4 now; nothing for Q2 and Q3.
+
+Writing the two decisions into Tessera Records: a dry run first, then for real.
+
+Both decisions are in. Checking whether the design documents changed, then updating the handover and session text.
+
+No design document changed. Updating the handover's records line.
+
+The other conversation committed v0.406.0 at 17:42, just before my handover, and both pushed cleanly. Correcting the times in my notes and mentioning v0.406.0, then saving the final session text.
+
 ---
 
 ## Prompt for the next session
 
-Continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1), at v0.405.0. Read tessera-m1\CLAUDE.md’s status first.
+Continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1), at v0.406.0. Read tessera-m1\CLAUDE.md’s status first.
 
-- Another conversation is reworking the map editor in this same folder (v0.404.0, the planet unwrapped; its unsaved changes to src/editor.js and src/island-map.js). Leave those files and editor.html to it, and commit only your own files.
-- Waiting for Dani: Update M1 testing to v0.405.0 (M1 testing is at v0.402.0); her answers to the four Tessera Records proposals of 7 November (walls laid as paths are, only stone blocks off pentagons, even hexagons, varied arching flowers, and the two pentagon questions for Jousef); her Bring in button.
+- Another conversation is reworking the map editor in this same folder (v0.404.0, the planet unwrapped; v0.406.0, the island put back together). Leave src/editor.js, src/island-map.js and editor.html to it while it works, and commit only your own files.
+- Waiting for Dani: Update M1 testing to the newest version (M1 testing is at v0.402.0); her Bring in button.
 - Wall pieces are strips laid as paths are: straight, bend or sharp bend, turned 60° at a time; they can stand on pentagons. Paths and walls turn by each tile’s own north.
 - The planet’s hexagons are within 9% of one size; pentagons 78%.
 - Bends round off over 30% of each arm in 2 straight pieces (DEMO_BEND_ROUND, DEMO_PATH_BEND_FACETS).
@@ -457,4 +517,4 @@ Continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1), at v0.40
 
 ## Closing note
 
-Session started on 7 November 2026 at about 13:32 and closed at about 17:50. It built v0.400.0 (wall pieces laid as paths are, paths and walls by each tile’s own north; Dani’s import of 02:15), v0.401.0 (the hexagons nearly one size), v0.402.0 and v0.405.0 (sharper bends) and v0.403.0 (no two arching flowers alike; Dani’s import of 14:51). v0.404.0 is the other conversation’s. The camera needed nothing: it was Dani’s mouse. Four decisions and two rewritten open questions are proposed for Tessera Records, waiting for Dani’s yes.
+Session started on 7 November 2026 at about 13:32 and closed at about 17:45. It built v0.400.0 (wall pieces laid as paths are, paths and walls by each tile’s own north; Dani’s import of 02:15), v0.401.0 (the hexagons nearly one size), v0.402.0 and v0.405.0 (sharper bends) and v0.403.0 (no two arching flowers alike; Dani’s import of 14:51). v0.404.0 and v0.406.0 are the other conversation’s. The camera needed nothing: it was Dani’s mouse. With Dani’s yes, two decisions are in Tessera Records: “Walls run straight or bend, and join at the tiles’ sides” and “No two arching flowers are alike”. Dani declined walls on pentagons and the even hexagons as decisions.
