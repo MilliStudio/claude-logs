@@ -531,13 +531,21 @@ Updating the Tessera Records line in the handover with what was entered:
 
 Now the next session's prompt and the closing note, then the session text:
 
+Text and 10 pictures saved. Printing the pictures to PDF for the Bring in file:
+
+Saved and pushed (claude-logs e938f6e). One last handover line: this session's pictures now wait in the Bring in file:
+
+Your import from M1 testing at 18:06 just arrived. I'll save it as v0.427.1 so nothing is left uncommitted. Checking what it changed:
+
+Everything is saved. The saved session text still says v0.427.0, so I'm updating its prompt to v0.427.1:
+
 ---
 
 ## Prompt for the next session
 
-Continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1), at v0.427.0. Read tessera-m1\CLAUDE.md's status first.
+Continue the M1 trial (Dropbox\Studio\Tessera\repositories\tessera-m1), at v0.427.1. Read tessera-m1\CLAUDE.md's status first.
 
-- Waiting for Dani: Update M1 testing to v0.427.0, and her play of the flowers bending, the camera sliders and the i icons; her Bring in button.
+- Waiting for Dani: Update M1 testing to v0.427.1, and her play of the flowers bending, the camera sliders and the i icons; her Bring in button.
 - Flowers bend: a giant flower is drawn in pieces (`giantFlower()`), each leaf and the head bending on its own by springs in `bendFlowers()`. Only the pictures move; where the player stands doesn't. The leaves' sliders are `DEMO_FLEX_*` and the head's `DEMO_FLEX_HEAD_*`, both written out in src/tuning.js (`LEAVES_BEND`, `HEADS_BEND`), as the copies find tuning values by literal names there.
 - Every slider in the map editor has an i icon; its words are in src/slider-info.js. A new slider needs its words there too, or it shows its note.
 - Online is still v0.417.0. Run npm run web:send only when Dani asks.
@@ -550,5 +558,6 @@ The session ran on 8 November 2026 from 16:21 to about 18:15, beside the item si
 - v0.423.0: sliders for what hides the player from the camera, and heads counted where they are drawn.
 - v0.425.0: bounce sliders, bounces when jumped off, a lift that holds while walked under, and Walked under, from.
 - v0.427.0: an i icon by every slider, the group headings back in the editor, and the head's sliders apart from the leaves'.
+- v0.427.1: Dani's import of 18:06.
 
 Tessera Records got three decisions and the Giant flower, Move and Hop features, with Dani's yes (Tessera DOCS 16d0f4e).
