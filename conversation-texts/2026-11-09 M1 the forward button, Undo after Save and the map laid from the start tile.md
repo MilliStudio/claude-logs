@@ -185,6 +185,60 @@ Now the handover edits: a status entry for this session, the 6,4 wording, and th
 
 Removing the merged worktree (checking first that nothing is left uncommitted in it):
 
+Session text saved with its 3 pictures. Now the PDFs for the Bring in file:
+
+Wrapped up, and everything is pushed to GitHub.
+
+- **Handover:** CLAUDE.md now has this session's entry (v0.449.0–v0.452.0). It also says M1 testing is waiting for Update M1 testing to v0.452.0. The other session adds its own entry next; we agreed the order by message so we didn't both edit the file at once.
+- **Session text:** saved to claude-logs with its 3 pictures, under "2026-11-09 M1 the forward button, Undo after Save and the map laid from the start tile". The other session saves its text under a different name.
+- **Bring in:** the session's pictures are in the Bring in file as a PDF, waiting for your button.
+- **Tessera Records:** nothing to enter, since all four versions are map editor tools.
+- **Worktree:** merged into main and removed, with nothing left over. The test server on port 4916 is stopped.
+
+Your next step is pressing Update M1 testing to get v0.452.0.
+
 ---
 
-The session ran on 9 November 2026 from about 18:17 to about 19:30, in a worktree beside the giant flowers and sliders session. It built v0.449.0 (the map editor's forward mouse button removes a thing, else the key items there, else the tile), v0.450.0 (Undo and Redo outlast a Save), v0.451.0 (a drag with the forward button removes on every tile crossed) and v0.452.0 (the editor lays the planet out from the start tile, after Dani's map turned once she started it over). No Tessera Records: map editor tools. The session's pictures are in the Bring in file as a PDF.
+### Dani · 2026-11-09 19:30
+
+can you please swap the delete button and the right mouse buttons. i mean their places. both side buttons will now handle positioning and the other lacement and removal
+
+---
+
+### Claude · 2026-11-09 19:31
+
+Clear: the right button becomes remove (with its drag), and the forward button takes over turning. The back button keeps moving and bending, so both side buttons do positioning. One detail I'll keep as it is: with the Height tool picked, a right-click still lowers the tile.
+
+Checking the version numbers with the other session, then starting a worktree.
+
+The other session has finished its handover (a954a76). `src/planet-plan.js` in the main folder has a change from one of your Saves; I'll look at it before committing. Starting the worktree:
+
+Now the edits: first the status messages that tell you which button turns things.
+
+Now the selection handler `onChosen()`:
+
+Now the click handler itself:
+
+The buttons are swapped in the editor's code. Now I'm updating the help text and README, then testing.
+
+Now the README:
+
+Updating my browser tests for the new buttons, and starting the worktree's test server:
+
+All pass (218 tests). Now your 19:26 Save in the main folder. Looking at what it changed before I bring it into this version:
+
+Your Save removed two tiles from the trial's map, and the flowers' saved stem-fade settings went too, as the other session's v0.447.0 intends. Checking which two tiles:
+
+The Save removed 9,3 (flower bulbs, 0.5 m up) and 8,4 (a path bend). Bringing that Save into v0.453.0 as the rules say, then running the tests on it:
+
+Tests pass. Now the handover in CLAUDE.md: my entry, "Waiting for Dani", and the other session's note about the uncommitted Save.
+
+v0.453.0 is committed in the worktree. I'm bringing it into the main folder now, making sure your 19:26 Save there is exactly the one I included.
+
+Identical, so nothing can be lost. Merging:
+
+Merged and pushed; the map file is your Save, byte for byte. Removing the worktree, then updating the session text with this last part:
+
+---
+
+The session ran on 9 November 2026 from about 18:17 to about 20:00, in worktrees beside the giant flowers and sliders session. It built v0.449.0 (the map editor's forward mouse button removes a thing, else the key items there, else the tile), v0.450.0 (Undo and Redo outlast a Save), v0.451.0 (a drag with the forward button removes on every tile crossed), v0.452.0 (the editor lays the planet out from the start tile, after Dani's map turned once she started it over) and v0.453.0 (the right button removes and the forward button turns, with Dani's Save of 19:26). No Tessera Records: map editor tools. The session's pictures are in the Bring in file as a PDF.
