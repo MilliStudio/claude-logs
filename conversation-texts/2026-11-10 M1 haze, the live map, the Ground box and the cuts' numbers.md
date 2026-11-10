@@ -623,6 +623,31 @@ I'm writing the handover in the trial's CLAUDE.md now.
 
 That was a false alarm from my search pattern, which matched ordinary apostrophes. The handover is committed and pushed. Next, the session text and pictures:
 
+I've wrapped up:
+- **Handover:** this session's notes are in the trial's CLAUDE.md, committed and pushed.
+- **Session record:** the session text and its 29 pictures are saved in claude-logs and pushed.
+- **Bring in:** the pictures PDF is in the Bring in file, waiting for your button.
+- **M1 testing:** press Update M1 testing to bring it up to v0.472.0.
+
+**Tessera Records:** there's one entry to make, and it changes a decision of yours, so I'm asking first.
+
+On 11 September 2026 you decided **"No fog."** under Art and audio › Visual direction. It was at the first team meeting, about your concept painting: "The fog. There's no more fog." The haze goes against that.
+
+**Q1.** Should I enter this new decision, replacing "No fog."? I recommend yes.
+
+- **Decision:** Distant land softens into the sky's colour, always gradually.
+- **Milestones:** M1 M2 M3
+- **Why:** Without it, the scene lacked depth, and the far side of the island stood flat against the sky. A haze in the sky's own colour makes distance readable and blends the island into the sky. It thickens so gradually that nothing is seen changing as the player walks toward it, so it never acts like fog that hides the world.
+
+The why comes from your own words: "i feel it's lacking an element without it", "atmospheric perspective always gradual" and "you shuld never be able to see the change happen in front of you". Everything else from this session is trial tools or slider settings, so it gets no records.
+
 ---
 
-The session ran on 10 November 2026 from about 16:20 to about 20:55, beside the afternoon session until about 16:50. It built v0.461.0 to v0.472.0: the haze, what lies farther away turning toward the sky's colour, always gradually (Haze at its fullest, Haze starts at, Haze fades in over, 20 to 200 m); the live map (v0.466.0: the game shows each change to the map without Save or reloading, and the second reload after a Save is gone); in the map editor, the Height tool adding and removing tiles, Select by brushing and Select area by a box, the folding side panel, greyed placed key items, the Layer row, the tile's Height box and the Selected box in the Ground box, and the cuts' numbers (v0.470.0). Tessera Records: Claude proposed a decision replacing "No fog." of 11 September 2026, "Distant land softens into the sky's colour, always gradually", waiting for Dani's answer. Waiting for Dani: Update M1 testing to v0.472.0.
+### Dani · 2026-11-10 20:48
+
+it's a given, no need. 
+thanks
+
+---
+
+The session ran on 10 November 2026 from about 16:20 to about 21:00, beside the afternoon session until about 16:50. It built v0.461.0 to v0.472.0: the haze, what lies farther away turning toward the sky's colour, always gradually (Haze at its fullest, Haze starts at, Haze fades in over, 20 to 200 m); the live map (v0.466.0: the game shows each change to the map without Save or reloading, and the second reload after a Save is gone); in the map editor, the Height tool adding and removing tiles, Select by brushing and Select area by a box, the folding side panel, greyed placed key items, the Layer row, the tile's Height box and the Selected box in the Ground box, and the cuts' numbers (v0.470.0). Tessera Records: nothing entered; Dani declined a decision replacing "No fog." ("it's a given, no need"). Waiting for Dani: Update M1 testing to v0.472.0.
