@@ -492,6 +492,62 @@ Now writing the handover note for the next session.
 
 Now the session's text and its picture book.
 
+The session is closed:
+- The handover for the next session is written and pushed.
+- This session's messages are saved to claude-logs and pushed.
+- Its 5 pictures are a PDF in the Bring in file, waiting for your button.
+
+**Tessera Records.** The small wayfinder records entered at 16:15 today still describe the unlock range, so they need correcting:
+
+**1. A new decision** (M1 M2 M3, Game › Wayfinders). The old decision stays, since decisions are never edited.
+- **Decision:** A small waypoint unlocks the tiles linked to it, wherever they lie.
+- **Text:** A small waypoint unlocks only the tiles the level designer links to it, near or far, as a waypoint does. It has no unlock range. This replaces the unlock range in "Small wayfinders unlock tiles without reviving them".
+- **Why** (my wording, from your reason): Only reviving covers an area round the bird, and small wayfinders revive nothing. So what a small waypoint unlocks follows its links, as a waypoint's does.
+
+**2. The feature "Unlock with a floating object"**
+- Replace: "When it has all it needs, every tile within its unlock range grows up out of the void, unhappy: its small wayfinder revives nothing. The unlock range is a set number of tiles across round it, counted as reviving areas are. It leaves out the start tile and the tiles another waypoint unlocks."
+- With: "When it has all it needs, the tiles linked to it grow up out of the void, near or far, unhappy: its small wayfinder revives nothing."
+- Delete the table row "Unlock range | 3 tiles across (the 6 tiles round it)".
+
+I propose no record for waypoints starting empty and the two tick boxes. They're map building, like the defaults of 10 November.
+
+Q1. Shall I enter 1 and 2? I recommend yes.
+
 ---
 
-Closed at about 20:30 on 11 November 2026, at v0.481.0. Waiting for Dani's yes: the Tessera Records decision "A small waypoint unlocks the tiles linked to it, wherever they lie" (M1 M2 M3) and Unlock with a floating object rewritten to match. Next: Dani's Update M1 testing.
+### Dani · 2026-11-11 20:29
+
+you don't need to mention the range at all, just that it doesn't revive any tiles when it unlocks them
+
+---
+
+### Claude · 2026-11-11 20:29
+
+Here are the two entries again, with no range in either:
+
+**1. "Unlock with a floating object"**
+- Replace the three range sentences with: "When it has all it needs, the tiles linked to it grow up out of the void: its small wayfinder revives none of them."
+- Delete the table row "Unlock range".
+
+**2. A new decision** (M1 M2 M3, Game › Wayfinders). The decision entered at 16:15 still says "every tile within its unlock range rises out of the void". Decisions are never edited, so only a new decision can replace that sentence.
+- **Decision:** A small waypoint unlocks the tiles linked to it without reviving them.
+- **Text:** A small waypoint unlocks the tiles linked to it, as a waypoint does. Its small wayfinder revives none of them. This replaces how "Small wayfinders unlock tiles without reviving them" says the tiles are chosen.
+- **Why** (my wording): Small wayfinders open the way without bringing the land back to life, so what they unlock is only what the level designer links.
+
+Q1. Shall I enter 1 and 2? I recommend yes. Without 2, the old decision's range sentence stays as the latest decision.
+
+---
+
+### Dani · 2026-11-11 20:30
+
+ok
+
+---
+
+### Claude · 2026-11-11 20:30
+
+The records are entered and the design documents are pushed. Now updating the handover's Tessera Records line and the saved session text.
+
+---
+
+Closed at about 20:45 on 11 November 2026, at v0.481.0. Tessera Records: the decision "A small waypoint unlocks the tiles linked to it without reviving them" (M1 M2 M3) and Unlock with a floating object without the range, entered with Dani's ok (Tessera DOCS 733c3ff). Next: Dani's Update M1 testing.
