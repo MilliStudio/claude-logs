@@ -522,6 +522,60 @@ You're right. "Finding what is current" already says to check the project's file
 
 The path lost its backslashes. Fixing that.
 
+Everything's saved for the next conversation:
+- **The prompt** is in my message above and at the end of this session's saved text. The next session reads it when it starts, so you don't need to paste it.
+- **The handover** lists the four things that aren't fixed, and the proposed rule is dropped.
+- **The session text** is saved with all 6 pictures and pushed. The pictures PDF waits for your Bring in button.
+
+Nothing else was changed in the game.
+
 ---
 
-The session ran on 11 November 2026 from about 14:45 to about 16:25, beside the In the void sliders session (v0.476.0). It built v0.475.0, small wayfinders and small waypoints, then v0.476.1 (a new small waypoint needs nothing until Make default) and v0.477.0 (Follows the waypoint before it, and Each next needs more by, x + x / 2), restoring Dani's formula, which Claude had dropped on 10 November after misreading "only wayfinders get defaults". Tessera Records: the decision "Small wayfinders unlock tiles without reviving them" and three features entered (Tessera DOCS b820648). Not fixed, for the next session (its prompt is above): a waypoint put down still takes its kind's default, where Dani wants it only by its button; M1 testing kept the made-up 5 and 5, as Update M1 testing keeps a copy's defaults; the unlock range hides the drawn tiles round a small waypoint, which Dani doesn't want; and the live map and saving to be tested from start to finish. Waiting for Dani: the next session.
+### Dani · 2026-11-11 16:27
+
+why did the tiles around mini waypoints disappear and link to the tiles around it. i'm worried about giving your prompt to a new conversation
+
+---
+
+### Claude · 2026-11-11 16:27
+
+The tiles disappear because of how I built the unlock range. It wasn't damage.
+
+**What my code does:** I read "unlock range" as every tile within that many tiles of the small waypoint staying hidden in the void until the waypoint is fed. Take the one on -8,-8, with a range of 3. The range covers the 6 tiles touching it. My code puts those 6 into the same state as tiles you link to a waypoint: waiting in the void. So they vanish from the game, and the editor draws an orange line to each, the same line it draws for a link. My Q1 described this in words ("those tiles would wait in the void until it's fed"), but with no picture. You said yes to something different from what I meant.
+
+**Your worry about the prompt is fair.** It has the same weakness that caused this session's problems:
+- It states your rules in my words. If any of them is a misreading, the next session builds on it, just as my misreading of yesterday's answer carried into today.
+- It suggests one meaning for "unlock range", which is my guess and could steer the next session.
+- It tells the next session to fix points 1 and 2 straight away.
+
+Here's a safer version. It gives your exact words, marks my readings as unconfirmed, and makes the next session show you what it understood and wait for your yes before changing anything.
+
+Written for: the next Claude session.
+
+```
+Small waypoints and waypoint defaults in the M1 trial, from 11 November 2026. Change no code until Dani has said yes to your plan.
+
+1. Read the whole saved chat claude-logs\conversation-texts\2026-11-11 M1 small wayfinders.md, and the defaults part of 2026-11-10 M1 Send the map undone, Start over's camera, i icons, the void hop and waypoint defaults.md (Dani's messages from 15:59 to 16:00). Treat Claude's readings in them as unconfirmed: two of them were wrong.
+
+2. Dani's words, exactly:
+   - 10 November: "can you remove default resquired resources form wayfindes, machines, lanterns and guardians. wayfinders require a lot of repetition though, so perhaps 1. add the same buttons as giant flowers: one to save a default value, and one to assign a default value to a wayfinder. 2.remove the defaults checkbox, and instead add a checkbox for the wayfinder to follow the equirements of the linking waypoint 3. add a slider to increase the required amount by a formula", then "only wayfinders get defaults".
+   - 11 November: "a new type of wayfinder, one that unlocks tiles but not awaken them. same design as the first wayfinders just smaller, slower, and they sway slowly from side to side while flying ... they should have their own sliders. flap speed, sway amount, sway speed, and speed and mane unlock range. of course what's they're fed too"; "all reviving objects must have no defaults. waypoints have the two buttons and a slider with the increase formula i gave you"; "each waypoint has the two default buttons, one to save as default, and one to use the default. there is a checkbox or slider that increases the amount required by the linking waypoint by a formula ... x=x+(x / 2)"; "how many times must i say small waypoint just like normal one except for the diferences i specified"; "they're not fixed"; "the mini wayfinders make the tiles around them disappear and create their own links".
+
+3. What the code does now, to check against her words (M1 v0.477.0):
+   - A waypoint put down in the map editor starts with its kind's default (waypointDefault and smallDefault in apply(), asSmall() and onLayerTool() in src/editor.js). Her game showed a new waypoint needing 0/10 and 0/10.
+   - M1 testing (..\M1 trial 2 tuning) still has DEMO_SMALL_WAYPOINT_NEEDS = { fragment: 5, pinecone: 5 }, numbers Claude made up. Update M1 testing keeps a copy's DEFAULTS (scripts/copy-parts.mjs), so the trial's empty value never reached it. The trial's handover has a rule for this: give the constant a new name.
+   - A small waypoint hides every drawn tile within its unlock range until it is fed, and the editor draws orange lines to them (smallRaises() and withSmallRaises() in src/planet-plan.js, rangesNow() in src/editor.js). Claude described this in words, Dani said yes, and it isn't what she meant. What she does mean by "unlock range" is unknown.
+   - Follows the waypoint before it and Each next needs more by (x + x / 2) were built in v0.477.0 and work.
+
+4. Then write Dani a short plain summary: what you understand she wants for each point, and what you would change. Show a picture of the map behaviour for the unlock range. Ask only what her words leave open, as numbered questions with recommendations. Build only after her yes.
+
+5. Dani suspects the map's saving and the live map (v0.466.0, v0.473.0). Test them from start to finish in a hidden browser, on a scratch copy and in M1 testing's state, and report what you find before fixing.
+
+Run node --check after every edit, since Dani's trial and M1 testing run live. Another session may be working in the same folder.
+```
+
+Saving it as the last prompt in this session's text.
+
+---
+
+The session ran on 11 November 2026 from about 14:45 to about 16:35, beside the In the void sliders session (v0.476.0). It built v0.475.0, small wayfinders and small waypoints, then v0.476.1 (a new small waypoint needs nothing until Make default) and v0.477.0 (Follows the waypoint before it, and Each next needs more by, x + x / 2), restoring Dani's formula, which Claude had dropped on 10 November after misreading "only wayfinders get defaults". Tessera Records: the decision "Small wayfinders unlock tiles without reviving them" and three features entered (Tessera DOCS b820648). Not fixed, for the next session: a waypoint put down still takes its kind's default; M1 testing kept the made-up 5 and 5; the unlock range hides the drawn tiles round a small waypoint, which Dani doesn't want; the live map and saving to be tested. The prompt for the next session is the second one, in Claude's last message, which changes no code until Dani says yes.
