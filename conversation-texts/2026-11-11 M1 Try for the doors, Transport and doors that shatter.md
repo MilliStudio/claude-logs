@@ -134,6 +134,18 @@ This session has no pictures for the picture book: you sent none, and I showed y
 
 Writing the handover entry in the M1 file.
 
+### Claude · 2026-11-11 23:52
+
+Here is the Tessera Records proposal. It is the secret tiles session's proposal for **Find a hidden passage**, which you haven't answered yet, with the crumbling changed to shattering. The feature is in M1, Environmental interactions and puzzles, and it prints in DOCS/08.
+
+1. **Input:** change "a crack in a wall the player walks into and pushes for 1 second" to "a crack in a wall **or in the side of a tile** that the player walks into and pushes for 1 second". Change "Only the crack in a wall is designed so far." to "Only the cracks in walls and tiles are designed so far."
+2. **Behaviour.** It says now: "After 1 second of walking into it, a doorway about 1.2 m wide and 2 m tall opens low in the wall, and the way opens." It would say: "After 1 second of walking into it, the rock in its doorway shatters, as a dried giant flower does. A doorway about 1.2 m wide and 2 m tall opens low in the wall, inside the rough mouth of a cave, and the way opens."
+3. **Behaviour, a new paragraph** before "The other kinds are designed together with the map": "A secret tile looks just like a raised tile, grass and all. Two opposite sides of it show the crack, at a height set for each tile. Walking into either crack opens a doorway straight through the tile in the same way. The rest of the tile stays, and its top is walked on as any tile's."
+
+**No decisions:** the shattering and the cave mouth refine how the doorway opens, and secret tiles are an addition the feature already expected. **No record** for the doors' Try button or Transport (trial tools), or the door sliders (tuning).
+
+Q1. Shall I enter 1 to 3? I recommend yes.
+
 ---
 
 Closed at about 23:55 on 11 November 2026, at v0.487.0. Tessera Records: Find a hidden passage (cracks in tiles too, the rock shattering as a dried giant flower does, the cave's mouth, secret tiles), no decisions, proposed and waiting for Dani's answer. Next: Dani's Update M1 testing to v0.487.0 and her play of the doors, Transport and the doors' Try.
