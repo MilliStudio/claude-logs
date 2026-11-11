@@ -146,6 +146,16 @@ Here is the Tessera Records proposal. It is the secret tiles session's proposal 
 
 Q1. Shall I enter 1 to 3? I recommend yes.
 
+### Dani · 2026-11-11 23:53
+
+yes please enter it
+
 ---
 
-Closed at about 23:55 on 11 November 2026, at v0.487.0. Tessera Records: Find a hidden passage (cracks in tiles too, the rock shattering as a dried giant flower does, the cave's mouth, secret tiles), no decisions, proposed and waiting for Dani's answer. Next: Dani's Update M1 testing to v0.487.0 and her play of the doors, Transport and the doors' Try.
+### Claude · 2026-11-11 23:58
+
+Entered: Find a hidden passage now has cracks in tiles too, the rock in its doorway shattering as a dried giant flower does, the cave's mouth, and the paragraph on secret tiles (version 8; version 7 had the words, 8 joins its paragraphs as the other features' are so they print inside its entry). The design documents are pushed. No decisions.
+
+---
+
+Closed at about 23:58 on 11 November 2026, at v0.487.0. Tessera Records: Find a hidden passage (cracks in tiles too, the rock shattering as a dried giant flower does, the cave's mouth, secret tiles), no decisions, entered with Dani's "yes please enter it" (Tessera DOCS 684acdd, 3719395). Next: Dani's Update M1 testing to v0.487.0 and her play of the doors, Transport and the doors' Try.
