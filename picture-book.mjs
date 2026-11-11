@@ -38,10 +38,9 @@ const forTheBook = (f) => PICTURE.test(f) && /^\d{3} (Dani|Claude to Dani)\./.te
 const today = new Date().toLocaleDateString('sv-SE', { timeZone: 'Europe/Stockholm' });
 const escape = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
-// Original files' categories in Tessera Records: the game's sessions give design documents, the app's technical ones.
-const categoryOf = (name) => (/ M1 |Repetitions in the documents|Getting to know Tessera's files/.test(name) ? 'design_document'
-  : /Tessera Design|Tessera Records|Studio Records|One app|Exchange step|TD screens|session [0-9a-f]{8}$/.test(name) ? 'technical_document'
-    : 'other');
+// Every page and picture book is an original file of its own type in Tessera Records, Session pictures and pages, so
+// the Original files page can show them alone (Dani, 11 November 2026: "isn't a menu with types better?").
+const CATEGORY = 'session_pictures';
 
 // The chat line each picture came with, by its file: who wrote the message and when, and the text nearest before the
 // picture in it, or after it where the picture opens the message.
@@ -123,7 +122,7 @@ function printPage(name, file) {
   return {
     key: `page ${name.slice(0, 10)} ${title}`, action: 'create', table: 'documents', summary: `Original file: Page: ${title}`,
     fields: {
-      name: `Page: ${title}`, category: categoryOf(name), event_date: name.slice(0, 10), evidence_source: 'source_document',
+      name: `Page: ${title}`, category: CATEGORY, event_date: name.slice(0, 10), evidence_source: 'source_document',
       notes: `A page Claude made for Dani in the session "${name}", printed to PDF on ${today}. The page itself is claude-logs\\images\\${name}\\${file}.`,
     },
     file: pdf, skip_if: { field: 'name', value: `Page: ${title}` }, reconstructed: name.slice(0, 10) < today,
@@ -163,7 +162,7 @@ ${figures.join('\n')}
   return {
     key: `pictures ${name}`, action: 'create', table: 'documents', summary: `Original file: Pictures: ${name} (${pictures.length} pictures)`,
     fields: {
-      name: `Pictures: ${name}`, category: categoryOf(name), event_date: date, evidence_source: 'source_document',
+      name: `Pictures: ${name}`, category: CATEGORY, event_date: date, evidence_source: 'source_document',
       notes: `The ${pictures.length} pictures of the Claude Code session "${name}", in the order they came, each marked Dani or Claude`
         + `${placed ? ' with the chat line it came with' : ''}, printed to PDF by Claude on ${today} from claude-logs\\images\\${name}\\.`
         + ' Claude\'s are the pictures Claude made or showed Dani to explain something. Dani\'s can include references from other games, or photos, which aren\'t Tessera\'s work.',
