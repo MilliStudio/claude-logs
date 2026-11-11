@@ -1,6 +1,6 @@
 # M1 mining animation, rock pick and the save fix
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-06 M1 mining animation, rock pick and the save fix\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-06 M1 mining animation, rock pick and the save fix", numbered as here. Private: never commit or share.
 
 ---
 
@@ -16,17 +16,17 @@ I'm reading how the arms session took frames from Dani's earlier knife video, so
 
 Found the frame tool from the knife session. Now pulling stills from your 17:01 recording.
 
-Claude looked at [image 001](<../images/2026-11-06 M1 mining animation, rock pick and the save fix/001 Claude.jpg>)
+Claude looked at picture 001
 
-Claude looked at [image 002](<../images/2026-11-06 M1 mining animation, rock pick and the save fix/002 Claude.jpg>)
+Claude looked at picture 002
 
-Claude looked at [image 003](<../images/2026-11-06 M1 mining animation, rock pick and the save fix/003 Claude.jpg>)
+Claude looked at picture 003
 
 Now the harvest code and how rocks are knocked today.
 
 Reading the README's harvesting and knife entries, then I'll write the hammer and its swing.
 
-Claude looked at [image 004](<../images/2026-11-06 M1 mining animation, rock pick and the save fix/004 Claude.jpg>)
+Claude looked at picture 004
 
 Writing the rock pick now: its shape, then a chop swing timed from the video. First, the helpers the knife's shape is built from.
 
@@ -76,9 +76,9 @@ Answering your question about the squashed kit icon first. Looking at how the ki
 
 In the trial, the kit picture is square (46 × 46 px from a 160 × 160 picture). Looking at the screenshot. Then I'll check why the tally sliders don't save in M1 testing.
 
-Claude looked at [image 005](<../images/2026-11-06 M1 mining animation, rock pick and the save fix/005 Claude.png>)
+Claude looked at picture 005
 
-Claude looked at [image 006](<../images/2026-11-06 M1 mining animation, rock pick and the save fix/006 Claude.png>)
+Claude looked at picture 006
 
 The picture isn't stretched: it's square and drawn at its true shape. The satchel model itself is wide and low, so it reads as squashed. Comparing it with the kit's old flat icon.
 
@@ -122,23 +122,23 @@ The only clash is the version in that note, as expected. Keeping the committed o
 
 The pick work is back on top of v0.377.1. Now looking at the side shots of the slowed chop.
 
-Claude looked at [image 007](<../images/2026-11-06 M1 mining animation, rock pick and the save fix/007 Claude.png>)
+Claude looked at picture 007
 
 The camera ended up behind and too far, with a wall in the way, so the pick is tiny. Moving the camera closer and to the other side, and cropping to the player.
 
-Claude looked at [image 008](<../images/2026-11-06 M1 mining animation, rock pick and the save fix/008 Claude.png>)
+Claude looked at picture 008
 
 Two things to sort out. The pick vanished after the first chop in this run, and the camera angle hides which hand holds it. Checking the hit count and how many hits use a rock up.
 
 The hit lands exactly as the pick meets the rock (shot 5), and two rocks of the cluster took it. Looking at the shots.
 
-Claude looked at [image 009](<../images/2026-11-06 M1 mining animation, rock pick and the save fix/009 Claude.png>)
+Claude looked at picture 009
 
-Claude looked at [image 010](<../images/2026-11-06 M1 mining animation, rock pick and the save fix/010 Claude.png>)
+Claude looked at picture 010
 
 Tests pass. Re-shooting the front view to check the higher strike.
 
-![Claude's image 011](<../images/2026-11-06 M1 mining animation, rock pick and the save fix/011 Claude to Dani.png>)
+Claude's picture 011
 
 The bulbs I picked may not have turned green yet. The earlier runs showed the knife out at the start position, so checking there instead.
 
@@ -174,11 +174,11 @@ The game shot from the front is `C:\Users\someo\AppData\Local\Temp\claude\c--Use
 
 I can also add the reference video to Tessera Records as an original file, as was done with the knife video.
 
-![Claude's image 012](<../images/2026-11-06 M1 mining animation, rock pick and the save fix/012 Claude to Dani.png>)
+Claude's picture 012
 
-![Claude's image 013](<../images/2026-11-06 M1 mining animation, rock pick and the save fix/013 Claude to Dani.png>)
+Claude's picture 013
 
-Again: [image 011](<../images/2026-11-06 M1 mining animation, rock pick and the save fix/011 Claude to Dani.png>)
+Again: picture 011
 
 ---
 
@@ -216,9 +216,9 @@ Now the version, the tests, and a look at the button in the game.
 
 The button sits right under the menu button. Pressing it gave the kit and 10,000 of each. Looking at the shots.
 
-Claude looked at [image 014](<../images/2026-11-06 M1 mining animation, rock pick and the save fix/014 Claude.png>)
+Claude looked at picture 014
 
-Claude looked at [image 015](<../images/2026-11-06 M1 mining animation, rock pick and the save fix/015 Claude.png>)
+Claude looked at picture 015
 
 Both buttons follow each other: with the map editor open, they move beside it, under the harvesting box. The row by Close now has Restore all, Save and Start over. Saving v0.379.0.
 
@@ -252,7 +252,7 @@ The video waits in the Bring in file (9 records now). Now the kit picture. Readi
 
 The rounded ends make the picture's bag 0.84 m wide and only 0.39 m tall. Making it about 0.6 m wide and 0.49 m tall, the old icon's proportions, keeping its flap, point and buckle.
 
-Claude looked at [image 016](<../images/2026-11-06 M1 mining animation, rock pick and the save fix/016 Claude.png>)
+Claude looked at picture 016
 
 The bag is now nearly square, as the old icon was, with its flap and gold buckle. Updating the README, then saving v0.380.0.
 

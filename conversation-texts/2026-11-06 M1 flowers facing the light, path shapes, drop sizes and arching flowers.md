@@ -1,6 +1,6 @@
 # 6 November 2026: M1 flowers facing the light, path shapes, drop sizes and arching flowers
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-06 M1 flowers facing the light, path shapes, drop sizes and arching flowers\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-06 M1 flowers facing the light, path shapes, drop sizes and arching flowers", numbered as here. Private: never commit or share.
 
 ---
 
@@ -75,21 +75,21 @@ Adding a read-out to `window.planet` so the hidden browser can fit the light to 
 
 Code complete. Running the hidden browser to read every head and fit the light.
 
-Claude looked at [image 001](<../images/2026-11-06 M1 flowers facing the light, path shapes, drop sizes and arching flowers/001 Claude.png>)
+Claude looked at picture 001
 
-Claude looked at [image 002](<../images/2026-11-06 M1 flowers facing the light, path shapes, drop sizes and arching flowers/002 Claude.png>)
+Claude looked at picture 002
 
 The pictures look right so far: the giant heads lean gently toward the start. Adding one small test helper to walk to any place, to get a close look at an arching flower.
 
-Claude looked at [image 003](<../images/2026-11-06 M1 flowers facing the light, path shapes, drop sizes and arching flowers/003 Claude.png>)
+Claude looked at picture 003
 
-Claude looked at [image 004](<../images/2026-11-06 M1 flowers facing the light, path shapes, drop sizes and arching flowers/004 Claude.png>)
+Claude looked at picture 004
 
-Claude looked at [image 005](<../images/2026-11-06 M1 flowers facing the light, path shapes, drop sizes and arching flowers/005 Claude.png>)
+Claude looked at picture 005
 
-Claude looked at [image 006](<../images/2026-11-06 M1 flowers facing the light, path shapes, drop sizes and arching flowers/006 Claude.png>)
+Claude looked at picture 006
 
-Claude looked at [image 007](<../images/2026-11-06 M1 flowers facing the light, path shapes, drop sizes and arching flowers/007 Claude.png>)
+Claude looked at picture 007
 
 The arching flowers by the start now face up at the ends of their stems (tilts 4–10°). Updating the tests.
 
@@ -107,7 +107,7 @@ Now the version: v0.381.0, with your map save that was waiting (17,4's flower re
 
 v0.381.0 is saved and pushed. Now the forks.
 
-Claude looked at [image 008](<../images/2026-11-06 M1 flowers facing the light, path shapes, drop sizes and arching flowers/008 Claude.png>)
+Claude looked at picture 008
 
 I've finished the flower heads and pushed them as v0.381.0. Press **Update M1 testing** to get it there.
 
@@ -156,19 +156,19 @@ You imported your map from M1 testing at 19:36; it'll go in with this version. C
 
 Your import's flowers have no Head faces the light setting written yet, so they all face the light by default. Now the visual check on the copy.
 
-Claude looked at [image 009](<../images/2026-11-06 M1 flowers facing the light, path shapes, drop sizes and arching flowers/009 Claude.png>)
+Claude looked at picture 009
 
-Claude looked at [image 010](<../images/2026-11-06 M1 flowers facing the light, path shapes, drop sizes and arching flowers/010 Claude.png>)
+Claude looked at picture 010
 
-Claude looked at [image 011](<../images/2026-11-06 M1 flowers facing the light, path shapes, drop sizes and arching flowers/011 Claude.png>)
+Claude looked at picture 011
 
-Claude looked at [image 012](<../images/2026-11-06 M1 flowers facing the light, path shapes, drop sizes and arching flowers/012 Claude.png>)
+Claude looked at picture 012
 
-Claude looked at [image 013](<../images/2026-11-06 M1 flowers facing the light, path shapes, drop sizes and arching flowers/013 Claude.png>)
+Claude looked at picture 013
 
 Still checking the paths in the game. The camera was too low to see them, so I'm tilting it to look down on 10,5.
 
-Claude looked at [image 014](<../images/2026-11-06 M1 flowers facing the light, path shapes, drop sizes and arching flowers/014 Claude.png>)
+Claude looked at picture 014
 
 From above, the fan on 10,5 runs into the path on 9,4, the bulbs on 10,4 and the rocks on 11,4. The branching paths on 9,5 and 11,5 join it. Stopping the copy and saving the version.
 
@@ -252,15 +252,15 @@ Five tests still describe the old flower boxes; updating them.
 
 All 205 tests pass. Looking at the arching flowers in the game now.
 
-Claude looked at [image 015](<../images/2026-11-06 M1 flowers facing the light, path shapes, drop sizes and arching flowers/015 Claude.png>)
+Claude looked at picture 015
 
-Claude looked at [image 016](<../images/2026-11-06 M1 flowers facing the light, path shapes, drop sizes and arching flowers/016 Claude.png>)
+Claude looked at picture 016
 
 The flowers are too small in these shots. Moving the camera in close to the long arching flower on 4,8.
 
-Claude looked at [image 017](<../images/2026-11-06 M1 flowers facing the light, path shapes, drop sizes and arching flowers/017 Claude.png>)
+Claude looked at picture 017
 
-Claude looked at [image 018](<../images/2026-11-06 M1 flowers facing the light, path shapes, drop sizes and arching flowers/018 Claude.png>)
+Claude looked at picture 018
 
 ---
 
@@ -273,9 +273,9 @@ can you place the start over button above the get all button, make it the same d
 
 ### Claude · 2026-11-06 20:05
 
-Claude looked at [image 019](<../images/2026-11-06 M1 flowers facing the light, path shapes, drop sizes and arching flowers/019 Claude.png>)
+Claude looked at picture 019
 
-Claude looked at [image 020](<../images/2026-11-06 M1 flowers facing the light, path shapes, drop sizes and arching flowers/020 Claude.png>)
+Claude looked at picture 020
 
 Both look right. The start-tile flower on 5,6 shows its three heads as a small cluster with its leaves. Updating the README, then saving v0.384.0.
 
@@ -291,9 +291,9 @@ Now the editor's side of the Tutorial box.
 
 The panel opens right under Get all items, so it moves down one button too.
 
-Claude looked at [image 021](<../images/2026-11-06 M1 flowers facing the light, path shapes, drop sizes and arching flowers/021 Claude.png>)
+Claude looked at picture 021
 
-Claude looked at [image 022](<../images/2026-11-06 M1 flowers facing the light, path shapes, drop sizes and arching flowers/022 Claude.png>)
+Claude looked at picture 022
 
 v0.385.0 is pushed. Now Tessera Records and the wrap-up. Reading the recording rules first.
 
@@ -365,7 +365,7 @@ not sure if i'm blind but i can't find the tutorial box
 
 It's not you — I put it in the editor's left column, under the Ground tools next to that column's Save. You were most likely looking at the Save in the top row by Close. I'll move it there. Checking that row's markup.
 
-Claude looked at [image 023](<../images/2026-11-06 M1 flowers facing the light, path shapes, drop sizes and arching flowers/023 Claude.png>)
+Claude looked at picture 023
 
 It now sits in the top row: Restore all, Saved, ☑ Tutorial, Close. Ticking and unticking it works. Saving the fix.
 

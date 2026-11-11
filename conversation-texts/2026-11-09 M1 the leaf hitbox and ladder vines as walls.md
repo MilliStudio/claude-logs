@@ -1,6 +1,6 @@
 # M1 the leaf hitbox and ladder vines as walls
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-09 M1 the leaf hitbox and ladder vines as walls\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-09 M1 the leaf hitbox and ladder vines as walls", numbered as here. Private: never commit or share.
 
 ---
 
@@ -35,17 +35,17 @@ The model matches the game on 96% of points. The game stops the player 0.23 m so
 
 Now the model and the game agree within 0.1 m on where the player stops. Rendering the two pictures to look at them.
 
-Claude looked at [image 001](<../images/2026-11-09 M1 the leaf hitbox and ladder vines as walls/001 Claude.png>)
+Claude looked at picture 001
 
-Claude looked at [image 002](<../images/2026-11-09 M1 the leaf hitbox and ladder vines as walls/002 Claude.png>)
+Claude looked at picture 002
 
 The second picture is too cramped: the text runs over the band edges. Making it taller and fixing the table's column in the first one.
 
-Claude looked at [image 003](<../images/2026-11-09 M1 the leaf hitbox and ladder vines as walls/003 Claude.png>)
+Claude looked at picture 003
 
-![Claude's image 004](<../images/2026-11-09 M1 the leaf hitbox and ladder vines as walls/004 Claude to Dani.png>)
+Claude's picture 004
 
-![Claude's image 005](<../images/2026-11-09 M1 the leaf hitbox and ladder vines as walls/005 Claude to Dani.png>)
+Claude's picture 005
 
 Both pictures read cleanly now. Opening them in VS Code for you.
 
@@ -98,9 +98,9 @@ One side effect: your body could hang up to 0.15 m over any leaf edge, not just 
 
 I haven't timed the difference. I can time 20 of each if you want numbers.
 
-Again: [image 004](<../images/2026-11-09 M1 the leaf hitbox and ladder vines as walls/004 Claude to Dani.png>)
+Again: picture 004
 
-Again: [image 005](<../images/2026-11-09 M1 the leaf hitbox and ladder vines as walls/005 Claude to Dani.png>)
+Again: picture 005
 
 ---
 
@@ -113,7 +113,7 @@ before you fix them though, some might have become redundant
 wiwth jumps in the game now, i want to simplify how it behaves. jumping or hopping at a certain distance will cause the player to latch on. jumping again will let go. if there is only void below the player as in the pic i attached, the player sohuld be able to hop or jump ont the closest walkable ground.
 don't do or build anything yet, first please explain to me how you'd go about this, please create another image like the one you just did explaining how vines work programming wise. how you set the latching trigger, what actions are triggered in what situdation, etc
 
-![Dani's image 006](<../images/2026-11-09 M1 the leaf hitbox and ladder vines as walls/006 Dani.jpg>)
+Dani's picture 006
 
 ---
 
@@ -123,17 +123,17 @@ I'll read the vine code first: getting on, climbing, and each getting-off slider
 
 The test reproduces it. Down: stuck at the foot. Left, over the void: stuck. Right: it let go and dropped 5.6 m onto a tile that happened to lie below on that side. Checking "over the top" too.
 
-Claude looked at [image 007](<../images/2026-11-09 M1 the leaf hitbox and ladder vines as walls/007 Claude.png>)
+Claude looked at picture 007
 
 I have the full picture. Drawing two images: how vines work now and why you got stuck, then the design I propose.
 
-Claude looked at [image 008](<../images/2026-11-09 M1 the leaf hitbox and ladder vines as walls/008 Claude.png>)
+Claude looked at picture 008
 
-Claude looked at [image 009](<../images/2026-11-09 M1 the leaf hitbox and ladder vines as walls/009 Claude.png>)
+Claude looked at picture 009
 
 Both drafts need layout fixes: labels overlap in the first, and in the second the void band falls outside its panels and one hop arc passes through the stem. Rewriting the layout.
 
-Claude looked at [image 008](<../images/2026-11-09 M1 the leaf hitbox and ladder vines as walls/008 Claude.png>)
+Claude looked at picture 008
 
 ---
 
@@ -149,9 +149,9 @@ Claude looked at [image 008](<../images/2026-11-09 M1 the leaf hitbox and ladder
 
 The patch script broke on shell quoting, so nothing was written. I'll redo it from a file, with your new design worked into the "proposed" picture. Nothing in the game changes.
 
-![Claude's image 010](<../images/2026-11-09 M1 the leaf hitbox and ladder vines as walls/010 Claude to Dani.png>)
+Claude's picture 010
 
-Claude looked at [image 011](<../images/2026-11-09 M1 the leaf hitbox and ladder vines as walls/011 Claude.png>)
+Claude looked at picture 011
 
 ---
 
@@ -165,7 +165,7 @@ Claude looked at [image 011](<../images/2026-11-09 M1 the leaf hitbox and ladder
 
 Picture 1 reads well now. In picture 2, panel 3's measuring line runs into its title, and a side view can't show "left and right" clearly. I'm redrawing that panel from the front, like panel 2.
 
-Claude looked at [image 012](<../images/2026-11-09 M1 the leaf hitbox and ladder vines as walls/012 Claude.png>)
+Claude looked at picture 012
 
 I haven't changed anything in the game. I've opened two vine pictures in VS Code:
 - `C:\Users\someo\AppData\Local\Temp\claude\653749dc61028eb9\9ed0c5d3-2efe-4b16-9a78-40ffd656c069\scratchpad\vines-now.png`
@@ -204,9 +204,9 @@ Three questions before I build anything:
 
 The leaf fix from before is still waiting for your yes too.
 
-Again: [image 010](<../images/2026-11-09 M1 the leaf hitbox and ladder vines as walls/010 Claude to Dani.png>)
+Again: picture 010
 
-![Claude's image 013](<../images/2026-11-09 M1 the leaf hitbox and ladder vines as walls/013 Claude to Dani.png>)
+Claude's picture 013
 
 ---
 
@@ -313,7 +313,7 @@ no. if you jump into latching range, you latch on. if you don't jump, then you h
 i hope this clarifies things. it's less complicated
 don't build yet
 
-![Dani's image 014](<../images/2026-11-09 M1 the leaf hitbox and ladder vines as walls/014 Dani.png>)
+Dani's picture 014
 
 ---
 
@@ -578,7 +578,7 @@ Only the "until v0.443.0" history comments mention the old sliders now. Running 
 
 Fixed. Testing sideways again, plus a vine on a wall: walking on, climbing off the side, and latching from a standing jump.
 
-Claude looked at [image 015](<../images/2026-11-09 M1 the leaf hitbox and ladder vines as walls/015 Claude.png>)
+Claude looked at picture 015
 
 Both are done and pushed: **v0.442.0** is the leaf fix and **v0.443.0** is the vines. Press **Update M1 testing** to get them.
 
@@ -632,7 +632,7 @@ Got it: from now on I'll call it the leaf hitbox. My measuring script broke on q
 
 (sent while Claude was working) it might be the values needing adjustment
 
-![Dani's image 016](<../images/2026-11-09 M1 the leaf hitbox and ladder vines as walls/016 Dani.png>)
+Dani's picture 016
 
 ---
 
@@ -679,7 +679,7 @@ So the fix doesn't need a slider: the dried leaf's hitbox follows its ragged edg
 
 you can maybe adjust the dried leaf design. it's gonna change later anyway when i put in my own objects
 
-![Dani's image 017](<../images/2026-11-09 M1 the leaf hitbox and ladder vines as walls/017 Dani.png>)
+Dani's picture 017
 
 ---
 
@@ -710,7 +710,7 @@ Building the dried leaf change first.
 
 Testing: the dried-leaf measurement again, plus a picture of a dried leaf.
 
-Claude looked at [image 018](<../images/2026-11-09 M1 the leaf hitbox and ladder vines as walls/018 Claude.png>)
+Claude looked at picture 018
 
 You imported a map at 16:06 while I worked. Checking what it and any saves changed, so they go in with this version.
 

@@ -1,6 +1,6 @@
 # M1 arching flower sprays, bulb spacing and a path on the start tile
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-06 M1 arching flower sprays, bulb spacing and a path on the start tile\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-06 M1 arching flower sprays, bulb spacing and a path on the start tile", numbered as here. Private: never commit or share.
 
 ---
 
@@ -9,9 +9,9 @@ The messages of this conversation, Dani's and Claude's, without the code, tool c
 the fruits are not placed randomly, they are neatly aligned still
 the arched flowers need to look more natural. instead of three flowers a stem, make three stems on one stem. i attached an example of how it should look
 
-![Dani's image 001](<../images/2026-11-06 M1 arching flower sprays, bulb spacing and a path on the start tile/001 Dani.png>)
+Dani's picture 001
 
-![Dani's image 002](<../images/2026-11-06 M1 arching flower sprays, bulb spacing and a path on the start tile/002 Dani.jpg>)
+Dani's picture 002
 
 ---
 
@@ -31,7 +31,7 @@ I'm looking at how the fruit clumps are placed on each tile and how the arching 
 
 Got it: the side flowers already have stalks of their own, they just need to look like your photo. Reading the rest of the arching flower code and your map's flowers now.
 
-Claude looked at [image 003](<../images/2026-11-06 M1 arching flower sprays, bulb spacing and a path on the start tile/003 Claude.png>)
+Claude looked at picture 003
 
 Confirmed the "fruits" are the flower bulbs. Checking whether their spacing forces them into the same neat shape on every tile.
 
@@ -45,15 +45,15 @@ Confirmed the "fruits" are the flower bulbs. Checking whether their spacing forc
 
 ### Claude · 2026-11-06 20:38
 
-Claude looked at [image 004](<../images/2026-11-06 M1 arching flower sprays, bulb spacing and a path on the start tile/004 Claude.png>)
+Claude looked at picture 004
 
 Noted: each of the three flowers will be harvested on its own, with its own hits and drops, the way each rock or bulb plant on a tile is. Reading the harvesting code for arching flowers next.
 
 Took "before" pictures of the arching flowers in the hidden browser; looking at them now, then I'll rebuild the stems.
 
-Claude looked at [image 005](<../images/2026-11-06 M1 arching flower sprays, bulb spacing and a path on the start tile/005 Claude.png>)
+Claude looked at picture 005
 
-Claude looked at [image 006](<../images/2026-11-06 M1 arching flower sprays, bulb spacing and a path on the start tile/006 Claude.png>)
+Claude looked at picture 006
 
 ---
 
@@ -75,7 +75,7 @@ Rewrote the bulb placement to use the whole tile; now updating its number in src
 
 Now updating the scatter tests to match.
 
-Claude looked at [image 007](<../images/2026-11-06 M1 arching flower sprays, bulb spacing and a path on the start tile/007 Claude.png>)
+Claude looked at picture 007
 
 The new placement looks scattered: clumps sit near the middles, near corners and across edges, with no ring. Tests pass. Now the arching flower's branching stems.
 
@@ -87,41 +87,41 @@ Code is in and tests pass (the one failure only says the work isn't committed ye
 
 Every tile is revived in the hidden browser now; checking the pictures of the new flowers.
 
-Claude looked at [image 008](<../images/2026-11-06 M1 arching flower sprays, bulb spacing and a path on the start tile/008 Claude.png>)
+Claude looked at picture 008
 
-Claude looked at [image 009](<../images/2026-11-06 M1 arching flower sprays, bulb spacing and a path on the start tile/009 Claude.png>)
+Claude looked at picture 009
 
-Claude looked at [image 010](<../images/2026-11-06 M1 arching flower sprays, bulb spacing and a path on the start tile/010 Claude.png>)
+Claude looked at picture 010
 
-Claude looked at [image 011](<../images/2026-11-06 M1 arching flower sprays, bulb spacing and a path on the start tile/011 Claude.png>)
+Claude looked at picture 011
 
-Claude looked at [image 012](<../images/2026-11-06 M1 arching flower sprays, bulb spacing and a path on the start tile/012 Claude.png>)
+Claude looked at picture 012
 
-![Claude's image 013](<../images/2026-11-06 M1 arching flower sprays, bulb spacing and a path on the start tile/013 Claude to Dani.png>)
+Claude's picture 013
 
-Claude looked at [image 014](<../images/2026-11-06 M1 arching flower sprays, bulb spacing and a path on the start tile/014 Claude.png>)
+Claude looked at picture 014
 
-Claude looked at [image 015](<../images/2026-11-06 M1 arching flower sprays, bulb spacing and a path on the start tile/015 Claude.png>)
+Claude looked at picture 015
 
 Checking the flowers from more angles; fixing my viewer script first.
 
-Claude looked at [image 016](<../images/2026-11-06 M1 arching flower sprays, bulb spacing and a path on the start tile/016 Claude.png>)
+Claude looked at picture 016
 
-Claude looked at [image 017](<../images/2026-11-06 M1 arching flower sprays, bulb spacing and a path on the start tile/017 Claude.png>)
+Claude looked at picture 017
 
-Claude looked at [image 018](<../images/2026-11-06 M1 arching flower sprays, bulb spacing and a path on the start tile/018 Claude.png>)
+Claude looked at picture 018
 
 Each of the three flowers now shows its own number and bursts its own petals and nectar. Checking that the flower grows back cleanly after it's used up.
 
-Claude looked at [image 019](<../images/2026-11-06 M1 arching flower sprays, bulb spacing and a path on the start tile/019 Claude.png>)
+Claude looked at picture 019
 
-Claude looked at [image 019](<../images/2026-11-06 M1 arching flower sprays, bulb spacing and a path on the start tile/019 Claude.png>)
+Claude looked at picture 019
 
 Caught the flower growing back; checking those two pictures.
 
-Claude looked at [image 020](<../images/2026-11-06 M1 arching flower sprays, bulb spacing and a path on the start tile/020 Claude.png>)
+Claude looked at picture 020
 
-Claude looked at [image 021](<../images/2026-11-06 M1 arching flower sprays, bulb spacing and a path on the start tile/021 Claude.png>)
+Claude looked at picture 021
 
 While growing back, the side flowers pop out fully open with the leaves while the main head is still a bud. I'll make the side stems grow out as the main head blooms, so all three open together.
 
@@ -135,9 +135,9 @@ While growing back, the side flowers pop out fully open with the leaves while th
 
 ### Claude · 2026-11-06 21:07
 
-Claude looked at [image 022](<../images/2026-11-06 M1 arching flower sprays, bulb spacing and a path on the start tile/022 Claude.png>)
+Claude looked at picture 022
 
-Claude looked at [image 023](<../images/2026-11-06 M1 arching flower sprays, bulb spacing and a path on the start tile/023 Claude.png>)
+Claude looked at picture 023
 
 Regrowth now looks right: the side stems grow out as the main head opens. Next, your path on the starting tile. Looking at how the editor marks the start.
 
@@ -149,7 +149,7 @@ Editor side done. Adding a test that a start tile on a path reads right in both 
 
 All tests pass (the one failure only checks the work is committed). Now trying it in the map editor itself.
 
-Claude looked at [image 024](<../images/2026-11-06 M1 arching flower sprays, bulb spacing and a path on the start tile/024 Claude.png>)
+Claude looked at picture 024
 
 Writing the README changes.
 
@@ -183,7 +183,7 @@ A picture of the spray: `C:\Users\someo\AppData\Local\Temp\claude\c--Users-someo
 
 The bulbs need no new record, because "Harvestables stand scattered on their tile, not in a ring" already says this. The other changes don't need records: the stems are a look, and the start tile and Start over belong to the trial tools.
 
-Again: [image 013](<../images/2026-11-06 M1 arching flower sprays, bulb spacing and a path on the start tile/013 Claude to Dani.png>)
+Again: picture 013
 
 ---
 
@@ -209,15 +209,15 @@ I'll draw what I understood before building anything.
 
 Noted for Q1: nothing goes into Tessera Records. Checking the picture.
 
-Claude looked at [image 025](<../images/2026-11-06 M1 arching flower sprays, bulb spacing and a path on the start tile/025 Claude.png>)
+Claude looked at picture 025
 
 The picture works, but a few labels overlap. Tidying it.
 
-![Claude's image 026](<../images/2026-11-06 M1 arching flower sprays, bulb spacing and a path on the start tile/026 Claude to Dani.png>)
+Claude's picture 026
 
 Clean now. Opening it in VS Code for you.
 
-Again: [image 026](<../images/2026-11-06 M1 arching flower sprays, bulb spacing and a path on the start tile/026 Claude to Dani.png>)
+Again: picture 026
 
 ---
 
@@ -225,13 +225,13 @@ Again: [image 026](<../images/2026-11-06 M1 arching flower sprays, bulb spacing 
 
 (sent while Claude was working) also the fruits are still neatly aligned. the avg distance between them has to be random
 
-![Dani's image 027](<../images/2026-11-06 M1 arching flower sprays, bulb spacing and a path on the start tile/027 Dani.png>)
+Dani's picture 027
 
 ---
 
 ### Claude · 2026-11-06 21:30
 
-Claude looked at [image 028](<../images/2026-11-06 M1 arching flower sprays, bulb spacing and a path on the start tile/028 Claude.png>)
+Claude looked at picture 028
 
 ---
 
@@ -267,9 +267,9 @@ Your saves arrived too (petals per hit 3, petal size 170%). One test still expec
 
 Tests pass. Checking the bulbs in the game.
 
-Claude looked at [image 029](<../images/2026-11-06 M1 arching flower sprays, bulb spacing and a path on the start tile/029 Claude.png>)
+Claude looked at picture 029
 
-Claude looked at [image 030](<../images/2026-11-06 M1 arching flower sprays, bulb spacing and a path on the start tile/030 Claude.png>)
+Claude looked at picture 030
 
 The bulbs now sit at uneven distances: some pairs close together, some far apart. Updating the README and saving v0.388.0.
 
@@ -281,13 +281,13 @@ The planet.js part went in; the shell broke the other two. Writing them with the
 
 Tests pass. Photographing the flowers.
 
-Claude looked at [image 031](<../images/2026-11-06 M1 arching flower sprays, bulb spacing and a path on the start tile/031 Claude.png>)
+Claude looked at picture 031
 
-Claude looked at [image 032](<../images/2026-11-06 M1 arching flower sprays, bulb spacing and a path on the start tile/032 Claude.png>)
+Claude looked at picture 032
 
-![Claude's image 033](<../images/2026-11-06 M1 arching flower sprays, bulb spacing and a path on the start tile/033 Claude to Dani.png>)
+Claude's picture 033
 
-Claude looked at [image 034](<../images/2026-11-06 M1 arching flower sprays, bulb spacing and a path on the start tile/034 Claude.png>)
+Claude looked at picture 034
 
 Harvesting works: three numbers per hit, no errors. Updating the README and saving v0.389.0.
 
@@ -309,7 +309,7 @@ A picture of the result: `C:\Users\someo\AppData\Local\Temp\claude\c--Users-some
 - **Decision:** "The head on an arching flower's tip tilts halfway between facing the light and straight up. Its other flowers each face the way their own stem points, and their stems arch out on any side of the main stem. It replaces arching flowers in "Flower heads face the light" (6 November 2026)."
 - **Why** (my suggestion): "Arching flowers are shorter than giant flowers, so their heads tilt less. Flowers that follow their own stems look like a natural spray."
 
-Again: [image 033](<../images/2026-11-06 M1 arching flower sprays, bulb spacing and a path on the start tile/033 Claude to Dani.png>)
+Again: picture 033
 
 ---
 

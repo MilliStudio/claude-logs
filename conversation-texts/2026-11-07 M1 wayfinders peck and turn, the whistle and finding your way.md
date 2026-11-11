@@ -1,6 +1,6 @@
 # 2026-11-07 M1 wayfinders peck and turn, the whistle and finding your way
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-07 M1 wayfinders peck and turn, the whistle and finding your way\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-07 M1 wayfinders peck and turn, the whistle and finding your way", numbered as here. Private: never commit or share.
 
 ---
 
@@ -73,7 +73,7 @@ Tests pass. Now checking it live: a scratch copy of the trial on port 4911, so a
 
 Right-click, Shift, the tick box and Save all work on the copy, and the key item on 14,3 stayed as it was. Looking at the arrows:
 
-Claude looked at [image 001](<../images/2026-11-07 M1 wayfinders peck and turn, the whistle and finding your way/001 Claude.png>)
+Claude looked at picture 001
 
 Adding the facing and pecking pose to what the game reports to tests, so I can check them by number rather than by eye:
 
@@ -164,17 +164,17 @@ Zero-context patches drift, so I'll switch to normal patches with three lines of
 
 Lines land in the right places now. Running the whistle check again:
 
-Claude looked at [image 002](<../images/2026-11-07 M1 wayfinders peck and turn, the whistle and finding your way/002 Claude.png>)
+Claude looked at picture 002
 
-Claude looked at [image 003](<../images/2026-11-07 M1 wayfinders peck and turn, the whistle and finding your way/003 Claude.png>)
+Claude looked at picture 003
 
 Now a slowed-down visual check: the shaking stretched to 4 seconds through remembered sliders, with the player put beside the waypoint on 3,0 so its wayfinder is in view.
 
 The deliveries session has saved v0.409.0, so the next version is mine. First, the pictures from the slowed run:
 
-Claude looked at [image 004](<../images/2026-11-07 M1 wayfinders peck and turn, the whistle and finding your way/004 Claude.png>)
+Claude looked at picture 004
 
-Claude looked at [image 005](<../images/2026-11-07 M1 wayfinders peck and turn, the whistle and finding your way/005 Claude.png>)
+Claude looked at picture 005
 
 Since v0.409.0 is committed, my patch now holds only my own changes. Retaking the picture from two other sides of the waypoint:
 
@@ -186,19 +186,19 @@ The roll line is there. Sampling frame by frame inside the page instead, to see 
 
 The shake works frame by frame: the bird rolls and pitches, up to 93 sparks fly, then it slumps and settles. Now the pictures:
 
-Claude looked at [image 006](<../images/2026-11-07 M1 wayfinders peck and turn, the whistle and finding your way/006 Claude.png>)
+Claude looked at picture 006
 
 Taking a closer picture: zoomed in with the mouse wheel, shaking slowed to 4 seconds.
 
-Claude looked at [image 007](<../images/2026-11-07 M1 wayfinders peck and turn, the whistle and finding your way/007 Claude.png>)
+Claude looked at picture 007
 
-Claude looked at [image 008](<../images/2026-11-07 M1 wayfinders peck and turn, the whistle and finding your way/008 Claude.png>)
+Claude looked at picture 008
 
-Claude looked at [image 009](<../images/2026-11-07 M1 wayfinders peck and turn, the whistle and finding your way/009 Claude.png>)
+Claude looked at picture 009
 
 The bird flies behind the player, wings spread. One last check: putting the waypoints back, I'll make sure the edge sign now stays clear of the Run button and the map.
 
-Claude looked at [image 010](<../images/2026-11-07 M1 wayfinders peck and turn, the whistle and finding your way/010 Claude.png>)
+Claude looked at picture 010
 
 README done. Now the version and the full test run in the real folder:
 
@@ -262,7 +262,7 @@ Updating the README's tutorial entry:
 
 Tests pass. The plan file changed too, which wasn't me. Checking it:
 
-Claude looked at [image 011](<../images/2026-11-07 M1 wayfinders peck and turn, the whistle and finding your way/011 Claude.png>)
+Claude looked at picture 011
 
 The card shows "5 of 6" with your words, the gold ring pulses round the character, and a whistle ticks it off and moves to hopping. Committing v0.411.0:
 
@@ -294,9 +294,9 @@ Only the tutorial uses it. Making the change: the tally's glow becomes one share
 
 Now a look in the hidden browser at both hints, the run step and the find-your-way step:
 
-Claude looked at [image 012](<../images/2026-11-07 M1 wayfinders peck and turn, the whistle and finding your way/012 Claude.png>)
+Claude looked at picture 012
 
-Claude looked at [image 013](<../images/2026-11-07 M1 wayfinders peck and turn, the whistle and finding your way/013 Claude.png>)
+Claude looked at picture 013
 
 Both hints now show the tally's light-cyan glow, eased in and grown 1.25 times as a tally grows. The ring is a thin white circle with the glow band round it. Updating the README:
 
@@ -318,7 +318,7 @@ Press **Update M1 testing** to get it there.
 
 and last thing then wrap up: the bird soometimes walks across a gap instead of going around of flying if the path is less than the limit to fly. the leaf is hiding the bird but that's one of the places this happens
 
-![Dani's image 014](<../images/2026-11-07 M1 wayfinders peck and turn, the whistle and finding your way/014 Dani.png>)
+Dani's picture 014
 
 ---
 

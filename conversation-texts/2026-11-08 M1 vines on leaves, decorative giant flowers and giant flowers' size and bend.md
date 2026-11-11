@@ -1,6 +1,6 @@
 # M1 vines on leaves, decorative giant flowers and giant flowers' size and bend
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-08 M1 vines on leaves, decorative giant flowers and giant flowers' size and bend\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-08 M1 vines on leaves, decorative giant flowers and giant flowers' size and bend", numbered as here. Private: never commit or share.
 
 ---
 
@@ -60,45 +60,45 @@ Syntax is clean now. Checking the other changed files, then copying the fix into
 
 It loads and goes dried → growing → whole. Looking at the pictures.
 
-Claude looked at [image 001](<../images/2026-11-08 M1 vines on leaves, decorative giant flowers and giant flowers' size and bend/001 Claude.png>)
+Claude looked at picture 001
 
-Claude looked at [image 002](<../images/2026-11-08 M1 vines on leaves, decorative giant flowers and giant flowers' size and bend/002 Claude.png>)
+Claude looked at picture 002
 
 Both flowers show, dried and whole, three times a giant flower's size. The camera is too close to judge the shape, so I'll zoom out further.
 
-Claude looked at [image 003](<../images/2026-11-08 M1 vines on leaves, decorative giant flowers and giant flowers' size and bend/003 Claude.png>)
+Claude looked at picture 003
 
-Claude looked at [image 004](<../images/2026-11-08 M1 vines on leaves, decorative giant flowers and giant flowers' size and bend/004 Claude.png>)
+Claude looked at picture 004
 
-Claude looked at [image 005](<../images/2026-11-08 M1 vines on leaves, decorative giant flowers and giant flowers' size and bend/005 Claude.png>)
+Claude looked at picture 005
 
 Too busy to judge with Dani's whole map round them. I'll give the scratch copy a small bare island with just the two decorative flowers.
 
-Claude looked at [image 006](<../images/2026-11-08 M1 vines on leaves, decorative giant flowers and giant flowers' size and bend/006 Claude.png>)
+Claude looked at picture 006
 
-Claude looked at [image 007](<../images/2026-11-08 M1 vines on leaves, decorative giant flowers and giant flowers' size and bend/007 Claude.png>)
+Claude looked at picture 007
 
 The camera stayed too close. Zooming out further for a clear look at both.
 
-Claude looked at [image 008](<../images/2026-11-08 M1 vines on leaves, decorative giant flowers and giant flowers' size and bend/008 Claude.png>)
+Claude looked at picture 008
 
-Claude looked at [image 009](<../images/2026-11-08 M1 vines on leaves, decorative giant flowers and giant flowers' size and bend/009 Claude.png>)
+Claude looked at picture 009
 
 The zoom limit message arrives after the wheel events (channel messages are async). Adding a short wait.
 
-Claude looked at [image 010](<../images/2026-11-08 M1 vines on leaves, decorative giant flowers and giant flowers' size and bend/010 Claude.png>)
+Claude looked at picture 010
 
-Claude looked at [image 011](<../images/2026-11-08 M1 vines on leaves, decorative giant flowers and giant flowers' size and bend/011 Claude.png>)
+Claude looked at picture 011
 
-![Claude's image 012](<../images/2026-11-08 M1 vines on leaves, decorative giant flowers and giant flowers' size and bend/012 Claude to Dani.png>)
+Claude's picture 012
 
-Claude looked at [image 013](<../images/2026-11-08 M1 vines on leaves, decorative giant flowers and giant flowers' size and bend/013 Claude.png>)
+Claude looked at picture 013
 
-![Claude's image 014](<../images/2026-11-08 M1 vines on leaves, decorative giant flowers and giant flowers' size and bend/014 Claude to Dani.png>)
+Claude's picture 014
 
 Shapes look right: the leaf crossing the picture earlier was a 4.8 m leaf seen edge-on, not a fault. Now checking that the stem blocks the player where it meets the ground.
 
-Claude looked at [image 015](<../images/2026-11-08 M1 vines on leaves, decorative giant flowers and giant flowers' size and bend/015 Claude.png>)
+Claude looked at picture 015
 
 The stem blocks within 0.675 m of its middle (its 1.35 m thickness at ×3). Now the map editor on the copy: the new tool, the flower's box, and Save.
 
@@ -134,7 +134,7 @@ Now the map editor on the scratch copy: the new tool, the flower's box, the Size
 
 The editor shows the box with sizes in real metres, Size updates every readout, and Save wrote both flowers. Checking the saved text and the box's look.
 
-Claude looked at [image 016](<../images/2026-11-08 M1 vines on leaves, decorative giant flowers and giant flowers' size and bend/016 Claude.png>)
+Claude looked at picture 016
 
 Editor works: the tool, the box, the readouts and the badge on the map. Now the README entry for the decorative flower.
 
@@ -166,9 +166,9 @@ The two pictures from the test copy:
 - `C:\Users\someo\AppData\Local\Temp\claude\653749dc61028eb9\6873b01b-4eda-46a3-b329-4d20c2f6c72d\scratchpad\small-whole.png`
 - `C:\Users\someo\AppData\Local\Temp\claude\653749dc61028eb9\6873b01b-4eda-46a3-b329-4d20c2f6c72d\scratchpad\small-side.png`
 
-Again: [image 012](<../images/2026-11-08 M1 vines on leaves, decorative giant flowers and giant flowers' size and bend/012 Claude to Dani.png>)
+Again: picture 012
 
-Again: [image 014](<../images/2026-11-08 M1 vines on leaves, decorative giant flowers and giant flowers' size and bend/014 Claude to Dani.png>)
+Again: picture 014
 
 ---
 
@@ -184,7 +184,7 @@ I'll check whether your recent saves changed any wayfinder sliders, then test th
 
 Your saves changed how the wayfinders peck, fly and crackle, but none of the sliders for coming to the player. I'll test the whistle on your map, for a wayfinder with a waypoint and one without.
 
-![Claude's image 017](<../images/2026-11-08 M1 vines on leaves, decorative giant flowers and giant flowers' size and bend/017 Claude to Dani.png>)
+Claude's picture 017
 
 Dani, nothing you did broke them. I tested your map with your newest values (the import of 22:11):
 
@@ -197,7 +197,7 @@ Early in the game both wayfinders sit on waypoints, so a whistle only makes them
 
 Q1. Do you want a wayfinder on a waypoint to fly to you as well, and then lead you back to its waypoint? I'd recommend keeping it as it is, because the crackle and the sign already tell you where to go. If you meant something else, such as a free wayfinder not coming in M1 testing, tell me what you saw and I'll test it there.
 
-Again: [image 017](<../images/2026-11-08 M1 vines on leaves, decorative giant flowers and giant flowers' size and bend/017 Claude to Dani.png>)
+Again: picture 017
 
 ---
 
@@ -302,13 +302,13 @@ All 217 pass. Now the real check, on a scratch copy with a bare island. One gian
 
 Fixed. Now a fairer layout: leaves close to the stem, approaching the low leaf from outside its reach. Updating the copy's flower and rerunning.
 
-Claude looked at [image 018](<../images/2026-11-08 M1 vines on leaves, decorative giant flowers and giant flowers' size and bend/018 Claude.png>)
+Claude looked at picture 018
 
 The editor works: Size shows 200%, readouts update at 300%, and Save wrote `size: 3, way: 90, bend: 40`, which reads back as a giant flower. Taking a picture of the saved 300% bent flower.
 
-![Claude's image 019](<../images/2026-11-08 M1 vines on leaves, decorative giant flowers and giant flowers' size and bend/019 Claude to Dani.png>)
+Claude's picture 019
 
-![Claude's image 020](<../images/2026-11-08 M1 vines on leaves, decorative giant flowers and giant flowers' size and bend/020 Claude to Dani.png>)
+Claude's picture 020
 
 Looks right: a 300% flower, its stem curving east, its leaves on the stem and its head facing the light. Stopping the scratch server, then the README and the commit.
 
@@ -338,9 +338,9 @@ Pictures of the 300% flower bent east:
 - `C:\Users\someo\AppData\Local\Temp\claude\653749dc61028eb9\6873b01b-4eda-46a3-b329-4d20c2f6c72d\scratchpad\giant-300-south.png`
 - `C:\Users\someo\AppData\Local\Temp\claude\653749dc61028eb9\6873b01b-4eda-46a3-b329-4d20c2f6c72d\scratchpad\giant-300-turned.png`
 
-Again: [image 019](<../images/2026-11-08 M1 vines on leaves, decorative giant flowers and giant flowers' size and bend/019 Claude to Dani.png>)
+Again: picture 019
 
-Again: [image 020](<../images/2026-11-08 M1 vines on leaves, decorative giant flowers and giant flowers' size and bend/020 Claude to Dani.png>)
+Again: picture 020
 
 ---
 

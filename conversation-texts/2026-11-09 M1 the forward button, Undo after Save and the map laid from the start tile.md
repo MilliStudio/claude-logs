@@ -1,6 +1,6 @@
 # M1 the forward button, Undo after Save and the map laid from the start tile
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-09 M1 the forward button, Undo after Save and the map laid from the start tile\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-09 M1 the forward button, Undo after Save and the map laid from the start tile", numbered as here. Private: never commit or share.
 
 ---
 
@@ -115,7 +115,7 @@ I built all three in a worktree, so your running game and the other session's wo
 
 i messed up and updated testing in the middle of your job. i had started the map over to start fresh, but the map rotated for some reason
 
-![Dani's image 001](<../images/2026-11-09 M1 the forward button, Undo after Save and the map laid from the start tile/001 Dani.png>)
+Dani's picture 001
 
 ---
 
@@ -123,7 +123,7 @@ i messed up and updated testing in the middle of your job. i had started the map
 
 I'll look at M1 testing's map and version first, without changing anything there.
 
-Claude looked at [image 002](<../images/2026-11-09 M1 the forward button, Undo after Save and the map laid from the start tile/002 Claude.png>)
+Claude looked at picture 002
 
 The pictures script and the tests use the default layout, so I'll keep that default and add the start tile as an option. Reading the editor's `draw()` and how a kept view is put back:
 
@@ -139,7 +139,7 @@ Tests next. Starting the worktree's test server on port 4916 again.
 
 Now the start tile stays exactly where it was drawn when it's put down. After the Save and the reload, it's back on the same pixel and nothing has turned. Looking at the picture:
 
-Claude looked at [image 003](<../images/2026-11-09 M1 the forward button, Undo after Save and the map laid from the start tile/003 Claude.png>)
+Claude looked at picture 003
 
 The second rehearsal's Save wrote its 35 test tiles into the worktree's map again, so that first line measured the wrong island. Restoring the map and measuring again:
 

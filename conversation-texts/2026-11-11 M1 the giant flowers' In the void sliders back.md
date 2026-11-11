@@ -1,6 +1,6 @@
 # 2026-11-11 M1 the giant flowers' In the void sliders back
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-11 M1 the giant flowers' In the void sliders back\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-11 M1 the giant flowers' In the void sliders back", numbered as here. Private: never commit or share.
 
 ---
 
@@ -20,9 +20,9 @@ Code edits done; updating the README, then tests and a check in the hidden brows
 
 Settings reach the flower live. One picture check of the stem fade next.
 
-Claude looked at [image 001](<../images/2026-11-11 M1 the giant flowers' In the void sliders back/001 Claude.png>)
+Claude looked at picture 001
 
-Claude looked at [image 002](<../images/2026-11-11 M1 the giant flowers' In the void sliders back/002 Claude.png>)
+Claude looked at picture 002
 
 The pictures show it working: with a short fade the stem vanishes just under the tiles, with a long one it reaches down into the void. Saving the version now.
 

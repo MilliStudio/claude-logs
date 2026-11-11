@@ -1,6 +1,6 @@
 # M1 harvesting box
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-05 M1 harvesting box\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-05 M1 harvesting box", numbered as here. Private: never commit or share.
 
 ---
 
@@ -49,17 +49,17 @@ I'll write a small script that drives a hidden Chrome over its debugging port. F
 
 The box works in the game: rows come in newest first, other items are ignored, the menu button moves under it, its order survives a reload, and Start over empties it. Looking at the pictures.
 
-![Claude's image 001](<../images/2026-11-05 M1 harvesting box/001 Claude to Dani.png>)
+Claude's picture 001
 
-Claude looked at [image 002](<../images/2026-11-05 M1 harvesting box/002 Claude.png>)
+Claude looked at picture 002
 
 Both look right. Next: a real harvest and a real delivery to a diamond, the phone's sideways size, and the map editor open beside the game.
 
-Claude looked at [image 003](<../images/2026-11-05 M1 harvesting box/003 Claude.png>)
+Claude looked at picture 003
 
 Beside the editor it's right too. Last check: a phone held sideways, with the menu panel open as on the web copy, where the panel opens under the button.
 
-Claude looked at [image 004](<../images/2026-11-05 M1 harvesting box/004 Claude.png>)
+Claude looked at picture 004
 
 On a phone held sideways the box, the button and the panel stack correctly; the panel is shorter by the box's height and scrolls. Now the README.
 
@@ -110,7 +110,7 @@ Here is a picture of it: `C:\Users\someo\AppData\Local\Temp\claude\c--Users-some
 **Q1.** Should I add this to the "Several sessions at once" rule in the M1 `CLAUDE.md`, so the next session doesn't hit the same two problems? I recommend yes.
 > Git gives a worktree Windows line endings, and one test fails on them: change them to plain ones before testing, and merge into main with `git -c core.autocrlf=false`. The worktree's safety lock stops git from working in this folder, so leave the worktree (ExitWorktree, keep) to merge.
 
-Again: [image 001](<../images/2026-11-05 M1 harvesting box/001 Claude to Dani.png>)
+Again: picture 001
 
 ---
 
@@ -157,9 +157,9 @@ Now the tests, then a look in a hidden browser on my own port.
 
 The box measures 40% smaller, and the slider puts it back to its first size. Here's how it looks:
 
-Claude looked at [image 005](<../images/2026-11-05 M1 harvesting box/005 Claude.png>)
+Claude looked at picture 005
 
-Claude looked at [image 006](<../images/2026-11-05 M1 harvesting box/006 Claude.png>)
+Claude looked at picture 006
 
 Looks right on both. Next: version v0.364.0, commit, then merge into main if main's folder allows it.
 

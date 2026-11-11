@@ -1,6 +1,6 @@
 # M1 haze, the live map, the Ground box and the cuts' numbers
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-10 M1 haze, the live map, the Ground box and the cuts' numbers\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-10 M1 haze, the live map, the Ground box and the cuts' numbers", numbered as here. Private: never commit or share.
 
 ---
 
@@ -8,7 +8,7 @@ The messages of this conversation, Dani's and Claude's, without the code, tool c
 
 would adding atmospheric be too much work and too much load on devices. just by a small amount? i don't want to defeat the purpose of m1 but i feel it's lacking an element without it. it will for sure be in m2
 
-![Dani's image 001](<../images/2026-11-10 M1 haze, the live map, the Ground box and the cuts' numbers/001 Dani.png>)
+Dani's picture 001
 
 (sent while Claude was working) just asking
 
@@ -54,29 +54,29 @@ I've written the haze into the game's shaders. Now the additive glints, the came
 
 Tests pass (218). Now starting the copy's server and a hidden browser to see it drawn.
 
-Claude looked at [image 002](<../images/2026-11-10 M1 haze, the live map, the Ground box and the cuts' numbers/002 Claude.png>)
+Claude looked at picture 002
 
-Claude looked at [image 003](<../images/2026-11-10 M1 haze, the live map, the Ground box and the cuts' numbers/003 Claude.png>)
+Claude looked at picture 003
 
 The haze works in the hidden browser, with no errors. The far walls fade into the night's blue. I'm checking the strengths and a restored island next.
 
-Claude looked at [image 004](<../images/2026-11-10 M1 haze, the live map, the Ground box and the cuts' numbers/004 Claude.png>)
+Claude looked at picture 004
 
-Claude looked at [image 005](<../images/2026-11-10 M1 haze, the live map, the Ground box and the cuts' numbers/005 Claude.png>)
+Claude looked at picture 005
 
-Claude looked at [image 006](<../images/2026-11-10 M1 haze, the live map, the Ground box and the cuts' numbers/006 Claude.png>)
+Claude looked at picture 006
 
 The haze is subtle at 35%, as planned: the far walls and floating tiles soften into the night. Now checking a restored island, where the sky is pale.
 
-Claude looked at [image 007](<../images/2026-11-10 M1 haze, the live map, the Ground box and the cuts' numbers/007 Claude.png>)
+Claude looked at picture 007
 
-Claude looked at [image 008](<../images/2026-11-10 M1 haze, the live map, the Ground box and the cuts' numbers/008 Claude.png>)
+Claude looked at picture 008
 
-Claude looked at [image 009](<../images/2026-11-10 M1 haze, the live map, the Ground box and the cuts' numbers/009 Claude.png>)
+Claude looked at picture 009
 
-Claude looked at [image 010](<../images/2026-11-10 M1 haze, the live map, the Ground box and the cuts' numbers/010 Claude.png>)
+Claude looked at picture 010
 
-Claude looked at [image 011](<../images/2026-11-10 M1 haze, the live map, the Ground box and the cuts' numbers/011 Claude.png>)
+Claude looked at picture 011
 
 Under a day sky the haze matches the sky with no seam, and at 35% it stays light. Last check: the map editor loads with the new Haze sliders.
 
@@ -151,7 +151,7 @@ Both changes are written. Now updating the editor's help text and the README to 
 
 Now testing with real mouse presses in a hidden browser on the copy. First, what the editor offers for tests:
 
-Claude looked at [image 012](<../images/2026-11-10 M1 haze, the live map, the Ground box and the cuts' numbers/012 Claude.png>)
+Claude looked at picture 012
 
 Undo and Redo work for both, and the copy's map file is untouched. Running the tests, then committing v0.462.0:
 
@@ -203,9 +203,9 @@ Your import brought a new map, and porous rocks went to size 1.9 and 4 a tile, p
 
 Yes, Select can move into the Ground box too. I'll put it after corner piece, at the end of that first group, once I've checked these screenshots.
 
-Claude looked at [image 013](<../images/2026-11-10 M1 haze, the live map, the Ground box and the cuts' numbers/013 Claude.png>)
+Claude looked at picture 013
 
-Claude looked at [image 014](<../images/2026-11-10 M1 haze, the live map, the Ground box and the cuts' numbers/014 Claude.png>)
+Claude looked at picture 014
 
 Sharpness works. At 100%, the rocks on the left show a clear edge where the haze starts, and at 0% it fades in gradually as before. Now moving Select:
 
@@ -258,7 +258,7 @@ The shell choked on that script's quotes, so I'm writing it as a file instead.
 
 Now testing both select tools with real drags on the copy:
 
-Claude looked at [image 015](<../images/2026-11-10 M1 haze, the live map, the Ground box and the cuts' numbers/015 Claude.png>)
+Claude looked at picture 015
 
 I've added Select area in v0.464.0, and it's pushed. It sits right after Select in the Ground box.
 
@@ -297,7 +297,7 @@ Testing the tab with real clicks: whether the tiles stay still, and whether a re
 
 A name clash, so your open editor is broken right now. Fixing it at once:
 
-Claude looked at [image 016](<../images/2026-11-10 M1 haze, the live map, the Ground box and the cuts' numbers/016 Claude.png>)
+Claude looked at picture 016
 
 Both work. In the screenshot all the key items are greyed out, since every one is placed, and the tab sits on the panel's edge. Now the README, the editor's help and the version:
 
@@ -367,7 +367,7 @@ Now the server: it should reload the game only when a file really changed, and n
 
 The server change is in. Before testing, checking which test hooks I can use to find the tile under the player:
 
-Claude looked at [image 017](<../images/2026-11-10 M1 haze, the live map, the Ground box and the cuts' numbers/017 Claude.png>)
+Claude looked at picture 017
 
 The raised tile shows in the game straight away, and the editor marks it 2 m. Next: a reload with unsaved changes, progress kept through a rebuild, and a slider Save reloading once:
 
@@ -426,7 +426,7 @@ Now the README and version, then tests.
 
 Tests pass. A quick look at the editor in the hidden browser to see the row in its new place:
 
-Claude looked at [image 018](<../images/2026-11-10 M1 haze, the live map, the Ground box and the cuts' numbers/018 Claude.png>)
+Claude looked at picture 018
 
 Done and tested. Committing with your saves since the last version (haze 51% from 16 m, and your map import of 19:13):
 
@@ -450,7 +450,7 @@ I'm checking when the tile's Height slider shows, since a click with Move on a b
 
 It works in the test browser. I'm checking the picture, then running the tests and committing.
 
-Claude looked at [image 019](<../images/2026-11-10 M1 haze, the live map, the Ground box and the cuts' numbers/019 Claude.png>)
+Claude looked at picture 019
 
 The Height slider is now in the Ground box, in v0.468.0. It sits under the Layer row and above the tool buttons.
 
@@ -471,7 +471,7 @@ The Selected box, with "Height, every tile", still appears at the top of the sid
 
 can you put makrkers by the red lines on the map to indicate where the pieces connect. for example, another 2 on the map where the continuation is
 
-![Dani's image 020](<../images/2026-11-10 M1 haze, the live map, the Ground box and the cuts' numbers/020 Dani.png>)
+Dani's picture 020
 
 ---
 
@@ -485,7 +485,7 @@ This means numbering each red cut where the map is split, with the same number o
 
 (sent while Claude was working) this one needs to be in the ground section is
 
-![Dani's image 021](<../images/2026-11-10 M1 haze, the live map, the Ground box and the cuts' numbers/021 Dani.png>)
+Dani's picture 021
 
 ---
 
@@ -501,13 +501,13 @@ Now a quick check in Node on your current map: how many seams there are, and whe
 
 All 562 red edges fall into 19 numbered seams, and every mark sits on a red edge. Now I'll draw the marks in the editor.
 
-Claude looked at [image 022](<../images/2026-11-10 M1 haze, the live map, the Ground box and the cuts' numbers/022 Claude.png>)
+Claude looked at picture 022
 
 The numbers show on both lines of each join. Zoomed out, though, they shrink with the map and get hard to read, so I'm checking whether they can keep their size.
 
 I'll keep the numbers at one size on screen at every zoom.
 
-Claude looked at [image 023](<../images/2026-11-10 M1 haze, the live map, the Ground box and the cuts' numbers/023 Claude.png>)
+Claude looked at picture 023
 
 The numbers are readable when zoomed out, and the two numbers of a join sit close together where a cut ends at a pentagon. Now a test, the README and the version.
 
@@ -542,15 +542,15 @@ Today the slider's 0% is already the softest the haze can be. From where it star
 
 The other three files took their changes. I'll make the slider-info edits with the Edit tool instead.
 
-Claude looked at [image 024](<../images/2026-11-10 M1 haze, the live map, the Ground box and the cuts' numbers/024 Claude.png>)
+Claude looked at picture 024
 
-Claude looked at [image 025](<../images/2026-11-10 M1 haze, the live map, the Ground box and the cuts' numbers/025 Claude.png>)
+Claude looked at picture 025
 
 The two pictures look almost the same here, since little in this view lies past 16 m. I'll check again with the haze turned up and starting near, to see the slider really changes it.
 
-Claude looked at [image 026](<../images/2026-11-10 M1 haze, the live map, the Ground box and the cuts' numbers/026 Claude.png>)
+Claude looked at picture 026
 
-Claude looked at [image 027](<../images/2026-11-10 M1 haze, the live map, the Ground box and the cuts' numbers/027 Claude.png>)
+Claude looked at picture 027
 
 The slider works. At 30% the far walls disappear into the haze, and at 300% they fade in gradually. Running the tests and committing:
 
@@ -588,9 +588,9 @@ Now a look in the hidden browser at a few fade lengths, with the haze starting n
 
 ### Claude · 2026-11-10 20:31
 
-Claude looked at [image 028](<../images/2026-11-10 M1 haze, the live map, the Ground box and the cuts' numbers/028 Claude.png>)
+Claude looked at picture 028
 
-Claude looked at [image 029](<../images/2026-11-10 M1 haze, the live map, the Ground box and the cuts' numbers/029 Claude.png>)
+Claude looked at picture 029
 
 The haze always fades in gradually now, with no sharp edge (v0.472.0).
 

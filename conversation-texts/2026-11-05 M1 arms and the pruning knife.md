@@ -1,6 +1,6 @@
 # M1 arms and the pruning knife
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-05 M1 arms and the pruning knife\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-05 M1 arms and the pruning knife", numbered as here. Private: never commit or share.
 
 ---
 
@@ -26,21 +26,21 @@ Entering the worktree first, then reading the Chrome helper from an earlier sess
 
 Now the frame extractor: Chrome opens each video, steps through it, and saves stills.
 
-Claude looked at [image 001](<../images/2026-11-05 M1 arms and the pruning knife/001 Claude.jpg>)
+Claude looked at picture 001
 
-Claude looked at [image 002](<../images/2026-11-05 M1 arms and the pruning knife/002 Claude.jpg>)
+Claude looked at picture 002
 
-Claude looked at [image 003](<../images/2026-11-05 M1 arms and the pruning knife/003 Claude.jpg>)
+Claude looked at picture 003
 
-Claude looked at [image 004](<../images/2026-11-05 M1 arms and the pruning knife/004 Claude.jpg>)
+Claude looked at picture 004
 
-Claude looked at [image 005](<../images/2026-11-05 M1 arms and the pruning knife/005 Claude.jpg>)
+Claude looked at picture 005
 
 The chopping is four short shots. Looking at the key moments larger.
 
-Claude looked at [image 006](<../images/2026-11-05 M1 arms and the pruning knife/006 Claude.jpg>)
+Claude looked at picture 006
 
-Claude looked at [image 007](<../images/2026-11-05 M1 arms and the pruning knife/007 Claude.jpg>)
+Claude looked at picture 007
 
 The video gives four takes on one gesture: raise the pole, hook the branch, pull it down. Now I'm looking at the game's character and how harvesting works today, so the roughs fit them.
 
@@ -50,13 +50,13 @@ Port 4921 is free. Starting the worktree's game there.
 
 The worktree's game is running on port 4921. Next: posing the camera low and side-on to the character and taking its picture.
 
-Claude looked at [image 008](<../images/2026-11-05 M1 arms and the pruning knife/008 Claude.png>)
+Claude looked at picture 008
 
 The character in profile, facing left: round red cloak with dark spots, white collar, navy head with a pale face band, stem legs. Taking a front view and one from the game's own camera too.
 
-Claude looked at [image 009](<../images/2026-11-05 M1 arms and the pruning knife/009 Claude.png>)
+Claude looked at picture 009
 
-Claude looked at [image 010](<../images/2026-11-05 M1 arms and the pruning knife/010 Claude.png>)
+Claude looked at picture 010
 
 Tessera Records takes any file type as an original file, so the video can go in through the Bring in file. Checking which category fits a reference video.
 
@@ -82,7 +82,7 @@ Stills are out. Pulling one close-up of the blade, then writing the page that dr
 
 (sent while Claude was working) the round knigf is your reference image for the knife design. it should just have a longer handle for trees
 
-![Dani's image 011](<../images/2026-11-05 M1 arms and the pruning knife/011 Dani.jpg>)
+Dani's picture 011
 
 ---
 
@@ -92,19 +92,19 @@ Now the knife sizes, the search for key 3, and a knife sheet on the page in plac
 
 Building the roughs page now; fixing a quote mark the last edit broke.
 
-Claude looked at [image 012](<../images/2026-11-05 M1 arms and the pruning knife/012 Claude.jpg>)
+Claude looked at picture 012
 
 The page renders. Before publishing I want a closer look at the six drawings, so I'm rendering them large on their own.
 
-Claude looked at [image 013](<../images/2026-11-05 M1 arms and the pruning knife/013 Claude.png>)
+Claude looked at picture 013
 
 Now the pull poses, the knife sheets' frames, the timing labels and the short handle's wording.
 
-Claude looked at [image 014](<../images/2026-11-05 M1 arms and the pruning knife/014 Claude.png>)
+Claude looked at picture 014
 
-Claude looked at [image 015](<../images/2026-11-05 M1 arms and the pruning knife/015 Claude.png>)
+Claude looked at picture 015
 
-Claude looked at [image 016](<../images/2026-11-05 M1 arms and the pruning knife/016 Claude.jpg>)
+Claude looked at picture 016
 
 One flaw: the short knife's "10 cm" label is far too big, because that sheet is drawn at a much larger scale. Scaling the label and line to each sheet, then publishing.
 
@@ -139,9 +139,9 @@ i think you have the knife pointed the wrong side by the way. shouldn't the hook
 q1 yes
 q2 small knife small plants. long knife large plants
 
-![Dani's image 017](<../images/2026-11-05 M1 arms and the pruning knife/017 Dani.png>)
+Dani's picture 017
 
-![Dani's image 018](<../images/2026-11-05 M1 arms and the pruning knife/018 Dani.png>)
+Dani's picture 018
 
 ---
 
@@ -157,9 +157,9 @@ Reading the drawing code to make these changes.
 
 Building and checking the drawings large.
 
-Claude looked at [image 019](<../images/2026-11-05 M1 arms and the pruning knife/019 Claude.png>)
+Claude looked at picture 019
 
-Claude looked at [image 020](<../images/2026-11-05 M1 arms and the pruning knife/020 Claude.png>)
+Claude looked at picture 020
 
 The sleeves now read as wide bell sleeves. Republishing.
 
@@ -215,7 +215,7 @@ One web-copy test fails on line endings (CRLF against LF) in `src/planet-plan.js
 
 All 192 tests pass, 8 of them new for the arms. Now looking at the arms in the running game. Checking what `window.planet` offers for giving the kit and moving the player.
 
-Claude looked at [image 021](<../images/2026-11-05 M1 arms and the pruning knife/021 Claude.png>)
+Claude looked at picture 021
 
 ---
 
@@ -227,15 +227,15 @@ Claude looked at [image 021](<../images/2026-11-05 M1 arms and the pruning knife
 
 ### Claude · 2026-11-05 23:14
 
-Claude looked at [image 022](<../images/2026-11-05 M1 arms and the pruning knife/022 Claude.png>)
+Claude looked at picture 022
 
 Walking and running come next, held keys in the page. Then the knife swing: I'll slow "Hit every" to 4 s through the remembered sliders, so the hidden browser can catch each key pose.
 
-Claude looked at [image 023](<../images/2026-11-05 M1 arms and the pruning knife/023 Claude.png>)
+Claude looked at picture 023
 
-Claude looked at [image 024](<../images/2026-11-05 M1 arms and the pruning knife/024 Claude.png>)
+Claude looked at picture 024
 
-Claude looked at [image 025](<../images/2026-11-05 M1 arms and the pruning knife/025 Claude.png>)
+Claude looked at picture 025
 
 ---
 
@@ -254,35 +254,35 @@ Tell Dani in a few lines what changed. Then end, or go back into your worktree (
 
 ### Claude · 2026-11-05 23:20
 
-Claude looked at [image 026](<../images/2026-11-05 M1 arms and the pruning knife/026 Claude.png>)
+Claude looked at picture 026
 
 Found it: my camera helper read where the player was drawn, which lags a frame behind, so it put the player back at the start. Using the player's actual position instead.
 
 The player now stands at the tree, but two things are off: the short knife is still out, kept from the flower, and the tree's hit count stays at 0. Looking at the pictures.
 
-Claude looked at [image 027](<../images/2026-11-05 M1 arms and the pruning knife/027 Claude.png>)
+Claude looked at picture 027
 
-Claude looked at [image 028](<../images/2026-11-05 M1 arms and the pruning knife/028 Claude.png>)
+Claude looked at picture 028
 
-Claude looked at [image 029](<../images/2026-11-05 M1 arms and the pruning knife/029 Claude.png>)
+Claude looked at picture 029
 
 Tree crowns block the front view. Trying the other side, side-on.
 
-Claude looked at [image 030](<../images/2026-11-05 M1 arms and the pruning knife/030 Claude.png>)
+Claude looked at picture 030
 
 No cone trees on this map, so the player stayed at the arching flower by the start. That still shows the short knife up close.
 
-Claude looked at [image 031](<../images/2026-11-05 M1 arms and the pruning knife/031 Claude.png>)
+Claude looked at picture 031
 
 No pond tile had water on all six sides, so the player never reached the water. The floating numbers look right: arms spread out. Retrying the swim on the Guardian's tile, in the pond's middle.
 
-Claude looked at [image 032](<../images/2026-11-05 M1 arms and the pruning knife/032 Claude.png>)
+Claude looked at picture 032
 
-Claude looked at [image 033](<../images/2026-11-05 M1 arms and the pruning knife/033 Claude.png>)
+Claude looked at picture 033
 
 Still floating: the pond hadn't risen, even after the wake. The "Restore all" button raises every tile, so trying that.
 
-Claude looked at [image 034](<../images/2026-11-05 M1 arms and the pruning knife/034 Claude.png>)
+Claude looked at picture 034
 
 Updating the README: the harvesting entry's hit timing and knock, plus new entries for the arms and the knife.
 
@@ -344,23 +344,23 @@ All 9 arms tests pass. Starting the worktree's game again to watch the slash.
 
 The hands go through the slash's poses: drawn back right, across the front at the hit, and the arms return once the flower is used up. Looking at the pictures.
 
-Claude looked at [image 035](<../images/2026-11-05 M1 arms and the pruning knife/035 Claude.png>)
+Claude looked at picture 035
 
 The arching flower's head covers the player here, so the slash is hard to judge. Trying pod stalks in the open, from behind and a little higher.
 
-Claude looked at [image 036](<../images/2026-11-05 M1 arms and the pruning knife/036 Claude.png>)
+Claude looked at picture 036
 
 The player stayed at the flower, so no pod stalks were found. Listing which plants have grown after the wake.
 
 Bulbs have grown, and they're low (0.8 m), which also tests the short knife slashing lower.
 
-Claude looked at [image 037](<../images/2026-11-05 M1 arms and the pruning knife/037 Claude.jpg>)
+Claude looked at picture 037
 
 From behind, the slash is hard to read at this size: the body turns, and the drops pop at the front-centre pose. Taking a view from above, where a sideways sweep should show clearly.
 
-Claude looked at [image 038](<../images/2026-11-05 M1 arms and the pruning knife/038 Claude.png>)
+Claude looked at picture 038
 
-Claude looked at [image 039](<../images/2026-11-05 M1 arms and the pruning knife/039 Claude.png>)
+Claude looked at picture 039
 
 The long knife sweeps too: drawn back to the right with the handle raised, then straight into the crown at the hit, as the drops pop. The curl shows at the handle's end. Now the README.
 

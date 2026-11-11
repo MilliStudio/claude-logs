@@ -1,6 +1,6 @@
 # M1 jumps before hops, key items, the editor's top row and folding sliders
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-08 M1 jumps before hops, key items, the editor's top row and folding sliders\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-08 M1 jumps before hops, key items, the editor's top row and folding sliders", numbered as here. Private: never commit or share.
 
 ---
 
@@ -10,7 +10,7 @@ jumping needs a fix. sometimes hops get in  the way, the player can't jump becau
 in some places, like the one in the image, jump doesn't work if i'm standing close the raised edge and pressing jump + one of awds. it doesn't jump in the direction, it just jumps streight up and doesn't advance
 and another fix for key items, can you make it so they are placed on the closest walkable surface to their location on the tile. this is important to make puzzles work on giant flowers
 
-![Dani's image 001](<../images/2026-11-08 M1 jumps before hops, key items, the editor's top row and folding sliders/001 Dani.png>)
+Dani's picture 001
 
 ---
 
@@ -141,7 +141,7 @@ The top row is built; I'm testing it in the hidden browser now. The jump and key
 
 Undo, Redo and Reset to defaults work from the top row, for both sliders and the map. Let me fix the flower test's typo and look at the row.
 
-Claude looked at [image 002](<../images/2026-11-08 M1 jumps before hops, key items, the editor's top row and folding sliders/002 Claude.png>)
+Claude looked at picture 002
 
 The row reads Restore all, Undo, Redo, Save, Reset to defaults, Tutorial, Close. Now the flower box's Reset to saved.
 
@@ -379,9 +379,9 @@ All tests pass. Now the folding in the hidden browser: fold a group, reload, and
 
 Folding works and survives the reload. The Tuning tab section that opened has no groups, so nothing folds there; its own section headings are the tabs. Let me check the look.
 
-Claude looked at [image 003](<../images/2026-11-08 M1 jumps before hops, key items, the editor's top row and folding sliders/003 Claude.png>)
+Claude looked at picture 003
 
-Claude looked at [image 004](<../images/2026-11-08 M1 jumps before hops, key items, the editor's top row and folding sliders/004 Claude.png>)
+Claude looked at picture 004
 
 The row stays over the map now and wraps to a second line. README next, then v0.431.0 with your saved values.
 
@@ -415,7 +415,7 @@ A test saves four leaves and expects four back. With three leaves, the fourth sa
 
 All tests pass. Now the flower box in the hidden browser, with a leaf switched on from the new row.
 
-Claude looked at [image 005](<../images/2026-11-08 M1 jumps before hops, key items, the editor's top row and folding sliders/005 Claude.png>)
+Claude looked at picture 005
 
 The row works: switching Leaf 3 on from it updates its section's heading, and the top Undo takes it back. README next.
 

@@ -1,6 +1,6 @@
 # 2026-11-07 M1 deliveries stop out of reach, and more solid liquids
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-07 M1 deliveries stop out of reach, and more solid liquids\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-07 M1 deliveries stop out of reach, and more solid liquids", numbered as here. Private: never commit or share.
 
 ---
 
@@ -47,15 +47,15 @@ I'll name mine `deliveryReach`, in the folder and in my replacement list:
 
 Fixed. Telling the other session, as its browser runs would have hit my error too:
 
-Claude looked at [image 001](<../images/2026-11-07 M1 deliveries stop out of reach, and more solid liquids/001 Claude.png>)
+Claude looked at picture 001
 
-Claude looked at [image 002](<../images/2026-11-07 M1 deliveries stop out of reach, and more solid liquids/002 Claude.png>)
+Claude looked at picture 002
 
 Too small to judge at this size. Adding a zoomed crop to my copy of the browser helper:
 
-Claude looked at [image 003](<../images/2026-11-07 M1 deliveries stop out of reach, and more solid liquids/003 Claude.png>)
+Claude looked at picture 003
 
-Claude looked at [image 004](<../images/2026-11-07 M1 deliveries stop out of reach, and more solid liquids/004 Claude.png>)
+Claude looked at picture 004
 
 The new look is clearly more visible: water blue, sap amber, nectar gold, still glassy with their bubbles and glints. Now the version. Checking HEAD and whether the README names the current version:
 

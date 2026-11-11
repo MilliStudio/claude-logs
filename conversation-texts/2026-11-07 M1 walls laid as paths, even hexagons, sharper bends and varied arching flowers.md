@@ -1,6 +1,6 @@
 # 2026-11-07 M1 walls laid as paths, even hexagons, sharper bends and varied arching flowers
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-07 M1 walls laid as paths, even hexagons, sharper bends and varied arching flowers\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-07 M1 walls laid as paths, even hexagons, sharper bends and varied arching flowers", numbered as here. Private: never commit or share.
 
 ---
 
@@ -18,25 +18,25 @@ Still reading: now measuring the actual tile shapes on the planet so the picture
 
 Found the two causes with real numbers. Making the picture next, then the walls.
 
-Claude looked at [image 001](<../images/2026-11-07 M1 walls laid as paths, even hexagons, sharper bends and varied arching flowers/001 Claude.png>)
+Claude looked at picture 001
 
-Claude looked at [image 002](<../images/2026-11-07 M1 walls laid as paths, even hexagons, sharper bends and varied arching flowers/002 Claude.png>)
+Claude looked at picture 002
 
 Building the picture now: a globe view plus two maps of the island area, one for tile size and one for how far "north" turns.
 
-Claude looked at [image 003](<../images/2026-11-07 M1 walls laid as paths, even hexagons, sharper bends and varied arching flowers/003 Claude.jpg>)
+Claude looked at picture 003
 
 Picture's first draft works; fixing a mirrored globe and overlapping panels before showing it.
 
-Claude looked at [image 004](<../images/2026-11-07 M1 walls laid as paths, even hexagons, sharper bends and varied arching flowers/004 Claude.jpg>)
+Claude looked at picture 004
 
-![Claude's image 005](<../images/2026-11-07 M1 walls laid as paths, even hexagons, sharper bends and varied arching flowers/005 Claude to Dani.png>)
+Claude's picture 005
 
 Fixing a quoting slip in the picture script, then opening the picture for you.
 
-Again: [image 005](<../images/2026-11-07 M1 walls laid as paths, even hexagons, sharper bends and varied arching flowers/005 Claude to Dani.png>)
+Again: picture 005
 
-Claude looked at [image 006](<../images/2026-11-07 M1 walls laid as paths, even hexagons, sharper bends and varied arching flowers/006 Claude.jpg>)
+Claude looked at picture 006
 
 ---
 
@@ -76,7 +76,7 @@ Now the edits to the plan module: the new characters, each tile's own north, and
 
 Sides are right everywhere, including 10,14 and 10,16 where true north is 47–58° off. Drawing the shapes to check them by eye, thin and thick.
 
-Claude looked at [image 007](<../images/2026-11-07 M1 walls laid as paths, even hexagons, sharper bends and varied arching flowers/007 Claude.png>)
+Claude looked at picture 007
 
 Now the editor's flat map gives each tile its own north, and the editor passes it on.
 
@@ -116,15 +116,15 @@ No browser script was kept, so I'm writing a small one that drives Chrome direct
 
 The game loads without errors and every wall is placed. Looking at the pictures.
 
-Claude looked at [image 008](<../images/2026-11-07 M1 walls laid as paths, even hexagons, sharper bends and varied arching flowers/008 Claude.png>)
+Claude looked at picture 008
 
-Claude looked at [image 009](<../images/2026-11-07 M1 walls laid as paths, even hexagons, sharper bends and varied arching flowers/009 Claude.png>)
+Claude looked at picture 009
 
 Walls draw with their grass, bricks and ends. These views are too close to judge the joins, so I'm pulling the camera back for an overview.
 
-Claude looked at [image 010](<../images/2026-11-07 M1 walls laid as paths, even hexagons, sharper bends and varied arching flowers/010 Claude.jpg>)
+Claude looked at picture 010
 
-Claude looked at [image 011](<../images/2026-11-07 M1 walls laid as paths, even hexagons, sharper bends and varied arching flowers/011 Claude.jpg>)
+Claude looked at picture 011
 
 There's a stretch of void south of the start (columns 2–13, rows 9–15). On the copy I'll make it ground and build test walls there.
 
@@ -132,11 +132,11 @@ Walls build fine on the copy. One camera spot I picked isn't a tile; using groun
 
 Two of my test spots fall in the pentagon's missing wedge, where the map has no tiles. Moving the sharp-bend test west of it.
 
-Claude looked at [image 012](<../images/2026-11-07 M1 walls laid as paths, even hexagons, sharper bends and varied arching flowers/012 Claude.png>)
+Claude looked at picture 012
 
-Claude looked at [image 013](<../images/2026-11-07 M1 walls laid as paths, even hexagons, sharper bends and varied arching flowers/013 Claude.png>)
+Claude looked at picture 013
 
-![Claude's image 014](<../images/2026-11-07 M1 walls laid as paths, even hexagons, sharper bends and varied arching flowers/014 Claude to Dani.png>)
+Claude's picture 014
 
 A straight wall on 9,13 (beside the pentagon's wedge) reads as open ground at its middle. Tracking that down.
 
@@ -144,13 +144,13 @@ I'll write the probe file with the Write tool instead of a heredoc.
 
 The walls on 9,12 and 9,13 aren't found under the player at all, while the secret passage next to them is. Adding a debug readout to the scratch copy to see why.
 
-Claude looked at [image 015](<../images/2026-11-07 M1 walls laid as paths, even hexagons, sharper bends and varied arching flowers/015 Claude.png>)
+Claude looked at picture 015
 
-Claude looked at [image 016](<../images/2026-11-07 M1 walls laid as paths, even hexagons, sharper bends and varied arching flowers/016 Claude.png>)
+Claude looked at picture 016
 
-Claude looked at [image 017](<../images/2026-11-07 M1 walls laid as paths, even hexagons, sharper bends and varied arching flowers/017 Claude.png>)
+Claude looked at picture 017
 
-Claude looked at [image 018](<../images/2026-11-07 M1 walls laid as paths, even hexagons, sharper bends and varied arching flowers/018 Claude.png>)
+Claude looked at picture 018
 
 The editor draws them the same way as the game: the zigzag, the ring, the sharp bends, the slope's arrows and the secret passage's crack. Now the README.
 
@@ -174,9 +174,9 @@ Same results, and the whole ball now builds in about 0.2 s. Running the tests:
 
 All 208 pass. Checking how the planet's size and the tiles near the start change, since the game sizes the planet from the island's average tile.
 
-Claude looked at [image 019](<../images/2026-11-07 M1 walls laid as paths, even hexagons, sharper bends and varied arching flowers/019 Claude.jpg>)
+Claude looked at picture 019
 
-Claude looked at [image 020](<../images/2026-11-07 M1 walls laid as paths, even hexagons, sharper bends and varied arching flowers/020 Claude.png>)
+Claude looked at picture 020
 
 Your island looks the same, with no errors. Measuring the new tile sizes round a pentagon for the README.
 
@@ -188,7 +188,7 @@ Both versions are pushed. Checking the real time against my estimate:
 
 About 50 minutes from start to the second push (13:35–14:26), not the 3–4 hours I estimated. Stopping the scratch copy's server.
 
-Again: [image 014](<../images/2026-11-07 M1 walls laid as paths, even hexagons, sharper bends and varied arching flowers/014 Claude to Dani.png>)
+Again: picture 014
 
 Both changes are done and pushed: the new walls as v0.400.0, and more even tiles as v0.401.0. I estimated 3–4 hours; it took about 50 minutes (13:35–14:26).
 
@@ -209,7 +209,7 @@ Both changes are done and pushed: the new walls as v0.400.0, and more even tiles
 
 To get both versions in M1 testing, press Update M1 testing.
 
-Again: [image 005](<../images/2026-11-07 M1 walls laid as paths, even hexagons, sharper bends and varied arching flowers/005 Claude to Dani.png>)
+Again: picture 005
 
 ---
 
@@ -227,15 +227,15 @@ Making the number of straight pieces round a bend a setting, then drawing 1, 2, 
 
 Now drawing the comparison sheet: thick walls and paths at 1, 2, 3 and 16 facets.
 
-![Claude's image 021](<../images/2026-11-07 M1 walls laid as paths, even hexagons, sharper bends and varied arching flowers/021 Claude to Dani.png>)
+Claude's picture 021
 
 All 209 tests pass. Checking the bends in the game on your map's paths:
 
-Claude looked at [image 022](<../images/2026-11-07 M1 walls laid as paths, even hexagons, sharper bends and varied arching flowers/022 Claude.jpg>)
+Claude looked at picture 022
 
 Path bends now show crisp creases instead of a smooth curve. Updating the README, then committing v0.402.0.
 
-Again: [image 021](<../images/2026-11-07 M1 walls laid as paths, even hexagons, sharper bends and varied arching flowers/021 Claude to Dani.png>)
+Again: picture 021
 
 Written for: the Claude session in your other conversation, which will work on the map editor's flat map.
 
@@ -269,7 +269,7 @@ A picture comparing 1, 2, 3 and 16 is open in VS Code. I chose 2 because 1 leave
 
 This session isn't wrapped up yet; tell me when you want that.
 
-Again: [image 005](<../images/2026-11-07 M1 walls laid as paths, even hexagons, sharper bends and varied arching flowers/005 Claude to Dani.png>)
+Again: picture 005
 
 ---
 
@@ -333,17 +333,17 @@ There's a Restore all button. Using it in the hidden browser, then viewing the n
 
 Each flower now differs. The six new ones round -4,8 range from 2.1 m to 3.4 m (all set to 2.8 m), and their flowers' petal tips from 9° to 44° (all set to 25°). Looking at the pictures:
 
-Claude looked at [image 023](<../images/2026-11-07 M1 walls laid as paths, even hexagons, sharper bends and varied arching flowers/023 Claude.png>)
+Claude looked at picture 023
 
-Claude looked at [image 024](<../images/2026-11-07 M1 walls laid as paths, even hexagons, sharper bends and varied arching flowers/024 Claude.png>)
+Claude looked at picture 024
 
 Restore all raised the tiles but left them unrevived, so the flowers haven't grown. Waking the Guardian revives everything, so I'll give the hidden player all items and walk them to it.
 
-Claude looked at [image 025](<../images/2026-11-07 M1 walls laid as paths, even hexagons, sharper bends and varied arching flowers/025 Claude.png>)
+Claude looked at picture 025
 
-![Claude's image 026](<../images/2026-11-07 M1 walls laid as paths, even hexagons, sharper bends and varied arching flowers/026 Claude to Dani.png>)
+Claude's picture 026
 
-Again: [image 026](<../images/2026-11-07 M1 walls laid as paths, even hexagons, sharper bends and varied arching flowers/026 Claude to Dani.png>)
+Again: picture 026
 
 Arching flowers now differ from each other (v0.403.0, pushed).
 
@@ -367,7 +367,7 @@ tr and wrap up please.
 
 ### Claude · 2026-11-07 17:27
 
-Again: [image 021](<../images/2026-11-07 M1 walls laid as paths, even hexagons, sharper bends and varied arching flowers/021 Claude to Dani.png>)
+Again: picture 021
 
 I'm working on the edges and checking how the change will reach M1 testing, then I'll do the records and the wrap-up.
 
@@ -383,11 +383,11 @@ I'm working on the edges and checking how the change will reach M1 testing, then
 
 Noted: I'll stay out of the map editor's files (src/editor.js, src/island-map.js, editor.html) and only touch the bend shape and its numbers.
 
-Claude looked at [image 022](<../images/2026-11-07 M1 walls laid as paths, even hexagons, sharper bends and varied arching flowers/022 Claude.jpg>)
+Claude looked at picture 022
 
 I'm drawing the bends at a few corner sizes to pick the smallest step sharper.
 
-Claude looked at [image 027](<../images/2026-11-07 M1 walls laid as paths, even hexagons, sharper bends and varied arching flowers/027 Claude.png>)
+Claude looked at picture 027
 
 0.3 is the smallest visible step, so I'll use it. The slider's constant gets a new name so the new value reaches M1 testing.
 
@@ -397,7 +397,7 @@ Tests are running; the one failure is the expected guard that clears once the ve
 
 Now checking the running game opens cleanly with the new corners.
 
-Claude looked at [image 028](<../images/2026-11-07 M1 walls laid as paths, even hexagons, sharper bends and varied arching flowers/028 Claude.png>)
+Claude looked at picture 028
 
 The game opens with no errors, and the rings of low walls show the tighter corners. Committing v0.405.0, my files only.
 

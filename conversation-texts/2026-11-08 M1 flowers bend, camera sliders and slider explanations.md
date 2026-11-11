@@ -1,6 +1,6 @@
 # M1 flowers bend, camera sliders and slider explanations
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-08 M1 flowers bend, camera sliders and slider explanations\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-08 M1 flowers bend, camera sliders and slider explanations", numbered as here. Private: never commit or share.
 
 ---
 
@@ -145,11 +145,11 @@ Understood: I'll stay in the main folder, leave the worktree alone, commit and p
 
 The first cases didn't reach the leaf: the player stopped on 0.5 m ground. I need the full output, saved to a file this time:
 
-Claude looked at [image 001](<../images/2026-11-08 M1 flowers bend, camera sliders and slider explanations/001 Claude.png>)
+Claude looked at picture 001
 
 The press works as planned: the leaf dips on its hinge and the player stands on it. Fixing my test walks (waiting for the camera to turn, a lower test leaf, better stop conditions):
 
-Claude looked at [image 002](<../images/2026-11-08 M1 flowers bend, camera sliders and slider explanations/002 Claude.png>)
+Claude looked at picture 002
 
 The head lifts the 1.5 m leaf over itself as planned. Now the walks that start over the void, re-aiming the camera as they go:
 
@@ -159,13 +159,13 @@ The arching flower on 10,3 sways when brushed past. The leaf on 6,2 hangs over t
 
 The short jump works: it was cut to 0.42 m, the upper leaf got its bump-kick, and the lower leaf its landing-kick. A look at the arching flower picture:
 
-Claude looked at [image 003](<../images/2026-11-08 M1 flowers bend, camera sliders and slider explanations/003 Claude.png>)
+Claude looked at picture 003
 
 Every case now behaves as planned. Running the tests after the bump fix, then the README:
 
 Testing the edge press: the player stands on the ground with their body half over a low leaf's edge:
 
-Claude looked at [image 004](<../images/2026-11-08 M1 flowers bend, camera sliders and slider explanations/004 Claude.png>)
+Claude looked at picture 004
 
 The edge press works: the leaf is pressed while the player's body overlaps its edge from the ground. The wall hides it in this picture. Updating the README now. Reading the paragraph on floors:
 
@@ -201,7 +201,7 @@ It took about 35 minutes, against my estimate of 1½–2 hours. When you ask for
 i think the camers iss too sensitive about fading objects. it's ok for the player to be covered parthly. up to half the body maybe. can you add sliders for how camera behaves. when it decides to tile and what it makes the game fade objects in the line of sight?
 I attached a pick of the an entirely faded flower because the camera is sensitive, even though the entire body of the character is still visible
 
-![Dani's image 005](<../images/2026-11-08 M1 flowers bend, camera sliders and slider explanations/005 Dani.png>)
+Dani's picture 005
 
 ---
 
@@ -270,17 +270,17 @@ A name clash: `DEMO_FADE_TIME` already exists (fading into the void). Renaming m
 
 All 216 pass. Trying the fading in the hidden browser: standing under 4,3's head, then away from it:
 
-Claude looked at [image 006](<../images/2026-11-08 M1 flowers bend, camera sliders and slider explanations/006 Claude.png>)
+Claude looked at picture 006
 
-Claude looked at [image 007](<../images/2026-11-08 M1 flowers bend, camera sliders and slider explanations/007 Claude.png>)
+Claude looked at picture 007
 
 The character had already been sent back from the void, so they weren't under the head any more. Picking a giant flower whose head hangs over real ground:
 
 Every giant flower's head hangs over its own empty tile, so under any head you float in the void. I'll lengthen the void's "Fading starts after" for this test so the character stays put:
 
-Claude looked at [image 008](<../images/2026-11-08 M1 flowers bend, camera sliders and slider explanations/008 Claude.png>)
+Claude looked at picture 008
 
-Claude looked at [image 009](<../images/2026-11-08 M1 flowers bend, camera sliders and slider explanations/009 Claude.png>)
+Claude looked at picture 009
 
 The item sizes session hasn't merged yet. I'll save the camera sliders as v0.423.0 and tell that session to take v0.424.0. Updating the README's camera text:
 
@@ -428,7 +428,7 @@ The literal 'DEMO_FLEX' and 'DEMO_FLEX_HEAD' strings I passed to the helper look
 
 All 216 pass. Checking the map editor in the hidden browser: picking the giant flower tool, scrolling to the leaves' section, and opening one i icon:
 
-Claude looked at [image 010](<../images/2026-11-08 M1 flowers bend, camera sliders and slider explanations/010 Claude.png>)
+Claude looked at picture 010
 
 That label is in backticks, so the script stopped before writing anything. Rerunning with the right quotes:
 

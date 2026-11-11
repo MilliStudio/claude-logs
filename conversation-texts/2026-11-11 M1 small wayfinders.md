@@ -1,6 +1,6 @@
 # M1 small wayfinders
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-11 M1 small wayfinders\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-11 M1 small wayfinders", numbered as here. Private: never commit or share.
 
 ---
 
@@ -93,13 +93,13 @@ Setting up the hidden-browser test: picking two tiles near your start tile on th
 
 The editor side works on the copy: placing, the Unlock range box, switching kinds, and Save writing `small: true, range: 7`. Checking the map picture.
 
-Claude looked at [image 001](<../images/2026-11-11 M1 small wayfinders/001 Claude.png>)
+Claude looked at picture 001
 
 The map shows the teal marks and the orange lines to the raised tiles. Now the game on the copy: feeding a small waypoint, white tiles rising, and the small bird's flight and sway.
 
 Feeding works: 28 tiles rose white (nothing revived), and the small bird flies to the next small waypoint swaying about 0.35 m each way, leaning about 23°. Checking the pictures.
 
-Claude looked at [image 002](<../images/2026-11-11 M1 small wayfinders/002 Claude.png>)
+Claude looked at picture 002
 
 A live rebuild broke on code that still treated the bird shapes as a list. That would hit your trial on every map change, so fixing it now.
 
@@ -254,9 +254,9 @@ The Tessera Records question is still open. I'll wait for this answer first.
 
 and what'sd this?
 
-![Dani's image 003](<../images/2026-11-11 M1 small wayfinders/003 Dani.png>)
+Dani's picture 003
 
-![Dani's image 004](<../images/2026-11-11 M1 small wayfinders/004 Dani.png>)
+Dani's picture 004
 
 ---
 
@@ -288,7 +288,7 @@ It's the same mechanism you approved yesterday for waypoints:
 
 i said no defaults just yesterday. wasn't that in the handoff?
 
-![Dani's image 005](<../images/2026-11-11 M1 small wayfinders/005 Dani.png>)
+Dani's picture 005
 
 ---
 
@@ -463,7 +463,7 @@ The rule I proposed, "Before asking Dani anything, search the saved chats for wh
 they're not fixed. can you make a prompt for the next conversation to fix this and 
 also the mini wayfinders make the tiles around them disappear and create their own links. why did everything go wrong this session. could it be the new way the map saves that you also missed and damaged the code. we'll resolve this next conversation
 
-![Dani's image 006](<../images/2026-11-11 M1 small wayfinders/006 Dani.png>)
+Dani's picture 006
 
 ---
 

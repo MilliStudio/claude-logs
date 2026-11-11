@@ -1,6 +1,6 @@
 # 11 November 2026: M1, the core 12 m down and blur
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-11 M1 the core 12 m down and blur\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-11 M1 the core 12 m down and blur", numbered as here. Private: never commit or share.
 
 ---
 
@@ -40,7 +40,7 @@ i attached a crude example of what i mean
 
 I just finished two other conversations so mamke sre you read their chat logs. i just saved them
 
-![Dani's image 001](<../images/2026-11-11 M1 the core 12 m down and blur/001 Dani.jpg>)
+Dani's picture 001
 
 ---
 
@@ -82,33 +82,33 @@ Code is in and passes the syntax checks. Running the tests, then I'll look at it
 
 All 223 tests pass. Now a look in a hidden browser at your trial, without saving anything.
 
-Claude looked at [image 002](<../images/2026-11-11 M1 the core 12 m down and blur/002 Claude.png>)
+Claude looked at picture 002
 
-Claude looked at [image 003](<../images/2026-11-11 M1 the core 12 m down and blur/003 Claude.png>)
+Claude looked at picture 003
 
 The blur works (far flower and the wall at the bottom left are soft, the character and near tiles sharp, colours unchanged). Now comparing the core change against the old version from the same spot.
 
 Setting up a second copy with the new code and your 9 November island (it has a lantern, so tiles turn green and clouds come), to check the clouds still rise as before.
 
-Claude looked at [image 004](<../images/2026-11-11 M1 the core 12 m down and blur/004 Claude.png>)
+Claude looked at picture 004
 
-Claude looked at [image 005](<../images/2026-11-11 M1 the core 12 m down and blur/005 Claude.png>)
+Claude looked at picture 005
 
 The two copies match. Checking the moment the tiles and clouds rise.
 
-Claude looked at [image 006](<../images/2026-11-11 M1 the core 12 m down and blur/006 Claude.png>)
+Claude looked at picture 006
 
-Claude looked at [image 007](<../images/2026-11-11 M1 the core 12 m down and blur/007 Claude.png>)
+Claude looked at picture 007
 
 The clouds rise the same way in both. Last check for the core: looking down at a decorative flower's stem from both copies.
 
-Claude looked at [image 008](<../images/2026-11-11 M1 the core 12 m down and blur/008 Claude.png>)
+Claude looked at picture 008
 
-Claude looked at [image 009](<../images/2026-11-11 M1 the core 12 m down and blur/009 Claude.png>)
+Claude looked at picture 009
 
-![Claude's image 010](<../images/2026-11-11 M1 the core 12 m down and blur/010 Claude to Dani.png>)
+Claude's picture 010
 
-![Claude's image 011](<../images/2026-11-11 M1 the core 12 m down and blur/011 Claude to Dani.png>)
+Claude's picture 011
 
 Test passes. Now the README.
 
@@ -147,9 +147,9 @@ You can compare the old core and the new one here:
 
 The stem at the top shows the difference best. I read both of your other conversations first. It took about 25 minutes, not the 1½ hours I estimated.
 
-Again: [image 010](<../images/2026-11-11 M1 the core 12 m down and blur/010 Claude to Dani.png>)
+Again: picture 010
 
-Again: [image 011](<../images/2026-11-11 M1 the core 12 m down and blur/011 Claude to Dani.png>)
+Again: picture 011
 
 ---
 
@@ -157,7 +157,7 @@ Again: [image 011](<../images/2026-11-11 M1 the core 12 m down and blur/011 Clau
 
 It's much better thanks. there's just this part sticking out where i marked. can you explain why and propose how to fix it. please generate images to help me u nderstand
 
-![Dani's image 012](<../images/2026-11-11 M1 the core 12 m down and blur/012 Dani.png>)
+Dani's picture 012
 
 ---
 
@@ -185,69 +185,69 @@ Agreed version numbers with the other session. Its hidden browser had collided w
 
 Now the area matches your map once risen. Taking pictures round the walls, plain and with the wall pieces painted red.
 
-Claude looked at [image 013](<../images/2026-11-11 M1 the core 12 m down and blur/013 Claude.png>)
+Claude looked at picture 013
 
-Claude looked at [image 014](<../images/2026-11-11 M1 the core 12 m down and blur/014 Claude.png>)
+Claude looked at picture 014
 
-Claude looked at [image 015](<../images/2026-11-11 M1 the core 12 m down and blur/015 Claude.png>)
+Claude looked at picture 015
 
-Claude looked at [image 016](<../images/2026-11-11 M1 the core 12 m down and blur/016 Claude.png>)
+Claude looked at picture 016
 
 The camera was too close for a useful picture. Trying again zoomed out, closer to your view.
 
-Claude looked at [image 017](<../images/2026-11-11 M1 the core 12 m down and blur/017 Claude.png>)
+Claude looked at picture 017
 
-Claude looked at [image 018](<../images/2026-11-11 M1 the core 12 m down and blur/018 Claude.png>)
+Claude looked at picture 018
 
 Your flower's petals blocked that view. Your picture probably came before the waypoint tiles round the walls had risen, which leaves a large hole there. Trying that state.
 
-Claude looked at [image 019](<../images/2026-11-11 M1 the core 12 m down and blur/019 Claude.png>)
+Claude looked at picture 019
 
-Claude looked at [image 020](<../images/2026-11-11 M1 the core 12 m down and blur/020 Claude.png>)
+Claude looked at picture 020
 
 Wrong angle again. One more try, standing just east of the hole and looking straight down into it at the walls' east side.
 
-Claude looked at [image 021](<../images/2026-11-11 M1 the core 12 m down and blur/021 Claude.png>)
+Claude looked at picture 021
 
-Claude looked at [image 022](<../images/2026-11-11 M1 the core 12 m down and blur/022 Claude.png>)
+Claude looked at picture 022
 
 This view shows it: the wall's foot hangs into the hole in full colour while the tiles around fade. Now the same view with the fix tried on the copy.
 
-Claude looked at [image 023](<../images/2026-11-11 M1 the core 12 m down and blur/023 Claude.png>)
+Claude looked at picture 023
 
 There's a mountain of tall tiles beside that flower: 7,-5 is 4.5 m, 8,-5 6.5 m and 9,-5 14 m, with a hole at 5,-5, 6,-5 and 7,-6 right in front of them. Picturing that spot.
 
-Claude looked at [image 024](<../images/2026-11-11 M1 the core 12 m down and blur/024 Claude.png>)
+Claude looked at picture 024
 
-Claude looked at [image 025](<../images/2026-11-11 M1 the core 12 m down and blur/025 Claude.png>)
+Claude looked at picture 025
 
 On a fresh start that area is the island's north edge, with the 4.5 m and 6.5 m tiles at its east end. Your picture fits standing on that edge. Trying it.
 
-Claude looked at [image 026](<../images/2026-11-11 M1 the core 12 m down and blur/026 Claude.png>)
+Claude looked at picture 026
 
-Claude looked at [image 027](<../images/2026-11-11 M1 the core 12 m down and blur/027 Claude.png>)
+Claude looked at picture 027
 
 Your picture likely shows the 3-tile hole at -1,-15 to 1,-15, seen from its north side with the walls to the left. Trying that view.
 
-Claude looked at [image 028](<../images/2026-11-11 M1 the core 12 m down and blur/028 Claude.png>)
+Claude looked at picture 028
 
-Claude looked at [image 029](<../images/2026-11-11 M1 the core 12 m down and blur/029 Claude.png>)
+Claude looked at picture 029
 
-Claude looked at [image 030](<../images/2026-11-11 M1 the core 12 m down and blur/030 Claude.png>)
+Claude looked at picture 030
 
-Claude looked at [image 031](<../images/2026-11-11 M1 the core 12 m down and blur/031 Claude.png>)
+Claude looked at picture 031
 
 I can't find your exact spot in the trial's map. You probably took the picture in M1 testing, whose map has changed since the trial last imported it. Checking M1 testing's map, read-only.
 
-Claude looked at [image 032](<../images/2026-11-11 M1 the core 12 m down and blur/032 Claude.png>)
+Claude looked at picture 032
 
-Claude looked at [image 033](<../images/2026-11-11 M1 the core 12 m down and blur/033 Claude.png>)
+Claude looked at picture 033
 
 The camera keeps the map's north at the top, so your picture looks north. That puts the hole in the bay east of the island, with the mountain on its south-west. Trying from the bay's south rim.
 
-Claude looked at [image 034](<../images/2026-11-11 M1 the core 12 m down and blur/034 Claude.png>)
+Claude looked at picture 034
 
-Claude looked at [image 035](<../images/2026-11-11 M1 the core 12 m down and blur/035 Claude.png>)
+Claude looked at picture 035
 
 Your picture looks north. That puts you south of the mountain's east side, looking at a hole where tiles there haven't risen yet. One more try, leaving those tiles down.
 
@@ -261,7 +261,7 @@ Your picture looks north. That puts you south of the mountain's east side, looki
 
 ### Claude · 2026-11-11 17:23
 
-Claude looked at [image 036](<../images/2026-11-11 M1 the core 12 m down and blur/036 Claude.png>)
+Claude looked at picture 036
 
 I've stopped the test copy. Your trial and the repository are exactly as they were, and nothing I tried on the copy reached them. I'll wait for your answer on the walls.
 
@@ -277,11 +277,11 @@ what about the image that explains why it happened?
 
 No image yet, sorry. Making it now: a side view of the hole showing why.
 
-Claude looked at [image 037](<../images/2026-11-11 M1 the core 12 m down and blur/037 Claude.png>)
+Claude looked at picture 037
 
 The drawing has a mistake: the far view passes through the mountain tile, which would block it. Fixing that.
 
-![Claude's image 038](<../images/2026-11-11 M1 the core 12 m down and blur/038 Claude to Dani.png>)
+Claude's picture 038
 
 Here's the drawing that explains it:
 
@@ -297,7 +297,7 @@ My earlier reply has a picture of the same spot rebuilt in the game (v-o.png). T
 
 Q1 is still open: should walls fade into the void like tiles? I recommend yes.
 
-Again: [image 038](<../images/2026-11-11 M1 the core 12 m down and blur/038 Claude to Dani.png>)
+Again: picture 038
 
 ---
 
@@ -346,7 +346,7 @@ Q1: Should I still make walls fade, or leave them as they are? I'd leave them, s
 
 this looks ok to me so let's leave it
 
-![Dani's image 039](<../images/2026-11-11 M1 the core 12 m down and blur/039 Dani.png>)
+Dani's picture 039
 
 ---
 

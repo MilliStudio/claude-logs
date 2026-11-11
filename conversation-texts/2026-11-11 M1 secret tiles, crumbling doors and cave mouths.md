@@ -1,6 +1,6 @@
 # M1: secret tiles, crumbling doors and cave mouths
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-11 M1 secret tiles, crumbling doors and cave mouths\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-11 M1 secret tiles, crumbling doors and cave mouths", numbered as here. Private: never commit or share.
 
 ---
 
@@ -91,7 +91,7 @@ Copying a hidden-browser harness from an earlier session to look at your flower 
 
 The game has that head tilted 47° toward the light, which sits over tile 5,5. Taking a picture to see what you see.
 
-Claude looked at [image 001](<../images/2026-11-11 M1 secret tiles, crumbling doors and cave mouths/001 Claude.png>)
+Claude looked at picture 001
 
 Now the map's side in src/planet-plan.js: the new letter and the crack height stored with the tile's height.
 
@@ -131,7 +131,7 @@ Writing the game code now: the secret tile's drawing, collision and opening, and
 
 (sent while Claude was working) tall flowers are also chopped off by something
 
-![Dani's image 002](<../images/2026-11-11 M1 secret tiles, crumbling doors and cave mouths/002 Dani.png>)
+Dani's picture 002
 
 ---
 
@@ -145,15 +145,15 @@ Fixed; it loads again. Your trial's open game didn't load for about half a minut
 
 Nothing in the drawing code cuts things off by distance. Recreating your view in the hidden browser to find what does.
 
-Claude looked at [image 003](<../images/2026-11-11 M1 secret tiles, crumbling doors and cave mouths/003 Claude.png>)
+Claude looked at picture 003
 
-Claude looked at [image 004](<../images/2026-11-11 M1 secret tiles, crumbling doors and cave mouths/004 Claude.png>)
+Claude looked at picture 004
 
 No test hook turns the camera, so I'm adding one, and setting up a scratch copy with your M1 testing map to test both this and the secret tile.
 
-Claude looked at [image 005](<../images/2026-11-11 M1 secret tiles, crumbling doors and cave mouths/005 Claude.png>)
+Claude looked at picture 005
 
-Claude looked at [image 006](<../images/2026-11-11 M1 secret tiles, crumbling doors and cave mouths/006 Claude.png>)
+Claude looked at picture 006
 
 The trial loads. Now the map editor: the Secret tile tool, its drawing on the map, turning it, and the Crack at slider.
 
@@ -173,7 +173,7 @@ Adding a key-press step to my harness, so the hidden browser can walk into the s
 
 Starting the scratch copy's server on its own port.
 
-Claude looked at [image 007](<../images/2026-11-11 M1 secret tiles, crumbling doors and cave mouths/007 Claude.png>)
+Claude looked at picture 007
 
 The tool, the turning and the Crack at slider work in the editor, and the doorway's turn saves as x2. Saving the copy's map, then testing the game.
 
@@ -183,9 +183,9 @@ Two getters share the name walls, and the later one wins. Adding a getter of its
 
 Cracks face 13,-3 (at −0.5 m) and 11,-2, as the turn says. Now walking into it from 13,-3, with the crumble slowed to 4 s so the pictures catch it.
 
-Claude looked at [image 008](<../images/2026-11-11 M1 secret tiles, crumbling doors and cave mouths/008 Claude.png>)
+Claude looked at picture 008
 
-Claude looked at [image 009](<../images/2026-11-11 M1 secret tiles, crumbling doors and cave mouths/009 Claude.png>)
+Claude looked at picture 009
 
 Two problems found: walking into the crack didn't open it, and the tile's sides come out pinkish instead of the white of the tiles beside it. Adding temporary debugging to the copy only.
 
@@ -195,29 +195,29 @@ The logic works: the push counts up. The hidden browser draws only about 2 frame
 
 It opened, the door crumbled, and the player walked through the doorway onto the secret tile at −0.5 m, as far as 11,-2's 13.5 m side. Looking at the pictures.
 
-Claude looked at [image 010](<../images/2026-11-11 M1 secret tiles, crumbling doors and cave mouths/010 Claude.png>)
+Claude looked at picture 010
 
-Claude looked at [image 011](<../images/2026-11-11 M1 secret tiles, crumbling doors and cave mouths/011 Claude.png>)
+Claude looked at picture 011
 
 The doorway is open and the player stands inside the tunnel. Now catching the crumble itself on camera. My slowed-down slider values didn't take, so checking how the game reads remembered sliders.
 
 Remembered sliders are stored as [value, default] pairs. Retrying with the crumble slowed to 6 s.
 
-Claude looked at [image 012](<../images/2026-11-11 M1 secret tiles, crumbling doors and cave mouths/012 Claude.png>)
+Claude looked at picture 012
 
-Claude looked at [image 013](<../images/2026-11-11 M1 secret tiles, crumbling doors and cave mouths/013 Claude.png>)
+Claude looked at picture 013
 
-Claude looked at [image 014](<../images/2026-11-11 M1 secret tiles, crumbling doors and cave mouths/014 Claude.png>)
+Claude looked at picture 014
 
-Claude looked at [image 015](<../images/2026-11-11 M1 secret tiles, crumbling doors and cave mouths/015 Claude.png>)
+Claude looked at picture 015
 
 The wall passage didn't open in that short push; only one blocked frame. Pushing longer.
 
-Claude looked at [image 016](<../images/2026-11-11 M1 secret tiles, crumbling doors and cave mouths/016 Claude.png>)
+Claude looked at picture 016
 
 The wall passage opens as before, and its door crumbles too. Last check: how the secret tile looks on the editor's map. Finding how to scroll the map there.
 
-Claude looked at [image 017](<../images/2026-11-11 M1 secret tiles, crumbling doors and cave mouths/017 Claude.png>)
+Claude looked at picture 017
 
 On the editor's map the secret tile shows as a tile with its height. A dashed doorway runs from 13,-3 to 11,-2, with a crack at each end, matching the game. Now tests for the new map data.
 
@@ -262,7 +262,7 @@ Q1. The chopped-off flowers: I couldn't reproduce it. From the side, your flower
 
 ### Dani · 2026-11-11 21:33
 
-![Dani's image 018](<../images/2026-11-11 M1 secret tiles, crumbling doors and cave mouths/018 Dani.png>)
+Dani's picture 018
 
 ---
 
@@ -270,11 +270,11 @@ Q1. The chopped-off flowers: I couldn't reproduce it. From the side, your flower
 
 Thanks, the circle helps: the upper stem and the head's middle are missing, while the petals and the lower stem show. My guess is the haze and Blur washing out thin, far, dark parts. Testing that by taking your view with Blur and haze on, then off.
 
-![Claude's image 019](<../images/2026-11-11 M1 secret tiles, crumbling doors and cave mouths/019 Claude to Dani.png>)
+Claude's picture 019
 
-![Claude's image 020](<../images/2026-11-11 M1 secret tiles, crumbling doors and cave mouths/020 Claude to Dani.png>)
+Claude's picture 020
 
-![Claude's image 021](<../images/2026-11-11 M1 secret tiles, crumbling doors and cave mouths/021 Claude to Dani.png>)
+Claude's picture 021
 
 Found it, and nothing is broken: your haze and Blur wash the stem out. I took your view in a hidden browser three ways:
 
@@ -291,11 +291,11 @@ The three pictures:
 - C:\Users\someo\AppData\Local\Temp\claude\653749dc61028eb9\2defc99a-d180-418d-b8de-45fbfb241569\scratchpad\chop-no-blur.png
 - C:\Users\someo\AppData\Local\Temp\claude\653749dc61028eb9\2defc99a-d180-418d-b8de-45fbfb241569\scratchpad\chop-no-blur-haze.png
 
-Again: [image 019](<../images/2026-11-11 M1 secret tiles, crumbling doors and cave mouths/019 Claude to Dani.png>)
+Again: picture 019
 
-Again: [image 021](<../images/2026-11-11 M1 secret tiles, crumbling doors and cave mouths/021 Claude to Dani.png>)
+Again: picture 021
 
-Again: [image 020](<../images/2026-11-11 M1 secret tiles, crumbling doors and cave mouths/020 Claude to Dani.png>)
+Again: picture 020
 
 ---
 
@@ -303,7 +303,7 @@ Again: [image 020](<../images/2026-11-11 M1 secret tiles, crumbling doors and ca
 
 no the door in both walls and tiles need to look like this. i highlighted it
 
-![Dani's image 022](<../images/2026-11-11 M1 secret tiles, crumbling doors and cave mouths/022 Dani.png>)
+Dani's picture 022
 
 ---
 
@@ -315,19 +315,19 @@ The script itself failed to parse, so nothing was written. Finding the stray bac
 
 Applied. Testing on the scratch copy: both kinds, before, during and after opening.
 
-Claude looked at [image 023](<../images/2026-11-11 M1 secret tiles, crumbling doors and cave mouths/023 Claude.png>)
+Claude looked at picture 023
 
-Claude looked at [image 024](<../images/2026-11-11 M1 secret tiles, crumbling doors and cave mouths/024 Claude.png>)
+Claude looked at picture 024
 
-Claude looked at [image 025](<../images/2026-11-11 M1 secret tiles, crumbling doors and cave mouths/025 Claude.png>)
+Claude looked at picture 025
 
-Claude looked at [image 026](<../images/2026-11-11 M1 secret tiles, crumbling doors and cave mouths/026 Claude.png>)
+Claude looked at picture 026
 
-Claude looked at [image 027](<../images/2026-11-11 M1 secret tiles, crumbling doors and cave mouths/027 Claude.png>)
+Claude looked at picture 027
 
-![Claude's image 028](<../images/2026-11-11 M1 secret tiles, crumbling doors and cave mouths/028 Claude to Dani.png>)
+Claude's picture 028
 
-![Claude's image 029](<../images/2026-11-11 M1 secret tiles, crumbling doors and cave mouths/029 Claude to Dani.png>)
+Claude's picture 029
 
 Your opened doorways are now cave mouths like your photo, on both the wall passage and the secret tile. It's saved and pushed as v0.483.0, and all 225 tests pass. Press **Update M1 testing** to get it there.
 
@@ -345,11 +345,11 @@ I tested it in a hidden browser on a copy with your M1 testing map: the secret t
 
 On 12,-2, the far end of the tunnel is the side of 11,-2, which is 13.5 m tall. So you see a lit wall at the back instead of an exit until that tile changes.
 
-Again: [image 028](<../images/2026-11-11 M1 secret tiles, crumbling doors and cave mouths/028 Claude to Dani.png>)
+Again: picture 028
 
-![Claude's image 030](<../images/2026-11-11 M1 secret tiles, crumbling doors and cave mouths/030 Claude to Dani.png>)
+Claude's picture 030
 
-Again: [image 029](<../images/2026-11-11 M1 secret tiles, crumbling doors and cave mouths/029 Claude to Dani.png>)
+Again: picture 029
 
 ---
 

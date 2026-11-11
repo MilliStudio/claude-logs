@@ -1,6 +1,6 @@
 # M1 one item size and harvest numbers at one height
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-08 M1 one item size and harvest numbers at one height\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-08 M1 one item size and harvest numbers at one height", numbered as here. Private: never commit or share.
 
 ---
 
@@ -151,21 +151,21 @@ Test server is up. Running the first browser check: harvest fruit and compare bu
 
 Delivered fruit is 30.24 cm (33.6 cm × fruit's 0.9), as planned. The fruit wasn't showing yet; checking what's on the map.
 
-Claude looked at [image 001](<../images/2026-11-08 M1 one item size and harvest numbers at one height/001 Claude.png>)
+Claude looked at picture 001
 
 The green map works. Harvesting didn't start because the walk was too short; checking what starts a harvest.
 
 Sizes match: fruit bursts at 30.24 cm and flies at 30.24 cm; puffball leaves at 33.6 cm. Looking at the screenshots.
 
-Claude looked at [image 002](<../images/2026-11-08 M1 one item size and harvest numbers at one height/002 Claude.png>)
+Claude looked at picture 002
 
-Claude looked at [image 003](<../images/2026-11-08 M1 one item size and harvest numbers at one height/003 Claude.png>)
+Claude looked at picture 003
 
-Claude looked at [image 004](<../images/2026-11-08 M1 one item size and harvest numbers at one height/004 Claude.png>)
+Claude looked at picture 004
 
 Puffball numbers now stand just over the character's head, clear of the tree. Next: an arching flower, porous rocks (several numbers at once), and the two new number sliders.
 
-Claude looked at [image 005](<../images/2026-11-08 M1 one item size and harvest numbers at one height/005 Claude.png>)
+Claude looked at picture 005
 
 Your trial's page didn't answer in time (the other session may be mid-change), so I'll compare on my copy instead: old hitboxes set by remembered sliders, then the new ones.
 
@@ -225,7 +225,7 @@ All 216 tests pass, and I checked fruit, puffball trees, porous rocks and the ed
 no it's messed up now. roll back the numbers to before my request to change them in this conversation at 4:42
 you missed my point. i wanted them to remain the same, but to be able to control their size by %, and make sure they pop at a certain distance regardless of the size of harvestabnnles. here is an image showing how they pop where and what they look like.
 
-![Dani's image 006](<../images/2026-11-08 M1 one item size and harvest numbers at one height/006 Dani.png>)
+Dani's picture 006
 
 ---
 
@@ -247,15 +247,15 @@ Code done. Updating the README's three passages about the numbers.
 
 Running the tests, then the game in the hidden browser.
 
-Claude looked at [image 007](<../images/2026-11-08 M1 one item size and harvest numbers at one height/007 Claude.png>)
+Claude looked at picture 007
 
-Claude looked at [image 008](<../images/2026-11-08 M1 one item size and harvest numbers at one height/008 Claude.png>)
+Claude looked at picture 008
 
-Claude looked at [image 009](<../images/2026-11-08 M1 one item size and harvest numbers at one height/009 Claude.png>)
+Claude looked at picture 009
 
 Numbers had faded before the shot (the hidden browser is slow). Rerunning with numbers held 4 s, and trying an arching flower again.
 
-Claude looked at [image 010](<../images/2026-11-08 M1 one item size and harvest numbers at one height/010 Claude.png>)
+Claude looked at picture 010
 
 Numbers now pop over each rock and over the arching flower's flowers, at the same 1.4 m. Committing on my branch, then checking whether the other session has saved its work.
 

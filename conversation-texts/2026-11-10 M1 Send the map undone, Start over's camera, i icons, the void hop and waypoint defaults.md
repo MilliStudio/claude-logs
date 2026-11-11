@@ -1,6 +1,6 @@
 # M1 Send the map undone, Start over's camera, i icons, the void hop and waypoint defaults
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-10 M1 Send the map undone, Start over's camera, i icons, the void hop and waypoint defaults\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-10 M1 Send the map undone, Start over's camera, i icons, the void hop and waypoint defaults", numbered as here. Private: never commit or share.
 
 ---
 
@@ -91,7 +91,7 @@ M1 testing gets it when you press Update M1 testing.
 
 these explanations are great but can you please put them in "i" icons by the title instead. all of the bars
 
-![Dani's image 001](<../images/2026-11-10 M1 Send the map undone, Start over's camera, i icons, the void hop and waypoint defaults/001 Dani.png>)
+Dani's picture 001
 
 ---
 
@@ -115,9 +115,9 @@ Checking it parses, then testing it in a hidden browser on the editor.
 
 All working. Let me look at the two screenshots.
 
-Claude looked at [image 002](<../images/2026-11-10 M1 Send the map undone, Start over's camera, i icons, the void hop and waypoint defaults/002 Claude.png>)
+Claude looked at picture 002
 
-Claude looked at [image 003](<../images/2026-11-10 M1 Send the map undone, Start over's camera, i icons, the void hop and waypoint defaults/003 Claude.png>)
+Claude looked at picture 003
 
 Both look right: the i sits by "Size", and on the Tuning tab it sits at the end of the tab row. Updating the README.
 
@@ -145,7 +145,7 @@ M1 testing gets it when you press Update M1 testing.
 thank you muchly.
 for some reason i'm unable to get on the tile below from the void
 
-![Dani's image 004](<../images/2026-11-10 M1 Send the map undone, Start over's camera, i icons, the void hop and waypoint defaults/004 Dani.png>)
+Dani's picture 004
 
 ---
 
@@ -167,7 +167,7 @@ The walk drifted off course: the camera's heading turned after placing the playe
 
 (sent while Claude was working) do you have any ideas on how to avoid getting stuck in gaps between walls and tiles? the only thing i could think of was making the walls extra thing so characters have toom between walls and taller tiles, but that looks horrid. just ideas please don't do anything
 
-![Dani's image 005](<../images/2026-11-10 M1 Send the map undone, Start over's camera, i icons, the void hop and waypoint defaults/005 Dani.png>)
+Dani's picture 005
 
 ---
 
@@ -348,7 +348,7 @@ Map tests pass. Now the other failure, about the last saved version:
 
 Change to default values and its Undo work. Only one Guardian row went because each removal redraws the box (a quirk of my test), and Add a kind added fresh leaves at 10. The screenshots:
 
-Claude looked at [image 006](<../images/2026-11-10 M1 Send the map undone, Start over's camera, i icons, the void hop and waypoint defaults/006 Claude.png>)
+Claude looked at picture 006
 
 The waypoint box looks right. A last check that the game itself loads with this code on the big island, with no errors, and that a lantern needing nothing has woken:
 

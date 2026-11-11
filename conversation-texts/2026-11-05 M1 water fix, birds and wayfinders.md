@@ -1,6 +1,6 @@
 # M1 trial, 5 and 6 November 2026, evening and night: the water fix, the mechanical birds and the wayfinders, beside two other sessions
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-05 M1 water fix, birds and wayfinders\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-05 M1 water fix, birds and wayfinders", numbered as here. Private: never commit or share.
 
 ---
 
@@ -8,7 +8,7 @@ The messages of this conversation, Dani's and Claude's, without the code, tool c
 
 for the new m1 tile design, i'm wondering why tiles first appear at the bottom then rise into final position when the animation reaches them,each tile should not be visible until its turn to rise arrives
 
-![Dani's image 001](<../images/2026-11-05 M1 water fix, birds and wayfinders/001 Dani.png>)
+Dani's picture 001
 
 ---
 
@@ -20,23 +20,23 @@ The blue boxes in your picture are the water of tiles still waiting their turn. 
 
 I'm writing a hidden-browser script to see the fault before changing anything.
 
-Claude looked at [image 002](<../images/2026-11-05 M1 water fix, birds and wayfinders/002 Claude.png>)
+Claude looked at picture 002
 
 The first run's camera was too low and the pond didn't rise; fixing the test script.
 
 15,0 rises when asked alone, so the first run's timing was off. Rerunning with a higher camera.
 
-Claude looked at [image 003](<../images/2026-11-05 M1 water fix, birds and wayfinders/003 Claude.png>)
+Claude looked at picture 003
 
-Claude looked at [image 004](<../images/2026-11-05 M1 water fix, birds and wayfinders/004 Claude.png>)
+Claude looked at picture 004
 
 The wave passes in about a second, too fast for the hidden browser. I'll slow the page's clock tenfold during the wave so I can photograph it.
 
 The game's clock comes from the frame timestamps, so I'll slow those instead.
 
-Claude looked at [image 005](<../images/2026-11-05 M1 water fix, birds and wayfinders/005 Claude.png>)
+Claude looked at picture 005
 
-Claude looked at [image 006](<../images/2026-11-05 M1 water fix, birds and wayfinders/006 Claude.png>)
+Claude looked at picture 006
 
 ---
 
@@ -52,11 +52,11 @@ Understood: I'll keep it to this one fix and skip the void fade. Correcting the 
 
 Only the water uses the new stretch; the ground and corner pieces move as before. Running the same wave test on the fixed game.
 
-Claude looked at [image 007](<../images/2026-11-05 M1 water fix, birds and wayfinders/007 Claude.png>)
+Claude looked at picture 007
 
-Claude looked at [image 008](<../images/2026-11-05 M1 water fix, birds and wayfinders/008 Claude.png>)
+Claude looked at picture 008
 
-Claude looked at [image 009](<../images/2026-11-05 M1 water fix, birds and wayfinders/009 Claude.png>)
+Claude looked at picture 009
 
 Fixed: in the same moment of the wave (all pond tiles still waiting), no water boxes show now; each tile's water comes up with its own tile. Now the tests, version and commit.
 
@@ -301,19 +301,19 @@ Nothing of the other session's work was touched. Correcting my version mentions 
 
 The chain works: the bird on 14,3 took its delivery, woke, flew, and the bird on 15,3 appeared with its tally. Looking at the pictures.
 
-Claude looked at [image 010](<../images/2026-11-05 M1 water fix, birds and wayfinders/010 Claude.png>)
+Claude looked at picture 010
 
-Claude looked at [image 011](<../images/2026-11-05 M1 water fix, birds and wayfinders/011 Claude.png>)
+Claude looked at picture 011
 
-Claude looked at [image 012](<../images/2026-11-05 M1 water fix, birds and wayfinders/012 Claude.png>)
+Claude looked at picture 012
 
-Claude looked at [image 013](<../images/2026-11-05 M1 water fix, birds and wayfinders/013 Claude.png>)
+Claude looked at picture 013
 
 The bird sits on its tile, facing out, with its tally over it. Taking a closer view, and standing near enough to give it what it needs.
 
-Claude looked at [image 014](<../images/2026-11-05 M1 water fix, birds and wayfinders/014 Claude.png>)
+Claude looked at picture 014
 
-Claude looked at [image 015](<../images/2026-11-05 M1 water fix, birds and wayfinders/015 Claude.png>)
+Claude looked at picture 015
 
 The editor loads without errors, with "Bird" for the tool and its box. Now the README.
 
@@ -361,7 +361,7 @@ Q1. Should I add this to the "Several sessions at once" rule in the M1 CLAUDE.md
 
 Git gives a worktree Windows line endings, and one test fails on them: change them to plain ones before testing, and merge into main with git -c core.autocrlf=false. The worktree's safety lock stops git from working in this folder, so leave the worktree (ExitWorktree, keep) to merge.
 
-![Dani's image 016](<../images/2026-11-05 M1 water fix, birds and wayfinders/016 Dani.png>)
+Dani's picture 016
 
 ---
 
@@ -375,23 +375,23 @@ Now the bird's mesh uses the new parts and hinge, and the shared-shapes list inc
 
 The bird is in. Viewing it in the hidden browser, enlarged three times so it's easy to see.
 
-Claude looked at [image 017](<../images/2026-11-05 M1 water fix, birds and wayfinders/017 Claude.png>)
+Claude looked at picture 017
 
-Claude looked at [image 018](<../images/2026-11-05 M1 water fix, birds and wayfinders/018 Claude.png>)
+Claude looked at picture 018
 
 The camera put the player between us and the bird. Taking the picture from the side instead.
 
-Claude looked at [image 019](<../images/2026-11-05 M1 water fix, birds and wayfinders/019 Claude.png>)
+Claude looked at picture 019
 
-Claude looked at [image 020](<../images/2026-11-05 M1 water fix, birds and wayfinders/020 Claude.png>)
+Claude looked at picture 020
 
-Claude looked at [image 021](<../images/2026-11-05 M1 water fix, birds and wayfinders/021 Claude.png>)
+Claude looked at picture 021
 
-Claude looked at [image 022](<../images/2026-11-05 M1 water fix, birds and wayfinders/022 Claude.png>)
+Claude looked at picture 022
 
-Claude looked at [image 023](<../images/2026-11-05 M1 water fix, birds and wayfinders/023 Claude.png>)
+Claude looked at picture 023
 
-Claude looked at [image 024](<../images/2026-11-05 M1 water fix, birds and wayfinders/024 Claude.png>)
+Claude looked at picture 024
 
 v0.364.0 is saved and pushed with your bird, and all 185 tests pass.
 
@@ -479,9 +479,9 @@ Thanks, making it taller. First, one quick fix: GitHub says the Tessera reposito
 
 Now the bird: making its body about 20% taller and raising it so its legs still show.
 
-Claude looked at [image 025](<../images/2026-11-05 M1 water fix, birds and wayfinders/025 Claude.png>)
+Claude looked at picture 025
 
-Claude looked at [image 026](<../images/2026-11-05 M1 water fix, birds and wayfinders/026 Claude.png>)
+Claude looked at picture 026
 
 Rounder and taller, closer to your drawing. Updating the height notes, then saving the version.
 
@@ -542,7 +542,7 @@ you can go somewhere in between the first and second versions
 
 Going halfway between the two: the body's height from 0.17 and 0.21 to 0.19, and its stance in between too.
 
-Claude looked at [image 027](<../images/2026-11-05 M1 water fix, birds and wayfinders/027 Claude.png>)
+Claude looked at picture 027
 
 Halfway between the two. Updating the notes and saving.
 
@@ -599,7 +599,7 @@ q3 yes
 
 can you please update the wayfinder's design. i changed its color so the head and shoulder are the same as the chest's brown, and the shoulder is now a cog. the blue inside the cog is a light that glows only when the wayfinder is active, then turns off when it's waiting on a new tile
 
-![Dani's image 028](<../images/2026-11-05 M1 water fix, birds and wayfinders/028 Dani.png>)
+Dani's picture 028
 
 ---
 
@@ -638,23 +638,23 @@ It parses now. Rerunning the wayfinder test.
 
 The wayfinders were being made before the planet exists. Moving that call to just after the planet is built.
 
-Claude looked at [image 029](<../images/2026-11-05 M1 water fix, birds and wayfinders/029 Claude.png>)
+Claude looked at picture 029
 
-Claude looked at [image 030](<../images/2026-11-05 M1 water fix, birds and wayfinders/030 Claude.png>)
+Claude looked at picture 030
 
-Claude looked at [image 031](<../images/2026-11-05 M1 water fix, birds and wayfinders/031 Claude.png>)
+Claude looked at picture 031
 
-Claude looked at [image 032](<../images/2026-11-05 M1 water fix, birds and wayfinders/032 Claude.png>)
+Claude looked at picture 032
 
 The second wayfinder has its colours swapped: a plum body and a beige cap and cog, the light dark while it waits. Now a close look at the first one, including its light while it travels.
 
-Claude looked at [image 033](<../images/2026-11-05 M1 water fix, birds and wayfinders/033 Claude.png>)
+Claude looked at picture 033
 
-Claude looked at [image 034](<../images/2026-11-05 M1 water fix, birds and wayfinders/034 Claude.png>)
+Claude looked at picture 034
 
-Claude looked at [image 035](<../images/2026-11-05 M1 water fix, birds and wayfinders/035 Claude.png>)
+Claude looked at picture 035
 
-Claude looked at [image 036](<../images/2026-11-05 M1 water fix, birds and wayfinders/036 Claude.png>)
+Claude looked at picture 036
 
 ---
 

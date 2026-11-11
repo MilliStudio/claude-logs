@@ -1,6 +1,6 @@
 # 2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies", numbered as here. Private: never commit or share.
 
 ---
 
@@ -12,7 +12,7 @@ few refinements
 3. in the location (attached image) the character is unable to get off the clouds into void or hop onto the tiles for some reason. don't fix it or change anything for it. tell me how it works and the reason the way it works isn't applying here
 4. i regret making key items all the same size when  hovering, can you keep the maximum height the same, ad not change the large wheel size, but its height is scale 1, and other smaller key items will scale accordingly depending on their size
 
-![Dani's image 001](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/001 Dani.png>)
+Dani's picture 001
 
 ---
 
@@ -32,13 +32,13 @@ Setting up a hidden-browser run to reproduce the cloud spot: wake the island so 
 
 Found something: walking off the clouds into the void works in my test, but walking from a cloud onto a 0 m tile beside it didn't hop. Checking why.
 
-Claude looked at [image 002](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/002 Claude.png>)
+Claude looked at picture 002
 
 Tile 1038 in my test has a giant flower over it, so that run doesn't match your spot. Checking a theory instead: your clouds lie deeper than the saved 0.8 m.
 
 At the saved 0.8 m, the void works but the hop from a cloud onto a 0 m tile didn't happen. Reading `surface()` to see why.
 
-Claude looked at [image 003](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/003 Claude.png>)
+Claude looked at picture 003
 
 Item 3 is confirmed: at 1.6 m clouds, both moves fail, exactly as in your picture; at the saved 0.8 m both work. Now item 4, the floating key items' sizes.
 
@@ -78,7 +78,7 @@ Now testing the editor's Guardian box and Save on a copy, as the rules ask for s
 
 Save wrote `{ at: [15, 0], needs: { fruit: 40, leaf: 10 } }` on the copy. Checking how the box looks.
 
-Claude looked at [image 004](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/004 Claude.png>)
+Claude looked at picture 004
 
 The box works and looks right. Now the copy's game should read those needs.
 
@@ -124,17 +124,17 @@ Found it: `Dropbox\Screenshots\Screen Recording 2026-11-06 152716.mp4`. Pulling 
 
 No video tool is installed, so I'll play it in the hidden Chrome and take pictures of it at set times.
 
-Claude looked at [image 005](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/005 Claude.png>)
+Claude looked at picture 005
 
-Claude looked at [image 006](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/006 Claude.png>)
+Claude looked at picture 006
 
-Claude looked at [image 007](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/007 Claude.png>)
+Claude looked at picture 007
 
-Claude looked at [image 008](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/008 Claude.png>)
+Claude looked at picture 008
 
-Claude looked at [image 009](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/009 Claude.png>)
+Claude looked at picture 009
 
-Claude looked at [image 010](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/010 Claude.png>)
+Claude looked at picture 010
 
 The recording shows water in space: clear round blobs that wobble between round and oval, glossy, with small air bubbles inside. Checking how see-through ("glass") parts of models are drawn now.
 
@@ -152,33 +152,33 @@ The models test measures a model's middle without the new liquid part. Updating 
 
 All 198 tests pass. Now looking at the blobs in the game: a delivery of water, a harvest burst, and the inventory picture.
 
-Claude looked at [image 011](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/011 Claude.png>)
+Claude looked at picture 011
 
-Claude looked at [image 012](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/012 Claude.png>)
+Claude looked at picture 012
 
 The blobs show: round, glossy and see-through, flying in front of the character (shown oversized for the test). Taking closer pictures to check the detail.
 
-Claude looked at [image 013](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/013 Claude.png>)
+Claude looked at picture 013
 
-Claude looked at [image 014](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/014 Claude.png>)
+Claude looked at picture 014
 
-Claude looked at [image 015](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/015 Claude.png>)
+Claude looked at picture 015
 
-Claude looked at [image 016](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/016 Claude.png>)
+Claude looked at picture 016
 
-Claude looked at [image 017](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/017 Claude.png>)
+Claude looked at picture 017
 
-Claude looked at [image 018](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/018 Claude.png>)
+Claude looked at picture 018
 
 The highlights sit just under the blob's skin, so the body dims them. Moving them onto the skin.
 
-![Claude's image 019](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/019 Claude to Dani.png>)
+Claude's picture 019
 
 Now the pictures read as glossy liquid: a bright spot upper left, a smaller one lower right, and bubbles inside. Running the tests and a last look in play.
 
-![Claude's image 020](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/020 Claude to Dani.png>)
+Claude's picture 020
 
-Claude looked at [image 021](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/021 Claude.png>)
+Claude looked at picture 021
 
 In play the sap bursts out as wobbling amber blobs with bubbles and glints, and the delivered water, sap and nectar fly as see-through bubbles. Updating the README and saving the version.
 
@@ -197,9 +197,9 @@ To see my test pictures:
 - Pictures side by side: `C:\Users\someo\AppData\Local\Temp\claude\c--Users-someo-Dropbox-Studio-Tessera-repositories-tessera-m1\93614ed4-73c9-498e-8408-d537b24d44dc\scratchpad\pics.png`
 - Sap bursting out: `C:\Users\someo\AppData\Local\Temp\claude\c--Users-someo-Dropbox-Studio-Tessera-repositories-tessera-m1\93614ed4-73c9-498e-8408-d537b24d44dc\scratchpad\close-burst.png`
 
-Again: [image 019](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/019 Claude to Dani.png>)
+Again: picture 019
 
-Again: [image 020](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/020 Claude to Dani.png>)
+Again: picture 020
 
 ---
 
@@ -236,15 +236,15 @@ Now the icons in items.js.
 
 All 198 tests pass. Checking all three in the hidden browser: the pop-up lines and icons, and a lantern's tally from afar and up close.
 
-Claude looked at [image 022](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/022 Claude.png>)
+Claude looked at picture 022
 
-Claude looked at [image 023](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/023 Claude.png>)
+Claude looked at picture 023
 
 The pop-ups now stand on two lines, with the phials and the canteen. The tally grows 1.4 times up close, but its glow is too faint to notice. Making it stronger.
 
-Claude looked at [image 024](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/024 Claude.png>)
+Claude looked at picture 024
 
-Claude looked at [image 025](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/025 Claude.png>)
+Claude looked at picture 025
 
 Now the tally grows and has a clear golden glow up close, and is plain from two tiles away. Updating the README, then saving v0.376.0.
 
@@ -358,7 +358,7 @@ The glow stays the same the whole time you stand close, and is gone once you wal
 
 Got it: a band the same thickness, but with sharp edges instead of a soft spread. Rebuilding the glow as a solid outline round the counts and tokens.
 
-Claude looked at [image 026](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/026 Claude.png>)
+Claude looked at picture 026
 
 The glow is now a solid gold band with sharp edges, about as thick as the soft glow's bright part was. Updating the notes and saving v0.376.2.
 
@@ -402,7 +402,7 @@ Neither of these appears in a printed document, so there was nothing to commit i
 
 it needs refinement. it doesn't look very good. can you put sliders for the amount of glow, the amount of spread and the amount of sharpness
 
-![Dani's image 027](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/027 Dani.png>)
+Dani's picture 027
 
 ---
 
@@ -416,25 +416,25 @@ That draft has a bug in how it adds the filter holder to the page. Rewriting tha
 
 All 198 tests pass. Taking pictures of three settings side by side: the new default, fully sharp and fully soft.
 
-Claude looked at [image 028](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/028 Claude.png>)
+Claude looked at picture 028
 
-Claude looked at [image 029](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/029 Claude.png>)
+Claude looked at picture 029
 
-Claude looked at [image 030](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/030 Claude.png>)
+Claude looked at picture 030
 
 The soft setting looks good, but at sharp and default settings the bark behind shows through inside the band, so the band isn't as solid as it should be. Testing the filter on its own to find why.
 
-Claude looked at [image 031](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/031 Claude.png>)
+Claude looked at picture 031
 
 On its own the filter gives a solid band. Looking closer at the game version, with the glow set to red so it's easy to see.
 
-Claude looked at [image 032](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/032 Claude.png>)
+Claude looked at picture 032
 
-Claude looked at [image 033](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/033 Claude.png>)
+Claude looked at picture 033
 
-Claude looked at [image 034](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/034 Claude.png>)
+Claude looked at picture 034
 
-Claude looked at [image 035](<../images/2026-11-06 M1 Guardian needs, key item sizes, liquid blobs and glowing tallies/035 Claude.png>)
+Claude looked at picture 035
 
 Pushed. Refreshing the session text and pictures once more.
 

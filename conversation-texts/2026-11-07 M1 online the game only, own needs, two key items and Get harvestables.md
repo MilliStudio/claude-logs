@@ -1,6 +1,6 @@
 # 2026-11-07 M1 online the game only, own needs, two key items and Get harvestables
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-07 M1 online the game only, own needs, two key items and Get harvestables\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-07 M1 online the game only, own needs, two key items and Get harvestables", numbered as here. Private: never commit or share.
 
 ---
 
@@ -34,7 +34,7 @@ All 214 tests pass. Now the web copy from my working files, served on a free por
 
 Menu button, panel and map are all hidden; Run sits in the corner; Start over and Get all items moved up; no errors. Looking at the picture:
 
-Claude looked at [image 001](<../images/2026-11-07 M1 online the game only, own needs, two key items and Get harvestables/001 Claude.png>)
+Claude looked at picture 001
 
 The web copy looks right. Quick check that Dani's trial still has its menu button and map:
 
@@ -183,9 +183,9 @@ While the copy starts, writing test settings into its map: own needs for the lan
 
 Now the game test on the copy: the two key items lying on the island, then delivering them to the lantern and the apparatus.
 
-Claude looked at [image 002](<../images/2026-11-07 M1 online the game only, own needs, two key items and Get harvestables/002 Claude.png>)
+Claude looked at picture 002
 
-Claude looked at [image 003](<../images/2026-11-07 M1 online the game only, own needs, two key items and Get harvestables/003 Claude.png>)
+Claude looked at picture 003
 
 I'll click with real mouse events. Finding the editor's Save button:
 
@@ -195,7 +195,7 @@ A name clash: the waypoint box already has a `needsEl`. This would have broken t
 
 The editor works end to end: the box shows, Add a kind adds a row, choosing the gold stone sets it to 1, and Save writes the list. Looking at the box:
 
-Claude looked at [image 004](<../images/2026-11-07 M1 online the game only, own needs, two key items and Get harvestables/004 Claude.png>)
+Claude looked at picture 004
 
 The box reads well, and the map shows the gold stone and green gem as small pictures on 4,7 and 6,7. Making the green gem bigger, then the README:
 
@@ -207,7 +207,7 @@ Nearly done with this version: tidying a README phrase, then tests, a last look 
 
 Only my lines. A last look at the bigger green gem and the key items row in the inventory, on the copy:
 
-Claude looked at [image 005](<../images/2026-11-07 M1 online the game only, own needs, two key items and Get harvestables/005 Claude.png>)
+Claude looked at picture 005
 
 The key items row now holds the gold stone and the green gem, after the scale, the special gem and the wheels. Saving v0.415.0, after checking no other session is working here:
 
@@ -219,7 +219,7 @@ Now the code that opens the menu and moves the cog:
 
 Adding the two buttons to the web copy's test, then trying it all on a web copy made from my working files:
 
-Claude looked at [image 006](<../images/2026-11-07 M1 online the game only, own needs, two key items and Get harvestables/006 Claude.png>)
+Claude looked at picture 006
 
 All 216 pass. Checking your trial still has its own buttons and no cog:
 
@@ -288,7 +288,7 @@ The test island borrows your map's key item places, and the gold stone's place l
 
 All 216 pass. Trying the button in a hidden browser on your trial (its progress is separate from yours):
 
-Claude looked at [image 007](<../images/2026-11-07 M1 online the game only, own needs, two key items and Get harvestables/007 Claude.png>)
+Claude looked at picture 007
 
 The apple sits under Get all items, and it gives the kit and 10,000 of each of the 11 harvested kinds, with no key items. Adding it to the README and saving v0.417.0 with your two imports:
 

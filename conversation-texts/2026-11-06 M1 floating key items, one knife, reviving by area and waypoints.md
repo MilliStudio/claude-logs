@@ -1,6 +1,6 @@
 # 2026-11-06 M1 floating key items, one knife, reviving by area and waypoints
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-06 M1 floating key items, one knife, reviving by area and waypoints\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-06 M1 floating key items, one knife, reviving by area and waypoints", numbered as here. Private: never commit or share.
 
 ---
 
@@ -38,23 +38,23 @@ All 195 tests pass. Now checking it in the hidden browser.
 
 Floating works: middles bob between 0.75 and 0.99 m, every item 0.9 m at its largest. Taking pictures next.
 
-Claude looked at [image 001](<../images/2026-11-06 M1 floating key items, one knife, reviving by area and waypoints/001 Claude.png>)
+Claude looked at picture 001
 
-Claude looked at [image 002](<../images/2026-11-06 M1 floating key items, one knife, reviving by area and waypoints/002 Claude.png>)
+Claude looked at picture 002
 
-Claude looked at [image 003](<../images/2026-11-06 M1 floating key items, one knife, reviving by area and waypoints/003 Claude.png>)
+Claude looked at picture 003
 
 Both wheels float face-on and turn. Taking a closer picture of the bird and the straw case, which stand side by side on Dani's map.
 
-Claude looked at [image 004](<../images/2026-11-06 M1 floating key items, one knife, reviving by area and waypoints/004 Claude.png>)
+Claude looked at picture 004
 
-Claude looked at [image 005](<../images/2026-11-06 M1 floating key items, one knife, reviving by area and waypoints/005 Claude.png>)
+Claude looked at picture 005
 
-Claude looked at [image 006](<../images/2026-11-06 M1 floating key items, one knife, reviving by area and waypoints/006 Claude.png>)
+Claude looked at picture 006
 
-Claude looked at [image 007](<../images/2026-11-06 M1 floating key items, one knife, reviving by area and waypoints/007 Claude.png>)
+Claude looked at picture 007
 
-![Claude's image 008](<../images/2026-11-06 M1 floating key items, one knife, reviving by area and waypoints/008 Claude to Dani.png>)
+Claude's picture 008
 
 The birds read rounder from above now. Last check: walking up to a floating item takes it and it flies to the player.
 
@@ -84,7 +84,7 @@ C:\Users\someo\AppData\Local\Temp\claude\c--Users-someo-Dropbox-Studio-Tessera-r
 
 **Q1.** The Gatherer's Kit and the golden fish scale still don't float. Should the kit float too? I recommend no: it lies with its strap in a loop beside it, and you put it on when you take it. The scale stays as it is because it comes from the Guardian.
 
-Again: [image 008](<../images/2026-11-06 M1 floating key items, one knife, reviving by area and waypoints/008 Claude to Dani.png>)
+Again: picture 008
 
 ---
 
@@ -118,7 +118,7 @@ The script stopped before writing anything. Doing the test edits with the Edit t
 
 Checking what the herb's pictures look like now: its model picture, its flat icon and the straw case picture.
 
-Claude looked at [image 009](<../images/2026-11-06 M1 floating key items, one knife, reviving by area and waypoints/009 Claude.png>)
+Claude looked at picture 009
 
 The straw case's picture (used in the map editor) lies flat, and the herb's flat icon is still the old teal leaves. Now checking what the apparatus itself shows for the herb.
 
@@ -130,7 +130,7 @@ Now the models: the straw case's picture stands, and the herb's model becomes th
 
 Flown models are scaled by their largest side, so the case flies at the same size the sprigs did.
 
-![Claude's image 010](<../images/2026-11-06 M1 floating key items, one knife, reviving by area and waypoints/010 Claude to Dani.png>)
+Claude's picture 010
 
 The pictures and the flat icon now show the standing straw case with red herbs. Updating the README for the knife and the herb.
 
@@ -140,7 +140,7 @@ Plants show only once the lantern turns the island green, so I'll wake the lante
 
 The knife works on the flower bulbs. The tree wasn't in reach from where I stood, so I'll try again closer.
 
-Claude looked at [image 011](<../images/2026-11-06 M1 floating key items, one knife, reviving by area and waypoints/011 Claude.png>)
+Claude looked at picture 011
 
 Harvesting the 3.93 m puffball tree uses the one-hand knife (the body hides the blade mid-swing in this frame). Committing v0.372.0.
 
@@ -164,7 +164,7 @@ I checked it in a hidden browser. The knife comes out for 0.9 m flower bulbs and
 
 The new pictures: C:\Users\someo\AppData\Local\Temp\claude\c--Users-someo-Dropbox-Studio-Tessera-repositories-tessera-m1\c4c7c527-7e5d-4574-896d-edfaadb63bfb\scratchpad\icons.png
 
-Again: [image 010](<../images/2026-11-06 M1 floating key items, one knife, reviving by area and waypoints/010 Claude to Dani.png>)
+Again: picture 010
 
 ---
 
@@ -345,7 +345,7 @@ The lantern now revives 26 tiles, the land inside its 7-tile area; before, it re
 
 The lantern part worked. The fish didn't take its fruit from where I stood, so I'll wake it more directly. I'll also raise a void tile inside the lantern's area and one outside it.
 
-![Claude's image 012](<../images/2026-11-06 M1 floating key items, one knife, reviving by area and waypoints/012 Claude to Dani.png>)
+Claude's picture 012
 
 The copy's game revives 9 tiles across after the save. Stopping the copy's server.
 
@@ -385,7 +385,7 @@ This replaces the old rule in Tessera Records, that a lantern or Guardian revive
 
 Screenshot of the editor: C:\Users\someo\AppData\Local\Temp\claude\c--Users-someo-Dropbox-Studio-Tessera-repositories-tessera-m1\c4c7c527-7e5d-4574-896d-edfaadb63bfb\scratchpad\editor-revive.png
 
-Again: [image 012](<../images/2026-11-06 M1 floating key items, one knife, reviving by area and waypoints/012 Claude to Dani.png>)
+Again: picture 012
 
 ---
 

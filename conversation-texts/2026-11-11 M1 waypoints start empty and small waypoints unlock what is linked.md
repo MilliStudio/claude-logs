@@ -1,6 +1,6 @@
 # M1: waypoints start empty, and small waypoints unlock what is linked (11 November 2026)
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-11 M1 waypoints start empty and small waypoints unlock what is linked\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-11 M1 waypoints start empty and small waypoints unlock what is linked", numbered as here. Private: never commit or share.
 
 ---
 
@@ -145,7 +145,7 @@ Now testing in a hidden browser on a scratch copy, so your trial and its files a
 
 I made a scratch copy with these changes. Next I'm starting its server on a spare port and driving the map editor in a hidden browser.
 
-Claude looked at [image 001](<../images/2026-11-11 M1 waypoints start empty and small waypoints unlock what is linked/001 Claude.png>)
+Claude looked at picture 001
 
 The editor page sends the browser to the game and opens the editor inside it, so I'm pointing the test at the editor's frame.
 
@@ -197,7 +197,7 @@ Still open, not touched: small waypoints making the tiles around them disappear 
 
 i'm still having trouble. you didn't fix the weird mini waypoint removing tiles and linking to them
 
-![Dani's image 002](<../images/2026-11-11 M1 waypoints start empty and small waypoints unlock what is linked/002 Dani.png>)
+Dani's picture 002
 
 ---
 
@@ -205,11 +205,11 @@ i'm still having trouble. you didn't fix the weird mini waypoint removing tiles 
 
 I'll check what you said about the unlock range when you first asked for small wayfinders before changing anything.
 
-Claude looked at [image 003](<../images/2026-11-11 M1 waypoints start empty and small waypoints unlock what is linked/003 Claude.png>)
+Claude looked at picture 003
 
-![Claude's image 004](<../images/2026-11-11 M1 waypoints start empty and small waypoints unlock what is linked/004 Claude to Dani.png>)
+Claude's picture 004
 
-Again: [image 004](<../images/2026-11-11 M1 waypoints start empty and small waypoints unlock what is linked/004 Claude to Dani.png>)
+Again: picture 004
 
 You're right, it isn't fixed. I left it alone because it needed your answer first. I've opened a picture in VS Code: [unlock-range.png](C:/Users/someo/AppData/Local/Temp/claude/653749dc61028eb9/ec2a8361-1c36-4d85-8050-972cae5dbcd9/scratchpad/unlock-range.png).
 
@@ -226,7 +226,7 @@ Q1. What should Unlock range do?
 
 Once you answer, I'll build it in one go.
 
-Again: [image 004](<../images/2026-11-11 M1 waypoints start empty and small waypoints unlock what is linked/004 Claude to Dani.png>)
+Again: picture 004
 
 ---
 
@@ -353,7 +353,7 @@ The unit tests pass, all 76. Now the hidden-browser check on a fresh scratch cop
 
 The editor behaves as planned: nothing raised on its own, a near tile links, the far one is refused, and Save writes the link. Checking the picture of the map.
 
-Claude looked at [image 005](<../images/2026-11-11 M1 waypoints start empty and small waypoints unlock what is linked/005 Claude.png>)
+Claude looked at picture 005
 
 Only the one linked tile is pale; the tiles round it stay as drawn. Now the game on the copy, then an old-style draft.
 

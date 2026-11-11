@@ -1,6 +1,6 @@
 # M1 wayfinder sliders, pulsing rings, folding boxes, the still map and plants on leaves
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-08 M1 wayfinder sliders, pulsing rings, folding boxes, the still map and plants on leaves\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-08 M1 wayfinder sliders, pulsing rings, folding boxes, the still map and plants on leaves", numbered as here. Private: never commit or share.
 
 ---
 
@@ -150,7 +150,7 @@ They went straight back to their waypoints, since an open waypoint calls a free 
 
 Now the overlap test: both wayfinders start from one spot.
 
-Claude looked at [image 001](<../images/2026-11-08 M1 wayfinder sliders, pulsing rings, folding boxes, the still map and plants on leaves/001 Claude.png>)
+Claude looked at picture 001
 
 The two land side by side, apart. Next the tutorial items; let me see how the tutorial card is placed and its steps.
 
@@ -186,7 +186,7 @@ The tally grew (66 px, from 53), so it was glowing. The check simply fell in the
 
 The tally pulses: two rings at first, then one every 3 s, each a rounded box spreading from its edges. A look at the whistle step:
 
-Claude looked at [image 002](<../images/2026-11-08 M1 wayfinder sliders, pulsing rings, folding boxes, the still map and plants on leaves/002 Claude.png>)
+Claude looked at picture 002
 
 Rings round the character, six steps now, and the card a quarter lower. Next the map editor's waypoint box, to check the groups show once each.
 
@@ -206,7 +206,7 @@ That handler only listens inside the flower's settings, so the new box fold does
 
 Now a browser check: fold some boxes, reload, and see they stay folded.
 
-Claude looked at [image 003](<../images/2026-11-08 M1 wayfinder sliders, pulsing rings, folding boxes, the still map and plants on leaves/003 Claude.png>)
+Claude looked at picture 003
 
 Folded boxes collapse to their heading (the Waypoint box above), the rest stay open, and all of it survives a reload. README, then v0.434.0.
 
@@ -226,11 +226,11 @@ Parses. Now in the hidden browser: scroll the editor's map round the island and 
 
 Round the island, the start tile kept its exact place and way (0°) through the whole loop and back. Let me look at the map:
 
-Claude looked at [image 004](<../images/2026-11-08 M1 wayfinder sliders, pulsing rings, folding boxes, the still map and plants on leaves/004 Claude.png>)
+Claude looked at picture 004
 
-Claude looked at [image 005](<../images/2026-11-08 M1 wayfinder sliders, pulsing rings, folding boxes, the still map and plants on leaves/005 Claude.png>)
+Claude looked at picture 005
 
-Claude looked at [image 006](<../images/2026-11-08 M1 wayfinder sliders, pulsing rings, folding boxes, the still map and plants on leaves/006 Claude.png>)
+Claude looked at picture 006
 
 Tests pass. A last load check of the editor before committing:
 
@@ -246,7 +246,7 @@ If the head can't be stood on, the climb should stop under it, not go up through
 
 On all three leaves the plant grew, the player hopped onto it and climbed to its top. A look:
 
-Claude looked at [image 007](<../images/2026-11-08 M1 wayfinder sliders, pulsing rings, folding boxes, the still map and plants on leaves/007 Claude.png>)
+Claude looked at picture 007
 
 The player is up the stem by the leaf. Now I'll take out the temporary readout, then README and v0.436.0.
 
@@ -290,7 +290,7 @@ I'll check what the rings do now in the trial before changing anything. A waypoi
 
 ### Dani · 2026-11-08 21:09
 
-![Dani's image 008](<../images/2026-11-08 M1 wayfinder sliders, pulsing rings, folding boxes, the still map and plants on leaves/008 Dani.png>)
+Dani's picture 008
 
 ---
 
@@ -324,7 +324,7 @@ Let me check which version your M1 testing copy runs and what it has for that sl
 
 ### Dani · 2026-11-08 21:15
 
-![Dani's image 009](<../images/2026-11-08 M1 wayfinder sliders, pulsing rings, folding boxes, the still map and plants on leaves/009 Dani.png>)
+Dani's picture 009
 
 ---
 
@@ -399,7 +399,7 @@ Now removing the two walk-toward sliders, their texts and their numbers.
 
 Tests pass. Now in the browser: whistle, then see where the signs stand and how they look.
 
-Claude looked at [image 010](<../images/2026-11-08 M1 wayfinder sliders, pulsing rings, folding boxes, the still map and plants on leaves/010 Claude.png>)
+Claude looked at picture 010
 
 I've pushed v0.438.0; your trial has reloaded with it.
 

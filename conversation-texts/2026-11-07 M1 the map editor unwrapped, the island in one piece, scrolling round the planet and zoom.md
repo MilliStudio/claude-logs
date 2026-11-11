@@ -1,6 +1,6 @@
 # 2026-11-07 M1 the map editor unwrapped, the island in one piece, scrolling round the planet and zoom
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-07 M1 the map editor unwrapped, the island in one piece, scrolling round the planet and zoom\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-07 M1 the map editor unwrapped, the island in one piece, scrolling round the planet and zoom", numbered as here. Private: never commit or share.
 
 ---
 
@@ -131,7 +131,7 @@ can you put your solution in an image for me to see what you plan. try to dumb i
 
 Your cup example fits: a cup's side unrolls flat with one cut and nothing stretches, but a ball needs a cut at every pentagon. Building the pictures from your real map now.
 
-Claude looked at [image 001](<../images/2026-11-07 M1 the map editor unwrapped, the island in one piece, scrolling round the planet and zoom/001 Claude.jpg>)
+Claude looked at picture 001
 
 The page renders well. I'll tighten two sentences and add the recommendation, then publish it.
 
@@ -280,23 +280,23 @@ Now the test for the old flattened map, rewritten for the unwrapped one:
 
 Tests pass. Now I'll look at the editor in a hidden browser. First, finding how earlier sessions drove it:
 
-Claude looked at [image 002](<../images/2026-11-07 M1 the map editor unwrapped, the island in one piece, scrolling round the planet and zoom/002 Claude.png>)
+Claude looked at picture 002
 
 That warning was already there before my change, word for word, so it comes from your map, not the unwrap. Now the close-up of the cut at 10,10:
 
-Claude looked at [image 003](<../images/2026-11-07 M1 the map editor unwrapped, the island in one piece, scrolling round the planet and zoom/003 Claude.png>)
+Claude looked at picture 003
 
 The cut at 10,10 shows as planned: red edges, with empty space between them. Taking a closer look at the pentagon itself and one of the moved corner pieces:
 
-Claude looked at [image 004](<../images/2026-11-07 M1 the map editor unwrapped, the island in one piece, scrolling round the planet and zoom/004 Claude.png>)
+Claude looked at picture 004
 
-Claude looked at [image 005](<../images/2026-11-07 M1 the map editor unwrapped, the island in one piece, scrolling round the planet and zoom/005 Claude.png>)
+Claude looked at picture 005
 
 Both look right. The cut's red edges run along the tiles beside the gap, and the corner pieces sit in the notches beside their ground. Next, the editor's help text and the README:
 
 Help text and README are done. Now the version number, the island pictures and the full test run, then the commit.
 
-Claude looked at [image 006](<../images/2026-11-07 M1 the map editor unwrapped, the island in one piece, scrolling round the planet and zoom/006 Claude.jpg>)
+Claude looked at picture 006
 
 The pictures came out unwrapped, with the cuts in red. Running the full tests:
 
@@ -325,7 +325,7 @@ The map editor now shows the planet unwrapped. It's saved as v0.404.0 and pushed
 great, now another question. is it possible for you to simply move the tiles where they belong on the map. meaning you'll take the pieces and stitch them where they should be
 after that, is it possible to make the map infinaately scrollable, basically by making it a repeat pattern (shows in the image)
 
-![Dani's image 007](<../images/2026-11-07 M1 the map editor unwrapped, the island in one piece, scrolling round the planet and zoom/007 Dani.png>)
+Dani's picture 007
 
 ---
 
@@ -388,17 +388,17 @@ The new tests pass. Running the whole suite, and checking whether the other sess
 
 All 212 tests pass. Now the editor in a hidden browser: errors, whether Save stays greyed, and pictures of the island.
 
-Claude looked at [image 008](<../images/2026-11-07 M1 the map editor unwrapped, the island in one piece, scrolling round the planet and zoom/008 Claude.png>)
+Claude looked at picture 008
 
-Claude looked at [image 009](<../images/2026-11-07 M1 the map editor unwrapped, the island in one piece, scrolling round the planet and zoom/009 Claude.png>)
+Claude looked at picture 009
 
-Claude looked at [image 010](<../images/2026-11-07 M1 the map editor unwrapped, the island in one piece, scrolling round the planet and zoom/010 Claude.png>)
+Claude looked at picture 010
 
 By 22,4 the gap opens east into the sky, as it should. On 9,11 I can't see its two corner pieces, so let me look at what the editor drew there.
 
 The pieces are drawn there, on the north-east and east corners. They're pale because a waypoint raises that tile, which made them hard to see in the picture. Now redrawing the island pictures:
 
-Claude looked at [image 011](<../images/2026-11-07 M1 the map editor unwrapped, the island in one piece, scrolling round the planet and zoom/011 Claude.jpg>)
+Claude looked at picture 011
 
 The pictures show the island in one piece too, with the one gap by 22,4 on the east side. Now the README and the editor's help text:
 
@@ -480,9 +480,9 @@ All 212 tests pass. Now in a hidden browser: open the editor, scroll a long way 
 
 Zooming works: out to the whole planet (1,442 tiles, redrawn in about 50 ms) and in to double size, with no errors, and Ctrl + wheel no longer reaches the page. The pictures:
 
-Claude looked at [image 012](<../images/2026-11-07 M1 the map editor unwrapped, the island in one piece, scrolling round the planet and zoom/012 Claude.png>)
+Claude looked at picture 012
 
-Claude looked at [image 013](<../images/2026-11-07 M1 the map editor unwrapped, the island in one piece, scrolling round the planet and zoom/013 Claude.jpg>)
+Claude looked at picture 013
 
 The other session pushed a CLAUDE.md handover. I'll bring it in before saving, then add a test for laying the map from another place.
 

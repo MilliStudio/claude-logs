@@ -1,6 +1,6 @@
 # M1 jumps, options, running by default, machine windows, waypoint rings and forges
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-08 M1 jumps, options, running, windows, waypoint rings and forges\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-08 M1 jumps, options, running, windows, waypoint rings and forges", numbered as here. Private: never commit or share.
 
 ---
 
@@ -337,9 +337,9 @@ q4 hide it for now i think. make the run setting the default
 q5 i'm not very happy about arrows. maybe readd the glow. but instead of gloawing on and off, make it a pulse that starts at the edges of the object like a circle. i don't know, something that some people won't miss but normal people won't get annoyed with
 q6 answered above
 
-![Dani's image 001](<../images/2026-11-08 M1 jumps, options, running, windows, waypoint rings and forges/001 Dani.png>)
+Dani's picture 001
 
-![Dani's image 002](<../images/2026-11-08 M1 jumps, options, running, windows, waypoint rings and forges/002 Dani.png>)
+Dani's picture 002
 
 ---
 
@@ -553,23 +553,23 @@ Update: the signs and rings are written. Next is the rule that sizes everything 
 
 All 216 tests pass. Removing "run" from the tutorial test's list of steps, then checking everything in the hidden browser, with screenshots so I can see the windows and rings myself:
 
-Claude looked at [image 003](<../images/2026-11-08 M1 jumps, options, running, windows, waypoint rings and forges/003 Claude.png>)
+Claude looked at picture 003
 
 The Options window looks right, but the small notes come out in a typewriter font. Fixing that:
 
 Turning scales exactly: 200% turns twice as far as 100%, and invert flips the direction. Checking the font fix:
 
-Claude looked at [image 004](<../images/2026-11-08 M1 jumps, options, running, windows, waypoint rings and forges/004 Claude.png>)
+Claude looked at picture 004
 
 The notes now use the right font. Next, the machine window, its plaque and Claim, on your map's apparatus (on 5,5):
 
-Claude looked at [image 005](<../images/2026-11-08 M1 jumps, options, running, windows, waypoint rings and forges/005 Claude.png>)
+Claude looked at picture 005
 
 The window works and matches the plan: a large bottle × 1 on the left, green counts, the time, the bar and a plum Start button. Now the plaque and Claim:
 
-Claude looked at [image 006](<../images/2026-11-08 M1 jumps, options, running, windows, waypoint rings and forges/006 Claude.png>)
+Claude looked at picture 006
 
-Claude looked at [image 007](<../images/2026-11-08 M1 jumps, options, running, windows, waypoint rings and forges/007 Claude.png>)
+Claude looked at picture 007
 
 The plaque stays behind the Claim button after the bottle is ready. My new style gave the plaque a fixed layout, which overrides "hidden". Fixing that:
 
@@ -577,7 +577,7 @@ Every element that can hide now hides. Next the whistle: signs, rings round a wa
 
 The signs were removed in the same frame they appeared: their fade-in starts at 0, and I treated that as having faded out. Fixing it:
 
-Claude looked at [image 008](<../images/2026-11-08 M1 jumps, options, running, windows, waypoint rings and forges/008 Claude.png>)
+Claude looked at picture 008
 
 The rings and the sign show as planned: soft cyan rings round the waypoint, and the sign at the left edge pulsing. Now the README. Finding every place it describes what changed:
 
@@ -589,7 +589,7 @@ Adding entries for the machine windows and for sizing by the screen, after the r
 
 All 216 tests pass. One more run of the apparatus check, to confirm the plaque now hides when Claim shows:
 
-Claude looked at [image 009](<../images/2026-11-08 M1 jumps, options, running, windows, waypoint rings and forges/009 Claude.png>)
+Claude looked at picture 009
 
 Claim now shows on its own once the bottle is ready. Committing v0.419.0, with your three tuning values from this morning, then tagging and pushing:
 
@@ -754,7 +754,7 @@ remove the cantine icon and return the waterdrop icon, not the water blob object
 
 i'll read your answer while you update
 
-![Dani's image 010](<../images/2026-11-08 M1 jumps, options, running, windows, waypoint rings and forges/010 Dani.png>)
+Dani's picture 010
 
 ---
 
@@ -772,11 +772,11 @@ src/key.js changed on disk while I worked, probably a save of yours. Checking wh
 
 The rock I picked stood on a tile that hasn't come up yet. I'll harvest round the apparatus instead, after it wakes and turns its area green:
 
-Claude looked at [image 011](<../images/2026-11-08 M1 jumps, options, running, windows, waypoint rings and forges/011 Claude.png>)
+Claude looked at picture 011
 
-Claude looked at [image 012](<../images/2026-11-08 M1 jumps, options, running, windows, waypoint rings and forges/012 Claude.png>)
+Claude looked at picture 012
 
-Claude looked at [image 013](<../images/2026-11-08 M1 jumps, options, running, windows, waypoint rings and forges/013 Claude.png>)
+Claude looked at picture 013
 
 The arching flower's three pop-ups now stand side by side. README, then the version:
 
@@ -857,9 +857,9 @@ Those were my own edits. Now the tutorial card: lower, and in the windows' look.
 
 The one failing test passes once this version is saved. Checking in the game: the tutorial card, the tools in the inventory, Producing, the Forge's window, and the still numbers.
 
-Claude looked at [image 014](<../images/2026-11-08 M1 jumps, options, running, windows, waypoint rings and forges/014 Claude.png>)
+Claude looked at picture 014
 
-Claude looked at [image 015](<../images/2026-11-08 M1 jumps, options, running, windows, waypoint rings and forges/015 Claude.png>)
+Claude looked at picture 015
 
 The card and the row of tools look right. Now the README, which mentions the Pruning Gemstone in many places. Counting:
 

@@ -1,6 +1,6 @@
 # 2026-11-09 M1 giant flowers walked under, fewer sliders and the default flower
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-09 M1 giant flowers walked under, fewer sliders and the default flower\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-09 M1 giant flowers walked under, fewer sliders and the default flower", numbered as here. Private: never commit or share.
 
 ---
 
@@ -33,7 +33,7 @@ The lift rule is clear. Now what Dani reported last session, in her own words, s
 
 Let me look at Dani's picture from last session that showed the problem.
 
-Claude looked at [image 001](<../images/2026-11-09 M1 giant flowers walked under, fewer sliders and the default flower/001 Claude.png>)
+Claude looked at picture 001
 
 M1 testing was updated to v0.444.0 at 17:16, and a map moved at 17:18. Checking which way it went, so I don't misread what Dani is playing.
 
@@ -47,9 +47,9 @@ Last session never measured the small flowers' problem; Dani's report came at it
 
 (sent while Claude was working) don't these two do the same thing?
 
-![Dani's image 002](<../images/2026-11-09 M1 giant flowers walked under, fewer sliders and the default flower/002 Dani.png>)
+Dani's picture 002
 
-![Dani's image 003](<../images/2026-11-09 M1 giant flowers walked under, fewer sliders and the default flower/003 Dani.png>)
+Dani's picture 003
 
 ---
 
@@ -91,9 +91,9 @@ Dani asked for a list of every giant flower slider with what each does. I'll sta
 
 Now the Every giant flower box's sliders. I'll read them straight from M1 testing's code with its values, without changing anything.
 
-Claude looked at [image 004](<../images/2026-11-09 M1 giant flowers walked under, fewer sliders and the default flower/004 Claude.png>)
+Claude looked at picture 004
 
-Claude looked at [image 005](<../images/2026-11-09 M1 giant flowers walked under, fewer sliders and the default flower/005 Claude.png>)
+Claude looked at picture 005
 
 The picture by the hinge shows it. The leaf, seen edge-on as a dark green strip, is lifted but still runs through the player's chest. Opening it for Dani.
 

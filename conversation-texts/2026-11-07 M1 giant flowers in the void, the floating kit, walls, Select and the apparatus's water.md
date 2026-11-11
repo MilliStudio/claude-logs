@@ -1,6 +1,6 @@
 # 2026-11-07 M1 giant flowers in the void, the floating kit, walls, Select and the apparatus's water
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-07 M1 giant flowers in the void, the floating kit, walls, Select and the apparatus's water\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-07 M1 giant flowers in the void, the floating kit, walls, Select and the apparatus's water", numbered as here. Private: never commit or share.
 
 ---
 
@@ -60,13 +60,13 @@ All 206 tests pass. Now checking the editor in the hidden browser: duplicate, mo
 
 Everything behaves: the copy keeps its settings, Save lights up, a moved or removed giant flower leaves void, and the box has no checkbox. A quick look at the picture.
 
-Claude looked at [image 001](<../images/2026-11-07 M1 giant flowers in the void, the floating kit, walls, Select and the apparatus's water/001 Claude.png>)
+Claude looked at picture 001
 
 The editor draws the new and copied giant flowers on void blue. Now loading the game itself to check the flowers still stand and nothing breaks.
 
 Those two errors are from my calls, not the game: I passed the wrong arguments. Checking the right ones.
 
-Claude looked at [image 002](<../images/2026-11-07 M1 giant flowers in the void, the floating kit, walls, Select and the apparatus's water/002 Claude.png>)
+Claude looked at picture 002
 
 The game loads cleanly with every giant flower standing in the void. Now saving the version, together with your map import of 23:22 that was waiting uncommitted.
 
@@ -126,31 +126,31 @@ Now loading the game to look at the floating kit (on 11,2) and the leaning straw
 
 Both float with the right numbers: the straw case leans 20° and the kit shows on its tile. Taking pictures of them.
 
-Claude looked at [image 003](<../images/2026-11-07 M1 giant flowers in the void, the floating kit, walls, Select and the apparatus's water/003 Claude.png>)
+Claude looked at picture 003
 
-Claude looked at [image 004](<../images/2026-11-07 M1 giant flowers in the void, the floating kit, walls, Select and the apparatus's water/004 Claude.png>)
+Claude looked at picture 004
 
 The player stands in front of the kit in that picture. Moving to the side for a clear view.
 
-Claude looked at [image 005](<../images/2026-11-07 M1 giant flowers in the void, the floating kit, walls, Select and the apparatus's water/005 Claude.png>)
+Claude looked at picture 005
 
-Claude looked at [image 006](<../images/2026-11-07 M1 giant flowers in the void, the floating kit, walls, Select and the apparatus's water/006 Claude.png>)
+Claude looked at picture 006
 
 The straw case's leaf doesn't wake with the lantern, so I'll test it on a scratch copy with the case moved onto plain ground.
 
 The scratch copy is running. Photographing the straw case there.
 
-Claude looked at [image 007](<../images/2026-11-07 M1 giant flowers in the void, the floating kit, walls, Select and the apparatus's water/007 Claude.png>)
+Claude looked at picture 007
 
-Claude looked at [image 008](<../images/2026-11-07 M1 giant flowers in the void, the floating kit, walls, Select and the apparatus's water/008 Claude.png>)
+Claude looked at picture 008
 
 The left object in the first picture is the floating kit. I can't see the straw case yet, so checking where it is.
 
 The case's tile (12,2) in my copy hasn't risen yet. Moving it to 11,3 instead.
 
-Claude looked at [image 009](<../images/2026-11-07 M1 giant flowers in the void, the floating kit, walls, Select and the apparatus's water/009 Claude.png>)
+Claude looked at picture 009
 
-Claude looked at [image 010](<../images/2026-11-07 M1 giant flowers in the void, the floating kit, walls, Select and the apparatus's water/010 Claude.png>)
+Claude looked at picture 010
 
 Both work: the straw case leans 20° on its bottom with its glint on top, and the kit floats standing, strap arched, glint over it. Stopping the scratch copy and updating the README.
 
@@ -182,7 +182,7 @@ Your import also brought back the old "stands in the void" setting on the giant 
 
 the walls try to extend to the tiles on levels below for some reason. are they fixable?
 
-![Dani's image 011](<../images/2026-11-07 M1 giant flowers in the void, the floating kit, walls, Select and the apparatus's water/011 Dani.png>)
+Dani's picture 011
 
 ---
 
@@ -252,37 +252,37 @@ Now looking at the walls on 9,1 and 8,2 (1 m up, beside lower ground) in the gam
 
 ### Claude · 2026-11-07 01:03
 
-Claude looked at [image 012](<../images/2026-11-07 M1 giant flowers in the void, the floating kit, walls, Select and the apparatus's water/012 Claude.png>)
+Claude looked at picture 012
 
-Claude looked at [image 013](<../images/2026-11-07 M1 giant flowers in the void, the floating kit, walls, Select and the apparatus's water/013 Claude.png>)
+Claude looked at picture 013
 
-Claude looked at [image 014](<../images/2026-11-07 M1 giant flowers in the void, the floating kit, walls, Select and the apparatus's water/014 Claude.png>)
+Claude looked at picture 014
 
-Claude looked at [image 015](<../images/2026-11-07 M1 giant flowers in the void, the floating kit, walls, Select and the apparatus's water/015 Claude.png>)
+Claude looked at picture 015
 
 These views don't show the problem side. Your picture looks up at the walls from the void, outside the island. Moving the camera there.
 
-Claude looked at [image 016](<../images/2026-11-07 M1 giant flowers in the void, the floating kit, walls, Select and the apparatus's water/016 Claude.png>)
+Claude looked at picture 016
 
-Claude looked at [image 017](<../images/2026-11-07 M1 giant flowers in the void, the floating kit, walls, Select and the apparatus's water/017 Claude.png>)
+Claude looked at picture 017
 
-Claude looked at [image 018](<../images/2026-11-07 M1 giant flowers in the void, the floating kit, walls, Select and the apparatus's water/018 Claude.png>)
+Claude looked at picture 018
 
-Claude looked at [image 019](<../images/2026-11-07 M1 giant flowers in the void, the floating kit, walls, Select and the apparatus's water/019 Claude.png>)
+Claude looked at picture 019
 
 The old picture shows the fault from the lower tile: the wall's end runs down past its tile's top. The new run caught the game reloading, probably from one of your saves, so I'm running it again.
 
-Claude looked at [image 020](<../images/2026-11-07 M1 giant flowers in the void, the floating kit, walls, Select and the apparatus's water/020 Claude.png>)
+Claude looked at picture 020
 
-Claude looked at [image 021](<../images/2026-11-07 M1 giant flowers in the void, the floating kit, walls, Select and the apparatus's water/021 Claude.png>)
+Claude looked at picture 021
 
-Claude looked at [image 022](<../images/2026-11-07 M1 giant flowers in the void, the floating kit, walls, Select and the apparatus's water/022 Claude.png>)
+Claude looked at picture 022
 
 Same picture old and new: the player stands right in front of the spot where the stone hung. I'll stand to one side.
 
-Claude looked at [image 023](<../images/2026-11-07 M1 giant flowers in the void, the floating kit, walls, Select and the apparatus's water/023 Claude.png>)
+Claude looked at picture 023
 
-Claude looked at [image 024](<../images/2026-11-07 M1 giant flowers in the void, the floating kit, walls, Select and the apparatus's water/024 Claude.png>)
+Claude looked at picture 024
 
 All three are done in **v0.397.0**. Press **Update M1 testing** to get them.
 
@@ -327,7 +327,7 @@ Testing in the hidden editor with real mouse drags. Adding a drag step to my bro
 
 Nearly everything works. Two of my test clicks missed the selection, because my helper scrolls each tile to the screen's middle. Looking at the picture, then rerunning those two checks.
 
-Claude looked at [image 025](<../images/2026-11-07 M1 giant flowers in the void, the floating kit, walls, Select and the apparatus's water/025 Claude.png>)
+Claude looked at picture 025
 
 The selection shows violet with dashed edges, and the Selected box sits at the top of the column. Rerunning the remove and put checks.
 
@@ -394,7 +394,7 @@ Writing the apparatus's 50 water now, with water flying into the machine.
 
 Running the tests, then checking the delivery in the game.
 
-Claude looked at [image 026](<../images/2026-11-07 M1 giant flowers in the void, the floating kit, walls, Select and the apparatus's water/026 Claude.png>)
+Claude looked at picture 026
 
 The tally shows **0/50** water beside the wheels. Nothing was delivered because the apparatus stands 1 m up and my player stood lower. Moving the player onto a neighbour at its height.
 

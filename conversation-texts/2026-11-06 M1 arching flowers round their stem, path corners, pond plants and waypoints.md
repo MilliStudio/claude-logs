@@ -1,6 +1,6 @@
 # 6 November 2026, late night: M1 arching flowers round their stem, path corners, pond plants and waypoints
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-06 M1 arching flowers round their stem, path corners, pond plants and waypoints\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-06 M1 arching flowers round their stem, path corners, pond plants and waypoints", numbered as here. Private: never commit or share.
 
 ---
 
@@ -8,7 +8,7 @@ The messages of this conversation, Dani's and Claude's, without the code, tool c
 
 the arched flowers are still not aligned right, so i attached a pic expplaining through the view from above
 
-![Dani's image 001](<../images/2026-11-06 M1 arching flowers round their stem, path corners, pond plants and waypoints/001 Dani.png>)
+Dani's picture 001
 
 (sent while Claude was working) and the two sub flowers are usually a bit smaller
 
@@ -16,9 +16,9 @@ the arched flowers are still not aligned right, so i attached a pic expplaining 
 
 ### Claude · 2026-11-06 21:57
 
-Claude looked at [image 002](<../images/2026-11-06 M1 arching flowers round their stem, path corners, pond plants and waypoints/002 Claude.png>)
+Claude looked at picture 002
 
-Claude looked at [image 003](<../images/2026-11-06 M1 arching flowers round their stem, path corners, pond plants and waypoints/003 Claude.png>)
+Claude looked at picture 003
 
 Still in the arching flower code; I'm reusing last session's test scripts to check the flowers from above.
 
@@ -56,15 +56,15 @@ Tests pass. Now looking at the flowers in the game.
 
 Taking pictures of the arching flowers from above in a hidden browser.
 
-Claude looked at [image 004](<../images/2026-11-06 M1 arching flowers round their stem, path corners, pond plants and waypoints/004 Claude.png>)
+Claude looked at picture 004
 
-Claude looked at [image 005](<../images/2026-11-06 M1 arching flowers round their stem, path corners, pond plants and waypoints/005 Claude.png>)
+Claude looked at picture 005
 
 The camera didn't tilt down; my remembered slider values didn't match the current defaults. Fixing that.
 
-Claude looked at [image 006](<../images/2026-11-06 M1 arching flowers round their stem, path corners, pond plants and waypoints/006 Claude.png>)
+Claude looked at picture 006
 
-Claude looked at [image 007](<../images/2026-11-06 M1 arching flowers round their stem, path corners, pond plants and waypoints/007 Claude.png>)
+Claude looked at picture 007
 
 ---
 
@@ -82,9 +82,9 @@ The top head will simply take its stem tip's direction: its turn is the stem's w
 
 Tests pass. Taking the pictures from above again, from higher up.
 
-Claude looked at [image 008](<../images/2026-11-06 M1 arching flowers round their stem, path corners, pond plants and waypoints/008 Claude.png>)
+Claude looked at picture 008
 
-Claude looked at [image 009](<../images/2026-11-06 M1 arching flowers round their stem, path corners, pond plants and waypoints/009 Claude.png>)
+Claude looked at picture 009
 
 Top-down camera shots don't frame well in this game (the camera follows the player). I'll work out each flower's layout from the game's own numbers instead, and draw it from above.
 
@@ -102,17 +102,17 @@ Noted, third on the list: pond plants stay dried until the Guardian is restored.
 
 Every flower now has its three flowers spread round the stem: the gaps between them are 76° to 143°, so none line up. Drawing it for you.
 
-Claude looked at [image 010](<../images/2026-11-06 M1 arching flowers round their stem, path corners, pond plants and waypoints/010 Claude.png>)
+Claude looked at picture 010
 
 The drawing's north came out upside down (a mirror, the layout itself is right). Fixing it.
 
-![Claude's image 011](<../images/2026-11-06 M1 arching flowers round their stem, path corners, pond plants and waypoints/011 Claude to Dani.png>)
+Claude's picture 011
 
 Matches your ✓ drawing. Now a look in the game itself, to check the top head follows its stem and nothing breaks.
 
-Claude looked at [image 012](<../images/2026-11-06 M1 arching flowers round their stem, path corners, pond plants and waypoints/012 Claude.png>)
+Claude looked at picture 012
 
-Claude looked at [image 013](<../images/2026-11-06 M1 arching flowers round their stem, path corners, pond plants and waypoints/013 Claude.png>)
+Claude looked at picture 013
 
 In the game the top head now leans along its stem, and the side flowers arch out behind it. No errors. Updating the README.
 
@@ -130,21 +130,21 @@ Now the test for the bends, rewritten for sharp corners.
 
 Tests pass. Checking the bends in the game and the editor's map.
 
-Claude looked at [image 014](<../images/2026-11-06 M1 arching flowers round their stem, path corners, pond plants and waypoints/014 Claude.png>)
+Claude looked at picture 014
 
-Claude looked at [image 015](<../images/2026-11-06 M1 arching flowers round their stem, path corners, pond plants and waypoints/015 Claude.png>)
+Claude looked at picture 015
 
-Claude looked at [image 016](<../images/2026-11-06 M1 arching flowers round their stem, path corners, pond plants and waypoints/016 Claude.png>)
+Claude looked at picture 016
 
-Claude looked at [image 017](<../images/2026-11-06 M1 arching flowers round their stem, path corners, pond plants and waypoints/017 Claude.png>)
+Claude looked at picture 017
 
 The game shows the corners, but faintly from this angle. The editor's map draws paths with the same rule and shows them clearly; photographing that.
 
-Claude looked at [image 018](<../images/2026-11-06 M1 arching flowers round their stem, path corners, pond plants and waypoints/018 Claude.png>)
+Claude looked at picture 018
 
 The bends on 12,7 and 12,8 now turn in a sharp corner. Checking a sharp bend (11,1) the same way.
 
-Claude looked at [image 019](<../images/2026-11-06 M1 arching flowers round their stem, path corners, pond plants and waypoints/019 Claude.png>)
+Claude looked at picture 019
 
 The sharp bend on 15,3 turns in a V too. Saving v0.391.0.
 
@@ -178,15 +178,15 @@ v0.392.0 is pushed. Now your question about waypoints: checking how a tile holds
 
 Your map already has a key item on a waypoint: the third wheel lies on 14,3, waypoint 1. Checking how it shows there in the game.
 
-Claude looked at [image 020](<../images/2026-11-06 M1 arching flowers round their stem, path corners, pond plants and waypoints/020 Claude.png>)
+Claude looked at picture 020
 
 The harvestables wait hidden under the waypoints as intended; my test hasn't fed the waypoint yet. Checking why.
 
-Claude looked at [image 021](<../images/2026-11-06 M1 arching flowers round their stem, path corners, pond plants and waypoints/021 Claude.png>)
+Claude looked at picture 021
 
 Feeding by walking up is fiddly in the hidden browser, so I'll mark the waypoints as fed in the copy's save instead.
 
-![Claude's image 022](<../images/2026-11-06 M1 arching flowers round their stem, path corners, pond plants and waypoints/022 Claude to Dani.png>)
+Claude's picture 022
 
 Tested on the copy: once waypoint 14,3 was fed, the flower bulbs grew on its tile, next to your third wheel. Stopping the copy's server.
 
@@ -216,9 +216,9 @@ I've finished all three changes and pushed them as v0.390.0 to v0.392.0. Press *
 - **Decision:** "Each flower on an arching flower faces the way its own stem points, including the one on the tip. Seen from above, the three flowers stand round the stem like a triangle's corners, never in a line. It replaces "Arching flowers' heads tilt less, and follow their stems" (6 November 2026)."
 - **Why** (my suggestion): "A spray looks natural when every flower follows its own stem and the flowers spread round it."
 
-Again: [image 011](<../images/2026-11-06 M1 arching flowers round their stem, path corners, pond plants and waypoints/011 Claude to Dani.png>)
+Again: picture 011
 
-Again: [image 022](<../images/2026-11-06 M1 arching flowers round their stem, path corners, pond plants and waypoints/022 Claude to Dani.png>)
+Again: picture 022
 
 ---
 
@@ -283,9 +283,9 @@ The "gap" is my probe sitting exactly on the line where two grass strips meet, n
 
 Tests pass. Looking at the softened corners on the editor's map.
 
-Claude looked at [image 023](<../images/2026-11-06 M1 arching flowers round their stem, path corners, pond plants and waypoints/023 Claude.png>)
+Claude looked at picture 023
 
-Claude looked at [image 024](<../images/2026-11-06 M1 arching flowers round their stem, path corners, pond plants and waypoints/024 Claude.png>)
+Claude looked at picture 024
 
 The corners now turn with a short rounding instead of a point or a long curve. Adding the waypoint change to the README, then saving v0.393.0.
 
