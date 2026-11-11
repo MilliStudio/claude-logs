@@ -31,6 +31,10 @@ const PROPOSALS = path.join(EXCHANGE, 'proposed-records.json');
 const BROWSER = ['C:/Program Files/Google/Chrome/Application/chrome.exe', path.join(os.homedir(), 'AppData/Local/Google/Chrome/Application/chrome.exe'),
   'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe', 'C:/Program Files/Microsoft/Edge/Application/msedge.exe'].find((b) => fs.existsSync(b));
 const PICTURE = /\.(png|jpe?g|gif|webp)$/i;
+// The pictures that go in a session's PDF: Dani's and the ones Claude made or showed her, not the screenshots Claude
+// took for itself while coding and testing ("003 Claude.png", in folders saved before 11 November 2026; Dani: "only
+// images that i attach or the images you generate for me when explaining things or showing me things").
+const forTheBook = (f) => PICTURE.test(f) && /^\d{3} (Dani|Claude to Dani)\./.test(f);
 const today = new Date().toLocaleDateString('sv-SE', { timeZone: 'Europe/Stockholm' });
 const escape = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
@@ -131,7 +135,7 @@ function printPictures(name, pictures) {
   const date = name.slice(0, 10);
   const figures = pictures.map((file) => {
     const c = captions.get(file);
-    const who = / Claude to Dani\./.test(file) ? 'Claude, shown to Dani' : / Dani\./.test(file) ? 'Dani' : 'Claude';
+    const who = / Claude to Dani\./.test(file) ? 'Claude, shown to Dani' : 'Dani';
     const line = c?.line ? `<span class="line">${escape(c.who)}: ${escape(short(plain(c.line)))}</span>` : '';
     return `<figure><figcaption><b>${escape(file.slice(0, 3))} · ${who}</b>${c ? ` · ${escape(c.at)}` : ''}${line}</figcaption>`
       + `<img src="${pathToFileURL(path.join(IMAGES, name, file)).href}" alt=""></figure>`;
@@ -148,7 +152,7 @@ figcaption { margin-bottom: 4pt; }
 img { display: block; max-width: 100%; max-height: 118mm; width: auto; height: auto; border: 0.5pt solid #ccd2dc; }
 </style></head><body>
 <h1>Pictures: ${escape(name)}</h1>
-<p class="about">${pictures.length} pictures from the Claude Code session of ${date}, in the order they came, each with the chat line it came with. Dani's are the pictures Dani pasted. Claude's are mostly screenshots Claude took to check its work. Dani's pictures can include references from other games, or photos: those aren't Tessera's work. Made by Claude on ${today} from claude-logs\\images\\${escape(name)}\\.</p>
+<p class="about">${pictures.length} pictures from the Claude Code session of ${date}, in the order they came, each with the chat line it came with. Dani's are the pictures Dani pasted. Claude's are the pictures Claude made or showed Dani to explain something. Dani's pictures can include references from other games, or photos: those aren't Tessera's work. Made by Claude on ${today} from claude-logs\\images\\${escape(name)}\\.</p>
 ${figures.join('\n')}
 </body></html>`;
   const source = path.join(OUT, `.print ${name}.html`);
@@ -162,7 +166,7 @@ ${figures.join('\n')}
       name: `Pictures: ${name}`, category: categoryOf(name), event_date: date, evidence_source: 'source_document',
       notes: `The ${pictures.length} pictures of the Claude Code session "${name}", in the order they came, each marked Dani or Claude`
         + `${placed ? ' with the chat line it came with' : ''}, printed to PDF by Claude on ${today} from claude-logs\\images\\${name}\\.`
-        + ' Claude\'s are mostly screenshots Claude took to check its work. Dani\'s can include references from other games, or photos, which aren\'t Tessera\'s work.',
+        + ' Claude\'s are the pictures Claude made or showed Dani to explain something. Dani\'s can include references from other games, or photos, which aren\'t Tessera\'s work.',
     },
     file: pdf, skip_if: { field: 'name', value: `Pictures: ${name}` }, reconstructed: date < today, placed,
   };
@@ -240,7 +244,7 @@ const records = [];
 for (const name of names.sort()) {
   const files = fs.readdirSync(path.join(IMAGES, name)).sort();
   const pages = files.filter((f) => /^page .*\.html$/i.test(f));
-  const pictures = pagesOnly ? [] : files.filter((f) => PICTURE.test(f) && /^\d{3} /.test(f));
+  const pictures = pagesOnly ? [] : files.filter(forTheBook);
   for (const page of pages) records.push(printPage(name, page));
   if (pictures.length) records.push(printPictures(name, pictures));
   const book = records.at(-1)?.placed !== undefined && records.at(-1).key === `pictures ${name}` ? records.at(-1) : null;

@@ -2,11 +2,12 @@
 // Writes Dani's and Claude's messages from a Claude Code session log, without
 // code, tool calls, tool output or system notes. Times are Swedish local time.
 // Messages Dani sent while Claude was working are kept too, marked as such.
-// Every image in the conversation is saved in images\<out's name>\, numbered in the order it came, and the text shows
-// it where it came (Dani, 4 November 2026: "they all need to be saved"): the ones Dani pasted (001 Dani.png), the
-// image files Claude pointed her to or opened for her (002 Claude to Dani.png), both shown in the text, and the ones
-// Claude opened to look at, such as screenshots of the game (003 Claude.png), linked. An image that comes again keeps
-// its first number.
+// The conversation's images are saved in images\<out's name>\, numbered in the order they came, and the text shows each
+// where it came: the ones Dani pasted (001 Dani.png) and the image files Claude pointed her to or opened for her
+// (002 Claude to Dani.png). The screenshots Claude takes for itself while coding and testing stay out (Dani,
+// 11 November 2026: "only images that i attach or the images you generate for me when explaining things or showing me
+// things"); the raw logs keep them. An image that comes again keeps its first number. Folders saved before then also
+// hold those screenshots (003 Claude.png), linked in their texts as "Claude looked at".
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
@@ -85,9 +86,6 @@ export function conversation(file, name, { images = true, save = true } = {}) {
     if (images) {
       for (const b of blocks) {
         if (b.type === 'image' && b.source?.data) pictures.push(['Dani', fromBlock(b, 'Dani', e.timestamp)]);
-        if (b.type === 'tool_result' && Array.isArray(b.content)) {
-          for (const c of b.content) if (c.type === 'image' && c.source?.data) pictures.push(['Claude', fromBlock(c, 'Claude', e.timestamp)]);
-        }
         // An image file Claude opened for Dani, in VS Code.
         const command = b.type === 'tool_use' ? b.input?.command ?? '' : '';
         if (/(^|[\s;&|])code(\.cmd)?\s/.test(command)) fromPaths(command, 'Claude to Dani', e.timestamp).forEach((p) => pictures.push(['Claude', p]));
