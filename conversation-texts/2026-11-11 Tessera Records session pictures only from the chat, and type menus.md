@@ -221,6 +221,50 @@ The hours are right: 12 on 6 November and 8 each on the 7th and 8th. Now the M1 
 
 Both handovers are committed and pushed. The M1 folder is clean now; the other session has committed its work. Last, I'll save this session's text:
 
+Yes, you can close it. Everything is saved and pushed.
+
+- **This session's text** is saved in claude-logs. It had no pictures, so there's no picture PDF.
+- **Both handovers** now say that nothing waits for Bring in, and the M1 one describes the new picture rule and type.
+- **Your hours are fixed.** Twelve hours had never come in: 4 each on 6, 7 and 8 November. When you raised a day's hours, I had put the raise into that day's first proposal, and Bring in skips a proposal once the day already has hours. I added three corrections, and you brought them in at 23:57. Tessera Records now has 12 hours on 6 November and 8 each on the 7th and 8th.
+- **Time:** I estimated about 45 minutes for the type menus. From your "go ahead" to v0.20.0 took about 7 minutes.
+
+Q1. To stop the hours from being lost again, I'd add this rule to the "Recording things" section of Tessera's CLAUDE.local.md: "When Dani raises a day's hours, propose the raise as a change to that day's record, not inside the day's first proposal." I recommend yes. A yes now is enough, and the next session will add it.
+
 ---
 
-Closed at about midnight on 11 November 2026. Session pictures from now on: only Dani's and the ones Claude makes or shows her (the rule in Dropbox\Studio\CLAUDE.md, conversation-text.mjs and picture-book.mjs); the old picture PDFs stay. Tessera Records v0.20.0: type menus on the records part's lists, and the type Session pictures and pages, which Dani's Bring in gave the 137 PDFs and pages. The 4 hours each that Bring in had skipped on 6, 7 and 8 November are in. Nothing waits for Bring in.
+### Dani · 2026-11-12 00:01
+
+i\ve been forgetting. .you can add 4 for yesterday and 4 today
+yes add the rule thanks
+
+---
+
+### Claude · 2026-11-12 00:01
+
+I'll add the rule first. It goes in the "Recording things" section of Tessera's CLAUDE.local.md:
+
+The rule is in, in the hours line of "Recording things". That file stays out of git, as your rules say.
+
+Q1. It's just past midnight, so "yesterday and today" could mean two pairs of days. Do you mean 4 hours on 10 November and 4 on 11 November? I recommend that reading, because 12 November has only just started. Answer with a yes, or the two dates, and I'll put them in the Bring in file.
+
+---
+
+### Dani · 2026-11-12 00:03
+
+not the 12th. i meant 10th and  11th
+
+---
+
+### Claude · 2026-11-12 00:03
+
+I'll copy the fields from the earlier hours proposals, so these two match them:
+
+Here are the two records for the Bring in file. Each has 4 hours, Game design, and what was built that day, worded like the earlier ones:
+
+Your quote lost its backslash ("ie been" in place of "i\ve been"), and your words have to be copied exactly. Fixing it in the file:
+
+Your quote is exact now, and the rehearsal on a copy adds the two days: 4 hours on 10 November and 4 on 11 November. Next I'll update both handovers and the session text.
+
+---
+
+Closed at about 00:15 on 12 November 2026. Session pictures from now on: only Dani's and the ones Claude makes or shows her (the rule in Dropbox\Studio\CLAUDE.md, conversation-text.mjs and picture-book.mjs); the old picture PDFs stay. Tessera Records v0.20.0: type menus on the records part's lists, and the type Session pictures and pages, which Dani's Bring in gave the 137 PDFs and pages. The 4 hours each that Bring in had skipped on 6, 7 and 8 November are in, and a rule in Tessera's CLAUDE.local.md keeps raises apart from a day's first proposal. Waiting for Dani's Bring in button: 4 hours each on 10 and 11 November.
