@@ -109,6 +109,64 @@ Saving the session now: first the handover line, then the conversation text, the
 
 The handover is committed and pushed. Next comes the conversation text.
 
+The session is closed and saved. The handover is in tessera-m1 (66a237a) and the session text is in claude-logs (1b4ad31). The session had no pictures or pages, so there's no picture book.
+
+What you need to do:
+1. **Update M1 testing.** I'd wait for the zoom session to finish v0.490.0 and then press it once. That gets you the low leaves, the zoom slider and the player's dot in one go, along with your 12:35 import.
+2. **Bring in.** The 4 hours each for 10 and 11 November are still waiting for your button from before. This session added nothing to the Bring in file.
+
+I didn't add the low leaves to Tessera Records: a slider's range counts as tuning.
+
+The zoom session has finished v0.490.0, so you can press **Update M1 testing** now. It brings everything at once:
+- the low leaves (v0.489.0)
+- the zoom slider (v0.488.0)
+- the player's dot on the map editor's map (v0.490.0)
+- your 12:35 import, already committed
+
+The zoom session also fixed a bug from v0.476.0. **Make default flower** didn't save the In the void sliders, so your flowers on 25,-8 and 8,3 had no fade. The default now keeps them, and flowers without them start at 20% and 2 m. Check those two flowers after the update, in case you want other values.
+
+Nothing else is waiting from this session.
+
 ---
 
-Closed at about 15:10 on 12 November 2026. v0.489.0: a giant flower's leaf goes down to 2.5 m below the tiles (DEMO_LEAF_LOWEST, times the flower's Size), on main after the zoom session's v0.488.0. Handover in tessera-m1 (66a237a). Tessera Records: nothing, as a slider's range is tuning. The zoom session builds v0.490.0 and commits Dani's import of 12:35 with it.
+### Dani · 2026-11-12 16:19
+
+thanks a lot. tr and close up pls
+
+---
+
+### Claude · 2026-11-12 16:19
+
+I'm reading what Tessera Records says about giant flowers' leaves, to check whether the low leaves change anything there.
+
+Still reading Tessera Records. The feature list didn't match the name I expected, so I'm listing the titles.
+
+Tessera Records proposal for this session's work. Nothing is entered yet.
+
+**One feature change, no decisions.** Leaves going below the tiles is an addition, and additions go only into feature text. The Giant flower feature (version 6) doesn't mention leaf heights yet. I'd add this paragraph after "Size and bend":
+
+> *Low leaves.* A leaf can sit up to 2.5 m below the tiles' ground (times the flower's size), down in the void under the tiles, where it fades with the stem. The player hops down onto it from the void, as onto any lower ground.
+
+I left out the fix that stops a sunken leaf being stood on inside a neighbouring tile. That's how the trial solves it, and you dropped the leaf hitbox for the same reason ("m2 programmers might solve this differently").
+
+**No record** for the zoom session's Zoom slider (v0.488.0), the player's dot (v0.490.0) or its Make default flower fix. They're trial tools.
+
+Q1. Shall I enter the paragraph above as Giant flower version 7? I recommend yes. After that I'll update the handover and the session text, and close.
+
+---
+
+### Dani · 2026-11-12 16:20
+
+yeah go ahaeead
+
+---
+
+### Claude · 2026-11-12 16:21
+
+Entered: Giant flower is now at version 7, and no DOCS file changed. Next, the handover and session text.
+
+The entry is in Tessera Records. The zoom session is writing its own handover into the same file right now, so I'm waiting for it to commit before I add my one-line change. That way neither of us overwrites the other.
+
+---
+
+Closed at about 16:30 on 12 November 2026. v0.489.0: a giant flower's leaf goes down to 2.5 m below the tiles (DEMO_LEAF_LOWEST, times the flower's Size), on main between the zoom session's v0.488.0 and v0.490.0. Tessera Records, with Dani's yes: Giant flower version 7, a Low leaves paragraph; no decision, as it is an addition. Handover in tessera-m1 (66a237a, ab10af0).
