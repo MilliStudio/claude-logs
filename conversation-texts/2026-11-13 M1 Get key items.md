@@ -1,4 +1,4 @@
-# M1: Get key items, with a key
+# M1: Get key items, with a key, and the selected key item pulsing
 
 The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Private: never commit or share.
 
@@ -123,6 +123,69 @@ Writing this session's entry and correcting the lasting lines about the buttons:
 
 Handover pushed. Now the session's text and picture book; reading how the two scripts are run:
 
+Only 4 messages, which seems low. Checking the text:
+
+The script left out the question I asked through the question box, and your answer to it. Finding its time in the log so I can add both exactly:
+
+Your answer is in the text now. This session has no pictures or pages; checking with the picture book script:
+
+No folder means no pictures or pages, so nothing to print. Leaving the worktree to remove it, then committing claude-logs:
+
+Closed at about 21:40. Everything is on GitHub.
+
+- **Handover:** this session's entry is at the top of Status in [CLAUDE.md](CLAUDE.md). I also corrected the lasting lines on the buttons, Next and Tessera Records. It notes no Tessera Records entry, as you said. The main folder has it too.
+- **Session text:** saved as `claude-logs\conversation-texts\2026-11-13 M1 Get key items.md` and pushed. The script left out the question I asked through the question box and your answer to it, so I added both by hand, your words exactly. There were no pictures or pages to print.
+- **Worktree:** removed, with its branch.
+- **Your saves:** the main folder still has your two map imports from M1 testing (20:59 and 21:27) and your slider saves, uncommitted. They go in with the next version.
+
+Next: press **Update M1 testing** to get v0.522.0 and v0.523.0, then try the key button.
+
 ---
 
-Closed at about 21:35 on 13 November 2026. v0.523.0, in the worktree key-items-button beside the main folder's session (v0.522.0): Get all items became Get key items, with a key: every key item placed and the golden fish scale, and 10,000 bottles and herbs of awakening and ladder vine sprouts, never the kit. Get harvestables gives 10,000 ladder vine sprouts too. No Tessera Records entry. Next: Dani's Update M1 testing to v0.523.0 and her play of it.
+### Dani · 2026-11-13 21:31
+
+actually one more request pls. when a key item is selected, can you please make it pulse in it's location on the map like the lpayer does
+
+---
+
+### Claude · 2026-11-13 21:31
+
+Small change, about half an hour. Making a new worktree first:
+
+Now how key items show on the map, and what "selected" means for one in the editor:
+
+Found it: a key item counts as selected when its tool is picked or its pink box shows (`bold` in `keyMarks()`). Checking how the player's dot keeps one size at every zoom:
+
+Adding the pulse: the same halo as the player's dot, in the key items' orange, at the spot where the selected key item lies (its chest's tile middle when in a chest), one size at every zoom.
+
+Parses. Now testing in the editor: picking a key item's tool, clicking its tile with another tool, and zooming.
+
+The tool buttons aren't marked the way I guessed. Looking at how they are:
+
+They do use `data-tool`, so the page probably hadn't finished loading. Waiting longer:
+
+No tool buttons at all, so the editor's script stopped. Getting the error:
+
+No error, but nothing ran: this new worktree has no node_modules yet, so three.js is missing. Installing:
+
+The orange dot shows on the cogs' tile. Checking the other way of selecting, picking a placed key item's tool, and catching the halo mid-pulse:
+
+Picking the tool shows the pink box but no pulse. Checking whether picking a tool redraws the map:
+
+The pulse sits right on the key item's own small orange dot, so it's hard to see at this size. Adding a close-up to the test harness:
+
+v0.524.0 is free. Adding the README sentence:
+
+Fast-forwarded to the newest main. Raising the version and running the tests:
+
+All 233 pass. Once more in the browser on the merged version:
+
+Same result. Stopping the server, committing, labelling and pushing:
+
+v0.524.0 is on GitHub with its label. Now the handover; reading the top of Status as the other session left it:
+
+Handover pushed. Saving the session's text again with the new part:
+
+---
+
+Closed at about 21:40 on 13 November 2026. v0.523.0 and v0.524.0, in the worktrees key-items-button and key-pulse beside the main folder's session (v0.522.0, v0.523.1): Get all items became Get key items, with a key: every key item placed and the golden fish scale, and 10,000 bottles and herbs of awakening and ladder vine sprouts, never the kit. Get harvestables gives 10,000 ladder vine sprouts too. In the map editor, the key item whose pink box shows pulses where it lies, as the player's dot does. No Tessera Records entry. Next: Dani's Update M1 testing to v0.524.0 and her play of it.
