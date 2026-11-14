@@ -458,6 +458,211 @@ The session log moved when I left the worktree. Finding it by the session's id:
 
 The log moved with the session and holds all of it. Saving the session's text:
 
+Saved: Dani's drawing and five pictures I showed her. Now the picture book for Tessera Records:
+
+A small fix to the handover: the bush pictures weren't among those shown to Dani, so the Bring in line shouldn't name them.
+
+v0.529.0 is built and pushed: a harvestable can now grow inside an opened chest, and your trial is already running it. M1 testing gets it when you press **Update M1 testing**.
+
+- **To add one:** double-click a harvestable onto a chest's tile, or put a chest on a harvestable's tile and it takes it in. No chest on your map holds one yet.
+- **What you'll see:** once the chest is open and its area revives, soil rises in the chest and the harvestable grows on it. You harvest it from beside the chest. Used up, what it leaves behind stays in the chest (a tree's stump, a rock's bottom layer) until it grows back.
+- **Which ones:** a puffball tree, cone trees, flower bulbs, pod stalks or porous rocks, at most 4 in a chest, shrunk to fit. Not the mushroom-cap tree, which isn't a harvestable, and not the flowers.
+- **Size:** a new slider, Harvestables in a chest, under Tuning › Passages and chests, makes them bigger or smaller.
+
+I tested it in the hidden browser with puffball trees, then porous rocks, in the chest on 4,-15. That was a test copy of your map; your own map is unchanged.
+
+The session is closed:
+- The handover is updated.
+- The session's text and pictures are saved and pushed to claude-logs.
+- The picture book is in the Bring in file.
+- My worktree is removed.
+- The metal-refinery session will number its versions from v0.530.0.
+
+One question left: **Q5**, above the pictures. Shall I enter Tessera Records entries 5–7 (a new chest decision, Open a chest version 7, and your to-do "Design harvestables for chests")? I recommend yes.
+
 ---
 
-Closing note (about 18:00): v0.526.0, v0.528.0 and v0.529.0 are pushed and in the main folder, whose trial runs v0.529.0; the worktree wayfinder-zoom is removed. Tessera Records has the four entries Dani approved at about 17:40 (Tessera DOCS 6ee3b14); entries 5 to 7 for v0.529.0 (a decision, Open a chest version 7 and the to-do Design harvestables for chests) wait for her answer to Q5. Next: Dani's Update M1 testing, her play, and her own harvestable kinds for chests. The worktree session metal-refinery takes v0.530.0 on. The handover is in tessera-m1's CLAUDE.md.
+### Dani · 2026-11-14 18:22
+
+apparatus is still in pieces, the handle and the lump of coal are added to the pile, then it is restored
+nope. new types of harvestables but existing ones. one of them will be the ladder thing. was it ladder seeds? and there is no need for the soil inside the chest. 
+q5 wait until we're done developing this
+
+---
+
+### Claude · 2026-11-14 18:23
+
+You gave me three things, so taking them one at a time.
+
+**The soil:** I'll remove it now. The harvestable will then stand on the chest's floor, 0.05 m up inside the chest.
+
+**"Ladder seeds":** the item is called **ladder vine sprout**. It's the one in the pouch that grows a ladder vine.
+
+**The apparatus line** (the handle and the lump of coal) sounds like it was meant for the metal-refinery session. I'll ask about it at the end.
+
+First the soil.
+
+I'll open the game in the hidden browser with the editor inside it, put a puffball tree in the chest live (no Save), then open the chest and revive its area. Nothing is written to your files.
+
+The tree round worked. The porous round printed nothing, so I'll look at the tree pictures first, then rerun it.
+
+No soil now, and the trees' tops fill the chest. Rerunning porous rocks on their own:
+
+Without soil, low harvestables such as porous rocks sit at the bottom of the chest and barely show, as expected. Now the README and v0.529.1.
+
+v0.529.1 is pushed. Telling the metal-refinery session, and checking whether anything in the game drops ladder vine sprouts today:
+
+v0.529.1 is in: no soil, and the harvestable stands on the chest's floor. Pictures:
+- Puffball trees: C:\Users\someo\AppData\Local\Temp\claude\653749dc61028eb9\1af41006-ef3a-48ea-b773-44349fc7dcf6\scratchpad\h4-tree.png
+- Porous rocks: C:\Users\someo\AppData\Local\Temp\claude\653749dc61028eb9\1af41006-ef3a-48ea-b773-44349fc7dcf6\scratchpad\h4-porous.png
+
+The trees' tops fill the chest. Low harvestables like porous rocks now sit at the bottom and barely show, which is fine if your chest harvestables are made to fit. I tested it on your trial by sending the map live from the editor inside the game, without saving. Your map file is unchanged.
+
+**The ladder harvestable.** I won't build anything until we've agreed on it. Nothing in the game drops ladder vine sprouts today; only the Get buttons give them. So this would be the first real way to get them.
+
+**Q1:** Here's how I read "new types of harvestables but existing ones". Is it right?
+- They're new plants made for chests.
+- Each one drops items that are already in the game.
+- The first one drops ladder vine sprouts.
+
+**Q2:** What should it look like? I recommend a short clump of ladder vine curling up out of the chest, in the vine's greens and leaf size. You could also draw it.
+
+**Q3:** Should it grow only in chests? I recommend yes, since it's made for them.
+
+Otherwise it would work like every harvestable: its own sliders for size, level and drops per hit. I'd start it at level 1, dropping 1 sprout per hit on average, and you'd tune it.
+
+**The apparatus line** (the handle and the lump of coal): was that meant for the metal-refinery session? I can pass it on word for word.
+
+Q5 waits, as you said, and I'll update the handover and session text when we're done.
+
+![Claude's image 007](<../images/2026-11-14 M1 waypoints that zoom, and grass and harvestables in opened chests/007 Claude to Dani.png>)
+
+![Claude's image 008](<../images/2026-11-14 M1 waypoints that zoom, and grass and harvestables in opened chests/008 Claude to Dani.png>)
+
+The metal-refinery session will probably build a coal harvestable that grows only in chests. That's where your line about the pump handle and lump of coal belongs, so I've flagged it to them.
+
+We've agreed:
+- They keep v0.530.0. If you say yes to the sprout harvestable, I'll take v0.531.0.
+- We'll share one way of marking harvestables that grow only in chests.
+
+I'm still waiting on your answers to Q1–Q3 about the ladder harvestable.
+
+The metal-refinery session already has your handle-and-coal line, so you don't need to send it again. We've agreed one way to mark harvestables that grow only in chests.
+
+I'm still waiting on your answers about the ladder harvestable:
+- **Q1:** the chest harvestables are new plants that drop items already in the game, and the first one drops ladder vine sprouts. Is that right?
+- **Q2:** what should it look like? I recommend a short clump of ladder vine curling up out of the chest.
+- **Q3:** should it grow only in chests? I recommend yes.
+
+The metal-refinery session is dropping the coal harvestable for now, as you told it. It will build only the Iron Apparatus and keep v0.530.0. If the ladder harvestable goes ahead, marking harvestables that grow only in chests is mine to add.
+
+I'm still waiting on Q1–Q3 about the ladder harvestable, in my message before last.
+
+---
+
+### Dani · 2026-11-14 18:41
+
+q1 and 2 yes, but the resource object design it drops is attached
+q3 yes, for now
+
+![Dani's image 009](<../images/2026-11-14 M1 waypoints that zoom, and grass and harvestables in opened chests/009 Dani.png>)
+
+---
+
+### Claude · 2026-11-14 18:42
+
+Building it now: a ladder vine clump that grows only in chests and drops ladder vine sprouts, with the sprout item redrawn after your picture (a pale pouch tied with a blue band, two green leaves out of the top). It's about 1–1.5 hours. First, how an existing harvestable like pod stalks is wired through the code.
+
+The editor builds its tools from the plant list, so a new entry there gives the tool by itself. Reading the pod stalks' constants in key.js to add the clump's beside them:
+
+Adding the clump's constants to key.js:
+
+Now the clump's box of sliders in sizes.js:
+
+Now the drop sliders in drops.js:
+
+Now the map side: the letter `V`, and a Problems error for a clump anywhere but in a chest.
+
+Now the editor's tool and the map's badge for the clump:
+
+Now the editor: a clump goes only on a chest's tile, and removing a chest that holds one takes the clump with it.
+
+The map and editor side are done. Now the game's drawing of the clump. Reading how the ladder vine's stems and leaves are drawn, to match its look:
+
+Now the clump's size, height and burst colours in the game's tables:
+
+Running the tests:
+
+All 235 pass. Adding a test for the clump's chest-only rule beside the chest test:
+
+The new test passes. Telling the metal-refinery session I'm nearly ready, so we can settle who takes v0.530.0:
+
+Rerunning the test to see the used-up clump:
+
+Used up, the clump's bare stems show over the rim. Now the README, then v0.530.0.
+
+v0.530.0 is pushed: the **ladder vine clump**, which grows only in a chest and drops ladder vine sprouts. Your trial is running it already; M1 testing gets it when you press Update M1 testing.
+
+Pictures from your trial (the map sent live from the editor, nothing saved):
+- In the chest: C:\Users\someo\AppData\Local\Temp\claude\653749dc61028eb9\1af41006-ef3a-48ea-b773-44349fc7dcf6\scratchpad\h6-vines.png
+- Close up: C:\Users\someo\AppData\Local\Temp\claude\653749dc61028eb9\1af41006-ef3a-48ea-b773-44349fc7dcf6\scratchpad\h6-vines-close.png
+- Used up: C:\Users\someo\AppData\Local\Temp\claude\653749dc61028eb9\1af41006-ef3a-48ea-b773-44349fc7dcf6\scratchpad\h6-vines-used-up.png
+
+**How it works**
+- In the map editor it's the **ladder vine clump** tool. Double-click it onto a chest's tile.
+- The editor won't put it anywhere else. Removing that chest removes the clump with it.
+- Once the chest is open and its area revives, the clump grows in it: four vine stems about 1 m tall, curling up and arching over the chest's sides, with vine leaves.
+- In the test, 6 hits gave 6 ladder vine sprouts. The sprout is the one from your picture; the game has had it since 2 November.
+
+**My choices, for you to check**
+- **Used up**, it keeps its bare stems, with no leaves, over the rim. Cut short like other harvestables, its stems would sit 0.7 m down in the chest and you'd never see them.
+- **Its numbers** are mine: size 1, 1 per chest, 1 sprout per hit, level 1. They're in its box beside the tool.
+
+Q5 waits, as you said. I'll update the handover and the session text when you tell me we're done.
+
+![Claude's image 010](<../images/2026-11-14 M1 waypoints that zoom, and grass and harvestables in opened chests/010 Claude to Dani.png>)
+
+![Claude's image 011](<../images/2026-11-14 M1 waypoints that zoom, and grass and harvestables in opened chests/011 Claude to Dani.png>)
+
+![Claude's image 012](<../images/2026-11-14 M1 waypoints that zoom, and grass and harvestables in opened chests/012 Claude to Dani.png>)
+
+---
+
+### Dani · 2026-11-14 18:53
+
+we can do tr and end the conversation
+
+---
+
+### Claude · 2026-11-14 18:53
+
+I'll put the Tessera Records proposal together, now with the ladder vine clump, and close the session meanwhile. First, what "Grow a ladder vine" says about where sprouts come from:
+
+A second run replaces this session's entry, so re-running is safe. Here's the updated Tessera Records proposal, which replaces 5–7:
+
+**Tessera Records (proposed, nothing entered yet)**
+
+1. **New decision** (M1 M2 M3, Game › Environmental interactions and puzzles): "Harvestables grow in opened chests, and some grow only there."
+   - **Text:** "A level designer can give a chest a harvestable. Once the chest is open and empty and its area revives, the harvestable grows inside it instead of grass. Used up, its depleted form stays in the chest until it grows back. A chest that hasn't been opened stays a chest. Some harvestables are made for chests and grow only there: the first, a ladder vine clump, drops ladder vine sprouts."
+   - **Why** (my proposal): "An emptied chest goes on giving once the land round it comes back, and harvestables found only in chests make chests worth coming back to."
+2. **Open a chest** (feature, version 7): after the grass sentence, add: "A level designer can give a chest a harvestable instead: once the area round the opened chest revives, it grows inside the chest, and the player harvests it from beside the chest. Used up, its depleted form stays in the chest until it grows back. Some harvestables grow only in chests: the first, a ladder vine clump, drops ladder vine sprouts."
+3. **Gather a resource** (feature, version 25): a new row in its table: "Ladder vine sprouts per hit, on average (from a ladder vine clump, in a chest) | 1".
+
+No record for:
+- the removed soil (a look);
+- the two sliders (tuning);
+- the editor's tool (a trial tool).
+
+I dropped the to-do "Design harvestables for chests" after your "nope".
+
+**Q6:** Shall I enter 1–3? I recommend yes.
+
+**Q7:** On 2 November you said a new apparatus would make ladder vine sprouts from harvested resources. Tessera Records has two open questions on it: "Which resources make ladder vine sprouts?" and "What is the apparatus that makes ladder vine sprouts?". Does the clump replace that apparatus, or is it a second source? I recommend leaving both questions open, since nothing you said drops the apparatus.
+
+Now closing the session: the handover first.
+
+Handover pushed. Saving the session's text and pictures again, now with everything:
+
+---
+
+Closing note (about 19:00): v0.526.0 and v0.528.0 to v0.530.0 are pushed and in the main folder, whose trial runs v0.530.0; the worktree wayfinder-zoom is removed. Tessera Records has the four entries Dani approved at about 17:40 (Tessera DOCS 6ee3b14). The entries for v0.529.0 to v0.530.0 (a decision, Open a chest version 7, a row in Gather a resource's table) wait for her answer to Q6, and Q7 asks whether the ladder vine clump replaces the sprout apparatus of the two open questions of 2 November. Next: Dani's Update M1 testing and her play. The worktree session metal-refinery takes v0.531.0, the Iron Apparatus. The handover is in tessera-m1's CLAUDE.md.
