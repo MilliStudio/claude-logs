@@ -171,6 +171,41 @@ Now writing this session's handover entry and updating the lasting lines.
 
 Handover pushed. Now saving this session's text and pictures.
 
+Last step: the Tessera Records proposal. Finding where Gather a resource prints in DOCS, so I can show the change in the compare view.
+
+I've closed up everything except Tessera Records, which needs your yes first.
+
+**Done:**
+- **Your map import from 14:43** is saved as v0.528.1: 214 tiles. The waypoint chain from -6,-9 now starts at 5 water drops. The large cog is in the chest on 7,-13 and the ringed cog on 5,-15.
+- **Handover:** this session's work is written into the trial's CLAUDE.md file and pushed. The worktree session is adding its own on top.
+- **This session's text and picture** are saved and pushed to claude-logs. The picture is mine of the lantern sprout's lit pod, and it's waiting for your Bring in button.
+
+**Tessera Records:** only one change is needed. The other changes are trial tools, a fix and a look, so they get no record.
+
+**Q1.** Should I change the harvesting box sentence in Gather a resource as below, with no decision? I recommend yes. It's a refinement, and no decision mentions the box. The compare view is open in VS Code.
+
+Now:
+> A small box at the top right shows the last 4 kinds the player gained or gave away, newest on top, each with its picture and how many the player carries.
+
+Proposed:
+> A small box at the top right shows the last 4 kinds the player harvested, the last harvested on top, each with its picture and how many the player carries. Only a harvest moves a kind to the top: a delivery, or anything else the player gets or gives, changes only its count.
+
+**For you:**
+- Press **Update M1 testing** to get v0.528.1.
+- The three leftover test servers (43840, 23560, 14088) are still running. End them in Task Manager's Details tab, or restart the computer.
+
 ---
 
-Closed at about 17:30 on 14 November 2026. v0.525.0 (13 November): the game smooth beside the map editor (the player's dot and the key item's pulse on a layer over the map, no element opacity) and the lantern sprout's light through its whole pod. v0.527.0 (14 November): the map's dots still, the selected key item's tile outlined in pink, the harvesting box by last harvested. v0.528.1: Dani's map import of 14:43. Beside the worktree session wayfinder-zoom (v0.526.0, v0.528.0). Tessera Records: Gather a resource's harvesting box sentence proposed, waiting for Dani's answer.
+### Dani · 2026-11-14 17:24
+
+thanks. you ocan enter the record
+
+---
+
+### Claude · 2026-11-14 17:25
+
+Entered. Now updating the handover's Tessera Records line and this session's text.
+
+---
+
+Closed at about 17:45 on 14 November 2026. v0.525.0 (13 November): the game smooth beside the map editor (the player's dot and the key item's pulse on a layer over the map, no element opacity) and the lantern sprout's light through its whole pod. v0.527.0 (14 November): the map's dots still, the selected key item's tile outlined in pink, the harvesting box by last harvested. v0.528.1: Dani's map import of 14:43. Beside the worktree session wayfinder-zoom (v0.526.0, v0.528.0). Tessera Records: Gather a resource version 24, the harvesting box (Tessera DOCS 10b5876).
