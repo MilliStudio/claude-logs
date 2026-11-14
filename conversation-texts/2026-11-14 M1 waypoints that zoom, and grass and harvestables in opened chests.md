@@ -663,6 +663,96 @@ Now closing the session: the handover first.
 
 Handover pushed. Saving the session's text and pictures again, now with everything:
 
+I've closed the session, but nothing is entered in Tessera Records yet. That waits on your answers below.
+
+- **Handover:** updated and pushed.
+- **Session text:** saved with its 12 pictures and pushed to claude-logs.
+- **Picture book:** the PDF is in the Bring in file, replacing the earlier one for this session.
+- **Your trial:** runs v0.530.0. M1 testing gets it when you press Update M1 testing.
+
+**Q6:** Shall I enter the three records I proposed above? They are a new chest decision, Open a chest version 7, and a ladder vine sprouts row in Gather a resource's table. I recommend yes.
+
+**Q7:** On 2 November you planned a new apparatus to make ladder vine sprouts, and Tessera Records has two open questions about it. Does the chest's ladder vine clump replace that apparatus, or is it a second source? I recommend leaving both questions open.
+
 ---
 
-Closing note (about 19:00): v0.526.0 and v0.528.0 to v0.530.0 are pushed and in the main folder, whose trial runs v0.530.0; the worktree wayfinder-zoom is removed. Tessera Records has the four entries Dani approved at about 17:40 (Tessera DOCS 6ee3b14). The entries for v0.529.0 to v0.530.0 (a decision, Open a chest version 7, a row in Gather a resource's table) wait for her answer to Q6, and Q7 asks whether the ladder vine clump replaces the sprout apparatus of the two open questions of 2 November. Next: Dani's Update M1 testing and her play. The worktree session metal-refinery takes v0.531.0, the Iron Apparatus. The handover is in tessera-m1's CLAUDE.md.
+### Dani · 2026-11-14 18:56
+
+i'm sorry can you repeat the text
+
+---
+
+### Claude · 2026-11-14 18:57
+
+Here they are again. Nothing is entered yet.
+
+**1. New decision** (M1 M2 M3, Game › Environmental interactions and puzzles): "Harvestables grow in opened chests, and some grow only there."
+- **Text:** "A level designer can give a chest a harvestable. Once the chest is open and empty and its area revives, the harvestable grows inside it instead of grass. Used up, its depleted form stays in the chest until it grows back. A chest that hasn't been opened stays a chest. Some harvestables are made for chests and grow only there: the first, a ladder vine clump, drops ladder vine sprouts."
+- **Why** (my proposal, as you gave no reason): "An emptied chest goes on giving once the land round it comes back, and harvestables found only in chests make chests worth coming back to."
+
+**2. Open a chest** (feature, version 7). After the sentence "Once the area round it revives, grass grows inside it, as decoration, not a harvestable.", add:
+"A level designer can give a chest a harvestable instead: once the area round the opened chest revives, it grows inside the chest, and the player harvests it from beside the chest. Used up, its depleted form stays in the chest until it grows back. Some harvestables grow only in chests: the first, a ladder vine clump, drops ladder vine sprouts."
+
+**3. Gather a resource** (feature, version 25). A new row in its table of parts and values:
+"Ladder vine sprouts per hit, on average (from a ladder vine clump, in a chest) | 1"
+
+**Q6:** Shall I enter 1–3? I recommend yes.
+
+**Q7:** On 2 November you said a new apparatus would make ladder vine sprouts from harvested resources. Tessera Records has two open questions about it:
+- "Which resources make ladder vine sprouts?"
+- "What is the apparatus that makes ladder vine sprouts, and how does it work?"
+
+Does the ladder vine clump replace that apparatus, or is it a second source? I recommend leaving both questions open, since nothing you've said drops the apparatus.
+
+---
+
+### Dani · 2026-11-14 19:00
+
+"Which resources make ladder vine sprouts?"
+"What is the apparatus that makes ladder vine sprouts, and how does it work?"
+
+both tbd. it doesn't matter which resources the machine takes anyway, since it will have an add a kind button
+
+no the apparatus remains planned
+
+---
+
+### Claude · 2026-11-14 19:00
+
+Understood. Both open questions stay as they are, the apparatus is still planned, and the ladder vine clump is a second source of sprouts beside it. I'll change nothing in those two questions.
+
+**Q6** is still open: shall I enter 1–3 (the new chest decision, Open a chest version 7 and the sprouts row in Gather a resource)? I recommend yes. Once you answer, I'll enter them, print the documents and update the handover.
+
+The metal-refinery session pushed v0.531.0, the Iron Apparatus. Bringing it into the main folder so your trial runs it and my next commit sits on top:
+
+The main folder and your trial are now on v0.531.0, which includes the Iron Apparatus and my ladder vine clump.
+
+**Q6** is still open: shall I enter 1–3 (the new chest decision, Open a chest version 7 and the sprouts row in Gather a resource)? I recommend yes.
+
+---
+
+### Dani · 2026-11-14 19:26
+
+i thought i already answered
+
+---
+
+### Claude · 2026-11-14 19:26
+
+Sorry, you're right. I'm taking your "we can do tr" as the yes and entering 1–3 now.
+
+---
+
+### Dani · 2026-11-14 19:26
+
+(sent while Claude was working) no worries thanks
+
+---
+
+### Claude · 2026-11-14 19:26
+
+All three are entered, and the printed documents are pushed (Tessera DOCS 346f114). Last, the handover's Tessera Records line and your answer about the sprout apparatus:
+
+---
+
+Closing note (about 19:20): v0.526.0 and v0.528.0 to v0.530.0 are pushed; the main folder and Dani's trial run v0.531.0, the metal-refinery session's Iron Apparatus, on top of them. Tessera Records has every entry of this session (Tessera DOCS 6ee3b14 and 346f114); the two open questions on the sprout apparatus stay open. Next: Dani's Update M1 testing and her play. The handover is in tessera-m1's CLAUDE.md.
