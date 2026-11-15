@@ -448,6 +448,63 @@ To your question about the two rings: I'll explain in a moment, with your number
 
 Handover pushed. Now saving this session's messages and pictures to claude-logs.
 
+**Why the second ring doesn't come right after the first:** **Rings at first, apart by** counts from the start of one ring to the start of the next. It doesn't count from when the first one ends. Here's how your key item settings in M1 testing play out:
+
+- 0 s: ring 1 starts. It lasts 0.6 s (**Each ring takes**), so it's gone at 0.6 s.
+- 0.6 to 1.3 s: no ring.
+- 1.3 s: ring 2 starts (**apart by** 1.3), and is gone at 1.9 s.
+- After that, one ring at a time: at 4.3 s, 7.3 s, 10.3 s, and so on (**Then one every** 3).
+
+There's a second thing that may be confusing. The rings at first come only once, when the key item comes onto the screen. After that the rings come singly, never in pairs. So if the item was already on screen, you'd only ever see single rings.
+
+To make the second ring start as the first one ends, set **apart by** to 0.6, the same as **Each ring takes**. Below 0.6 they overlap.
+
+**Q1.** Do you want every pulse to be a group, for example two rings close together every 3 s? Right now the group happens only once. I recommend yes if that's the look you're after. I'd make **Rings at first** repeat each time, and maybe rename it **Rings each pulse**.
+
+**Close-up is done:**
+- **Tessera Records:**
+  - The decision "Rings pulse round key items and chest rewards, so they can be found" is entered.
+  - The four feature edits are in. The key item feature is renamed "A key item floats and pulses", as I recommended.
+  - Open a chest is the only one of these that's printed, and the design docs are pushed (Tessera 60bcd82).
+  - I left the kit sentence (the old Q2) as it is, since you didn't answer it. It's noted in the handover.
+- **Handover:** updated in tessera-m1's CLAUDE.md and pushed.
+- **Session text:** saved to claude-logs with its 5 pictures and pushed.
+- **Bring in:** the pictures PDF is waiting in the Bring in file for your button.
+
 ---
 
-Closing note (about 17:10 on 15 November): v0.542.0–v0.548.0 are pushed. Every tally's tokens are one size; the pump handle is lighter and thicker and the pump cogs rust red; rings pulse round key items, the scale, the kit, pile parts, shut chests and chest rewards in place of the glint; the Pulsing rings tab has six sections (waypoint, tally, tutorial, key items, shut chest, chest rewards), each with Opacity, Fill (no outline when filled), Star, Each ring takes, Starts round it at (0, the middle), Spreads to, Far away, Turned by, Turns, Thickness, Rings at first, apart by, Then one every, Stops after and Colour; walking past an edge no longer drops frames. In Tessera Records: the decision Rings pulse round key items and chest rewards, so they can be found, A key item floats and pulses 7, Open a chest 9, Find the straw case of herbs 4 and Show a tally 8 (Tessera DOCS 60bcd82). Open: whether the rings at first should repeat as a group with every pulse (Dani's question on the two rings, answered at the close); whether the kit sentence in A key item floats and pulses is fixed. Next: Dani's Update M1 testing to v0.548.0 and her play. The handover is in tessera-m1's CLAUDE.md.
+### Dani · 2026-11-15 17:02
+
+why not just make a checkbox for additional rings, and a number to choose + sliders for distance between and tiiming between. sorry it's a little complicated for me to understand. programmers usually don't get how users thing
+
+---
+
+### Claude · 2026-11-15 17:03
+
+That's clearer than what I built. Here's how I'll set it up in every section:
+
+- **Pulses every:** how often a pulse comes. The first one comes at once.
+- **Additional rings** (tick box): each pulse brings extra rings with it.
+- **How many:** how many extra rings.
+- **Distance between:** how much smaller each extra ring is than the one before, so you get rings inside rings.
+- **Timing between:** how long after the one before each extra ring starts.
+
+Every pulse then looks the same, not only the first. "Rings at first" and "apart by" go. Checking M1 testing's current values, so I can convert them.
+
+Now the sliders: regenerating the tab with the new settings in place of the old two.
+
+The generator wrote one note with an unescaped apostrophe. Fixing that line in the generator.
+
+Sliders are in. Now the code that times the rings.
+
+Code and sliders are done. Updating the README's three places that describe the ring counts.
+
+Tests pass. Checking in the hidden browser: the pump handle's rings set to 2 additional rings, 15 px apart, all together.
+
+Three rings per pulse, 15 px apart, round the pump handle. Committing v0.549.0.
+
+Updating the handover and the saved session text to match.
+
+---
+
+Closing note (about 17:30 on 15 November): v0.542.0–v0.549.0 are pushed. Every tally's tokens are one size; the pump handle is lighter and thicker and the pump cogs rust red; rings pulse round key items, the scale, the kit, pile parts, shut chests and chest rewards in place of the glint; the Pulsing rings tab has six sections (waypoint, tally, tutorial, key items, shut chest, chest rewards), each with Opacity, Fill (no outline when filled), Star, Each ring takes, Starts round it at (0, the middle), Spreads to, Far away, Turned by, Turns, Thickness, Pulses every, Additional rings with How many, Distance between and Timing between (with every pulse), Stops after and Colour; walking past an edge no longer drops frames. In Tessera Records: the decision Rings pulse round key items and chest rewards, so they can be found, A key item floats and pulses 7, Open a chest 9, Find the straw case of herbs 4 and Show a tally 8 (Tessera DOCS 60bcd82). Open: whether the kit sentence in A key item floats and pulses is fixed. Next: Dani's Update M1 testing to v0.549.0 and her play. The handover is in tessera-m1's CLAUDE.md.
