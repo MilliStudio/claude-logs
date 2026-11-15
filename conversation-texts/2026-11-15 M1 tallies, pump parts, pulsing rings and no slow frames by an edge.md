@@ -505,6 +505,58 @@ Three rings per pulse, 15 px apart, round the pump handle. Committing v0.549.0.
 
 Updating the handover and the saved session text to match.
 
+You're right, that's easier to read, and it's built (v0.549.0). It's pushed, the tests pass, and **Update M1 testing** brings it. Every Pulsing rings section now has:
+
+- **Pulses every:** how often a pulse comes. The first one comes at once.
+- **Additional rings** (tick box): when ticked, every pulse brings extra rings, not only the first one.
+- **How many:** how many extra rings each pulse brings.
+- **Distance between:** how much smaller each extra ring is than the one before. At 0 they're all the same size.
+- **Timing between:** how long after the one before each extra ring starts. At 0 they all start together.
+
+For example, with **How many** 2, **Distance between** 15 px and **Timing between** 0, you get three rings inside each other, growing together. I tested exactly that round the pump handle.
+
+For key items in M1 testing, **Additional rings** starts ticked, with 1 extra ring 1.3 s after the first, so it matches what you had. To make the second ring start as the first one ends, set **Timing between** to 0.6, the same as **Each ring takes**. Set it lower and they overlap. The other sections also start from your M1 testing values. Chest rewards had 1 ring, so it starts unticked.
+
+The handover and the saved session text are updated with this, and everything is pushed. The records list didn't change, since these are tuning settings.
+
 ---
 
-Closing note (about 17:30 on 15 November): v0.542.0–v0.549.0 are pushed. Every tally's tokens are one size; the pump handle is lighter and thicker and the pump cogs rust red; rings pulse round key items, the scale, the kit, pile parts, shut chests and chest rewards in place of the glint; the Pulsing rings tab has six sections (waypoint, tally, tutorial, key items, shut chest, chest rewards), each with Opacity, Fill (no outline when filled), Star, Each ring takes, Starts round it at (0, the middle), Spreads to, Far away, Turned by, Turns, Thickness, Pulses every, Additional rings with How many, Distance between and Timing between (with every pulse), Stops after and Colour; walking past an edge no longer drops frames. In Tessera Records: the decision Rings pulse round key items and chest rewards, so they can be found, A key item floats and pulses 7, Open a chest 9, Find the straw case of herbs 4 and Show a tally 8 (Tessera DOCS 60bcd82). Open: whether the kit sentence in A key item floats and pulses is fixed. Next: Dani's Update M1 testing to v0.549.0 and her play. The handover is in tessera-m1's CLAUDE.md.
+### Dani · 2026-11-15 18:30
+
+they should also have an option to be turned off no? if i want chests to be without
+
+---
+
+### Claude · 2026-11-15 18:30
+
+Yes. Opacity at 0% already turns a section off, but a tick box is easier to find. I'll add **Show rings** at the top of each section, ticked to start.
+
+Now the edits: the constants, the game's check, the tick boxes and their i texts.
+
+---
+
+### Dani · 2026-11-15 18:32
+
+(sent while Claude was working) what i meant by rotating is that it spins
+
+---
+
+### Claude · 2026-11-15 18:33
+
+Dani's note on spinning: the **Turns** slider is the spin. I'll check what M1 testing has set so far before I answer that part.
+
+The replace script takes one file at a time, so I'm splitting the edits by file and applying them.
+
+Now the tests, then a check in the hidden browser.
+
+All 242 tests pass. Now the hidden browser check.
+
+The check passed: with **Show rings** ticked, the shut chest and the pump handle both had rings. Unticked for the shut chest, only the pump handle kept them. Committing now.
+
+Pushed. Now a short handover update.
+
+I'll update the saved session text so it includes these last messages.
+
+---
+
+Closing note (about 17:45 on 15 November): v0.542.0–v0.550.0 are pushed. Every tally's tokens are one size; the pump handle is lighter and thicker and the pump cogs rust red; rings pulse round key items, the scale, the kit, pile parts, shut chests and chest rewards in place of the glint; the Pulsing rings tab has six sections (waypoint, tally, tutorial, key items, shut chest, chest rewards), each with Show rings (a tick box to turn the section off), Opacity, Fill (no outline when filled), Star, Each ring takes, Starts round it at (0, the middle), Spreads to, Far away, Turned by, Spins (Turns before v0.550.0; it shows only on a star or a tally's box), Thickness, Pulses every, Additional rings with How many, Distance between and Timing between (with every pulse), Stops after and Colour; walking past an edge no longer drops frames. In Tessera Records: the decision Rings pulse round key items and chest rewards, so they can be found, A key item floats and pulses 7, Open a chest 9, Find the straw case of herbs 4 and Show a tally 8 (Tessera DOCS 60bcd82). Open: whether the kit sentence in A key item floats and pulses is fixed. Next: Dani's Update M1 testing to v0.550.0 and her play. The handover is in tessera-m1's CLAUDE.md.
