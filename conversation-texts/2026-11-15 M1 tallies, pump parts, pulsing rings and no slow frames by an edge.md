@@ -735,6 +735,43 @@ The decision says: "What rises out of an opened chest has rings too, until it fl
 
 Two records mention the rings round what rises out of a chest. I'll propose updates in chat rather than enter them. Now the handover.
 
+Key items in a chest no longer pulse. It's in v0.552.0, pushed, with the 242 tests passing. Press **Update M1 testing** to get it.
+
+Until now, a key item only had rings once its chest opened, while it rose out and flew to you. Those came from **Chest rewards**, which you'd set to 70%. Now a key item has none. The shut chest's rings still show that something is inside, and resources and the kit coming out of a chest keep their Chest rewards rings. In the hidden browser, the chest on -2,-4 opened and nothing pulsed round the pump cogs as they rose.
+
+Your tuning import from M1 testing went into this version too, including the shut chest's star.
+
+Q2: no change needed, since pulse every 0 already holds the shapes still.
+
+**TR:** two records still say key items rising out of a chest pulse, so I'm proposing these. Say yes and I'll enter them:
+1. **A new decision** (M1 M2 M3, Game › Environmental interactions and puzzles), "Key items in a chest have no rings":
+   - Text: "A key item in a chest has no rings of its own, and none as it rises out of the opened chest: the rings round the shut chest show that it holds something. Resources and the Gatherer's Kit that rise out of a chest keep their rings until they fly to the player. This replaces 'What rises out of an opened chest has rings too, until it flies to the player.' in 'Rings pulse round key items and chest rewards, so they can be found' (15 November 2026)."
+   - Why, my wording, since you gave no reason: "The shut chest's rings have already shown where the key item is, and it flies to the player a second after it rises."
+2. **Open a chest, version 10:** "Rings pulse round it until it flies." becomes "Rings pulse round it until it flies, unless it is a key item."
+
+**Close up:** the handover and the saved session text are updated and pushed. Two questions wait in the handover for next time:
+- the two records above;
+- whether your slider rule should also say "a slider at 0 counts as off; no tick boxes".
+
 ---
 
-Closing note (about 19:15 on 15 November): v0.542.0–v0.552.0 are pushed. Every tally's tokens are one size; the pump handle is lighter and thicker and the pump cogs rust red; rings pulse round key items, the scale, the kit, pile parts and shut chests in place of the glint, and round the resources and the kit rising out of an opened chest, but not round key items in a chest (v0.552.0); the Pulsing rings tab has six sections, each with Dani's sliders in her order: Shape (Circle or Star), Rotate speed, Outline or fill, Pulse every (0, still), Start size, Size, Smallest when far away, Pulse speed, Number of pulses, Time between pulses, Distance between, Opacity, Thickness, Stops after and Colour; a slider at 0 counts as off, with no tick boxes; walking past an edge no longer drops frames. In Tessera Records: the decision Rings pulse round key items and chest rewards, so they can be found, A key item floats and pulses 7, Open a chest 9, Find the straw case of herbs 4 and Show a tally 8 (Tessera DOCS 60bcd82). Proposed at the close, waiting for Dani's yes: a decision that a key item in a chest has no rings, and Open a chest 10. New rule in tessera-m1's CLAUDE.md: for a new feature's sliders, Claude first lists the parameters it needs with plain names, and Dani picks and names them; proposed, not answered: adding that a slider at 0 counts as off. Open: whether the kit sentence in A key item floats and pulses is fixed. Next: Dani's Update M1 testing to v0.552.0 and her play. The handover is in tessera-m1's CLAUDE.md.
+### Dani · 2026-11-15 19:15
+
+tr records
+no, it's common sense
+
+---
+
+### Claude · 2026-11-15 19:15
+
+Entering both records now. The slider rule stays as it is.
+
+Both are saved. Now the reprinted DOCS in the tessera repository.
+
+Only the Open a chest sentence changed, in the four printed files. Committing them.
+
+Last, the handover and the session text, now that these are answered.
+
+---
+
+Closing note (about 19:20 on 15 November): v0.542.0–v0.552.0 are pushed. Every tally's tokens are one size; the pump handle is lighter and thicker and the pump cogs rust red; rings pulse round key items, the scale, the kit, pile parts and shut chests in place of the glint, and round the resources and the kit rising out of an opened chest, but not round key items in a chest (v0.552.0); the Pulsing rings tab has six sections, each with Dani's sliders in her order: Shape (Circle or Star), Rotate speed, Outline or fill, Pulse every (0, still), Start size, Size, Smallest when far away, Pulse speed, Number of pulses, Time between pulses, Distance between, Opacity, Thickness, Stops after and Colour; a slider at 0 counts as off, with no tick boxes; walking past an edge no longer drops frames. In Tessera Records: the decisions Rings pulse round key items and chest rewards, so they can be found, and Key items in a chest have no rings; A key item floats and pulses 7, Open a chest 10, Find the straw case of herbs 4 and Show a tally 8 (Tessera DOCS 60bcd82, d28519a). New rule in tessera-m1's CLAUDE.md: for a new feature's sliders, Claude first lists the parameters it needs with plain names, and Dani picks and names them. Open: whether the kit sentence in A key item floats and pulses is fixed. Next: Dani's Update M1 testing to v0.552.0 and her play. The handover is in tessera-m1's CLAUDE.md.
