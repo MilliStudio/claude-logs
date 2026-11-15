@@ -557,6 +557,132 @@ Pushed. Now a short handover update.
 
 I'll update the saved session text so it includes these last messages.
 
+You're right that it needed an off switch, and you were right about the spin too. Both are in v0.550.0, which is pushed. Press **Update M1 testing** to get it.
+
+**Turning rings off:** each Pulsing rings section now starts with a **Show rings** tick box, ticked to start. For chests with no rings:
+- untick it in **Round a shut chest** for the chest itself;
+- untick it in **Chest rewards** for what rises out of an opened chest.
+
+Opacity at 0% also turned them off, but a tick box is easier to find. I checked it in the hidden browser: with the shut chest unticked, the chest had no rings and the pump handle kept its own.
+
+**Spinning:** the slider I'd called **Turns** already made the rings spin. I've renamed it **Spins**, your word. A round ring looks the same however far it's turned, so you can't see it spin. The spin only shows on a star, or on the long box round a tally. For example, tick **Star** and set **Spins** to 90, and the star goes round once every 4 seconds. **Turned by** only sets where a star's points sit when it's still.
+
+If you meant a different kind of spin, like a coin flipping over, tell me and I'll change it.
+
+The handover and the saved session text are updated. There's nothing new for the records, since these are tuning settings.
+
 ---
 
-Closing note (about 17:45 on 15 November): v0.542.0–v0.550.0 are pushed. Every tally's tokens are one size; the pump handle is lighter and thicker and the pump cogs rust red; rings pulse round key items, the scale, the kit, pile parts, shut chests and chest rewards in place of the glint; the Pulsing rings tab has six sections (waypoint, tally, tutorial, key items, shut chest, chest rewards), each with Show rings (a tick box to turn the section off), Opacity, Fill (no outline when filled), Star, Each ring takes, Starts round it at (0, the middle), Spreads to, Far away, Turned by, Spins (Turns before v0.550.0; it shows only on a star or a tally's box), Thickness, Pulses every, Additional rings with How many, Distance between and Timing between (with every pulse), Stops after and Colour; walking past an edge no longer drops frames. In Tessera Records: the decision Rings pulse round key items and chest rewards, so they can be found, A key item floats and pulses 7, Open a chest 9, Find the straw case of herbs 4 and Show a tally 8 (Tessera DOCS 60bcd82). Open: whether the kit sentence in A key item floats and pulses is fixed. Next: Dani's Update M1 testing to v0.550.0 and her play. The handover is in tessera-m1's CLAUDE.md.
+### Dani · 2026-11-15 18:37
+
+ok back to the start. here are the sliders for each
+radio buttons: circle, star
+radio button: outline, filled shape
+pulse speed 
+pulse every
+number of shapes / pulses
+time between pulses
+opacity
+thickness
+
+[Request interrupted by user]
+
+ok back to the start. here are the sliders for each
+radio buttons: circle, star
+rotate speed (0 is static)
+radio button: outline, fill
+pulse every (0 is static)
+size
+pulse speed 
+number pulses
+time between pulses
+opacity
+thickness
+
+let me know if there is a slider missing
+
+---
+
+### Claude · 2026-11-15 18:42
+
+Here's how your list matches what's there now, and what's missing.
+
+**Your list, as I read it:**
+- **Circle / star** and **outline / fill** become two pairs of radio buttons. A filled shape uses **Opacity**, so the Fill % slider goes.
+- **Number of pulses** counts every shape in one pulse, with 1 for a single shape. It replaces the **Additional rings** tick box and **How many**.
+- **Rotate speed** is today's Spins, **pulse speed** is Each ring takes, and **time between pulses** is Timing between.
+
+**Missing, and I'd keep them:**
+- **Colour.**
+- **Show rings:** the on/off tick box from v0.550.0.
+- **Far away, counts as at least:** a key item far off is only a few pixels wide, so without this its rings would be too small to see.
+- **Stops after:** for example, the tallies' rings stop after 10 s. The waypoint has none, since its sign's **Goes after** does that job.
+
+**Questions:**
+- **Q1.** Today a ring starts at one size and grows to another; key items' rings start at the item's edge. With only **Size**, every ring starts in the middle and grows to it. I recommend keeping a **Start size** beside Size.
+- **Q2.** I read **pulse every at 0** as one shape that stays shown at Size, without growing or fading. It would still turn if Rotate speed says so. Is that right?
+- **Q3.** **Distance between** makes each shape smaller than the one before, for rings inside rings. It's not in your list. I recommend keeping it, right after time between pulses.
+- **Q4.** **Turned by**, a still star's angle, isn't in your list. I recommend dropping it.
+
+Once you answer, I'll build the whole list in your order in all six sections.
+
+---
+
+### Dani · 2026-11-15 18:45
+
+q1 yes
+q2 i didn't undestand
+q3 yeah instead of checkboxes to turn something on and off, any relevant slider set to 0 counts as off
+q4 yes drop it.
+
+---
+
+### Claude · 2026-11-15 18:46
+
+Q2 isn't settled, so here's how I'll read it. At **pulse every 0**, the shape doesn't pulse: it stays still round the object at Size, like a halo. I'll build everything else in your order; tell me if 0 should do something else. First, checking whether the panels can show radio buttons.
+
+The panels can show radio buttons with a small addition. Next I'll read the current section code and M1 testing's values.
+
+Now the i texts as they stand.
+
+The editor already has a 'choice' kind for flower settings. I'll reuse it.
+
+Next I'll check whether the server or the tests read a slider's range or type.
+
+Choices get a range of 0 to 1 so that test still holds. Now the generator for the six sections, in your order.
+
+Now a script that rewrites the sections in src/tuning.js and the constants in src/key.js. It keeps each value the trial has now.
+
+---
+
+### Dani · 2026-11-15 18:48
+
+(sent while Claude was working) let's write a rule, if i ask for sliders when adding a new feature. you can explain which parameters are needed and we can pick + give them proper names. when you're done, tr, write the rule, and close up
+
+---
+
+### Claude · 2026-11-15 18:49
+
+Your slider rule is noted. Once this build is done, I'll write it, do the TR check and close up. Now the game's side: the new shape settings in src/planet.js.
+
+Now the drawRings comment, the panels' radio buttons and the i texts.
+
+Next, the styling for the radio rows in both panels.
+
+Now the class on the game panel's row, and the i texts.
+
+I'm updating the README's Pulsing rings paragraph to the new slider list. Then tests and the browser check.
+
+Tests pass. Now the hidden browser: radio buttons in the editor, then still filled stars, and a section at Number of pulses 0.
+
+It works: 12 radio rows in your order, still filled stars turning at 90° a second, and no rings on the chest at Number of pulses 0. One look at how the tab draws:
+
+The tab draws well. Committing v0.551.0.
+
+Now the rule and the handover. Reading the handover's current lines first.
+
+Now the session text, with the closing note brought up to date.
+
+---
+
+Closing note (about 19:00 on 15 November): v0.542.0–v0.551.0 are pushed. Every tally's tokens are one size; the pump handle is lighter and thicker and the pump cogs rust red; rings pulse round key items, the scale, the kit, pile parts, shut chests and chest rewards in place of the glint; the Pulsing rings tab has six sections (waypoint, tally, tutorial, key items, shut chest, chest rewards), each with Dani's sliders in her order: Shape (Circle or Star), Rotate speed, Outline or fill, Pulse every (0, still), Start size, Size, Smallest when far away, Pulse speed, Number of pulses, Time between pulses, Distance between, Opacity, Thickness, Stops after and Colour; a slider at 0 counts as off, with no tick boxes; walking past an edge no longer drops frames. In Tessera Records: the decision Rings pulse round key items and chest rewards, so they can be found, A key item floats and pulses 7, Open a chest 9, Find the straw case of herbs 4 and Show a tally 8 (Tessera DOCS 60bcd82); nothing since, as the rings' sliders are tuning and their shapes looks. New rule in tessera-m1's CLAUDE.md: for a new feature's sliders, Claude first lists the parameters it needs with plain names, and Dani picks and names them. Open: whether the kit sentence in A key item floats and pulses is fixed; whether Pulse every at 0 should do something other than hold the shapes still. Next: Dani's Update M1 testing to v0.551.0 and her play. The handover is in tessera-m1's CLAUDE.md.
