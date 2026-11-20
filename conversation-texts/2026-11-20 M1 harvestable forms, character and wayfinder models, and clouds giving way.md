@@ -1516,6 +1516,56 @@ Three more map imports of yours arrived (20:48, 20:51 and 20:57). I'm saving the
 
 Now the session text, with a closing note and a prompt for the next session:
 
+Everything is entered and saved, and the session is closed.
+
+**Tessera Records**, as you answered:
+- **Gather a resource (version 28):** each drop is now a total for the whole harvestable, shared out among its hits. "Looks" are now "forms", at most 4, each a layer less than the one before. The three per-hit table rows are now one row, "drops in all".
+- **The porous rock sentence is unchanged:** it still says "turns lighter with each hit". I never added the new one.
+- **Giant flower (version 11):** while it's dried, its tile and its water wait in the void until the revival wave reaches the tile, then rise. It doesn't say green.
+- **Walk on clouds (version 9):** the clouds stay until the rising tiles reach them, then fade out, opening outward with the wave.
+- **The printed documents** changed with them (Gather a resource is printed), and they're committed and pushed.
+- **One thing to know:** since the totals went in as a feature change, the decision of 3 November, "Each drop has an average per hit", still stands even though the feature now differs. Decisions are never edited.
+
+**Your three newest map imports** (20:48, 20:51 and 20:57) are saved as v0.599.1. The waypoint on 5,-14 now also raises 1,-14, the giant flower in the water. With v0.599.0, that waypoint brings up the dry flower, and its water tile waits until a revival wave reaches it.
+
+**Closing up:**
+- The handover is updated in the M1 trial's CLAUDE.md.
+- The session text, with your 2 pictures and the 2 I showed you, is saved and pushed to claude-logs.
+- The pictures are printed to a PDF, which waits in the Bring in file for your button.
+
+**Still open:** model files for the Pruning Knife Forge in pieces, so you can remodel it. It's in the handover for next time.
+
 ---
 
-Closing note (20 November 2026, about 21:15): v0.594.1 to v0.599.1 are in the trial (harvestables in 4 forms with the Number of hits, drops in all and the Shatter settings; character and wayfinder models in pieces, with the reference files in tessera-m1/model-references; clouds giving way to rising tiles; a dry giant flower's water tile waiting for the revival wave; Dani's map imports up to 20:57). Tessera Records has Gather a resource 28, Giant flower 11 and Walk on clouds 9 (Tessera DOCS 1714d7c); the porous rock's sentence stays as it was. The handover is the Status in tessera-m1/CLAUDE.md. Prompt for the next session: Continue the M1 trial in Tessera/repositories/tessera-m1 and read its CLAUDE.md Status (20 November). Ask Dani how the forms, the Number of hits and the Shatter settings play (v0.595.0), and whether she wants every hit or every form, then update Gather a resource; how the clouds giving way (v0.598.0) and the dry flower in the water (v0.599.0) look; and whether she wants model files for the Pruning Knife Forge in pieces (Q1). When she sends a model, measure its triangles in the game for her. v0.600.0 is free.
+### Dani · 2026-11-20 21:10
+
+you can add in the appropriate gdd documents how the models were made from js code to files then files imported to blender. or in timeline maybe. 
+no need for the pruning forge yet
+
+---
+
+### Claude · 2026-11-20 21:11
+
+I'm checking what Tessera Records has for a timeline, and where the documents describe how art is produced, so I can recommend one place.
+
+---
+
+### Dani · 2026-11-20 21:11
+
+(sent while Claude was working) oh and 8 hours today, 4 yestday
+
+---
+
+### Claude · 2026-11-20 21:11
+
+The file's format is clear. Next, the timeline's table and fields as the Bring in page accepts them:
+
+Checking the file the way the Bring in page will, without saving anything:
+
+All fields match their tables. Now the handover: the forge question is off the list, and the hours and timeline event are noted as waiting in the Bring in file.
+
+Saving the session text again so it holds these last messages, with the closing note updated:
+
+---
+
+Closing note (20 November 2026, about 21:30): v0.594.1 to v0.599.1 are in the trial (harvestables in 4 forms with the Number of hits, drops in all and the Shatter settings; character and wayfinder models in pieces, with the reference files in tessera-m1/model-references; clouds giving way to rising tiles; a dry giant flower's water tile waiting for the revival wave; Dani's map imports up to 20:57). Tessera Records has Gather a resource 28, Giant flower 11 and Walk on clouds 9 (Tessera DOCS 1714d7c); the porous rock's sentence stays as it was. The Bring in file holds 4 hours on 19 November, 8 on 20 November, the timeline event on the reference models (code to files to Blender) and this session's pictures, beside the older ones, for Dani's button. No models for the Pruning Knife Forge yet (Dani). The handover is the Status in tessera-m1/CLAUDE.md. Prompt for the next session: Continue the M1 trial in Tessera/repositories/tessera-m1 and read its CLAUDE.md Status (20 November). Ask Dani how the forms, the Number of hits and the Shatter settings play (v0.595.0), and whether she wants every hit or every form, then update Gather a resource; and how the clouds giving way (v0.598.0) and the dry flower in the water (v0.599.0) look. When she sends a model, measure its triangles in the game for her. v0.600.0 is free.
