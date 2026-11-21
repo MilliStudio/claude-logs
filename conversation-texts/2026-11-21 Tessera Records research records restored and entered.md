@@ -200,4 +200,4 @@ That second line read as a new rule, and rules need your yes, so I'm cutting it 
 
 ---
 
-Closing note (21 November 2026, about 22:50): Research in Tessera Records holds 24 records, 16 of them new, each under the date the research was done: nine September files restored unchanged from git (deleted on 22 September at Dani's request) and seven reports copied from the chats where the research was done (Tessera commits 5476097 and f2cf3b8). The Bring in file holds the 9 October legal-structure report as two original files, this conversation with its code as an original file, and a timeline event for it.
+Closing note (21 November 2026, about 22:30): Research in Tessera Records holds 24 records, 16 of them new, each under the date the research was done: nine September files restored unchanged from git (deleted on 22 September at Dani's request) and seven reports copied from the chats where the research was done (Tessera commits 5476097 and f2cf3b8). The Bring in file holds the 9 October legal-structure report as two original files, this conversation with its code as an original file, and a timeline event for it.
