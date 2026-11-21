@@ -1,6 +1,6 @@
 # 2026-11-13 M1 smooth game beside the map editor, still map dots and the harvesting box
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-13 M1 smooth game beside the map editor, still map dots and the harvesting box\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-13 M1 smooth game beside the map editor, still map dots and the harvesting box", numbered as here. Private: never commit or share.
 
 ---
 
@@ -75,7 +75,7 @@ Your map imports from M1 testing of 21:57 and 22:09 went in with this version.
 
 **Q1.** Earlier sessions left three test servers running on your computer (ports 4971, 4972 and 4991). One of them has kept a full processor core busy since yesterday at 18:52. It isn't why the game was choppy, since your computer has 32 cores, but it wastes power. I tried to stop them, and the permission check blocked it. Can I stop them? I recommend yes: none of them is your trial, M1 testing or Tessera Records.
 
-![Claude's image 001](<../images/2026-11-13 M1 smooth game beside the map editor, still map dots and the harvesting box/001 Claude to Dani.png>)
+Claude's picture 001
 
 ---
 

@@ -1,6 +1,6 @@
 # 2026-11-18 M1 iron ingots, and corner walls in deep water and linked to waypoints
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-18 M1 iron ingots, and corner walls in deep water and linked to waypoints\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-18 M1 iron ingots, and corner walls in deep water and linked to waypoints", numbered as here. Private: never commit or share.
 
 ---
 
@@ -380,7 +380,7 @@ i wanted to add the corner tiles for a reason but i didn't solve it. here is the
 i attached an image with the tiles highlighted
 unfortunately i missed the fact that the corner pieces need to be unlocked together with the ground tiles they are beside. but that would reveal the water
 
-![Dani's image 001](<../images/2026-11-18 M1 iron ingots, and corner walls in deep water and linked to waypoints/001 Dani.png>)
+Dani's picture 001
 
 ---
 
@@ -452,7 +452,7 @@ The label still overlaps a tile. Making the panels taller, with the label below 
 
 Clean now. Opening it for you in VS Code.
 
-![Claude's image 002](<../images/2026-11-18 M1 iron ingots, and corner walls in deep water and linked to waypoints/002 Claude to Dani.png>)
+Claude's picture 002
 
 The picture is open in VS Code. It shows -2,-11, which today is a corner-piece tile linked to waypoint -9,-7, at four moments: the start, then waypoints -6,-9, -9,-7 and 1,-11 being fed.
 
@@ -520,9 +520,9 @@ Your 19:22 import is in the main folder. Same as before: fast-forward, then comm
 
 Done and pushed. Opening the before-and-after pictures for you.
 
-![Claude's image 003](<../images/2026-11-18 M1 iron ingots, and corner walls in deep water and linked to waypoints/003 Claude to Dani.png>)
+Claude's picture 003
 
-![Claude's image 004](<../images/2026-11-18 M1 iron ingots, and corner walls in deep water and linked to waypoints/004 Claude to Dani.png>)
+Claude's picture 004
 
 Corner walls now come up with the ground tiles beside their corner, even while their own tile still waits in the void (v0.584.0, in your trial now). Two pictures are open in VS Code: before the water, and after.
 
@@ -840,9 +840,9 @@ Linking works on M1 testing: the click on the corner wall linked it, and the hid
 
 Both pictures show it clearly. Opening them for you.
 
-![Claude's image 005](<../images/2026-11-18 M1 iron ingots, and corner walls in deep water and linked to waypoints/005 Claude to Dani.png>)
+Claude's picture 005
 
-![Claude's image 006](<../images/2026-11-18 M1 iron ingots, and corner walls in deep water and linked to waypoints/006 Claude to Dani.png>)
+Claude's picture 006
 
 The two pictures are open in VS Code. They're from your M1 testing map, round -2,-11. I clicked through in the hidden browser only and undid it, so nothing on your map changed.
 

@@ -1,6 +1,6 @@
 # M1: the giant flower buttons, resets, small waypoint tools, Bend head along the stem, waypoint links and the void's outlines (12 November 2026)
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-12 M1 giant flower buttons, waypoint tools and links, and the void's outlines\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-12 M1 giant flower buttons, waypoint tools and links, and the void's outlines", numbered as here. Private: never commit or share.
 
 ---
 
@@ -336,7 +336,7 @@ Your import from M1 testing at 17:23 is in this version too. Your default flower
 
 Press **Update M1 testing** to get v0.496.0.
 
-![Claude's image 001](<../images/2026-11-12 M1 giant flower buttons, waypoint tools and links, and the void's outlines/001 Claude to Dani.png>)
+Claude's picture 001
 
 ---
 
@@ -395,7 +395,7 @@ Q2. Which colour? I recommend orange, the colour of the lines that lead to them:
 
 here is an example. can yuo first tell me what you understand you need to do before doing anything
 
-![Dani's image 002](<../images/2026-11-12 M1 giant flower buttons, waypoint tools and links, and the void's outlines/002 Dani.png>)
+Dani's picture 002
 
 ---
 
@@ -476,9 +476,9 @@ I tested it on a copy of your map:
 
 Press **Update M1 testing** to get v0.498.0.
 
-![Claude's image 003](<../images/2026-11-12 M1 giant flower buttons, waypoint tools and links, and the void's outlines/003 Claude to Dani.png>)
+Claude's picture 003
 
-![Claude's image 004](<../images/2026-11-12 M1 giant flower buttons, waypoint tools and links, and the void's outlines/004 Claude to Dani.png>)
+Claude's picture 004
 
 ---
 
@@ -540,9 +540,9 @@ The tally rings session and I agreed version numbers: I took v0.499.0 and it tak
 
 Press **Update M1 testing** to get v0.499.0.
 
-![Claude's image 005](<../images/2026-11-12 M1 giant flower buttons, waypoint tools and links, and the void's outlines/005 Claude to Dani.png>)
+Claude's picture 005
 
-![Claude's image 006](<../images/2026-11-12 M1 giant flower buttons, waypoint tools and links, and the void's outlines/006 Claude to Dani.png>)
+Claude's picture 006
 
 The tally rings session has merged its v0.500.0 on top of my v0.499.0, and main is clean. Nothing else is in progress here. The next version will be v0.501.0, and **Update M1 testing** will bring both.
 

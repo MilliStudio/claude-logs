@@ -1,6 +1,6 @@
 # M1 lantern light, no stalls, the forge's nest and the start at the kit
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-13 M1 lantern light, no stalls, the forge's nest and the start at the kit\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-13 M1 lantern light, no stalls, the forge's nest and the start at the kit", numbered as here. Private: never commit or share.
 
 ---
 
@@ -9,7 +9,7 @@ The messages of this conversation, Dani's and Claude's, without the code, tool c
 can you make it so the light inside the lantern is only in te top part? it should be evenly distributed
 also the nest around the forge needs to grow when it awakens
 
-![Dani's image 001](<../images/2026-11-13 M1 lantern light, no stalls, the forge's nest and the start at the kit/001 Dani.png>)
+Dani's picture 001
 
 ---
 

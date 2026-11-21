@@ -1,6 +1,6 @@
 # 2026-11-12 M1 Rock Pick Forge, turning machines, the nest and one kind of wayfinder
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-12 M1 Rock Pick Forge, turning machines, the nest and one kind of wayfinder\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-12 M1 Rock Pick Forge, turning machines, the nest and one kind of wayfinder", numbered as here. Private: never commit or share.
 
 ---
 
@@ -8,7 +8,7 @@ The messages of this conversation, Dani's and Claude's, without the code, tool c
 
 I need a new pickaxe refinery. i attached the design. the circles in the front are cogs linked together
 
-![Dani's image 001](<../images/2026-11-12 M1 Rock Pick Forge, turning machines, the nest and one kind of wayfinder/001 Dani.png>)
+Dani's picture 001
 
 ---
 
@@ -94,7 +94,7 @@ Picture of the finished forge from the front: C:\Users\someo\AppData\Local\Temp\
 
 Press **Update M1 testing** to get it. Your porous rocks are all level 1, so to see the upgraded pick matter, set the porous rocks' Level to 2.
 
-![Claude's image 002](<../images/2026-11-12 M1 Rock Pick Forge, turning machines, the nest and one kind of wayfinder/002 Claude to Dani.png>)
+Claude's picture 002
 
 ---
 

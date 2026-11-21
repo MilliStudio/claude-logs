@@ -1,6 +1,6 @@
 # 2026-11-12 M1 needs numbers, tally height, waiting tiles and machine timers
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-12 M1 needs numbers, tally height, waiting tiles and machine timers\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-12 M1 needs numbers, tally height, waiting tiles and machine timers", numbered as here. Private: never commit or share.
 
 ---
 
@@ -183,9 +183,9 @@ During the 0.7 s rise itself, the objects show in full colour, while their tile'
 
 Press **Update M1 testing** to get it.
 
-![Claude's image 001](<../images/2026-11-12 M1 needs numbers, tally height, waiting tiles and machine timers/001 Claude to Dani.png>)
+Claude's picture 001
 
-![Claude's image 002](<../images/2026-11-12 M1 needs numbers, tally height, waiting tiles and machine timers/002 Claude to Dani.png>)
+Claude's picture 002
 
 ---
 

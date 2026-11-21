@@ -1,6 +1,6 @@
 # 2026-11-15 M1 glint back, outlines, the void, no hops, save points and Play from here
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-15 M1 glint back, outlines, the void, no hops, save points and Play from here\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-15 M1 glint back, outlines, the void, no hops, save points and Play from here", numbered as here. Private: never commit or share.
 
 ---
 
@@ -638,7 +638,7 @@ Before drawing, I'm checking why jumping between leaves broke, so the picture sh
 
 A few labels are clipped in panel 1. Fixing them.
 
-![Claude's image 001](<../images/2026-11-15 M1 glint back, outlines, the void, no hops, save points and Play from here/001 Claude to Dani.png>)
+Claude's picture 001
 
 I've opened the picture in VS Code. It's also at C:\Users\someo\AppData\Local\Temp\claude\653749dc61028eb9\8448b5db-3109-4201-955b-b56547f1b7dc\scratchpad\void-how.png.
 
@@ -657,7 +657,7 @@ It has four parts:
 
 I recommend yes; I haven't changed anything yet.
 
-Again: [image 001](<../images/2026-11-15 M1 glint back, outlines, the void, no hops, save points and Play from here/001 Claude to Dani.png>)
+Again: picture 001
 
 ---
 

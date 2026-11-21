@@ -1,6 +1,6 @@
 # M1 waypoints that zoom, and grass and harvestables in opened chests (14 November 2026)
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-14 M1 waypoints that zoom, and grass and harvestables in opened chests\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-14 M1 waypoints that zoom, and grass and harvestables in opened chests", numbered as here. Private: never commit or share.
 
 ---
 
@@ -146,7 +146,7 @@ The bush sits in the open chest, with no lid. One more check: a reload keeps it 
 
 (sent while Claude was working) that bush is creepy XD just make it grass
 
-![Dani's image 001](<../images/2026-11-14 M1 waypoints that zoom, and grass and harvestables in opened chests/001 Dani.png>)
+Dani's picture 001
 
 ---
 
@@ -196,7 +196,7 @@ If you want it, I'd suggest:
 
 Tell me if you want it built, and your answers to Q1–Q3. To get v0.528.0 in M1 testing, press **Update M1 testing**.
 
-![Claude's image 002](<../images/2026-11-14 M1 waypoints that zoom, and grass and harvestables in opened chests/002 Claude to Dani.png>)
+Claude's picture 002
 
 The other session has pulled v0.528.0, the chest change, into the main folder, and its next version will be v0.529.0. Both folders now have the same version.
 
@@ -446,13 +446,13 @@ Before saving this session's text, here are the pictures and the Tessera Records
 
 **Q5:** Shall I enter 5–7? I recommend yes.
 
-![Claude's image 003](<../images/2026-11-14 M1 waypoints that zoom, and grass and harvestables in opened chests/003 Claude to Dani.png>)
+Claude's picture 003
 
-![Claude's image 004](<../images/2026-11-14 M1 waypoints that zoom, and grass and harvestables in opened chests/004 Claude to Dani.png>)
+Claude's picture 004
 
-![Claude's image 005](<../images/2026-11-14 M1 waypoints that zoom, and grass and harvestables in opened chests/005 Claude to Dani.png>)
+Claude's picture 005
 
-![Claude's image 006](<../images/2026-11-14 M1 waypoints that zoom, and grass and harvestables in opened chests/006 Claude to Dani.png>)
+Claude's picture 006
 
 The session log moved when I left the worktree. Finding it by the session's id:
 
@@ -535,9 +535,9 @@ Otherwise it would work like every harvestable: its own sliders for size, level 
 
 Q5 waits, as you said, and I'll update the handover and session text when we're done.
 
-![Claude's image 007](<../images/2026-11-14 M1 waypoints that zoom, and grass and harvestables in opened chests/007 Claude to Dani.png>)
+Claude's picture 007
 
-![Claude's image 008](<../images/2026-11-14 M1 waypoints that zoom, and grass and harvestables in opened chests/008 Claude to Dani.png>)
+Claude's picture 008
 
 The metal-refinery session will probably build a coal harvestable that grows only in chests. That's where your line about the pump handle and lump of coal belongs, so I've flagged it to them.
 
@@ -565,7 +565,7 @@ I'm still waiting on Q1–Q3 about the ladder harvestable, in my message before 
 q1 and 2 yes, but the resource object design it drops is attached
 q3 yes, for now
 
-![Dani's image 009](<../images/2026-11-14 M1 waypoints that zoom, and grass and harvestables in opened chests/009 Dani.png>)
+Dani's picture 009
 
 ---
 
@@ -620,11 +620,11 @@ Pictures from your trial (the map sent live from the editor, nothing saved):
 
 Q5 waits, as you said. I'll update the handover and the session text when you tell me we're done.
 
-![Claude's image 010](<../images/2026-11-14 M1 waypoints that zoom, and grass and harvestables in opened chests/010 Claude to Dani.png>)
+Claude's picture 010
 
-![Claude's image 011](<../images/2026-11-14 M1 waypoints that zoom, and grass and harvestables in opened chests/011 Claude to Dani.png>)
+Claude's picture 011
 
-![Claude's image 012](<../images/2026-11-14 M1 waypoints that zoom, and grass and harvestables in opened chests/012 Claude to Dani.png>)
+Claude's picture 012
 
 ---
 

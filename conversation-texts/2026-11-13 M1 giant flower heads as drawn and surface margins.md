@@ -1,6 +1,6 @@
 # 2026-11-13 M1 giant flower heads as drawn and surface margins
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-13 M1 giant flower heads as drawn and surface margins\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-13 M1 giant flower heads as drawn and surface margins", numbered as here. Private: never commit or share.
 
 ---
 
@@ -16,7 +16,7 @@ i think some bounce sliders are already linked to some of these spaces such as w
 
 please don't do anything yet. make another image showing the disc (i think you marged two flat discs into one disc with a thickness) and what you understand regarding the margins.
 
-![Dani's image 001](<../images/2026-11-13 M1 giant flower heads as drawn and surface margins/001 Dani.jpg>)
+Dani's picture 001
 
 ---
 
@@ -32,7 +32,7 @@ Writing the picture as an HTML page in the scratchpad, then rendering it to PNG.
 
 A few fixes to the picture: a cut-off line, labels over the circle, and the feet gap's arrow squashed.
 
-![Claude's image 002](<../images/2026-11-13 M1 giant flower heads as drawn and surface margins/002 Claude to Dani.png>)
+Claude's picture 002
 
 I made the picture and opened it in VS Code: C:\Users\someo\AppData\Local\Temp\claude\653749dc61028eb9\6f0460ed-cb4a-4b5a-a8da-dd0c842bb9ea\scratchpad\head-disc.png
 
@@ -58,7 +58,7 @@ I haven't changed anything. I worked the numbers out from the code and the setti
 
 **Q3.** Should leaves and heads share A, B and C in the Every giant flower box, as they share the bend sliders? I recommend yes. They'd start at today's fixed numbers: A 5 cm, B 0 and C 0.15 m.
 
-Again: [image 002](<../images/2026-11-13 M1 giant flower heads as drawn and surface margins/002 Claude to Dani.png>)
+Again: picture 002
 
 ---
 
@@ -89,7 +89,7 @@ Making one more small picture for the part you didn't get, since it's easier to 
 
 Nothing in the game will change. I'm only finishing the picture that explains the point you didn't get.
 
-![Claude's image 003](<../images/2026-11-13 M1 giant flower heads as drawn and surface margins/003 Claude to Dani.png>)
+Claude's picture 003
 
 I haven't changed anything in the game. I only made a second picture to explain that part, and it's open in VS Code: C:\Users\someo\AppData\Local\Temp\claude\653749dc61028eb9\6f0460ed-cb4a-4b5a-a8da-dd0c842bb9ea\scratchpad\head-measure.png
 
@@ -115,7 +115,7 @@ The fix is in the code: measure the slice up at the head, as the leaves have bee
 
 I'll wait for your yes before building anything.
 
-Again: [image 003](<../images/2026-11-13 M1 giant flower heads as drawn and surface margins/003 Claude to Dani.png>)
+Again: picture 003
 
 ---
 

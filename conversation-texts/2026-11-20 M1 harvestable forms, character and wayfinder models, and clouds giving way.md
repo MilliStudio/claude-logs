@@ -1,6 +1,6 @@
 # M1 harvestable forms, character and wayfinder models, and clouds giving way
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-20 M1 harvestable forms, character and wayfinder models, and clouds giving way\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-20 M1 harvestable forms, character and wayfinder models, and clouds giving way", numbered as here. Private: never commit or share.
 
 ---
 
@@ -263,9 +263,9 @@ Trees, plants and straight walls work with models. Giant flowers, arching flower
 
 **Q1.** Should I leave the import as it is for now? You can model trees, plants and straight walls today. Making giant flowers, arching flowers and bends take models would be a bigger change: the game would load separate files for a leaf, a head and a stem, and place and bend them by each flower's settings. I recommend leaving it until you're ready to model those, then we discuss how before I build anything.
 
-![Claude's image 001](<../images/2026-11-20 M1 harvestable forms, character and wayfinder models, and clouds giving way/001 Claude to Dani.png>)
+Claude's picture 001
 
-![Claude's image 002](<../images/2026-11-20 M1 harvestable forms, character and wayfinder models, and clouds giving way/002 Claude to Dani.png>)
+Claude's picture 002
 
 ---
 
@@ -1370,9 +1370,9 @@ The fade time is a number in `src/key.js`, not a slider. If you want a slider, t
 
 it's still not smooth. i attached these two images. the wide one 1271px shows before tiles are unlocked, and the other 869px shows just before the newly unlocked tiles are about to rise
 
-![Dani's image 003](<../images/2026-11-20 M1 harvestable forms, character and wayfinder models, and clouds giving way/003 Dani.png>)
+Dani's picture 003
 
-![Dani's image 004](<../images/2026-11-20 M1 harvestable forms, character and wayfinder models, and clouds giving way/004 Dani.png>)
+Dani's picture 004
 
 ---
 

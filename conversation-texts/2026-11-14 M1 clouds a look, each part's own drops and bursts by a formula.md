@@ -1,6 +1,6 @@
 # M1: clouds a look, each part's own drops, bursts by a formula, fragments in front and the apparatus bar
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-14 M1 clouds a look, each part's own drops and bursts by a formula\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-14 M1 clouds a look, each part's own drops and bursts by a formula", numbered as here. Private: never commit or share.
 
 ---
 
@@ -177,7 +177,7 @@ Each puff, cone, bulb and pod now drops its own at every hit, with its own numbe
 
 M1 testing needs **Update M1 testing** to get this.
 
-![Claude's image 001](<../images/2026-11-14 M1 clouds a look, each part's own drops and bursts by a formula/001 Claude to Dani.png>)
+Claude's picture 001
 
 ---
 

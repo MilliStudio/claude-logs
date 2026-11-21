@@ -1,6 +1,6 @@
 # M1: waypoints by a double-click, clicks keep the tool, the chest freeze, forge levels and Max tools (13 November 2026)
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-13 M1 waypoint double-click, clicks keep the tool, forge levels and Max tools\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-13 M1 waypoint double-click, clicks keep the tool, forge levels and Max tools", numbered as here. Private: never commit or share.
 
 ---
 
@@ -197,7 +197,7 @@ then in the pink box, we need to set it up by levels. forges can upgrade tools u
 so forge to level 2 should be forge to next level. you dont have to put a limit up to what level unless the code can become buggy
 lastly, not sure why but the forge isn't taking resources to upgrade the rockpic
 
-![Dani's image 001](<../images/2026-11-13 M1 waypoint double-click, clicks keep the tool, forge levels and Max tools/001 Dani.png>)
+Dani's picture 001
 
 ---
 

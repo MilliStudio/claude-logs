@@ -1,6 +1,6 @@
 # 2026-11-15 M1 tallies, pump parts, pulsing rings and no slow frames by an edge
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-15 M1 tallies, pump parts, pulsing rings and no slow frames by an edge\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-15 M1 tallies, pump parts, pulsing rings and no slow frames by an edge", numbered as here. Private: never commit or share.
 
 ---
 
@@ -90,9 +90,9 @@ The picture is enlarged three times. In the game the shaft is about 4 px wide no
 
 Shall I go ahead?
 
-![Claude's image 001](<../images/2026-11-15 M1 tallies, pump parts, pulsing rings and no slow frames by an edge/001 Claude to Dani.png>)
+Claude's picture 001
 
-Again: [image 001](<../images/2026-11-15 M1 tallies, pump parts, pulsing rings and no slow frames by an edge/001 Claude to Dani.png>)
+Again: picture 001
 
 ---
 
@@ -176,9 +176,9 @@ In the hidden browser I saw rings round the floating pump cogs and round the che
 
 In Tessera Records, the feature "A key item floats and shines" still describes the sparkle. I can update it when you do Tessera Records.
 
-![Claude's image 002](<../images/2026-11-15 M1 tallies, pump parts, pulsing rings and no slow frames by an edge/002 Claude to Dani.png>)
+Claude's picture 002
 
-![Claude's image 003](<../images/2026-11-15 M1 tallies, pump parts, pulsing rings and no slow frames by an edge/003 Claude to Dani.png>)
+Claude's picture 003
 
 ---
 
@@ -236,7 +236,7 @@ Waypoints and key items also have **Far away, starts at least**, a minimum size 
 
 In the hidden browser, the four sections appear in the editor, and rings still pulse round the pump handle, which now floats on -7,-4.
 
-![Claude's image 004](<../images/2026-11-15 M1 tallies, pump parts, pulsing rings and no slow frames by an edge/004 Claude to Dani.png>)
+Claude's picture 004
 
 ---
 
@@ -412,7 +412,7 @@ Your map import of 16:06 (the waypoint on 5,-16 now zooms the camera) and your s
 
 Once you've answered, I'll go back to the Tessera Records list. It doesn't change with these options, since they're tuning.
 
-![Claude's image 005](<../images/2026-11-15 M1 tallies, pump parts, pulsing rings and no slow frames by an edge/005 Claude to Dani.png>)
+Claude's picture 005
 
 ---
 

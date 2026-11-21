@@ -1,6 +1,6 @@
 # M1: slow falls, reference files, and the character's proportions, knees and feet (20–21 November 2026)
 
-The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its images are in images\2026-11-20 M1 slow falls, reference files, and the character's proportions, knees and feet\, shown or linked where they came. Private: never commit or share.
+The messages of this conversation, Dani's and Claude's, without the code, tool calls and tool output. Its pictures are in Tessera Records, in the original file "Pictures: 2026-11-20 M1 slow falls, reference files, and the character's proportions, knees and feet", numbered as here. Private: never commit or share.
 
 ---
 
@@ -8,7 +8,7 @@ The messages of this conversation, Dani's and Claude's, without the code, tool c
 
 there is an issue wheen fallilng off the leaves near the tile  highlited with a pink border. falling from these leaves into the void teleports the player to either 5,20 or 22, 4 etc
 
-![Dani's image 001](<../images/2026-11-20 M1 slow falls, reference files, and the character's proportions, knees and feet/001 Dani.png>)
+Dani's picture 001
 
 (sent while Claude was working) correction, it's not just eh leaves. sometimes off tiles
 
@@ -455,9 +455,9 @@ Pictures:
 - C:\Users\someo\AppData\Local\Temp\claude\653749dc61028eb9\e5ccbfed-3442-4144-89ec-b121f32ece22\scratchpad\words-2.png
 - C:\Users\someo\AppData\Local\Temp\claude\653749dc61028eb9\e5ccbfed-3442-4144-89ec-b121f32ece22\scratchpad\words-3-ok.png
 
-![Claude's image 002](<../images/2026-11-20 M1 slow falls, reference files, and the character's proportions, knees and feet/002 Claude to Dani.png>)
+Claude's picture 002
 
-![Claude's image 003](<../images/2026-11-20 M1 slow falls, reference files, and the character's proportions, knees and feet/003 Claude to Dani.png>)
+Claude's picture 003
 
 ---
 
@@ -573,7 +573,7 @@ The 12° and 3.2 s are my numbers, and they have no slider. Tell me if the see-s
 
 Picture of the pose: C:\Users\someo\AppData\Local\Temp\claude\653749dc61028eb9\e5ccbfed-3442-4144-89ec-b121f32ece22\scratchpad\rope-1.png
 
-![Claude's image 004](<../images/2026-11-20 M1 slow falls, reference files, and the character's proportions, knees and feet/004 Claude to Dani.png>)
+Claude's picture 004
 
 ---
 
@@ -643,7 +643,7 @@ If you let go of the stick on the way, they sink again, as now. Push again and a
 
 more loike this maybe
 
-![Dani's image 005](<../images/2026-11-20 M1 slow falls, reference files, and the character's proportions, knees and feet/005 Dani.png>)
+Dani's picture 005
 
 ---
 
@@ -710,7 +710,7 @@ The slow fall's gust is still waiting for your answer to Q1 above.
 
 ### Dani · 2026-11-21 13:45
 
-![Dani's image 006](<../images/2026-11-20 M1 slow falls, reference files, and the character's proportions, knees and feet/006 Dani.png>)
+Dani's picture 006
 
 ---
 
@@ -1057,7 +1057,7 @@ Here's every move, what the knees would do in it, and the one setting each would
 
 first upgrade the character you have now to have a knee. not sure we need any sliders since you seem to have a library or something which has the body motion all correct. before you animate anything though please show me an image of the character. i'd like it if you followed the ratios of my design
 
-![Dani's image 007](<../images/2026-11-20 M1 slow falls, reference files, and the character's proportions, knees and feet/007 Dani.png>)
+Dani's picture 007
 
 ---
 
@@ -1127,7 +1127,7 @@ All 251 tests pass. Now a quick walk in the game to check it plays, and the fina
 
 The game plays fine with the new body. Next: README, version, commit.
 
-![Claude's image 008](<../images/2026-11-20 M1 slow falls, reference files, and the character's proportions, knees and feet/008 Claude to Dani.png>)
+Claude's picture 008
 
 The character now has knees and your drawing's proportions (v0.610.0, pushed). Sorry it took so long.
 
@@ -1140,7 +1140,7 @@ I've opened the comparison in VS Code: [character-proportions.png](C:/Users/some
 
 The tests pass, and I walked around in the game with no errors.
 
-Again: [image 008](<../images/2026-11-20 M1 slow falls, reference files, and the character's proportions, knees and feet/008 Claude to Dani.png>)
+Again: picture 008
 
 ---
 
