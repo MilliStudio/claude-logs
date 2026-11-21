@@ -173,6 +173,53 @@ No pictures or pages for you this session, so nothing goes to the Bring in file.
 
 Committing the handover, then writing the session text with the prompt for the new conversation.
 
+Everything except the record is closed up. That one needs your answer first.
+
+**Tessera Records: one change proposed**
+
+Jump and hop (version 22) still describes the old jump. Its *Pose* paragraph says:
+
+> The feet tuck up 0.1 m, and the legs swing 25° apart, one forward and one back, the other way round at the next jump; they reach down again as the character comes down.
+
+I'd replace that with:
+
+> In the air, the legs move as a long jumper's do. At take-off, the free leg's knee drives up in front, and the take-off leg, the one on the ground, pushes off straight behind with its toes down. Rising, the take-off leg folds and swings through forward as the free leg sweeps down and back, so the legs swap, as in a running stride. Coming down, both legs reach forward, heels first, and the knees give as the character lands.
+
+The rest of the paragraph stays as it is. The change is open in VS Code's compare view, as it would print in DOCS/22.
+
+**Q1.** Should this be a change to the feature's text only, with no decision? I recommend that, because you've called changes like this refinements before.
+
+The Speed master gets no record, because it's a tuning slider.
+
+**Closed up:**
+- **Worktree:** the machine-speed worktree and its branch are removed. Both versions were already in main.
+- **Handover:** the M1 trial's CLAUDE.md has the new status entry, with what's waiting for you. Committed and pushed.
+- **Session text:** saved and pushed to claude-logs as "2026-11-21 M1 machine Speed master and the long jump". It ends with the prompt for the animations conversation. No pictures or pages were made for you, so nothing went to the Bring in file.
+
+Once you answer Q1, I'll enter the change, push the printed DOCS, and update the handover and session text to match.
+
 ---
 
-Closing note (21 November 2026, about 22:40): v0.613.0 (Speed master, one slider for how fast every machine animation plays) and v0.614.0 (a jump's legs go through a long jump) are in the trial and pushed; the worktree machine-speed is merged and removed. Tessera Records: Jump and hop version 22, its pose sentence rewritten for the long jump, was proposed at the close (feature text only, no decision), waiting for Dani's answer; no record for the Speed master. No pictures or pages for Dani this session, so nothing went to the Bring in file. The handover is the Status in tessera-m1/CLAUDE.md. Prompt for the next session: Continue the M1 trial in Tessera/repositories/tessera-m1 and read its CLAUDE.md Status (21 November). Dani wants the character's other animations to move as people do, as the jump now does (v0.614.0, a long jump's hitch-kick, DEMO_LONG_JUMP and longJumpAt() in src/planet.js): climbing a ladder vine, sitting down and balancing at an edge, floating in the void and floating back up after a slow fall, swimming (the crawl, which still needs refining) and treading water, harvesting (the pruning knife's swing and the rock pick's chop), grabbing a stone block, whistling and putting on the kit. Walking and running have knees and feet since v0.611.0–v0.612.0. Ask her for a reference for each move (a sport, a video or a picture), as the long jump was for the jump. Check each pose from the side on her graphics card, slowed down with remembered sliders. v0.615.0 is free.
+### Dani · 2026-11-21 22:33
+
+all approved
+
+---
+
+### Claude · 2026-11-21 22:33
+
+Entering it now. Checking how the design API saves a feature edit:
+
+Changes merge into the saved feature, so I'll send only the new text, and only if the feature is still at version 21.
+
+Jump and hop is at version 22. Checking that the app printed DOCS/22, then committing that file in the Tessera repository. Another session may be working there, so I'll commit only this file.
+
+Four printed files changed, one line each. Confirming every changed line is this sentence before committing:
+
+Pushed (Tessera DOCS 21242b0). Updating the handover's Tessera Records line to match:
+
+Last step: saving the session text again, so it ends with your approval and the record entered.
+
+---
+
+Closing note (21 November 2026, about 22:50): v0.613.0 (Speed master, one slider for how fast every machine animation plays) and v0.614.0 (a jump's legs go through a long jump) are in the trial and pushed; the worktree machine-speed is merged and removed. Tessera Records has Jump and hop version 22, its pose sentence rewritten for the long jump, feature text only, no decision (Dani: "all approved"; Tessera DOCS 21242b0); no record for the Speed master. No pictures or pages for Dani this session, so nothing went to the Bring in file. The handover is the Status in tessera-m1/CLAUDE.md. Prompt for the next session: Continue the M1 trial in Tessera/repositories/tessera-m1 and read its CLAUDE.md Status (21 November). Dani wants the character's other animations to move as people do, as the jump now does (v0.614.0, a long jump's hitch-kick, DEMO_LONG_JUMP and longJumpAt() in src/planet.js): climbing a ladder vine, sitting down and balancing at an edge, floating in the void and floating back up after a slow fall, swimming (the crawl, which still needs refining) and treading water, harvesting (the pruning knife's swing and the rock pick's chop), grabbing a stone block, whistling and putting on the kit. Walking and running have knees and feet since v0.611.0–v0.612.0. Ask her for a reference for each move (a sport, a video or a picture), as the long jump was for the jump. Check each pose from the side on her graphics card, slowed down with remembered sliders. v0.615.0 is free.
