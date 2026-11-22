@@ -434,6 +434,30 @@ Updating the handover in the M1 trial's CLAUDE.md: a new entry at the top, and t
 
 The handover is pushed. Now the session's text in claude-logs:
 
+Now the picture book (the session's pictures as a PDF for your Bring in button):
+
+The session is closed: the handover, the session's text and its 6 pictures are pushed. The pictures' PDF is in your Bring in file. Opening the one Tessera Records change in VS Code's compare view:
+
+The session is closed, and one Tessera Records change is waiting for your yes.
+
+**Q1.** Should I update Jump and hop to version 24, so a jump's pose in the air is the same as a hop's? Version 23 still describes the long jump, which v0.630.0 removed. It's open side by side in VS Code. I recommend yes, as a feature text change only, with no decision: you've called pose changes like this refinements before.
+
+- **Now:** "In a jump's air, the legs move as a long jumper's do. At take-off, the free leg's knee drives up in front, … Coming down, both legs reach forward, heels first, and the knees give as the character lands. A hop's legs differ: the front leg stays forward, …"
+- **Proposed:** "In the air of a jump or a hop, the front leg stays forward, and the back leg pushes off straight, then folds and swings through to join it; both land forward, the knees bent. The arms, up in front at take-off, swing down and back through the air and come forward again as the feet land, and the body stays bent forward."
+
+Nothing else needs a record: reading your model's joints and the Import models button are trial tools, and the walk and run poses are looks. I'm leaving Climb a ladder vine as it is. It still describes the leg movement from the motion capture, which the trial hasn't had since the reset, but that's still the design. Open question 128 went in earlier today.
+
+**Closed:**
+- The handover in the M1 trial's CLAUDE.md is pushed.
+- The session's text and its 6 pictures are in claude-logs, pushed.
+- The pictures' PDF is in your Bring in file.
+
 ---
 
-Closing note (22 November 2026, about 23:50): v0.631.0 is in main and pushed. v0.628.0 reads a character model's thigh, shin and foot again; v0.629.0 and v0.630.0 bend the knees and feet of such a model (the walk as v0.611.0 and v0.612.0, the run from the jogging video, jumps and hops as the Jump #8 video), the game's own character unchanged; v0.631.0 adds Import models from Blender under Copies, and ladybird13 is the trial's character.glb. Open question 128 is in Tessera Records. Proposed, waiting for Dani's yes: Jump and hop version 24, a jump's air pose as the hop's. Waiting: her model's size, place and colours; whether the video walk, the climb and the chop come back. M1 testing is on v0.627.0. Next session: read tessera-m1's CLAUDE.md status, then start from Dani's play and her answer on Jump and hop.
+### Dani · 2026-11-22 23:46
+
+no don't update.
+
+---
+
+Closing note (22 November 2026, about 23:50): v0.631.0 is in main and pushed. v0.628.0 reads a character model's thigh, shin and foot again; v0.629.0 and v0.630.0 bend the knees and feet of such a model (the walk as v0.611.0 and v0.612.0, the run from the jogging video, jumps and hops as the Jump #8 video), the game's own character unchanged; v0.631.0 adds Import models from Blender under Copies, and ladybird13 is the trial's character.glb. Open question 128 is in Tessera Records; Dani declined updating Jump and hop (no don't update), so it still describes a jump as a long jump. Waiting: her model's size, place and colours; whether the video walk, the climb and the chop come back. M1 testing is on v0.627.0. Next session: read tessera-m1's CLAUDE.md status, then start from Dani's play.
