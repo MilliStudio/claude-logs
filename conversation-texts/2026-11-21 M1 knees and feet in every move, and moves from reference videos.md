@@ -643,3 +643,94 @@ No record for the walk's and run's legs, bobbing and arm swing, since the featur
 While you read, I'm doing the close-up: the status in the trial's CLAUDE.md, the session's text and pictures, and the prompt for the next session.
 
 Now the trial's handover status: a new entry for this session at the top, and the Waiting and Next lines updated:
+
+36 messages and 3 pictures saved. Now the PDFs for Tessera Records: this session's, and the 11 November one still waiting:
+
+Everything is closed up except the Tessera Records entries, which wait for your yes:
+
+- **Handover:** the trial's CLAUDE.md has this session's status, and the waiting and next lists are updated. It's pushed.
+- **Session text:** saved in claude-logs as "2026-11-21 M1 knees and feet in every move, and moves from reference videos", with its 3 comparison pictures, and pushed. The prompt for the next session is in it.
+- **Bring in file:** two picture PDFs wait for your button: this session's, and the 11 November one ("why the far giant flower looks upright") that was still missing. Once you've brought them in, I'll tidy their picture folders.
+- **Tessera Records:** Q1–Q5 above are waiting. A "yes" enters all five, or tell me which to leave out. Then I'll update the handover and the session text.
+
+---
+
+### Dani · 2026-11-22 15:46
+
+i don't see much change in p uning animation. please make a prompt for a new conversation
+
+for 1, all animators use references, specifically concept artists, so it's not relevant. the decision as well as in docs (where relevant, like the importance of art for example) sohuld be 
+gestures in animations need to be satisfying to keey the level of interest and satisfaction. , and gestures are what make them read.
+
+2, i don't see a change in the pruning, so skip this one. in general i think the frames you made like hop strip for example are good to place in each movement feature
+
+3 ok.
+
+4 it's still not the same as the video but it's ok
+
+---
+
+### Claude · 2026-11-22 15:47
+
+I'll enter what you approved:
+
+- **Decision:** "Gestures in animations need to be satisfying", in your wording. I'll also add it to the design text where it fits.
+- **Jump and hop:** Q3.
+- **Climb a ladder vine:** Q4.
+
+Q2 and Q5 stay out. One note on Q2: it was the mining chop, not pruning. The chop did change, in v0.620.0. I left pruning alone because I was waiting for your answer on hold-and-snip. Both go into the next conversation's prompt.
+
+First, how the design API saves changes:
+
+The fitting design text looks like the section "What the art is for". Reading it and what follows it:
+
+The section heading is in "18. Visual direction", and its text sits in the blocks after it. Reading that document in order:
+
+The section is the pillar "Art" followed by "Its job is not just decoration", a list of what the art is for. Reading the pillar:
+
+Entering the decision, the bullet in "What the art is for", and the Jump and hop and Climb a ladder vine text. Each replacement must match exactly once, or nothing is saved:
+
+All three changes find their text once. Entering them:
+
+The DOCS changes are pushed. Updating the handover with what was entered and what waits:
+
+The handover is pushed. Here is the prompt for the new conversation:
+
+---
+**Prompt for the new conversation (Tessera M1 trial, the character's moves):**
+
+Continue making the M1 trial's moves from Dani's reference videos. Read the handover first: `Tessera\repositories\tessera-m1\CLAUDE.md`, the 21–22 November entry. The last session's text is "2026-11-21 M1 knees and feet in every move, and moves from reference videos".
+
+**Done:** knees and feet in every move (v0.615.0), and five moves built from her references:
+- the walk (v0.617.0) and run (v0.619.0), with the feet fitted to the ground;
+- the pick chop (v0.620.0);
+- the climb (v0.621.0), from CMU motion capture;
+- the hop (v0.622.0).
+
+**Tools:** they are in the last session's scratchpad, `C:\Users\someo\AppData\Local\Temp\claude\653749dc61028eb9\c87d37f1-6e25-460d-99ce-225e88ecb014\scratchpad`. Copy them to the new scratchpad first. If a restart cleared them, the README describes how each worked.
+- `harness.mjs` drives the hidden Chrome (`GPU=1`, `PROFILE=` sets its profile).
+- `ytframes.mjs` copies a YouTube video's frames by seeking, without playing it, since playing brings ads. Use a fresh `PROFILE` for each video.
+- `serve.mjs` serves frames on port 9973. Run it in the background.
+- `pose.html` and `posesteps.mjs` run MediaPipe's pose model on the frames.
+- `gait.mjs`, `cycle.mjs` and `mine3d.mjs` measure the joints, and `amc.mjs` reads CMU motion capture files.
+- `compare.mjs`, `walkpics.mjs`, `pickpics.mjs`, `hoppics.mjs` and `sheet.mjs` make the pictures.
+
+**To do:**
+1. **Pruning:** Dani expected it to change ("i don't see much change in pruning animation"). Her Short `_jHk5lD-ars` shows one hand holding the branch while the other snips. Confirm in one line that this replaces the knife's side slash (recommend yes), then build it.
+2. **Balancing:** ask her which time in Kevin Parry's "50 Ways to Fall" (`8Rhimam6FgQ`) to follow.
+3. **Pictures in Tessera Records:** place each move's picture strip (walk, run, chop, climb, hop; like `hop-strip.png`) in its movement feature (Dani: "good to place in each movement feature"). Find out first how Tessera Records attaches pictures to a feature.
+4. **Records to offer again:**
+   - the pick's full overhand chop in Gather a resource (she skipped it, taking it for pruning);
+   - Move's arms swinging back, then forward, in a hop's wind-up (not answered).
+5. **Other moves:** any further videos she picks.
+6. **Climbing and walking:** the climb is "still not the same as the video but it's ok". Shorter walking steps would stop the feet sliding (offered).
+
+**Lessons from the last session:**
+- An arm's angle against the body is its angle from upright plus the body's lean.
+- Run `node --check` on every file after each edit, because her trial is open.
+- Change the code that uses a constant before removing the constant.
+- Write multi-line edits with the editor, not the shell.
+
+---
+
+Saving the session text again, so it includes this last exchange:
