@@ -1070,6 +1070,67 @@ Updating the M1 handover with this session, the waiting items, and your correcti
 
 Handover committed and pushed. Now saving the session's text and pictures to claude-logs; first, how the last one ended.
 
+I've finished everything except entering the records, which waits for your yes. The handover and this session's text and pictures are committed and pushed. The pictures' PDF is waiting in the Bring in file.
+
+**Records to enter in Tessera Records**
+
+**1. Gather a resource (version 29):** three sentences change. Only the feature's text changes, with no decision, as with the earlier changes to moves.
+- "While harvesting a plant, the character holds a short round pruning knife in one hand, whatever the plant's height." becomes:
+  "While harvesting a plant, the character holds a short round pruning knife in both hands, in front of the body, whatever the plant's height."
+- "Each hit is a side slash from right to left, with the hook's opening leading." becomes:
+  "Each hit, the character reaches out with both arms, hooks the knife round the stem, then pulls it back to the chest while sinking deep into the knees, so the body's weight cuts the stem, and rises again. The hook lies flat, square to the stem."
+- "The first hit on a plant or a rock waits for the first slash or chop." becomes:
+  "The first hit on a plant or a rock waits for the first cut or chop."
+
+**2. The variety records from 26 November**, still waiting for your answer. Neither replaces anything.
+- **A decision** in Game › Environmental interactions and puzzles, for M1, M2 and M3: **"Objects placed many times vary by one reusable set of rules"**
+  - Text: "Each object placed many times, such as an arching flower or a harvestable, stands a little different from the others, the same every time: in size, in how grown it is, in how far it leans and which way it faces, and in where on its tile it stands. One set of rules does this for every such object, new ones included. Each kind sets how much it varies in each way, and leaves out what it has no use for. For now: arching flowers vary up to 15% in size, from 70% grown to fully grown, lean up to 8°, face any way and stand up to 0.5 m off their tile's middle. Harvestables lean up to 5° and face any way. Porous rocks and coal seams don't lean."
+  - Why: "So the world looks grown rather than copied, and every new object placed many times gets the same variety without being built again."
+- **A section in 30. World assembly:** **"Variety for objects placed many times"**
+  - Text: "Objects placed many times vary through one reusable set of rules, not rules built for each object: size, how grown, lean, facing and place on the tile. Each comes from where the object stands, so it looks the same every time the game loads. Each kind's settings say how much it varies in each way. A new kind uses the same rules."
+
+**Nothing to record** for these:
+- The Blender add-on, Import models and the model's stem fade: trial tools.
+- The sturdier knife: a look.
+- The withered flower's grey: you said any visual can still change.
+
+**Q1.** Shall I enter record 1 as written, with no decision? I recommend yes.
+**Q2.** Shall I enter record 2 as written? I recommend yes.
+
+Another session is reworking the knife from your video, so record 1's wording may go out of date. Replying to it so we don't overlap.
+
+The new session you started (tessera-m1-1f) is reworking the knife from your video. It's adding the arm swing, the small pause, the lean back and the feet moving. That changes what I'd proposed for Gather a resource, so I've dropped record 1 and Q1. That session will propose the knife's text once its version is done. I've sent it where the knife stands now and the test tools, and I won't touch its files.
+
+Q2 still stands: shall I enter the variety records of 26 November as written above (the decision and the section in 30. World assembly)? I recommend yes. They don't touch the knife.
+
+The other session has finished its knife work: v0.662.0 is committed and pushed. Each cut now takes 1.6 s, one hit each, and follows your video: the swing, a pause, the right foot stepping back, sinking low, then rising. Tuning has a new section, Pruning knife cut, with 14 sliders. "Knife's curl tilts up" moved there, and "Hit every" now sets only the rock pick. Your trial runs it now. M1 testing still runs the old slash until you press Update M1 testing.
+
+That session will propose the knife's Tessera Records text itself. Only Q2 is left for you: shall I enter the variety records of 26 November as written (the decision, and the section in 30. World assembly)? I recommend yes.
+
 ---
 
-Closed on 27 November 2026 at about 21:50: the handover, this text and its pictures are pushed; the records for the knife's cut (Gather a resource) and the variety records of 26 November are proposed in chat, waiting for Dani's yes; the pictures wait in the Bring in file. Dani gave no hours for 26 and 27 November.
+### Dani · 2026-11-28 13:04
+
+enter them pleease and 4 hours work for yesterday
+
+---
+
+### Claude · 2026-11-28 13:05
+
+Entering the two variety records now. First I'm checking how the app stores decisions and the sections of 30. World assembly.
+
+Still finding the right API calls. Earlier sessions left scripts that entered decisions, so I'm looking for one of those.
+
+The API takes decisions and design sections ("blocks") directly. Now I'm reading 30. World assembly's current sections, so the new one goes in the right place.
+
+Document 30 has a heading and one section. I'll add the new section after it, so I'm checking how an earlier session added a section to a document.
+
+Both records are in, and the hours wait in the Bring in file. Now I'm committing the printed document in the Tessera repository.
+
+Pushed. Now the handover's Tessera Records and Bring in lines. The other session is still committing (up to v0.668.0), so first I'm checking that it hasn't changed CLAUDE.md.
+
+Handover pushed. Last step: saving the session's final messages to claude-logs.
+
+---
+
+Closed on 28 November 2026 at about 13:15: the handover, this text and its pictures are pushed. The variety records of 26 November (the decision and its section in 30. World assembly) are entered in Tessera Records (Tessera DOCS 204681c). The knife's records are left to the session that took v0.662.0 and on. Dani's 4 hours for 27 November and the pictures wait in the Bring in file; she gave no hours for 26 November.
